@@ -1,0 +1,10 @@
+{
+  "buildCommand": "npm run refresh",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
