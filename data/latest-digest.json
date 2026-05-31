@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-31T23:31:38.505Z",
+  "generatedAt": "2026-05-31T23:52:23.292Z",
   "weeklyDigest": {
     "week": "Week 23, 2026",
     "dateRange": "May 25 - May 31",
@@ -62,7 +62,7 @@
       "githubReleaseTag": "8.21.0",
       "githubReleasePublishedAt": "2026-05-22T18:03:36Z",
       "releaseNotesExcerpt": "Features Introduced the maxBufferedChunks and maxFragments options (2b2abd45). Bug fixes Fixed a remote memory exhaustion DoS vulnerability (2b2abd45). A high volume of tiny fragments and data chunks could be sent by a peer, using modest network traffic, to crash a ws server or c",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/ws/8.21.0",
       "sourceLinks": [
         {
@@ -102,7 +102,7 @@
       "githubReleaseTag": "v1.16.1",
       "githubReleasePublishedAt": "2026-05-13T16:19:58Z",
       "releaseNotesExcerpt": "v1.16.1 - May 13, 2026 This release ships a defence-in-depth fix for prototype pollution in formDataToJSON, hardens proxy and CI workflows, restores Webpack 4 compatibility for the fetch adapter, and includes several small bug fixes and maintenance improvements. Security Fixes **",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/axios/1.16.1",
       "sourceLinks": [
         {
@@ -142,7 +142,7 @@
       "githubReleaseTag": "v4.1.5",
       "githubReleasePublishedAt": "2018-11-24T14:04:46Z",
       "releaseNotesExcerpt": "Bug fixes 52eaf86242ba408dedd015f53ca7ca368f25a026...1b41ac569987c96e224f940ff59f9699322c7824 switched ps-tree package to pidtree package for security reason.",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/npm-run-all/4.1.5",
       "sourceLinks": [
         {
@@ -182,7 +182,7 @@
       "githubReleaseTag": "v11.5.0",
       "githubReleasePublishedAt": "2026-05-29T15:51:39Z",
       "releaseNotesExcerpt": "Minor Changes Added a new hoistingLimits setting for nodeLinker: hoisted installs, mirroring yarn's nmHoistingLimits. It accepts none (the default - hoist as far as possible), workspaces (hoist only as far as each workspace package), or dependencies (hoist only up to each workspa",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/pnpm/11.5.0",
       "sourceLinks": [
         {
@@ -222,7 +222,7 @@
       "githubReleaseTag": "v4.1.7",
       "githubReleasePublishedAt": "2026-05-20T07:20:12Z",
       "releaseNotesExcerpt": "&nbsp;&nbsp;&nbsp; Bug Fixes **runner**: Limit concurrency per task branch in addition to per leaf callbacks (backport) &nbsp;-&nbsp; by @hi-ogawa in https://github.com/vitest-dev/vitest/issues/10384 <samp>(4f0f2)</samp> &nbsp;&nbsp;&nbsp;&nbsp;View changes on GitHub",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/vitest/4.1.7",
       "sourceLinks": [
         {
@@ -262,7 +262,7 @@
       "githubReleaseTag": "styled-components@6.4.2",
       "githubReleasePublishedAt": "2026-05-19T12:58:04Z",
       "releaseNotesExcerpt": "Patch Changes 9945904: Restore TypeScript prop autocomplete inside the JSX of a styled component once the first attribute is typed. 9945904: Apply all chain levels' styles when an extended styled component renders with the as prop under Preact's react-compat. 9945904: Respect a c",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/styled-components/6.4.2",
       "sourceLinks": [
         {
@@ -302,7 +302,7 @@
       "githubReleaseTag": "v4.3.0",
       "githubReleasePublishedAt": "2026-05-08T20:17:25Z",
       "releaseNotesExcerpt": "Added Add @container-size utility (#18901) Add scrollbar-{auto,thin,none} utilities for scrollbar-width, and scrollbar-thumb-* / scrollbar-track-* color utilities for scrollbar-color (#19981, #20019) Add scrollbar-gutter-* utilities (#20018) Add zoom-* utilities (#20020) Add tab-",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/tailwindcss/4.3.0",
       "sourceLinks": [
         {
@@ -342,7 +342,7 @@
       "githubReleaseTag": "v19.2.6",
       "githubReleasePublishedAt": "2026-05-06T16:27:45Z",
       "releaseNotesExcerpt": "React Server Components Type hardening and performance improvements (#36425 by @eps1lon and @unstubbable)",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/react/19.2.6",
       "sourceLinks": [
         {
@@ -458,7 +458,7 @@
       "githubReleaseTag": "v7.77.0",
       "githubReleasePublishedAt": "2026-05-31T11:05:57Z",
       "releaseNotesExcerpt": "feat: add resetDefaultValues API (#13427) https://react-hook-form.com/docs/useform/resetdefaultvalues harden get() against prototype-path traversal (__proto__ / constructor / prototype) (#13479) fix FieldArray errors overriding nested fields (#13476) fix inconsistent reset({}) be",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/react-hook-form/7.77.0",
       "sourceLinks": [
         {
@@ -498,7 +498,7 @@
       "githubReleaseTag": "v4.4.0",
       "githubReleasePublishedAt": "2026-05-29T23:33:36Z",
       "releaseNotesExcerpt": "This release revisits the approach to CDN usage and introduces a new package, @date-fns/cdn and deprecates the date-fns CDN scripts. It allowed reducing the zipped package size from 5.83 MB down to 3.96 MB without introducing any breaking changes. In v5.0.0-alpha.0 where CDN scri",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/date-fns/4.4.0",
       "sourceLinks": [
         {
@@ -538,7 +538,7 @@
       "githubReleaseTag": "react-router@7.16.0",
       "githubReleasePublishedAt": "2026-05-28T18:47:07Z",
       "releaseNotesExcerpt": "See the changelog for release notes: https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v7160",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/react-router-dom/7.16.0",
       "sourceLinks": [
         {
@@ -578,7 +578,7 @@
       "githubReleaseTag": "v15.16.0",
       "githubReleasePublishedAt": "2026-05-26T21:57:32Z",
       "releaseNotesExcerpt": "Changelog: https://docs.cypress.io/app/references/changelog#15-16-0",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/cypress/15.16.0",
       "sourceLinks": [
         {
@@ -618,7 +618,7 @@
       "githubReleaseTag": "v10.4.1",
       "githubReleasePublishedAt": "2026-05-22T09:46:17Z",
       "releaseNotesExcerpt": "10.4.1 Angular: Detect model() signal outputs (type inference + compodoc autodocs + runtime binding) - #34833, thanks @valentinpalkovic! Build: Upgrade type-fest to latest version 5.6.0 - #34791, thanks @tobiasdiez! CLI: Run \\npx expo install --fix\\ after init for Expo projects -",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/storybook-react/10.4.1",
       "sourceLinks": [
         {
@@ -698,7 +698,7 @@
       "githubReleaseTag": "1.100.0",
       "githubReleasePublishedAt": "2026-05-22T00:48:12Z",
       "releaseNotesExcerpt": "To install Sass 1.100.0, download one of the packages below and [add it to your PATH][], or see [the Sass website][] for full installation instructions. [add it to your PATH]: https://katiek2.github.io/path-doc/ [the Sass website]: https://sass-lang.com/install Changes Writing tw",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/sass/1.100.0",
       "sourceLinks": [
         {
@@ -774,7 +774,7 @@
       "githubReleaseTag": "v2.12.0",
       "githubReleasePublishedAt": "2026-05-15T14:38:12Z",
       "releaseNotesExcerpt": "This **feature release** adds RTK usage skills files (via TanStack Intent) exports the RTK Query hook options types for reusability, fixes issues with infinite query status flags and batching handling, and makes some small TS improvements. Changelog Skills Files We've generated a",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/reduxjs-toolkit/2.12.0",
       "sourceLinks": [
         {
@@ -814,7 +814,7 @@
       "githubReleaseTag": "v16.3.0-canary.36",
       "githubReleasePublishedAt": "2026-05-31T00:00:36Z",
       "releaseNotesExcerpt": "Misc Changes Turbopack analyzer: analyze ternaries + promises in string & nullish methods: #94187 [turbopack] Break up graph.rs in the analyzer into smaller files: #94211 [turbopack] Add explain() methods to WellKnownObjectKind and WellKnownFunctionKind: #94217 [turbopack] Handle",
-      "releaseNotesStatus": "Using latest GitHub release because no exact version tag matched. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Using latest GitHub release because no exact version tag matched.",
       "route": "/package/next/16.2.6",
       "sourceLinks": [
         {
@@ -854,7 +854,7 @@
       "githubReleaseTag": "v4.4.3",
       "githubReleasePublishedAt": "2026-05-04T07:06:55Z",
       "releaseNotesExcerpt": "Commits: 4c2fa95ce3f3390fbc522324e406b4e9e89b88f9 docs: use Zernio primary wordmark for gold sponsor logo 2aeec83eb135e3a83756e973ef44845fc5a455d2 docs: prune lapsed gold sponsors and rebalance logo sizing 7391be88ac1ee5cd02057f5ccc012a1f5df4efd0 docs: prune lapsed silver/bronze ",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/zod/4.4.3",
       "sourceLinks": [
         {
@@ -894,7 +894,7 @@
       "githubReleaseTag": "10.5.0",
       "githubReleasePublishedAt": "2026-04-13T20:44:49Z",
       "releaseNotesExcerpt": "<img src=\"https://github.com/user-attachments/assets/401cb4b1-0f05-459f-9106-47c4f1bbb53d\" alt=\"Coat of arms of Antigua and Barbuda\" width=\"172\" height=\"200\" align=\"right\"> Added mask-position-x and mask-position-y support (by @toporek).",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/autoprefixer/10.5.0",
       "sourceLinks": [
         {
@@ -934,7 +934,7 @@
       "githubReleaseTag": "v0.28.0",
       "githubReleasePublishedAt": "2026-04-02T20:38:53Z",
       "releaseNotesExcerpt": "Add support for with { type: 'text' } imports (#4435) The import text proposal has reached stage 3 in the TC39 process, which means that it's recommended for implementation. It has also already been implemented by Deno and Bun. So with this release, esbuild also adds support for ",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/esbuild/0.28.0",
       "sourceLinks": [
         {
@@ -974,7 +974,7 @@
       "githubReleaseTag": "@emotion/styled@11.14.0",
       "githubReleasePublishedAt": "2024-12-09T08:43:42Z",
       "releaseNotesExcerpt": "Minor Changes #3284 a19d019 Thanks @Andarist! - Source code has been migrated to TypeScript. From now on type declarations will be emitted based on that, instead of being hand-written. Patch Changes Updated dependencies \\[e1bf17e]: - @emotion/use-insertion-effect-with-fallbacks@1",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/emotion-react/11.14.0",
       "sourceLinks": [
         {
@@ -1014,7 +1014,7 @@
       "githubReleaseTag": "v10.4.1",
       "githubReleasePublishedAt": "2026-05-29T20:32:39Z",
       "releaseNotesExcerpt": "Bug Fixes e557467 fix: update @eslint/plugin-kit version to 0.7.2 (#20930) (Francesco Trotta) d4ce898 fix: propagate failures from delegated commands (#20917) (Minh Vu) f4f3507 fix: prefer-arrow-callback invalid autofix with newline after async (#20916) (kuldeep kumar) c5bc78b fi",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/eslint/10.4.1",
       "sourceLinks": [
         {
@@ -1054,7 +1054,7 @@
       "githubReleaseTag": "v5.0.14",
       "githubReleasePublishedAt": "2026-05-28T10:17:28Z",
       "releaseNotesExcerpt": "This release fixes a type issue in devtools. What's Changed fix(devtools): improve type inference for Devtools initializer by @dbritto-dev in https://github.com/pmndrs/zustand/pull/3511 New Contributors @TheSeydiCharyyev made their first contribution in https://github.com/pmndrs/",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/zustand/5.0.14",
       "sourceLinks": [
         {
@@ -1094,7 +1094,7 @@
       "githubReleaseTag": "v2.9.16",
       "githubReleasePublishedAt": "2026-05-28T14:32:37Z",
       "releaseNotesExcerpt": "<!-- Release notes generated using configuration in .github/release.yml at v2.9.16 --> What's Changed Changelog release(turborepo): 2.9.15 by @github-actions[bot] in https://github.com/vercel/turborepo/pull/12955 fix: Avoid hanging PTY shutdown by @anthonyshew in https://github.c",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/turbo/2.9.16",
       "sourceLinks": [
         {
@@ -1134,7 +1134,7 @@
       "githubReleaseTag": "v1.11.21",
       "githubReleasePublishedAt": "2026-05-26T05:46:13Z",
       "releaseNotesExcerpt": "1.11.21 (2026-05-26) Bug Fixes preserve unsupported year tokens in format (#3015) (#3016) (8fda602)",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/dayjs/1.11.21",
       "sourceLinks": [
         {
@@ -1174,7 +1174,7 @@
       "githubReleaseTag": "v5.107.2",
       "githubReleasePublishedAt": "2026-05-25T15:18:32Z",
       "releaseNotesExcerpt": "Patch Changes Reduce per-file overhead in ContextModuleFactory.resolveDependencies by batching alternativeRequests hook calls. Previously the hook was invoked once per file in the context (with a single-item array), paying per-call overhead (closure allocation, resolverFactory.ge",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/webpack/5.107.2",
       "sourceLinks": [
         {
@@ -1214,7 +1214,7 @@
       "githubReleaseTag": "@tanstack/vue-query@5.100.14",
       "githubReleasePublishedAt": "2026-05-23T17:17:07Z",
       "releaseNotesExcerpt": "Patch Changes Updated dependencies \\[]: - @tanstack/query-core@5.100.14",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/tanstack-react-query/5.100.14",
       "sourceLinks": [
         {
@@ -1254,7 +1254,7 @@
       "githubReleaseTag": "v8.0.14",
       "githubReleasePublishedAt": "2026-05-21T07:15:28Z",
       "releaseNotesExcerpt": "Please refer to CHANGELOG.md for details.",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/vite/8.0.14",
       "sourceLinks": [
         {
@@ -1294,7 +1294,7 @@
       "githubReleaseTag": "v7.8.1",
       "githubReleasePublishedAt": "2026-05-21T18:27:34Z",
       "releaseNotesExcerpt": "7.8.1 (2026-05-21) Bug Fixes 17aa702 #869 strip build metadata before comparator trimming (#869) (@owlstronaut) 5f3ca13 #867 handle prerelease bounds in subset (#867) (@puneetdixit200, Puneet Dixit)",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/semver/7.8.1",
       "sourceLinks": [
         {
@@ -1334,7 +1334,7 @@
       "githubReleaseTag": "8.5.15",
       "githubReleasePublishedAt": "2026-05-19T09:50:58Z",
       "releaseNotesExcerpt": "Fixed declaration parsing performance (by @homanp).",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/postcss/8.5.15",
       "sourceLinks": [
         {
@@ -1374,7 +1374,7 @@
       "githubReleaseTag": "plugin-react@6.0.2",
       "githubReleasePublishedAt": "2026-05-14T20:03:25Z",
       "releaseNotesExcerpt": "Allow all options in reactCompilerPreset (#1189) This is a type only change. Only compilationMode and target options were available for reactCompilerPreset.",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/vitejs-plugin-react/6.0.2",
       "sourceLinks": [
         {
@@ -1414,7 +1414,7 @@
       "githubReleaseTag": "v4.60.4",
       "githubReleasePublishedAt": "2026-05-14T17:54:35Z",
       "releaseNotesExcerpt": "4.60.4 _2026-05-14_ Bug Fixes Improve stability of chunk hashes (#6362) Pull Requests #6362: fix: stabilize chunk assignment across parallel file reads (@sonukapoor, @Sonu Kapoor, @TrickyPi, @lukastaegert) #6370: fix(deps): update minor/patch updates (@renovate[bot]) #6371: chore",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/rollup/4.60.4",
       "sourceLinks": [
         {
@@ -1454,7 +1454,7 @@
       "githubReleaseTag": "v1.60.0",
       "githubReleasePublishedAt": "2026-05-11T19:08:18Z",
       "releaseNotesExcerpt": "HAR recording on Tracing tracing.startHar() / tracing.stopHar() expose HAR recording as a first-class tracing API, with the same content, mode and urlFilter options as recordHar. The returned Disposable makes it easy to scope a recording with await using: Drop API New locator.dro",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/playwright/1.60.0",
       "sourceLinks": [
         {
@@ -1494,7 +1494,7 @@
       "githubReleaseTag": "v3.6.0",
       "githubReleasePublishedAt": "2026-05-10T12:55:59Z",
       "releaseNotesExcerpt": "New Features Add support for Tailwind CSS v4.3 by @dcastil in https://github.com/dcastil/tailwind-merge/pull/677 - Add postfixLookupClassGroups option to config to support Tailwind utilities where a slash is part of the full class name, like named container queries Add support fo",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/tailwind-merge/3.6.0",
       "sourceLinks": [
         {
@@ -1534,7 +1534,7 @@
       "githubReleaseTag": "v30.4.2",
       "githubReleasePublishedAt": "2026-05-09T00:32:04Z",
       "releaseNotesExcerpt": "Fixes [jest-runtime] Fix named imports from CJS modules whose module.exports is a function with own-property exports (#16150) **Full Changelog**: https://github.com/jestjs/jest/compare/v30.4.1...v30.4.2",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/jest/30.4.2",
       "sourceLinks": [
         {
@@ -1574,7 +1574,7 @@
       "githubReleaseTag": "v2.0.2",
       "githubReleasePublishedAt": "2026-04-21T08:58:55Z",
       "releaseNotesExcerpt": "Fix init hook URLSearchParams deletions add0703 Fix tuple searchParams mutations leaking across init-hook requests (#861) 346f898 --- https://github.com/sindresorhus/ky/compare/v2.0.1...v2.0.2",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/ky/2.0.2",
       "sourceLinks": [
         {
@@ -1599,7 +1599,7 @@
       "oldVersion": "6.0.0-dev.20260416",
       "newVersion": "6.0.3",
       "releaseDate": "2026-04-16",
-      "publishedAgo": "published 44 days ago",
+      "publishedAgo": "published 45 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -1614,7 +1614,7 @@
       "githubReleaseTag": "v6.0.3",
       "githubReleasePublishedAt": "2026-04-16T23:43:08Z",
       "releaseNotesExcerpt": "For release notes, check out the release announcement blog post. fixed issues query for TypeScript 6.0.0 (Beta). fixed issues query for TypeScript 6.0.1 (RC). fixed issues query for TypeScript 6.0.2 (Stable). fixed issues query for TypeScript 6.0.3 (Stable). Downloads are availab",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/typescript/6.0.3",
       "sourceLinks": [
         {
@@ -1654,7 +1654,7 @@
       "githubReleaseTag": "3.8.3",
       "githubReleasePublishedAt": "2026-04-15T01:00:35Z",
       "releaseNotesExcerpt": "SCSS: Prevent trailing comma in if() function (https://github.com/prettier/prettier/pull/18471 by @kovsu) Changelog",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/prettier/3.8.3",
       "sourceLinks": [
         {
@@ -1694,7 +1694,7 @@
       "githubReleaseTag": "4.18.1",
       "githubReleasePublishedAt": "2026-04-01T21:01:28Z",
       "releaseNotesExcerpt": "Bugs Fixes a ReferenceError issue in lodash lodash-es lodash-amd and lodash.template when using the template and fromPairs functions from the modular builds. See https://github.com/lodash/lodash/issues/6167#issuecomment-4165269769 These defects were related to how lodash distribu",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/lodash/4.18.1",
       "sourceLinks": [
         {
@@ -1734,7 +1734,7 @@
       "githubReleaseTag": "v4.6.3",
       "githubReleasePublishedAt": "2026-03-11T18:12:18Z",
       "releaseNotesExcerpt": "Changes See CHANGELOG.md for details. Installation",
-      "releaseNotesStatus": "Using latest GitHub release because no exact version tag matched. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Using latest GitHub release because no exact version tag matched.",
       "route": "/package/less/4.6.4",
       "sourceLinks": [
         {
@@ -1774,7 +1774,7 @@
       "githubReleaseTag": "v2.4.0",
       "githubReleasePublishedAt": "2026-02-01T03:02:37Z",
       "releaseNotesExcerpt": "What's Changed chore: Migrate suspense related tests to e2e by @promer94 in https://github.com/vercel/swr/pull/4204 CI: add missing flag for canary test by @promer94 in https://github.com/vercel/swr/pull/4206 fix: Ensure useSWRImmutable overrides global refreshInterval by @CODEAb",
-      "releaseNotesStatus": "Using latest GitHub release because no exact version tag matched. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Using latest GitHub release because no exact version tag matched.",
       "route": "/package/swr/2.4.1",
       "sourceLinks": [
         {
@@ -1886,7 +1886,7 @@
       "githubReleaseTag": "v0.7.1",
       "githubReleasePublishedAt": "2024-11-26T08:20:39Z",
       "releaseNotesExcerpt": "What's Changed Add LICENSE Comments by @joe-bell in https://github.com/joe-bell/cva/pull/283 chore: move clsx dependency to caret/semver range by @philwolstenholme in https://github.com/joe-bell/cva/pull/316 New Contributors @philwolstenholme made their first contribution in http",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/class-variance-authority/0.7.1",
       "sourceLinks": [
         {
@@ -1926,7 +1926,7 @@
       "githubReleaseTag": "v2.1.1",
       "githubReleasePublishedAt": "2024-04-23T05:29:52Z",
       "releaseNotesExcerpt": "Patches (types) Include bigint in ClassValue type: (#96): 3d960ab _Accommodates recent @types/react changes to ReactNode._ _Thank you @ViliamKopecky~!_ Chores Add licenses.dev badge: 684509c _This service recursively analyzes entire dependency graphs to ensure that a package (or ",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/clsx/2.1.1",
       "sourceLinks": [
         {
@@ -2002,7 +2002,7 @@
       "githubReleaseTag": "v5.0.1",
       "githubReleasePublishedAt": "2023-12-23T16:54:41Z",
       "releaseNotesExcerpt": "This **patch release** adjusts the isPlainObject util to allow objects created via Object.create(null), and fixes a type issue which accidentally made the store state type non-nullable. What's Changed fix(isPlainObject): support check Object.create(null) by @zhe-he in https://git",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/redux/5.0.1",
       "sourceLinks": [
         {
