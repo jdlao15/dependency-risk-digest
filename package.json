@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "generate:digest": "node scripts/generate-digest.mjs",
-    "refresh": "npm run generate:digest && npm run build",
+    "generate:seo": "node scripts/generate-static-seo.mjs",
+    "refresh": "npm run generate:digest && npm run generate:seo && npm run build",
     "build": "tsc -b && vite build",
     "preview": "vite preview --host 127.0.0.1"
   },

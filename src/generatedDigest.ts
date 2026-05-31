@@ -1,6 +1,6 @@
 import type { ReleaseItem, SeoRoute, WeeklyDigest } from "./types";
 
-export const generatedAt = "2026-05-31T22:20:22.817Z";
+export const generatedAt = "2026-05-31T23:31:38.505Z";
 export const generationFailures = [];
 export const weeklyDigest: WeeklyDigest = {
   "week": "Week 23, 2026",
@@ -485,7 +485,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.3.0",
     "newVersion": "4.4.0",
     "releaseDate": "2026-05-29",
-    "publishedAgo": "published 1 day ago",
+    "publishedAgo": "published 2 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -2344,6 +2344,11 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "path": "/risk/review",
     "title": "Frontend Package Updates To Review",
     "description": "Minor version frontend npm releases that are not urgent but should be reviewed before routine updates."
+  },
+  "/sponsor": {
+    "path": "/sponsor",
+    "title": "Sponsor Dependency Risk Digest",
+    "description": "Manual sponsorship inquiries for reaching frontend developers reviewing npm dependency risk."
   },
   "/package/react": {
     "path": "/package/react",

@@ -197,6 +197,42 @@ p {
   font-size: 0.86rem;
 }
 
+.hero-actions,
+.sponsor-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.hero-actions button,
+.hero-actions a,
+.sponsor-actions a,
+.sponsor-actions button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 14px;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.hero-actions button,
+.sponsor-actions a {
+  color: #ffffff;
+  background: #0f172a;
+  border: 1px solid #0f172a;
+}
+
+.hero-actions a,
+.sponsor-actions button {
+  color: #0057d8;
+  background: #ffffff;
+  border: 1px solid #bdd4f4;
+}
+
 .metrics-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(100px, 1fr));
@@ -765,6 +801,77 @@ td small,
   font-size: 1.2rem;
 }
 
+.sponsor-page {
+  display: grid;
+  gap: 28px;
+  padding: 44px 32px 58px;
+  background: #ffffff;
+}
+
+.sponsor-hero {
+  max-width: 850px;
+}
+
+.eyebrow {
+  margin-bottom: 12px;
+  color: #c81717;
+  font-size: 0.82rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.sponsor-hero h1 {
+  color: #0d1420;
+  font-size: clamp(2.1rem, 5vw, 3.8rem);
+  line-height: 1.02;
+}
+
+.sponsor-hero p {
+  max-width: 760px;
+  margin-top: 16px;
+  color: #40516a;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.sponsor-grid section {
+  min-width: 0;
+  padding: 20px;
+  background: #f7f9fc;
+  border: 1px solid #dce3ee;
+  border-radius: 8px;
+}
+
+.sponsor-grid h2 {
+  margin-bottom: 10px;
+  color: #121a28;
+  font-size: 1.12rem;
+}
+
+.sponsor-grid p,
+.sponsor-note span {
+  color: #40516a;
+  line-height: 1.55;
+}
+
+.sponsor-note {
+  display: grid;
+  gap: 6px;
+  max-width: 860px;
+  padding-top: 8px;
+  border-top: 1px solid #dce3ee;
+}
+
+.sponsor-note strong {
+  color: #101827;
+}
+
 @media (max-width: 1120px) {
   .site-header {
     grid-template-columns: 1fr;
@@ -841,7 +948,8 @@ td small,
 
   .mini-table button,
   .archive-row,
-  .package-summary-grid {
+  .package-summary-grid,
+  .sponsor-grid {
     grid-template-columns: 1fr;
   }
 

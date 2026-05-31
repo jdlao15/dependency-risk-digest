@@ -11,6 +11,17 @@ const riskLabels: Record<RiskLevel, string> = {
 };
 
 const riskOrder: RiskLevel[] = ["critical", "security", "breaking", "review", "low"];
+const sponsorIssueTitle = "Sponsor inquiry for Dependency Risk Digest";
+const sponsorIssueBody = [
+  "Company/project:",
+  "Audience you want to reach:",
+  "Budget range:",
+  "Preferred placement: weekly digest slot / package page mention / other",
+  "Notes:",
+].join("\n");
+const sponsorIssueUrl = `https://github.com/jdlao15/dependency-risk-digest/issues/new?title=${encodeURIComponent(
+  sponsorIssueTitle,
+)}&body=${encodeURIComponent(sponsorIssueBody)}`;
 
 function getInitialPath() {
   return window.location.pathname === "/" ? "/weekly" : window.location.pathname;
@@ -76,8 +87,10 @@ function App() {
     <div className="app-shell">
       <Header path={path} navigate={navigate} query={query} setQuery={setQuery} />
       <main>
-        <Hero />
-        {pageMode.kind === "package" ? (
+        <Hero navigate={navigate} />
+        {pageMode.kind === "sponsor" ? (
+          <SponsorPage navigate={navigate} />
+        ) : pageMode.kind === "package" ? (
           <PackagePage navigate={navigate} slug={pageMode.slug} />
         ) : (
           <ArchivePage
@@ -117,6 +130,7 @@ function Header({
     ["/risk/security", "/risk/security"],
     ["/risk/breaking", "/risk/breaking"],
     ["/risk/review", "/risk/review"],
+    ["/sponsor", "/sponsor"],
   ];
 
   return (
@@ -152,7 +166,7 @@ function Header({
   );
 }
 
-function Hero() {
+function Hero({ navigate }: { navigate: (path: string) => void }) {
   return (
     <section className="hero-section">
       <div className="hero-copy">
@@ -170,6 +184,14 @@ function Hero() {
           {formatDate(generatedAt.slice(0, 10))}
           {generationFailures.length > 0 ? `; ${generationFailures.length} packages skipped` : ""}.
         </p>
+        <div className="hero-actions" aria-label="Digest actions">
+          <button type="button" onClick={() => navigate("/sponsor")}>
+            Sponsor this digest
+          </button>
+          <a href={sponsorIssueUrl} target="_blank" rel="noreferrer">
+            Start inquiry
+          </a>
+        </div>
         <div className="metrics-grid" aria-label="Weekly summary">
           <Metric value={weeklyDigest.risky} label="Risky Updates" note="review recommended" tone="red" />
           <Metric value={weeklyDigest.breaking} label="Breaking Changes" note="potentially disruptive" tone="orange" />
@@ -298,6 +320,7 @@ function ArchivePage(props: {
         <button type="button" onClick={() => navigate("/risk/security")}>/risk/security</button>
         <button type="button" onClick={() => navigate("/risk/breaking")}>/risk/breaking</button>
         <button type="button" onClick={() => navigate("/risk/review")}>/risk/review</button>
+        <button type="button" onClick={() => navigate("/sponsor")}>/sponsor</button>
       </section>
     </>
   );
@@ -523,11 +546,69 @@ function PackagePage({ navigate, slug }: { navigate: (path: string) => void; slu
   );
 }
 
+function SponsorPage({ navigate }: { navigate: (path: string) => void }) {
+  return (
+    <section className="sponsor-page">
+      <div className="sponsor-hero">
+        <p className="eyebrow">Manual sponsorship inquiries</p>
+        <h1>Sponsor Dependency Risk Digest</h1>
+        <p>
+          Reach frontend developers and small teams who are actively reviewing npm
+          dependency risk before they update production apps.
+        </p>
+        <div className="sponsor-actions">
+          <a href={sponsorIssueUrl} target="_blank" rel="noreferrer">
+            Start sponsorship inquiry
+          </a>
+          <button type="button" onClick={() => navigate("/weekly")}>
+            View latest digest
+          </button>
+        </div>
+      </div>
+      <div className="sponsor-grid">
+        <section>
+          <h2>Current Offer</h2>
+          <p>
+            Early sponsors can request a weekly digest placement or a package-page
+            mention. Pricing is handled manually while demand is being validated.
+          </p>
+        </section>
+        <section>
+          <h2>Audience</h2>
+          <p>
+            Frontend engineers, indie SaaS builders, and small teams checking
+            security, breaking-change, and review signals for common npm packages.
+          </p>
+        </section>
+        <section>
+          <h2>Why This Matters</h2>
+          <p>
+            The digest is built around package risk, release notes, OSV results,
+            and recommended action, so sponsor interest is tested inside the
+            workflow visitors came to inspect.
+          </p>
+        </section>
+      </div>
+      <div className="sponsor-note">
+        <strong>No automated checkout is enabled yet.</strong>
+        <span>
+          Sponsorship is being validated first through direct inquiry, so the
+          project can bring in money before adding paid tools.
+        </span>
+      </div>
+    </section>
+  );
+}
+
 function getPageMode(path: string):
   | { kind: "weekly"; title: string }
   | { kind: "risk"; title: string; risk: RiskLevel }
   | { kind: "package"; title: string; slug: string }
+  | { kind: "sponsor"; title: string }
   | { kind: "release"; title: string } {
+  if (path === "/sponsor") {
+    return { kind: "sponsor", title: "Sponsor Dependency Risk Digest" };
+  }
   if (path === "/risk/security") {
     return { kind: "risk", title: "Security-Relevant Releases", risk: "security" };
   }

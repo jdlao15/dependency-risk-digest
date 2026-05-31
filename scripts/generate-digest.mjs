@@ -376,6 +376,11 @@ function buildSeoRoutes(items, routeMap, digest) {
       title: "Frontend Package Updates To Review",
       description: "Minor version frontend npm releases that are not urgent but should be reviewed before routine updates.",
     },
+    "/sponsor": {
+      path: "/sponsor",
+      title: "Sponsor Dependency Risk Digest",
+      description: "Manual sponsorship inquiries for reaching frontend developers reviewing npm dependency risk.",
+    },
   };
 
   for (const route of Object.values(routeMap)) {

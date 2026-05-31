@@ -28,6 +28,8 @@ One-command refresh:
 npm run refresh
 ```
 
+`npm run refresh` regenerates digest data, writes static SEO files, and builds the app.
+
 ## Environment
 
 Set `GITHUB_TOKEN` as a user or deployment environment variable. Do not commit the real token.
@@ -42,6 +44,12 @@ The token only needs access sufficient to read public release data. Fine-grained
 ## Deployment Notes
 
 The included `vercel.json` builds with `npm run refresh`, outputs `dist`, and rewrites all archive routes to `index.html` so routes such as `/weekly`, `/package/react`, and `/risk/breaking` work on static hosting.
+
+Static SEO assets are generated into `public/sitemap.xml` and `public/robots.txt`.
+
+## Free Validation Phase
+
+V1 stays public and free while demand is tested. The `/sponsor` page uses manual GitHub issue inquiries instead of paid checkout, email tooling, subscriptions, or a paid analytics stack.
 
 The next external steps are:
 

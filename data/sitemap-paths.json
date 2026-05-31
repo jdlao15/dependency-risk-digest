@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-31T22:20:22.817Z",
+  "generatedAt": "2026-05-31T23:31:38.505Z",
   "paths": [
     "/package/autoprefixer",
     "/package/autoprefixer/10.5.0",
@@ -104,6 +104,7 @@
     "/risk/breaking",
     "/risk/review",
     "/risk/security",
+    "/sponsor",
     "/weekly"
   ]
 }
