@@ -1,6 +1,6 @@
-import type { ReleaseItem, WeeklyDigest } from "./types";
+import type { ReleaseItem, SeoRoute, WeeklyDigest } from "./types";
 
-export const generatedAt = "2026-05-31T18:17:59.852Z";
+export const generatedAt = "2026-05-31T19:55:11.109Z";
 export const generationFailures = [];
 export const weeklyDigest: WeeklyDigest = {
   "week": "Week 23, 2026",
@@ -59,6 +59,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "Review changes before updating. Test in staging before merging.",
     "whatChanged": "Major pnpm 11.5.0 release detected; review changelog before updating.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/pnpm/11.5.0",
     "sourceLinks": [
       {
@@ -89,6 +95,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "Review changes before updating. Test in staging before merging.",
     "whatChanged": "Major ws 8.21.0 release detected; review changelog before updating.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/ws/8.21.0",
     "sourceLinks": [
       {
@@ -119,6 +131,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Test suites, browser automation, and release validation workflows.",
     "recommendedAction": "Review changes before updating. Test in staging before merging.",
     "whatChanged": "Major vitest 4.1.7 release detected; review changelog before updating.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/vitest/4.1.7",
     "sourceLinks": [
       {
@@ -149,6 +167,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "Review changes before updating. Test in staging before merging.",
     "whatChanged": "Major styled-components 6.4.2 release detected; review changelog before updating.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/styled-components/6.4.2",
     "sourceLinks": [
       {
@@ -179,6 +203,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "Review changes before updating. Test in staging before merging.",
     "whatChanged": "Major axios 1.16.1 release detected; review changelog before updating.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/axios/1.16.1",
     "sourceLinks": [
       {
@@ -209,6 +239,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "Review changes before updating. Test in staging before merging.",
     "whatChanged": "Major tailwindcss 4.3.0 release detected; review changelog before updating.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/tailwindcss/4.3.0",
     "sourceLinks": [
       {
@@ -239,6 +275,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
     "recommendedAction": "Review changes before updating. Test in staging before merging.",
     "whatChanged": "Major react 19.2.6 release detected; review changelog before updating.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/react/19.2.6",
     "sourceLinks": [
       {
@@ -269,6 +311,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
     "recommendedAction": "Review changes before updating. Test in staging before merging.",
     "whatChanged": "Major react-dom 19.2.6 release detected; review changelog before updating.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/react-dom/19.2.6",
     "sourceLinks": [
       {
@@ -299,6 +347,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "Review changes before updating. Test in staging before merging.",
     "whatChanged": "Major minimist 1.2.8 release detected; review changelog before updating.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/minimist/1.2.8",
     "sourceLinks": [
       {
@@ -329,6 +383,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
     "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
     "whatChanged": "Minor react-hook-form 7.77.0 release detected; review if used in production paths.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/react-hook-form/7.77.0",
     "sourceLinks": [
       {
@@ -359,6 +419,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
     "whatChanged": "Minor date-fns 4.4.0 release detected; review if used in production paths.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/date-fns/4.4.0",
     "sourceLinks": [
       {
@@ -379,7 +445,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.15.1",
     "newVersion": "7.16.0",
     "releaseDate": "2026-05-28",
-    "publishedAgo": "published 2 days ago",
+    "publishedAgo": "published 3 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -389,6 +455,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
     "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
     "whatChanged": "Minor react-router-dom 7.16.0 release detected; review if used in production paths.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/react-router-dom/7.16.0",
     "sourceLinks": [
       {
@@ -419,6 +491,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Test suites, browser automation, and release validation workflows.",
     "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
     "whatChanged": "Minor cypress 15.16.0 release detected; review if used in production paths.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/cypress/15.16.0",
     "sourceLinks": [
       {
@@ -449,6 +527,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
     "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
     "whatChanged": "Minor @storybook/react 10.4.1 release detected; review if used in production paths.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/storybook-react/10.4.1",
     "sourceLinks": [
       {
@@ -479,6 +563,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
     "whatChanged": "Minor storybook 10.4.1 release detected; review if used in production paths.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/storybook/10.4.1",
     "sourceLinks": [
       {
@@ -509,6 +599,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
     "whatChanged": "Minor sass 1.100.0 release detected; review if used in production paths.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/sass/1.100.0",
     "sourceLinks": [
       {
@@ -539,6 +635,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
     "whatChanged": "Minor framer-motion 12.40.0 release detected; review if used in production paths.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/framer-motion/12.40.0",
     "sourceLinks": [
       {
@@ -569,6 +671,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
     "whatChanged": "Minor @reduxjs/toolkit 2.12.0 release detected; review if used in production paths.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/reduxjs-toolkit/2.12.0",
     "sourceLinks": [
       {
@@ -589,7 +697,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "16.3.0-canary.14",
     "newVersion": "16.2.6",
     "releaseDate": "2026-05-07",
-    "publishedAgo": "published 23 days ago",
+    "publishedAgo": "published 24 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -599,6 +707,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
     "whatChanged": "Minor next 16.2.6 release detected; review if used in production paths.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/next/16.2.6",
     "sourceLinks": [
       {
@@ -629,6 +743,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
     "whatChanged": "Minor zod 4.4.3 release detected; review if used in production paths.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/zod/4.4.3",
     "sourceLinks": [
       {
@@ -659,6 +779,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
     "whatChanged": "Minor autoprefixer 10.5.0 release detected; review if used in production paths.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/autoprefixer/10.5.0",
     "sourceLinks": [
       {
@@ -689,6 +815,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
     "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
     "whatChanged": "Minor esbuild 0.28.0 release detected; review if used in production paths.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/esbuild/0.28.0",
     "sourceLinks": [
       {
@@ -719,6 +851,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
     "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
     "whatChanged": "Minor @emotion/react 11.14.0 release detected; review if used in production paths.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/emotion-react/11.14.0",
     "sourceLinks": [
       {
@@ -749,6 +887,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Developer tooling, type checking, and code-quality gates.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch eslint 10.4.1 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/eslint/10.4.1",
     "sourceLinks": [
       {
@@ -779,6 +923,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch zustand 5.0.14 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/zustand/5.0.14",
     "sourceLinks": [
       {
@@ -809,6 +959,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch turbo 2.9.16 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/turbo/2.9.16",
     "sourceLinks": [
       {
@@ -839,6 +995,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch dayjs 1.11.21 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/dayjs/1.11.21",
     "sourceLinks": [
       {
@@ -869,6 +1031,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch webpack 5.107.2 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/webpack/5.107.2",
     "sourceLinks": [
       {
@@ -899,6 +1067,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch @tanstack/react-query 5.100.14 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/tanstack-react-query/5.100.14",
     "sourceLinks": [
       {
@@ -929,6 +1103,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch vite 8.0.14 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/vite/8.0.14",
     "sourceLinks": [
       {
@@ -949,7 +1129,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.8.0",
     "newVersion": "7.8.1",
     "releaseDate": "2026-05-21",
-    "publishedAgo": "published 9 days ago",
+    "publishedAgo": "published 10 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -959,6 +1139,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch semver 7.8.1 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/semver/7.8.1",
     "sourceLinks": [
       {
@@ -989,6 +1175,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch postcss 8.5.15 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/postcss/8.5.15",
     "sourceLinks": [
       {
@@ -1019,6 +1211,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch @vitejs/plugin-react 6.0.2 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/vitejs-plugin-react/6.0.2",
     "sourceLinks": [
       {
@@ -1049,6 +1247,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch rollup 4.60.4 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/rollup/4.60.4",
     "sourceLinks": [
       {
@@ -1069,7 +1273,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.60.0-beta-1778518825000",
     "newVersion": "1.60.0",
     "releaseDate": "2026-05-11",
-    "publishedAgo": "published 19 days ago",
+    "publishedAgo": "published 20 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -1079,6 +1283,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Test suites, browser automation, and release validation workflows.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch playwright 1.60.0 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/playwright/1.60.0",
     "sourceLinks": [
       {
@@ -1109,6 +1319,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch tailwind-merge 3.6.0 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/tailwind-merge/3.6.0",
     "sourceLinks": [
       {
@@ -1139,6 +1355,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Test suites, browser automation, and release validation workflows.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch jest 30.4.2 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/jest/30.4.2",
     "sourceLinks": [
       {
@@ -1169,6 +1391,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch ky 2.0.2 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/ky/2.0.2",
     "sourceLinks": [
       {
@@ -1199,6 +1427,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Developer tooling, type checking, and code-quality gates.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch typescript 6.0.3 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/typescript/6.0.3",
     "sourceLinks": [
       {
@@ -1229,6 +1463,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Developer tooling, type checking, and code-quality gates.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch prettier 3.8.3 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/prettier/3.8.3",
     "sourceLinks": [
       {
@@ -1259,6 +1499,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch lodash 4.18.1 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/lodash/4.18.1",
     "sourceLinks": [
       {
@@ -1289,6 +1535,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch less 4.6.4 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/less/4.6.4",
     "sourceLinks": [
       {
@@ -1319,6 +1571,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch swr 2.4.1 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/swr/2.4.1",
     "sourceLinks": [
       {
@@ -1349,6 +1607,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch @radix-ui/react-dialog 1.1.15 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/radix-ui-react-dialog/1.1.15",
     "sourceLinks": [
       {
@@ -1379,6 +1643,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch @radix-ui/react-popover 1.1.15 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/radix-ui-react-popover/1.1.15",
     "sourceLinks": [
       {
@@ -1409,6 +1679,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch class-variance-authority 0.7.1 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/class-variance-authority/0.7.1",
     "sourceLinks": [
       {
@@ -1439,6 +1715,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch clsx 2.1.1 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/clsx/2.1.1",
     "sourceLinks": [
       {
@@ -1469,6 +1751,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch classnames 2.5.1 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/classnames/2.5.1",
     "sourceLinks": [
       {
@@ -1499,6 +1787,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch redux 5.0.1 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/redux/5.0.1",
     "sourceLinks": [
       {
@@ -1529,6 +1823,12 @@ export const releases: ReleaseItem[] = [
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
     "whatChanged": "Patch npm-run-all 4.1.5 release detected with no OSV match.",
+    "githubReleaseTitle": "",
+    "githubReleaseUrl": "",
+    "githubReleaseTag": "",
+    "githubReleasePublishedAt": "",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "GitHub public API rate limit reached; add GITHUB_TOKEN for higher limits.",
     "route": "/package/npm-run-all/4.1.5",
     "sourceLinks": [
       {
@@ -1842,5 +2142,527 @@ export const packageRoutes = {
     "description": "Package manager",
     "route": "/package/pnpm",
     "latestReleaseRoute": "/package/pnpm/11.5.0"
+  }
+};
+export const seoRoutes: Record<string, SeoRoute> = {
+  "/weekly": {
+    "path": "/weekly",
+    "title": "Week 23, 2026 Frontend Dependency Risk Digest",
+    "description": "23 risky updates, 9 breaking changes, and 0 security-relevant releases from 50 tracked frontend npm packages."
+  },
+  "/risk/security": {
+    "path": "/risk/security",
+    "title": "Security-Relevant Frontend Package Releases",
+    "description": "Frontend npm releases with OSV, CVE, or GitHub release-note security signals."
+  },
+  "/risk/breaking": {
+    "path": "/risk/breaking",
+    "title": "Breaking Frontend Package Releases",
+    "description": "Major version frontend npm releases that deserve review before updating."
+  },
+  "/risk/review": {
+    "path": "/risk/review",
+    "title": "Frontend Package Updates To Review",
+    "description": "Minor version frontend npm releases that are not urgent but should be reviewed before routine updates."
+  },
+  "/package/react": {
+    "path": "/package/react",
+    "title": "react dependency risk archive",
+    "description": "react release-risk history for frontend teams. UI library"
+  },
+  "/package/react-dom": {
+    "path": "/package/react-dom",
+    "title": "react-dom dependency risk archive",
+    "description": "react-dom release-risk history for frontend teams. React DOM rendering"
+  },
+  "/package/next": {
+    "path": "/package/next",
+    "title": "next dependency risk archive",
+    "description": "next release-risk history for frontend teams. React framework"
+  },
+  "/package/vite": {
+    "path": "/package/vite",
+    "title": "vite dependency risk archive",
+    "description": "vite release-risk history for frontend teams. Frontend build tooling"
+  },
+  "/package/typescript": {
+    "path": "/package/typescript",
+    "title": "typescript dependency risk archive",
+    "description": "typescript release-risk history for frontend teams. Typed JavaScript compiler"
+  },
+  "/package/eslint": {
+    "path": "/package/eslint",
+    "title": "eslint dependency risk archive",
+    "description": "eslint release-risk history for frontend teams. JavaScript linting"
+  },
+  "/package/tailwindcss": {
+    "path": "/package/tailwindcss",
+    "title": "tailwindcss dependency risk archive",
+    "description": "tailwindcss release-risk history for frontend teams. Utility-first CSS"
+  },
+  "/package/postcss": {
+    "path": "/package/postcss",
+    "title": "postcss dependency risk archive",
+    "description": "postcss release-risk history for frontend teams. CSS transformation"
+  },
+  "/package/autoprefixer": {
+    "path": "/package/autoprefixer",
+    "title": "autoprefixer dependency risk archive",
+    "description": "autoprefixer release-risk history for frontend teams. CSS vendor prefixing"
+  },
+  "/package/vitejs-plugin-react": {
+    "path": "/package/vitejs-plugin-react",
+    "title": "@vitejs/plugin-react dependency risk archive",
+    "description": "@vitejs/plugin-react release-risk history for frontend teams. Vite React plugin"
+  },
+  "/package/react-router-dom": {
+    "path": "/package/react-router-dom",
+    "title": "react-router-dom dependency risk archive",
+    "description": "react-router-dom release-risk history for frontend teams. Declarative routing for React"
+  },
+  "/package/tanstack-react-query": {
+    "path": "/package/tanstack-react-query",
+    "title": "@tanstack/react-query dependency risk archive",
+    "description": "@tanstack/react-query release-risk history for frontend teams. Data fetching for React"
+  },
+  "/package/zustand": {
+    "path": "/package/zustand",
+    "title": "zustand dependency risk archive",
+    "description": "zustand release-risk history for frontend teams. React state management"
+  },
+  "/package/redux": {
+    "path": "/package/redux",
+    "title": "redux dependency risk archive",
+    "description": "redux release-risk history for frontend teams. State container"
+  },
+  "/package/reduxjs-toolkit": {
+    "path": "/package/reduxjs-toolkit",
+    "title": "@reduxjs/toolkit dependency risk archive",
+    "description": "@reduxjs/toolkit release-risk history for frontend teams. Redux application toolkit"
+  },
+  "/package/react-hook-form": {
+    "path": "/package/react-hook-form",
+    "title": "react-hook-form dependency risk archive",
+    "description": "react-hook-form release-risk history for frontend teams. React form state"
+  },
+  "/package/zod": {
+    "path": "/package/zod",
+    "title": "zod dependency risk archive",
+    "description": "zod release-risk history for frontend teams. Schema validation"
+  },
+  "/package/axios": {
+    "path": "/package/axios",
+    "title": "axios dependency risk archive",
+    "description": "axios release-risk history for frontend teams. HTTP client"
+  },
+  "/package/ky": {
+    "path": "/package/ky",
+    "title": "ky dependency risk archive",
+    "description": "ky release-risk history for frontend teams. Fetch client"
+  },
+  "/package/swr": {
+    "path": "/package/swr",
+    "title": "swr dependency risk archive",
+    "description": "swr release-risk history for frontend teams. React data fetching"
+  },
+  "/package/webpack": {
+    "path": "/package/webpack",
+    "title": "webpack dependency risk archive",
+    "description": "webpack release-risk history for frontend teams. JavaScript bundler"
+  },
+  "/package/rollup": {
+    "path": "/package/rollup",
+    "title": "rollup dependency risk archive",
+    "description": "rollup release-risk history for frontend teams. Module bundler"
+  },
+  "/package/esbuild": {
+    "path": "/package/esbuild",
+    "title": "esbuild dependency risk archive",
+    "description": "esbuild release-risk history for frontend teams. JavaScript bundler"
+  },
+  "/package/turbo": {
+    "path": "/package/turbo",
+    "title": "turbo dependency risk archive",
+    "description": "turbo release-risk history for frontend teams. Monorepo build system"
+  },
+  "/package/prettier": {
+    "path": "/package/prettier",
+    "title": "prettier dependency risk archive",
+    "description": "prettier release-risk history for frontend teams. Code formatter"
+  },
+  "/package/vitest": {
+    "path": "/package/vitest",
+    "title": "vitest dependency risk archive",
+    "description": "vitest release-risk history for frontend teams. Vite-native testing"
+  },
+  "/package/jest": {
+    "path": "/package/jest",
+    "title": "jest dependency risk archive",
+    "description": "jest release-risk history for frontend teams. JavaScript testing"
+  },
+  "/package/cypress": {
+    "path": "/package/cypress",
+    "title": "cypress dependency risk archive",
+    "description": "cypress release-risk history for frontend teams. Browser testing"
+  },
+  "/package/playwright": {
+    "path": "/package/playwright",
+    "title": "playwright dependency risk archive",
+    "description": "playwright release-risk history for frontend teams. Browser automation"
+  },
+  "/package/storybook-react": {
+    "path": "/package/storybook-react",
+    "title": "@storybook/react dependency risk archive",
+    "description": "@storybook/react release-risk history for frontend teams. React component workshop"
+  },
+  "/package/storybook": {
+    "path": "/package/storybook",
+    "title": "storybook dependency risk archive",
+    "description": "storybook release-risk history for frontend teams. Component documentation"
+  },
+  "/package/sass": {
+    "path": "/package/sass",
+    "title": "sass dependency risk archive",
+    "description": "sass release-risk history for frontend teams. CSS preprocessor"
+  },
+  "/package/less": {
+    "path": "/package/less",
+    "title": "less dependency risk archive",
+    "description": "less release-risk history for frontend teams. CSS preprocessor"
+  },
+  "/package/styled-components": {
+    "path": "/package/styled-components",
+    "title": "styled-components dependency risk archive",
+    "description": "styled-components release-risk history for frontend teams. CSS-in-JS styling"
+  },
+  "/package/emotion-react": {
+    "path": "/package/emotion-react",
+    "title": "@emotion/react dependency risk archive",
+    "description": "@emotion/react release-risk history for frontend teams. CSS-in-JS styling"
+  },
+  "/package/framer-motion": {
+    "path": "/package/framer-motion",
+    "title": "framer-motion dependency risk archive",
+    "description": "framer-motion release-risk history for frontend teams. React motion library"
+  },
+  "/package/lodash": {
+    "path": "/package/lodash",
+    "title": "lodash dependency risk archive",
+    "description": "lodash release-risk history for frontend teams. Utility library"
+  },
+  "/package/date-fns": {
+    "path": "/package/date-fns",
+    "title": "date-fns dependency risk archive",
+    "description": "date-fns release-risk history for frontend teams. Date utilities"
+  },
+  "/package/dayjs": {
+    "path": "/package/dayjs",
+    "title": "dayjs dependency risk archive",
+    "description": "dayjs release-risk history for frontend teams. Date utilities"
+  },
+  "/package/clsx": {
+    "path": "/package/clsx",
+    "title": "clsx dependency risk archive",
+    "description": "clsx release-risk history for frontend teams. Class name utility"
+  },
+  "/package/classnames": {
+    "path": "/package/classnames",
+    "title": "classnames dependency risk archive",
+    "description": "classnames release-risk history for frontend teams. Class name utility"
+  },
+  "/package/radix-ui-react-dialog": {
+    "path": "/package/radix-ui-react-dialog",
+    "title": "@radix-ui/react-dialog dependency risk archive",
+    "description": "@radix-ui/react-dialog release-risk history for frontend teams. Accessible dialog primitive"
+  },
+  "/package/radix-ui-react-popover": {
+    "path": "/package/radix-ui-react-popover",
+    "title": "@radix-ui/react-popover dependency risk archive",
+    "description": "@radix-ui/react-popover release-risk history for frontend teams. Accessible popover primitive"
+  },
+  "/package/tailwind-merge": {
+    "path": "/package/tailwind-merge",
+    "title": "tailwind-merge dependency risk archive",
+    "description": "tailwind-merge release-risk history for frontend teams. Tailwind class merging"
+  },
+  "/package/class-variance-authority": {
+    "path": "/package/class-variance-authority",
+    "title": "class-variance-authority dependency risk archive",
+    "description": "class-variance-authority release-risk history for frontend teams. Variant class composition"
+  },
+  "/package/minimist": {
+    "path": "/package/minimist",
+    "title": "minimist dependency risk archive",
+    "description": "minimist release-risk history for frontend teams. CLI argument parsing"
+  },
+  "/package/ws": {
+    "path": "/package/ws",
+    "title": "ws dependency risk archive",
+    "description": "ws release-risk history for frontend teams. WebSocket implementation"
+  },
+  "/package/semver": {
+    "path": "/package/semver",
+    "title": "semver dependency risk archive",
+    "description": "semver release-risk history for frontend teams. Semantic version parsing"
+  },
+  "/package/npm-run-all": {
+    "path": "/package/npm-run-all",
+    "title": "npm-run-all dependency risk archive",
+    "description": "npm-run-all release-risk history for frontend teams. Script runner"
+  },
+  "/package/pnpm": {
+    "path": "/package/pnpm",
+    "title": "pnpm dependency risk archive",
+    "description": "pnpm release-risk history for frontend teams. Package manager"
+  },
+  "/package/pnpm/11.5.0": {
+    "path": "/package/pnpm/11.5.0",
+    "title": "pnpm 11.5.0 breaking update",
+    "description": "pnpm 11.5.0: Major version release detected. Recommended action: Review changes before updating. Test in staging before merging."
+  },
+  "/package/ws/8.21.0": {
+    "path": "/package/ws/8.21.0",
+    "title": "ws 8.21.0 breaking update",
+    "description": "ws 8.21.0: Major version release detected. Recommended action: Review changes before updating. Test in staging before merging."
+  },
+  "/package/vitest/4.1.7": {
+    "path": "/package/vitest/4.1.7",
+    "title": "vitest 4.1.7 breaking update",
+    "description": "vitest 4.1.7: Major version release detected. Recommended action: Review changes before updating. Test in staging before merging."
+  },
+  "/package/styled-components/6.4.2": {
+    "path": "/package/styled-components/6.4.2",
+    "title": "styled-components 6.4.2 breaking update",
+    "description": "styled-components 6.4.2: Major version release detected. Recommended action: Review changes before updating. Test in staging before merging."
+  },
+  "/package/axios/1.16.1": {
+    "path": "/package/axios/1.16.1",
+    "title": "axios 1.16.1 breaking update",
+    "description": "axios 1.16.1: Major version release detected. Recommended action: Review changes before updating. Test in staging before merging."
+  },
+  "/package/tailwindcss/4.3.0": {
+    "path": "/package/tailwindcss/4.3.0",
+    "title": "tailwindcss 4.3.0 breaking update",
+    "description": "tailwindcss 4.3.0: Major version release detected. Recommended action: Review changes before updating. Test in staging before merging."
+  },
+  "/package/react/19.2.6": {
+    "path": "/package/react/19.2.6",
+    "title": "react 19.2.6 breaking update",
+    "description": "react 19.2.6: Major version release detected. Recommended action: Review changes before updating. Test in staging before merging."
+  },
+  "/package/react-dom/19.2.6": {
+    "path": "/package/react-dom/19.2.6",
+    "title": "react-dom 19.2.6 breaking update",
+    "description": "react-dom 19.2.6: Major version release detected. Recommended action: Review changes before updating. Test in staging before merging."
+  },
+  "/package/minimist/1.2.8": {
+    "path": "/package/minimist/1.2.8",
+    "title": "minimist 1.2.8 breaking update",
+    "description": "minimist 1.2.8: Major version release detected. Recommended action: Review changes before updating. Test in staging before merging."
+  },
+  "/package/react-hook-form/7.77.0": {
+    "path": "/package/react-hook-form/7.77.0",
+    "title": "react-hook-form 7.77.0 review update",
+    "description": "react-hook-form 7.77.0: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance."
+  },
+  "/package/date-fns/4.4.0": {
+    "path": "/package/date-fns/4.4.0",
+    "title": "date-fns 4.4.0 review update",
+    "description": "date-fns 4.4.0: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance."
+  },
+  "/package/react-router-dom/7.16.0": {
+    "path": "/package/react-router-dom/7.16.0",
+    "title": "react-router-dom 7.16.0 review update",
+    "description": "react-router-dom 7.16.0: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance."
+  },
+  "/package/cypress/15.16.0": {
+    "path": "/package/cypress/15.16.0",
+    "title": "cypress 15.16.0 review update",
+    "description": "cypress 15.16.0: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance."
+  },
+  "/package/storybook-react/10.4.1": {
+    "path": "/package/storybook-react/10.4.1",
+    "title": "@storybook/react 10.4.1 review update",
+    "description": "@storybook/react 10.4.1: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance."
+  },
+  "/package/storybook/10.4.1": {
+    "path": "/package/storybook/10.4.1",
+    "title": "storybook 10.4.1 review update",
+    "description": "storybook 10.4.1: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance."
+  },
+  "/package/sass/1.100.0": {
+    "path": "/package/sass/1.100.0",
+    "title": "sass 1.100.0 review update",
+    "description": "sass 1.100.0: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance."
+  },
+  "/package/framer-motion/12.40.0": {
+    "path": "/package/framer-motion/12.40.0",
+    "title": "framer-motion 12.40.0 review update",
+    "description": "framer-motion 12.40.0: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance."
+  },
+  "/package/reduxjs-toolkit/2.12.0": {
+    "path": "/package/reduxjs-toolkit/2.12.0",
+    "title": "@reduxjs/toolkit 2.12.0 review update",
+    "description": "@reduxjs/toolkit 2.12.0: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance."
+  },
+  "/package/next/16.2.6": {
+    "path": "/package/next/16.2.6",
+    "title": "next 16.2.6 review update",
+    "description": "next 16.2.6: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance."
+  },
+  "/package/zod/4.4.3": {
+    "path": "/package/zod/4.4.3",
+    "title": "zod 4.4.3 review update",
+    "description": "zod 4.4.3: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance."
+  },
+  "/package/autoprefixer/10.5.0": {
+    "path": "/package/autoprefixer/10.5.0",
+    "title": "autoprefixer 10.5.0 review update",
+    "description": "autoprefixer 10.5.0: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance."
+  },
+  "/package/esbuild/0.28.0": {
+    "path": "/package/esbuild/0.28.0",
+    "title": "esbuild 0.28.0 review update",
+    "description": "esbuild 0.28.0: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance."
+  },
+  "/package/emotion-react/11.14.0": {
+    "path": "/package/emotion-react/11.14.0",
+    "title": "@emotion/react 11.14.0 review update",
+    "description": "@emotion/react 11.14.0: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance."
+  },
+  "/package/eslint/10.4.1": {
+    "path": "/package/eslint/10.4.1",
+    "title": "eslint 10.4.1 low impact update",
+    "description": "eslint 10.4.1: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/zustand/5.0.14": {
+    "path": "/package/zustand/5.0.14",
+    "title": "zustand 5.0.14 low impact update",
+    "description": "zustand 5.0.14: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/turbo/2.9.16": {
+    "path": "/package/turbo/2.9.16",
+    "title": "turbo 2.9.16 low impact update",
+    "description": "turbo 2.9.16: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/dayjs/1.11.21": {
+    "path": "/package/dayjs/1.11.21",
+    "title": "dayjs 1.11.21 low impact update",
+    "description": "dayjs 1.11.21: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/webpack/5.107.2": {
+    "path": "/package/webpack/5.107.2",
+    "title": "webpack 5.107.2 low impact update",
+    "description": "webpack 5.107.2: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/tanstack-react-query/5.100.14": {
+    "path": "/package/tanstack-react-query/5.100.14",
+    "title": "@tanstack/react-query 5.100.14 low impact update",
+    "description": "@tanstack/react-query 5.100.14: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/vite/8.0.14": {
+    "path": "/package/vite/8.0.14",
+    "title": "vite 8.0.14 low impact update",
+    "description": "vite 8.0.14: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/semver/7.8.1": {
+    "path": "/package/semver/7.8.1",
+    "title": "semver 7.8.1 low impact update",
+    "description": "semver 7.8.1: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/postcss/8.5.15": {
+    "path": "/package/postcss/8.5.15",
+    "title": "postcss 8.5.15 low impact update",
+    "description": "postcss 8.5.15: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/vitejs-plugin-react/6.0.2": {
+    "path": "/package/vitejs-plugin-react/6.0.2",
+    "title": "@vitejs/plugin-react 6.0.2 low impact update",
+    "description": "@vitejs/plugin-react 6.0.2: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/rollup/4.60.4": {
+    "path": "/package/rollup/4.60.4",
+    "title": "rollup 4.60.4 low impact update",
+    "description": "rollup 4.60.4: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/playwright/1.60.0": {
+    "path": "/package/playwright/1.60.0",
+    "title": "playwright 1.60.0 low impact update",
+    "description": "playwright 1.60.0: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/tailwind-merge/3.6.0": {
+    "path": "/package/tailwind-merge/3.6.0",
+    "title": "tailwind-merge 3.6.0 low impact update",
+    "description": "tailwind-merge 3.6.0: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/jest/30.4.2": {
+    "path": "/package/jest/30.4.2",
+    "title": "jest 30.4.2 low impact update",
+    "description": "jest 30.4.2: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/ky/2.0.2": {
+    "path": "/package/ky/2.0.2",
+    "title": "ky 2.0.2 low impact update",
+    "description": "ky 2.0.2: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/typescript/6.0.3": {
+    "path": "/package/typescript/6.0.3",
+    "title": "typescript 6.0.3 low impact update",
+    "description": "typescript 6.0.3: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/prettier/3.8.3": {
+    "path": "/package/prettier/3.8.3",
+    "title": "prettier 3.8.3 low impact update",
+    "description": "prettier 3.8.3: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/lodash/4.18.1": {
+    "path": "/package/lodash/4.18.1",
+    "title": "lodash 4.18.1 low impact update",
+    "description": "lodash 4.18.1: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/less/4.6.4": {
+    "path": "/package/less/4.6.4",
+    "title": "less 4.6.4 low impact update",
+    "description": "less 4.6.4: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/swr/2.4.1": {
+    "path": "/package/swr/2.4.1",
+    "title": "swr 2.4.1 low impact update",
+    "description": "swr 2.4.1: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/radix-ui-react-dialog/1.1.15": {
+    "path": "/package/radix-ui-react-dialog/1.1.15",
+    "title": "@radix-ui/react-dialog 1.1.15 low impact update",
+    "description": "@radix-ui/react-dialog 1.1.15: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/radix-ui-react-popover/1.1.15": {
+    "path": "/package/radix-ui-react-popover/1.1.15",
+    "title": "@radix-ui/react-popover 1.1.15 low impact update",
+    "description": "@radix-ui/react-popover 1.1.15: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/class-variance-authority/0.7.1": {
+    "path": "/package/class-variance-authority/0.7.1",
+    "title": "class-variance-authority 0.7.1 low impact update",
+    "description": "class-variance-authority 0.7.1: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/clsx/2.1.1": {
+    "path": "/package/clsx/2.1.1",
+    "title": "clsx 2.1.1 low impact update",
+    "description": "clsx 2.1.1: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/classnames/2.5.1": {
+    "path": "/package/classnames/2.5.1",
+    "title": "classnames 2.5.1 low impact update",
+    "description": "classnames 2.5.1: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/redux/5.0.1": {
+    "path": "/package/redux/5.0.1",
+    "title": "redux 5.0.1 low impact update",
+    "description": "redux 5.0.1: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/npm-run-all/4.1.5": {
+    "path": "/package/npm-run-all/4.1.5",
+    "title": "npm-run-all 4.1.5 low impact update",
+    "description": "npm-run-all 4.1.5: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
   }
 };

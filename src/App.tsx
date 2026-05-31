@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { digestArchive, generatedAt, generationFailures, packageRoutes, releases, weeklyDigest } from "./data";
+import { digestArchive, generatedAt, generationFailures, packageRoutes, releases, seoRoutes, weeklyDigest } from "./data";
 import type { ReleaseItem, RiskLevel, WeeklyDigest } from "./types";
 
 const riskLabels: Record<RiskLevel, string> = {
@@ -35,6 +35,19 @@ function App() {
     releases[0];
 
   const pageMode = getPageMode(path);
+
+  useEffect(() => {
+    const seo = seoRoutes[path] ?? seoRoutes["/weekly"];
+    document.title = `${seo.title} | Dependency Risk Digest`;
+    let description = document.querySelector<HTMLMetaElement>('meta[name="description"]');
+    if (!description) {
+      description = document.createElement("meta");
+      description.name = "description";
+      document.head.appendChild(description);
+    }
+    description.content = seo.description;
+  }, [path]);
+
   const visibleReleases = useMemo(() => {
     return releases.filter((release) => {
       const matchesQuery = `${release.packageName} ${release.newVersion} ${release.reason} ${release.category}`
@@ -281,13 +294,18 @@ function ArchivePage(props: {
         <h2>Stable Archive Routes</h2>
         <button type="button" onClick={() => navigate("/weekly")}>/weekly</button>
         <button type="button" onClick={() => navigate("/package/react")}>/package/react</button>
-        <button type="button" onClick={() => navigate("/package/react/19.2.0")}>/package/react/19.2.0</button>
+        <button type="button" onClick={() => navigate(getReactLatestRoute())}>{getReactLatestRoute()}</button>
         <button type="button" onClick={() => navigate("/risk/security")}>/risk/security</button>
         <button type="button" onClick={() => navigate("/risk/breaking")}>/risk/breaking</button>
         <button type="button" onClick={() => navigate("/risk/review")}>/risk/review</button>
       </section>
     </>
   );
+}
+
+function getReactLatestRoute() {
+  const routeMap = packageRoutes as Record<string, { latestReleaseRoute?: string }>;
+  return routeMap.react?.latestReleaseRoute ?? "/package/react";
 }
 
 function ReleaseTable({
@@ -352,7 +370,6 @@ function ReleaseTable({
     </div>
   );
 }
-
 function ReleaseDetail({ release }: { release: ReleaseItem }) {
   return (
     <aside className={`detail-panel ${release.risk}`}>
@@ -375,6 +392,9 @@ function ReleaseDetail({ release }: { release: ReleaseItem }) {
       <DetailBlock title="Recommended Action">{release.recommendedAction}</DetailBlock>
       <DetailBlock title="Why This Matters">{release.whyThisMatters}</DetailBlock>
       <DetailBlock title="What Changed">{release.whatChanged}</DetailBlock>
+      <DetailBlock title="GitHub Release Notes">
+        {release.releaseNotesExcerpt || release.releaseNotesStatus}
+      </DetailBlock>
       <div className="source-links">
         {release.sourceLinks.map((link) => (
           <a key={link.label} href={link.href} target="_blank" rel="noreferrer">

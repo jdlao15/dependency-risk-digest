@@ -23,6 +23,12 @@ export type ReleaseItem = {
   affectedAudience: string;
   recommendedAction: string;
   whatChanged: string;
+  githubReleaseTitle: string;
+  githubReleaseUrl: string;
+  githubReleaseTag: string;
+  githubReleasePublishedAt: string;
+  releaseNotesExcerpt: string;
+  releaseNotesStatus: string;
   route: string;
   sourceLinks: SourceLink[];
 };
@@ -35,4 +41,10 @@ export type WeeklyDigest = {
   security: number;
   safe: number;
   total: number;
+};
+
+export type SeoRoute = {
+  path: string;
+  title: string;
+  description: string;
 };

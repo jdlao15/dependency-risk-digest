@@ -4,5 +4,6 @@ export {
   generationFailures,
   packageRoutes,
   releases,
+  seoRoutes,
   weeklyDigest,
 } from "./generatedDigest";
