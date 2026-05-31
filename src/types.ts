@@ -1,0 +1,38 @@
+export type RiskLevel = "critical" | "security" | "breaking" | "review" | "low";
+
+export type SourceLink = {
+  label: string;
+  href: string;
+};
+
+export type ReleaseItem = {
+  id: string;
+  packageName: string;
+  packageSlug: string;
+  description: string;
+  oldVersion: string;
+  newVersion: string;
+  releaseDate: string;
+  publishedAgo: string;
+  risk: RiskLevel;
+  category: "Security" | "Breaking" | "Review" | "Low impact";
+  osv: string;
+  cve: string;
+  reason: string;
+  whyThisMatters: string;
+  affectedAudience: string;
+  recommendedAction: string;
+  whatChanged: string;
+  route: string;
+  sourceLinks: SourceLink[];
+};
+
+export type WeeklyDigest = {
+  week: string;
+  dateRange: string;
+  risky: number;
+  breaking: number;
+  security: number;
+  safe: number;
+  total: number;
+};
