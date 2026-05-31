@@ -51,6 +51,12 @@ Static SEO assets are generated into `public/sitemap.xml` and `public/robots.txt
 
 V1 stays public and free while demand is tested. The `/sponsor` page uses manual GitHub issue inquiries instead of paid checkout, email tooling, subscriptions, or a paid analytics stack.
 
+No paid tools, paid hosting, custom domains, paid analytics, paid newsletter tooling, or checkout setup should be added until the project has incoming money or a committed buyer.
+
+## Automated Refresh
+
+`.github/workflows/refresh-digest.yml` runs the free weekly refresh path on GitHub Actions. It regenerates digest data, sitemap paths, static SEO assets, and the TypeScript data file, then commits generated changes back to `main` when the output changed.
+
 The next external steps are:
 
 1. Create or choose a GitHub repository.

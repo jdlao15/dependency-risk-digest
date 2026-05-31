@@ -1,0 +1,46 @@
+name: Refresh Dependency Digest
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "20 13 * * 1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-dependency-digest
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Refresh generated digest
+        run: npm run refresh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit generated updates
+        run: |
+          git config user.name "dependency-risk-digest-bot"
+          git config user.email "dependency-risk-digest-bot@users.noreply.github.com"
+          git add data/latest-digest.json data/sitemap-paths.json src/generatedDigest.ts public/sitemap.xml public/robots.txt
+          if git diff --cached --quiet; then
+            echo "No generated digest changes to commit."
+          else
+            git commit -m "Refresh generated dependency digest"
+            git push
+          fi
