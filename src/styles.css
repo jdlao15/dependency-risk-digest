@@ -191,6 +191,12 @@ p {
   line-height: 1.65;
 }
 
+.generated-note {
+  margin-top: 10px;
+  color: #53647a;
+  font-size: 0.86rem;
+}
+
 .metrics-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(100px, 1fr));

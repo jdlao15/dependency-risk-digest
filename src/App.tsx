@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { digestArchive, packageRoutes, releases, weeklyDigest } from "./data";
+import { digestArchive, generatedAt, generationFailures, packageRoutes, releases, weeklyDigest } from "./data";
 import type { ReleaseItem, RiskLevel, WeeklyDigest } from "./types";
 
 const riskLabels: Record<RiskLevel, string> = {
@@ -10,7 +10,7 @@ const riskLabels: Record<RiskLevel, string> = {
   low: "Low",
 };
 
-const riskOrder: RiskLevel[] = ["security", "breaking", "review", "low"];
+const riskOrder: RiskLevel[] = ["critical", "security", "breaking", "review", "low"];
 
 function getInitialPath() {
   return window.location.pathname === "/" ? "/weekly" : window.location.pathname;
@@ -64,8 +64,8 @@ function App() {
       <Header path={path} navigate={navigate} query={query} setQuery={setQuery} />
       <main>
         <Hero />
-        {pageMode.kind === "package" && pageMode.slug === "react" ? (
-          <PackagePage navigate={navigate} />
+        {pageMode.kind === "package" ? (
+          <PackagePage navigate={navigate} slug={pageMode.slug} />
         ) : (
           <ArchivePage
             path={path}
@@ -151,6 +151,11 @@ function Hero() {
           We analyze npm releases, changelogs, and advisories to surface risky,
           breaking, security-relevant, and low-impact updates so teams know what
           deserves attention.
+        </p>
+        <p className="generated-note">
+          Generated from npm registry metadata and OSV queries. Last run:{" "}
+          {formatDate(generatedAt.slice(0, 10))}
+          {generationFailures.length > 0 ? `; ${generationFailures.length} packages skipped` : ""}.
         </p>
         <div className="metrics-grid" aria-label="Weekly summary">
           <Metric value={weeklyDigest.risky} label="Risky Updates" note="review recommended" tone="red" />
@@ -441,35 +446,57 @@ function ArchiveRow({ digest }: { digest: WeeklyDigest }) {
   );
 }
 
-function PackagePage({ navigate }: { navigate: (path: string) => void }) {
-  const reactPackage = packageRoutes.react;
+function PackagePage({ navigate, slug }: { navigate: (path: string) => void; slug: string }) {
+  const routeMap = packageRoutes as Record<
+    string,
+    {
+      packageName: string;
+      description: string;
+      route: string;
+      latestReleaseRoute?: string;
+    }
+  >;
+  const packageInfo = routeMap[slug];
+  const relatedReleases = releases.filter((release) => release.packageSlug === slug);
+
+  if (!packageInfo) {
+    return (
+      <section className="package-page">
+        <div>
+          <h1>Package not tracked</h1>
+          <p>This route exists for the archive model, but it is not in the fixed frontend package set yet.</p>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="package-page">
       <div>
-        <h1>{reactPackage.packageName}</h1>
-        <p>{reactPackage.description}</p>
+        <h1>{packageInfo.packageName}</h1>
+        <p>{packageInfo.description}</p>
       </div>
       <div className="package-summary-grid">
         <div>
           <span>Tracked route</span>
-          <strong>{reactPackage.route}</strong>
+          <strong>{packageInfo.route}</strong>
         </div>
         <div>
           <span>Current scope</span>
           <strong>Frontend packages only</strong>
         </div>
         <div>
-          <span>Latest seed release page</span>
-          <button type="button" onClick={() => navigate("/package/react/19.2.0")}>
-            /package/react/19.2.0
+          <span>Latest generated release page</span>
+          <button type="button" onClick={() => navigate(packageInfo.latestReleaseRoute ?? packageInfo.route)}>
+            {packageInfo.latestReleaseRoute ?? packageInfo.route}
           </button>
         </div>
       </div>
       <div className="package-empty">
-        <h2>No high-risk React release in this seed week</h2>
+        <h2>{relatedReleases.length} generated release in the current digest</h2>
         <p>
-          The archive route exists now so future npm, GitHub, and OSV ingestion can
-          publish stable package pages without changing the URL model.
+          This package page is generated from the fixed package list. Future weekly runs
+          can append release history while keeping the URL model stable.
         </p>
       </div>
     </section>
@@ -490,8 +517,9 @@ function getPageMode(path: string):
   if (path === "/risk/review") {
     return { kind: "risk", title: "Updates To Review", risk: "review" };
   }
-  if (path === "/package/react") {
-    return { kind: "package", title: "React Package Archive", slug: "react" };
+  const packageMatch = path.match(/^\/package\/([^/]+)$/);
+  if (packageMatch) {
+    return { kind: "package", title: "Package Archive", slug: packageMatch[1] };
   }
   if (path.startsWith("/package/")) {
     return { kind: "release", title: "Release Detail" };
