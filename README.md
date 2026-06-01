@@ -43,13 +43,13 @@ The token only needs access sufficient to read public release data. Fine-grained
 
 ## Deployment Notes
 
-The included `vercel.json` builds with `npm run refresh`, outputs `dist`, and rewrites all archive routes to `index.html` so routes such as `/weekly`, `/package/react`, and `/risk/breaking` work on static hosting.
+The included `vercel.json` builds with `npm run refresh`, outputs `dist`, and rewrites all archive routes to `index.html` so routes such as `/weekly`, `/package/react`, `/methodology`, and `/risk/breaking` work on static hosting.
 
 Static SEO assets are generated into `public/sitemap.xml`, `public/robots.txt`, `public/feed.xml`, and route-specific HTML files in `dist`.
 
-## Free Validation Phase
+## Sponsorship and Cost Boundaries
 
-V1 stays public and lightweight. The `/sponsor` page uses GitHub issue inquiries instead of checkout, email tooling, subscriptions, or an analytics stack.
+Dependency Risk Digest stays public and lightweight. The `/sponsor` page uses sponsor inquiry issues instead of checkout, email tooling, subscriptions, or an analytics stack.
 
 No paid tools, paid hosting, custom domains, paid analytics, paid newsletter tooling, or checkout setup should be added without explicit owner approval.
 
@@ -67,4 +67,4 @@ The next external steps are:
 
 ## Product Boundaries
 
-V1 intentionally has no accounts, no custom watchlists, no repo scans, no Slack alerts, no backend, and no AI summaries.
+The current product intentionally has no accounts, no custom watchlists, no repo scans, no Slack alerts, no backend, and no AI summaries.

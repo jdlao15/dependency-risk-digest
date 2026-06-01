@@ -403,6 +403,11 @@ function buildSeoRoutes(items, routeMap, digest) {
       title: "Sponsor Dependency Risk Digest",
       description: "Sponsor Dependency Risk Digest to reach frontend developers and JavaScript teams tracking npm security updates, breaking package releases, OSV/CVE signals, React dependencies, Vite, Next.js, TypeScript, and Storybook releases.",
     },
+    "/methodology": {
+      path: "/methodology",
+      title: "Dependency Risk Methodology for Frontend npm Updates",
+      description: "How Dependency Risk Digest evaluates frontend npm dependency risk, security updates, breaking changes, OSV and CVE signals, release notes, affected audience, and recommended update actions for React, Vite, Next.js, TypeScript, Storybook, and JavaScript teams.",
+    },
   };
 
   for (const digestItem of digestArchive) {

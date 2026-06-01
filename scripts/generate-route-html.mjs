@@ -131,6 +131,10 @@ function buildBreadcrumbs(routePath, seo) {
     items.push({ name: "Sponsor", url: `${siteUrl}/sponsor` });
     return items;
   }
+  if (routePath === "/methodology") {
+    items.push({ name: "Methodology", url: `${siteUrl}/methodology` });
+    return items;
+  }
   const release = releaseByRoute.get(routePath);
   if (release) {
     const packageRoute = `/package/${release.packageSlug}`;

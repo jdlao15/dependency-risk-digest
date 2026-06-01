@@ -908,14 +908,16 @@ td small,
   line-height: 1.45;
 }
 
-.sponsor-page {
+.sponsor-page,
+.methodology-page {
   display: grid;
   gap: 28px;
   padding: 44px 32px 58px;
   background: #ffffff;
 }
 
-.sponsor-hero {
+.sponsor-hero,
+.methodology-hero {
   max-width: 850px;
 }
 
@@ -927,13 +929,15 @@ td small,
   text-transform: uppercase;
 }
 
-.sponsor-hero h1 {
+.sponsor-hero h1,
+.methodology-hero h1 {
   color: #0d1420;
   font-size: clamp(2.1rem, 5vw, 3.8rem);
   line-height: 1.02;
 }
 
-.sponsor-hero p {
+.sponsor-hero p,
+.methodology-hero p {
   max-width: 760px;
   margin-top: 16px;
   color: #40516a;
@@ -941,13 +945,15 @@ td small,
   line-height: 1.65;
 }
 
-.sponsor-grid {
+.sponsor-grid,
+.methodology-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 
-.sponsor-grid section {
+.sponsor-grid section,
+.methodology-grid section {
   min-width: 0;
   padding: 20px;
   background: #f7f9fc;
@@ -955,16 +961,35 @@ td small,
   border-radius: 8px;
 }
 
-.sponsor-grid h2 {
+.sponsor-grid h2,
+.methodology-grid h2 {
   margin-bottom: 10px;
   color: #121a28;
   font-size: 1.12rem;
 }
 
 .sponsor-grid p,
+.methodology-grid p,
 .sponsor-note span {
   color: #40516a;
   line-height: 1.55;
+}
+
+.methodology-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.methodology-actions button {
+  min-height: 40px;
+  padding: 0 14px;
+  color: #0057d8;
+  background: #eef5ff;
+  border: 1px solid #c7daf4;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 800;
 }
 
 .sponsor-note {
@@ -1058,7 +1083,8 @@ td small,
   .archive-row,
   .package-release-list button,
   .package-summary-grid,
-  .sponsor-grid {
+  .sponsor-grid,
+  .methodology-grid {
     grid-template-columns: 1fr;
   }
 

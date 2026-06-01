@@ -98,6 +98,8 @@ function App() {
           <WeeklyArchivePage digest={archiveDigest} navigate={navigate} />
         ) : pageMode.kind === "sponsor" ? (
           <SponsorPage navigate={navigate} />
+        ) : pageMode.kind === "methodology" ? (
+          <MethodologyPage navigate={navigate} />
         ) : pageMode.kind === "package" ? (
           <PackagePage navigate={navigate} slug={pageMode.slug} />
         ) : (
@@ -138,6 +140,7 @@ function Header({
     ["/risk/security", "/risk/security"],
     ["/risk/breaking", "/risk/breaking"],
     ["/risk/review", "/risk/review"],
+    ["/methodology", "/methodology"],
     ["/sponsor", "/sponsor"],
   ];
 
@@ -225,7 +228,7 @@ function Hero({ navigate }: { navigate: (path: string) => void }) {
           build tooling, test tooling, CSS packages, and JavaScript production apps.
         </p>
         <p className="generated-note">
-          Generated from npm registry metadata and OSV queries. Last run:{" "}
+          Based on npm registry metadata and OSV queries. Last updated:{" "}
           {formatDate(generatedAt.slice(0, 10))}
           {generationFailures.length > 0 ? `; ${generationFailures.length} packages skipped` : ""}.
         </p>
@@ -369,6 +372,7 @@ function ArchivePage(props: {
         <button type="button" onClick={() => navigate("/risk/security")}>/risk/security</button>
         <button type="button" onClick={() => navigate("/risk/breaking")}>/risk/breaking</button>
         <button type="button" onClick={() => navigate("/risk/review")}>/risk/review</button>
+        <button type="button" onClick={() => navigate("/methodology")}>/methodology</button>
         <button type="button" onClick={() => navigate("/sponsor")}>/sponsor</button>
       </section>
     </>
@@ -585,8 +589,7 @@ function WeeklyArchivePage({ digest, navigate }: { digest: WeeklyDigest; navigat
       <div className="package-empty">
         <h2>{digest.security} security-relevant, {digest.breaking} breaking, {digest.safe} safe to ignore</h2>
         <p>
-          Historical weekly pages are generated from the same automated refresh
-          pipeline and kept in the sitemap so older dependency-risk digests,
+          Historical weekly pages are preserved in the sitemap so older dependency-risk digests,
           npm security updates, and breaking release summaries remain addressable.
         </p>
         <button type="button" onClick={() => navigate("/weekly")}>View latest weekly digest</button>
@@ -625,8 +628,8 @@ function PackagePage({ navigate, slug }: { navigate: (path: string) => void; slu
     return (
       <section className="package-page">
         <div>
-          <h1>Package not tracked</h1>
-          <p>This route exists for the archive model, but it is not in the fixed frontend package set yet.</p>
+          <h1>Package coverage unavailable</h1>
+          <p>This package is not currently covered by Dependency Risk Digest.</p>
         </div>
       </section>
     );
@@ -653,23 +656,24 @@ function PackagePage({ navigate, slug }: { navigate: (path: string) => void; slu
           <strong>Frontend packages only</strong>
         </div>
         <div>
-          <span>Latest generated release page</span>
+          <span>Latest release-risk page</span>
           <button type="button" onClick={() => navigate(packageInfo.latestReleaseRoute ?? packageInfo.route)}>
             {packageInfo.latestReleaseRoute ?? packageInfo.route}
           </button>
         </div>
       </div>
       <div className="package-empty">
-        <h2>{relatedReleases.length} generated release in the current digest</h2>
+        <h2>{relatedReleases.length} release covered in the current digest</h2>
         <p>
-          This package page is generated from the fixed package list. Future weekly runs
-          can append release history while keeping the URL model stable.
+          This package page is part of the tracked frontend dependency set. It keeps a
+          stable archive URL for release-risk signals, OSV results, CVE checks, and
+          recommended update actions.
         </p>
       </div>
       <section className="package-link-panel" aria-label={`${packageInfo.packageName} related archive links`}>
         <h2>Related Dependency-Risk Routes</h2>
         <button type="button" onClick={() => navigate(packageInfo.latestReleaseRoute ?? packageInfo.route)}>
-          Latest generated release
+          Latest release-risk page
         </button>
         <button type="button" onClick={() => navigate(getLatestWeeklyArchiveRoute())}>
           Current weekly archive
@@ -753,8 +757,71 @@ function SponsorPage({ navigate }: { navigate: (path: string) => void }) {
         <strong>Direct sponsorship inquiries</strong>
         <span>
           Use the inquiry form to share your company, audience, and preferred
-          placement. JP reviews sponsor fit before confirming availability.
+          placement. Each sponsor inquiry is reviewed for audience fit before
+          availability is confirmed.
         </span>
+      </div>
+    </section>
+  );
+}
+
+function MethodologyPage({ navigate }: { navigate: (path: string) => void }) {
+  return (
+    <section className="methodology-page">
+      <div className="methodology-hero">
+        <p className="eyebrow">Risk methodology</p>
+        <h1>How Dependency Risk Digest Evaluates Frontend npm Updates</h1>
+        <p>
+          Dependency Risk Digest reviews common frontend npm packages for release
+          risk, security relevance, breaking-change signals, OSV and CVE matches,
+          affected audience, and practical update guidance for JavaScript teams.
+        </p>
+      </div>
+      <div className="methodology-grid">
+        <section>
+          <h2>Data Sources</h2>
+          <p>
+            Package versions, publish dates, and release metadata come from the npm
+            registry. Vulnerability signals are checked against OSV data, CVE
+            references, and security language in public release notes.
+          </p>
+        </section>
+        <section>
+          <h2>Risk Labels</h2>
+          <p>
+            Security and critical updates are prioritized when vulnerability or
+            security-fix language appears. Breaking updates focus on major package
+            releases. Review updates cover non-urgent changes that still deserve
+            dependency maintenance attention.
+          </p>
+        </section>
+        <section>
+          <h2>Frontend Scope</h2>
+          <p>
+            Coverage focuses on React, Vite, Next.js, TypeScript, Storybook,
+            build tools, testing tools, CSS packages, routing, state management,
+            forms, data fetching, and UI dependency workflows.
+          </p>
+        </section>
+        <section>
+          <h2>Recommended Actions</h2>
+          <p>
+            Each release summary explains whether to prioritize an update, review
+            changelogs before upgrading, batch with routine dependency work, or
+            treat the update as low urgency.
+          </p>
+        </section>
+      </div>
+      <div className="methodology-actions">
+        <button type="button" onClick={() => navigate("/weekly")}>
+          View latest digest
+        </button>
+        <button type="button" onClick={() => navigate("/risk/security")}>
+          View security updates
+        </button>
+        <button type="button" onClick={() => navigate("/package/react")}>
+          View React package archive
+        </button>
       </div>
     </section>
   );
@@ -766,7 +833,11 @@ function getPageMode(path: string):
   | { kind: "risk"; title: string; risk: RiskLevel }
   | { kind: "package"; title: string; slug: string }
   | { kind: "sponsor"; title: string }
+  | { kind: "methodology"; title: string }
   | { kind: "release"; title: string } {
+  if (path === "/methodology") {
+    return { kind: "methodology", title: "Dependency Risk Methodology" };
+  }
   if (path === "/sponsor") {
     return { kind: "sponsor", title: "Sponsor Dependency Risk Digest" };
   }
@@ -805,6 +876,9 @@ function buildBreadcrumbItems(
   }
   if (pageMode.kind === "sponsor") {
     return [...items, { label: "Sponsor", path: "/sponsor" }];
+  }
+  if (pageMode.kind === "methodology") {
+    return [...items, { label: "Methodology", path: "/methodology" }];
   }
   if (pageMode.kind === "risk") {
     return [...items, { label: "Risk", path: "/risk/security" }, { label: pageMode.title, path }];

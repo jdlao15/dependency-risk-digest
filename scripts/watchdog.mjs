@@ -8,7 +8,8 @@ const resultPath = process.env.WATCHDOG_RESULT_PATH || "watchdog-result.json";
 const htmlRoutes = [
   { path: "/weekly", expectedText: "Latest Weekly Digest", name: "weekly page" },
   { path: "/sponsor", expectedText: "Sponsor Dependency Risk Digest", name: "sponsor page" },
-  { path: "/package/react", expectedText: "Latest generated release page", name: "react package page" },
+  { path: "/package/react", expectedText: "Latest release-risk page", name: "react package page" },
+  { path: "/methodology", expectedText: "How Dependency Risk Digest Evaluates Frontend npm Updates", name: "methodology page" },
 ];
 const feedRoute = "/feed.xml";
 

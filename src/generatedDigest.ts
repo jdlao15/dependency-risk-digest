@@ -1,6 +1,6 @@
 import type { ReleaseItem, SeoRoute, WeeklyDigest } from "./types";
 
-export const generatedAt = "2026-06-01T17:00:27.457Z";
+export const generatedAt = "2026-06-01T17:05:58.722Z";
 export const generationFailures = [];
 export const weeklyDigest: WeeklyDigest = {
   "week": "Week 23, 2026",
@@ -95,7 +95,7 @@ export const digestArchive: WeeklyDigest[] = [
       }
     ],
     "route": "/weekly/2026-w23",
-    "generatedAt": "2026-06-01T17:00:27.457Z"
+    "generatedAt": "2026-06-01T17:05:58.722Z"
   }
 ];
 export const releases: ReleaseItem[] = [
@@ -2407,6 +2407,11 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "path": "/sponsor",
     "title": "Sponsor Dependency Risk Digest",
     "description": "Sponsor Dependency Risk Digest to reach frontend developers and JavaScript teams tracking npm security updates, breaking package releases, OSV/CVE signals, React dependencies, Vite, Next.js, TypeScript, and Storybook releases."
+  },
+  "/methodology": {
+    "path": "/methodology",
+    "title": "Dependency Risk Methodology for Frontend npm Updates",
+    "description": "How Dependency Risk Digest evaluates frontend npm dependency risk, security updates, breaking changes, OSV and CVE signals, release notes, affected audience, and recommended update actions for React, Vite, Next.js, TypeScript, Storybook, and JavaScript teams."
   },
   "/weekly/2026-w23": {
     "path": "/weekly/2026-w23",
