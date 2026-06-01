@@ -11,6 +11,7 @@ const riskLabels: Record<RiskLevel, string> = {
 };
 
 const riskOrder: RiskLevel[] = ["critical", "security", "breaking", "review", "low"];
+const siteUrl = "https://dependency-risk-digest.vercel.app";
 const sponsorIssueUrl =
   "https://github.com/jdlao15/dependency-risk-digest/issues/new?template=sponsor-inquiry.yml";
 
@@ -52,6 +53,13 @@ function App() {
       document.head.appendChild(description);
     }
     description.content = seo.description;
+    let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      document.head.appendChild(canonical);
+    }
+    canonical.href = `${siteUrl}${path}`;
   }, [path]);
 
   const visibleReleases = useMemo(() => {
@@ -523,6 +531,19 @@ function WeeklyArchivePage({ digest, navigate }: { digest: WeeklyDigest; navigat
         </p>
         <button type="button" onClick={() => navigate("/weekly")}>View latest weekly digest</button>
       </div>
+      {digest.topSignals && digest.topSignals.length > 0 ? (
+        <section className="package-release-list" aria-label="Archived risk signals">
+          <h2>Top Archived Risk Signals</h2>
+          {digest.topSignals.map((signal) => (
+            <button key={`${signal.packageName}-${signal.newVersion}`} type="button" onClick={() => navigate(signal.route)}>
+              <span className={`risk-badge ${signal.risk}`}>{riskLabels[signal.risk]}</span>
+              <strong>{signal.packageName} {signal.newVersion}</strong>
+              <span>{signal.reason}</span>
+              <small>{signal.recommendedAction}</small>
+            </button>
+          ))}
+        </section>
+      ) : null}
     </section>
   );
 }
@@ -580,6 +601,19 @@ function PackagePage({ navigate, slug }: { navigate: (path: string) => void; slu
           can append release history while keeping the URL model stable.
         </p>
       </div>
+      {relatedReleases.length > 0 ? (
+        <section className="package-release-list" aria-label={`${packageInfo.packageName} release risk history`}>
+          <h2>Current Release Risk Signals</h2>
+          {relatedReleases.map((release) => (
+            <button key={release.id} type="button" onClick={() => navigate(release.route)}>
+              <span className={`risk-badge ${release.risk}`}>{riskLabels[release.risk]}</span>
+              <strong>{release.packageName} {release.newVersion}</strong>
+              <span>{release.whyThisMatters}</span>
+              <small>{release.recommendedAction}</small>
+            </button>
+          ))}
+        </section>
+      ) : null}
     </section>
   );
 }

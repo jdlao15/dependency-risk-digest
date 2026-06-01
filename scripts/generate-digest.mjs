@@ -46,7 +46,7 @@ releases.sort((a, b) => {
 const packageRoutes = buildPackageRoutes(packageList, releases);
 const generatedAt = today.toISOString();
 const weeklyDigest = buildWeeklyDigest(releases);
-const digestArchive = await buildDigestArchive(weeklyDigest, generatedAt);
+const digestArchive = await buildDigestArchive(weeklyDigest, generatedAt, releases);
 const seoRoutes = buildSeoRoutes(releases, packageRoutes, weeklyDigest);
 const sitemapPaths = Object.keys(seoRoutes).sort();
 
@@ -299,7 +299,7 @@ function scoreRelease(oldVersion, newVersion, osvResult, githubRelease) {
 function buildWeeklyDigest(items) {
   const start = startOfWeek(today);
   const end = new Date(start);
-  end.setDate(start.getDate() + 6);
+  end.setUTCDate(start.getUTCDate() + 6);
   const risky = items.filter((item) => item.risk !== "low").length;
   const breaking = items.filter((item) => item.risk === "breaking").length;
   const security = items.filter((item) => item.risk === "security" || item.risk === "critical").length;
@@ -315,12 +315,13 @@ function buildWeeklyDigest(items) {
   };
 }
 
-async function buildDigestArchive(currentDigest, generatedAt) {
+async function buildDigestArchive(currentDigest, generatedAt, items) {
   const existing = await readJson(weeklyHistoryPath, []);
   const existingItems = Array.isArray(existing) ? existing : [];
   const currentRoute = weeklyArchiveRoute(today);
   const currentItem = {
     ...currentDigest,
+    topSignals: buildDigestSignals(items),
     route: currentRoute,
     generatedAt,
   };
@@ -335,9 +336,24 @@ async function buildDigestArchive(currentDigest, generatedAt) {
   });
 }
 
+function buildDigestSignals(items) {
+  return items
+    .filter((item) => item.risk !== "low")
+    .slice(0, 8)
+    .map((item) => ({
+      packageName: item.packageName,
+      route: item.route,
+      risk: item.risk,
+      newVersion: item.newVersion,
+      reason: item.reason,
+      recommendedAction: item.recommendedAction,
+      whyThisMatters: item.whyThisMatters,
+    }));
+}
+
 function weeklyArchiveRoute(date) {
   const week = String(weekNumber(date)).padStart(2, "0");
-  return `/weekly/${date.getFullYear()}-w${week}`;
+  return `/weekly/${date.getUTCFullYear()}-w${week}`;
 }
 
 function buildPackageRoutes(packages, items) {
@@ -516,41 +532,47 @@ function asciiText(value) {
 }
 
 function weekLabel(date) {
-  return `Week ${weekNumber(date)}, ${date.getFullYear()}`;
+  return `Week ${weekNumber(date)}, ${date.getUTCFullYear()}`;
 }
 
 function weekNumber(date) {
-  const firstDay = new Date(Date.UTC(date.getFullYear(), 0, 1));
-  const pastDays = Math.floor((Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) - firstDay.getTime()) / 86_400_000);
+  const firstDay = new Date(Date.UTC(date.getUTCFullYear(), 0, 1));
+  const pastDays = Math.floor(
+    (Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()) - firstDay.getTime()) / 86_400_000,
+  );
   return Math.ceil((pastDays + firstDay.getUTCDay() + 1) / 7);
 }
 
 function previousWeekLabel(offset) {
   const date = new Date(today);
-  date.setDate(date.getDate() - offset * 7);
+  date.setUTCDate(date.getUTCDate() - offset * 7);
   return weekLabel(date);
 }
 
 function previousDateRangeLabel(offset) {
   const date = new Date(today);
-  date.setDate(date.getDate() - offset * 7);
+  date.setUTCDate(date.getUTCDate() - offset * 7);
   const start = startOfWeek(date);
   const end = new Date(start);
-  end.setDate(start.getDate() + 6);
+  end.setUTCDate(start.getUTCDate() + 6);
   return `${shortDate(start)} - ${shortDate(end)}`;
 }
 
 function startOfWeek(date) {
-  const start = new Date(date);
-  const day = start.getDay();
-  const diff = start.getDate() - day + (day === 0 ? -6 : 1);
-  start.setDate(diff);
-  start.setHours(0, 0, 0, 0);
+  const start = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
+  const day = start.getUTCDay();
+  const diff = start.getUTCDate() - day + (day === 0 ? -6 : 1);
+  start.setUTCDate(diff);
+  start.setUTCHours(0, 0, 0, 0);
   return start;
 }
 
 function shortDate(date) {
-  return new Intl.DateTimeFormat("en", { month: "short", day: "numeric" }).format(date);
+  return new Intl.DateTimeFormat("en", {
+    month: "short",
+    day: "numeric",
+    timeZone: "UTC",
+  }).format(date);
 }
 
 function slugify(value) {

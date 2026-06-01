@@ -41,8 +41,19 @@ export type WeeklyDigest = {
   security: number;
   safe: number;
   total: number;
+  topSignals?: WeeklyDigestSignal[];
   route?: string;
   generatedAt?: string;
+};
+
+export type WeeklyDigestSignal = {
+  packageName: string;
+  route: string;
+  risk: RiskLevel;
+  newVersion: string;
+  reason: string;
+  recommendedAction: string;
+  whyThisMatters: string;
 };
 
 export type SeoRoute = {

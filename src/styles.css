@@ -801,6 +801,55 @@ td small,
   font-size: 1.2rem;
 }
 
+.package-release-list {
+  display: grid;
+  gap: 0;
+  overflow: hidden;
+  border: 1px solid #dce3ee;
+  border-radius: 8px;
+}
+
+.package-release-list h2 {
+  padding: 16px 18px;
+  color: #121a28;
+  background: #f7f9fc;
+  border-bottom: 1px solid #dce3ee;
+  font-size: 1rem;
+}
+
+.package-release-list button {
+  display: grid;
+  grid-template-columns: 92px minmax(140px, 0.5fr) minmax(0, 1fr) minmax(180px, 0.6fr);
+  gap: 14px;
+  align-items: start;
+  padding: 16px 18px;
+  color: #172033;
+  text-align: left;
+  background: #ffffff;
+  border: 0;
+  border-bottom: 1px solid #dce3ee;
+}
+
+.package-release-list button:last-child {
+  border-bottom: 0;
+}
+
+.package-release-list strong,
+.package-release-list span,
+.package-release-list small {
+  min-width: 0;
+}
+
+.package-release-list strong {
+  color: #111827;
+}
+
+.package-release-list span:not(.risk-badge),
+.package-release-list small {
+  color: #40516a;
+  line-height: 1.45;
+}
+
 .sponsor-page {
   display: grid;
   gap: 28px;
@@ -948,6 +997,7 @@ td small,
 
   .mini-table button,
   .archive-row,
+  .package-release-list button,
   .package-summary-grid,
   .sponsor-grid {
     grid-template-columns: 1fr;

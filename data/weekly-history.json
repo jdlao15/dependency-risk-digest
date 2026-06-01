@@ -7,7 +7,81 @@
     "security": 3,
     "safe": 26,
     "total": 50,
+    "topSignals": [
+      {
+        "packageName": "ws",
+        "route": "/package/ws/8.21.0",
+        "risk": "security",
+        "newVersion": "8.21.0",
+        "reason": "GitHub release notes mention security or vulnerability fixes.",
+        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
+        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
+      },
+      {
+        "packageName": "axios",
+        "route": "/package/axios/1.16.1",
+        "risk": "security",
+        "newVersion": "1.16.1",
+        "reason": "GitHub release notes mention security or vulnerability fixes.",
+        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
+        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
+      },
+      {
+        "packageName": "npm-run-all",
+        "route": "/package/npm-run-all/4.1.5",
+        "risk": "security",
+        "newVersion": "4.1.5",
+        "reason": "GitHub release notes mention security or vulnerability fixes.",
+        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
+        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
+      },
+      {
+        "packageName": "pnpm",
+        "route": "/package/pnpm/11.5.0",
+        "risk": "breaking",
+        "newVersion": "11.5.0",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "vitest",
+        "route": "/package/vitest/4.1.7",
+        "risk": "breaking",
+        "newVersion": "4.1.7",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "styled-components",
+        "route": "/package/styled-components/6.4.2",
+        "risk": "breaking",
+        "newVersion": "6.4.2",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "tailwindcss",
+        "route": "/package/tailwindcss/4.3.0",
+        "risk": "breaking",
+        "newVersion": "4.3.0",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "react",
+        "route": "/package/react/19.2.6",
+        "risk": "breaking",
+        "newVersion": "19.2.6",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      }
+    ],
     "route": "/weekly/2026-w23",
-    "generatedAt": "2026-06-01T00:19:35.987Z"
+    "generatedAt": "2026-06-01T01:08:44.626Z"
   }
 ]
