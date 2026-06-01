@@ -622,7 +622,7 @@ function SponsorPage({ navigate }: { navigate: (path: string) => void }) {
   return (
     <section className="sponsor-page">
       <div className="sponsor-hero">
-        <p className="eyebrow">Manual sponsorship inquiries</p>
+        <p className="eyebrow">Sponsorship inquiries</p>
         <h1>Sponsor Dependency Risk Digest</h1>
         <p>
           Reach frontend developers and small teams who are actively reviewing npm
@@ -641,8 +641,9 @@ function SponsorPage({ navigate }: { navigate: (path: string) => void }) {
         <section>
           <h2>Current Offer</h2>
           <p>
-            Early sponsors can request a weekly digest placement or a package-page
-            mention. Pricing is handled manually while demand is being validated.
+            Sponsors can request a weekly digest placement or a package-page
+            mention. Each inquiry is reviewed for fit with frontend developers
+            tracking dependency risk.
           </p>
         </section>
         <section>
@@ -662,10 +663,10 @@ function SponsorPage({ navigate }: { navigate: (path: string) => void }) {
         </section>
       </div>
       <div className="sponsor-note">
-        <strong>No automated checkout is enabled yet.</strong>
+        <strong>Direct sponsorship inquiries</strong>
         <span>
-          Sponsorship is being validated first through direct inquiry, so the
-          project can bring in money before adding paid tools.
+          Use the inquiry form to share your company, audience, and preferred
+          placement. JP reviews sponsor fit before confirming availability.
         </span>
       </div>
     </section>

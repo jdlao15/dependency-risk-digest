@@ -9,7 +9,7 @@ body:
       value: |
         Thanks for your interest in sponsoring Dependency Risk Digest.
 
-        Sponsor inquiries are handled through GitHub Issues during the free validation phase. Do not post secrets, private credentials, or payment details here.
+        Sponsor inquiries are handled through this public GitHub issue form. Do not post secrets, private credentials, or payment details here.
   - type: input
     id: organization
     attributes:

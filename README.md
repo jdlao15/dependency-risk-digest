@@ -49,9 +49,9 @@ Static SEO assets are generated into `public/sitemap.xml` and `public/robots.txt
 
 ## Free Validation Phase
 
-V1 stays public and free while demand is tested. The `/sponsor` page uses manual GitHub issue inquiries instead of paid checkout, email tooling, subscriptions, or a paid analytics stack.
+V1 stays public and lightweight. The `/sponsor` page uses GitHub issue inquiries instead of checkout, email tooling, subscriptions, or an analytics stack.
 
-No paid tools, paid hosting, custom domains, paid analytics, paid newsletter tooling, or checkout setup should be added until the project has incoming money or a committed buyer.
+No paid tools, paid hosting, custom domains, paid analytics, paid newsletter tooling, or checkout setup should be added without explicit owner approval.
 
 ## Automated Refresh
 
