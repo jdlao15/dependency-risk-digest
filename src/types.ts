@@ -41,6 +41,8 @@ export type WeeklyDigest = {
   security: number;
   safe: number;
   total: number;
+  route?: string;
+  generatedAt?: string;
 };
 
 export type SeoRoute = {

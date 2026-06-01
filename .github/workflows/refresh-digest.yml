@@ -37,7 +37,7 @@ jobs:
         run: |
           git config user.name "dependency-risk-digest-bot"
           git config user.email "dependency-risk-digest-bot@users.noreply.github.com"
-          git add data/latest-digest.json data/sitemap-paths.json src/generatedDigest.ts public/sitemap.xml public/robots.txt
+          git add data/latest-digest.json data/sitemap-paths.json data/weekly-history.json src/generatedDigest.ts public/sitemap.xml public/robots.txt
           if git diff --cached --quiet; then
             echo "No generated digest changes to commit."
           else

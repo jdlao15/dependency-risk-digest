@@ -37,6 +37,10 @@ function App() {
     releases[0];
 
   const pageMode = getPageMode(path);
+  const archiveDigest =
+    pageMode.kind === "weeklyArchive"
+      ? digestArchive.find((digest) => digest.route === path) ?? digestArchive[0]
+      : undefined;
 
   useEffect(() => {
     const seo = seoRoutes[path] ?? seoRoutes["/weekly"];
@@ -79,7 +83,9 @@ function App() {
       <Header path={path} navigate={navigate} query={query} setQuery={setQuery} />
       <main>
         <Hero navigate={navigate} />
-        {pageMode.kind === "sponsor" ? (
+        {pageMode.kind === "weeklyArchive" && archiveDigest ? (
+          <WeeklyArchivePage digest={archiveDigest} navigate={navigate} />
+        ) : pageMode.kind === "sponsor" ? (
           <SponsorPage navigate={navigate} />
         ) : pageMode.kind === "package" ? (
           <PackagePage navigate={navigate} slug={pageMode.slug} />
@@ -306,6 +312,7 @@ function ArchivePage(props: {
       <section className="route-strip" aria-label="Archive route structure">
         <h2>Stable Archive Routes</h2>
         <button type="button" onClick={() => navigate("/weekly")}>/weekly</button>
+        <button type="button" onClick={() => navigate(getLatestWeeklyArchiveRoute())}>{getLatestWeeklyArchiveRoute()}</button>
         <button type="button" onClick={() => navigate("/package/react")}>/package/react</button>
         <button type="button" onClick={() => navigate(getReactLatestRoute())}>{getReactLatestRoute()}</button>
         <button type="button" onClick={() => navigate("/risk/security")}>/risk/security</button>
@@ -320,6 +327,10 @@ function ArchivePage(props: {
 function getReactLatestRoute() {
   const routeMap = packageRoutes as Record<string, { latestReleaseRoute?: string }>;
   return routeMap.react?.latestReleaseRoute ?? "/package/react";
+}
+
+function getLatestWeeklyArchiveRoute() {
+  return digestArchive[0]?.route ?? "/weekly";
 }
 
 function ReleaseTable({
@@ -460,23 +471,59 @@ function DigestArchive({ navigate }: { navigate: (path: string) => void }) {
       </div>
       <div className="archive-list">
         {digestArchive.map((digest) => (
-          <ArchiveRow digest={digest} key={digest.week} />
+          <ArchiveRow digest={digest} key={digest.route ?? digest.week} navigate={navigate} />
         ))}
       </div>
     </section>
   );
 }
 
-function ArchiveRow({ digest }: { digest: WeeklyDigest }) {
+function ArchiveRow({ digest, navigate }: { digest: WeeklyDigest; navigate: (path: string) => void }) {
   return (
-    <div className="archive-row">
+    <button className="archive-row" type="button" onClick={() => navigate(digest.route ?? "/weekly")}>
       <strong>{digest.week}</strong>
       <span>{digest.dateRange}</span>
       <span>{digest.risky} risky</span>
       <span>{digest.breaking} breaking</span>
       <span>{digest.security} security</span>
       <span>{digest.total} total</span>
-    </div>
+    </button>
+  );
+}
+
+function WeeklyArchivePage({ digest, navigate }: { digest: WeeklyDigest; navigate: (path: string) => void }) {
+  return (
+    <section className="package-page">
+      <div>
+        <h1>{digest.week}</h1>
+        <p>
+          {digest.dateRange} archived dependency-risk summary for the fixed
+          frontend package set.
+        </p>
+      </div>
+      <div className="package-summary-grid">
+        <div>
+          <span>Archived route</span>
+          <strong>{digest.route ?? "/weekly"}</strong>
+        </div>
+        <div>
+          <span>Risky updates</span>
+          <strong>{digest.risky}</strong>
+        </div>
+        <div>
+          <span>Total releases</span>
+          <strong>{digest.total}</strong>
+        </div>
+      </div>
+      <div className="package-empty">
+        <h2>{digest.security} security-relevant, {digest.breaking} breaking, {digest.safe} safe to ignore</h2>
+        <p>
+          Historical weekly pages are generated from the same automated refresh
+          pipeline and kept in the sitemap so older digests remain addressable.
+        </p>
+        <button type="button" onClick={() => navigate("/weekly")}>View latest weekly digest</button>
+      </div>
+    </section>
   );
 }
 
@@ -593,12 +640,16 @@ function SponsorPage({ navigate }: { navigate: (path: string) => void }) {
 
 function getPageMode(path: string):
   | { kind: "weekly"; title: string }
+  | { kind: "weeklyArchive"; title: string }
   | { kind: "risk"; title: string; risk: RiskLevel }
   | { kind: "package"; title: string; slug: string }
   | { kind: "sponsor"; title: string }
   | { kind: "release"; title: string } {
   if (path === "/sponsor") {
     return { kind: "sponsor", title: "Sponsor Dependency Risk Digest" };
+  }
+  if (path.startsWith("/weekly/")) {
+    return { kind: "weeklyArchive", title: "Weekly Archive" };
   }
   if (path === "/risk/security") {
     return { kind: "risk", title: "Security-Relevant Releases", risk: "security" };

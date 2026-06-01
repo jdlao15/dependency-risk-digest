@@ -6,6 +6,7 @@ const packageListPath = path.join(root, "data", "tracked-packages.json");
 const outputPath = path.join(root, "src", "generatedDigest.ts");
 const jsonOutputPath = path.join(root, "data", "latest-digest.json");
 const sitemapPathsPath = path.join(root, "data", "sitemap-paths.json");
+const weeklyHistoryPath = path.join(root, "data", "weekly-history.json");
 const githubCachePath = path.join(root, ".cache", "digest", "github-releases.json");
 const registryBase = "https://registry.npmjs.org";
 const osvQueryUrl = "https://api.osv.dev/v1/query";
@@ -42,33 +43,12 @@ releases.sort((a, b) => {
   return Date.parse(b.releaseDate) - Date.parse(a.releaseDate);
 });
 
-const weeklyDigest = buildWeeklyDigest(releases);
-const digestArchive = [
-  weeklyDigest,
-  {
-    week: previousWeekLabel(1),
-    dateRange: previousDateRangeLabel(1),
-    risky: Math.max(0, weeklyDigest.risky - 15),
-    breaking: Math.max(0, weeklyDigest.breaking - 4),
-    security: Math.max(0, weeklyDigest.security - 3),
-    safe: Math.max(0, weeklyDigest.safe - 12),
-    total: Math.max(0, weeklyDigest.total - 12),
-  },
-  {
-    week: previousWeekLabel(2),
-    dateRange: previousDateRangeLabel(2),
-    risky: Math.max(0, weeklyDigest.risky - 28),
-    breaking: Math.max(0, weeklyDigest.breaking - 7),
-    security: Math.max(0, weeklyDigest.security - 5),
-    safe: Math.max(0, weeklyDigest.safe - 22),
-    total: Math.max(0, weeklyDigest.total - 22),
-  },
-];
-
 const packageRoutes = buildPackageRoutes(packageList, releases);
+const generatedAt = today.toISOString();
+const weeklyDigest = buildWeeklyDigest(releases);
+const digestArchive = await buildDigestArchive(weeklyDigest, generatedAt);
 const seoRoutes = buildSeoRoutes(releases, packageRoutes, weeklyDigest);
 const sitemapPaths = Object.keys(seoRoutes).sort();
-const generatedAt = today.toISOString();
 
 const moduleText = `import type { ReleaseItem, SeoRoute, WeeklyDigest } from "./types";
 
@@ -87,6 +67,7 @@ await fs.writeFile(
   JSON.stringify({ generatedAt, weeklyDigest, digestArchive, releases, packageRoutes, seoRoutes, failures }, null, 2),
 );
 await fs.writeFile(sitemapPathsPath, JSON.stringify({ generatedAt, paths: sitemapPaths }, null, 2));
+await fs.writeFile(weeklyHistoryPath, JSON.stringify(digestArchive, null, 2));
 await fs.mkdir(path.dirname(githubCachePath), { recursive: true });
 await fs.writeFile(githubCachePath, JSON.stringify(githubCache, null, 2));
 
@@ -334,6 +315,31 @@ function buildWeeklyDigest(items) {
   };
 }
 
+async function buildDigestArchive(currentDigest, generatedAt) {
+  const existing = await readJson(weeklyHistoryPath, []);
+  const existingItems = Array.isArray(existing) ? existing : [];
+  const currentRoute = weeklyArchiveRoute(today);
+  const currentItem = {
+    ...currentDigest,
+    route: currentRoute,
+    generatedAt,
+  };
+  const archiveMap = new Map(
+    existingItems
+      .filter((item) => item?.route && item?.week)
+      .map((item) => [item.route, item]),
+  );
+  archiveMap.set(currentRoute, currentItem);
+  return [...archiveMap.values()].sort((a, b) => {
+    return Date.parse(b.generatedAt ?? "") - Date.parse(a.generatedAt ?? "");
+  });
+}
+
+function weeklyArchiveRoute(date) {
+  const week = String(weekNumber(date)).padStart(2, "0");
+  return `/weekly/${date.getFullYear()}-w${week}`;
+}
+
 function buildPackageRoutes(packages, items) {
   return Object.fromEntries(
     packages.map((trackedPackage) => {
@@ -382,6 +388,16 @@ function buildSeoRoutes(items, routeMap, digest) {
       description: "Manual sponsorship inquiries for reaching frontend developers reviewing npm dependency risk.",
     },
   };
+
+  for (const digestItem of digestArchive) {
+    if (digestItem.route) {
+      routes[digestItem.route] = {
+        path: digestItem.route,
+        title: `${digestItem.week} frontend dependency risk archive`,
+        description: `${digestItem.dateRange}: ${digestItem.risky} risky updates, ${digestItem.breaking} breaking changes, and ${digestItem.security} security-relevant releases from ${digestItem.total} tracked frontend npm packages.`,
+      };
+    }
+  }
 
   for (const route of Object.values(routeMap)) {
     routes[route.route] = {
@@ -500,10 +516,13 @@ function asciiText(value) {
 }
 
 function weekLabel(date) {
+  return `Week ${weekNumber(date)}, ${date.getFullYear()}`;
+}
+
+function weekNumber(date) {
   const firstDay = new Date(Date.UTC(date.getFullYear(), 0, 1));
   const pastDays = Math.floor((Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) - firstDay.getTime()) / 86_400_000);
-  const weekNumber = Math.ceil((pastDays + firstDay.getUTCDay() + 1) / 7);
-  return `Week ${weekNumber}, ${date.getFullYear()}`;
+  return Math.ceil((pastDays + firstDay.getUTCDay() + 1) / 7);
 }
 
 function previousWeekLabel(offset) {

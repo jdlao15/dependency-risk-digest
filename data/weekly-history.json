@@ -1,0 +1,13 @@
+[
+  {
+    "week": "Week 23, 2026",
+    "dateRange": "May 25 - May 31",
+    "risky": 24,
+    "breaking": 7,
+    "security": 3,
+    "safe": 26,
+    "total": 50,
+    "route": "/weekly/2026-w23",
+    "generatedAt": "2026-06-01T00:16:40.067Z"
+  }
+]
