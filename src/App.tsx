@@ -11,17 +11,8 @@ const riskLabels: Record<RiskLevel, string> = {
 };
 
 const riskOrder: RiskLevel[] = ["critical", "security", "breaking", "review", "low"];
-const sponsorIssueTitle = "Sponsor inquiry for Dependency Risk Digest";
-const sponsorIssueBody = [
-  "Company/project:",
-  "Audience you want to reach:",
-  "Budget range:",
-  "Preferred placement: weekly digest slot / package page mention / other",
-  "Notes:",
-].join("\n");
-const sponsorIssueUrl = `https://github.com/jdlao15/dependency-risk-digest/issues/new?title=${encodeURIComponent(
-  sponsorIssueTitle,
-)}&body=${encodeURIComponent(sponsorIssueBody)}`;
+const sponsorIssueUrl =
+  "https://github.com/jdlao15/dependency-risk-digest/issues/new?template=sponsor-inquiry.yml";
 
 function getInitialPath() {
   return window.location.pathname === "/" ? "/weekly" : window.location.pathname;

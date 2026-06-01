@@ -1,0 +1,62 @@
+name: Sponsor inquiry
+description: Ask about sponsoring Dependency Risk Digest.
+title: "Sponsor inquiry"
+assignees:
+  - jdlao15
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in sponsoring Dependency Risk Digest.
+
+        Sponsor inquiries are handled through GitHub Issues during the free validation phase. Do not post secrets, private credentials, or payment details here.
+  - type: input
+    id: organization
+    attributes:
+      label: Company or project
+      description: Who would be sponsoring the digest?
+      placeholder: Example Co.
+    validations:
+      required: true
+  - type: textarea
+    id: audience
+    attributes:
+      label: Audience you want to reach
+      description: Describe the developers, teams, or buyers you want to reach.
+      placeholder: Frontend developers evaluating dependency security tools.
+    validations:
+      required: true
+  - type: dropdown
+    id: placement
+    attributes:
+      label: Preferred placement
+      options:
+        - Weekly digest sponsor slot
+        - Package page mention
+        - Security-risk page mention
+        - Not sure yet
+    validations:
+      required: true
+  - type: input
+    id: budget
+    attributes:
+      label: Budget range
+      description: Optional. Share a rough monthly or one-time budget if you have one.
+      placeholder: $50/month, $250 one-time, not sure yet
+    validations:
+      required: false
+  - type: input
+    id: contact
+    attributes:
+      label: Preferred public contact method
+      description: Optional. Add a public website, GitHub username, or business contact page.
+      placeholder: https://example.com/contact
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Anything else that would help evaluate sponsor fit.
+    validations:
+      required: false
