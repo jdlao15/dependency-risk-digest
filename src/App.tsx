@@ -42,6 +42,7 @@ function App() {
     pageMode.kind === "weeklyArchive"
       ? digestArchive.find((digest) => digest.route === path) ?? digestArchive[0]
       : undefined;
+  const breadcrumbItems = buildBreadcrumbItems(path, pageMode, selectedRelease);
 
   useEffect(() => {
     const seo = seoRoutes[path] ?? seoRoutes["/weekly"];
@@ -92,6 +93,7 @@ function App() {
       <Header path={path} navigate={navigate} query={query} setQuery={setQuery} />
       <main>
         <Hero navigate={navigate} />
+        <Breadcrumbs items={breadcrumbItems} navigate={navigate} />
         {pageMode.kind === "weeklyArchive" && archiveDigest ? (
           <WeeklyArchivePage digest={archiveDigest} navigate={navigate} />
         ) : pageMode.kind === "sponsor" ? (
@@ -180,6 +182,32 @@ function setMeta(attribute: "name" | "property", key: string, content: string) {
     document.head.appendChild(tag);
   }
   tag.content = content;
+}
+
+function Breadcrumbs({
+  items,
+  navigate,
+}: {
+  items: Array<{ label: string; path: string }>;
+  navigate: (path: string) => void;
+}) {
+  if (items.length < 2) return null;
+  return (
+    <nav className="breadcrumbs" aria-label="Breadcrumb">
+      {items.map((item, index) => (
+        <span key={`${item.path}-${index}`}>
+          {index > 0 ? <span className="breadcrumb-separator">/</span> : null}
+          {index === items.length - 1 ? (
+            <strong>{item.label}</strong>
+          ) : (
+            <button type="button" onClick={() => navigate(item.path)}>
+              {item.label}
+            </button>
+          )}
+        </span>
+      ))}
+    </nav>
+  );
 }
 
 function Hero({ navigate }: { navigate: (path: string) => void }) {
@@ -326,7 +354,7 @@ function ArchivePage(props: {
           <p className="panel-description">{seoRoutes[path]?.description ?? seoRoutes["/weekly"].description}</p>
           <ReleaseTable releases={visibleReleases} chooseRelease={chooseRelease} />
         </div>
-        <ReleaseDetail release={selectedRelease} />
+        <ReleaseDetail release={selectedRelease} navigate={navigate} />
       </section>
       <section className="lower-grid">
         <BreakingChanges navigate={navigate} />
@@ -354,6 +382,12 @@ function getReactLatestRoute() {
 
 function getLatestWeeklyArchiveRoute() {
   return digestArchive[0]?.route ?? "/weekly";
+}
+
+function riskRouteFor(risk: RiskLevel) {
+  if (risk === "security" || risk === "critical") return "/risk/security";
+  if (risk === "breaking") return "/risk/breaking";
+  return "/risk/review";
 }
 
 function ReleaseTable({
@@ -418,7 +452,7 @@ function ReleaseTable({
     </div>
   );
 }
-function ReleaseDetail({ release }: { release: ReleaseItem }) {
+function ReleaseDetail({ release, navigate }: { release: ReleaseItem; navigate: (path: string) => void }) {
   return (
     <aside className={`detail-panel ${release.risk}`}>
       <div className="detail-heading">
@@ -444,6 +478,15 @@ function ReleaseDetail({ release }: { release: ReleaseItem }) {
         {release.releaseNotesExcerpt || release.releaseNotesStatus}
       </DetailBlock>
       <div className="source-links">
+        <button type="button" onClick={() => navigate(`/package/${release.packageSlug}`)}>
+          Package archive
+        </button>
+        <button type="button" onClick={() => navigate(riskRouteFor(release.risk))}>
+          Related risk page
+        </button>
+        <button type="button" onClick={() => navigate(getLatestWeeklyArchiveRoute())}>
+          Weekly archive
+        </button>
         {release.sourceLinks.map((link) => (
           <a key={link.label} href={link.href} target="_blank" rel="noreferrer">
             {link.label}
@@ -623,6 +666,24 @@ function PackagePage({ navigate, slug }: { navigate: (path: string) => void; slu
           can append release history while keeping the URL model stable.
         </p>
       </div>
+      <section className="package-link-panel" aria-label={`${packageInfo.packageName} related archive links`}>
+        <h2>Related Dependency-Risk Routes</h2>
+        <button type="button" onClick={() => navigate(packageInfo.latestReleaseRoute ?? packageInfo.route)}>
+          Latest generated release
+        </button>
+        <button type="button" onClick={() => navigate(getLatestWeeklyArchiveRoute())}>
+          Current weekly archive
+        </button>
+        <button type="button" onClick={() => navigate(relatedReleases[0] ? riskRouteFor(relatedReleases[0].risk) : "/risk/review")}>
+          Related risk category
+        </button>
+        <button type="button" onClick={() => navigate("/risk/security")}>
+          Security updates
+        </button>
+        <button type="button" onClick={() => navigate("/risk/breaking")}>
+          Breaking changes
+        </button>
+      </section>
       {relatedReleases.length > 0 ? (
         <section className="package-release-list" aria-label={`${packageInfo.packageName} release risk history`}>
           <h2>Current Release Risk Signals</h2>
@@ -729,6 +790,37 @@ function getPageMode(path: string):
     return { kind: "release", title: "Release Detail" };
   }
   return { kind: "weekly", title: "Top Risky Updates This Week" };
+}
+
+function buildBreadcrumbItems(
+  path: string,
+  pageMode: ReturnType<typeof getPageMode>,
+  selectedRelease: ReleaseItem,
+) {
+  const items = [{ label: "Latest Weekly Digest", path: "/weekly" }];
+  if (path === "/weekly" || path === "/") return items;
+  if (pageMode.kind === "weeklyArchive") {
+    const digest = digestArchive.find((item) => item.route === path);
+    return [...items, { label: digest?.week ?? "Weekly Archive", path }];
+  }
+  if (pageMode.kind === "sponsor") {
+    return [...items, { label: "Sponsor", path: "/sponsor" }];
+  }
+  if (pageMode.kind === "risk") {
+    return [...items, { label: "Risk", path: "/risk/security" }, { label: pageMode.title, path }];
+  }
+  if (pageMode.kind === "package") {
+    const routeMap = packageRoutes as Record<string, { packageName: string }>;
+    return [...items, { label: routeMap[pageMode.slug]?.packageName ?? pageMode.slug, path }];
+  }
+  if (pageMode.kind === "release") {
+    return [
+      ...items,
+      { label: selectedRelease.packageName, path: `/package/${selectedRelease.packageSlug}` },
+      { label: selectedRelease.newVersion, path: selectedRelease.route },
+    ];
+  }
+  return items;
 }
 
 function formatDate(date: string) {

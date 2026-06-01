@@ -1,6 +1,6 @@
 import type { ReleaseItem, SeoRoute, WeeklyDigest } from "./types";
 
-export const generatedAt = "2026-06-01T16:49:55.464Z";
+export const generatedAt = "2026-06-01T17:00:27.457Z";
 export const generationFailures = [];
 export const weeklyDigest: WeeklyDigest = {
   "week": "Week 23, 2026",
@@ -95,7 +95,7 @@ export const digestArchive: WeeklyDigest[] = [
       }
     ],
     "route": "/weekly/2026-w23",
-    "generatedAt": "2026-06-01T16:49:55.464Z"
+    "generatedAt": "2026-06-01T17:00:27.457Z"
   }
 ];
 export const releases: ReleaseItem[] = [
@@ -478,7 +478,7 @@ export const releases: ReleaseItem[] = [
     "githubReleaseTag": "v4.61.0",
     "githubReleasePublishedAt": "2026-06-01T05:42:19Z",
     "releaseNotesExcerpt": "4.61.0 _2026-06-01_ Features Sort entry modules to make chunk hashes deterministic (#6391) Pull Requests #6376: Eliminate AWS credential exposure on fork PRs in REPL artefact workflow (@lukastaegert) #6378: fix(deps): update minor/patch updates (@renovate[bot]) #6379: chore(deps)",
-    "releaseNotesStatus": "Matched GitHub release by npm version tag.",
+    "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
     "route": "/package/rollup/4.61.0",
     "sourceLinks": [
       {
@@ -1074,7 +1074,7 @@ export const releases: ReleaseItem[] = [
     "githubReleaseTag": "v8.0.16",
     "githubReleasePublishedAt": "2026-06-01T09:50:08Z",
     "releaseNotesExcerpt": "Please refer to CHANGELOG.md for details.",
-    "releaseNotesStatus": "Matched GitHub release by npm version tag.",
+    "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
     "route": "/package/vite/8.0.16",
     "sourceLinks": [
       {
@@ -1114,7 +1114,7 @@ export const releases: ReleaseItem[] = [
     "githubReleaseTag": "v4.1.8",
     "githubReleasePublishedAt": "2026-06-01T08:15:20Z",
     "releaseNotesExcerpt": "&nbsp;&nbsp;&nbsp; Bug Fixes **browser**: - Disable client cdp API when allowWrite/allowExec: false [backport to v4] &nbsp;-&nbsp; by @hi-ogawa and **Codex** in https://github.com/vitest-dev/vitest/issues/10450 <samp>(e4067)</samp> - Remove orphaned Playwright route when same mod",
-    "releaseNotesStatus": "Matched GitHub release by npm version tag.",
+    "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
     "route": "/package/vitest/4.1.8",
     "sourceLinks": [
       {

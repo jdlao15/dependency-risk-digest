@@ -323,6 +323,35 @@ p {
   font-weight: 800;
 }
 
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  padding: 12px 32px;
+  color: #53647a;
+  background: #fbfcfe;
+  border-bottom: 1px solid #dce3ee;
+  font-size: 0.86rem;
+}
+
+.breadcrumbs button {
+  padding: 0;
+  color: #0057d8;
+  background: transparent;
+  border: 0;
+  font-weight: 800;
+}
+
+.breadcrumbs strong {
+  color: #27364c;
+}
+
+.breadcrumb-separator {
+  margin-right: 8px;
+  color: #8a98aa;
+}
+
 .content-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(340px, 430px);
@@ -632,11 +661,13 @@ td small,
   padding-top: 20px;
 }
 
-.source-links a {
+.source-links a,
+.source-links button {
   padding: 8px 10px;
   color: #0057d8;
   text-decoration: none;
   background: #eef5ff;
+  border: 0;
   border-radius: 6px;
   font-size: 0.82rem;
   font-weight: 800;
@@ -799,6 +830,33 @@ td small,
 .package-empty h2 {
   margin-bottom: 8px;
   font-size: 1.2rem;
+}
+
+.package-link-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  padding: 18px 20px;
+  background: #fbfcfe;
+  border: 1px solid #dce3ee;
+  border-radius: 8px;
+}
+
+.package-link-panel h2 {
+  width: 100%;
+  color: #121a28;
+  font-size: 1rem;
+}
+
+.package-link-panel button {
+  padding: 9px 11px;
+  color: #0057d8;
+  background: #eef5ff;
+  border: 1px solid #c7daf4;
+  border-radius: 6px;
+  font-size: 0.84rem;
+  font-weight: 800;
 }
 
 .package-release-list {
@@ -990,6 +1048,7 @@ td small,
 
   .lower-grid,
   .route-strip,
+  .breadcrumbs,
   .package-page {
     padding-right: 16px;
     padding-left: 16px;

@@ -9,7 +9,7 @@ Public archive for frontend npm dependency updates that are risky, breaking, sec
 - Local generator pulls npm registry metadata, OSV results, and GitHub release notes.
 - Generated app data is written to `src/generatedDigest.ts`.
 - JSON export is written to `data/latest-digest.json`.
-- Route metadata and sitemap paths are generated with the digest.
+- Route metadata, route-specific HTML, sitemap paths, and the RSS feed are generated with the digest.
 
 ## Local Commands
 
@@ -45,7 +45,7 @@ The token only needs access sufficient to read public release data. Fine-grained
 
 The included `vercel.json` builds with `npm run refresh`, outputs `dist`, and rewrites all archive routes to `index.html` so routes such as `/weekly`, `/package/react`, and `/risk/breaking` work on static hosting.
 
-Static SEO assets are generated into `public/sitemap.xml` and `public/robots.txt`.
+Static SEO assets are generated into `public/sitemap.xml`, `public/robots.txt`, `public/feed.xml`, and route-specific HTML files in `dist`.
 
 ## Free Validation Phase
 

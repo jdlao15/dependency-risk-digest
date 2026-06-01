@@ -10,6 +10,7 @@ const htmlRoutes = [
   { path: "/sponsor", expectedText: "Sponsor Dependency Risk Digest", name: "sponsor page" },
   { path: "/package/react", expectedText: "Latest generated release page", name: "react package page" },
 ];
+const feedRoute = "/feed.xml";
 
 const failures = [];
 const timestamps = [];
@@ -50,6 +51,13 @@ checkNonBlank("robots.txt", robots.body, 20, "Run npm run generate:seo locally a
 if (!robots.body.includes(`Sitemap: ${siteUrl}/sitemap.xml`)) {
   addFailure("robots.txt", "robots.txt does not point to the production sitemap.", "Run npm run generate:seo and confirm SITE_URL is set correctly.");
 }
+
+const feed = await fetchRoute(feedRoute, "rss feed");
+checkNonBlank("rss feed", feed.body, 500, "Run npm run generate:seo locally and inspect public/feed.xml.");
+if (!feed.body.includes("<rss") || !feed.body.includes("<channel>") || !feed.body.includes("Dependency Risk Digest")) {
+  addFailure("rss feed", "feed.xml does not look like a valid Dependency Risk Digest RSS feed.", "Run npm run generate:seo locally and inspect public/feed.xml.");
+}
+collectTimestamps(feed.body, "rss feed");
 
 const newestTimestamp = timestamps
   .map((item) => ({ ...item, date: new Date(item.value) }))
