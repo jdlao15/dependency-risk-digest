@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 
 const siteUrl = (process.env.SITE_URL || "https://dependency-risk-digest.vercel.app").replace(/\/$/, "");
-const maxGeneratedAgeHours = Number(process.env.MAX_GENERATED_AGE_HOURS || 216);
+const maxGeneratedAgeHours = Number(process.env.MAX_GENERATED_AGE_HOURS || 120);
 const failureReportPath = process.env.WATCHDOG_FAILURE_PATH || "watchdog-failure.md";
 const resultPath = process.env.WATCHDOG_RESULT_PATH || "watchdog-result.json";
 

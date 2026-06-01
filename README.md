@@ -55,7 +55,7 @@ No paid tools, paid hosting, custom domains, paid analytics, paid newsletter too
 
 ## Automated Refresh
 
-`.github/workflows/refresh-digest.yml` runs the free weekly refresh path on GitHub Actions. It regenerates digest data, sitemap paths, static SEO assets, and the TypeScript data file, then commits generated changes back to `main` when the output changed.
+`.github/workflows/refresh-digest.yml` runs the free Monday/Thursday refresh path on GitHub Actions. It regenerates digest data, sitemap paths, static SEO assets, and the TypeScript data file, then commits generated changes back to `main` when the output changed.
 
 The next external steps are:
 
