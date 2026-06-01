@@ -381,27 +381,27 @@ function buildSeoRoutes(items, routeMap, digest) {
     "/weekly": {
       path: "/weekly",
       title: `${digest.week} Frontend Dependency Risk Digest`,
-      description: `${digest.risky} risky updates, ${digest.breaking} breaking changes, and ${digest.security} security-relevant releases from ${digest.total} tracked frontend npm packages.`,
+      description: `${digest.week} frontend npm dependency-risk digest: ${digest.risky} risky updates, ${digest.breaking} breaking changes, ${digest.security} security-relevant releases, OSV/CVE checks, release notes, and recommended actions from ${digest.total} tracked React, JavaScript, and frontend packages.`,
     },
     "/risk/security": {
       path: "/risk/security",
-      title: "Security-Relevant Frontend Package Releases",
-      description: "Frontend npm releases with OSV, CVE, or GitHub release-note security signals.",
+      title: "Frontend npm Security Updates and OSV Signals",
+      description: "Security-relevant frontend npm package releases with OSV vulnerability checks, CVE references, GitHub release-note security signals, affected audience, and recommended update actions for JavaScript teams.",
     },
     "/risk/breaking": {
       path: "/risk/breaking",
-      title: "Breaking Frontend Package Releases",
-      description: "Major version frontend npm releases that deserve review before updating.",
+      title: "Breaking Frontend npm Package Releases",
+      description: "Breaking frontend npm updates and major package releases for React, Vite, Next.js, TypeScript, Storybook, build tooling, test tooling, and JavaScript dependency maintenance.",
     },
     "/risk/review": {
       path: "/risk/review",
-      title: "Frontend Package Updates To Review",
-      description: "Minor version frontend npm releases that are not urgent but should be reviewed before routine updates.",
+      title: "Frontend npm Updates To Review",
+      description: "Frontend npm dependency updates to review, including minor releases, release notes, OSV checks, affected audience, and recommended maintenance actions for JavaScript production apps.",
     },
     "/sponsor": {
       path: "/sponsor",
       title: "Sponsor Dependency Risk Digest",
-      description: "Manual sponsorship inquiries for reaching frontend developers reviewing npm dependency risk.",
+      description: "Sponsor Dependency Risk Digest to reach frontend developers and JavaScript teams tracking npm security updates, breaking package releases, OSV/CVE signals, React dependencies, Vite, Next.js, TypeScript, and Storybook releases.",
     },
   };
 
@@ -410,7 +410,7 @@ function buildSeoRoutes(items, routeMap, digest) {
       routes[digestItem.route] = {
         path: digestItem.route,
         title: `${digestItem.week} frontend dependency risk archive`,
-        description: `${digestItem.dateRange}: ${digestItem.risky} risky updates, ${digestItem.breaking} breaking changes, and ${digestItem.security} security-relevant releases from ${digestItem.total} tracked frontend npm packages.`,
+        description: `${digestItem.dateRange} archive for frontend npm dependency risk: ${digestItem.risky} risky updates, ${digestItem.breaking} breaking changes, ${digestItem.security} security-relevant releases, OSV/CVE checks, release notes, and recommended actions from ${digestItem.total} tracked packages.`,
       };
     }
   }
@@ -419,7 +419,7 @@ function buildSeoRoutes(items, routeMap, digest) {
     routes[route.route] = {
       path: route.route,
       title: `${route.packageName} dependency risk archive`,
-      description: `${route.packageName} release-risk history for frontend teams. ${route.description}`,
+      description: `${route.packageName} npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. ${route.description}`,
     };
   }
 
@@ -427,7 +427,7 @@ function buildSeoRoutes(items, routeMap, digest) {
     routes[item.route] = {
       path: item.route,
       title: `${item.packageName} ${item.newVersion} ${item.category.toLowerCase()} update`,
-      description: `${item.packageName} ${item.newVersion}: ${item.reason} Recommended action: ${item.recommendedAction}`,
+      description: `${item.packageName} ${item.newVersion} frontend npm update: ${item.reason} OSV result: ${item.osv}. CVE signal: ${item.cve}. Recommended action: ${item.recommendedAction}`,
     };
   }
 

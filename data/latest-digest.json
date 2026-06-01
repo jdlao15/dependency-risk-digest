@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-01T01:08:44.626Z",
+  "generatedAt": "2026-06-01T16:49:55.464Z",
   "weeklyDigest": {
     "week": "Week 23, 2026",
     "dateRange": "Jun 1 - Jun 7",
     "risky": 24,
-    "breaking": 7,
+    "breaking": 6,
     "security": 3,
     "safe": 26,
     "total": 50
@@ -14,7 +14,7 @@
       "week": "Week 23, 2026",
       "dateRange": "Jun 1 - Jun 7",
       "risky": 24,
-      "breaking": 7,
+      "breaking": 6,
       "security": 3,
       "safe": 26,
       "total": 50,
@@ -56,15 +56,6 @@
           "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
         },
         {
-          "packageName": "vitest",
-          "route": "/package/vitest/4.1.7",
-          "risk": "breaking",
-          "newVersion": "4.1.7",
-          "reason": "Major version release detected.",
-          "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-          "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
-        },
-        {
           "packageName": "styled-components",
           "route": "/package/styled-components/6.4.2",
           "risk": "breaking",
@@ -90,10 +81,19 @@
           "reason": "Major version release detected.",
           "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
           "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+        },
+        {
+          "packageName": "react-dom",
+          "route": "/package/react-dom/19.2.6",
+          "risk": "breaking",
+          "newVersion": "19.2.6",
+          "reason": "Major version release detected.",
+          "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+          "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
         }
       ],
       "route": "/weekly/2026-w23",
-      "generatedAt": "2026-06-01T01:08:44.626Z"
+      "generatedAt": "2026-06-01T16:49:55.464Z"
     }
   ],
   "releases": [
@@ -145,7 +145,7 @@
       "oldVersion": "0.32.0",
       "newVersion": "1.16.1",
       "releaseDate": "2026-05-13",
-      "publishedAgo": "published 18 days ago",
+      "publishedAgo": "published 19 days ago",
       "risk": "security",
       "category": "Security",
       "osv": "No OSV match",
@@ -225,7 +225,7 @@
       "oldVersion": "10.34.1",
       "newVersion": "11.5.0",
       "releaseDate": "2026-05-29",
-      "publishedAgo": "published 2 days ago",
+      "publishedAgo": "published 3 days ago",
       "risk": "breaking",
       "category": "Breaking",
       "osv": "No OSV match",
@@ -258,46 +258,6 @@
       ]
     },
     {
-      "id": "vitest-4-1-7",
-      "packageName": "vitest",
-      "packageSlug": "vitest",
-      "description": "Vite-native testing",
-      "oldVersion": "5.0.0-beta.3",
-      "newVersion": "4.1.7",
-      "releaseDate": "2026-05-20",
-      "publishedAgo": "published 11 days ago",
-      "risk": "breaking",
-      "category": "Breaking",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Major version release detected.",
-      "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds.",
-      "affectedAudience": "Test suites, browser automation, and release validation workflows.",
-      "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-      "whatChanged": "GitHub release note found: v4.1.7.",
-      "githubReleaseTitle": "v4.1.7",
-      "githubReleaseUrl": "https://github.com/vitest-dev/vitest/releases/tag/v4.1.7",
-      "githubReleaseTag": "v4.1.7",
-      "githubReleasePublishedAt": "2026-05-20T07:20:12Z",
-      "releaseNotesExcerpt": "&nbsp;&nbsp;&nbsp; Bug Fixes **runner**: Limit concurrency per task branch in addition to per leaf callbacks (backport) &nbsp;-&nbsp; by @hi-ogawa in https://github.com/vitest-dev/vitest/issues/10384 <samp>(4f0f2)</samp> &nbsp;&nbsp;&nbsp;&nbsp;View changes on GitHub",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
-      "route": "/package/vitest/4.1.7",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/vitest"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/vitest-dev/vitest"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/vitest-dev/vitest/releases/tag/v4.1.7"
-        }
-      ]
-    },
-    {
       "id": "styled-components-6-4-2",
       "packageName": "styled-components",
       "packageSlug": "styled-components",
@@ -305,7 +265,7 @@
       "oldVersion": "7.0.0-prerelease-20260519035351",
       "newVersion": "6.4.2",
       "releaseDate": "2026-05-19",
-      "publishedAgo": "published 12 days ago",
+      "publishedAgo": "published 13 days ago",
       "risk": "breaking",
       "category": "Breaking",
       "osv": "No OSV match",
@@ -385,7 +345,7 @@
       "oldVersion": "0.0.0-experimental-9635257c-20260502",
       "newVersion": "19.2.6",
       "releaseDate": "2026-05-06",
-      "publishedAgo": "published 25 days ago",
+      "publishedAgo": "published 26 days ago",
       "risk": "breaking",
       "category": "Breaking",
       "osv": "No OSV match",
@@ -425,7 +385,7 @@
       "oldVersion": "0.0.0-experimental-9635257c-20260502",
       "newVersion": "19.2.6",
       "releaseDate": "2026-05-06",
-      "publishedAgo": "published 25 days ago",
+      "publishedAgo": "published 26 days ago",
       "risk": "breaking",
       "category": "Breaking",
       "osv": "No OSV match",
@@ -494,6 +454,46 @@
       ]
     },
     {
+      "id": "rollup-4-61-0",
+      "packageName": "rollup",
+      "packageSlug": "rollup",
+      "description": "Module bundler",
+      "oldVersion": "4.60.4",
+      "newVersion": "4.61.0",
+      "releaseDate": "2026-06-01",
+      "publishedAgo": "published today",
+      "risk": "review",
+      "category": "Review",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Minor version release detected with no OSV match.",
+      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
+      "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
+      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+      "whatChanged": "GitHub release note found: v4.61.0.",
+      "githubReleaseTitle": "v4.61.0",
+      "githubReleaseUrl": "https://github.com/rollup/rollup/releases/tag/v4.61.0",
+      "githubReleaseTag": "v4.61.0",
+      "githubReleasePublishedAt": "2026-06-01T05:42:19Z",
+      "releaseNotesExcerpt": "4.61.0 _2026-06-01_ Features Sort entry modules to make chunk hashes deterministic (#6391) Pull Requests #6376: Eliminate AWS credential exposure on fork PRs in REPL artefact workflow (@lukastaegert) #6378: fix(deps): update minor/patch updates (@renovate[bot]) #6379: chore(deps)",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
+      "route": "/package/rollup/4.61.0",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/rollup"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/rollup/rollup"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/rollup/rollup/releases/tag/v4.61.0"
+        }
+      ]
+    },
+    {
       "id": "react-hook-form-7-77-0",
       "packageName": "react-hook-form",
       "packageSlug": "react-hook-form",
@@ -501,7 +501,7 @@
       "oldVersion": "7.76.1",
       "newVersion": "7.77.0",
       "releaseDate": "2026-05-31",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "risk": "review",
       "category": "Review",
       "osv": "No OSV match",
@@ -661,7 +661,7 @@
       "oldVersion": "10.5.0-alpha.2",
       "newVersion": "10.4.1",
       "releaseDate": "2026-05-22",
-      "publishedAgo": "published 9 days ago",
+      "publishedAgo": "published 10 days ago",
       "risk": "review",
       "category": "Review",
       "osv": "No OSV match",
@@ -701,7 +701,7 @@
       "oldVersion": "10.5.0-alpha.2",
       "newVersion": "10.4.1",
       "releaseDate": "2026-05-22",
-      "publishedAgo": "published 9 days ago",
+      "publishedAgo": "published 10 days ago",
       "risk": "review",
       "category": "Review",
       "osv": "No OSV match",
@@ -781,7 +781,7 @@
       "oldVersion": "12.39.0",
       "newVersion": "12.40.0",
       "releaseDate": "2026-05-21",
-      "publishedAgo": "published 10 days ago",
+      "publishedAgo": "published 11 days ago",
       "risk": "review",
       "category": "Review",
       "osv": "No OSV match",
@@ -817,7 +817,7 @@
       "oldVersion": "2.11.2",
       "newVersion": "2.12.0",
       "releaseDate": "2026-05-15",
-      "publishedAgo": "published 16 days ago",
+      "publishedAgo": "published 17 days ago",
       "risk": "review",
       "category": "Review",
       "osv": "No OSV match",
@@ -897,7 +897,7 @@
       "oldVersion": "4.5.0-canary.20260504T070434",
       "newVersion": "4.4.3",
       "releaseDate": "2026-05-04",
-      "publishedAgo": "published 27 days ago",
+      "publishedAgo": "published 28 days ago",
       "risk": "review",
       "category": "Review",
       "osv": "No OSV match",
@@ -1050,6 +1050,86 @@
       ]
     },
     {
+      "id": "vite-8-0-16",
+      "packageName": "vite",
+      "packageSlug": "vite",
+      "description": "Frontend build tooling",
+      "oldVersion": "8.0.15",
+      "newVersion": "8.0.16",
+      "releaseDate": "2026-06-01",
+      "publishedAgo": "published today",
+      "risk": "low",
+      "category": "Low impact",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: v8.0.16.",
+      "githubReleaseTitle": "v8.0.16",
+      "githubReleaseUrl": "https://github.com/vitejs/vite/releases/tag/v8.0.16",
+      "githubReleaseTag": "v8.0.16",
+      "githubReleasePublishedAt": "2026-06-01T09:50:08Z",
+      "releaseNotesExcerpt": "Please refer to CHANGELOG.md for details.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
+      "route": "/package/vite/8.0.16",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/vite"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/vitejs/vite"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/vitejs/vite/releases/tag/v8.0.16"
+        }
+      ]
+    },
+    {
+      "id": "vitest-4-1-8",
+      "packageName": "vitest",
+      "packageSlug": "vitest",
+      "description": "Vite-native testing",
+      "oldVersion": "4.1.7",
+      "newVersion": "4.1.8",
+      "releaseDate": "2026-06-01",
+      "publishedAgo": "published today",
+      "risk": "low",
+      "category": "Low impact",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Test suites, browser automation, and release validation workflows.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: v4.1.8.",
+      "githubReleaseTitle": "v4.1.8",
+      "githubReleaseUrl": "https://github.com/vitest-dev/vitest/releases/tag/v4.1.8",
+      "githubReleaseTag": "v4.1.8",
+      "githubReleasePublishedAt": "2026-06-01T08:15:20Z",
+      "releaseNotesExcerpt": "&nbsp;&nbsp;&nbsp; Bug Fixes **browser**: - Disable client cdp API when allowWrite/allowExec: false [backport to v4] &nbsp;-&nbsp; by @hi-ogawa and **Codex** in https://github.com/vitest-dev/vitest/issues/10450 <samp>(e4067)</samp> - Remove orphaned Playwright route when same mod",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
+      "route": "/package/vitest/4.1.8",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/vitest"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/vitest-dev/vitest"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/vitest-dev/vitest/releases/tag/v4.1.8"
+        }
+      ]
+    },
+    {
       "id": "eslint-10-4-1",
       "packageName": "eslint",
       "packageSlug": "eslint",
@@ -1097,7 +1177,7 @@
       "oldVersion": "5.0.13",
       "newVersion": "5.0.14",
       "releaseDate": "2026-05-28",
-      "publishedAgo": "published 3 days ago",
+      "publishedAgo": "published 4 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -1137,7 +1217,7 @@
       "oldVersion": "2.9.16-canary.2",
       "newVersion": "2.9.16",
       "releaseDate": "2026-05-28",
-      "publishedAgo": "published 3 days ago",
+      "publishedAgo": "published 4 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -1177,7 +1257,7 @@
       "oldVersion": "1.11.20",
       "newVersion": "1.11.21",
       "releaseDate": "2026-05-26",
-      "publishedAgo": "published 5 days ago",
+      "publishedAgo": "published 6 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -1217,7 +1297,7 @@
       "oldVersion": "5.107.1",
       "newVersion": "5.107.2",
       "releaseDate": "2026-05-25",
-      "publishedAgo": "published 6 days ago",
+      "publishedAgo": "published 7 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -1290,46 +1370,6 @@
       ]
     },
     {
-      "id": "vite-8-0-14",
-      "packageName": "vite",
-      "packageSlug": "vite",
-      "description": "Frontend build tooling",
-      "oldVersion": "8.0.13",
-      "newVersion": "8.0.14",
-      "releaseDate": "2026-05-21",
-      "publishedAgo": "published 10 days ago",
-      "risk": "low",
-      "category": "Low impact",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Patch release with no OSV match.",
-      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-      "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
-      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "GitHub release note found: v8.0.14.",
-      "githubReleaseTitle": "v8.0.14",
-      "githubReleaseUrl": "https://github.com/vitejs/vite/releases/tag/v8.0.14",
-      "githubReleaseTag": "v8.0.14",
-      "githubReleasePublishedAt": "2026-05-21T07:15:28Z",
-      "releaseNotesExcerpt": "Please refer to CHANGELOG.md for details.",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
-      "route": "/package/vite/8.0.14",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/vite"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/vitejs/vite"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/vitejs/vite/releases/tag/v8.0.14"
-        }
-      ]
-    },
-    {
       "id": "semver-7-8-1",
       "packageName": "semver",
       "packageSlug": "semver",
@@ -1377,7 +1417,7 @@
       "oldVersion": "8.5.14",
       "newVersion": "8.5.15",
       "releaseDate": "2026-05-19",
-      "publishedAgo": "published 12 days ago",
+      "publishedAgo": "published 13 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -1450,46 +1490,6 @@
       ]
     },
     {
-      "id": "rollup-4-60-4",
-      "packageName": "rollup",
-      "packageSlug": "rollup",
-      "description": "Module bundler",
-      "oldVersion": "4.60.3",
-      "newVersion": "4.60.4",
-      "releaseDate": "2026-05-14",
-      "publishedAgo": "published 17 days ago",
-      "risk": "low",
-      "category": "Low impact",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Patch release with no OSV match.",
-      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-      "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
-      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "GitHub release note found: v4.60.4.",
-      "githubReleaseTitle": "v4.60.4",
-      "githubReleaseUrl": "https://github.com/rollup/rollup/releases/tag/v4.60.4",
-      "githubReleaseTag": "v4.60.4",
-      "githubReleasePublishedAt": "2026-05-14T17:54:35Z",
-      "releaseNotesExcerpt": "4.60.4 _2026-05-14_ Bug Fixes Improve stability of chunk hashes (#6362) Pull Requests #6362: fix: stabilize chunk assignment across parallel file reads (@sonukapoor, @Sonu Kapoor, @TrickyPi, @lukastaegert) #6370: fix(deps): update minor/patch updates (@renovate[bot]) #6371: chore",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
-      "route": "/package/rollup/4.60.4",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/rollup"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/rollup/rollup"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/rollup/rollup/releases/tag/v4.60.4"
-        }
-      ]
-    },
-    {
       "id": "playwright-1-60-0",
       "packageName": "playwright",
       "packageSlug": "playwright",
@@ -1537,7 +1537,7 @@
       "oldVersion": "3.6.0-dev.d54f7e5713c653d0171971405344f7c6e44d418f",
       "newVersion": "3.6.0",
       "releaseDate": "2026-05-10",
-      "publishedAgo": "published 21 days ago",
+      "publishedAgo": "published 22 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -1617,7 +1617,7 @@
       "oldVersion": "2.0.1",
       "newVersion": "2.0.2",
       "releaseDate": "2026-04-21",
-      "publishedAgo": "published 40 days ago",
+      "publishedAgo": "published 41 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -1817,7 +1817,7 @@
       "oldVersion": "2.4.0",
       "newVersion": "2.4.1",
       "releaseDate": "2026-02-27",
-      "publishedAgo": "published 93 days ago",
+      "publishedAgo": "published 94 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -2101,7 +2101,7 @@
       "packageName": "vite",
       "description": "Frontend build tooling",
       "route": "/package/vite",
-      "latestReleaseRoute": "/package/vite/8.0.14"
+      "latestReleaseRoute": "/package/vite/8.0.16"
     },
     "typescript": {
       "packageName": "typescript",
@@ -2209,7 +2209,7 @@
       "packageName": "rollup",
       "description": "Module bundler",
       "route": "/package/rollup",
-      "latestReleaseRoute": "/package/rollup/4.60.4"
+      "latestReleaseRoute": "/package/rollup/4.61.0"
     },
     "esbuild": {
       "packageName": "esbuild",
@@ -2233,7 +2233,7 @@
       "packageName": "vitest",
       "description": "Vite-native testing",
       "route": "/package/vitest",
-      "latestReleaseRoute": "/package/vitest/4.1.7"
+      "latestReleaseRoute": "/package/vitest/4.1.8"
     },
     "jest": {
       "packageName": "jest",
@@ -2384,532 +2384,532 @@
     "/weekly": {
       "path": "/weekly",
       "title": "Week 23, 2026 Frontend Dependency Risk Digest",
-      "description": "24 risky updates, 7 breaking changes, and 3 security-relevant releases from 50 tracked frontend npm packages."
+      "description": "Week 23, 2026 frontend npm dependency-risk digest: 24 risky updates, 6 breaking changes, 3 security-relevant releases, OSV/CVE checks, release notes, and recommended actions from 50 tracked React, JavaScript, and frontend packages."
     },
     "/risk/security": {
       "path": "/risk/security",
-      "title": "Security-Relevant Frontend Package Releases",
-      "description": "Frontend npm releases with OSV, CVE, or GitHub release-note security signals."
+      "title": "Frontend npm Security Updates and OSV Signals",
+      "description": "Security-relevant frontend npm package releases with OSV vulnerability checks, CVE references, GitHub release-note security signals, affected audience, and recommended update actions for JavaScript teams."
     },
     "/risk/breaking": {
       "path": "/risk/breaking",
-      "title": "Breaking Frontend Package Releases",
-      "description": "Major version frontend npm releases that deserve review before updating."
+      "title": "Breaking Frontend npm Package Releases",
+      "description": "Breaking frontend npm updates and major package releases for React, Vite, Next.js, TypeScript, Storybook, build tooling, test tooling, and JavaScript dependency maintenance."
     },
     "/risk/review": {
       "path": "/risk/review",
-      "title": "Frontend Package Updates To Review",
-      "description": "Minor version frontend npm releases that are not urgent but should be reviewed before routine updates."
+      "title": "Frontend npm Updates To Review",
+      "description": "Frontend npm dependency updates to review, including minor releases, release notes, OSV checks, affected audience, and recommended maintenance actions for JavaScript production apps."
     },
     "/sponsor": {
       "path": "/sponsor",
       "title": "Sponsor Dependency Risk Digest",
-      "description": "Manual sponsorship inquiries for reaching frontend developers reviewing npm dependency risk."
+      "description": "Sponsor Dependency Risk Digest to reach frontend developers and JavaScript teams tracking npm security updates, breaking package releases, OSV/CVE signals, React dependencies, Vite, Next.js, TypeScript, and Storybook releases."
     },
     "/weekly/2026-w23": {
       "path": "/weekly/2026-w23",
       "title": "Week 23, 2026 frontend dependency risk archive",
-      "description": "Jun 1 - Jun 7: 24 risky updates, 7 breaking changes, and 3 security-relevant releases from 50 tracked frontend npm packages."
+      "description": "Jun 1 - Jun 7 archive for frontend npm dependency risk: 24 risky updates, 6 breaking changes, 3 security-relevant releases, OSV/CVE checks, release notes, and recommended actions from 50 tracked packages."
     },
     "/package/react": {
       "path": "/package/react",
       "title": "react dependency risk archive",
-      "description": "react release-risk history for frontend teams. UI library"
+      "description": "react npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. UI library"
     },
     "/package/react-dom": {
       "path": "/package/react-dom",
       "title": "react-dom dependency risk archive",
-      "description": "react-dom release-risk history for frontend teams. React DOM rendering"
+      "description": "react-dom npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. React DOM rendering"
     },
     "/package/next": {
       "path": "/package/next",
       "title": "next dependency risk archive",
-      "description": "next release-risk history for frontend teams. React framework"
+      "description": "next npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. React framework"
     },
     "/package/vite": {
       "path": "/package/vite",
       "title": "vite dependency risk archive",
-      "description": "vite release-risk history for frontend teams. Frontend build tooling"
+      "description": "vite npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Frontend build tooling"
     },
     "/package/typescript": {
       "path": "/package/typescript",
       "title": "typescript dependency risk archive",
-      "description": "typescript release-risk history for frontend teams. Typed JavaScript compiler"
+      "description": "typescript npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Typed JavaScript compiler"
     },
     "/package/eslint": {
       "path": "/package/eslint",
       "title": "eslint dependency risk archive",
-      "description": "eslint release-risk history for frontend teams. JavaScript linting"
+      "description": "eslint npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. JavaScript linting"
     },
     "/package/tailwindcss": {
       "path": "/package/tailwindcss",
       "title": "tailwindcss dependency risk archive",
-      "description": "tailwindcss release-risk history for frontend teams. Utility-first CSS"
+      "description": "tailwindcss npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Utility-first CSS"
     },
     "/package/postcss": {
       "path": "/package/postcss",
       "title": "postcss dependency risk archive",
-      "description": "postcss release-risk history for frontend teams. CSS transformation"
+      "description": "postcss npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. CSS transformation"
     },
     "/package/autoprefixer": {
       "path": "/package/autoprefixer",
       "title": "autoprefixer dependency risk archive",
-      "description": "autoprefixer release-risk history for frontend teams. CSS vendor prefixing"
+      "description": "autoprefixer npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. CSS vendor prefixing"
     },
     "/package/vitejs-plugin-react": {
       "path": "/package/vitejs-plugin-react",
       "title": "@vitejs/plugin-react dependency risk archive",
-      "description": "@vitejs/plugin-react release-risk history for frontend teams. Vite React plugin"
+      "description": "@vitejs/plugin-react npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Vite React plugin"
     },
     "/package/react-router-dom": {
       "path": "/package/react-router-dom",
       "title": "react-router-dom dependency risk archive",
-      "description": "react-router-dom release-risk history for frontend teams. Declarative routing for React"
+      "description": "react-router-dom npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Declarative routing for React"
     },
     "/package/tanstack-react-query": {
       "path": "/package/tanstack-react-query",
       "title": "@tanstack/react-query dependency risk archive",
-      "description": "@tanstack/react-query release-risk history for frontend teams. Data fetching for React"
+      "description": "@tanstack/react-query npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Data fetching for React"
     },
     "/package/zustand": {
       "path": "/package/zustand",
       "title": "zustand dependency risk archive",
-      "description": "zustand release-risk history for frontend teams. React state management"
+      "description": "zustand npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. React state management"
     },
     "/package/redux": {
       "path": "/package/redux",
       "title": "redux dependency risk archive",
-      "description": "redux release-risk history for frontend teams. State container"
+      "description": "redux npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. State container"
     },
     "/package/reduxjs-toolkit": {
       "path": "/package/reduxjs-toolkit",
       "title": "@reduxjs/toolkit dependency risk archive",
-      "description": "@reduxjs/toolkit release-risk history for frontend teams. Redux application toolkit"
+      "description": "@reduxjs/toolkit npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Redux application toolkit"
     },
     "/package/react-hook-form": {
       "path": "/package/react-hook-form",
       "title": "react-hook-form dependency risk archive",
-      "description": "react-hook-form release-risk history for frontend teams. React form state"
+      "description": "react-hook-form npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. React form state"
     },
     "/package/zod": {
       "path": "/package/zod",
       "title": "zod dependency risk archive",
-      "description": "zod release-risk history for frontend teams. Schema validation"
+      "description": "zod npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Schema validation"
     },
     "/package/axios": {
       "path": "/package/axios",
       "title": "axios dependency risk archive",
-      "description": "axios release-risk history for frontend teams. HTTP client"
+      "description": "axios npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. HTTP client"
     },
     "/package/ky": {
       "path": "/package/ky",
       "title": "ky dependency risk archive",
-      "description": "ky release-risk history for frontend teams. Fetch client"
+      "description": "ky npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Fetch client"
     },
     "/package/swr": {
       "path": "/package/swr",
       "title": "swr dependency risk archive",
-      "description": "swr release-risk history for frontend teams. React data fetching"
+      "description": "swr npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. React data fetching"
     },
     "/package/webpack": {
       "path": "/package/webpack",
       "title": "webpack dependency risk archive",
-      "description": "webpack release-risk history for frontend teams. JavaScript bundler"
+      "description": "webpack npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. JavaScript bundler"
     },
     "/package/rollup": {
       "path": "/package/rollup",
       "title": "rollup dependency risk archive",
-      "description": "rollup release-risk history for frontend teams. Module bundler"
+      "description": "rollup npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Module bundler"
     },
     "/package/esbuild": {
       "path": "/package/esbuild",
       "title": "esbuild dependency risk archive",
-      "description": "esbuild release-risk history for frontend teams. JavaScript bundler"
+      "description": "esbuild npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. JavaScript bundler"
     },
     "/package/turbo": {
       "path": "/package/turbo",
       "title": "turbo dependency risk archive",
-      "description": "turbo release-risk history for frontend teams. Monorepo build system"
+      "description": "turbo npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Monorepo build system"
     },
     "/package/prettier": {
       "path": "/package/prettier",
       "title": "prettier dependency risk archive",
-      "description": "prettier release-risk history for frontend teams. Code formatter"
+      "description": "prettier npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Code formatter"
     },
     "/package/vitest": {
       "path": "/package/vitest",
       "title": "vitest dependency risk archive",
-      "description": "vitest release-risk history for frontend teams. Vite-native testing"
+      "description": "vitest npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Vite-native testing"
     },
     "/package/jest": {
       "path": "/package/jest",
       "title": "jest dependency risk archive",
-      "description": "jest release-risk history for frontend teams. JavaScript testing"
+      "description": "jest npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. JavaScript testing"
     },
     "/package/cypress": {
       "path": "/package/cypress",
       "title": "cypress dependency risk archive",
-      "description": "cypress release-risk history for frontend teams. Browser testing"
+      "description": "cypress npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Browser testing"
     },
     "/package/playwright": {
       "path": "/package/playwright",
       "title": "playwright dependency risk archive",
-      "description": "playwright release-risk history for frontend teams. Browser automation"
+      "description": "playwright npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Browser automation"
     },
     "/package/storybook-react": {
       "path": "/package/storybook-react",
       "title": "@storybook/react dependency risk archive",
-      "description": "@storybook/react release-risk history for frontend teams. React component workshop"
+      "description": "@storybook/react npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. React component workshop"
     },
     "/package/storybook": {
       "path": "/package/storybook",
       "title": "storybook dependency risk archive",
-      "description": "storybook release-risk history for frontend teams. Component documentation"
+      "description": "storybook npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Component documentation"
     },
     "/package/sass": {
       "path": "/package/sass",
       "title": "sass dependency risk archive",
-      "description": "sass release-risk history for frontend teams. CSS preprocessor"
+      "description": "sass npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. CSS preprocessor"
     },
     "/package/less": {
       "path": "/package/less",
       "title": "less dependency risk archive",
-      "description": "less release-risk history for frontend teams. CSS preprocessor"
+      "description": "less npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. CSS preprocessor"
     },
     "/package/styled-components": {
       "path": "/package/styled-components",
       "title": "styled-components dependency risk archive",
-      "description": "styled-components release-risk history for frontend teams. CSS-in-JS styling"
+      "description": "styled-components npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. CSS-in-JS styling"
     },
     "/package/emotion-react": {
       "path": "/package/emotion-react",
       "title": "@emotion/react dependency risk archive",
-      "description": "@emotion/react release-risk history for frontend teams. CSS-in-JS styling"
+      "description": "@emotion/react npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. CSS-in-JS styling"
     },
     "/package/framer-motion": {
       "path": "/package/framer-motion",
       "title": "framer-motion dependency risk archive",
-      "description": "framer-motion release-risk history for frontend teams. React motion library"
+      "description": "framer-motion npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. React motion library"
     },
     "/package/lodash": {
       "path": "/package/lodash",
       "title": "lodash dependency risk archive",
-      "description": "lodash release-risk history for frontend teams. Utility library"
+      "description": "lodash npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Utility library"
     },
     "/package/date-fns": {
       "path": "/package/date-fns",
       "title": "date-fns dependency risk archive",
-      "description": "date-fns release-risk history for frontend teams. Date utilities"
+      "description": "date-fns npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Date utilities"
     },
     "/package/dayjs": {
       "path": "/package/dayjs",
       "title": "dayjs dependency risk archive",
-      "description": "dayjs release-risk history for frontend teams. Date utilities"
+      "description": "dayjs npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Date utilities"
     },
     "/package/clsx": {
       "path": "/package/clsx",
       "title": "clsx dependency risk archive",
-      "description": "clsx release-risk history for frontend teams. Class name utility"
+      "description": "clsx npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Class name utility"
     },
     "/package/classnames": {
       "path": "/package/classnames",
       "title": "classnames dependency risk archive",
-      "description": "classnames release-risk history for frontend teams. Class name utility"
+      "description": "classnames npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Class name utility"
     },
     "/package/radix-ui-react-dialog": {
       "path": "/package/radix-ui-react-dialog",
       "title": "@radix-ui/react-dialog dependency risk archive",
-      "description": "@radix-ui/react-dialog release-risk history for frontend teams. Accessible dialog primitive"
+      "description": "@radix-ui/react-dialog npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Accessible dialog primitive"
     },
     "/package/radix-ui-react-popover": {
       "path": "/package/radix-ui-react-popover",
       "title": "@radix-ui/react-popover dependency risk archive",
-      "description": "@radix-ui/react-popover release-risk history for frontend teams. Accessible popover primitive"
+      "description": "@radix-ui/react-popover npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Accessible popover primitive"
     },
     "/package/tailwind-merge": {
       "path": "/package/tailwind-merge",
       "title": "tailwind-merge dependency risk archive",
-      "description": "tailwind-merge release-risk history for frontend teams. Tailwind class merging"
+      "description": "tailwind-merge npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Tailwind class merging"
     },
     "/package/class-variance-authority": {
       "path": "/package/class-variance-authority",
       "title": "class-variance-authority dependency risk archive",
-      "description": "class-variance-authority release-risk history for frontend teams. Variant class composition"
+      "description": "class-variance-authority npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Variant class composition"
     },
     "/package/minimist": {
       "path": "/package/minimist",
       "title": "minimist dependency risk archive",
-      "description": "minimist release-risk history for frontend teams. CLI argument parsing"
+      "description": "minimist npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. CLI argument parsing"
     },
     "/package/ws": {
       "path": "/package/ws",
       "title": "ws dependency risk archive",
-      "description": "ws release-risk history for frontend teams. WebSocket implementation"
+      "description": "ws npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. WebSocket implementation"
     },
     "/package/semver": {
       "path": "/package/semver",
       "title": "semver dependency risk archive",
-      "description": "semver release-risk history for frontend teams. Semantic version parsing"
+      "description": "semver npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Semantic version parsing"
     },
     "/package/npm-run-all": {
       "path": "/package/npm-run-all",
       "title": "npm-run-all dependency risk archive",
-      "description": "npm-run-all release-risk history for frontend teams. Script runner"
+      "description": "npm-run-all npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Script runner"
     },
     "/package/pnpm": {
       "path": "/package/pnpm",
       "title": "pnpm dependency risk archive",
-      "description": "pnpm release-risk history for frontend teams. Package manager"
+      "description": "pnpm npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. Package manager"
     },
     "/package/ws/8.21.0": {
       "path": "/package/ws/8.21.0",
       "title": "ws 8.21.0 security update",
-      "description": "ws 8.21.0: GitHub release notes mention security or vulnerability fixes. Recommended action: Update recommended. Review the GitHub release notes and prioritize this package in the security lane."
+      "description": "ws 8.21.0 frontend npm update: GitHub release notes mention security or vulnerability fixes. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Update recommended. Review the GitHub release notes and prioritize this package in the security lane."
     },
     "/package/axios/1.16.1": {
       "path": "/package/axios/1.16.1",
       "title": "axios 1.16.1 security update",
-      "description": "axios 1.16.1: GitHub release notes mention security or vulnerability fixes. Recommended action: Update recommended. Review the GitHub release notes and prioritize this package in the security lane."
+      "description": "axios 1.16.1 frontend npm update: GitHub release notes mention security or vulnerability fixes. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Update recommended. Review the GitHub release notes and prioritize this package in the security lane."
     },
     "/package/npm-run-all/4.1.5": {
       "path": "/package/npm-run-all/4.1.5",
       "title": "npm-run-all 4.1.5 security update",
-      "description": "npm-run-all 4.1.5: GitHub release notes mention security or vulnerability fixes. Recommended action: Update recommended. Review the GitHub release notes and prioritize this package in the security lane."
+      "description": "npm-run-all 4.1.5 frontend npm update: GitHub release notes mention security or vulnerability fixes. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Update recommended. Review the GitHub release notes and prioritize this package in the security lane."
     },
     "/package/pnpm/11.5.0": {
       "path": "/package/pnpm/11.5.0",
       "title": "pnpm 11.5.0 breaking update",
-      "description": "pnpm 11.5.0: Major version release detected. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were found for review."
-    },
-    "/package/vitest/4.1.7": {
-      "path": "/package/vitest/4.1.7",
-      "title": "vitest 4.1.7 breaking update",
-      "description": "vitest 4.1.7: Major version release detected. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were found for review."
+      "description": "pnpm 11.5.0 frontend npm update: Major version release detected. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were found for review."
     },
     "/package/styled-components/6.4.2": {
       "path": "/package/styled-components/6.4.2",
       "title": "styled-components 6.4.2 breaking update",
-      "description": "styled-components 6.4.2: Major version release detected. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were found for review."
+      "description": "styled-components 6.4.2 frontend npm update: Major version release detected. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were found for review."
     },
     "/package/tailwindcss/4.3.0": {
       "path": "/package/tailwindcss/4.3.0",
       "title": "tailwindcss 4.3.0 breaking update",
-      "description": "tailwindcss 4.3.0: Major version release detected. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were found for review."
+      "description": "tailwindcss 4.3.0 frontend npm update: Major version release detected. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were found for review."
     },
     "/package/react/19.2.6": {
       "path": "/package/react/19.2.6",
       "title": "react 19.2.6 breaking update",
-      "description": "react 19.2.6: Major version release detected. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were found for review."
+      "description": "react 19.2.6 frontend npm update: Major version release detected. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were found for review."
     },
     "/package/react-dom/19.2.6": {
       "path": "/package/react-dom/19.2.6",
       "title": "react-dom 19.2.6 breaking update",
-      "description": "react-dom 19.2.6: Major version release detected. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were found for review."
+      "description": "react-dom 19.2.6 frontend npm update: Major version release detected. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were found for review."
     },
     "/package/minimist/1.2.8": {
       "path": "/package/minimist/1.2.8",
       "title": "minimist 1.2.8 breaking update",
-      "description": "minimist 1.2.8: Major version release detected. Recommended action: Review changes before updating. Test in staging before merging."
+      "description": "minimist 1.2.8 frontend npm update: Major version release detected. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review changes before updating. Test in staging before merging."
+    },
+    "/package/rollup/4.61.0": {
+      "path": "/package/rollup/4.61.0",
+      "title": "rollup 4.61.0 review update",
+      "description": "rollup 4.61.0 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
     },
     "/package/react-hook-form/7.77.0": {
       "path": "/package/react-hook-form/7.77.0",
       "title": "react-hook-form 7.77.0 review update",
-      "description": "react-hook-form 7.77.0: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
+      "description": "react-hook-form 7.77.0 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
     },
     "/package/date-fns/4.4.0": {
       "path": "/package/date-fns/4.4.0",
       "title": "date-fns 4.4.0 review update",
-      "description": "date-fns 4.4.0: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
+      "description": "date-fns 4.4.0 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
     },
     "/package/react-router-dom/7.16.0": {
       "path": "/package/react-router-dom/7.16.0",
       "title": "react-router-dom 7.16.0 review update",
-      "description": "react-router-dom 7.16.0: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
+      "description": "react-router-dom 7.16.0 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
     },
     "/package/cypress/15.16.0": {
       "path": "/package/cypress/15.16.0",
       "title": "cypress 15.16.0 review update",
-      "description": "cypress 15.16.0: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
+      "description": "cypress 15.16.0 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
     },
     "/package/storybook-react/10.4.1": {
       "path": "/package/storybook-react/10.4.1",
       "title": "@storybook/react 10.4.1 review update",
-      "description": "@storybook/react 10.4.1: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
+      "description": "@storybook/react 10.4.1 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
     },
     "/package/storybook/10.4.1": {
       "path": "/package/storybook/10.4.1",
       "title": "storybook 10.4.1 review update",
-      "description": "storybook 10.4.1: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
+      "description": "storybook 10.4.1 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
     },
     "/package/sass/1.100.0": {
       "path": "/package/sass/1.100.0",
       "title": "sass 1.100.0 review update",
-      "description": "sass 1.100.0: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
+      "description": "sass 1.100.0 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
     },
     "/package/framer-motion/12.40.0": {
       "path": "/package/framer-motion/12.40.0",
       "title": "framer-motion 12.40.0 review update",
-      "description": "framer-motion 12.40.0: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance."
+      "description": "framer-motion 12.40.0 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance."
     },
     "/package/reduxjs-toolkit/2.12.0": {
       "path": "/package/reduxjs-toolkit/2.12.0",
       "title": "@reduxjs/toolkit 2.12.0 review update",
-      "description": "@reduxjs/toolkit 2.12.0: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
+      "description": "@reduxjs/toolkit 2.12.0 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
     },
     "/package/next/16.2.6": {
       "path": "/package/next/16.2.6",
       "title": "next 16.2.6 review update",
-      "description": "next 16.2.6: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
+      "description": "next 16.2.6 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
     },
     "/package/zod/4.4.3": {
       "path": "/package/zod/4.4.3",
       "title": "zod 4.4.3 review update",
-      "description": "zod 4.4.3: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
+      "description": "zod 4.4.3 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
     },
     "/package/autoprefixer/10.5.0": {
       "path": "/package/autoprefixer/10.5.0",
       "title": "autoprefixer 10.5.0 review update",
-      "description": "autoprefixer 10.5.0: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
+      "description": "autoprefixer 10.5.0 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
     },
     "/package/esbuild/0.28.0": {
       "path": "/package/esbuild/0.28.0",
       "title": "esbuild 0.28.0 review update",
-      "description": "esbuild 0.28.0: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
+      "description": "esbuild 0.28.0 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
     },
     "/package/emotion-react/11.14.0": {
       "path": "/package/emotion-react/11.14.0",
       "title": "@emotion/react 11.14.0 review update",
-      "description": "@emotion/react 11.14.0: Minor version release detected with no OSV match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
+      "description": "@emotion/react 11.14.0 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
+    },
+    "/package/vite/8.0.16": {
+      "path": "/package/vite/8.0.16",
+      "title": "vite 8.0.16 low impact update",
+      "description": "vite 8.0.16 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
+    "/package/vitest/4.1.8": {
+      "path": "/package/vitest/4.1.8",
+      "title": "vitest 4.1.8 low impact update",
+      "description": "vitest 4.1.8 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/eslint/10.4.1": {
       "path": "/package/eslint/10.4.1",
       "title": "eslint 10.4.1 low impact update",
-      "description": "eslint 10.4.1: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "eslint 10.4.1 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/zustand/5.0.14": {
       "path": "/package/zustand/5.0.14",
       "title": "zustand 5.0.14 low impact update",
-      "description": "zustand 5.0.14: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "zustand 5.0.14 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/turbo/2.9.16": {
       "path": "/package/turbo/2.9.16",
       "title": "turbo 2.9.16 low impact update",
-      "description": "turbo 2.9.16: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "turbo 2.9.16 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/dayjs/1.11.21": {
       "path": "/package/dayjs/1.11.21",
       "title": "dayjs 1.11.21 low impact update",
-      "description": "dayjs 1.11.21: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "dayjs 1.11.21 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/webpack/5.107.2": {
       "path": "/package/webpack/5.107.2",
       "title": "webpack 5.107.2 low impact update",
-      "description": "webpack 5.107.2: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "webpack 5.107.2 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/tanstack-react-query/5.100.14": {
       "path": "/package/tanstack-react-query/5.100.14",
       "title": "@tanstack/react-query 5.100.14 low impact update",
-      "description": "@tanstack/react-query 5.100.14: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-    },
-    "/package/vite/8.0.14": {
-      "path": "/package/vite/8.0.14",
-      "title": "vite 8.0.14 low impact update",
-      "description": "vite 8.0.14: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "@tanstack/react-query 5.100.14 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/semver/7.8.1": {
       "path": "/package/semver/7.8.1",
       "title": "semver 7.8.1 low impact update",
-      "description": "semver 7.8.1: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "semver 7.8.1 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/postcss/8.5.15": {
       "path": "/package/postcss/8.5.15",
       "title": "postcss 8.5.15 low impact update",
-      "description": "postcss 8.5.15: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "postcss 8.5.15 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/vitejs-plugin-react/6.0.2": {
       "path": "/package/vitejs-plugin-react/6.0.2",
       "title": "@vitejs/plugin-react 6.0.2 low impact update",
-      "description": "@vitejs/plugin-react 6.0.2: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-    },
-    "/package/rollup/4.60.4": {
-      "path": "/package/rollup/4.60.4",
-      "title": "rollup 4.60.4 low impact update",
-      "description": "rollup 4.60.4: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "@vitejs/plugin-react 6.0.2 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/playwright/1.60.0": {
       "path": "/package/playwright/1.60.0",
       "title": "playwright 1.60.0 low impact update",
-      "description": "playwright 1.60.0: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "playwright 1.60.0 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/tailwind-merge/3.6.0": {
       "path": "/package/tailwind-merge/3.6.0",
       "title": "tailwind-merge 3.6.0 low impact update",
-      "description": "tailwind-merge 3.6.0: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "tailwind-merge 3.6.0 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/jest/30.4.2": {
       "path": "/package/jest/30.4.2",
       "title": "jest 30.4.2 low impact update",
-      "description": "jest 30.4.2: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "jest 30.4.2 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/ky/2.0.2": {
       "path": "/package/ky/2.0.2",
       "title": "ky 2.0.2 low impact update",
-      "description": "ky 2.0.2: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "ky 2.0.2 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/typescript/6.0.3": {
       "path": "/package/typescript/6.0.3",
       "title": "typescript 6.0.3 low impact update",
-      "description": "typescript 6.0.3: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "typescript 6.0.3 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/prettier/3.8.3": {
       "path": "/package/prettier/3.8.3",
       "title": "prettier 3.8.3 low impact update",
-      "description": "prettier 3.8.3: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "prettier 3.8.3 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/lodash/4.18.1": {
       "path": "/package/lodash/4.18.1",
       "title": "lodash 4.18.1 low impact update",
-      "description": "lodash 4.18.1: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "lodash 4.18.1 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/less/4.6.4": {
       "path": "/package/less/4.6.4",
       "title": "less 4.6.4 low impact update",
-      "description": "less 4.6.4: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "less 4.6.4 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/swr/2.4.1": {
       "path": "/package/swr/2.4.1",
       "title": "swr 2.4.1 low impact update",
-      "description": "swr 2.4.1: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "swr 2.4.1 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/radix-ui-react-dialog/1.1.15": {
       "path": "/package/radix-ui-react-dialog/1.1.15",
       "title": "@radix-ui/react-dialog 1.1.15 low impact update",
-      "description": "@radix-ui/react-dialog 1.1.15: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "@radix-ui/react-dialog 1.1.15 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/radix-ui-react-popover/1.1.15": {
       "path": "/package/radix-ui-react-popover/1.1.15",
       "title": "@radix-ui/react-popover 1.1.15 low impact update",
-      "description": "@radix-ui/react-popover 1.1.15: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "@radix-ui/react-popover 1.1.15 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/class-variance-authority/0.7.1": {
       "path": "/package/class-variance-authority/0.7.1",
       "title": "class-variance-authority 0.7.1 low impact update",
-      "description": "class-variance-authority 0.7.1: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "class-variance-authority 0.7.1 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/clsx/2.1.1": {
       "path": "/package/clsx/2.1.1",
       "title": "clsx 2.1.1 low impact update",
-      "description": "clsx 2.1.1: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "clsx 2.1.1 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/classnames/2.5.1": {
       "path": "/package/classnames/2.5.1",
       "title": "classnames 2.5.1 low impact update",
-      "description": "classnames 2.5.1: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "classnames 2.5.1 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/redux/5.0.1": {
       "path": "/package/redux/5.0.1",
       "title": "redux 5.0.1 low impact update",
-      "description": "redux 5.0.1: Patch release with no OSV match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+      "description": "redux 5.0.1 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     }
   },
   "failures": []

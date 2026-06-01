@@ -45,21 +45,22 @@ function App() {
 
   useEffect(() => {
     const seo = seoRoutes[path] ?? seoRoutes["/weekly"];
-    document.title = `${seo.title} | Dependency Risk Digest`;
-    let description = document.querySelector<HTMLMetaElement>('meta[name="description"]');
-    if (!description) {
-      description = document.createElement("meta");
-      description.name = "description";
-      document.head.appendChild(description);
-    }
-    description.content = seo.description;
+    const pageTitle = `${seo.title} | Dependency Risk Digest`;
+    const pageUrl = `${siteUrl}${path}`;
+    document.title = pageTitle;
+    setMeta("name", "description", seo.description);
+    setMeta("property", "og:title", pageTitle);
+    setMeta("property", "og:description", seo.description);
+    setMeta("property", "og:url", pageUrl);
+    setMeta("name", "twitter:title", pageTitle);
+    setMeta("name", "twitter:description", seo.description);
     let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
     if (!canonical) {
       canonical = document.createElement("link");
       canonical.rel = "canonical";
       document.head.appendChild(canonical);
     }
-    canonical.href = `${siteUrl}${path}`;
+    canonical.href = pageUrl;
   }, [path]);
 
   const visibleReleases = useMemo(() => {
@@ -171,6 +172,16 @@ function Header({
   );
 }
 
+function setMeta(attribute: "name" | "property", key: string, content: string) {
+  let tag = document.querySelector<HTMLMetaElement>(`meta[${attribute}="${key}"]`);
+  if (!tag) {
+    tag = document.createElement("meta");
+    tag.setAttribute(attribute, key);
+    document.head.appendChild(tag);
+  }
+  tag.content = content;
+}
+
 function Hero({ navigate }: { navigate: (path: string) => void }) {
   return (
     <section className="hero-section">
@@ -182,7 +193,8 @@ function Hero({ navigate }: { navigate: (path: string) => void }) {
         <p>
           We analyze npm releases, changelogs, and advisories to surface risky,
           breaking, security-relevant, and low-impact updates so teams know what
-          deserves attention.
+          deserves attention across React, Vite, Next.js, TypeScript, Storybook,
+          build tooling, test tooling, CSS packages, and JavaScript production apps.
         </p>
         <p className="generated-note">
           Generated from npm registry metadata and OSV queries. Last run:{" "}
@@ -214,6 +226,7 @@ function Hero({ navigate }: { navigate: (path: string) => void }) {
         <ul>
           <li>Automated analysis of npm releases and changelogs</li>
           <li>Correlated with OSV advisories and CVE data</li>
+          <li>Tracks frontend dependency risk across React, Vite, Next.js, TypeScript, Storybook, and build tools</li>
           <li>Signal-focused: what to review vs. what to ignore</li>
           <li>Built for frontend developers shipping to production</li>
         </ul>
@@ -257,6 +270,7 @@ function ArchivePage(props: {
   navigate: (path: string) => void;
 }) {
   const {
+    path,
     title,
     visibleReleases,
     selectedRelease,
@@ -309,6 +323,7 @@ function ArchivePage(props: {
               />
             </div>
           </div>
+          <p className="panel-description">{seoRoutes[path]?.description ?? seoRoutes["/weekly"].description}</p>
           <ReleaseTable releases={visibleReleases} chooseRelease={chooseRelease} />
         </div>
         <ReleaseDetail release={selectedRelease} />
@@ -505,8 +520,9 @@ function WeeklyArchivePage({ digest, navigate }: { digest: WeeklyDigest; navigat
       <div>
         <h1>{digest.week}</h1>
         <p>
-          {digest.dateRange} archived dependency-risk summary for the fixed
-          frontend package set.
+          {digest.dateRange} archived frontend npm dependency-risk summary with
+          OSV/CVE checks, breaking-change signals, release notes, and recommended
+          actions for tracked React, JavaScript, and frontend packages.
         </p>
       </div>
       <div className="package-summary-grid">
@@ -527,7 +543,8 @@ function WeeklyArchivePage({ digest, navigate }: { digest: WeeklyDigest; navigat
         <h2>{digest.security} security-relevant, {digest.breaking} breaking, {digest.safe} safe to ignore</h2>
         <p>
           Historical weekly pages are generated from the same automated refresh
-          pipeline and kept in the sitemap so older digests remain addressable.
+          pipeline and kept in the sitemap so older dependency-risk digests,
+          npm security updates, and breaking release summaries remain addressable.
         </p>
         <button type="button" onClick={() => navigate("/weekly")}>View latest weekly digest</button>
       </div>
@@ -577,6 +594,11 @@ function PackagePage({ navigate, slug }: { navigate: (path: string) => void; slu
       <div>
         <h1>{packageInfo.packageName}</h1>
         <p>{packageInfo.description}</p>
+        <p>
+          This package archive tracks npm release risk, OSV vulnerability results,
+          CVE signals, GitHub release notes, affected audience, and recommended
+          update actions for frontend teams.
+        </p>
       </div>
       <div className="package-summary-grid">
         <div>
@@ -626,7 +648,9 @@ function SponsorPage({ navigate }: { navigate: (path: string) => void }) {
         <h1>Sponsor Dependency Risk Digest</h1>
         <p>
           Reach frontend developers and small teams who are actively reviewing npm
-          dependency risk before they update production apps.
+          dependency risk, security updates, breaking changes, OSV/CVE signals,
+          React dependencies, Vite, Next.js, TypeScript, Storybook, and JavaScript
+          release notes before they update production apps.
         </p>
         <div className="sponsor-actions">
           <a href={sponsorIssueUrl} target="_blank" rel="noreferrer">
@@ -650,15 +674,17 @@ function SponsorPage({ navigate }: { navigate: (path: string) => void }) {
           <h2>Audience</h2>
           <p>
             Frontend engineers, indie SaaS builders, and small teams checking
-            security, breaking-change, and review signals for common npm packages.
+            security, breaking-change, and review signals for common npm packages,
+            frontend frameworks, build tools, testing tools, and UI libraries.
           </p>
         </section>
         <section>
           <h2>Why This Matters</h2>
           <p>
             The digest is built around package risk, release notes, OSV results,
-            and recommended action, so sponsor interest is tested inside the
-            workflow visitors came to inspect.
+            CVE signals, affected audience, and recommended action, so sponsor
+            placement appears next to the dependency-risk workflow visitors came
+            to inspect.
           </p>
         </section>
       </div>

@@ -3,7 +3,7 @@
     "week": "Week 23, 2026",
     "dateRange": "Jun 1 - Jun 7",
     "risky": 24,
-    "breaking": 7,
+    "breaking": 6,
     "security": 3,
     "safe": 26,
     "total": 50,
@@ -45,15 +45,6 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
-        "packageName": "vitest",
-        "route": "/package/vitest/4.1.7",
-        "risk": "breaking",
-        "newVersion": "4.1.7",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
-      },
-      {
         "packageName": "styled-components",
         "route": "/package/styled-components/6.4.2",
         "risk": "breaking",
@@ -79,9 +70,18 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "react-dom",
+        "route": "/package/react-dom/19.2.6",
+        "risk": "breaking",
+        "newVersion": "19.2.6",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       }
     ],
     "route": "/weekly/2026-w23",
-    "generatedAt": "2026-06-01T01:08:44.626Z"
+    "generatedAt": "2026-06-01T16:49:55.464Z"
   }
 ]

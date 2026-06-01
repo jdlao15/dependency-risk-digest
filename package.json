@@ -9,7 +9,7 @@
     "generate:seo": "node scripts/generate-static-seo.mjs",
     "watchdog": "node scripts/watchdog.mjs",
     "refresh": "npm run generate:digest && npm run generate:seo && npm run build",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && node scripts/generate-route-html.mjs",
     "preview": "vite preview --host 127.0.0.1"
   },
   "dependencies": {
