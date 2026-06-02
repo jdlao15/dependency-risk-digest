@@ -9,7 +9,6 @@ const htmlRoutes = [
   { path: "/weekly", expectedText: "Latest Weekly Digest", name: "weekly page" },
   { path: "/packages", expectedText: "Frontend npm Package Risk Directory", name: "package directory" },
   { path: "/category/core-frameworks", expectedText: "Frameworks and Core UI", name: "frameworks category page" },
-  { path: "/advertise", expectedText: "Advertise on Dependency Risk Digest", name: "advertising page" },
   { path: "/package/react", expectedText: "Latest release-risk page", name: "react package page" },
   { path: "/methodology", expectedText: "How Dependency Risk Digest Evaluates Frontend npm Updates", name: "methodology page" },
 ];
@@ -39,7 +38,7 @@ for (const route of htmlRoutes) {
 
 const sitemap = await fetchRoute("/sitemap.xml", "sitemap");
 checkNonBlank("sitemap", sitemap.body, 1000, "Run npm run generate:seo locally and inspect public/sitemap.xml.");
-for (const expectedPath of ["/weekly", "/packages", "/category/core-frameworks", "/advertise", "/package/react"]) {
+for (const expectedPath of ["/weekly", "/packages", "/category/core-frameworks", "/package/react"]) {
   if (!sitemap.body.includes(`${siteUrl}${expectedPath}`)) {
     addFailure("sitemap", `Missing ${expectedPath} from sitemap.xml.`, "Run npm run refresh and verify data/sitemap-paths.json includes the route.");
   }

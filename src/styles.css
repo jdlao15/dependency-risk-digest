@@ -205,8 +205,7 @@ p {
   font-size: 0.86rem;
 }
 
-.hero-actions,
-.advertise-actions {
+.hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -214,9 +213,7 @@ p {
 }
 
 .hero-actions .primary-action,
-.hero-actions a,
-.advertise-actions a,
-.advertise-actions button {
+.hero-actions a {
   display: inline-flex;
   align-items: center;
   min-height: 40px;
@@ -227,15 +224,13 @@ p {
   text-decoration: none;
 }
 
-.hero-actions .primary-action,
-.advertise-actions a {
+.hero-actions .primary-action {
   color: #ffffff;
   background: #0f172a;
   border: 1px solid #0f172a;
 }
 
-.hero-actions a:not(.primary-action),
-.advertise-actions button {
+.hero-actions a:not(.primary-action) {
   color: #0057d8;
   background: #ffffff;
   border: 1px solid #bdd4f4;
@@ -920,7 +915,6 @@ td small,
 }
 
 .directory-page,
-.advertise-page,
 .methodology-page {
   display: grid;
   gap: 28px;
@@ -1069,7 +1063,6 @@ td small,
   text-decoration: none;
 }
 
-.advertise-hero,
 .methodology-hero {
   max-width: 850px;
 }
@@ -1082,14 +1075,12 @@ td small,
   text-transform: uppercase;
 }
 
-.advertise-hero h1,
 .methodology-hero h1 {
   color: #0d1420;
   font-size: clamp(2.1rem, 5vw, 3.8rem);
   line-height: 1.02;
 }
 
-.advertise-hero p,
 .methodology-hero p {
   max-width: 760px;
   margin-top: 16px;
@@ -1098,14 +1089,12 @@ td small,
   line-height: 1.65;
 }
 
-.advertise-grid,
 .methodology-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 
-.advertise-grid section,
 .methodology-grid section {
   min-width: 0;
   padding: 20px;
@@ -1114,16 +1103,13 @@ td small,
   border-radius: 8px;
 }
 
-.advertise-grid h2,
 .methodology-grid h2 {
   margin-bottom: 10px;
   color: #121a28;
   font-size: 1.12rem;
 }
 
-.advertise-grid p,
-.methodology-grid p,
-.advertise-note span {
+.methodology-grid p {
   color: #40516a;
   line-height: 1.55;
 }
@@ -1144,18 +1130,6 @@ td small,
   font-size: 0.88rem;
   font-weight: 800;
   text-decoration: none;
-}
-
-.advertise-note {
-  display: grid;
-  gap: 6px;
-  max-width: 860px;
-  padding-top: 8px;
-  border-top: 1px solid #dce3ee;
-}
-
-.advertise-note strong {
-  color: #101827;
 }
 
 @media (max-width: 1120px) {
@@ -1242,7 +1216,6 @@ td small,
   .package-release-list button,
   .package-directory-list article,
   .package-summary-grid,
-  .advertise-grid,
   .methodology-grid {
     grid-template-columns: 1fr;
   }

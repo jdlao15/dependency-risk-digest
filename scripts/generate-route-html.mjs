@@ -134,10 +134,6 @@ function buildBreadcrumbs(routePath, seo) {
     items.push({ name: seo.title.replace("Frontend npm ", "").replace("Frontend Package ", ""), url: `${siteUrl}${routePath}` });
     return items;
   }
-  if (routePath === "/advertise") {
-    items.push({ name: "Advertise", url: `${siteUrl}/advertise` });
-    return items;
-  }
   if (routePath === "/methodology") {
     items.push({ name: "Methodology", url: `${siteUrl}/methodology` });
     return items;
@@ -196,7 +192,6 @@ function buildNoScriptSummary(routePath, title, description, breadcrumbs) {
     { label: "Frontend package directory", href: "/packages" },
     { label: "Security updates", href: "/risk/security" },
     { label: "Breaking changes", href: "/risk/breaking" },
-    { label: "Advertising", href: "/advertise" },
     ...(packageInfo?.areaSlug ? [{
       label: packageInfo.areaLabel,
       href: `/category/${packageInfo.areaSlug}`,

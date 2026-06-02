@@ -47,9 +47,9 @@ The included `vercel.json` builds with `npm run refresh`, outputs `dist`, and re
 
 Static SEO assets are generated into `public/sitemap.xml`, `public/robots.txt`, `public/feed.xml`, and route-specific HTML files in `dist`.
 
-## Public Archive and Advertising
+## Public Archive
 
-Dependency Risk Digest stays free, public, and lightweight. The `/advertise` page uses a public advertising inquiry issue for relevant ad placements.
+Dependency Risk Digest stays free, public, and lightweight.
 
 Do not add tools or services that create routine owner work or recurring cost without explicit owner approval.
 

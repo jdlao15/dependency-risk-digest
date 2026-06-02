@@ -13,8 +13,6 @@ const riskLabels: Record<RiskLevel, string> = {
 
 const riskOrder: RiskLevel[] = ["critical", "security", "breaking", "review", "low"];
 const siteUrl = "https://dependency-risk-digest.vercel.app";
-const advertisingIssueUrl =
-  "https://github.com/jdlao15/dependency-risk-digest/issues/new?template=advertising-inquiry.yml";
 type PackageRouteInfo = {
   packageName: string;
   description: string;
@@ -116,8 +114,6 @@ function App() {
         <Breadcrumbs items={breadcrumbItems} navigate={navigate} />
         {pageMode.kind === "weeklyArchive" && archiveDigest ? (
           <WeeklyArchivePage digest={archiveDigest} navigate={navigate} />
-        ) : pageMode.kind === "advertise" ? (
-          <AdvertisePage navigate={navigate} />
         ) : pageMode.kind === "methodology" ? (
           <MethodologyPage navigate={navigate} />
         ) : pageMode.kind === "packages" ? (
@@ -165,7 +161,6 @@ function Header({
     ["/risk/breaking", "/risk/breaking"],
     ["/risk/review", "/risk/review"],
     ["/methodology", "/methodology"],
-    ["/advertise", "/advertise"],
   ];
 
   return (
@@ -421,7 +416,6 @@ function ArchivePage(props: {
         <InternalLink path="/risk/breaking" navigate={navigate}>Breaking changes</InternalLink>
         <InternalLink path="/risk/review" navigate={navigate}>Updates to review</InternalLink>
         <InternalLink path="/methodology" navigate={navigate}>Risk methodology</InternalLink>
-        <InternalLink path="/advertise" navigate={navigate}>Advertising</InternalLink>
       </section>
     </>
   );
@@ -871,66 +865,6 @@ function PackagePage({ navigate, slug }: { navigate: (path: string) => void; slu
   );
 }
 
-function AdvertisePage({ navigate }: { navigate: (path: string) => void }) {
-  return (
-    <section className="advertise-page">
-      <div className="advertise-hero">
-        <p className="eyebrow">Advertising inquiries</p>
-        <h1>Advertise on Dependency Risk Digest</h1>
-        <p>
-          Reach frontend developers and small teams who are actively reviewing npm
-          dependency risk, security updates, breaking changes, OSV/CVE signals,
-          React dependencies, Vite, Next.js, TypeScript, Storybook, and JavaScript
-          release notes before they update production apps.
-        </p>
-        <div className="advertise-actions">
-          <a href={advertisingIssueUrl} target="_blank" rel="noreferrer">
-            Start advertising inquiry
-          </a>
-          <button type="button" onClick={() => navigate("/weekly")}>
-            View latest digest
-          </button>
-        </div>
-      </div>
-      <div className="advertise-grid">
-        <section>
-          <h2>Relevant Ad Placements</h2>
-          <p>
-            Ask about a weekly digest ad slot, package-directory placement, or
-            security-risk page ad. Placements are limited to products that fit
-            the frontend dependency-risk audience.
-          </p>
-        </section>
-        <section>
-          <h2>Audience</h2>
-          <p>
-            Frontend engineers, indie SaaS builders, and small teams checking
-            security, breaking-change, and review signals for common npm packages,
-            frontend frameworks, build tools, testing tools, and UI libraries.
-          </p>
-        </section>
-        <section>
-          <h2>Why This Matters</h2>
-          <p>
-            The digest is built around package risk, release notes, OSV results,
-            CVE signals, affected audience, and recommended action, so relevant
-            ads appear next to the dependency-risk workflow visitors came
-            to inspect.
-          </p>
-        </section>
-      </div>
-      <div className="advertise-note">
-        <strong>Free archive, relevant advertising</strong>
-        <span>
-          Dependency Risk Digest remains free to use. Use the inquiry form to
-          share your company, audience, and preferred ad placement. Each inquiry
-          is reviewed for audience fit.
-        </span>
-      </div>
-    </section>
-  );
-}
-
 function MethodologyPage({ navigate }: { navigate: (path: string) => void }) {
   return (
     <section className="methodology-page">
@@ -1003,14 +937,10 @@ function getPageMode(path: string):
   | { kind: "packages"; title: string }
   | { kind: "category"; title: string; slug: string }
   | { kind: "package"; title: string; slug: string }
-  | { kind: "advertise"; title: string }
   | { kind: "methodology"; title: string }
   | { kind: "release"; title: string } {
   if (path === "/methodology") {
     return { kind: "methodology", title: "Dependency Risk Methodology" };
-  }
-  if (path === "/advertise" || path === "/sponsor") {
-    return { kind: "advertise", title: "Advertise on Dependency Risk Digest" };
   }
   if (path === "/packages") {
     return { kind: "packages", title: "Frontend npm Package Risk Directory" };
@@ -1051,9 +981,6 @@ function buildBreadcrumbItems(
   if (pageMode.kind === "weeklyArchive") {
     const digest = digestArchive.find((item) => item.route === path);
     return [...items, { label: digest?.week ?? "Weekly Archive", path }];
-  }
-  if (pageMode.kind === "advertise") {
-    return [...items, { label: "Advertise", path: "/advertise" }];
   }
   if (pageMode.kind === "methodology") {
     return [...items, { label: "Methodology", path: "/methodology" }];

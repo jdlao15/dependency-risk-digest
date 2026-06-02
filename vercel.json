@@ -3,8 +3,13 @@
   "outputDirectory": "dist",
   "redirects": [
     {
+      "source": "/advertise",
+      "destination": "/weekly",
+      "permanent": true
+    },
+    {
       "source": "/sponsor",
-      "destination": "/advertise",
+      "destination": "/weekly",
       "permanent": true
     }
   ],

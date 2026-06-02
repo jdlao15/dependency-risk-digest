@@ -1,6 +1,6 @@
 import type { ReleaseItem, SeoRoute, WeeklyDigest } from "./types";
 
-export const generatedAt = "2026-06-02T16:01:04.496Z";
+export const generatedAt = "2026-06-02T16:15:39.997Z";
 export const generationFailures = [];
 export const weeklyDigest: WeeklyDigest = {
   "week": "Week 23, 2026",
@@ -95,7 +95,7 @@ export const digestArchive: WeeklyDigest[] = [
       }
     ],
     "route": "/weekly/2026-w23",
-    "generatedAt": "2026-06-02T16:01:04.496Z"
+    "generatedAt": "2026-06-02T16:15:39.997Z"
   }
 ];
 export const releases: ReleaseItem[] = [
@@ -1379,7 +1379,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "3.34.0",
     "newVersion": "3.35.0",
     "releaseDate": "2026-04-22",
-    "publishedAgo": "published 40 days ago",
+    "publishedAgo": "published 41 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -4768,11 +4768,6 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "path": "/risk/review",
     "title": "Frontend npm Updates To Review",
     "description": "Frontend npm dependency updates to review, including minor releases, release notes, OSV checks, affected audience, and recommended maintenance actions for JavaScript production apps."
-  },
-  "/advertise": {
-    "path": "/advertise",
-    "title": "Advertise on Dependency Risk Digest",
-    "description": "Advertise on Dependency Risk Digest to reach frontend developers and JavaScript teams tracking npm security updates, breaking package releases, OSV/CVE signals, React dependencies, Vite, Next.js, TypeScript, and Storybook releases."
   },
   "/methodology": {
     "path": "/methodology",
