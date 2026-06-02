@@ -288,14 +288,6 @@ function Hero({ navigate }: { navigate: (path: string) => void }) {
           {formatDate(generatedAt.slice(0, 10))}
           {generationFailures.length > 0 ? `; ${generationFailures.length} packages skipped` : ""}.
         </p>
-        <div className="hero-actions" aria-label="Digest actions">
-          <InternalLink className="primary-action" path="/advertise" navigate={navigate}>
-            Advertise here
-          </InternalLink>
-          <a href={advertisingIssueUrl} target="_blank" rel="noreferrer">
-            Start ad inquiry
-          </a>
-        </div>
         <div className="metrics-grid" aria-label="Weekly summary">
           <Metric value={weeklyDigest.risky} label="Risky Updates" note="review recommended" tone="red" />
           <Metric value={weeklyDigest.breaking} label="Breaking Changes" note="potentially disruptive" tone="orange" />
@@ -723,7 +715,6 @@ function PackagesPage({ navigate }: { navigate: (path: string) => void }) {
       <div className="directory-actions">
         <InternalLink path="/weekly" navigate={navigate}>View latest weekly digest</InternalLink>
         <InternalLink path="/methodology" navigate={navigate}>Read risk methodology</InternalLink>
-        <InternalLink path="/advertise" navigate={navigate}>Advertise here</InternalLink>
       </div>
     </section>
   );
@@ -787,7 +778,6 @@ function CategoryPage({ navigate, slug }: { navigate: (path: string) => void; sl
       <div className="directory-actions">
         <InternalLink path="/packages" navigate={navigate}>Browse all package categories</InternalLink>
         <InternalLink path="/weekly" navigate={navigate}>View latest weekly digest</InternalLink>
-        <InternalLink path="/advertise" navigate={navigate}>Advertise here</InternalLink>
       </div>
     </section>
   );
