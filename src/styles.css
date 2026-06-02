@@ -206,7 +206,7 @@ p {
 }
 
 .hero-actions,
-.sponsor-actions {
+.advertise-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -215,8 +215,8 @@ p {
 
 .hero-actions .primary-action,
 .hero-actions a,
-.sponsor-actions a,
-.sponsor-actions button {
+.advertise-actions a,
+.advertise-actions button {
   display: inline-flex;
   align-items: center;
   min-height: 40px;
@@ -228,14 +228,14 @@ p {
 }
 
 .hero-actions .primary-action,
-.sponsor-actions a {
+.advertise-actions a {
   color: #ffffff;
   background: #0f172a;
   border: 1px solid #0f172a;
 }
 
 .hero-actions a:not(.primary-action),
-.sponsor-actions button {
+.advertise-actions button {
   color: #0057d8;
   background: #ffffff;
   border: 1px solid #bdd4f4;
@@ -920,7 +920,7 @@ td small,
 }
 
 .directory-page,
-.sponsor-page,
+.advertise-page,
 .methodology-page {
   display: grid;
   gap: 28px;
@@ -1069,7 +1069,7 @@ td small,
   text-decoration: none;
 }
 
-.sponsor-hero,
+.advertise-hero,
 .methodology-hero {
   max-width: 850px;
 }
@@ -1082,14 +1082,14 @@ td small,
   text-transform: uppercase;
 }
 
-.sponsor-hero h1,
+.advertise-hero h1,
 .methodology-hero h1 {
   color: #0d1420;
   font-size: clamp(2.1rem, 5vw, 3.8rem);
   line-height: 1.02;
 }
 
-.sponsor-hero p,
+.advertise-hero p,
 .methodology-hero p {
   max-width: 760px;
   margin-top: 16px;
@@ -1098,14 +1098,14 @@ td small,
   line-height: 1.65;
 }
 
-.sponsor-grid,
+.advertise-grid,
 .methodology-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 
-.sponsor-grid section,
+.advertise-grid section,
 .methodology-grid section {
   min-width: 0;
   padding: 20px;
@@ -1114,16 +1114,16 @@ td small,
   border-radius: 8px;
 }
 
-.sponsor-grid h2,
+.advertise-grid h2,
 .methodology-grid h2 {
   margin-bottom: 10px;
   color: #121a28;
   font-size: 1.12rem;
 }
 
-.sponsor-grid p,
+.advertise-grid p,
 .methodology-grid p,
-.sponsor-note span {
+.advertise-note span {
   color: #40516a;
   line-height: 1.55;
 }
@@ -1146,7 +1146,7 @@ td small,
   text-decoration: none;
 }
 
-.sponsor-note {
+.advertise-note {
   display: grid;
   gap: 6px;
   max-width: 860px;
@@ -1154,7 +1154,7 @@ td small,
   border-top: 1px solid #dce3ee;
 }
 
-.sponsor-note strong {
+.advertise-note strong {
   color: #101827;
 }
 
@@ -1242,7 +1242,7 @@ td small,
   .package-release-list button,
   .package-directory-list article,
   .package-summary-grid,
-  .sponsor-grid,
+  .advertise-grid,
   .methodology-grid {
     grid-template-columns: 1fr;
   }

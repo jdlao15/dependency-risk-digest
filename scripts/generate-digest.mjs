@@ -457,10 +457,10 @@ function buildSeoRoutes(items, routeMap, categoryMap, digest) {
       title: "Frontend npm Updates To Review",
       description: "Frontend npm dependency updates to review, including minor releases, release notes, OSV checks, affected audience, and recommended maintenance actions for JavaScript production apps.",
     },
-    "/sponsor": {
-      path: "/sponsor",
-      title: "Sponsor Dependency Risk Digest",
-      description: "Sponsor Dependency Risk Digest to reach frontend developers and JavaScript teams tracking npm security updates, breaking package releases, OSV/CVE signals, React dependencies, Vite, Next.js, TypeScript, and Storybook releases.",
+    "/advertise": {
+      path: "/advertise",
+      title: "Advertise on Dependency Risk Digest",
+      description: "Advertise on Dependency Risk Digest to reach frontend developers and JavaScript teams tracking npm security updates, breaking package releases, OSV/CVE signals, React dependencies, Vite, Next.js, TypeScript, and Storybook releases.",
     },
     "/methodology": {
       path: "/methodology",

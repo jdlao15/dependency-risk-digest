@@ -47,11 +47,11 @@ The included `vercel.json` builds with `npm run refresh`, outputs `dist`, and re
 
 Static SEO assets are generated into `public/sitemap.xml`, `public/robots.txt`, `public/feed.xml`, and route-specific HTML files in `dist`.
 
-## Sponsorship and Cost Boundaries
+## Public Archive and Advertising
 
-Dependency Risk Digest stays public and lightweight. The `/sponsor` page uses sponsor inquiry issues instead of checkout, email tooling, subscriptions, or an analytics stack.
+Dependency Risk Digest stays free, public, and lightweight. The `/advertise` page uses a public advertising inquiry issue for relevant ad placements.
 
-No paid tools, paid hosting, custom domains, paid analytics, paid newsletter tooling, or checkout setup should be added without explicit owner approval.
+Do not add tools or services that create routine owner work or recurring cost without explicit owner approval.
 
 ## Automated Refresh
 

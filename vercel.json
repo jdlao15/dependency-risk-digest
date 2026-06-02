@@ -1,6 +1,13 @@
 {
   "buildCommand": "npm run refresh",
   "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/sponsor",
+      "destination": "/advertise",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",

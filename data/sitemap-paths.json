@@ -1,6 +1,7 @@
 {
-  "generatedAt": "2026-06-02T15:51:40.934Z",
+  "generatedAt": "2026-06-02T16:01:04.496Z",
   "paths": [
+    "/advertise",
     "/category/build-tooling",
     "/category/core-frameworks",
     "/category/css-ui",
@@ -178,7 +179,6 @@
     "/risk/breaking",
     "/risk/review",
     "/risk/security",
-    "/sponsor",
     "/weekly",
     "/weekly/2026-w23"
   ]

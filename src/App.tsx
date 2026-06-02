@@ -13,8 +13,8 @@ const riskLabels: Record<RiskLevel, string> = {
 
 const riskOrder: RiskLevel[] = ["critical", "security", "breaking", "review", "low"];
 const siteUrl = "https://dependency-risk-digest.vercel.app";
-const sponsorIssueUrl =
-  "https://github.com/jdlao15/dependency-risk-digest/issues/new?template=sponsor-inquiry.yml";
+const advertisingIssueUrl =
+  "https://github.com/jdlao15/dependency-risk-digest/issues/new?template=advertising-inquiry.yml";
 type PackageRouteInfo = {
   packageName: string;
   description: string;
@@ -116,8 +116,8 @@ function App() {
         <Breadcrumbs items={breadcrumbItems} navigate={navigate} />
         {pageMode.kind === "weeklyArchive" && archiveDigest ? (
           <WeeklyArchivePage digest={archiveDigest} navigate={navigate} />
-        ) : pageMode.kind === "sponsor" ? (
-          <SponsorPage navigate={navigate} />
+        ) : pageMode.kind === "advertise" ? (
+          <AdvertisePage navigate={navigate} />
         ) : pageMode.kind === "methodology" ? (
           <MethodologyPage navigate={navigate} />
         ) : pageMode.kind === "packages" ? (
@@ -165,7 +165,7 @@ function Header({
     ["/risk/breaking", "/risk/breaking"],
     ["/risk/review", "/risk/review"],
     ["/methodology", "/methodology"],
-    ["/sponsor", "/sponsor"],
+    ["/advertise", "/advertise"],
   ];
 
   return (
@@ -289,11 +289,11 @@ function Hero({ navigate }: { navigate: (path: string) => void }) {
           {generationFailures.length > 0 ? `; ${generationFailures.length} packages skipped` : ""}.
         </p>
         <div className="hero-actions" aria-label="Digest actions">
-          <InternalLink className="primary-action" path="/sponsor" navigate={navigate}>
-            Sponsor this digest
+          <InternalLink className="primary-action" path="/advertise" navigate={navigate}>
+            Advertise here
           </InternalLink>
-          <a href={sponsorIssueUrl} target="_blank" rel="noreferrer">
-            Start inquiry
+          <a href={advertisingIssueUrl} target="_blank" rel="noreferrer">
+            Start ad inquiry
           </a>
         </div>
         <div className="metrics-grid" aria-label="Weekly summary">
@@ -429,7 +429,7 @@ function ArchivePage(props: {
         <InternalLink path="/risk/breaking" navigate={navigate}>Breaking changes</InternalLink>
         <InternalLink path="/risk/review" navigate={navigate}>Updates to review</InternalLink>
         <InternalLink path="/methodology" navigate={navigate}>Risk methodology</InternalLink>
-        <InternalLink path="/sponsor" navigate={navigate}>Sponsor the digest</InternalLink>
+        <InternalLink path="/advertise" navigate={navigate}>Advertising</InternalLink>
       </section>
     </>
   );
@@ -723,7 +723,7 @@ function PackagesPage({ navigate }: { navigate: (path: string) => void }) {
       <div className="directory-actions">
         <InternalLink path="/weekly" navigate={navigate}>View latest weekly digest</InternalLink>
         <InternalLink path="/methodology" navigate={navigate}>Read risk methodology</InternalLink>
-        <InternalLink path="/sponsor" navigate={navigate}>Sponsor this digest</InternalLink>
+        <InternalLink path="/advertise" navigate={navigate}>Advertise here</InternalLink>
       </div>
     </section>
   );
@@ -787,7 +787,7 @@ function CategoryPage({ navigate, slug }: { navigate: (path: string) => void; sl
       <div className="directory-actions">
         <InternalLink path="/packages" navigate={navigate}>Browse all package categories</InternalLink>
         <InternalLink path="/weekly" navigate={navigate}>View latest weekly digest</InternalLink>
-        <InternalLink path="/sponsor" navigate={navigate}>Sponsor this digest</InternalLink>
+        <InternalLink path="/advertise" navigate={navigate}>Advertise here</InternalLink>
       </div>
     </section>
   );
@@ -881,34 +881,34 @@ function PackagePage({ navigate, slug }: { navigate: (path: string) => void; slu
   );
 }
 
-function SponsorPage({ navigate }: { navigate: (path: string) => void }) {
+function AdvertisePage({ navigate }: { navigate: (path: string) => void }) {
   return (
-    <section className="sponsor-page">
-      <div className="sponsor-hero">
-        <p className="eyebrow">Sponsorship inquiries</p>
-        <h1>Sponsor Dependency Risk Digest</h1>
+    <section className="advertise-page">
+      <div className="advertise-hero">
+        <p className="eyebrow">Advertising inquiries</p>
+        <h1>Advertise on Dependency Risk Digest</h1>
         <p>
           Reach frontend developers and small teams who are actively reviewing npm
           dependency risk, security updates, breaking changes, OSV/CVE signals,
           React dependencies, Vite, Next.js, TypeScript, Storybook, and JavaScript
           release notes before they update production apps.
         </p>
-        <div className="sponsor-actions">
-          <a href={sponsorIssueUrl} target="_blank" rel="noreferrer">
-            Start sponsorship inquiry
+        <div className="advertise-actions">
+          <a href={advertisingIssueUrl} target="_blank" rel="noreferrer">
+            Start advertising inquiry
           </a>
           <button type="button" onClick={() => navigate("/weekly")}>
             View latest digest
           </button>
         </div>
       </div>
-      <div className="sponsor-grid">
+      <div className="advertise-grid">
         <section>
-          <h2>Current Offer</h2>
+          <h2>Relevant Ad Placements</h2>
           <p>
-            Sponsors can request a weekly digest placement or a package-page
-            mention. Each inquiry is reviewed for fit with frontend developers
-            tracking dependency risk.
+            Ask about a weekly digest ad slot, package-directory placement, or
+            security-risk page ad. Placements are limited to products that fit
+            the frontend dependency-risk audience.
           </p>
         </section>
         <section>
@@ -923,18 +923,18 @@ function SponsorPage({ navigate }: { navigate: (path: string) => void }) {
           <h2>Why This Matters</h2>
           <p>
             The digest is built around package risk, release notes, OSV results,
-            CVE signals, affected audience, and recommended action, so sponsor
-            placement appears next to the dependency-risk workflow visitors came
+            CVE signals, affected audience, and recommended action, so relevant
+            ads appear next to the dependency-risk workflow visitors came
             to inspect.
           </p>
         </section>
       </div>
-      <div className="sponsor-note">
-        <strong>Direct sponsorship inquiries</strong>
+      <div className="advertise-note">
+        <strong>Free archive, relevant advertising</strong>
         <span>
-          Use the inquiry form to share your company, audience, and preferred
-          placement. Each sponsor inquiry is reviewed for audience fit before
-          availability is confirmed.
+          Dependency Risk Digest remains free to use. Use the inquiry form to
+          share your company, audience, and preferred ad placement. Each inquiry
+          is reviewed for audience fit.
         </span>
       </div>
     </section>
@@ -1013,14 +1013,14 @@ function getPageMode(path: string):
   | { kind: "packages"; title: string }
   | { kind: "category"; title: string; slug: string }
   | { kind: "package"; title: string; slug: string }
-  | { kind: "sponsor"; title: string }
+  | { kind: "advertise"; title: string }
   | { kind: "methodology"; title: string }
   | { kind: "release"; title: string } {
   if (path === "/methodology") {
     return { kind: "methodology", title: "Dependency Risk Methodology" };
   }
-  if (path === "/sponsor") {
-    return { kind: "sponsor", title: "Sponsor Dependency Risk Digest" };
+  if (path === "/advertise" || path === "/sponsor") {
+    return { kind: "advertise", title: "Advertise on Dependency Risk Digest" };
   }
   if (path === "/packages") {
     return { kind: "packages", title: "Frontend npm Package Risk Directory" };
@@ -1062,8 +1062,8 @@ function buildBreadcrumbItems(
     const digest = digestArchive.find((item) => item.route === path);
     return [...items, { label: digest?.week ?? "Weekly Archive", path }];
   }
-  if (pageMode.kind === "sponsor") {
-    return [...items, { label: "Sponsor", path: "/sponsor" }];
+  if (pageMode.kind === "advertise") {
+    return [...items, { label: "Advertise", path: "/advertise" }];
   }
   if (pageMode.kind === "methodology") {
     return [...items, { label: "Methodology", path: "/methodology" }];
