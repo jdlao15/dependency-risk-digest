@@ -5,7 +5,7 @@ Public archive for frontend npm dependency updates that are risky, breaking, sec
 ## Current State
 
 - React + Vite public archive site.
-- Fixed 50-package frontend tracking list in `data/tracked-packages.json`.
+- Curated 82-package frontend tracking list in `data/tracked-packages.json`.
 - Local generator pulls npm registry metadata, OSV results, and GitHub release notes.
 - Generated app data is written to `src/generatedDigest.ts`.
 - JSON export is written to `data/latest-digest.json`.
@@ -43,7 +43,7 @@ The token only needs access sufficient to read public release data. Fine-grained
 
 ## Deployment Notes
 
-The included `vercel.json` builds with `npm run refresh`, outputs `dist`, and rewrites all archive routes to `index.html` so routes such as `/weekly`, `/package/react`, `/methodology`, and `/risk/breaking` work on static hosting.
+The included `vercel.json` builds with `npm run refresh`, outputs `dist`, and rewrites all archive routes to `index.html` so routes such as `/weekly`, `/packages`, `/category/core-frameworks`, `/package/react`, `/methodology`, and `/risk/breaking` work on static hosting.
 
 Static SEO assets are generated into `public/sitemap.xml`, `public/robots.txt`, `public/feed.xml`, and route-specific HTML files in `dist`.
 
@@ -55,7 +55,7 @@ No paid tools, paid hosting, custom domains, paid analytics, paid newsletter too
 
 ## Automated Refresh
 
-`.github/workflows/refresh-digest.yml` runs the free Monday/Thursday refresh path on GitHub Actions. It regenerates digest data, sitemap paths, static SEO assets, and the TypeScript data file, then commits generated changes back to `main` when the output changed.
+`.github/workflows/refresh-digest.yml` runs the free daily refresh path on GitHub Actions. It regenerates digest data, package-category directory routes, sitemap paths, static SEO assets, and the TypeScript data file, then commits generated changes back to `main` when the output changed.
 
 The next external steps are:
 

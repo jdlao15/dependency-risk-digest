@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
-import { digestArchive, generatedAt, generationFailures, packageRoutes, releases, seoRoutes, weeklyDigest } from "./data";
+import type { MouseEvent, ReactNode } from "react";
+import { categoryRoutes, digestArchive, generatedAt, generationFailures, packageRoutes, releases, seoRoutes, weeklyDigest } from "./data";
 import type { ReleaseItem, RiskLevel, WeeklyDigest } from "./types";
 
 const riskLabels: Record<RiskLevel, string> = {
@@ -14,6 +15,24 @@ const riskOrder: RiskLevel[] = ["critical", "security", "breaking", "review", "l
 const siteUrl = "https://dependency-risk-digest.vercel.app";
 const sponsorIssueUrl =
   "https://github.com/jdlao15/dependency-risk-digest/issues/new?template=sponsor-inquiry.yml";
+type PackageRouteInfo = {
+  packageName: string;
+  description: string;
+  route: string;
+  latestReleaseRoute?: string;
+  areaSlug: string;
+  areaLabel: string;
+};
+type CategoryRouteInfo = {
+  slug: string;
+  label: string;
+  description: string;
+  route: string;
+  packageCount: number;
+  packages: PackageRouteInfo[];
+};
+const packageRouteMap = packageRoutes as Record<string, PackageRouteInfo>;
+const categoryRouteMap = categoryRoutes as Record<string, CategoryRouteInfo>;
 
 function getInitialPath() {
   return window.location.pathname === "/" ? "/weekly" : window.location.pathname;
@@ -81,6 +100,7 @@ function App() {
   function navigate(nextPath: string) {
     window.history.pushState({}, "", nextPath);
     setPath(nextPath);
+    window.scrollTo({ top: 0, behavior: "auto" });
   }
 
   function chooseRelease(release: ReleaseItem) {
@@ -100,6 +120,10 @@ function App() {
           <SponsorPage navigate={navigate} />
         ) : pageMode.kind === "methodology" ? (
           <MethodologyPage navigate={navigate} />
+        ) : pageMode.kind === "packages" ? (
+          <PackagesPage navigate={navigate} />
+        ) : pageMode.kind === "category" ? (
+          <CategoryPage navigate={navigate} slug={pageMode.slug} />
         ) : pageMode.kind === "package" ? (
           <PackagePage navigate={navigate} slug={pageMode.slug} />
         ) : (
@@ -136,7 +160,7 @@ function Header({
 }) {
   const links = [
     ["/weekly", "/weekly"],
-    ["/package/react", "/package/react"],
+    ["/packages", "/packages"],
     ["/risk/security", "/risk/security"],
     ["/risk/breaking", "/risk/breaking"],
     ["/risk/review", "/risk/review"],
@@ -146,23 +170,23 @@ function Header({
 
   return (
     <header className="site-header">
-      <button className="brand-link" type="button" onClick={() => navigate("/weekly")}>
+      <InternalLink className="brand-link" path="/weekly" navigate={navigate}>
         <span className="brand-name">Dependency Risk Digest</span>
         <span className="brand-copy">
           Automated risk analysis of npm updates that matter to frontend developers.
           <strong> Frontend packages only.</strong>
         </span>
-      </button>
+      </InternalLink>
       <nav className="top-nav" aria-label="Archive routes">
         {links.map(([href, label]) => (
-          <button
+          <InternalLink
             className={path === href ? "nav-link active" : "nav-link"}
             key={href}
-            type="button"
-            onClick={() => navigate(href)}
+            path={href}
+            navigate={navigate}
           >
             {label}
-          </button>
+          </InternalLink>
         ))}
       </nav>
       <label className="global-search">
@@ -174,6 +198,38 @@ function Header({
         />
       </label>
     </header>
+  );
+}
+
+function InternalLink({
+  children,
+  className,
+  navigate,
+  path,
+}: {
+  children: ReactNode;
+  className?: string;
+  navigate: (path: string) => void;
+  path: string;
+}) {
+  function onClick(event: MouseEvent<HTMLAnchorElement>) {
+    if (
+      event.button !== 0 ||
+      event.metaKey ||
+      event.ctrlKey ||
+      event.shiftKey ||
+      event.altKey
+    ) {
+      return;
+    }
+    event.preventDefault();
+    navigate(path);
+  }
+
+  return (
+    <a className={className} href={path} onClick={onClick}>
+      {children}
+    </a>
   );
 }
 
@@ -203,9 +259,9 @@ function Breadcrumbs({
           {index === items.length - 1 ? (
             <strong>{item.label}</strong>
           ) : (
-            <button type="button" onClick={() => navigate(item.path)}>
+            <InternalLink path={item.path} navigate={navigate}>
               {item.label}
-            </button>
+            </InternalLink>
           )}
         </span>
       ))}
@@ -228,14 +284,14 @@ function Hero({ navigate }: { navigate: (path: string) => void }) {
           build tooling, test tooling, CSS packages, and JavaScript production apps.
         </p>
         <p className="generated-note">
-          Based on npm registry metadata and OSV queries. Last updated:{" "}
+          Refreshed daily from npm registry metadata and OSV queries. Last updated:{" "}
           {formatDate(generatedAt.slice(0, 10))}
           {generationFailures.length > 0 ? `; ${generationFailures.length} packages skipped` : ""}.
         </p>
         <div className="hero-actions" aria-label="Digest actions">
-          <button type="button" onClick={() => navigate("/sponsor")}>
+          <InternalLink className="primary-action" path="/sponsor" navigate={navigate}>
             Sponsor this digest
-          </button>
+          </InternalLink>
           <a href={sponsorIssueUrl} target="_blank" rel="noreferrer">
             Start inquiry
           </a>
@@ -363,25 +419,24 @@ function ArchivePage(props: {
         <BreakingChanges navigate={navigate} />
         <DigestArchive navigate={navigate} />
       </section>
-      <section className="route-strip" aria-label="Archive route structure">
-        <h2>Stable Archive Routes</h2>
-        <button type="button" onClick={() => navigate("/weekly")}>/weekly</button>
-        <button type="button" onClick={() => navigate(getLatestWeeklyArchiveRoute())}>{getLatestWeeklyArchiveRoute()}</button>
-        <button type="button" onClick={() => navigate("/package/react")}>/package/react</button>
-        <button type="button" onClick={() => navigate(getReactLatestRoute())}>{getReactLatestRoute()}</button>
-        <button type="button" onClick={() => navigate("/risk/security")}>/risk/security</button>
-        <button type="button" onClick={() => navigate("/risk/breaking")}>/risk/breaking</button>
-        <button type="button" onClick={() => navigate("/risk/review")}>/risk/review</button>
-        <button type="button" onClick={() => navigate("/methodology")}>/methodology</button>
-        <button type="button" onClick={() => navigate("/sponsor")}>/sponsor</button>
+      <section className="route-strip" aria-label="Dependency risk archive links">
+        <h2>Explore Dependency Risk Archives</h2>
+        <InternalLink path="/packages" navigate={navigate}>Package directory</InternalLink>
+        <InternalLink path={getLatestWeeklyArchiveRoute()} navigate={navigate}>Current weekly archive</InternalLink>
+        <InternalLink path="/package/react" navigate={navigate}>React package archive</InternalLink>
+        <InternalLink path={getReactLatestRoute()} navigate={navigate}>Latest React release</InternalLink>
+        <InternalLink path="/risk/security" navigate={navigate}>Security updates</InternalLink>
+        <InternalLink path="/risk/breaking" navigate={navigate}>Breaking changes</InternalLink>
+        <InternalLink path="/risk/review" navigate={navigate}>Updates to review</InternalLink>
+        <InternalLink path="/methodology" navigate={navigate}>Risk methodology</InternalLink>
+        <InternalLink path="/sponsor" navigate={navigate}>Sponsor the digest</InternalLink>
       </section>
     </>
   );
 }
 
 function getReactLatestRoute() {
-  const routeMap = packageRoutes as Record<string, { latestReleaseRoute?: string }>;
-  return routeMap.react?.latestReleaseRoute ?? "/package/react";
+  return packageRouteMap.react?.latestReleaseRoute ?? "/package/react";
 }
 
 function getLatestWeeklyArchiveRoute() {
@@ -482,15 +537,15 @@ function ReleaseDetail({ release, navigate }: { release: ReleaseItem; navigate: 
         {release.releaseNotesExcerpt || release.releaseNotesStatus}
       </DetailBlock>
       <div className="source-links">
-        <button type="button" onClick={() => navigate(`/package/${release.packageSlug}`)}>
+        <InternalLink path={`/package/${release.packageSlug}`} navigate={navigate}>
           Package archive
-        </button>
-        <button type="button" onClick={() => navigate(riskRouteFor(release.risk))}>
+        </InternalLink>
+        <InternalLink path={riskRouteFor(release.risk)} navigate={navigate}>
           Related risk page
-        </button>
-        <button type="button" onClick={() => navigate(getLatestWeeklyArchiveRoute())}>
+        </InternalLink>
+        <InternalLink path={getLatestWeeklyArchiveRoute()} navigate={navigate}>
           Weekly archive
-        </button>
+        </InternalLink>
         {release.sourceLinks.map((link) => (
           <a key={link.label} href={link.href} target="_blank" rel="noreferrer">
             {link.label}
@@ -611,17 +666,135 @@ function WeeklyArchivePage({ digest, navigate }: { digest: WeeklyDigest; navigat
   );
 }
 
+function PackagesPage({ navigate }: { navigate: (path: string) => void }) {
+  const categories = Object.values(categoryRouteMap);
+  return (
+    <section className="directory-page">
+      <div className="directory-hero">
+        <p className="eyebrow">Frontend npm package coverage</p>
+        <h1>Frontend npm Package Risk Directory</h1>
+        <p>
+          Browse {Object.keys(packageRouteMap).length} frontend package archives with
+          daily npm release checks, OSV vulnerability results, CVE signals, breaking-change
+          detection, public release notes, and recommended update actions.
+        </p>
+      </div>
+      <div className="package-summary-grid">
+        <div>
+          <span>Tracked packages</span>
+          <strong>{Object.keys(packageRouteMap).length}</strong>
+        </div>
+        <div>
+          <span>Coverage areas</span>
+          <strong>{categories.length}</strong>
+        </div>
+        <div>
+          <span>Refresh cadence</span>
+          <strong>Daily</strong>
+        </div>
+      </div>
+      <div className="directory-grid">
+        {categories.map((category) => (
+          <article className="directory-card" key={category.slug}>
+            <div className="directory-card-heading">
+              <h2>
+                <InternalLink path={category.route} navigate={navigate}>
+                  {category.label}
+                </InternalLink>
+              </h2>
+              <span>{category.packageCount} packages</span>
+            </div>
+            <p>{category.description}</p>
+            <ul>
+              {category.packages.slice(0, 6).map((pkg) => (
+                <li key={pkg.route}>
+                  <InternalLink path={pkg.route} navigate={navigate}>
+                    {pkg.packageName}
+                  </InternalLink>
+                </li>
+              ))}
+            </ul>
+            <InternalLink className="directory-more-link" path={category.route} navigate={navigate}>
+              View all {category.packageCount} packages
+            </InternalLink>
+          </article>
+        ))}
+      </div>
+      <div className="directory-actions">
+        <InternalLink path="/weekly" navigate={navigate}>View latest weekly digest</InternalLink>
+        <InternalLink path="/methodology" navigate={navigate}>Read risk methodology</InternalLink>
+        <InternalLink path="/sponsor" navigate={navigate}>Sponsor this digest</InternalLink>
+      </div>
+    </section>
+  );
+}
+
+function CategoryPage({ navigate, slug }: { navigate: (path: string) => void; slug: string }) {
+  const category = categoryRouteMap[slug];
+  if (!category) {
+    return (
+      <section className="directory-page">
+        <div className="directory-hero">
+          <h1>Package category unavailable</h1>
+          <p>This package category is not currently covered by Dependency Risk Digest.</p>
+        </div>
+      </section>
+    );
+  }
+
+  return (
+    <section className="directory-page">
+      <div className="directory-hero">
+        <p className="eyebrow">Frontend npm package coverage</p>
+        <h1>{category.label}</h1>
+        <p>{category.description}</p>
+        <p>
+          Each archive below tracks current npm release risk, OSV vulnerability results,
+          CVE signals, breaking-change checks, public release notes, and recommended
+          update actions for frontend teams.
+        </p>
+      </div>
+      <div className="package-summary-grid">
+        <div>
+          <span>Tracked packages</span>
+          <strong>{category.packageCount}</strong>
+        </div>
+        <div>
+          <span>Coverage area</span>
+          <strong>{category.label}</strong>
+        </div>
+        <div>
+          <span>Refresh cadence</span>
+          <strong>Daily</strong>
+        </div>
+      </div>
+      <section className="package-directory-list" aria-label={`${category.label} package archives`}>
+        <h2>{category.label} Package Archives</h2>
+        {category.packages.map((pkg) => (
+          <article key={pkg.route}>
+            <div>
+              <InternalLink path={pkg.route} navigate={navigate}>
+                {pkg.packageName}
+              </InternalLink>
+              <p>{pkg.description}</p>
+            </div>
+            <InternalLink path={pkg.latestReleaseRoute ?? pkg.route} navigate={navigate}>
+              Latest release-risk page
+            </InternalLink>
+          </article>
+        ))}
+      </section>
+      <div className="directory-actions">
+        <InternalLink path="/packages" navigate={navigate}>Browse all package categories</InternalLink>
+        <InternalLink path="/weekly" navigate={navigate}>View latest weekly digest</InternalLink>
+        <InternalLink path="/sponsor" navigate={navigate}>Sponsor this digest</InternalLink>
+      </div>
+    </section>
+  );
+}
+
 function PackagePage({ navigate, slug }: { navigate: (path: string) => void; slug: string }) {
-  const routeMap = packageRoutes as Record<
-    string,
-    {
-      packageName: string;
-      description: string;
-      route: string;
-      latestReleaseRoute?: string;
-    }
-  >;
-  const packageInfo = routeMap[slug];
+  const packageInfo = packageRouteMap[slug];
   const relatedReleases = releases.filter((release) => release.packageSlug === slug);
 
   if (!packageInfo) {
@@ -672,21 +845,24 @@ function PackagePage({ navigate, slug }: { navigate: (path: string) => void; slu
       </div>
       <section className="package-link-panel" aria-label={`${packageInfo.packageName} related archive links`}>
         <h2>Related Dependency-Risk Routes</h2>
-        <button type="button" onClick={() => navigate(packageInfo.latestReleaseRoute ?? packageInfo.route)}>
+        <InternalLink path={`/category/${packageInfo.areaSlug}`} navigate={navigate}>
+          {packageInfo.areaLabel}
+        </InternalLink>
+        <InternalLink path={packageInfo.latestReleaseRoute ?? packageInfo.route} navigate={navigate}>
           Latest release-risk page
-        </button>
-        <button type="button" onClick={() => navigate(getLatestWeeklyArchiveRoute())}>
+        </InternalLink>
+        <InternalLink path={getLatestWeeklyArchiveRoute()} navigate={navigate}>
           Current weekly archive
-        </button>
-        <button type="button" onClick={() => navigate(relatedReleases[0] ? riskRouteFor(relatedReleases[0].risk) : "/risk/review")}>
+        </InternalLink>
+        <InternalLink path={relatedReleases[0] ? riskRouteFor(relatedReleases[0].risk) : "/risk/review"} navigate={navigate}>
           Related risk category
-        </button>
-        <button type="button" onClick={() => navigate("/risk/security")}>
+        </InternalLink>
+        <InternalLink path="/risk/security" navigate={navigate}>
           Security updates
-        </button>
-        <button type="button" onClick={() => navigate("/risk/breaking")}>
+        </InternalLink>
+        <InternalLink path="/risk/breaking" navigate={navigate}>
           Breaking changes
-        </button>
+        </InternalLink>
       </section>
       {relatedReleases.length > 0 ? (
         <section className="package-release-list" aria-label={`${packageInfo.packageName} release risk history`}>
@@ -813,15 +989,18 @@ function MethodologyPage({ navigate }: { navigate: (path: string) => void }) {
         </section>
       </div>
       <div className="methodology-actions">
-        <button type="button" onClick={() => navigate("/weekly")}>
+        <InternalLink path="/weekly" navigate={navigate}>
           View latest digest
-        </button>
-        <button type="button" onClick={() => navigate("/risk/security")}>
+        </InternalLink>
+        <InternalLink path="/risk/security" navigate={navigate}>
           View security updates
-        </button>
-        <button type="button" onClick={() => navigate("/package/react")}>
+        </InternalLink>
+        <InternalLink path="/packages" navigate={navigate}>
+          Browse package directory
+        </InternalLink>
+        <InternalLink path="/package/react" navigate={navigate}>
           View React package archive
-        </button>
+        </InternalLink>
       </div>
     </section>
   );
@@ -831,6 +1010,8 @@ function getPageMode(path: string):
   | { kind: "weekly"; title: string }
   | { kind: "weeklyArchive"; title: string }
   | { kind: "risk"; title: string; risk: RiskLevel }
+  | { kind: "packages"; title: string }
+  | { kind: "category"; title: string; slug: string }
   | { kind: "package"; title: string; slug: string }
   | { kind: "sponsor"; title: string }
   | { kind: "methodology"; title: string }
@@ -840,6 +1021,13 @@ function getPageMode(path: string):
   }
   if (path === "/sponsor") {
     return { kind: "sponsor", title: "Sponsor Dependency Risk Digest" };
+  }
+  if (path === "/packages") {
+    return { kind: "packages", title: "Frontend npm Package Risk Directory" };
+  }
+  const categoryMatch = path.match(/^\/category\/([^/]+)$/);
+  if (categoryMatch) {
+    return { kind: "category", title: "Package Category", slug: categoryMatch[1] };
   }
   if (path.startsWith("/weekly/")) {
     return { kind: "weeklyArchive", title: "Weekly Archive" };
@@ -880,16 +1068,38 @@ function buildBreadcrumbItems(
   if (pageMode.kind === "methodology") {
     return [...items, { label: "Methodology", path: "/methodology" }];
   }
+  if (pageMode.kind === "packages") {
+    return [...items, { label: "Packages", path: "/packages" }];
+  }
+  if (pageMode.kind === "category") {
+    return [
+      ...items,
+      { label: "Packages", path: "/packages" },
+      { label: categoryRouteMap[pageMode.slug]?.label ?? pageMode.slug, path },
+    ];
+  }
   if (pageMode.kind === "risk") {
     return [...items, { label: "Risk", path: "/risk/security" }, { label: pageMode.title, path }];
   }
   if (pageMode.kind === "package") {
-    const routeMap = packageRoutes as Record<string, { packageName: string }>;
-    return [...items, { label: routeMap[pageMode.slug]?.packageName ?? pageMode.slug, path }];
-  }
-  if (pageMode.kind === "release") {
+    const packageInfo = packageRouteMap[pageMode.slug];
     return [
       ...items,
+      { label: "Packages", path: "/packages" },
+      ...(packageInfo?.areaSlug
+        ? [{ label: packageInfo.areaLabel, path: `/category/${packageInfo.areaSlug}` }]
+        : []),
+      { label: packageInfo?.packageName ?? pageMode.slug, path },
+    ];
+  }
+  if (pageMode.kind === "release") {
+    const packageInfo = packageRouteMap[selectedRelease.packageSlug];
+    return [
+      ...items,
+      { label: "Packages", path: "/packages" },
+      ...(packageInfo?.areaSlug
+        ? [{ label: packageInfo.areaLabel, path: `/category/${packageInfo.areaSlug}` }]
+        : []),
       { label: selectedRelease.packageName, path: `/package/${selectedRelease.packageSlug}` },
       { label: selectedRelease.newVersion, path: selectedRelease.route },
     ];

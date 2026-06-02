@@ -2,12 +2,21 @@
   {
     "week": "Week 23, 2026",
     "dateRange": "Jun 1 - Jun 7",
-    "risky": 24,
-    "breaking": 6,
-    "security": 3,
-    "safe": 26,
-    "total": 50,
+    "risky": 38,
+    "breaking": 14,
+    "security": 4,
+    "safe": 44,
+    "total": 82,
     "topSignals": [
+      {
+        "packageName": "nuxt",
+        "route": "/package/nuxt/4.4.7",
+        "risk": "security",
+        "newVersion": "4.4.7",
+        "reason": "GitHub release notes mention security or vulnerability fixes.",
+        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
+        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
+      },
       {
         "packageName": "ws",
         "route": "/package/ws/8.21.0",
@@ -36,52 +45,43 @@
         "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
       },
       {
-        "packageName": "pnpm",
-        "route": "/package/pnpm/11.5.0",
+        "packageName": "@storybook/react",
+        "route": "/package/storybook-react/10.4.2",
         "risk": "breaking",
-        "newVersion": "11.5.0",
+        "newVersion": "10.4.2",
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
-        "packageName": "styled-components",
-        "route": "/package/styled-components/6.4.2",
+        "packageName": "storybook",
+        "route": "/package/storybook/10.4.2",
         "risk": "breaking",
-        "newVersion": "6.4.2",
+        "newVersion": "10.4.2",
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
-        "packageName": "tailwindcss",
-        "route": "/package/tailwindcss/4.3.0",
+        "packageName": "@types/react",
+        "route": "/package/types-react/19.2.16",
         "risk": "breaking",
-        "newVersion": "4.3.0",
+        "newVersion": "19.2.16",
         "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
-        "packageName": "react",
-        "route": "/package/react/19.2.6",
+        "packageName": "graphql",
+        "route": "/package/graphql/16.14.1",
         "risk": "breaking",
-        "newVersion": "19.2.6",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
-      },
-      {
-        "packageName": "react-dom",
-        "route": "/package/react-dom/19.2.6",
-        "risk": "breaking",
-        "newVersion": "19.2.6",
+        "newVersion": "16.14.1",
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       }
     ],
     "route": "/weekly/2026-w23",
-    "generatedAt": "2026-06-01T17:05:58.722Z"
+    "generatedAt": "2026-06-02T15:51:40.934Z"
   }
 ]

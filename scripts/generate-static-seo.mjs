@@ -27,7 +27,7 @@ function buildSitemap(routePaths, generatedAt) {
         "  <url>",
         `    <loc>${escapeXml(loc)}</loc>`,
         `    <lastmod>${lastmod}</lastmod>`,
-        `    <changefreq>${routePath === "/weekly" || routePath === "/" ? "weekly" : "daily"}</changefreq>`,
+        "    <changefreq>daily</changefreq>",
         `    <priority>${priorityFor(routePath)}</priority>`,
         "  </url>",
       ].join("\n");
@@ -110,6 +110,8 @@ function feedItem(item) {
 
 function priorityFor(routePath) {
   if (routePath === "/" || routePath === "/weekly") return "1.0";
+  if (routePath === "/packages") return "0.9";
+  if (routePath.startsWith("/category/")) return "0.8";
   if (routePath.startsWith("/risk/")) return "0.8";
   if (routePath.split("/").length > 3) return "0.7";
   return "0.6";

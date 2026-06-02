@@ -44,8 +44,11 @@ a {
   top: 0;
   z-index: 5;
   display: grid;
-  grid-template-columns: minmax(260px, 1fr) auto minmax(220px, 320px);
-  gap: 28px;
+  grid-template-areas:
+    "brand search"
+    "nav nav";
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
+  gap: 10px 18px;
   align-items: center;
   padding: 18px 24px 16px;
   border-bottom: 1px solid #dce3ee;
@@ -54,6 +57,7 @@ a {
 }
 
 .brand-link {
+  grid-area: brand;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -63,6 +67,7 @@ a {
   color: #111827;
   background: transparent;
   border: 0;
+  text-decoration: none;
 }
 
 .brand-name {
@@ -83,22 +88,24 @@ a {
 }
 
 .top-nav {
+  grid-area: nav;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 2px;
   min-width: 0;
   overflow-x: auto;
 }
 
 .nav-link {
   flex: 0 0 auto;
-  padding: 12px 10px;
+  padding: 12px 7px;
   color: #1d2a3d;
   background: transparent;
   border: 0;
   border-bottom: 3px solid transparent;
-  font-size: 0.92rem;
+  font-size: 0.84rem;
   font-weight: 650;
+  text-decoration: none;
 }
 
 .nav-link.active {
@@ -107,6 +114,7 @@ a {
 }
 
 .global-search {
+  grid-area: search;
   position: relative;
   display: block;
 }
@@ -205,7 +213,7 @@ p {
   margin-top: 20px;
 }
 
-.hero-actions button,
+.hero-actions .primary-action,
 .hero-actions a,
 .sponsor-actions a,
 .sponsor-actions button {
@@ -219,14 +227,14 @@ p {
   text-decoration: none;
 }
 
-.hero-actions button,
+.hero-actions .primary-action,
 .sponsor-actions a {
   color: #ffffff;
   background: #0f172a;
   border: 1px solid #0f172a;
 }
 
-.hero-actions a,
+.hero-actions a:not(.primary-action),
 .sponsor-actions button {
   color: #0057d8;
   background: #ffffff;
@@ -335,12 +343,13 @@ p {
   font-size: 0.86rem;
 }
 
-.breadcrumbs button {
+.breadcrumbs a {
   padding: 0;
   color: #0057d8;
   background: transparent;
   border: 0;
   font-weight: 800;
+  text-decoration: none;
 }
 
 .breadcrumbs strong {
@@ -762,7 +771,7 @@ td small,
   font-size: 1.1rem;
 }
 
-.route-strip button {
+.route-strip a {
   padding: 9px 11px;
   color: #1f3555;
   background: #f4f7fb;
@@ -770,6 +779,7 @@ td small,
   border-radius: 6px;
   font-size: 0.86rem;
   font-weight: 750;
+  text-decoration: none;
 }
 
 .package-page {
@@ -849,7 +859,7 @@ td small,
   font-size: 1rem;
 }
 
-.package-link-panel button {
+.package-link-panel a {
   padding: 9px 11px;
   color: #0057d8;
   background: #eef5ff;
@@ -857,6 +867,7 @@ td small,
   border-radius: 6px;
   font-size: 0.84rem;
   font-weight: 800;
+  text-decoration: none;
 }
 
 .package-release-list {
@@ -908,12 +919,154 @@ td small,
   line-height: 1.45;
 }
 
+.directory-page,
 .sponsor-page,
 .methodology-page {
   display: grid;
   gap: 28px;
   padding: 44px 32px 58px;
   background: #ffffff;
+}
+
+.directory-hero {
+  max-width: 900px;
+}
+
+.directory-hero h1 {
+  color: #0d1420;
+  font-size: clamp(2.1rem, 5vw, 3.8rem);
+  line-height: 1.02;
+}
+
+.directory-hero p:not(.eyebrow) {
+  max-width: 850px;
+  margin-top: 16px;
+  color: #40516a;
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+.directory-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.directory-card {
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+  padding: 18px;
+  background: #f7f9fc;
+  border: 1px solid #dce3ee;
+  border-radius: 8px;
+}
+
+.directory-card-heading {
+  display: grid;
+  gap: 8px;
+}
+
+.directory-card h2 {
+  font-size: 1.08rem;
+  line-height: 1.25;
+}
+
+.directory-card h2 a,
+.directory-card li a,
+.directory-more-link {
+  color: #0057d8;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.directory-card-heading span {
+  color: #53647a;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.directory-card p {
+  color: #40516a;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.directory-card ul {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.directory-card li a {
+  font-size: 0.88rem;
+}
+
+.directory-more-link {
+  align-self: end;
+  font-size: 0.86rem;
+}
+
+.package-directory-list {
+  overflow: hidden;
+  border: 1px solid #dce3ee;
+  border-radius: 8px;
+}
+
+.package-directory-list h2 {
+  padding: 16px 18px;
+  color: #121a28;
+  background: #f7f9fc;
+  border-bottom: 1px solid #dce3ee;
+  font-size: 1rem;
+}
+
+.package-directory-list article {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  padding: 16px 18px;
+  background: #ffffff;
+  border-bottom: 1px solid #dce3ee;
+}
+
+.package-directory-list article:last-child {
+  border-bottom: 0;
+}
+
+.package-directory-list a {
+  color: #0057d8;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.package-directory-list p {
+  margin-top: 4px;
+  color: #40516a;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.directory-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.directory-actions a {
+  min-height: 40px;
+  padding: 10px 14px;
+  color: #0057d8;
+  background: #eef5ff;
+  border: 1px solid #c7daf4;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-decoration: none;
 }
 
 .sponsor-hero,
@@ -981,7 +1134,7 @@ td small,
   gap: 10px;
 }
 
-.methodology-actions button {
+.methodology-actions a {
   min-height: 40px;
   padding: 0 14px;
   color: #0057d8;
@@ -990,6 +1143,7 @@ td small,
   border-radius: 6px;
   font-size: 0.88rem;
   font-weight: 800;
+  text-decoration: none;
 }
 
 .sponsor-note {
@@ -1006,6 +1160,10 @@ td small,
 
 @media (max-width: 1120px) {
   .site-header {
+    grid-template-areas:
+      "brand"
+      "nav"
+      "search";
     grid-template-columns: 1fr;
     gap: 12px;
   }
@@ -1082,14 +1240,25 @@ td small,
   .mini-table button,
   .archive-row,
   .package-release-list button,
+  .package-directory-list article,
   .package-summary-grid,
   .sponsor-grid,
   .methodology-grid {
     grid-template-columns: 1fr;
   }
 
+  .directory-grid {
+    grid-template-columns: 1fr;
+  }
+
   .detail-list div {
     grid-template-columns: 1fr;
     gap: 2px;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1280px) {
+  .directory-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

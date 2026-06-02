@@ -1,4 +1,5 @@
 export {
+  categoryRoutes,
   digestArchive,
   generatedAt,
   generationFailures,

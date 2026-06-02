@@ -1,12 +1,14 @@
 import fs from "node:fs/promises";
 
 const siteUrl = (process.env.SITE_URL || "https://dependency-risk-digest.vercel.app").replace(/\/$/, "");
-const maxGeneratedAgeHours = Number(process.env.MAX_GENERATED_AGE_HOURS || 120);
+const maxGeneratedAgeHours = Number(process.env.MAX_GENERATED_AGE_HOURS || 48);
 const failureReportPath = process.env.WATCHDOG_FAILURE_PATH || "watchdog-failure.md";
 const resultPath = process.env.WATCHDOG_RESULT_PATH || "watchdog-result.json";
 
 const htmlRoutes = [
   { path: "/weekly", expectedText: "Latest Weekly Digest", name: "weekly page" },
+  { path: "/packages", expectedText: "Frontend npm Package Risk Directory", name: "package directory" },
+  { path: "/category/core-frameworks", expectedText: "Frameworks and Core UI", name: "frameworks category page" },
   { path: "/sponsor", expectedText: "Sponsor Dependency Risk Digest", name: "sponsor page" },
   { path: "/package/react", expectedText: "Latest release-risk page", name: "react package page" },
   { path: "/methodology", expectedText: "How Dependency Risk Digest Evaluates Frontend npm Updates", name: "methodology page" },
@@ -37,7 +39,7 @@ for (const route of htmlRoutes) {
 
 const sitemap = await fetchRoute("/sitemap.xml", "sitemap");
 checkNonBlank("sitemap", sitemap.body, 1000, "Run npm run generate:seo locally and inspect public/sitemap.xml.");
-for (const expectedPath of ["/weekly", "/sponsor", "/package/react"]) {
+for (const expectedPath of ["/weekly", "/packages", "/category/core-frameworks", "/sponsor", "/package/react"]) {
   if (!sitemap.body.includes(`${siteUrl}${expectedPath}`)) {
     addFailure("sitemap", `Missing ${expectedPath} from sitemap.xml.`, "Run npm run refresh and verify data/sitemap-paths.json includes the route.");
   }

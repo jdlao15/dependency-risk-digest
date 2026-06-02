@@ -12,8 +12,10 @@ const digestData = JSON.parse(await fs.readFile(digestPath, "utf8"));
 const seoRoutes = digestData.seoRoutes ?? {};
 const releases = digestData.releases ?? [];
 const packageRoutes = digestData.packageRoutes ?? {};
+const categoryRoutes = digestData.categoryRoutes ?? {};
 const releaseByRoute = new Map(releases.map((release) => [release.route, release]));
 const packageByRoute = new Map(Object.values(packageRoutes).map((route) => [route.route, route]));
+const categoryByRoute = new Map(Object.values(categoryRoutes).map((route) => [route.route, route]));
 
 const weeklySeo = seoRoutes["/weekly"] ?? {
   title: "Dependency Risk Digest",
@@ -86,7 +88,12 @@ function applySeo(html, routePath, seo) {
 function pageTypeFor(routePath) {
   if (routePath === "/weekly" || routePath.startsWith("/weekly/")) return "CollectionPage";
   if (routePath.startsWith("/package/") && routePath.split("/").length === 4) return "TechArticle";
-  if (routePath.startsWith("/package/") || routePath.startsWith("/risk/")) return "CollectionPage";
+  if (
+    routePath === "/packages" ||
+    routePath.startsWith("/category/") ||
+    routePath.startsWith("/package/") ||
+    routePath.startsWith("/risk/")
+  ) return "CollectionPage";
   return "WebPage";
 }
 
@@ -135,15 +142,34 @@ function buildBreadcrumbs(routePath, seo) {
     items.push({ name: "Methodology", url: `${siteUrl}/methodology` });
     return items;
   }
+  if (routePath === "/packages") {
+    items.push({ name: "Packages", url: `${siteUrl}/packages` });
+    return items;
+  }
+  const categoryRoute = categoryByRoute.get(routePath);
+  if (categoryRoute) {
+    items.push({ name: "Packages", url: `${siteUrl}/packages` });
+    items.push({ name: categoryRoute.label, url: `${siteUrl}${routePath}` });
+    return items;
+  }
   const release = releaseByRoute.get(routePath);
   if (release) {
     const packageRoute = `/package/${release.packageSlug}`;
+    const packageInfo = packageByRoute.get(packageRoute);
+    items.push({ name: "Packages", url: `${siteUrl}/packages` });
+    if (packageInfo?.areaSlug && packageInfo?.areaLabel) {
+      items.push({ name: packageInfo.areaLabel, url: `${siteUrl}/category/${packageInfo.areaSlug}` });
+    }
     items.push({ name: release.packageName, url: `${siteUrl}${packageRoute}` });
     items.push({ name: release.newVersion, url: `${siteUrl}${routePath}` });
     return items;
   }
   const packageRoute = packageByRoute.get(routePath);
   if (packageRoute) {
+    items.push({ name: "Packages", url: `${siteUrl}/packages` });
+    if (packageRoute.areaSlug && packageRoute.areaLabel) {
+      items.push({ name: packageRoute.areaLabel, url: `${siteUrl}/category/${packageRoute.areaSlug}` });
+    }
     items.push({ name: packageRoute.packageName, url: `${siteUrl}${routePath}` });
   }
   return items;
@@ -151,11 +177,31 @@ function buildBreadcrumbs(routePath, seo) {
 
 function buildNoScriptSummary(routePath, title, description, breadcrumbs) {
   const release = releaseByRoute.get(routePath);
+  const category = categoryByRoute.get(routePath);
+  const packageInfo = packageByRoute.get(routePath);
+  const directoryLinks =
+    routePath === "/packages"
+      ? Object.values(categoryRoutes).map((item) => ({
+          label: item.label,
+          href: item.route,
+        }))
+      : category
+        ? category.packages.map((item) => ({
+            label: `${item.packageName} package archive`,
+            href: item.route,
+          }))
+        : [];
   const links = [
     { label: "Latest weekly digest", href: "/weekly" },
+    { label: "Frontend package directory", href: "/packages" },
     { label: "Security updates", href: "/risk/security" },
     { label: "Breaking changes", href: "/risk/breaking" },
     { label: "Sponsor", href: "/sponsor" },
+    ...(packageInfo?.areaSlug ? [{
+      label: packageInfo.areaLabel,
+      href: `/category/${packageInfo.areaSlug}`,
+    }] : []),
+    ...directoryLinks,
     ...(release ? [
       { label: `${release.packageName} package archive`, href: `/package/${release.packageSlug}` },
       { label: `${release.packageName} risk category`, href: riskRouteFor(release.risk) },

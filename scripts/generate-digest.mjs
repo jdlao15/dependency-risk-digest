@@ -17,6 +17,40 @@ const githubHeaders = {
   "X-GitHub-Api-Version": "2022-11-28",
   ...(process.env.GITHUB_TOKEN ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` } : {}),
 };
+const coverageAreas = {
+  "core-frameworks": {
+    label: "Frameworks and Core UI",
+    description: "Frontend frameworks and core UI runtimes used to build React, Vue, Svelte, Angular, Astro, Nuxt, Gatsby, Remix, and Solid applications.",
+  },
+  "build-tooling": {
+    label: "Build Tooling",
+    description: "Bundlers, compilers, Vite plugins, and monorepo tools that affect frontend builds, dependency graphs, and release pipelines.",
+  },
+  "typescript-quality": {
+    label: "TypeScript and Code Quality",
+    description: "TypeScript, ESLint, Prettier, and type-definition packages that shape frontend build checks and code-quality workflows.",
+  },
+  "routing-state-data": {
+    label: "Routing, State, and Data",
+    description: "Routing, state management, GraphQL, and HTTP client packages used in production JavaScript and React applications.",
+  },
+  "forms-validation": {
+    label: "Forms and Validation",
+    description: "Form state and schema validation packages used to process user input in frontend applications.",
+  },
+  "testing-storybook": {
+    label: "Testing and Storybook",
+    description: "Test runners, browser automation, component testing, API mocking, and Storybook packages used before frontend releases ship.",
+  },
+  "css-ui": {
+    label: "CSS and UI Libraries",
+    description: "CSS tooling, component libraries, accessible primitives, animation packages, and class utilities used in frontend interfaces.",
+  },
+  "utilities-runtime": {
+    label: "JavaScript Utilities and Runtime",
+    description: "Common JavaScript utilities and runtime packages that can appear directly or transitively in frontend dependency graphs.",
+  },
+};
 
 const today = new Date();
 const packageList = JSON.parse(await fs.readFile(packageListPath, "utf8"));
@@ -44,10 +78,11 @@ releases.sort((a, b) => {
 });
 
 const packageRoutes = buildPackageRoutes(packageList, releases);
+const categoryRoutes = buildCategoryRoutes(packageRoutes);
 const generatedAt = today.toISOString();
 const weeklyDigest = buildWeeklyDigest(releases);
 const digestArchive = await buildDigestArchive(weeklyDigest, generatedAt, releases);
-const seoRoutes = buildSeoRoutes(releases, packageRoutes, weeklyDigest);
+const seoRoutes = buildSeoRoutes(releases, packageRoutes, categoryRoutes, weeklyDigest);
 const sitemapPaths = Object.keys(seoRoutes).sort();
 
 const moduleText = `import type { ReleaseItem, SeoRoute, WeeklyDigest } from "./types";
@@ -58,13 +93,14 @@ export const weeklyDigest: WeeklyDigest = ${JSON.stringify(weeklyDigest, null, 2
 export const digestArchive: WeeklyDigest[] = ${JSON.stringify(digestArchive, null, 2)};
 export const releases: ReleaseItem[] = ${JSON.stringify(releases, null, 2)};
 export const packageRoutes = ${JSON.stringify(packageRoutes, null, 2)};
+export const categoryRoutes = ${JSON.stringify(categoryRoutes, null, 2)};
 export const seoRoutes: Record<string, SeoRoute> = ${JSON.stringify(seoRoutes, null, 2)};
 `;
 
 await fs.writeFile(outputPath, moduleText);
 await fs.writeFile(
   jsonOutputPath,
-  JSON.stringify({ generatedAt, weeklyDigest, digestArchive, releases, packageRoutes, seoRoutes, failures }, null, 2),
+  JSON.stringify({ generatedAt, weeklyDigest, digestArchive, releases, packageRoutes, categoryRoutes, seoRoutes, failures }, null, 2),
 );
 await fs.writeFile(sitemapPathsPath, JSON.stringify({ generatedAt, paths: sitemapPaths }, null, 2));
 await fs.writeFile(weeklyHistoryPath, JSON.stringify(digestArchive, null, 2));
@@ -367,16 +403,39 @@ function buildPackageRoutes(packages, items) {
           packageName: trackedPackage.name,
           description:
             trackedPackage.description ||
-            `${trackedPackage.name} is tracked as part of the fixed frontend package set.`,
+            `${trackedPackage.name} frontend dependency-risk archive.`,
           route: `/package/${slug}`,
           latestReleaseRoute: release?.route ?? `/package/${slug}`,
+          areaSlug: trackedPackage.area,
+          areaLabel: coverageAreas[trackedPackage.area]?.label ?? "Frontend Packages",
         },
       ];
     }),
   );
 }
 
-function buildSeoRoutes(items, routeMap, digest) {
+function buildCategoryRoutes(routeMap) {
+  return Object.fromEntries(
+    Object.entries(coverageAreas).map(([slug, area]) => {
+      const packages = Object.values(routeMap)
+        .filter((route) => route.areaSlug === slug)
+        .sort((a, b) => a.packageName.localeCompare(b.packageName));
+      return [
+        slug,
+        {
+          slug,
+          label: area.label,
+          description: area.description,
+          route: `/category/${slug}`,
+          packageCount: packages.length,
+          packages,
+        },
+      ];
+    }),
+  );
+}
+
+function buildSeoRoutes(items, routeMap, categoryMap, digest) {
   const routes = {
     "/weekly": {
       path: "/weekly",
@@ -408,6 +467,11 @@ function buildSeoRoutes(items, routeMap, digest) {
       title: "Dependency Risk Methodology for Frontend npm Updates",
       description: "How Dependency Risk Digest evaluates frontend npm dependency risk, security updates, breaking changes, OSV and CVE signals, release notes, affected audience, and recommended update actions for React, Vite, Next.js, TypeScript, Storybook, and JavaScript teams.",
     },
+    "/packages": {
+      path: "/packages",
+      title: "Frontend npm Package Risk Directory",
+      description: `Browse ${Object.keys(routeMap).length} tracked frontend npm package archives across frameworks, build tools, TypeScript, testing, CSS, UI libraries, routing, state management, data fetching, forms, validation, and JavaScript utilities.`,
+    },
   };
 
   for (const digestItem of digestArchive) {
@@ -425,6 +489,14 @@ function buildSeoRoutes(items, routeMap, digest) {
       path: route.route,
       title: `${route.packageName} dependency risk archive`,
       description: `${route.packageName} npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. ${route.description}`,
+    };
+  }
+
+  for (const category of Object.values(categoryMap)) {
+    routes[category.route] = {
+      path: category.route,
+      title: `${category.label} npm dependency risk`,
+      description: `${category.label} frontend npm dependency-risk directory with ${category.packageCount} tracked package archives, current release-risk pages, OSV and CVE signals, breaking-change checks, release notes, and recommended update actions. ${category.description}`,
     };
   }
 
