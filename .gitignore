@@ -8,3 +8,5 @@ vite.config.d.ts
 drd-*.png
 vite-dev*.log
 .cache
+
+.vercel
