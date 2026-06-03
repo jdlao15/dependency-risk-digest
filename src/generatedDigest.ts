@@ -4772,7 +4772,7 @@ export const seoRoutes: Record<string, SeoRoute> = {
   "/methodology": {
     "path": "/methodology",
     "title": "Dependency Risk Methodology for Frontend npm Updates",
-    "description": "How Dependency Risk Digest evaluates frontend npm dependency risk, security updates, breaking changes, OSV and CVE signals, release notes, affected audience, and recommended update actions for React, Vite, Next.js, TypeScript, Storybook, and JavaScript teams."
+    "description": "Explains how Dependency Risk Digest evaluates frontend npm risk with release metadata, OSV/CVE signals, changelog language, affected audience, and recommended actions for React, Vite, Next.js, TypeScript, Storybook, and JavaScript teams."
   },
   "/packages": {
     "path": "/packages",

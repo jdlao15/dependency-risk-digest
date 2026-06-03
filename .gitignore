@@ -8,5 +8,9 @@ vite.config.d.ts
 drd-*.png
 vite-dev*.log
 .cache
+growth-audit-report.md
+growth-audit-result.json
+watchdog-failure.md
+watchdog-result.json
 
 .vercel
