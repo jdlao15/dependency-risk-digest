@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-06-03T22:32:06.304Z",
+  "generatedAt": "2026-06-04T20:54:08.542Z",
   "weeklyDigest": {
     "week": "Week 23, 2026",
     "dateRange": "Jun 1 - Jun 7",
-    "risky": 39,
-    "breaking": 14,
+    "risky": 37,
+    "breaking": 15,
     "security": 4,
-    "safe": 43,
+    "safe": 45,
     "total": 82
   },
   "digestArchive": [
     {
       "week": "Week 23, 2026",
       "dateRange": "Jun 1 - Jun 7",
-      "risky": 39,
-      "breaking": 14,
+      "risky": 37,
+      "breaking": 15,
       "security": 4,
-      "safe": 43,
+      "safe": 45,
       "total": 82,
       "topSignals": [
         {
@@ -56,6 +56,15 @@
           "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
         },
         {
+          "packageName": "react-router-dom",
+          "route": "/package/react-router-dom/7.17.0",
+          "risk": "breaking",
+          "newVersion": "7.17.0",
+          "reason": "Major version release detected.",
+          "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+          "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+        },
+        {
           "packageName": "@angular/core",
           "route": "/package/angular-core/22.0.0",
           "risk": "breaking",
@@ -81,19 +90,10 @@
           "reason": "Major version release detected.",
           "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
           "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
-        },
-        {
-          "packageName": "@types/react",
-          "route": "/package/types-react/19.2.16",
-          "risk": "breaking",
-          "newVersion": "19.2.16",
-          "reason": "Major version release detected.",
-          "recommendedAction": "Review changes before updating. Test in staging before merging.",
-          "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
         }
       ],
       "route": "/weekly/2026-w23",
-      "generatedAt": "2026-06-03T22:32:06.304Z"
+      "generatedAt": "2026-06-04T20:54:08.542Z"
     }
   ],
   "releases": [
@@ -105,7 +105,7 @@
       "oldVersion": "1.16.1",
       "newVersion": "1.17.0",
       "releaseDate": "2026-06-03",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "risk": "security",
       "category": "Security",
       "osv": "No OSV match",
@@ -145,7 +145,7 @@
       "oldVersion": "3.21.7",
       "newVersion": "4.4.7",
       "releaseDate": "2026-06-02",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "risk": "security",
       "category": "Security",
       "osv": "No OSV match",
@@ -159,7 +159,7 @@
       "githubReleaseUrl": "https://github.com/nuxt/nuxt/releases/tag/v4.4.7",
       "githubReleaseTag": "v4.4.7",
       "githubReleasePublishedAt": "2026-06-02T14:33:12Z",
-      "releaseNotesExcerpt": "> 4.4.7 is the a security hotfix release. make sure to check https://github.com/nuxt/nuxt/security/advisories to view open advisories resolved by this release. Changelog compare changes Fixes **nitro:** Assign noSSR before deciding payload extraction (#35108) **vite:** Avoid filt",
+      "releaseNotesExcerpt": "> 4.4.7 is a security hotfix release. make sure to check https://github.com/nuxt/nuxt/security/advisories to view open advisories resolved by this release. Changelog compare changes Fixes **nitro:** Assign noSSR before deciding payload extraction (#35108) **vite:** Avoid filterin",
       "releaseNotesStatus": "Matched GitHub release by npm version tag.",
       "route": "/package/nuxt/4.4.7",
       "sourceLinks": [
@@ -185,7 +185,7 @@
       "oldVersion": "7.5.11",
       "newVersion": "8.21.0",
       "releaseDate": "2026-05-22",
-      "publishedAgo": "published 12 days ago",
+      "publishedAgo": "published 13 days ago",
       "risk": "security",
       "category": "Security",
       "osv": "No OSV match",
@@ -258,6 +258,46 @@
       ]
     },
     {
+      "id": "react-router-dom-7-17-0",
+      "packageName": "react-router-dom",
+      "packageSlug": "react-router-dom",
+      "description": "Declarative routing for React",
+      "oldVersion": "0.0.0-experimental-dd63c14ca",
+      "newVersion": "7.17.0",
+      "releaseDate": "2026-06-04",
+      "publishedAgo": "published today",
+      "risk": "breaking",
+      "category": "Breaking",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Major version release detected.",
+      "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds.",
+      "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
+      "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+      "whatChanged": "GitHub release note found: v7.17.0.",
+      "githubReleaseTitle": "v7.17.0",
+      "githubReleaseUrl": "https://github.com/remix-run/react-router/releases/tag/react-router%407.17.0",
+      "githubReleaseTag": "react-router@7.17.0",
+      "githubReleasePublishedAt": "2026-06-04T14:21:31Z",
+      "releaseNotesExcerpt": "See the changelog for release notes: https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v7170",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
+      "route": "/package/react-router-dom/7.17.0",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/react-router-dom"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/remix-run/react-router"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/remix-run/react-router/releases/tag/react-router%407.17.0"
+        }
+      ]
+    },
+    {
       "id": "angular-core-22-0-0",
       "packageName": "@angular/core",
       "packageSlug": "angular-core",
@@ -265,7 +305,7 @@
       "oldVersion": "21.2.16",
       "newVersion": "22.0.0",
       "releaseDate": "2026-06-03",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "risk": "breaking",
       "category": "Breaking",
       "osv": "No OSV match",
@@ -305,7 +345,7 @@
       "oldVersion": "0.0.0-pr-34837-sha-4d331ed6",
       "newVersion": "10.4.2",
       "releaseDate": "2026-06-02",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "risk": "breaking",
       "category": "Breaking",
       "osv": "No OSV match",
@@ -345,7 +385,7 @@
       "oldVersion": "0.0.0-pr-34837-sha-4d331ed6",
       "newVersion": "10.4.2",
       "releaseDate": "2026-06-02",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "risk": "breaking",
       "category": "Breaking",
       "osv": "No OSV match",
@@ -385,7 +425,7 @@
       "oldVersion": "15.7.37",
       "newVersion": "19.2.16",
       "releaseDate": "2026-06-01",
-      "publishedAgo": "published 2 days ago",
+      "publishedAgo": "published 3 days ago",
       "risk": "breaking",
       "category": "Breaking",
       "osv": "No OSV match",
@@ -425,7 +465,7 @@
       "oldVersion": "17.0.0-beta.2",
       "newVersion": "16.14.1",
       "releaseDate": "2026-06-01",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "risk": "breaking",
       "category": "Breaking",
       "osv": "No OSV match",
@@ -465,7 +505,7 @@
       "oldVersion": "8.0.0-rc.6",
       "newVersion": "7.29.7",
       "releaseDate": "2026-05-25",
-      "publishedAgo": "published 9 days ago",
+      "publishedAgo": "published 10 days ago",
       "risk": "breaking",
       "category": "Breaking",
       "osv": "No OSV match",
@@ -505,7 +545,7 @@
       "oldVersion": "8.0.0-rc.6",
       "newVersion": "7.29.7",
       "releaseDate": "2026-05-25",
-      "publishedAgo": "published 9 days ago",
+      "publishedAgo": "published 10 days ago",
       "risk": "breaking",
       "category": "Breaking",
       "osv": "No OSV match",
@@ -545,7 +585,7 @@
       "oldVersion": "7.0.0-prerelease-20260519035351",
       "newVersion": "6.4.2",
       "releaseDate": "2026-05-19",
-      "publishedAgo": "published 15 days ago",
+      "publishedAgo": "published 16 days ago",
       "risk": "breaking",
       "category": "Breaking",
       "osv": "No OSV match",
@@ -585,7 +625,7 @@
       "oldVersion": "2.0.0-beta.13",
       "newVersion": "1.9.13",
       "releaseDate": "2026-05-15",
-      "publishedAgo": "published 19 days ago",
+      "publishedAgo": "published 20 days ago",
       "risk": "breaking",
       "category": "Breaking",
       "osv": "No OSV match",
@@ -625,7 +665,7 @@
       "oldVersion": "0.0.0-insiders.588bd73",
       "newVersion": "4.3.0",
       "releaseDate": "2026-05-08",
-      "publishedAgo": "published 26 days ago",
+      "publishedAgo": "published 27 days ago",
       "risk": "breaking",
       "category": "Breaking",
       "osv": "No OSV match",
@@ -665,7 +705,7 @@
       "oldVersion": "7.3.11",
       "newVersion": "9.0.1",
       "releaseDate": "2026-05-07",
-      "publishedAgo": "published 27 days ago",
+      "publishedAgo": "published 28 days ago",
       "risk": "breaking",
       "category": "Breaking",
       "osv": "No OSV match",
@@ -745,7 +785,7 @@
       "oldVersion": "13.0.0",
       "newVersion": "14.0.0",
       "releaseDate": "2026-04-19",
-      "publishedAgo": "published 45 days ago",
+      "publishedAgo": "published 46 days ago",
       "risk": "breaking",
       "category": "Breaking",
       "osv": "No OSV match",
@@ -814,46 +854,6 @@
       ]
     },
     {
-      "id": "happy-dom-20-10-0",
-      "packageName": "happy-dom",
-      "packageSlug": "happy-dom",
-      "description": "Browser environment for testing",
-      "oldVersion": "20.9.0",
-      "newVersion": "20.10.0",
-      "releaseDate": "2026-06-03",
-      "publishedAgo": "published today",
-      "risk": "review",
-      "category": "Review",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Minor version release detected with no OSV match.",
-      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-      "whatChanged": "GitHub release note found: v20.9.0.",
-      "githubReleaseTitle": "v20.9.0",
-      "githubReleaseUrl": "https://github.com/capricorn86/happy-dom/releases/tag/v20.9.0",
-      "githubReleaseTag": "v20.9.0",
-      "githubReleasePublishedAt": "2026-04-13T23:03:25Z",
-      "releaseNotesExcerpt": ":art: Features - Adds support for event listener properties on Window (e.g. Window.onkeydown) - By **@capricorn86** in task #2131",
-      "releaseNotesStatus": "Using latest GitHub release because no exact version tag matched.",
-      "route": "/package/happy-dom/20.10.0",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/happy-dom"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/capricorn86/happy-dom"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/capricorn86/happy-dom/releases/tag/v20.9.0"
-        }
-      ]
-    },
-    {
       "id": "tanstack-react-query-5-101-0",
       "packageName": "@tanstack/react-query",
       "packageSlug": "tanstack-react-query",
@@ -861,7 +861,7 @@
       "oldVersion": "5.100.14",
       "newVersion": "5.101.0",
       "releaseDate": "2026-06-02",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "risk": "review",
       "category": "Review",
       "osv": "No OSV match",
@@ -901,7 +901,7 @@
       "oldVersion": "19.1.8",
       "newVersion": "19.2.7",
       "releaseDate": "2026-06-01",
-      "publishedAgo": "published 2 days ago",
+      "publishedAgo": "published 3 days ago",
       "risk": "review",
       "category": "Review",
       "osv": "No OSV match",
@@ -941,7 +941,7 @@
       "oldVersion": "19.1.8",
       "newVersion": "19.2.7",
       "releaseDate": "2026-06-01",
-      "publishedAgo": "published 2 days ago",
+      "publishedAgo": "published 3 days ago",
       "risk": "review",
       "category": "Review",
       "osv": "No OSV match",
@@ -981,7 +981,7 @@
       "oldVersion": "16.3.0-canary.36",
       "newVersion": "16.2.7",
       "releaseDate": "2026-06-01",
-      "publishedAgo": "published 2 days ago",
+      "publishedAgo": "published 3 days ago",
       "risk": "review",
       "category": "Review",
       "osv": "No OSV match",
@@ -1014,46 +1014,6 @@
       ]
     },
     {
-      "id": "rollup-4-61-0",
-      "packageName": "rollup",
-      "packageSlug": "rollup",
-      "description": "Module bundler",
-      "oldVersion": "4.60.4",
-      "newVersion": "4.61.0",
-      "releaseDate": "2026-06-01",
-      "publishedAgo": "published 2 days ago",
-      "risk": "review",
-      "category": "Review",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Minor version release detected with no OSV match.",
-      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
-      "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
-      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-      "whatChanged": "GitHub release note found: v4.61.0.",
-      "githubReleaseTitle": "v4.61.0",
-      "githubReleaseUrl": "https://github.com/rollup/rollup/releases/tag/v4.61.0",
-      "githubReleaseTag": "v4.61.0",
-      "githubReleasePublishedAt": "2026-06-01T05:42:19Z",
-      "releaseNotesExcerpt": "4.61.0 _2026-06-01_ Features Sort entry modules to make chunk hashes deterministic (#6391) Pull Requests #6376: Eliminate AWS credential exposure on fork PRs in REPL artefact workflow (@lukastaegert) #6378: fix(deps): update minor/patch updates (@renovate[bot]) #6379: chore(deps)",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
-      "route": "/package/rollup/4.61.0",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/rollup"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/rollup/rollup"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/rollup/rollup/releases/tag/v4.61.0"
-        }
-      ]
-    },
-    {
       "id": "react-hook-form-7-77-0",
       "packageName": "react-hook-form",
       "packageSlug": "react-hook-form",
@@ -1061,7 +1021,7 @@
       "oldVersion": "7.76.1",
       "newVersion": "7.77.0",
       "releaseDate": "2026-05-31",
-      "publishedAgo": "published 3 days ago",
+      "publishedAgo": "published 4 days ago",
       "risk": "review",
       "category": "Review",
       "osv": "No OSV match",
@@ -1101,7 +1061,7 @@
       "oldVersion": "4.3.0",
       "newVersion": "4.4.0",
       "releaseDate": "2026-05-29",
-      "publishedAgo": "published 4 days ago",
+      "publishedAgo": "published 5 days ago",
       "risk": "review",
       "category": "Review",
       "osv": "No OSV match",
@@ -1134,46 +1094,6 @@
       ]
     },
     {
-      "id": "react-router-dom-7-16-0",
-      "packageName": "react-router-dom",
-      "packageSlug": "react-router-dom",
-      "description": "Declarative routing for React",
-      "oldVersion": "7.15.1",
-      "newVersion": "7.16.0",
-      "releaseDate": "2026-05-28",
-      "publishedAgo": "published 6 days ago",
-      "risk": "review",
-      "category": "Review",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Minor version release detected with no OSV match.",
-      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
-      "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
-      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-      "whatChanged": "GitHub release note found: v7.16.0.",
-      "githubReleaseTitle": "v7.16.0",
-      "githubReleaseUrl": "https://github.com/remix-run/react-router/releases/tag/react-router%407.16.0",
-      "githubReleaseTag": "react-router@7.16.0",
-      "githubReleasePublishedAt": "2026-05-28T18:47:07Z",
-      "releaseNotesExcerpt": "See the changelog for release notes: https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v7160",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
-      "route": "/package/react-router-dom/7.16.0",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/react-router-dom"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/remix-run/react-router"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/remix-run/react-router/releases/tag/react-router%407.16.0"
-        }
-      ]
-    },
-    {
       "id": "lucide-react-1-17-0",
       "packageName": "lucide-react",
       "packageSlug": "lucide-react",
@@ -1181,7 +1101,7 @@
       "oldVersion": "1.16.0",
       "newVersion": "1.17.0",
       "releaseDate": "2026-05-28",
-      "publishedAgo": "published 6 days ago",
+      "publishedAgo": "published 7 days ago",
       "risk": "review",
       "category": "Review",
       "osv": "No OSV match",
@@ -1221,7 +1141,7 @@
       "oldVersion": "3.6.0-beta.12",
       "newVersion": "3.5.35",
       "releaseDate": "2026-05-27",
-      "publishedAgo": "published 7 days ago",
+      "publishedAgo": "published 8 days ago",
       "risk": "review",
       "category": "Review",
       "osv": "No OSV match",
@@ -1261,7 +1181,7 @@
       "oldVersion": "15.15.0",
       "newVersion": "15.16.0",
       "releaseDate": "2026-05-26",
-      "publishedAgo": "published 8 days ago",
+      "publishedAgo": "published 9 days ago",
       "risk": "review",
       "category": "Review",
       "osv": "No OSV match",
@@ -1301,7 +1221,7 @@
       "oldVersion": "1.99.0",
       "newVersion": "1.100.0",
       "releaseDate": "2026-05-22",
-      "publishedAgo": "published 12 days ago",
+      "publishedAgo": "published 13 days ago",
       "risk": "review",
       "category": "Review",
       "osv": "No OSV match",
@@ -1341,7 +1261,7 @@
       "oldVersion": "12.39.0",
       "newVersion": "12.40.0",
       "releaseDate": "2026-05-21",
-      "publishedAgo": "published 13 days ago",
+      "publishedAgo": "published 14 days ago",
       "risk": "review",
       "category": "Review",
       "osv": "No OSV match",
@@ -1377,7 +1297,7 @@
       "oldVersion": "2.11.2",
       "newVersion": "2.12.0",
       "releaseDate": "2026-05-15",
-      "publishedAgo": "published 19 days ago",
+      "publishedAgo": "published 20 days ago",
       "risk": "review",
       "category": "Review",
       "osv": "No OSV match",
@@ -1417,7 +1337,7 @@
       "oldVersion": "4.5.0-canary.20260504T070434",
       "newVersion": "4.4.3",
       "releaseDate": "2026-05-04",
-      "publishedAgo": "published 30 days ago",
+      "publishedAgo": "published 31 days ago",
       "risk": "review",
       "category": "Review",
       "osv": "No OSV match",
@@ -1457,7 +1377,7 @@
       "oldVersion": "3.34.0",
       "newVersion": "3.35.0",
       "releaseDate": "2026-04-22",
-      "publishedAgo": "published 42 days ago",
+      "publishedAgo": "published 43 days ago",
       "risk": "review",
       "category": "Review",
       "osv": "No OSV match",
@@ -1497,7 +1417,7 @@
       "oldVersion": "10.4.27",
       "newVersion": "10.5.0",
       "releaseDate": "2026-04-13",
-      "publishedAgo": "published 51 days ago",
+      "publishedAgo": "published 52 days ago",
       "risk": "review",
       "category": "Review",
       "osv": "No OSV match",
@@ -1537,7 +1457,7 @@
       "oldVersion": "0.27.7",
       "newVersion": "0.28.0",
       "releaseDate": "2026-04-02",
-      "publishedAgo": "published 62 days ago",
+      "publishedAgo": "published 63 days ago",
       "risk": "review",
       "category": "Review",
       "osv": "No OSV match",
@@ -1577,7 +1497,7 @@
       "oldVersion": "2.0.0-canary.1871",
       "newVersion": "2.16.4",
       "releaseDate": "2026-02-02",
-      "publishedAgo": "published 121 days ago",
+      "publishedAgo": "published 122 days ago",
       "risk": "review",
       "category": "Review",
       "osv": "No OSV match",
@@ -1650,6 +1570,166 @@
       ]
     },
     {
+      "id": "svelte-5-56-2",
+      "packageName": "svelte",
+      "packageSlug": "svelte",
+      "description": "Compiler-based UI framework",
+      "oldVersion": "5.56.1",
+      "newVersion": "5.56.2",
+      "releaseDate": "2026-06-04",
+      "publishedAgo": "published today",
+      "risk": "low",
+      "category": "Low impact",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: svelte@5.56.2.",
+      "githubReleaseTitle": "svelte@5.56.2",
+      "githubReleaseUrl": "https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.2",
+      "githubReleaseTag": "svelte@5.56.2",
+      "githubReleasePublishedAt": "2026-06-04T20:33:04Z",
+      "releaseNotesExcerpt": "Patch Changes fix: properly track effect end node for async sibling component (#18371) fix: prevent false-positive reactivity loss warning (#18373) chore: bump esrap dependency (#18372) fix: ignore declaration tags for animation directive (#18366) fix: reject pending async derive",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
+      "route": "/package/svelte/5.56.2",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/svelte"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/sveltejs/svelte"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.2"
+        }
+      ]
+    },
+    {
+      "id": "rollup-4-61-1",
+      "packageName": "rollup",
+      "packageSlug": "rollup",
+      "description": "Module bundler",
+      "oldVersion": "4.61.0",
+      "newVersion": "4.61.1",
+      "releaseDate": "2026-06-04",
+      "publishedAgo": "published today",
+      "risk": "low",
+      "category": "Low impact",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: v4.61.1.",
+      "githubReleaseTitle": "v4.61.1",
+      "githubReleaseUrl": "https://github.com/rollup/rollup/releases/tag/v4.61.1",
+      "githubReleaseTag": "v4.61.1",
+      "githubReleasePublishedAt": "2026-06-04T05:23:44Z",
+      "releaseNotesExcerpt": "4.61.1 _2026-06-04_ Bug Fixes Avoid extraneous newlines when adding headers via plugins (#6403) Fix a rare issue where starting Rollup would hang on Windows (#6404) Pull Requests #6402: Improve documentation for manualPureFunctions (@lukastaegert) #6403: Does not add an extra lea",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
+      "route": "/package/rollup/4.61.1",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/rollup"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/rollup/rollup"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/rollup/rollup/releases/tag/v4.61.1"
+        }
+      ]
+    },
+    {
+      "id": "happy-dom-20-10-1",
+      "packageName": "happy-dom",
+      "packageSlug": "happy-dom",
+      "description": "Browser environment for testing",
+      "oldVersion": "20.10.0",
+      "newVersion": "20.10.1",
+      "releaseDate": "2026-06-04",
+      "publishedAgo": "published today",
+      "risk": "low",
+      "category": "Low impact",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: v20.10.0.",
+      "githubReleaseTitle": "v20.10.0",
+      "githubReleaseUrl": "https://github.com/capricorn86/happy-dom/releases/tag/v20.10.0",
+      "githubReleaseTag": "v20.10.0",
+      "githubReleasePublishedAt": "2026-06-03T23:39:58Z",
+      "releaseNotesExcerpt": ":art: Features Adds support for setting a canvas adapter for handling the canvas rendering using the browser setting canvasAdapter - By **@RAprogramm** and **@capricorn86** in task #241 Adds new package @happy-dom/node-canvas-adapter - By **@RAprogramm** and **@capricorn86** in t",
+      "releaseNotesStatus": "Using latest GitHub release because no exact version tag matched.",
+      "route": "/package/happy-dom/20.10.1",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/happy-dom"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/capricorn86/happy-dom"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/capricorn86/happy-dom/releases/tag/v20.10.0"
+        }
+      ]
+    },
+    {
+      "id": "semver-7-8-2",
+      "packageName": "semver",
+      "packageSlug": "semver",
+      "description": "Semantic version parsing",
+      "oldVersion": "7.8.1",
+      "newVersion": "7.8.2",
+      "releaseDate": "2026-06-04",
+      "publishedAgo": "published today",
+      "risk": "low",
+      "category": "Low impact",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: v7.8.2.",
+      "githubReleaseTitle": "v7.8.2",
+      "githubReleaseUrl": "https://github.com/npm/node-semver/releases/tag/v7.8.2",
+      "githubReleaseTag": "v7.8.2",
+      "githubReleasePublishedAt": "2026-06-04T15:20:25Z",
+      "releaseNotesExcerpt": "7.8.2 (2026-06-04) Bug Fixes bea6028 #870 increment dotted prerelease identifiers (#870) (@liuzemei, @SheldonNeo)",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
+      "route": "/package/semver/7.8.2",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/semver"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/npm/node-semver"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/npm/node-semver/releases/tag/v7.8.2"
+        }
+      ]
+    },
+    {
       "id": "astro-6-4-4",
       "packageName": "astro",
       "packageSlug": "astro",
@@ -1657,7 +1737,7 @@
       "oldVersion": "6.4.3",
       "newVersion": "6.4.4",
       "releaseDate": "2026-06-03",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -1737,7 +1817,7 @@
       "oldVersion": "11.5.0",
       "newVersion": "11.5.1",
       "releaseDate": "2026-06-02",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -1770,46 +1850,6 @@
       ]
     },
     {
-      "id": "svelte-5-56-1",
-      "packageName": "svelte",
-      "packageSlug": "svelte",
-      "description": "Compiler-based UI framework",
-      "oldVersion": "5.56.0",
-      "newVersion": "5.56.1",
-      "releaseDate": "2026-06-01",
-      "publishedAgo": "published 1 day ago",
-      "risk": "low",
-      "category": "Low impact",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Patch release with no OSV match.",
-      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "GitHub release note found: svelte@5.56.1.",
-      "githubReleaseTitle": "svelte@5.56.1",
-      "githubReleaseUrl": "https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.1",
-      "githubReleaseTag": "svelte@5.56.1",
-      "githubReleasePublishedAt": "2026-06-01T22:42:27Z",
-      "releaseNotesExcerpt": "Patch Changes fix: error at compile time on duplicate snippet/declaration tag definitions (#18351) fix: parse declaration tag contents more robustly (#18353) fix: correctly transform references to earlier declarators in a declaration tag (e.g. {let a = $state(0), b = $derived(a *",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
-      "route": "/package/svelte/5.56.1",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/svelte"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/sveltejs/svelte"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.1"
-        }
-      ]
-    },
-    {
       "id": "remix-run-react-2-17-5",
       "packageName": "@remix-run/react",
       "packageSlug": "remix-run-react",
@@ -1817,7 +1857,7 @@
       "oldVersion": "2.17.4",
       "newVersion": "2.17.5",
       "releaseDate": "2026-06-01",
-      "publishedAgo": "published 2 days ago",
+      "publishedAgo": "published 3 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -1857,7 +1897,7 @@
       "oldVersion": "8.0.15",
       "newVersion": "8.0.16",
       "releaseDate": "2026-06-01",
-      "publishedAgo": "published 2 days ago",
+      "publishedAgo": "published 3 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -1897,7 +1937,7 @@
       "oldVersion": "8.60.1-alpha.11",
       "newVersion": "8.60.1",
       "releaseDate": "2026-06-01",
-      "publishedAgo": "published 2 days ago",
+      "publishedAgo": "published 3 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -1937,7 +1977,7 @@
       "oldVersion": "8.60.1-alpha.11",
       "newVersion": "8.60.1",
       "releaseDate": "2026-06-01",
-      "publishedAgo": "published 2 days ago",
+      "publishedAgo": "published 3 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -1977,7 +2017,7 @@
       "oldVersion": "4.1.7",
       "newVersion": "4.1.8",
       "releaseDate": "2026-06-01",
-      "publishedAgo": "published 2 days ago",
+      "publishedAgo": "published 3 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -2017,7 +2057,7 @@
       "oldVersion": "10.4.0",
       "newVersion": "10.4.1",
       "releaseDate": "2026-05-29",
-      "publishedAgo": "published 5 days ago",
+      "publishedAgo": "published 6 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -2057,7 +2097,7 @@
       "oldVersion": "2.9.16-canary.2",
       "newVersion": "2.9.16",
       "releaseDate": "2026-05-28",
-      "publishedAgo": "published 6 days ago",
+      "publishedAgo": "published 7 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -2097,7 +2137,7 @@
       "oldVersion": "5.0.13",
       "newVersion": "5.0.14",
       "releaseDate": "2026-05-28",
-      "publishedAgo": "published 6 days ago",
+      "publishedAgo": "published 7 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -2137,7 +2177,7 @@
       "oldVersion": "1.11.20",
       "newVersion": "1.11.21",
       "releaseDate": "2026-05-26",
-      "publishedAgo": "published 8 days ago",
+      "publishedAgo": "published 9 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -2177,7 +2217,7 @@
       "oldVersion": "5.107.1",
       "newVersion": "5.107.2",
       "releaseDate": "2026-05-25",
-      "publishedAgo": "published 9 days ago",
+      "publishedAgo": "published 10 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -2217,7 +2257,7 @@
       "oldVersion": "7.29.6",
       "newVersion": "7.29.7",
       "releaseDate": "2026-05-25",
-      "publishedAgo": "published 9 days ago",
+      "publishedAgo": "published 10 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -2257,7 +2297,7 @@
       "oldVersion": "1.15.40-nightly-20260523.1",
       "newVersion": "1.15.40",
       "releaseDate": "2026-05-23",
-      "publishedAgo": "published 11 days ago",
+      "publishedAgo": "published 12 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -2290,46 +2330,6 @@
       ]
     },
     {
-      "id": "semver-7-8-1",
-      "packageName": "semver",
-      "packageSlug": "semver",
-      "description": "Semantic version parsing",
-      "oldVersion": "7.8.0",
-      "newVersion": "7.8.1",
-      "releaseDate": "2026-05-21",
-      "publishedAgo": "published 13 days ago",
-      "risk": "low",
-      "category": "Low impact",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Patch release with no OSV match.",
-      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "GitHub release note found: v7.8.1.",
-      "githubReleaseTitle": "v7.8.1",
-      "githubReleaseUrl": "https://github.com/npm/node-semver/releases/tag/v7.8.1",
-      "githubReleaseTag": "v7.8.1",
-      "githubReleasePublishedAt": "2026-05-21T18:27:34Z",
-      "releaseNotesExcerpt": "7.8.1 (2026-05-21) Bug Fixes 17aa702 #869 strip build metadata before comparator trimming (#869) (@owlstronaut) 5f3ca13 #867 handle prerelease bounds in subset (#867) (@puneetdixit200, Puneet Dixit)",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
-      "route": "/package/semver/7.8.1",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/semver"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/npm/node-semver"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/npm/node-semver/releases/tag/v7.8.1"
-        }
-      ]
-    },
-    {
       "id": "postcss-8-5-15",
       "packageName": "postcss",
       "packageSlug": "postcss",
@@ -2337,7 +2337,7 @@
       "oldVersion": "8.5.14",
       "newVersion": "8.5.15",
       "releaseDate": "2026-05-19",
-      "publishedAgo": "published 15 days ago",
+      "publishedAgo": "published 16 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -2377,7 +2377,7 @@
       "oldVersion": "6.0.1",
       "newVersion": "6.0.2",
       "releaseDate": "2026-05-14",
-      "publishedAgo": "published 20 days ago",
+      "publishedAgo": "published 21 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -2417,7 +2417,7 @@
       "oldVersion": "1.60.0-beta-1778518825000",
       "newVersion": "1.60.0",
       "releaseDate": "2026-05-11",
-      "publishedAgo": "published 23 days ago",
+      "publishedAgo": "published 24 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -2457,7 +2457,7 @@
       "oldVersion": "2.14.5",
       "newVersion": "2.14.6",
       "releaseDate": "2026-05-11",
-      "publishedAgo": "published 23 days ago",
+      "publishedAgo": "published 24 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -2497,7 +2497,7 @@
       "oldVersion": "3.6.0-dev.d54f7e5713c653d0171971405344f7c6e44d418f",
       "newVersion": "3.6.0",
       "releaseDate": "2026-05-10",
-      "publishedAgo": "published 24 days ago",
+      "publishedAgo": "published 25 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -2537,7 +2537,7 @@
       "oldVersion": "30.4.1",
       "newVersion": "30.4.2",
       "releaseDate": "2026-05-09",
-      "publishedAgo": "published 25 days ago",
+      "publishedAgo": "published 26 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -2577,7 +2577,7 @@
       "oldVersion": "11.1.7",
       "newVersion": "11.1.8",
       "releaseDate": "2026-05-08",
-      "publishedAgo": "published 26 days ago",
+      "publishedAgo": "published 27 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -2617,7 +2617,7 @@
       "oldVersion": "2.0.1",
       "newVersion": "2.0.2",
       "releaseDate": "2026-04-21",
-      "publishedAgo": "published 43 days ago",
+      "publishedAgo": "published 44 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -2657,7 +2657,7 @@
       "oldVersion": "6.0.0-dev.20260416",
       "newVersion": "6.0.3",
       "releaseDate": "2026-04-16",
-      "publishedAgo": "published 47 days ago",
+      "publishedAgo": "published 48 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -2697,7 +2697,7 @@
       "oldVersion": "3.8.2",
       "newVersion": "3.8.3",
       "releaseDate": "2026-04-15",
-      "publishedAgo": "published 49 days ago",
+      "publishedAgo": "published 50 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -2817,7 +2817,7 @@
       "oldVersion": "2.4.0",
       "newVersion": "2.4.1",
       "releaseDate": "2026-02-27",
-      "publishedAgo": "published 96 days ago",
+      "publishedAgo": "published 97 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -2857,7 +2857,7 @@
       "oldVersion": "5.16.0",
       "newVersion": "5.16.1",
       "releaseDate": "2026-02-10",
-      "publishedAgo": "published 113 days ago",
+      "publishedAgo": "published 114 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -2897,7 +2897,7 @@
       "oldVersion": "16.3.1",
       "newVersion": "16.3.2",
       "releaseDate": "2026-01-19",
-      "publishedAgo": "published 135 days ago",
+      "publishedAgo": "published 136 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -2977,7 +2977,7 @@
       "oldVersion": "19.2.2",
       "newVersion": "19.2.3",
       "releaseDate": "2025-11-12",
-      "publishedAgo": "published 203 days ago",
+      "publishedAgo": "published 204 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -3017,7 +3017,7 @@
       "oldVersion": "2.4.8",
       "newVersion": "2.4.9",
       "releaseDate": "2025-11-10",
-      "publishedAgo": "published 205 days ago",
+      "publishedAgo": "published 206 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -3057,7 +3057,7 @@
       "oldVersion": "6.9.0",
       "newVersion": "6.9.1",
       "releaseDate": "2025-10-01",
-      "publishedAgo": "published 245 days ago",
+      "publishedAgo": "published 246 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -3097,7 +3097,7 @@
       "oldVersion": "1.7.0",
       "newVersion": "1.7.1",
       "releaseDate": "2025-09-21",
-      "publishedAgo": "published 255 days ago",
+      "publishedAgo": "published 256 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -3137,7 +3137,7 @@
       "oldVersion": "1.1.15-rc.1755114563302",
       "newVersion": "1.1.15",
       "releaseDate": "2025-08-13",
-      "publishedAgo": "published 294 days ago",
+      "publishedAgo": "published 295 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -3173,7 +3173,7 @@
       "oldVersion": "1.1.15-rc.1755114563302",
       "newVersion": "1.1.15",
       "releaseDate": "2025-08-13",
-      "publishedAgo": "published 294 days ago",
+      "publishedAgo": "published 295 days ago",
       "risk": "low",
       "category": "Low impact",
       "osv": "No OSV match",
@@ -3395,7 +3395,7 @@
       "packageName": "svelte",
       "description": "Compiler-based UI framework",
       "route": "/package/svelte",
-      "latestReleaseRoute": "/package/svelte/5.56.1",
+      "latestReleaseRoute": "/package/svelte/5.56.2",
       "areaSlug": "core-frameworks",
       "areaLabel": "Frameworks and Core UI"
     },
@@ -3467,7 +3467,7 @@
       "packageName": "rollup",
       "description": "Module bundler",
       "route": "/package/rollup",
-      "latestReleaseRoute": "/package/rollup/4.61.0",
+      "latestReleaseRoute": "/package/rollup/4.61.1",
       "areaSlug": "build-tooling",
       "areaLabel": "Build Tooling"
     },
@@ -3603,7 +3603,7 @@
       "packageName": "react-router-dom",
       "description": "Declarative routing for React",
       "route": "/package/react-router-dom",
-      "latestReleaseRoute": "/package/react-router-dom/7.16.0",
+      "latestReleaseRoute": "/package/react-router-dom/7.17.0",
       "areaSlug": "routing-state-data",
       "areaLabel": "Routing, State, and Data"
     },
@@ -3795,7 +3795,7 @@
       "packageName": "happy-dom",
       "description": "Browser environment for testing",
       "route": "/package/happy-dom",
-      "latestReleaseRoute": "/package/happy-dom/20.10.0",
+      "latestReleaseRoute": "/package/happy-dom/20.10.1",
       "areaSlug": "testing-storybook",
       "areaLabel": "Testing and Storybook"
     },
@@ -3979,7 +3979,7 @@
       "packageName": "semver",
       "description": "Semantic version parsing",
       "route": "/package/semver",
-      "latestReleaseRoute": "/package/semver/7.8.1",
+      "latestReleaseRoute": "/package/semver/7.8.2",
       "areaSlug": "utilities-runtime",
       "areaLabel": "JavaScript Utilities and Runtime"
     },
@@ -4100,7 +4100,7 @@
           "packageName": "svelte",
           "description": "Compiler-based UI framework",
           "route": "/package/svelte",
-          "latestReleaseRoute": "/package/svelte/5.56.1",
+          "latestReleaseRoute": "/package/svelte/5.56.2",
           "areaSlug": "core-frameworks",
           "areaLabel": "Frameworks and Core UI"
         },
@@ -4181,7 +4181,7 @@
           "packageName": "rollup",
           "description": "Module bundler",
           "route": "/package/rollup",
-          "latestReleaseRoute": "/package/rollup/4.61.0",
+          "latestReleaseRoute": "/package/rollup/4.61.1",
           "areaSlug": "build-tooling",
           "areaLabel": "Build Tooling"
         },
@@ -4351,7 +4351,7 @@
           "packageName": "react-router-dom",
           "description": "Declarative routing for React",
           "route": "/package/react-router-dom",
-          "latestReleaseRoute": "/package/react-router-dom/7.16.0",
+          "latestReleaseRoute": "/package/react-router-dom/7.17.0",
           "areaSlug": "routing-state-data",
           "areaLabel": "Routing, State, and Data"
         },
@@ -4465,7 +4465,7 @@
           "packageName": "happy-dom",
           "description": "Browser environment for testing",
           "route": "/package/happy-dom",
-          "latestReleaseRoute": "/package/happy-dom/20.10.0",
+          "latestReleaseRoute": "/package/happy-dom/20.10.1",
           "areaSlug": "testing-storybook",
           "areaLabel": "Testing and Storybook"
         },
@@ -4723,7 +4723,7 @@
           "packageName": "semver",
           "description": "Semantic version parsing",
           "route": "/package/semver",
-          "latestReleaseRoute": "/package/semver/7.8.1",
+          "latestReleaseRoute": "/package/semver/7.8.2",
           "areaSlug": "utilities-runtime",
           "areaLabel": "JavaScript Utilities and Runtime"
         },
@@ -4750,7 +4750,7 @@
     "/weekly": {
       "path": "/weekly",
       "title": "Week 23, 2026 Frontend Dependency Risk Digest",
-      "description": "Week 23, 2026 frontend npm dependency-risk digest: 39 risky updates, 14 breaking changes, 4 security-relevant releases, OSV/CVE checks, release notes, and recommended actions from 82 tracked React, JavaScript, and frontend packages."
+      "description": "Week 23, 2026 frontend npm dependency-risk digest: 37 risky updates, 15 breaking changes, 4 security-relevant releases, OSV/CVE checks, release notes, and recommended actions from 82 tracked React, JavaScript, and frontend packages."
     },
     "/risk/security": {
       "path": "/risk/security",
@@ -4780,7 +4780,7 @@
     "/weekly/2026-w23": {
       "path": "/weekly/2026-w23",
       "title": "Week 23, 2026 frontend dependency risk archive",
-      "description": "Jun 1 - Jun 7 archive for frontend npm dependency risk: 39 risky updates, 14 breaking changes, 4 security-relevant releases, OSV/CVE checks, release notes, and recommended actions from 82 tracked packages."
+      "description": "Jun 1 - Jun 7 archive for frontend npm dependency risk: 37 risky updates, 15 breaking changes, 4 security-relevant releases, OSV/CVE checks, release notes, and recommended actions from 82 tracked packages."
     },
     "/package/react": {
       "path": "/package/react",
@@ -5252,6 +5252,11 @@
       "title": "npm-run-all 4.1.5 security update",
       "description": "npm-run-all 4.1.5 frontend npm update: GitHub release notes mention security or vulnerability fixes. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Update recommended. Review the GitHub release notes and prioritize this package in the security lane."
     },
+    "/package/react-router-dom/7.17.0": {
+      "path": "/package/react-router-dom/7.17.0",
+      "title": "react-router-dom 7.17.0 breaking update",
+      "description": "react-router-dom 7.17.0 frontend npm update: Major version release detected. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were found for review."
+    },
     "/package/angular-core/22.0.0": {
       "path": "/package/angular-core/22.0.0",
       "title": "@angular/core 22.0.0 breaking update",
@@ -5322,11 +5327,6 @@
       "title": "minimist 1.2.8 breaking update",
       "description": "minimist 1.2.8 frontend npm update: Major version release detected. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review changes before updating. Test in staging before merging."
     },
-    "/package/happy-dom/20.10.0": {
-      "path": "/package/happy-dom/20.10.0",
-      "title": "happy-dom 20.10.0 review update",
-      "description": "happy-dom 20.10.0 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
-    },
     "/package/tanstack-react-query/5.101.0": {
       "path": "/package/tanstack-react-query/5.101.0",
       "title": "@tanstack/react-query 5.101.0 review update",
@@ -5347,11 +5347,6 @@
       "title": "next 16.2.7 review update",
       "description": "next 16.2.7 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
     },
-    "/package/rollup/4.61.0": {
-      "path": "/package/rollup/4.61.0",
-      "title": "rollup 4.61.0 review update",
-      "description": "rollup 4.61.0 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
-    },
     "/package/react-hook-form/7.77.0": {
       "path": "/package/react-hook-form/7.77.0",
       "title": "react-hook-form 7.77.0 review update",
@@ -5361,11 +5356,6 @@
       "path": "/package/date-fns/4.4.0",
       "title": "date-fns 4.4.0 review update",
       "description": "date-fns 4.4.0 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
-    },
-    "/package/react-router-dom/7.16.0": {
-      "path": "/package/react-router-dom/7.16.0",
-      "title": "react-router-dom 7.16.0 review update",
-      "description": "react-router-dom 7.16.0 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
     },
     "/package/lucide-react/1.17.0": {
       "path": "/package/lucide-react/1.17.0",
@@ -5427,6 +5417,26 @@
       "title": "@emotion/react 11.14.0 review update",
       "description": "@emotion/react 11.14.0 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
     },
+    "/package/svelte/5.56.2": {
+      "path": "/package/svelte/5.56.2",
+      "title": "svelte 5.56.2 low impact update",
+      "description": "svelte 5.56.2 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
+    "/package/rollup/4.61.1": {
+      "path": "/package/rollup/4.61.1",
+      "title": "rollup 4.61.1 low impact update",
+      "description": "rollup 4.61.1 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
+    "/package/happy-dom/20.10.1": {
+      "path": "/package/happy-dom/20.10.1",
+      "title": "happy-dom 20.10.1 low impact update",
+      "description": "happy-dom 20.10.1 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
+    "/package/semver/7.8.2": {
+      "path": "/package/semver/7.8.2",
+      "title": "semver 7.8.2 low impact update",
+      "description": "semver 7.8.2 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
     "/package/astro/6.4.4": {
       "path": "/package/astro/6.4.4",
       "title": "astro 6.4.4 low impact update",
@@ -5441,11 +5451,6 @@
       "path": "/package/pnpm/11.5.1",
       "title": "pnpm 11.5.1 low impact update",
       "description": "pnpm 11.5.1 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-    },
-    "/package/svelte/5.56.1": {
-      "path": "/package/svelte/5.56.1",
-      "title": "svelte 5.56.1 low impact update",
-      "description": "svelte 5.56.1 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/remix-run-react/2.17.5": {
       "path": "/package/remix-run-react/2.17.5",
@@ -5506,11 +5511,6 @@
       "path": "/package/swc-core/1.15.40",
       "title": "@swc/core 1.15.40 low impact update",
       "description": "@swc/core 1.15.40 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-    },
-    "/package/semver/7.8.1": {
-      "path": "/package/semver/7.8.1",
-      "title": "semver 7.8.1 low impact update",
-      "description": "semver 7.8.1 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/postcss/8.5.15": {
       "path": "/package/postcss/8.5.15",

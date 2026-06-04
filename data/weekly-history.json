@@ -2,10 +2,10 @@
   {
     "week": "Week 23, 2026",
     "dateRange": "Jun 1 - Jun 7",
-    "risky": 39,
-    "breaking": 14,
+    "risky": 37,
+    "breaking": 15,
     "security": 4,
-    "safe": 43,
+    "safe": 45,
     "total": 82,
     "topSignals": [
       {
@@ -45,6 +45,15 @@
         "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
       },
       {
+        "packageName": "react-router-dom",
+        "route": "/package/react-router-dom/7.17.0",
+        "risk": "breaking",
+        "newVersion": "7.17.0",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
         "packageName": "@angular/core",
         "route": "/package/angular-core/22.0.0",
         "risk": "breaking",
@@ -70,18 +79,9 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
-      },
-      {
-        "packageName": "@types/react",
-        "route": "/package/types-react/19.2.16",
-        "risk": "breaking",
-        "newVersion": "19.2.16",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       }
     ],
     "route": "/weekly/2026-w23",
-    "generatedAt": "2026-06-03T22:32:06.304Z"
+    "generatedAt": "2026-06-04T20:54:08.542Z"
   }
 ]
