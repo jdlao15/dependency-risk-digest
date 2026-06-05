@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-04T20:54:08.542Z",
+  "generatedAt": "2026-06-05T19:24:37.223Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -87,7 +87,7 @@
     "/package/playwright",
     "/package/playwright/1.60.0",
     "/package/pnpm",
-    "/package/pnpm/11.5.1",
+    "/package/pnpm/11.5.2",
     "/package/postcss",
     "/package/postcss/8.5.15",
     "/package/prettier",
