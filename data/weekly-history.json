@@ -45,6 +45,15 @@
         "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
       },
       {
+        "packageName": "@types/react",
+        "route": "/package/types-react/19.2.17",
+        "risk": "breaking",
+        "newVersion": "19.2.17",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
         "packageName": "react-router-dom",
         "route": "/package/react-router-dom/7.17.0",
         "risk": "breaking",
@@ -70,18 +79,9 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
-      },
-      {
-        "packageName": "storybook",
-        "route": "/package/storybook/10.4.2",
-        "risk": "breaking",
-        "newVersion": "10.4.2",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       }
     ],
     "route": "/weekly/2026-w23",
-    "generatedAt": "2026-06-05T19:24:37.223Z"
+    "generatedAt": "2026-06-06T17:43:37.961Z"
   }
 ]
