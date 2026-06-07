@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T17:43:37.961Z",
+  "generatedAt": "2026-06-07T17:50:40.528Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -179,6 +179,7 @@
     "/risk/review",
     "/risk/security",
     "/weekly",
-    "/weekly/2026-w23"
+    "/weekly/2026-w23",
+    "/weekly/2026-w24"
   ]
 }
