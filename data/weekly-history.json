@@ -1,11 +1,11 @@
 [
   {
     "week": "Week 24, 2026",
-    "dateRange": "Jun 1 - Jun 7",
-    "risky": 37,
-    "breaking": 15,
-    "security": 4,
-    "safe": 45,
+    "dateRange": "Jun 8 - Jun 14",
+    "risky": 38,
+    "breaking": 14,
+    "security": 3,
+    "safe": 44,
     "total": 82,
     "topSignals": [
       {
@@ -13,15 +13,6 @@
         "route": "/package/axios/1.17.0",
         "risk": "security",
         "newVersion": "1.17.0",
-        "reason": "GitHub release notes mention security or vulnerability fixes.",
-        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
-        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
-      },
-      {
-        "packageName": "nuxt",
-        "route": "/package/nuxt/4.4.7",
-        "risk": "security",
-        "newVersion": "4.4.7",
         "reason": "GitHub release notes mention security or vulnerability fixes.",
         "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
         "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
@@ -79,10 +70,19 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "storybook",
+        "route": "/package/storybook/10.4.2",
+        "risk": "breaking",
+        "newVersion": "10.4.2",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       }
     ],
     "route": "/weekly/2026-w24",
-    "generatedAt": "2026-06-07T17:50:40.528Z"
+    "generatedAt": "2026-06-08T21:17:28.906Z"
   },
   {
     "week": "Week 23, 2026",
