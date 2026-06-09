@@ -3,7 +3,7 @@
     "week": "Week 24, 2026",
     "dateRange": "Jun 8 - Jun 14",
     "risky": 38,
-    "breaking": 14,
+    "breaking": 15,
     "security": 3,
     "safe": 44,
     "total": 82,
@@ -36,6 +36,42 @@
         "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
       },
       {
+        "packageName": "astro",
+        "route": "/package/astro/6.4.5",
+        "risk": "breaking",
+        "newVersion": "6.4.5",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "graphql",
+        "route": "/package/graphql/16.14.2",
+        "risk": "breaking",
+        "newVersion": "16.14.2",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "@storybook/react",
+        "route": "/package/storybook-react/10.4.3",
+        "risk": "breaking",
+        "newVersion": "10.4.3",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "storybook",
+        "route": "/package/storybook/10.4.3",
+        "risk": "breaking",
+        "newVersion": "10.4.3",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
         "packageName": "@types/react",
         "route": "/package/types-react/19.2.17",
         "risk": "breaking",
@@ -43,46 +79,10 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
-      },
-      {
-        "packageName": "react-router-dom",
-        "route": "/package/react-router-dom/7.17.0",
-        "risk": "breaking",
-        "newVersion": "7.17.0",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
-      },
-      {
-        "packageName": "@angular/core",
-        "route": "/package/angular-core/22.0.0",
-        "risk": "breaking",
-        "newVersion": "22.0.0",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
-      },
-      {
-        "packageName": "@storybook/react",
-        "route": "/package/storybook-react/10.4.2",
-        "risk": "breaking",
-        "newVersion": "10.4.2",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
-      },
-      {
-        "packageName": "storybook",
-        "route": "/package/storybook/10.4.2",
-        "risk": "breaking",
-        "newVersion": "10.4.2",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       }
     ],
     "route": "/weekly/2026-w24",
-    "generatedAt": "2026-06-08T21:17:28.906Z"
+    "generatedAt": "2026-06-09T20:35:35.545Z"
   },
   {
     "week": "Week 23, 2026",
