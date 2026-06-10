@@ -4,10 +4,19 @@
     "dateRange": "Jun 8 - Jun 14",
     "risky": 38,
     "breaking": 15,
-    "security": 3,
+    "security": 4,
     "safe": 44,
     "total": 82,
     "topSignals": [
+      {
+        "packageName": "@angular/core",
+        "route": "/package/angular-core/22.0.1",
+        "risk": "security",
+        "newVersion": "22.0.1",
+        "reason": "GitHub release notes mention security or vulnerability fixes.",
+        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
+        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
+      },
       {
         "packageName": "axios",
         "route": "/package/axios/1.17.0",
@@ -37,9 +46,18 @@
       },
       {
         "packageName": "astro",
-        "route": "/package/astro/6.4.5",
+        "route": "/package/astro/6.4.6",
         "risk": "breaking",
-        "newVersion": "6.4.5",
+        "newVersion": "6.4.6",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "@chakra-ui/react",
+        "route": "/package/chakra-ui-react/3.36.0",
+        "risk": "breaking",
+        "newVersion": "3.36.0",
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
@@ -61,28 +79,10 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
-      },
-      {
-        "packageName": "storybook",
-        "route": "/package/storybook/10.4.3",
-        "risk": "breaking",
-        "newVersion": "10.4.3",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
-      },
-      {
-        "packageName": "@types/react",
-        "route": "/package/types-react/19.2.17",
-        "risk": "breaking",
-        "newVersion": "19.2.17",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       }
     ],
     "route": "/weekly/2026-w24",
-    "generatedAt": "2026-06-09T20:35:35.545Z"
+    "generatedAt": "2026-06-10T21:32:28.085Z"
   },
   {
     "week": "Week 23, 2026",
