@@ -1,40 +1,49 @@
 import type { ReleaseItem, SeoRoute, WeeklyDigest } from "./types";
 
-export const generatedAt = "2026-06-11T21:33:14.357Z";
+export const generatedAt = "2026-06-12T21:04:07.558Z";
 export const generationFailures = [];
 export const weeklyDigest: WeeklyDigest = {
   "week": "Week 24, 2026",
   "dateRange": "Jun 8 - Jun 14",
-  "risky": 38,
+  "risky": 39,
   "breaking": 15,
-  "security": 5,
-  "safe": 44,
+  "security": 6,
+  "safe": 43,
   "total": 82
 };
 export const digestArchive: WeeklyDigest[] = [
   {
     "week": "Week 24, 2026",
     "dateRange": "Jun 8 - Jun 14",
-    "risky": 38,
+    "risky": 39,
     "breaking": 15,
-    "security": 5,
-    "safe": 44,
+    "security": 6,
+    "safe": 43,
     "total": 82,
     "topSignals": [
       {
-        "packageName": "@angular/core",
-        "route": "/package/angular-core/22.0.1",
+        "packageName": "esbuild",
+        "route": "/package/esbuild/0.28.1",
         "risk": "security",
-        "newVersion": "22.0.1",
+        "newVersion": "0.28.1",
         "reason": "GitHub release notes mention security or vulnerability fixes.",
         "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
         "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
       },
       {
         "packageName": "pnpm",
-        "route": "/package/pnpm/11.5.3",
+        "route": "/package/pnpm/11.6.0",
         "risk": "security",
-        "newVersion": "11.5.3",
+        "newVersion": "11.6.0",
+        "reason": "GitHub release notes mention security or vulnerability fixes.",
+        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
+        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
+      },
+      {
+        "packageName": "@angular/core",
+        "route": "/package/angular-core/22.0.1",
+        "risk": "security",
+        "newVersion": "22.0.1",
         "reason": "GitHub release notes mention security or vulnerability fixes.",
         "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
         "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
@@ -67,6 +76,15 @@ export const digestArchive: WeeklyDigest[] = [
         "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
       },
       {
+        "packageName": "tailwindcss",
+        "route": "/package/tailwindcss/4.3.1",
+        "risk": "breaking",
+        "newVersion": "4.3.1",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
         "packageName": "@storybook/react",
         "route": "/package/storybook-react/10.4.4",
         "risk": "breaking",
@@ -74,28 +92,10 @@ export const digestArchive: WeeklyDigest[] = [
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
-      },
-      {
-        "packageName": "storybook",
-        "route": "/package/storybook/10.4.4",
-        "risk": "breaking",
-        "newVersion": "10.4.4",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
-      },
-      {
-        "packageName": "astro",
-        "route": "/package/astro/6.4.6",
-        "risk": "breaking",
-        "newVersion": "6.4.6",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       }
     ],
     "route": "/weekly/2026-w24",
-    "generatedAt": "2026-06-11T21:33:14.357Z"
+    "generatedAt": "2026-06-12T21:04:07.558Z"
   },
   {
     "week": "Week 23, 2026",
@@ -185,6 +185,86 @@ export const digestArchive: WeeklyDigest[] = [
 ];
 export const releases: ReleaseItem[] = [
   {
+    "id": "esbuild-0-28-1",
+    "packageName": "esbuild",
+    "packageSlug": "esbuild",
+    "description": "JavaScript bundler",
+    "oldVersion": "0.28.0",
+    "newVersion": "0.28.1",
+    "releaseDate": "2026-06-11",
+    "publishedAgo": "published today",
+    "risk": "security",
+    "category": "Security",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "GitHub release notes mention security or vulnerability fixes.",
+    "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears.",
+    "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
+    "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
+    "whatChanged": "GitHub release note found: v0.28.1.",
+    "githubReleaseTitle": "v0.28.1",
+    "githubReleaseUrl": "https://github.com/evanw/esbuild/releases/tag/v0.28.1",
+    "githubReleaseTag": "v0.28.1",
+    "githubReleasePublishedAt": "2026-06-11T22:47:14Z",
+    "releaseNotesExcerpt": "Disallow `\\ in local development server HTTP requests (GHSA-g7r4-m6w7-qqqr) This release fixes a security issue where HTTP requests to esbuild's local development server could traverse outside of the serve directory on Windows using a \\ backslash character. It happened due to the",
+    "releaseNotesStatus": "Matched GitHub release by npm version tag.",
+    "route": "/package/esbuild/0.28.1",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/esbuild"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/evanw/esbuild"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/evanw/esbuild/releases/tag/v0.28.1"
+      }
+    ]
+  },
+  {
+    "id": "pnpm-11-6-0",
+    "packageName": "pnpm",
+    "packageSlug": "pnpm",
+    "description": "Package manager",
+    "oldVersion": "10.34.3",
+    "newVersion": "11.6.0",
+    "releaseDate": "2026-06-11",
+    "publishedAgo": "published today",
+    "risk": "security",
+    "category": "Security",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "GitHub release notes mention security or vulnerability fixes.",
+    "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears.",
+    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+    "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
+    "whatChanged": "GitHub release note found: pnpm 11.6.",
+    "githubReleaseTitle": "pnpm 11.6",
+    "githubReleaseUrl": "https://github.com/pnpm/pnpm/releases/tag/v11.6.0",
+    "githubReleaseTag": "v11.6.0",
+    "githubReleasePublishedAt": "2026-06-11T23:08:38Z",
+    "releaseNotesExcerpt": "Security fix - environment variables in a project .npmrc (action may be required) Following GHSA-3qhv-2rgh-x77r, pnpm no longer expands ${ENV_VAR} placeholders that come from a **repository-controlled** config file, because a malicious repository could otherwise use them to leak ",
+    "releaseNotesStatus": "Matched GitHub release by npm version tag.",
+    "route": "/package/pnpm/11.6.0",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/pnpm"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/pnpm/pnpm"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/pnpm/pnpm/releases/tag/v11.6.0"
+      }
+    ]
+  },
+  {
     "id": "angular-core-22-0-1",
     "packageName": "@angular/core",
     "packageSlug": "angular-core",
@@ -192,7 +272,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "21.2.17",
     "newVersion": "22.0.1",
     "releaseDate": "2026-06-10",
-    "publishedAgo": "published 1 day ago",
+    "publishedAgo": "published 2 days ago",
     "risk": "security",
     "category": "Security",
     "osv": "No OSV match",
@@ -225,46 +305,6 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
-    "id": "pnpm-11-5-3",
-    "packageName": "pnpm",
-    "packageSlug": "pnpm",
-    "description": "Package manager",
-    "oldVersion": "11.5.2",
-    "newVersion": "11.5.3",
-    "releaseDate": "2026-06-10",
-    "publishedAgo": "published 1 day ago",
-    "risk": "security",
-    "category": "Security",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "GitHub release notes mention security or vulnerability fixes.",
-    "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears.",
-    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-    "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
-    "whatChanged": "GitHub release note found: pnpm 11.5.3.",
-    "githubReleaseTitle": "pnpm 11.5.3",
-    "githubReleaseUrl": "https://github.com/pnpm/pnpm/releases/tag/v11.5.3",
-    "githubReleaseTag": "v11.5.3",
-    "githubReleasePublishedAt": "2026-06-10T11:54:49Z",
-    "releaseNotesExcerpt": "Security fix - environment variables in a project .npmrc (action may be required) Following GHSA-3qhv-2rgh-x77r, pnpm no longer expands ${ENV_VAR} placeholders that come from a **repository-controlled** config file, because a malicious repository could otherwise use them to leak ",
-    "releaseNotesStatus": "Matched GitHub release by npm version tag.",
-    "route": "/package/pnpm/11.5.3",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/pnpm"
-      },
-      {
-        "label": "Repository",
-        "href": "https://github.com/pnpm/pnpm"
-      },
-      {
-        "label": "GitHub release",
-        "href": "https://github.com/pnpm/pnpm/releases/tag/v11.5.3"
-      }
-    ]
-  },
-  {
     "id": "axios-1-17-0",
     "packageName": "axios",
     "packageSlug": "axios",
@@ -272,7 +312,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.16.1",
     "newVersion": "1.17.0",
     "releaseDate": "2026-06-03",
-    "publishedAgo": "published 8 days ago",
+    "publishedAgo": "published 9 days ago",
     "risk": "security",
     "category": "Security",
     "osv": "No OSV match",
@@ -312,7 +352,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.5.11",
     "newVersion": "8.21.0",
     "releaseDate": "2026-05-22",
-    "publishedAgo": "published 20 days ago",
+    "publishedAgo": "published 21 days ago",
     "risk": "security",
     "category": "Security",
     "osv": "No OSV match",
@@ -385,6 +425,46 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
+    "id": "tailwindcss-4-3-1",
+    "packageName": "tailwindcss",
+    "packageSlug": "tailwindcss",
+    "description": "Utility-first CSS",
+    "oldVersion": "0.0.0-insiders.8a14a71",
+    "newVersion": "4.3.1",
+    "releaseDate": "2026-06-12",
+    "publishedAgo": "published today",
+    "risk": "breaking",
+    "category": "Breaking",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "Major version release detected.",
+    "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds.",
+    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+    "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+    "whatChanged": "GitHub release note found: v4.3.1.",
+    "githubReleaseTitle": "v4.3.1",
+    "githubReleaseUrl": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.1",
+    "githubReleaseTag": "v4.3.1",
+    "githubReleasePublishedAt": "2026-06-12T17:50:58Z",
+    "releaseNotesExcerpt": "Added Add --silent option to suppress output in @tailwindcss/cli (#20100) Fixed Remove deprecation warnings by using Module#registerHooks instead of Module#register on Node 26+ (#20028) Canonicalization: don't crash when plugin utilities throw for unsupported values (#20052) Allo",
+    "releaseNotesStatus": "Matched GitHub release by npm version tag.",
+    "route": "/package/tailwindcss/4.3.1",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/tailwindcss"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.1"
+      }
+    ]
+  },
+  {
     "id": "storybook-react-10-4-4",
     "packageName": "@storybook/react",
     "packageSlug": "storybook-react",
@@ -392,7 +472,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "0.0.0-pr-35110-sha-53fe3e1c",
     "newVersion": "10.4.4",
     "releaseDate": "2026-06-11",
-    "publishedAgo": "published today",
+    "publishedAgo": "published 1 day ago",
     "risk": "breaking",
     "category": "Breaking",
     "osv": "No OSV match",
@@ -432,7 +512,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "0.0.0-pr-35110-sha-53fe3e1c",
     "newVersion": "10.4.4",
     "releaseDate": "2026-06-11",
-    "publishedAgo": "published today",
+    "publishedAgo": "published 1 day ago",
     "risk": "breaking",
     "category": "Breaking",
     "osv": "No OSV match",
@@ -472,7 +552,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.0.0-beta.3",
     "newVersion": "6.4.6",
     "releaseDate": "2026-06-10",
-    "publishedAgo": "published 1 day ago",
+    "publishedAgo": "published 2 days ago",
     "risk": "breaking",
     "category": "Breaking",
     "osv": "No OSV match",
@@ -512,7 +592,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.10.10",
     "newVersion": "3.36.0",
     "releaseDate": "2026-06-10",
-    "publishedAgo": "published 1 day ago",
+    "publishedAgo": "published 2 days ago",
     "risk": "breaking",
     "category": "Breaking",
     "osv": "No OSV match",
@@ -552,7 +632,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "17.0.0-rc.0",
     "newVersion": "16.14.2",
     "releaseDate": "2026-06-09",
-    "publishedAgo": "published 2 days ago",
+    "publishedAgo": "published 3 days ago",
     "risk": "breaking",
     "category": "Breaking",
     "osv": "No OSV match",
@@ -592,7 +672,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "17.0.93",
     "newVersion": "19.2.17",
     "releaseDate": "2026-06-05",
-    "publishedAgo": "published 6 days ago",
+    "publishedAgo": "published 7 days ago",
     "risk": "breaking",
     "category": "Breaking",
     "osv": "No OSV match",
@@ -632,7 +712,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "0.0.0-experimental-dd63c14ca",
     "newVersion": "7.17.0",
     "releaseDate": "2026-06-04",
-    "publishedAgo": "published 7 days ago",
+    "publishedAgo": "published 8 days ago",
     "risk": "breaking",
     "category": "Breaking",
     "osv": "No OSV match",
@@ -672,7 +752,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.0.0-rc.6",
     "newVersion": "7.29.7",
     "releaseDate": "2026-05-25",
-    "publishedAgo": "published 17 days ago",
+    "publishedAgo": "published 18 days ago",
     "risk": "breaking",
     "category": "Breaking",
     "osv": "No OSV match",
@@ -712,7 +792,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.0.0-rc.6",
     "newVersion": "7.29.7",
     "releaseDate": "2026-05-25",
-    "publishedAgo": "published 17 days ago",
+    "publishedAgo": "published 18 days ago",
     "risk": "breaking",
     "category": "Breaking",
     "osv": "No OSV match",
@@ -752,7 +832,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.0.0-prerelease-20260519035351",
     "newVersion": "6.4.2",
     "releaseDate": "2026-05-19",
-    "publishedAgo": "published 23 days ago",
+    "publishedAgo": "published 24 days ago",
     "risk": "breaking",
     "category": "Breaking",
     "osv": "No OSV match",
@@ -792,7 +872,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.0.0-beta.13",
     "newVersion": "1.9.13",
     "releaseDate": "2026-05-15",
-    "publishedAgo": "published 27 days ago",
+    "publishedAgo": "published 28 days ago",
     "risk": "breaking",
     "category": "Breaking",
     "osv": "No OSV match",
@@ -825,46 +905,6 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
-    "id": "tailwindcss-4-3-0",
-    "packageName": "tailwindcss",
-    "packageSlug": "tailwindcss",
-    "description": "Utility-first CSS",
-    "oldVersion": "0.0.0-insiders.588bd73",
-    "newVersion": "4.3.0",
-    "releaseDate": "2026-05-08",
-    "publishedAgo": "published 34 days ago",
-    "risk": "breaking",
-    "category": "Breaking",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Major version release detected.",
-    "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds.",
-    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-    "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-    "whatChanged": "GitHub release note found: v4.3.0.",
-    "githubReleaseTitle": "v4.3.0",
-    "githubReleaseUrl": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.0",
-    "githubReleaseTag": "v4.3.0",
-    "githubReleasePublishedAt": "2026-05-08T20:17:25Z",
-    "releaseNotesExcerpt": "Added Add @container-size utility (#18901) Add scrollbar-{auto,thin,none} utilities for scrollbar-width, and scrollbar-thumb-* / scrollbar-track-* color utilities for scrollbar-color (#19981, #20019) Add scrollbar-gutter-* utilities (#20018) Add zoom-* utilities (#20020) Add tab-",
-    "releaseNotesStatus": "Matched GitHub release by npm version tag.",
-    "route": "/package/tailwindcss/4.3.0",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/tailwindcss"
-      },
-      {
-        "label": "Repository",
-        "href": "https://github.com/tailwindlabs/tailwindcss"
-      },
-      {
-        "label": "GitHub release",
-        "href": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.0"
-      }
-    ]
-  },
-  {
     "id": "nanoid-5-1-11",
     "packageName": "nanoid",
     "packageSlug": "nanoid",
@@ -872,7 +912,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "3.3.12",
     "newVersion": "5.1.11",
     "releaseDate": "2026-04-30",
-    "publishedAgo": "published 41 days ago",
+    "publishedAgo": "published 42 days ago",
     "risk": "breaking",
     "category": "Breaking",
     "osv": "No OSV match",
@@ -912,7 +952,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "13.0.0",
     "newVersion": "14.0.0",
     "releaseDate": "2026-04-19",
-    "publishedAgo": "published 53 days ago",
+    "publishedAgo": "published 54 days ago",
     "risk": "breaking",
     "category": "Breaking",
     "osv": "No OSV match",
@@ -981,6 +1021,86 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
+    "id": "eslint-10-5-0",
+    "packageName": "eslint",
+    "packageSlug": "eslint",
+    "description": "JavaScript linting",
+    "oldVersion": "10.4.1",
+    "newVersion": "10.5.0",
+    "releaseDate": "2026-06-12",
+    "publishedAgo": "published today",
+    "risk": "review",
+    "category": "Review",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "Minor version release detected with no OSV match.",
+    "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
+    "affectedAudience": "Developer tooling, type checking, and code-quality gates.",
+    "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+    "whatChanged": "GitHub release note found: v10.5.0.",
+    "githubReleaseTitle": "v10.5.0",
+    "githubReleaseUrl": "https://github.com/eslint/eslint/releases/tag/v10.5.0",
+    "githubReleaseTag": "v10.5.0",
+    "githubReleasePublishedAt": "2026-06-12T17:54:47Z",
+    "releaseNotesExcerpt": "Features 5ca8c52 feat: correct stack tracking in max-nested-callbacks (#20973) (Pixel998) b565783 feat: report no-with violations at the with keyword (#20971) (Pixel998) 2ce032f feat: report max-lines-per-function violations at function head (#20966) (Pixel998) 732cb3e feat: repo",
+    "releaseNotesStatus": "Matched GitHub release by npm version tag.",
+    "route": "/package/eslint/10.5.0",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/eslint"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/eslint/eslint"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/eslint/eslint/releases/tag/v10.5.0"
+      }
+    ]
+  },
+  {
+    "id": "lucide-react-1-18-0",
+    "packageName": "lucide-react",
+    "packageSlug": "lucide-react",
+    "description": "React icon library",
+    "oldVersion": "1.17.0",
+    "newVersion": "1.18.0",
+    "releaseDate": "2026-06-12",
+    "publishedAgo": "published today",
+    "risk": "review",
+    "category": "Review",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "Minor version release detected with no OSV match.",
+    "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
+    "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
+    "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+    "whatChanged": "GitHub release note found: Version 1.18.0.",
+    "githubReleaseTitle": "Version 1.18.0",
+    "githubReleaseUrl": "https://github.com/lucide-icons/lucide/releases/tag/1.18.0",
+    "githubReleaseTag": "1.18.0",
+    "githubReleasePublishedAt": "2026-06-12T12:38:47Z",
+    "releaseNotesExcerpt": "What's Changed chore(site): Remove survey from site by @ericfennis in https://github.com/lucide-icons/lucide/pull/4417 feat(icons): added play-off icon by @Ahmed-Dghaies in https://github.com/lucide-icons/lucide/pull/4412 fix(metadata): add missing use-cases prop on play-off.json",
+    "releaseNotesStatus": "Matched GitHub release by npm version tag.",
+    "route": "/package/lucide-react/1.18.0",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/lucide-react"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/lucide-icons/lucide"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/lucide-icons/lucide/releases/tag/1.18.0"
+      }
+    ]
+  },
+  {
     "id": "vue-3-5-38",
     "packageName": "vue",
     "packageSlug": "vue",
@@ -988,7 +1108,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "3.6.0-beta.15",
     "newVersion": "3.5.38",
     "releaseDate": "2026-06-11",
-    "publishedAgo": "published today",
+    "publishedAgo": "published 1 day ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1068,7 +1188,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "15.16.0",
     "newVersion": "15.17.0",
     "releaseDate": "2026-06-09",
-    "publishedAgo": "published 2 days ago",
+    "publishedAgo": "published 3 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1108,7 +1228,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.60.2-alpha.8",
     "newVersion": "8.61.0",
     "releaseDate": "2026-06-08",
-    "publishedAgo": "published 3 days ago",
+    "publishedAgo": "published 4 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1148,7 +1268,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.60.2-alpha.8",
     "newVersion": "8.61.0",
     "releaseDate": "2026-06-08",
-    "publishedAgo": "published 3 days ago",
+    "publishedAgo": "published 4 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1188,7 +1308,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.77.0",
     "newVersion": "7.78.0",
     "releaseDate": "2026-06-07",
-    "publishedAgo": "published 3 days ago",
+    "publishedAgo": "published 4 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1228,7 +1348,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.100.14",
     "newVersion": "5.101.0",
     "releaseDate": "2026-06-02",
-    "publishedAgo": "published 9 days ago",
+    "publishedAgo": "published 10 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1268,7 +1388,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "19.1.8",
     "newVersion": "19.2.7",
     "releaseDate": "2026-06-01",
-    "publishedAgo": "published 10 days ago",
+    "publishedAgo": "published 11 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1308,7 +1428,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "19.1.8",
     "newVersion": "19.2.7",
     "releaseDate": "2026-06-01",
-    "publishedAgo": "published 10 days ago",
+    "publishedAgo": "published 11 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1348,7 +1468,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.3.0",
     "newVersion": "4.4.0",
     "releaseDate": "2026-05-29",
-    "publishedAgo": "published 12 days ago",
+    "publishedAgo": "published 13 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1381,46 +1501,6 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
-    "id": "lucide-react-1-17-0",
-    "packageName": "lucide-react",
-    "packageSlug": "lucide-react",
-    "description": "React icon library",
-    "oldVersion": "1.16.0",
-    "newVersion": "1.17.0",
-    "releaseDate": "2026-05-28",
-    "publishedAgo": "published 14 days ago",
-    "risk": "review",
-    "category": "Review",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Minor version release detected with no OSV match.",
-    "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
-    "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
-    "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-    "whatChanged": "GitHub release note found: Version 1.17.0.",
-    "githubReleaseTitle": "Version 1.17.0",
-    "githubReleaseUrl": "https://github.com/lucide-icons/lucide/releases/tag/1.17.0",
-    "githubReleaseTag": "1.17.0",
-    "githubReleasePublishedAt": "2026-05-28T08:20:57Z",
-    "releaseNotesExcerpt": "What's Changed chore(lucide-vue-next|lucide-svelte|lucide-angular): Remove deprecated packages by @ericfennis in https://github.com/lucide-icons/lucide/pull/4376 chore(repo): Update issue templates and documentation for package ren... by @ericfennis in https://github.com/lucide-i",
-    "releaseNotesStatus": "Matched GitHub release by npm version tag.",
-    "route": "/package/lucide-react/1.17.0",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/lucide-react"
-      },
-      {
-        "label": "Repository",
-        "href": "https://github.com/lucide-icons/lucide"
-      },
-      {
-        "label": "GitHub release",
-        "href": "https://github.com/lucide-icons/lucide/releases/tag/1.17.0"
-      }
-    ]
-  },
-  {
     "id": "framer-motion-12-40-0",
     "packageName": "framer-motion",
     "packageSlug": "framer-motion",
@@ -1428,7 +1508,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "12.39.0",
     "newVersion": "12.40.0",
     "releaseDate": "2026-05-21",
-    "publishedAgo": "published 21 days ago",
+    "publishedAgo": "published 22 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1464,7 +1544,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.11.2",
     "newVersion": "2.12.0",
     "releaseDate": "2026-05-15",
-    "publishedAgo": "published 27 days ago",
+    "publishedAgo": "published 28 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1504,7 +1584,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.5.0-canary.20260504T070434",
     "newVersion": "4.4.3",
     "releaseDate": "2026-05-04",
-    "publishedAgo": "published 38 days ago",
+    "publishedAgo": "published 39 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1544,7 +1624,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "10.4.27",
     "newVersion": "10.5.0",
     "releaseDate": "2026-04-13",
-    "publishedAgo": "published 59 days ago",
+    "publishedAgo": "published 60 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1577,46 +1657,6 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
-    "id": "esbuild-0-28-0",
-    "packageName": "esbuild",
-    "packageSlug": "esbuild",
-    "description": "JavaScript bundler",
-    "oldVersion": "0.27.7",
-    "newVersion": "0.28.0",
-    "releaseDate": "2026-04-02",
-    "publishedAgo": "published 70 days ago",
-    "risk": "review",
-    "category": "Review",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Minor version release detected with no OSV match.",
-    "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
-    "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
-    "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-    "whatChanged": "GitHub release note found: v0.28.0.",
-    "githubReleaseTitle": "v0.28.0",
-    "githubReleaseUrl": "https://github.com/evanw/esbuild/releases/tag/v0.28.0",
-    "githubReleaseTag": "v0.28.0",
-    "githubReleasePublishedAt": "2026-04-02T20:38:53Z",
-    "releaseNotesExcerpt": "Add support for with { type: 'text' } imports (#4435) The import text proposal has reached stage 3 in the TC39 process, which means that it's recommended for implementation. It has also already been implemented by Deno and Bun. So with this release, esbuild also adds support for ",
-    "releaseNotesStatus": "Matched GitHub release by npm version tag.",
-    "route": "/package/esbuild/0.28.0",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/esbuild"
-      },
-      {
-        "label": "Repository",
-        "href": "https://github.com/evanw/esbuild"
-      },
-      {
-        "label": "GitHub release",
-        "href": "https://github.com/evanw/esbuild/releases/tag/v0.28.0"
-      }
-    ]
-  },
-  {
     "id": "parcel-2-16-4",
     "packageName": "parcel",
     "packageSlug": "parcel",
@@ -1624,7 +1664,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.0.0-canary.1871",
     "newVersion": "2.16.4",
     "releaseDate": "2026-02-02",
-    "publishedAgo": "published 129 days ago",
+    "publishedAgo": "published 130 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1704,7 +1744,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "9.1.0",
     "newVersion": "9.1.1",
     "releaseDate": "2026-06-11",
-    "publishedAgo": "published today",
+    "publishedAgo": "published 1 day ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -1744,7 +1784,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.9.17",
     "newVersion": "2.9.18",
     "releaseDate": "2026-06-10",
-    "publishedAgo": "published today",
+    "publishedAgo": "published 1 day ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -1784,7 +1824,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "16.2.8",
     "newVersion": "16.2.9",
     "releaseDate": "2026-06-09",
-    "publishedAgo": "published 1 day ago",
+    "publishedAgo": "published 2 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -1824,7 +1864,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.15.41-nightly-20260609.1",
     "newVersion": "1.15.41",
     "releaseDate": "2026-06-09",
-    "publishedAgo": "published 2 days ago",
+    "publishedAgo": "published 3 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -1864,7 +1904,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "3.8.3",
     "newVersion": "3.8.4",
     "releaseDate": "2026-06-09",
-    "publishedAgo": "published 2 days ago",
+    "publishedAgo": "published 3 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -1904,7 +1944,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.8.3",
     "newVersion": "7.8.4",
     "releaseDate": "2026-06-09",
-    "publishedAgo": "published 1 day ago",
+    "publishedAgo": "published 2 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -1944,7 +1984,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.4.7",
     "newVersion": "4.4.8",
     "releaseDate": "2026-06-08",
-    "publishedAgo": "published 3 days ago",
+    "publishedAgo": "published 4 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -1984,7 +2024,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.2.2",
     "newVersion": "4.2.3",
     "releaseDate": "2026-06-08",
-    "publishedAgo": "published 2 days ago",
+    "publishedAgo": "published 3 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2024,7 +2064,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.56.2",
     "newVersion": "5.56.3",
     "releaseDate": "2026-06-07",
-    "publishedAgo": "published 4 days ago",
+    "publishedAgo": "published 5 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2064,7 +2104,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "20.10.1",
     "newVersion": "20.10.2",
     "releaseDate": "2026-06-06",
-    "publishedAgo": "published 5 days ago",
+    "publishedAgo": "published 6 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2104,7 +2144,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.1.16-rc.1780677407053",
     "newVersion": "1.1.16",
     "releaseDate": "2026-06-06",
-    "publishedAgo": "published 5 days ago",
+    "publishedAgo": "published 6 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2140,7 +2180,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.1.16-rc.1780677407053",
     "newVersion": "1.1.16",
     "releaseDate": "2026-06-06",
-    "publishedAgo": "published 5 days ago",
+    "publishedAgo": "published 6 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2176,7 +2216,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.61.0",
     "newVersion": "4.61.1",
     "releaseDate": "2026-06-04",
-    "publishedAgo": "published 7 days ago",
+    "publishedAgo": "published 8 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2216,7 +2256,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.17.4",
     "newVersion": "2.17.5",
     "releaseDate": "2026-06-01",
-    "publishedAgo": "published 10 days ago",
+    "publishedAgo": "published 11 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2256,7 +2296,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.0.15",
     "newVersion": "8.0.16",
     "releaseDate": "2026-06-01",
-    "publishedAgo": "published 10 days ago",
+    "publishedAgo": "published 11 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2296,7 +2336,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.1.7",
     "newVersion": "4.1.8",
     "releaseDate": "2026-06-01",
-    "publishedAgo": "published 10 days ago",
+    "publishedAgo": "published 11 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2329,46 +2369,6 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
-    "id": "eslint-10-4-1",
-    "packageName": "eslint",
-    "packageSlug": "eslint",
-    "description": "JavaScript linting",
-    "oldVersion": "10.4.0",
-    "newVersion": "10.4.1",
-    "releaseDate": "2026-05-29",
-    "publishedAgo": "published 13 days ago",
-    "risk": "low",
-    "category": "Low impact",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Patch release with no OSV match.",
-    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-    "affectedAudience": "Developer tooling, type checking, and code-quality gates.",
-    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "GitHub release note found: v10.4.1.",
-    "githubReleaseTitle": "v10.4.1",
-    "githubReleaseUrl": "https://github.com/eslint/eslint/releases/tag/v10.4.1",
-    "githubReleaseTag": "v10.4.1",
-    "githubReleasePublishedAt": "2026-05-29T20:32:39Z",
-    "releaseNotesExcerpt": "Bug Fixes e557467 fix: update @eslint/plugin-kit version to 0.7.2 (#20930) (Francesco Trotta) d4ce898 fix: propagate failures from delegated commands (#20917) (Minh Vu) f4f3507 fix: prefer-arrow-callback invalid autofix with newline after async (#20916) (kuldeep kumar) c5bc78b fi",
-    "releaseNotesStatus": "Matched GitHub release by npm version tag.",
-    "route": "/package/eslint/10.4.1",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/eslint"
-      },
-      {
-        "label": "Repository",
-        "href": "https://github.com/eslint/eslint"
-      },
-      {
-        "label": "GitHub release",
-        "href": "https://github.com/eslint/eslint/releases/tag/v10.4.1"
-      }
-    ]
-  },
-  {
     "id": "zustand-5-0-14",
     "packageName": "zustand",
     "packageSlug": "zustand",
@@ -2376,7 +2376,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.0.13",
     "newVersion": "5.0.14",
     "releaseDate": "2026-05-28",
-    "publishedAgo": "published 14 days ago",
+    "publishedAgo": "published 15 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2416,7 +2416,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.11.20",
     "newVersion": "1.11.21",
     "releaseDate": "2026-05-26",
-    "publishedAgo": "published 16 days ago",
+    "publishedAgo": "published 17 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2456,7 +2456,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.107.1",
     "newVersion": "5.107.2",
     "releaseDate": "2026-05-25",
-    "publishedAgo": "published 17 days ago",
+    "publishedAgo": "published 18 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2496,7 +2496,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.29.6",
     "newVersion": "7.29.7",
     "releaseDate": "2026-05-25",
-    "publishedAgo": "published 17 days ago",
+    "publishedAgo": "published 18 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2536,7 +2536,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.5.14",
     "newVersion": "8.5.15",
     "releaseDate": "2026-05-19",
-    "publishedAgo": "published 23 days ago",
+    "publishedAgo": "published 24 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2576,7 +2576,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "6.0.1",
     "newVersion": "6.0.2",
     "releaseDate": "2026-05-14",
-    "publishedAgo": "published 28 days ago",
+    "publishedAgo": "published 29 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2616,7 +2616,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.60.0-beta-1778518825000",
     "newVersion": "1.60.0",
     "releaseDate": "2026-05-11",
-    "publishedAgo": "published 31 days ago",
+    "publishedAgo": "published 32 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2656,7 +2656,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.14.5",
     "newVersion": "2.14.6",
     "releaseDate": "2026-05-11",
-    "publishedAgo": "published 31 days ago",
+    "publishedAgo": "published 32 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2696,7 +2696,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "3.6.0-dev.d54f7e5713c653d0171971405344f7c6e44d418f",
     "newVersion": "3.6.0",
     "releaseDate": "2026-05-10",
-    "publishedAgo": "published 32 days ago",
+    "publishedAgo": "published 33 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2736,7 +2736,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "30.4.1",
     "newVersion": "30.4.2",
     "releaseDate": "2026-05-09",
-    "publishedAgo": "published 33 days ago",
+    "publishedAgo": "published 34 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2776,7 +2776,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "11.1.7",
     "newVersion": "11.1.8",
     "releaseDate": "2026-05-08",
-    "publishedAgo": "published 34 days ago",
+    "publishedAgo": "published 35 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2816,7 +2816,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.0.1",
     "newVersion": "2.0.2",
     "releaseDate": "2026-04-21",
-    "publishedAgo": "published 51 days ago",
+    "publishedAgo": "published 52 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2856,7 +2856,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "6.0.0-dev.20260416",
     "newVersion": "6.0.3",
     "releaseDate": "2026-04-16",
-    "publishedAgo": "published 55 days ago",
+    "publishedAgo": "published 56 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2896,7 +2896,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.18.0",
     "newVersion": "4.18.1",
     "releaseDate": "2026-04-01",
-    "publishedAgo": "published 71 days ago",
+    "publishedAgo": "published 72 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2936,7 +2936,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.6.3",
     "newVersion": "4.6.4",
     "releaseDate": "2026-03-13",
-    "publishedAgo": "published 89 days ago",
+    "publishedAgo": "published 90 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2976,7 +2976,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.4.0",
     "newVersion": "2.4.1",
     "releaseDate": "2026-02-27",
-    "publishedAgo": "published 104 days ago",
+    "publishedAgo": "published 105 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -3016,7 +3016,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.16.0",
     "newVersion": "5.16.1",
     "releaseDate": "2026-02-10",
-    "publishedAgo": "published 121 days ago",
+    "publishedAgo": "published 122 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -3056,7 +3056,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "16.3.1",
     "newVersion": "16.3.2",
     "releaseDate": "2026-01-19",
-    "publishedAgo": "published 143 days ago",
+    "publishedAgo": "published 144 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -3136,7 +3136,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "19.2.2",
     "newVersion": "19.2.3",
     "releaseDate": "2025-11-12",
-    "publishedAgo": "published 211 days ago",
+    "publishedAgo": "published 212 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -3176,7 +3176,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.4.8",
     "newVersion": "2.4.9",
     "releaseDate": "2025-11-10",
-    "publishedAgo": "published 213 days ago",
+    "publishedAgo": "published 214 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -3216,7 +3216,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "6.9.0",
     "newVersion": "6.9.1",
     "releaseDate": "2025-10-01",
-    "publishedAgo": "published 253 days ago",
+    "publishedAgo": "published 254 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -3256,7 +3256,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.7.0",
     "newVersion": "1.7.1",
     "releaseDate": "2025-09-21",
-    "publishedAgo": "published 263 days ago",
+    "publishedAgo": "published 264 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -3562,7 +3562,7 @@ export const packageRoutes = {
     "packageName": "esbuild",
     "description": "JavaScript bundler",
     "route": "/package/esbuild",
-    "latestReleaseRoute": "/package/esbuild/0.28.0",
+    "latestReleaseRoute": "/package/esbuild/0.28.1",
     "areaSlug": "build-tooling",
     "areaLabel": "Build Tooling"
   },
@@ -3642,7 +3642,7 @@ export const packageRoutes = {
     "packageName": "eslint",
     "description": "JavaScript linting",
     "route": "/package/eslint",
-    "latestReleaseRoute": "/package/eslint/10.4.1",
+    "latestReleaseRoute": "/package/eslint/10.5.0",
     "areaSlug": "typescript-quality",
     "areaLabel": "TypeScript and Code Quality"
   },
@@ -3890,7 +3890,7 @@ export const packageRoutes = {
     "packageName": "tailwindcss",
     "description": "Utility-first CSS",
     "route": "/package/tailwindcss",
-    "latestReleaseRoute": "/package/tailwindcss/4.3.0",
+    "latestReleaseRoute": "/package/tailwindcss/4.3.1",
     "areaSlug": "css-ui",
     "areaLabel": "CSS and UI Libraries"
   },
@@ -4002,7 +4002,7 @@ export const packageRoutes = {
     "packageName": "lucide-react",
     "description": "React icon library",
     "route": "/package/lucide-react",
-    "latestReleaseRoute": "/package/lucide-react/1.17.0",
+    "latestReleaseRoute": "/package/lucide-react/1.18.0",
     "areaSlug": "css-ui",
     "areaLabel": "CSS and UI Libraries"
   },
@@ -4082,7 +4082,7 @@ export const packageRoutes = {
     "packageName": "pnpm",
     "description": "Package manager",
     "route": "/package/pnpm",
-    "latestReleaseRoute": "/package/pnpm/11.5.3",
+    "latestReleaseRoute": "/package/pnpm/11.6.0",
     "areaSlug": "utilities-runtime",
     "areaLabel": "JavaScript Utilities and Runtime"
   },
@@ -4252,7 +4252,7 @@ export const categoryRoutes = {
         "packageName": "esbuild",
         "description": "JavaScript bundler",
         "route": "/package/esbuild",
-        "latestReleaseRoute": "/package/esbuild/0.28.0",
+        "latestReleaseRoute": "/package/esbuild/0.28.1",
         "areaSlug": "build-tooling",
         "areaLabel": "Build Tooling"
       },
@@ -4349,7 +4349,7 @@ export const categoryRoutes = {
         "packageName": "eslint",
         "description": "JavaScript linting",
         "route": "/package/eslint",
-        "latestReleaseRoute": "/package/eslint/10.4.1",
+        "latestReleaseRoute": "/package/eslint/10.5.0",
         "areaSlug": "typescript-quality",
         "areaLabel": "TypeScript and Code Quality"
       },
@@ -4697,7 +4697,7 @@ export const categoryRoutes = {
         "packageName": "lucide-react",
         "description": "React icon library",
         "route": "/package/lucide-react",
-        "latestReleaseRoute": "/package/lucide-react/1.17.0",
+        "latestReleaseRoute": "/package/lucide-react/1.18.0",
         "areaSlug": "css-ui",
         "areaLabel": "CSS and UI Libraries"
       },
@@ -4737,7 +4737,7 @@ export const categoryRoutes = {
         "packageName": "tailwindcss",
         "description": "Utility-first CSS",
         "route": "/package/tailwindcss",
-        "latestReleaseRoute": "/package/tailwindcss/4.3.0",
+        "latestReleaseRoute": "/package/tailwindcss/4.3.1",
         "areaSlug": "css-ui",
         "areaLabel": "CSS and UI Libraries"
       }
@@ -4802,7 +4802,7 @@ export const categoryRoutes = {
         "packageName": "pnpm",
         "description": "Package manager",
         "route": "/package/pnpm",
-        "latestReleaseRoute": "/package/pnpm/11.5.3",
+        "latestReleaseRoute": "/package/pnpm/11.6.0",
         "areaSlug": "utilities-runtime",
         "areaLabel": "JavaScript Utilities and Runtime"
       },
@@ -4837,7 +4837,7 @@ export const seoRoutes: Record<string, SeoRoute> = {
   "/weekly": {
     "path": "/weekly",
     "title": "Week 24, 2026 Frontend Dependency Risk Digest",
-    "description": "Week 24, 2026 frontend npm dependency-risk digest: 38 risky updates, 15 breaking changes, 5 security-relevant releases, OSV/CVE checks, release notes, and recommended actions from 82 tracked React, JavaScript, and frontend packages."
+    "description": "Week 24, 2026 frontend npm dependency-risk digest: 39 risky updates, 15 breaking changes, 6 security-relevant releases, OSV/CVE checks, release notes, and recommended actions from 82 tracked React, JavaScript, and frontend packages."
   },
   "/risk/security": {
     "path": "/risk/security",
@@ -4867,7 +4867,7 @@ export const seoRoutes: Record<string, SeoRoute> = {
   "/weekly/2026-w24": {
     "path": "/weekly/2026-w24",
     "title": "Week 24, 2026 frontend dependency risk archive",
-    "description": "Jun 8 - Jun 14 archive for frontend npm dependency risk: 38 risky updates, 15 breaking changes, 5 security-relevant releases, OSV/CVE checks, release notes, and recommended actions from 82 tracked packages."
+    "description": "Jun 8 - Jun 14 archive for frontend npm dependency risk: 39 risky updates, 15 breaking changes, 6 security-relevant releases, OSV/CVE checks, release notes, and recommended actions from 82 tracked packages."
   },
   "/weekly/2026-w23": {
     "path": "/weekly/2026-w23",
@@ -5324,15 +5324,20 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "title": "JavaScript Utilities and Runtime npm dependency risk",
     "description": "JavaScript Utilities and Runtime frontend npm dependency-risk directory with 10 tracked package archives, current release-risk pages, OSV and CVE signals, breaking-change checks, release notes, and recommended update actions. Common JavaScript utilities and runtime packages that can appear directly or transitively in frontend dependency graphs."
   },
+  "/package/esbuild/0.28.1": {
+    "path": "/package/esbuild/0.28.1",
+    "title": "esbuild 0.28.1 security update",
+    "description": "esbuild 0.28.1 frontend npm update: GitHub release notes mention security or vulnerability fixes. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Update recommended. Review the GitHub release notes and prioritize this package in the security lane."
+  },
+  "/package/pnpm/11.6.0": {
+    "path": "/package/pnpm/11.6.0",
+    "title": "pnpm 11.6.0 security update",
+    "description": "pnpm 11.6.0 frontend npm update: GitHub release notes mention security or vulnerability fixes. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Update recommended. Review the GitHub release notes and prioritize this package in the security lane."
+  },
   "/package/angular-core/22.0.1": {
     "path": "/package/angular-core/22.0.1",
     "title": "@angular/core 22.0.1 security update",
     "description": "@angular/core 22.0.1 frontend npm update: GitHub release notes mention security or vulnerability fixes. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Update recommended. Review the GitHub release notes and prioritize this package in the security lane."
-  },
-  "/package/pnpm/11.5.3": {
-    "path": "/package/pnpm/11.5.3",
-    "title": "pnpm 11.5.3 security update",
-    "description": "pnpm 11.5.3 frontend npm update: GitHub release notes mention security or vulnerability fixes. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Update recommended. Review the GitHub release notes and prioritize this package in the security lane."
   },
   "/package/axios/1.17.0": {
     "path": "/package/axios/1.17.0",
@@ -5348,6 +5353,11 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "path": "/package/npm-run-all/4.1.5",
     "title": "npm-run-all 4.1.5 security update",
     "description": "npm-run-all 4.1.5 frontend npm update: GitHub release notes mention security or vulnerability fixes. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Update recommended. Review the GitHub release notes and prioritize this package in the security lane."
+  },
+  "/package/tailwindcss/4.3.1": {
+    "path": "/package/tailwindcss/4.3.1",
+    "title": "tailwindcss 4.3.1 breaking update",
+    "description": "tailwindcss 4.3.1 frontend npm update: Major version release detected. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were found for review."
   },
   "/package/storybook-react/10.4.4": {
     "path": "/package/storybook-react/10.4.4",
@@ -5404,11 +5414,6 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "title": "solid-js 1.9.13 breaking update",
     "description": "solid-js 1.9.13 frontend npm update: Major version release detected. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were found for review."
   },
-  "/package/tailwindcss/4.3.0": {
-    "path": "/package/tailwindcss/4.3.0",
-    "title": "tailwindcss 4.3.0 breaking update",
-    "description": "tailwindcss 4.3.0 frontend npm update: Major version release detected. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were found for review."
-  },
   "/package/nanoid/5.1.11": {
     "path": "/package/nanoid/5.1.11",
     "title": "nanoid 5.1.11 breaking update",
@@ -5423,6 +5428,16 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "path": "/package/minimist/1.2.8",
     "title": "minimist 1.2.8 breaking update",
     "description": "minimist 1.2.8 frontend npm update: Major version release detected. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review changes before updating. Test in staging before merging."
+  },
+  "/package/eslint/10.5.0": {
+    "path": "/package/eslint/10.5.0",
+    "title": "eslint 10.5.0 review update",
+    "description": "eslint 10.5.0 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
+  },
+  "/package/lucide-react/1.18.0": {
+    "path": "/package/lucide-react/1.18.0",
+    "title": "lucide-react 1.18.0 review update",
+    "description": "lucide-react 1.18.0 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
   },
   "/package/vue/3.5.38": {
     "path": "/package/vue/3.5.38",
@@ -5474,11 +5489,6 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "title": "date-fns 4.4.0 review update",
     "description": "date-fns 4.4.0 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
   },
-  "/package/lucide-react/1.17.0": {
-    "path": "/package/lucide-react/1.17.0",
-    "title": "lucide-react 1.17.0 review update",
-    "description": "lucide-react 1.17.0 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
-  },
   "/package/framer-motion/12.40.0": {
     "path": "/package/framer-motion/12.40.0",
     "title": "framer-motion 12.40.0 review update",
@@ -5498,11 +5508,6 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "path": "/package/autoprefixer/10.5.0",
     "title": "autoprefixer 10.5.0 review update",
     "description": "autoprefixer 10.5.0 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
-  },
-  "/package/esbuild/0.28.0": {
-    "path": "/package/esbuild/0.28.0",
-    "title": "esbuild 0.28.0 review update",
-    "description": "esbuild 0.28.0 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
   },
   "/package/parcel/2.16.4": {
     "path": "/package/parcel/2.16.4",
@@ -5593,11 +5598,6 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "path": "/package/vitest/4.1.8",
     "title": "vitest 4.1.8 low impact update",
     "description": "vitest 4.1.8 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-  },
-  "/package/eslint/10.4.1": {
-    "path": "/package/eslint/10.4.1",
-    "title": "eslint 10.4.1 low impact update",
-    "description": "eslint 10.4.1 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
   },
   "/package/zustand/5.0.14": {
     "path": "/package/zustand/5.0.14",
