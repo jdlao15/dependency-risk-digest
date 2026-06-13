@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T21:04:07.558Z",
+  "generatedAt": "2026-06-13T17:56:33.893Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -55,7 +55,7 @@
     "/package/graphql",
     "/package/graphql/16.14.2",
     "/package/happy-dom",
-    "/package/happy-dom/20.10.2",
+    "/package/happy-dom/20.10.3",
     "/package/immer",
     "/package/immer/11.1.8",
     "/package/jest",
@@ -100,7 +100,7 @@
     "/package/react-dom",
     "/package/react-dom/19.2.7",
     "/package/react-hook-form",
-    "/package/react-hook-form/7.78.0",
+    "/package/react-hook-form/7.79.0",
     "/package/react-router-dom",
     "/package/react-router-dom/7.17.0",
     "/package/react/19.2.7",
@@ -111,7 +111,7 @@
     "/package/remix-run-react",
     "/package/remix-run-react/2.17.5",
     "/package/rollup",
-    "/package/rollup/4.61.1",
+    "/package/rollup/4.62.0",
     "/package/sass",
     "/package/sass/1.101.0",
     "/package/semver",
