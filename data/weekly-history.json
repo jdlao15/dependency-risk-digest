@@ -1,5 +1,90 @@
 [
   {
+    "week": "Week 25, 2026",
+    "dateRange": "Jun 8 - Jun 14",
+    "risky": 40,
+    "breaking": 15,
+    "security": 6,
+    "safe": 42,
+    "total": 82,
+    "topSignals": [
+      {
+        "packageName": "esbuild",
+        "route": "/package/esbuild/0.28.1",
+        "risk": "security",
+        "newVersion": "0.28.1",
+        "reason": "GitHub release notes mention security or vulnerability fixes.",
+        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
+        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
+      },
+      {
+        "packageName": "pnpm",
+        "route": "/package/pnpm/11.6.0",
+        "risk": "security",
+        "newVersion": "11.6.0",
+        "reason": "GitHub release notes mention security or vulnerability fixes.",
+        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
+        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
+      },
+      {
+        "packageName": "@angular/core",
+        "route": "/package/angular-core/22.0.1",
+        "risk": "security",
+        "newVersion": "22.0.1",
+        "reason": "GitHub release notes mention security or vulnerability fixes.",
+        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
+        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
+      },
+      {
+        "packageName": "axios",
+        "route": "/package/axios/1.17.0",
+        "risk": "security",
+        "newVersion": "1.17.0",
+        "reason": "GitHub release notes mention security or vulnerability fixes.",
+        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
+        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
+      },
+      {
+        "packageName": "ws",
+        "route": "/package/ws/8.21.0",
+        "risk": "security",
+        "newVersion": "8.21.0",
+        "reason": "GitHub release notes mention security or vulnerability fixes.",
+        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
+        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
+      },
+      {
+        "packageName": "npm-run-all",
+        "route": "/package/npm-run-all/4.1.5",
+        "risk": "security",
+        "newVersion": "4.1.5",
+        "reason": "GitHub release notes mention security or vulnerability fixes.",
+        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
+        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
+      },
+      {
+        "packageName": "tailwindcss",
+        "route": "/package/tailwindcss/4.3.1",
+        "risk": "breaking",
+        "newVersion": "4.3.1",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "@storybook/react",
+        "route": "/package/storybook-react/10.4.4",
+        "risk": "breaking",
+        "newVersion": "10.4.4",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      }
+    ],
+    "route": "/weekly/2026-w25",
+    "generatedAt": "2026-06-14T15:20:20.936Z"
+  },
+  {
     "week": "Week 24, 2026",
     "dateRange": "Jun 8 - Jun 14",
     "risky": 40,

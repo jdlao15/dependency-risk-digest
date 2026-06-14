@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T17:56:33.893Z",
+  "generatedAt": "2026-06-14T15:20:20.936Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -63,7 +63,7 @@
     "/package/ky",
     "/package/ky/2.0.2",
     "/package/less",
-    "/package/less/4.6.4",
+    "/package/less/4.6.6",
     "/package/lodash",
     "/package/lodash/4.18.1",
     "/package/lucide-react",
@@ -180,6 +180,7 @@
     "/risk/security",
     "/weekly",
     "/weekly/2026-w23",
-    "/weekly/2026-w24"
+    "/weekly/2026-w24",
+    "/weekly/2026-w25"
   ]
 }
