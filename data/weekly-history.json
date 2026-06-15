@@ -1,13 +1,22 @@
 [
   {
     "week": "Week 25, 2026",
-    "dateRange": "Jun 8 - Jun 14",
+    "dateRange": "Jun 15 - Jun 21",
     "risky": 40,
     "breaking": 15,
-    "security": 6,
+    "security": 5,
     "safe": 42,
     "total": 82,
     "topSignals": [
+      {
+        "packageName": "axios",
+        "route": "/package/axios/1.18.0",
+        "risk": "security",
+        "newVersion": "1.18.0",
+        "reason": "GitHub release notes mention security or vulnerability fixes.",
+        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
+        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
+      },
       {
         "packageName": "esbuild",
         "route": "/package/esbuild/0.28.1",
@@ -18,28 +27,10 @@
         "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
       },
       {
-        "packageName": "pnpm",
-        "route": "/package/pnpm/11.6.0",
-        "risk": "security",
-        "newVersion": "11.6.0",
-        "reason": "GitHub release notes mention security or vulnerability fixes.",
-        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
-        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
-      },
-      {
         "packageName": "@angular/core",
         "route": "/package/angular-core/22.0.1",
         "risk": "security",
         "newVersion": "22.0.1",
-        "reason": "GitHub release notes mention security or vulnerability fixes.",
-        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
-        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
-      },
-      {
-        "packageName": "axios",
-        "route": "/package/axios/1.17.0",
-        "risk": "security",
-        "newVersion": "1.17.0",
         "reason": "GitHub release notes mention security or vulnerability fixes.",
         "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
         "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
@@ -63,26 +54,35 @@
         "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
       },
       {
-        "packageName": "tailwindcss",
-        "route": "/package/tailwindcss/4.3.1",
+        "packageName": "graphql",
+        "route": "/package/graphql/17.0.0",
         "risk": "breaking",
-        "newVersion": "4.3.1",
+        "newVersion": "17.0.0",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "vitest",
+        "route": "/package/vitest/4.1.9",
+        "risk": "breaking",
+        "newVersion": "4.1.9",
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
         "packageName": "@storybook/react",
-        "route": "/package/storybook-react/10.4.4",
+        "route": "/package/storybook-react/10.4.5",
         "risk": "breaking",
-        "newVersion": "10.4.4",
+        "newVersion": "10.4.5",
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       }
     ],
     "route": "/weekly/2026-w25",
-    "generatedAt": "2026-06-14T15:20:20.936Z"
+    "generatedAt": "2026-06-15T18:03:18.842Z"
   },
   {
     "week": "Week 24, 2026",
