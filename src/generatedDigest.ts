@@ -1,24 +1,24 @@
 import type { ReleaseItem, SeoRoute, WeeklyDigest } from "./types";
 
-export const generatedAt = "2026-06-16T18:11:52.631Z";
+export const generatedAt = "2026-06-17T16:44:38.501Z";
 export const generationFailures = [];
 export const weeklyDigest: WeeklyDigest = {
   "week": "Week 25, 2026",
   "dateRange": "Jun 15 - Jun 21",
-  "risky": 39,
-  "breaking": 14,
+  "risky": 36,
+  "breaking": 11,
   "security": 5,
-  "safe": 43,
+  "safe": 46,
   "total": 82
 };
 export const digestArchive: WeeklyDigest[] = [
   {
     "week": "Week 25, 2026",
     "dateRange": "Jun 15 - Jun 21",
-    "risky": 39,
-    "breaking": 14,
+    "risky": 36,
+    "breaking": 11,
     "security": 5,
-    "safe": 43,
+    "safe": 46,
     "total": 82,
     "topSignals": [
       {
@@ -67,35 +67,35 @@ export const digestArchive: WeeklyDigest[] = [
         "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
       },
       {
-        "packageName": "@babel/core",
-        "route": "/package/babel-core/8.0.0",
+        "packageName": "astro",
+        "route": "/package/astro/6.4.8",
         "risk": "breaking",
-        "newVersion": "8.0.0",
+        "newVersion": "6.4.8",
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
-        "packageName": "@babel/preset-env",
-        "route": "/package/babel-preset-env/8.0.0",
+        "packageName": "react-router-dom",
+        "route": "/package/react-router-dom/7.18.0",
         "risk": "breaking",
-        "newVersion": "8.0.0",
+        "newVersion": "7.18.0",
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
-        "packageName": "@babel/preset-react",
-        "route": "/package/babel-preset-react/8.0.0",
+        "packageName": "vitest",
+        "route": "/package/vitest/4.1.9",
         "risk": "breaking",
-        "newVersion": "8.0.0",
+        "newVersion": "4.1.9",
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       }
     ],
     "route": "/weekly/2026-w25",
-    "generatedAt": "2026-06-16T18:11:52.631Z"
+    "generatedAt": "2026-06-17T16:44:38.501Z"
   },
   {
     "week": "Week 24, 2026",
@@ -317,7 +317,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "0.28.0",
     "newVersion": "0.28.1",
     "releaseDate": "2026-06-11",
-    "publishedAgo": "published 4 days ago",
+    "publishedAgo": "published 5 days ago",
     "risk": "security",
     "category": "Security",
     "osv": "No OSV match",
@@ -357,7 +357,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "21.2.17",
     "newVersion": "22.0.1",
     "releaseDate": "2026-06-10",
-    "publishedAgo": "published 5 days ago",
+    "publishedAgo": "published 6 days ago",
     "risk": "security",
     "category": "Security",
     "osv": "No OSV match",
@@ -470,13 +470,13 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
-    "id": "babel-core-8-0-0",
-    "packageName": "@babel/core",
-    "packageSlug": "babel-core",
-    "description": "JavaScript compiler core",
-    "oldVersion": "7.29.7",
-    "newVersion": "8.0.0",
-    "releaseDate": "2026-06-16",
+    "id": "astro-6-4-8",
+    "packageName": "astro",
+    "packageSlug": "astro",
+    "description": "Content-focused web framework",
+    "oldVersion": "7.0.0-beta.4",
+    "newVersion": "6.4.8",
+    "releaseDate": "2026-06-17",
     "publishedAgo": "published today",
     "risk": "breaking",
     "category": "Breaking",
@@ -486,106 +486,26 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-    "whatChanged": "GitHub release note found: v8.0.0.",
-    "githubReleaseTitle": "v8.0.0",
-    "githubReleaseUrl": "https://github.com/babel/babel/releases/tag/v8.0.0",
-    "githubReleaseTag": "v8.0.0",
-    "githubReleasePublishedAt": "2026-06-16T14:04:25Z",
-    "releaseNotesExcerpt": "v8.0.0 (2026-06-16) **NOTE:** The changelog below is relative to v8.0.0-rc.6. You can find a summary of all the breaking changes shipped in the Babel 8 release line in the migration guide for users and migration guide for plugin developers. Read the release blog post at http://ba",
+    "whatChanged": "GitHub release note found: astro@6.4.8.",
+    "githubReleaseTitle": "astro@6.4.8",
+    "githubReleaseUrl": "https://github.com/withastro/astro/releases/tag/astro%406.4.8",
+    "githubReleaseTag": "astro@6.4.8",
+    "githubReleasePublishedAt": "2026-06-17T14:10:22Z",
+    "releaseNotesExcerpt": "Patch Changes #17109 27c80ea Thanks @ematipico! - Harden the limits on the number of decoding on the URL.",
     "releaseNotesStatus": "Matched GitHub release by npm version tag.",
-    "route": "/package/babel-core/8.0.0",
+    "route": "/package/astro/6.4.8",
     "sourceLinks": [
       {
         "label": "npm",
-        "href": "https://www.npmjs.com/package/@babel/core"
+        "href": "https://www.npmjs.com/package/astro"
       },
       {
         "label": "Repository",
-        "href": "https://github.com/babel/babel"
+        "href": "https://github.com/withastro/astro"
       },
       {
         "label": "GitHub release",
-        "href": "https://github.com/babel/babel/releases/tag/v8.0.0"
-      }
-    ]
-  },
-  {
-    "id": "babel-preset-env-8-0-0",
-    "packageName": "@babel/preset-env",
-    "packageSlug": "babel-preset-env",
-    "description": "Babel environment preset",
-    "oldVersion": "7.29.7",
-    "newVersion": "8.0.0",
-    "releaseDate": "2026-06-16",
-    "publishedAgo": "published today",
-    "risk": "breaking",
-    "category": "Breaking",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Major version release detected.",
-    "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds.",
-    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-    "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-    "whatChanged": "GitHub release note found: v8.0.0.",
-    "githubReleaseTitle": "v8.0.0",
-    "githubReleaseUrl": "https://github.com/babel/babel/releases/tag/v8.0.0",
-    "githubReleaseTag": "v8.0.0",
-    "githubReleasePublishedAt": "2026-06-16T14:04:25Z",
-    "releaseNotesExcerpt": "v8.0.0 (2026-06-16) **NOTE:** The changelog below is relative to v8.0.0-rc.6. You can find a summary of all the breaking changes shipped in the Babel 8 release line in the migration guide for users and migration guide for plugin developers. Read the release blog post at http://ba",
-    "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
-    "route": "/package/babel-preset-env/8.0.0",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/@babel/preset-env"
-      },
-      {
-        "label": "Repository",
-        "href": "https://github.com/babel/babel"
-      },
-      {
-        "label": "GitHub release",
-        "href": "https://github.com/babel/babel/releases/tag/v8.0.0"
-      }
-    ]
-  },
-  {
-    "id": "babel-preset-react-8-0-0",
-    "packageName": "@babel/preset-react",
-    "packageSlug": "babel-preset-react",
-    "description": "Babel React preset",
-    "oldVersion": "7.29.7",
-    "newVersion": "8.0.0",
-    "releaseDate": "2026-06-16",
-    "publishedAgo": "published today",
-    "risk": "breaking",
-    "category": "Breaking",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Major version release detected.",
-    "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds.",
-    "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
-    "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-    "whatChanged": "GitHub release note found: v8.0.0.",
-    "githubReleaseTitle": "v8.0.0",
-    "githubReleaseUrl": "https://github.com/babel/babel/releases/tag/v8.0.0",
-    "githubReleaseTag": "v8.0.0",
-    "githubReleasePublishedAt": "2026-06-16T14:04:25Z",
-    "releaseNotesExcerpt": "v8.0.0 (2026-06-16) **NOTE:** The changelog below is relative to v8.0.0-rc.6. You can find a summary of all the breaking changes shipped in the Babel 8 release line in the migration guide for users and migration guide for plugin developers. Read the release blog post at http://ba",
-    "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
-    "route": "/package/babel-preset-react/8.0.0",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/@babel/preset-react"
-      },
-      {
-        "label": "Repository",
-        "href": "https://github.com/babel/babel"
-      },
-      {
-        "label": "GitHub release",
-        "href": "https://github.com/babel/babel/releases/tag/v8.0.0"
+        "href": "https://github.com/withastro/astro/releases/tag/astro%406.4.8"
       }
     ]
   },
@@ -597,7 +517,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "0.0.0-experimental-d07149147",
     "newVersion": "7.18.0",
     "releaseDate": "2026-06-16",
-    "publishedAgo": "published today",
+    "publishedAgo": "published 1 day ago",
     "risk": "breaking",
     "category": "Breaking",
     "osv": "No OSV match",
@@ -630,46 +550,6 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
-    "id": "graphql-17-0-0",
-    "packageName": "graphql",
-    "packageSlug": "graphql",
-    "description": "GraphQL JavaScript implementation",
-    "oldVersion": "16.14.2",
-    "newVersion": "17.0.0",
-    "releaseDate": "2026-06-15",
-    "publishedAgo": "published 1 day ago",
-    "risk": "breaking",
-    "category": "Breaking",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Major version release detected.",
-    "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds.",
-    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-    "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-    "whatChanged": "GitHub release note found: v17.0.0.",
-    "githubReleaseTitle": "v17.0.0",
-    "githubReleaseUrl": "https://github.com/graphql/graphql-js/releases/tag/v17.0.0",
-    "githubReleaseTag": "v17.0.0",
-    "githubReleasePublishedAt": "2026-06-15T17:11:46Z",
-    "releaseNotesExcerpt": "v17.0.0 (2026-06-15) New Feature #4819 feat: graduate directives on directives (@yaacovCR) Bug Fix #4799 fix: raise request error on invalid fragment variables (@yaacovCR) #4800 fix: apply directives when SDL contains type definitions and extensions with directives (@yaacovCR) #4",
-    "releaseNotesStatus": "Matched GitHub release by npm version tag.",
-    "route": "/package/graphql/17.0.0",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/graphql"
-      },
-      {
-        "label": "Repository",
-        "href": "https://github.com/graphql/graphql-js"
-      },
-      {
-        "label": "GitHub release",
-        "href": "https://github.com/graphql/graphql-js/releases/tag/v17.0.0"
-      }
-    ]
-  },
-  {
     "id": "vitest-4-1-9",
     "packageName": "vitest",
     "packageSlug": "vitest",
@@ -677,7 +557,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "3.2.6",
     "newVersion": "4.1.9",
     "releaseDate": "2026-06-15",
-    "publishedAgo": "published 1 day ago",
+    "publishedAgo": "published 2 days ago",
     "risk": "breaking",
     "category": "Breaking",
     "osv": "No OSV match",
@@ -757,7 +637,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.10.10",
     "newVersion": "3.36.0",
     "releaseDate": "2026-06-10",
-    "publishedAgo": "published 6 days ago",
+    "publishedAgo": "published 7 days ago",
     "risk": "breaking",
     "category": "Breaking",
     "osv": "No OSV match",
@@ -797,7 +677,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "17.0.93",
     "newVersion": "19.2.17",
     "releaseDate": "2026-06-05",
-    "publishedAgo": "published 10 days ago",
+    "publishedAgo": "published 11 days ago",
     "risk": "breaking",
     "category": "Breaking",
     "osv": "No OSV match",
@@ -837,7 +717,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.0.0-prerelease-20260519035351",
     "newVersion": "6.4.2",
     "releaseDate": "2026-05-19",
-    "publishedAgo": "published 28 days ago",
+    "publishedAgo": "published 29 days ago",
     "risk": "breaking",
     "category": "Breaking",
     "osv": "No OSV match",
@@ -917,7 +797,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "3.3.12",
     "newVersion": "5.1.11",
     "releaseDate": "2026-04-30",
-    "publishedAgo": "published 46 days ago",
+    "publishedAgo": "published 47 days ago",
     "risk": "breaking",
     "category": "Breaking",
     "osv": "No OSV match",
@@ -957,7 +837,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "13.0.0",
     "newVersion": "14.0.0",
     "releaseDate": "2026-04-19",
-    "publishedAgo": "published 58 days ago",
+    "publishedAgo": "published 59 days ago",
     "risk": "breaking",
     "category": "Breaking",
     "osv": "No OSV match",
@@ -1033,7 +913,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "10.5.0-alpha.7",
     "newVersion": "10.4.6",
     "releaseDate": "2026-06-16",
-    "publishedAgo": "published today",
+    "publishedAgo": "published 1 day ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1073,7 +953,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "10.5.0-alpha.7",
     "newVersion": "10.4.6",
     "releaseDate": "2026-06-16",
-    "publishedAgo": "published today",
+    "publishedAgo": "published 1 day ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1113,7 +993,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.19.0",
     "newVersion": "1.20.0",
     "releaseDate": "2026-06-16",
-    "publishedAgo": "published today",
+    "publishedAgo": "published 1 day ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1153,7 +1033,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "11.6.0",
     "newVersion": "11.7.0",
     "releaseDate": "2026-06-15",
-    "publishedAgo": "published 1 day ago",
+    "publishedAgo": "published 2 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1193,7 +1073,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.61.1",
     "newVersion": "4.62.0",
     "releaseDate": "2026-06-13",
-    "publishedAgo": "published 3 days ago",
+    "publishedAgo": "published 4 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1233,7 +1113,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.78.0",
     "newVersion": "7.79.0",
     "releaseDate": "2026-06-13",
-    "publishedAgo": "published 3 days ago",
+    "publishedAgo": "published 4 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1313,7 +1193,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "3.6.0-beta.15",
     "newVersion": "3.5.38",
     "releaseDate": "2026-06-11",
-    "publishedAgo": "published 5 days ago",
+    "publishedAgo": "published 6 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1353,7 +1233,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.100.0",
     "newVersion": "1.101.0",
     "releaseDate": "2026-06-11",
-    "publishedAgo": "published 4 days ago",
+    "publishedAgo": "published 5 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1393,7 +1273,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "15.16.0",
     "newVersion": "15.17.0",
     "releaseDate": "2026-06-09",
-    "publishedAgo": "published 7 days ago",
+    "publishedAgo": "published 8 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1433,7 +1313,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.100.14",
     "newVersion": "5.101.0",
     "releaseDate": "2026-06-02",
-    "publishedAgo": "published 13 days ago",
+    "publishedAgo": "published 14 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1553,7 +1433,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.3.0",
     "newVersion": "4.4.0",
     "releaseDate": "2026-05-29",
-    "publishedAgo": "published 17 days ago",
+    "publishedAgo": "published 18 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1593,7 +1473,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "12.39.0",
     "newVersion": "12.40.0",
     "releaseDate": "2026-05-21",
-    "publishedAgo": "published 26 days ago",
+    "publishedAgo": "published 27 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1629,7 +1509,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.11.2",
     "newVersion": "2.12.0",
     "releaseDate": "2026-05-15",
-    "publishedAgo": "published 32 days ago",
+    "publishedAgo": "published 33 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1669,7 +1549,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.5.0-canary.20260504T070434",
     "newVersion": "4.4.3",
     "releaseDate": "2026-05-04",
-    "publishedAgo": "published 43 days ago",
+    "publishedAgo": "published 44 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1709,7 +1589,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "10.4.27",
     "newVersion": "10.5.0",
     "releaseDate": "2026-04-13",
-    "publishedAgo": "published 63 days ago",
+    "publishedAgo": "published 64 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1749,7 +1629,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.0.0-canary.1871",
     "newVersion": "2.16.4",
     "releaseDate": "2026-02-02",
-    "publishedAgo": "published 134 days ago",
+    "publishedAgo": "published 135 days ago",
     "risk": "review",
     "category": "Review",
     "osv": "No OSV match",
@@ -1822,14 +1702,14 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
-    "id": "astro-6-4-7",
-    "packageName": "astro",
-    "packageSlug": "astro",
-    "description": "Content-focused web framework",
-    "oldVersion": "6.4.6",
-    "newVersion": "6.4.7",
-    "releaseDate": "2026-06-15",
-    "publishedAgo": "published 1 day ago",
+    "id": "babel-core-8-0-1",
+    "packageName": "@babel/core",
+    "packageSlug": "babel-core",
+    "description": "JavaScript compiler core",
+    "oldVersion": "8.0.0",
+    "newVersion": "8.0.1",
+    "releaseDate": "2026-06-17",
+    "publishedAgo": "published today",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -1838,26 +1718,186 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "GitHub release note found: astro@6.4.7.",
-    "githubReleaseTitle": "astro@6.4.7",
-    "githubReleaseUrl": "https://github.com/withastro/astro/releases/tag/astro%406.4.7",
-    "githubReleaseTag": "astro@6.4.7",
-    "githubReleasePublishedAt": "2026-06-15T10:47:24Z",
-    "releaseNotesExcerpt": "Patch Changes #17035 197e50e Thanks @astrobot-houston! - Fixes getRelativeLocaleUrl, getAbsoluteLocaleUrl, and getAbsoluteLocaleUrlList to strip trailing slashes when trailingSlash: 'never' is configured #16967 3719765 Thanks @astrobot-houston! - Fixes double URL-encoded paths re",
+    "whatChanged": "GitHub release note found: v8.0.1.",
+    "githubReleaseTitle": "v8.0.1",
+    "githubReleaseUrl": "https://github.com/babel/babel/releases/tag/v8.0.1",
+    "githubReleaseTag": "v8.0.1",
+    "githubReleasePublishedAt": "2026-06-17T09:57:09Z",
+    "releaseNotesExcerpt": "v8.0.1 (2026-06-17) This release includes a breaking change that was in the Babel 8 migration guide's Getting ready section and in the release post, but the actual removal of the feature from the codebase was accidentally not complete. :boom: Breaking Change babel-core, babel-plu",
     "releaseNotesStatus": "Matched GitHub release by npm version tag.",
-    "route": "/package/astro/6.4.7",
+    "route": "/package/babel-core/8.0.1",
     "sourceLinks": [
       {
         "label": "npm",
-        "href": "https://www.npmjs.com/package/astro"
+        "href": "https://www.npmjs.com/package/@babel/core"
       },
       {
         "label": "Repository",
-        "href": "https://github.com/withastro/astro"
+        "href": "https://github.com/babel/babel"
       },
       {
         "label": "GitHub release",
-        "href": "https://github.com/withastro/astro/releases/tag/astro%406.4.7"
+        "href": "https://github.com/babel/babel/releases/tag/v8.0.1"
+      }
+    ]
+  },
+  {
+    "id": "babel-preset-env-8-0-1",
+    "packageName": "@babel/preset-env",
+    "packageSlug": "babel-preset-env",
+    "description": "Babel environment preset",
+    "oldVersion": "8.0.0",
+    "newVersion": "8.0.1",
+    "releaseDate": "2026-06-17",
+    "publishedAgo": "published today",
+    "risk": "low",
+    "category": "Low impact",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "Patch release with no OSV match.",
+    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+    "whatChanged": "GitHub release note found: v8.0.1.",
+    "githubReleaseTitle": "v8.0.1",
+    "githubReleaseUrl": "https://github.com/babel/babel/releases/tag/v8.0.1",
+    "githubReleaseTag": "v8.0.1",
+    "githubReleasePublishedAt": "2026-06-17T09:57:09Z",
+    "releaseNotesExcerpt": "v8.0.1 (2026-06-17) This release includes a breaking change that was in the Babel 8 migration guide's Getting ready section and in the release post, but the actual removal of the feature from the codebase was accidentally not complete. :boom: Breaking Change babel-core, babel-plu",
+    "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+    "route": "/package/babel-preset-env/8.0.1",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/@babel/preset-env"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/babel/babel"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/babel/babel/releases/tag/v8.0.1"
+      }
+    ]
+  },
+  {
+    "id": "babel-preset-react-8-0-1",
+    "packageName": "@babel/preset-react",
+    "packageSlug": "babel-preset-react",
+    "description": "Babel React preset",
+    "oldVersion": "8.0.0",
+    "newVersion": "8.0.1",
+    "releaseDate": "2026-06-17",
+    "publishedAgo": "published today",
+    "risk": "low",
+    "category": "Low impact",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "Patch release with no OSV match.",
+    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+    "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
+    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+    "whatChanged": "GitHub release note found: v8.0.1.",
+    "githubReleaseTitle": "v8.0.1",
+    "githubReleaseUrl": "https://github.com/babel/babel/releases/tag/v8.0.1",
+    "githubReleaseTag": "v8.0.1",
+    "githubReleasePublishedAt": "2026-06-17T09:57:09Z",
+    "releaseNotesExcerpt": "v8.0.1 (2026-06-17) This release includes a breaking change that was in the Babel 8 migration guide's Getting ready section and in the release post, but the actual removal of the feature from the codebase was accidentally not complete. :boom: Breaking Change babel-core, babel-plu",
+    "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+    "route": "/package/babel-preset-react/8.0.1",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/@babel/preset-react"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/babel/babel"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/babel/babel/releases/tag/v8.0.1"
+      }
+    ]
+  },
+  {
+    "id": "graphql-17-0-1",
+    "packageName": "graphql",
+    "packageSlug": "graphql",
+    "description": "GraphQL JavaScript implementation",
+    "oldVersion": "17.0.0",
+    "newVersion": "17.0.1",
+    "releaseDate": "2026-06-16",
+    "publishedAgo": "published today",
+    "risk": "low",
+    "category": "Low impact",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "Patch release with no OSV match.",
+    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+    "whatChanged": "GitHub release note found: v17.0.1.",
+    "githubReleaseTitle": "v17.0.1",
+    "githubReleaseUrl": "https://github.com/graphql/graphql-js/releases/tag/v17.0.1",
+    "githubReleaseTag": "v17.0.1",
+    "githubReleasePublishedAt": "2026-06-16T19:43:13Z",
+    "releaseNotesExcerpt": "v17.0.1 (2026-06-16) Bug Fix #4824 fix(diagnostics): emit asyncStart after promise settlement to match native tracePromise (@logaretm) Internal <details> <summary> 2 PRs were merged </summary> #4823 chore(npm): remove obsolete ESM-only package build (@yaacovCR) #4825 chore(releas",
+    "releaseNotesStatus": "Matched GitHub release by npm version tag.",
+    "route": "/package/graphql/17.0.1",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/graphql"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/graphql/graphql-js"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/graphql/graphql-js/releases/tag/v17.0.1"
+      }
+    ]
+  },
+  {
+    "id": "happy-dom-20-10-5",
+    "packageName": "happy-dom",
+    "packageSlug": "happy-dom",
+    "description": "Browser environment for testing",
+    "oldVersion": "20.10.4",
+    "newVersion": "20.10.5",
+    "releaseDate": "2026-06-16",
+    "publishedAgo": "published today",
+    "risk": "low",
+    "category": "Low impact",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "Patch release with no OSV match.",
+    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+    "whatChanged": "GitHub release note found: v20.10.5.",
+    "githubReleaseTitle": "v20.10.5",
+    "githubReleaseUrl": "https://github.com/capricorn86/happy-dom/releases/tag/v20.10.5",
+    "githubReleaseTag": "v20.10.5",
+    "githubReleasePublishedAt": "2026-06-16T23:47:49Z",
+    "releaseNotesExcerpt": ":construction_worker_man: Patch fixes - Adds cache to query selector parser - By **@capricorn86** in task #2142 - The selector parser degraded in performance in v20.6.3 to solve more complex selectors - Parsing is still a bit slower, but the cache will hopefully mitigate most of ",
+    "releaseNotesStatus": "Matched GitHub release by npm version tag.",
+    "route": "/package/happy-dom/20.10.5",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/happy-dom"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/capricorn86/happy-dom"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/capricorn86/happy-dom/releases/tag/v20.10.5"
       }
     ]
   },
@@ -1869,7 +1909,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.61.1-alpha.5",
     "newVersion": "8.61.1",
     "releaseDate": "2026-06-15",
-    "publishedAgo": "published today",
+    "publishedAgo": "published 1 day ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -1909,7 +1949,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.61.1-alpha.5",
     "newVersion": "8.61.1",
     "releaseDate": "2026-06-15",
-    "publishedAgo": "published today",
+    "publishedAgo": "published 1 day ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -1949,7 +1989,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.61.0-beta-1781513093000",
     "newVersion": "1.61.0",
     "releaseDate": "2026-06-15",
-    "publishedAgo": "published 1 day ago",
+    "publishedAgo": "published 2 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -1982,46 +2022,6 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
-    "id": "happy-dom-20-10-4",
-    "packageName": "happy-dom",
-    "packageSlug": "happy-dom",
-    "description": "Browser environment for testing",
-    "oldVersion": "20.10.3",
-    "newVersion": "20.10.4",
-    "releaseDate": "2026-06-15",
-    "publishedAgo": "published today",
-    "risk": "low",
-    "category": "Low impact",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Patch release with no OSV match.",
-    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "GitHub release note found: v20.10.4.",
-    "githubReleaseTitle": "v20.10.4",
-    "githubReleaseUrl": "https://github.com/capricorn86/happy-dom/releases/tag/v20.10.4",
-    "githubReleaseTag": "v20.10.4",
-    "githubReleasePublishedAt": "2026-06-15T21:58:36Z",
-    "releaseNotesExcerpt": ":construction_worker_man: Patch fixes - Coerce null qualifiedName to empty string in createDocument - By **@Firer** in task #2206",
-    "releaseNotesStatus": "Matched GitHub release by npm version tag.",
-    "route": "/package/happy-dom/20.10.4",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/happy-dom"
-      },
-      {
-        "label": "Repository",
-        "href": "https://github.com/capricorn86/happy-dom"
-      },
-      {
-        "label": "GitHub release",
-        "href": "https://github.com/capricorn86/happy-dom/releases/tag/v20.10.4"
-      }
-    ]
-  },
-  {
     "id": "radix-ui-react-dialog-1-1-17",
     "packageName": "@radix-ui/react-dialog",
     "packageSlug": "radix-ui-react-dialog",
@@ -2029,7 +2029,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.1.17-rc.1781547164334",
     "newVersion": "1.1.17",
     "releaseDate": "2026-06-15",
-    "publishedAgo": "published today",
+    "publishedAgo": "published 1 day ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2065,7 +2065,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.1.17-rc.1781547164334",
     "newVersion": "1.1.17",
     "releaseDate": "2026-06-15",
-    "publishedAgo": "published today",
+    "publishedAgo": "published 1 day ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2101,7 +2101,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.6.5",
     "newVersion": "4.6.6",
     "releaseDate": "2026-06-14",
-    "publishedAgo": "published 2 days ago",
+    "publishedAgo": "published 3 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2141,7 +2141,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "9.1.0",
     "newVersion": "9.1.1",
     "releaseDate": "2026-06-11",
-    "publishedAgo": "published 5 days ago",
+    "publishedAgo": "published 6 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2181,7 +2181,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.9.17",
     "newVersion": "2.9.18",
     "releaseDate": "2026-06-10",
-    "publishedAgo": "published 5 days ago",
+    "publishedAgo": "published 6 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2221,7 +2221,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "16.2.8",
     "newVersion": "16.2.9",
     "releaseDate": "2026-06-09",
-    "publishedAgo": "published 6 days ago",
+    "publishedAgo": "published 7 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2261,7 +2261,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.15.41-nightly-20260609.1",
     "newVersion": "1.15.41",
     "releaseDate": "2026-06-09",
-    "publishedAgo": "published 7 days ago",
+    "publishedAgo": "published 8 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2301,7 +2301,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "3.8.3",
     "newVersion": "3.8.4",
     "releaseDate": "2026-06-09",
-    "publishedAgo": "published 7 days ago",
+    "publishedAgo": "published 8 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2341,7 +2341,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.8.3",
     "newVersion": "7.8.4",
     "releaseDate": "2026-06-09",
-    "publishedAgo": "published 6 days ago",
+    "publishedAgo": "published 7 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2381,7 +2381,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.4.7",
     "newVersion": "4.4.8",
     "releaseDate": "2026-06-08",
-    "publishedAgo": "published 7 days ago",
+    "publishedAgo": "published 8 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2421,7 +2421,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.2.2",
     "newVersion": "4.2.3",
     "releaseDate": "2026-06-08",
-    "publishedAgo": "published 7 days ago",
+    "publishedAgo": "published 8 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2461,7 +2461,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.56.2",
     "newVersion": "5.56.3",
     "releaseDate": "2026-06-07",
-    "publishedAgo": "published 8 days ago",
+    "publishedAgo": "published 9 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2501,7 +2501,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.17.4",
     "newVersion": "2.17.5",
     "releaseDate": "2026-06-01",
-    "publishedAgo": "published 15 days ago",
+    "publishedAgo": "published 16 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2541,7 +2541,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.0.15",
     "newVersion": "8.0.16",
     "releaseDate": "2026-06-01",
-    "publishedAgo": "published 15 days ago",
+    "publishedAgo": "published 16 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2581,7 +2581,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.0.13",
     "newVersion": "5.0.14",
     "releaseDate": "2026-05-28",
-    "publishedAgo": "published 19 days ago",
+    "publishedAgo": "published 20 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2621,7 +2621,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.11.20",
     "newVersion": "1.11.21",
     "releaseDate": "2026-05-26",
-    "publishedAgo": "published 21 days ago",
+    "publishedAgo": "published 22 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2661,7 +2661,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.107.1",
     "newVersion": "5.107.2",
     "releaseDate": "2026-05-25",
-    "publishedAgo": "published 22 days ago",
+    "publishedAgo": "published 23 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2701,7 +2701,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.5.14",
     "newVersion": "8.5.15",
     "releaseDate": "2026-05-19",
-    "publishedAgo": "published 28 days ago",
+    "publishedAgo": "published 29 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2741,7 +2741,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "6.0.1",
     "newVersion": "6.0.2",
     "releaseDate": "2026-05-14",
-    "publishedAgo": "published 32 days ago",
+    "publishedAgo": "published 33 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2781,7 +2781,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.14.5",
     "newVersion": "2.14.6",
     "releaseDate": "2026-05-11",
-    "publishedAgo": "published 36 days ago",
+    "publishedAgo": "published 37 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2821,7 +2821,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "3.6.0-dev.d54f7e5713c653d0171971405344f7c6e44d418f",
     "newVersion": "3.6.0",
     "releaseDate": "2026-05-10",
-    "publishedAgo": "published 37 days ago",
+    "publishedAgo": "published 38 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2861,7 +2861,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "30.4.1",
     "newVersion": "30.4.2",
     "releaseDate": "2026-05-09",
-    "publishedAgo": "published 38 days ago",
+    "publishedAgo": "published 39 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2901,7 +2901,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "11.1.7",
     "newVersion": "11.1.8",
     "releaseDate": "2026-05-08",
-    "publishedAgo": "published 39 days ago",
+    "publishedAgo": "published 40 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2941,7 +2941,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.0.1",
     "newVersion": "2.0.2",
     "releaseDate": "2026-04-21",
-    "publishedAgo": "published 56 days ago",
+    "publishedAgo": "published 57 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -2981,7 +2981,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "6.0.0-dev.20260416",
     "newVersion": "6.0.3",
     "releaseDate": "2026-04-16",
-    "publishedAgo": "published 60 days ago",
+    "publishedAgo": "published 61 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -3021,7 +3021,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.18.0",
     "newVersion": "4.18.1",
     "releaseDate": "2026-04-01",
-    "publishedAgo": "published 75 days ago",
+    "publishedAgo": "published 76 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -3061,7 +3061,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.4.0",
     "newVersion": "2.4.1",
     "releaseDate": "2026-02-27",
-    "publishedAgo": "published 109 days ago",
+    "publishedAgo": "published 110 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -3101,7 +3101,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.16.0",
     "newVersion": "5.16.1",
     "releaseDate": "2026-02-10",
-    "publishedAgo": "published 126 days ago",
+    "publishedAgo": "published 127 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -3141,7 +3141,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "16.3.1",
     "newVersion": "16.3.2",
     "releaseDate": "2026-01-19",
-    "publishedAgo": "published 148 days ago",
+    "publishedAgo": "published 149 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -3181,7 +3181,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.5.0",
     "newVersion": "8.5.1",
     "releaseDate": "2025-11-12",
-    "publishedAgo": "published 215 days ago",
+    "publishedAgo": "published 216 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -3221,7 +3221,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "19.2.2",
     "newVersion": "19.2.3",
     "releaseDate": "2025-11-12",
-    "publishedAgo": "published 216 days ago",
+    "publishedAgo": "published 217 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -3301,7 +3301,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "6.9.0",
     "newVersion": "6.9.1",
     "releaseDate": "2025-10-01",
-    "publishedAgo": "published 257 days ago",
+    "publishedAgo": "published 258 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -3341,7 +3341,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.7.0",
     "newVersion": "1.7.1",
     "releaseDate": "2025-09-21",
-    "publishedAgo": "published 268 days ago",
+    "publishedAgo": "published 269 days ago",
     "risk": "low",
     "category": "Low impact",
     "osv": "No OSV match",
@@ -3591,7 +3591,7 @@ export const packageRoutes = {
     "packageName": "astro",
     "description": "Content-focused web framework",
     "route": "/package/astro",
-    "latestReleaseRoute": "/package/astro/6.4.7",
+    "latestReleaseRoute": "/package/astro/6.4.8",
     "areaSlug": "core-frameworks",
     "areaLabel": "Frameworks and Core UI"
   },
@@ -3687,7 +3687,7 @@ export const packageRoutes = {
     "packageName": "@babel/core",
     "description": "JavaScript compiler core",
     "route": "/package/babel-core",
-    "latestReleaseRoute": "/package/babel-core/8.0.0",
+    "latestReleaseRoute": "/package/babel-core/8.0.1",
     "areaSlug": "build-tooling",
     "areaLabel": "Build Tooling"
   },
@@ -3695,7 +3695,7 @@ export const packageRoutes = {
     "packageName": "@babel/preset-env",
     "description": "Babel environment preset",
     "route": "/package/babel-preset-env",
-    "latestReleaseRoute": "/package/babel-preset-env/8.0.0",
+    "latestReleaseRoute": "/package/babel-preset-env/8.0.1",
     "areaSlug": "build-tooling",
     "areaLabel": "Build Tooling"
   },
@@ -3703,7 +3703,7 @@ export const packageRoutes = {
     "packageName": "@babel/preset-react",
     "description": "Babel React preset",
     "route": "/package/babel-preset-react",
-    "latestReleaseRoute": "/package/babel-preset-react/8.0.0",
+    "latestReleaseRoute": "/package/babel-preset-react/8.0.1",
     "areaSlug": "build-tooling",
     "areaLabel": "Build Tooling"
   },
@@ -3847,7 +3847,7 @@ export const packageRoutes = {
     "packageName": "graphql",
     "description": "GraphQL JavaScript implementation",
     "route": "/package/graphql",
-    "latestReleaseRoute": "/package/graphql/17.0.0",
+    "latestReleaseRoute": "/package/graphql/17.0.1",
     "areaSlug": "routing-state-data",
     "areaLabel": "Routing, State, and Data"
   },
@@ -3967,7 +3967,7 @@ export const packageRoutes = {
     "packageName": "happy-dom",
     "description": "Browser environment for testing",
     "route": "/package/happy-dom",
-    "latestReleaseRoute": "/package/happy-dom/20.10.4",
+    "latestReleaseRoute": "/package/happy-dom/20.10.5",
     "areaSlug": "testing-storybook",
     "areaLabel": "Testing and Storybook"
   },
@@ -4216,7 +4216,7 @@ export const categoryRoutes = {
         "packageName": "astro",
         "description": "Content-focused web framework",
         "route": "/package/astro",
-        "latestReleaseRoute": "/package/astro/6.4.7",
+        "latestReleaseRoute": "/package/astro/6.4.8",
         "areaSlug": "core-frameworks",
         "areaLabel": "Frameworks and Core UI"
       },
@@ -4297,7 +4297,7 @@ export const categoryRoutes = {
         "packageName": "@babel/core",
         "description": "JavaScript compiler core",
         "route": "/package/babel-core",
-        "latestReleaseRoute": "/package/babel-core/8.0.0",
+        "latestReleaseRoute": "/package/babel-core/8.0.1",
         "areaSlug": "build-tooling",
         "areaLabel": "Build Tooling"
       },
@@ -4305,7 +4305,7 @@ export const categoryRoutes = {
         "packageName": "@babel/preset-env",
         "description": "Babel environment preset",
         "route": "/package/babel-preset-env",
-        "latestReleaseRoute": "/package/babel-preset-env/8.0.0",
+        "latestReleaseRoute": "/package/babel-preset-env/8.0.1",
         "areaSlug": "build-tooling",
         "areaLabel": "Build Tooling"
       },
@@ -4313,7 +4313,7 @@ export const categoryRoutes = {
         "packageName": "@babel/preset-react",
         "description": "Babel React preset",
         "route": "/package/babel-preset-react",
-        "latestReleaseRoute": "/package/babel-preset-react/8.0.0",
+        "latestReleaseRoute": "/package/babel-preset-react/8.0.1",
         "areaSlug": "build-tooling",
         "areaLabel": "Build Tooling"
       },
@@ -4499,7 +4499,7 @@ export const categoryRoutes = {
         "packageName": "graphql",
         "description": "GraphQL JavaScript implementation",
         "route": "/package/graphql",
-        "latestReleaseRoute": "/package/graphql/17.0.0",
+        "latestReleaseRoute": "/package/graphql/17.0.1",
         "areaSlug": "routing-state-data",
         "areaLabel": "Routing, State, and Data"
       },
@@ -4637,7 +4637,7 @@ export const categoryRoutes = {
         "packageName": "happy-dom",
         "description": "Browser environment for testing",
         "route": "/package/happy-dom",
-        "latestReleaseRoute": "/package/happy-dom/20.10.4",
+        "latestReleaseRoute": "/package/happy-dom/20.10.5",
         "areaSlug": "testing-storybook",
         "areaLabel": "Testing and Storybook"
       },
@@ -4922,7 +4922,7 @@ export const seoRoutes: Record<string, SeoRoute> = {
   "/weekly": {
     "path": "/weekly",
     "title": "Week 25, 2026 Frontend Dependency Risk Digest",
-    "description": "Week 25, 2026 frontend npm dependency-risk digest: 39 risky updates, 14 breaking changes, 5 security-relevant releases, OSV/CVE checks, release notes, and recommended actions from 82 tracked React, JavaScript, and frontend packages."
+    "description": "Week 25, 2026 frontend npm dependency-risk digest: 36 risky updates, 11 breaking changes, 5 security-relevant releases, OSV/CVE checks, release notes, and recommended actions from 82 tracked React, JavaScript, and frontend packages."
   },
   "/risk/security": {
     "path": "/risk/security",
@@ -4952,7 +4952,7 @@ export const seoRoutes: Record<string, SeoRoute> = {
   "/weekly/2026-w25": {
     "path": "/weekly/2026-w25",
     "title": "Week 25, 2026 frontend dependency risk archive",
-    "description": "Jun 15 - Jun 21 archive for frontend npm dependency risk: 39 risky updates, 14 breaking changes, 5 security-relevant releases, OSV/CVE checks, release notes, and recommended actions from 82 tracked packages."
+    "description": "Jun 15 - Jun 21 archive for frontend npm dependency risk: 36 risky updates, 11 breaking changes, 5 security-relevant releases, OSV/CVE checks, release notes, and recommended actions from 82 tracked packages."
   },
   "/weekly/2026-w24": {
     "path": "/weekly/2026-w24",
@@ -5439,30 +5439,15 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "title": "npm-run-all 4.1.5 security update",
     "description": "npm-run-all 4.1.5 frontend npm update: GitHub release notes mention security or vulnerability fixes. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Update recommended. Review the GitHub release notes and prioritize this package in the security lane."
   },
-  "/package/babel-core/8.0.0": {
-    "path": "/package/babel-core/8.0.0",
-    "title": "@babel/core 8.0.0 breaking update",
-    "description": "@babel/core 8.0.0 frontend npm update: Major version release detected. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were found for review."
-  },
-  "/package/babel-preset-env/8.0.0": {
-    "path": "/package/babel-preset-env/8.0.0",
-    "title": "@babel/preset-env 8.0.0 breaking update",
-    "description": "@babel/preset-env 8.0.0 frontend npm update: Major version release detected. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were found for review."
-  },
-  "/package/babel-preset-react/8.0.0": {
-    "path": "/package/babel-preset-react/8.0.0",
-    "title": "@babel/preset-react 8.0.0 breaking update",
-    "description": "@babel/preset-react 8.0.0 frontend npm update: Major version release detected. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were found for review."
+  "/package/astro/6.4.8": {
+    "path": "/package/astro/6.4.8",
+    "title": "astro 6.4.8 breaking update",
+    "description": "astro 6.4.8 frontend npm update: Major version release detected. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were found for review."
   },
   "/package/react-router-dom/7.18.0": {
     "path": "/package/react-router-dom/7.18.0",
     "title": "react-router-dom 7.18.0 breaking update",
     "description": "react-router-dom 7.18.0 frontend npm update: Major version release detected. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were found for review."
-  },
-  "/package/graphql/17.0.0": {
-    "path": "/package/graphql/17.0.0",
-    "title": "graphql 17.0.0 breaking update",
-    "description": "graphql 17.0.0 frontend npm update: Major version release detected. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were found for review."
   },
   "/package/vitest/4.1.9": {
     "path": "/package/vitest/4.1.9",
@@ -5609,10 +5594,30 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "title": "@emotion/react 11.14.0 review update",
     "description": "@emotion/react 11.14.0 frontend npm update: Minor version release detected with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review."
   },
-  "/package/astro/6.4.7": {
-    "path": "/package/astro/6.4.7",
-    "title": "astro 6.4.7 low impact update",
-    "description": "astro 6.4.7 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  "/package/babel-core/8.0.1": {
+    "path": "/package/babel-core/8.0.1",
+    "title": "@babel/core 8.0.1 low impact update",
+    "description": "@babel/core 8.0.1 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/babel-preset-env/8.0.1": {
+    "path": "/package/babel-preset-env/8.0.1",
+    "title": "@babel/preset-env 8.0.1 low impact update",
+    "description": "@babel/preset-env 8.0.1 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/babel-preset-react/8.0.1": {
+    "path": "/package/babel-preset-react/8.0.1",
+    "title": "@babel/preset-react 8.0.1 low impact update",
+    "description": "@babel/preset-react 8.0.1 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/graphql/17.0.1": {
+    "path": "/package/graphql/17.0.1",
+    "title": "graphql 17.0.1 low impact update",
+    "description": "graphql 17.0.1 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/happy-dom/20.10.5": {
+    "path": "/package/happy-dom/20.10.5",
+    "title": "happy-dom 20.10.5 low impact update",
+    "description": "happy-dom 20.10.5 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
   },
   "/package/typescript-eslint-parser/8.61.1": {
     "path": "/package/typescript-eslint-parser/8.61.1",
@@ -5628,11 +5633,6 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "path": "/package/playwright/1.61.0",
     "title": "playwright 1.61.0 low impact update",
     "description": "playwright 1.61.0 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-  },
-  "/package/happy-dom/20.10.4": {
-    "path": "/package/happy-dom/20.10.4",
-    "title": "happy-dom 20.10.4 low impact update",
-    "description": "happy-dom 20.10.4 frontend npm update: Patch release with no OSV match. OSV result: No OSV match. CVE signal: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
   },
   "/package/radix-ui-react-dialog/1.1.17": {
     "path": "/package/radix-ui-react-dialog/1.1.17",

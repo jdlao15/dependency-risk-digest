@@ -2,10 +2,10 @@
   {
     "week": "Week 25, 2026",
     "dateRange": "Jun 15 - Jun 21",
-    "risky": 39,
-    "breaking": 14,
+    "risky": 36,
+    "breaking": 11,
     "security": 5,
-    "safe": 43,
+    "safe": 46,
     "total": 82,
     "topSignals": [
       {
@@ -54,35 +54,35 @@
         "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
       },
       {
-        "packageName": "@babel/core",
-        "route": "/package/babel-core/8.0.0",
+        "packageName": "astro",
+        "route": "/package/astro/6.4.8",
         "risk": "breaking",
-        "newVersion": "8.0.0",
+        "newVersion": "6.4.8",
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
-        "packageName": "@babel/preset-env",
-        "route": "/package/babel-preset-env/8.0.0",
+        "packageName": "react-router-dom",
+        "route": "/package/react-router-dom/7.18.0",
         "risk": "breaking",
-        "newVersion": "8.0.0",
+        "newVersion": "7.18.0",
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
-        "packageName": "@babel/preset-react",
-        "route": "/package/babel-preset-react/8.0.0",
+        "packageName": "vitest",
+        "route": "/package/vitest/4.1.9",
         "risk": "breaking",
-        "newVersion": "8.0.0",
+        "newVersion": "4.1.9",
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       }
     ],
     "route": "/weekly/2026-w25",
-    "generatedAt": "2026-06-16T18:11:52.631Z"
+    "generatedAt": "2026-06-17T16:44:38.501Z"
   },
   {
     "week": "Week 24, 2026",
