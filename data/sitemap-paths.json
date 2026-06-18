@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T16:44:09.655Z",
+  "generatedAt": "2026-06-18T22:47:44.820Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -75,7 +75,7 @@
     "/package/mui-material",
     "/package/mui-material/9.1.1",
     "/package/nanoid",
-    "/package/nanoid/5.1.11",
+    "/package/nanoid/5.1.14",
     "/package/next",
     "/package/next/16.2.9",
     "/package/npm-run-all",

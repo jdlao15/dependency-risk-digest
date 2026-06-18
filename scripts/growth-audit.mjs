@@ -31,6 +31,15 @@ const warnings = [];
 const failures = [];
 const routeMetadata = [];
 let currentCheck = null;
+const searchIntentTerms = {
+  "/weekly": ["frontend npm", "dependency risk", "security"],
+  "/packages": ["npm", "package", "risk"],
+  "/methodology": ["npm", "risk", "osv"],
+  "/risk/security": ["security", "osv", "cve"],
+  "/risk/breaking": ["breaking", "npm", "release"],
+  "/risk/review": ["review", "npm", "update"],
+  "/package/react": ["react", "npm", "risk"],
+};
 
 const weeklyHtml = await fetchText("/weekly", "weekly route");
 const scriptAsset = findScriptAsset(weeklyHtml.body);
@@ -137,6 +146,21 @@ for (const routePath of importantMetadataRoutes) {
     if (currentCheck.failures.length === 0) pass(`${routePath} has title, description, canonical URL, schema, and noscript summary.`);
   });
 }
+
+check("search intent coverage", () => {
+  for (const item of routeMetadata) {
+    const requiredTerms = searchIntentTerms[item.routePath] ?? [];
+    const searchText = `${item.title} ${item.description}`.toLowerCase();
+    for (const term of requiredTerms) {
+      if (!searchText.includes(term)) {
+        fail(`${item.routePath} title/description is missing search-intent term: ${term}.`);
+      }
+    }
+  }
+  if (currentCheck.failures.length === 0) {
+    pass("Important routes preserve high-intent terms for frontend npm risk, security, breaking changes, OSV/CVE, and package archives.");
+  }
+});
 
 check("metadata uniqueness", () => {
   const duplicateTitles = duplicates(routeMetadata.map((item) => item.title).filter(Boolean));

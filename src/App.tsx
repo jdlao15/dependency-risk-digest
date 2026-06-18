@@ -111,6 +111,7 @@ function App() {
       <Header path={path} navigate={navigate} query={query} setQuery={setQuery} />
       <main>
         <Hero navigate={navigate} />
+        <ContentGrowthStrip navigate={navigate} />
         <Breadcrumbs items={breadcrumbItems} navigate={navigate} />
         {pageMode.kind === "weeklyArchive" && archiveDigest ? (
           <WeeklyArchivePage digest={archiveDigest} navigate={navigate} />
@@ -273,10 +274,10 @@ function Hero({ navigate }: { navigate: (path: string) => void }) {
           <span>{weeklyDigest.dateRange} ({weeklyDigest.week})</span>
         </div>
         <p>
-          We analyze npm releases, changelogs, and advisories to surface risky,
-          breaking, security-relevant, and low-impact updates so teams know what
-          deserves attention across React, Vite, Next.js, TypeScript, Storybook,
-          build tooling, test tooling, CSS packages, and JavaScript production apps.
+          Track frontend npm security updates, breaking package releases, OSV/CVE
+          signals, React dependency risk, and recommended update actions before
+          production upgrades across Vite, Next.js, TypeScript, Storybook, build
+          tooling, test tooling, CSS packages, and JavaScript apps.
         </p>
         <p className="generated-note">
           Refreshed daily from npm registry metadata and OSV queries. Last updated:{" "}
@@ -305,6 +306,28 @@ function Hero({ navigate }: { navigate: (path: string) => void }) {
           <li>Built for frontend developers shipping to production</li>
         </ul>
       </aside>
+    </section>
+  );
+}
+
+function ContentGrowthStrip({ navigate }: { navigate: (path: string) => void }) {
+  return (
+    <section className="growth-strip" aria-label="Frontend dependency risk use cases">
+      <div>
+        <span>Frontend package coverage</span>
+        <h2>Frontend npm security updates, breaking releases, and dependency-risk signals in one archive</h2>
+      </div>
+      <div className="growth-strip-links">
+        <InternalLink path="/risk/security" navigate={navigate}>
+          OSV and CVE security updates
+        </InternalLink>
+        <InternalLink path="/risk/breaking" navigate={navigate}>
+          Breaking npm package releases
+        </InternalLink>
+        <InternalLink path="/packages" navigate={navigate}>
+          React, Vite, Next.js, TypeScript, and Storybook package archives
+        </InternalLink>
+      </div>
     </section>
   );
 }
@@ -609,8 +632,9 @@ function WeeklyArchivePage({ digest, navigate }: { digest: WeeklyDigest; navigat
         <h1>{digest.week}</h1>
         <p>
           {digest.dateRange} archived frontend npm dependency-risk summary with
-          OSV/CVE checks, breaking-change signals, release notes, and recommended
-          actions for tracked React, JavaScript, and frontend packages.
+          npm security updates, OSV/CVE checks, breaking-change signals, release
+          notes, and recommended actions for tracked React, JavaScript, and
+          frontend packages.
         </p>
       </div>
       <div className="package-summary-grid">
@@ -798,9 +822,10 @@ function PackagePage({ navigate, slug }: { navigate: (path: string) => void; slu
         <h1>{packageInfo.packageName}</h1>
         <p>{packageInfo.description}</p>
         <p>
-          This package archive tracks npm release risk, OSV vulnerability results,
-          CVE signals, GitHub release notes, affected audience, and recommended
-          update actions for frontend teams.
+          This package archive tracks npm release risk, security updates, OSV
+          vulnerability results, CVE signals, breaking-change signals, GitHub
+          release notes, affected audience, and recommended update actions for
+          frontend teams.
         </p>
       </div>
       <div className="package-summary-grid">
@@ -820,11 +845,13 @@ function PackagePage({ navigate, slug }: { navigate: (path: string) => void; slu
         </div>
       </div>
       <div className="package-empty">
-        <h2>{relatedReleases.length} release covered in the current digest</h2>
+        <h2>{packageInfo.packageName} npm dependency risk, security updates, and breaking releases</h2>
         <p>
-          This package page is part of the tracked frontend dependency set. It keeps a
-          stable archive URL for release-risk signals, OSV results, CVE checks, and
-          recommended update actions.
+          This page gives {packageInfo.packageName} a stable archive URL for
+          release-risk signals, OSV results, CVE checks, breaking-change review,
+          and recommended update actions. {relatedReleases.length}{" "}
+          {relatedReleases.length === 1 ? "release is" : "releases are"} covered
+          in the current digest.
         </p>
       </div>
       <section className="package-link-panel" aria-label={`${packageInfo.packageName} related archive links`}>

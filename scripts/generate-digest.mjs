@@ -439,33 +439,33 @@ function buildSeoRoutes(items, routeMap, categoryMap, digest) {
   const routes = {
     "/weekly": {
       path: "/weekly",
-      title: `${digest.week} Frontend Dependency Risk Digest`,
-      description: `${digest.week} frontend npm dependency-risk digest: ${digest.risky} risky updates, ${digest.breaking} breaking changes, ${digest.security} security-relevant releases, OSV/CVE checks, release notes, and recommended actions from ${digest.total} tracked React, JavaScript, and frontend packages.`,
+      title: `Frontend npm Security Updates and Dependency Risk`,
+      description: metaDescription(`${digest.week} digest for frontend npm security updates, breaking package releases, OSV/CVE signals, React dependency risk, and recommended update actions from ${digest.total} tracked packages.`),
     },
     "/risk/security": {
       path: "/risk/security",
-      title: "Frontend npm Security Updates and OSV Signals",
-      description: "Security-relevant frontend npm package releases with OSV vulnerability checks, CVE references, GitHub release-note security signals, affected audience, and recommended update actions for JavaScript teams.",
+      title: "Frontend npm Security Updates, OSV and CVE Fixes",
+      description: metaDescription("Track security-relevant frontend npm releases with OSV vulnerability checks, CVE references, release-note security signals, affected audience, and recommended update actions."),
     },
     "/risk/breaking": {
       path: "/risk/breaking",
       title: "Breaking Frontend npm Package Releases",
-      description: "Breaking frontend npm updates and major package releases for React, Vite, Next.js, TypeScript, Storybook, build tooling, test tooling, and JavaScript dependency maintenance.",
+      description: metaDescription("Find breaking frontend npm package releases and major updates for React, Vite, Next.js, TypeScript, Storybook, build tooling, testing, and JavaScript dependency maintenance."),
     },
     "/risk/review": {
       path: "/risk/review",
-      title: "Frontend npm Updates To Review",
-      description: "Frontend npm dependency updates to review, including minor releases, release notes, OSV checks, affected audience, and recommended maintenance actions for JavaScript production apps.",
+      title: "Frontend npm Dependency Updates To Review",
+      description: metaDescription("Review frontend npm dependency updates with release notes, OSV checks, affected audience, and recommended maintenance actions before upgrading JavaScript production apps."),
     },
     "/methodology": {
       path: "/methodology",
       title: "Dependency Risk Methodology for Frontend npm Updates",
-      description: "Explains how Dependency Risk Digest evaluates frontend npm risk with release metadata, OSV/CVE signals, changelog language, affected audience, and recommended actions for React, Vite, Next.js, TypeScript, Storybook, and JavaScript teams.",
+      description: metaDescription("See how Dependency Risk Digest evaluates frontend npm risk using release metadata, OSV/CVE signals, changelog language, affected audience, and recommended actions."),
     },
     "/packages": {
       path: "/packages",
       title: "Frontend npm Package Risk Directory",
-      description: `Browse ${Object.keys(routeMap).length} tracked frontend npm package archives across frameworks, build tools, TypeScript, testing, CSS, UI libraries, routing, state management, data fetching, forms, validation, and JavaScript utilities.`,
+      description: metaDescription(`Browse ${Object.keys(routeMap).length} frontend npm package risk archives for React, Vite, Next.js, TypeScript, Storybook, security updates, breaking releases, OSV/CVE signals, and recommended actions.`),
     },
   };
 
@@ -473,8 +473,8 @@ function buildSeoRoutes(items, routeMap, categoryMap, digest) {
     if (digestItem.route) {
       routes[digestItem.route] = {
         path: digestItem.route,
-        title: `${digestItem.week} frontend dependency risk archive`,
-        description: `${digestItem.dateRange} archive for frontend npm dependency risk: ${digestItem.risky} risky updates, ${digestItem.breaking} breaking changes, ${digestItem.security} security-relevant releases, OSV/CVE checks, release notes, and recommended actions from ${digestItem.total} tracked packages.`,
+        title: `${digestItem.week} frontend npm risk archive`,
+        description: metaDescription(`${digestItem.dateRange} archive for frontend npm dependency risk: ${digestItem.risky} risky updates, ${digestItem.breaking} breaking releases, ${digestItem.security} security updates, OSV/CVE checks, and recommended actions.`),
       };
     }
   }
@@ -482,8 +482,8 @@ function buildSeoRoutes(items, routeMap, categoryMap, digest) {
   for (const route of Object.values(routeMap)) {
     routes[route.route] = {
       path: route.route,
-      title: `${route.packageName} dependency risk archive`,
-      description: `${route.packageName} npm dependency-risk archive for frontend teams tracking package releases, OSV and CVE signals, breaking changes, release notes, affected audience, and recommended update actions. ${route.description}`,
+      title: `${route.packageName} npm dependency risk archive`,
+      description: metaDescription(`${route.packageName} npm dependency risk archive for frontend teams tracking security updates, breaking releases, OSV/CVE signals, release notes, affected audience, and recommended actions.`),
     };
   }
 
@@ -491,19 +491,27 @@ function buildSeoRoutes(items, routeMap, categoryMap, digest) {
     routes[category.route] = {
       path: category.route,
       title: `${category.label} npm dependency risk`,
-      description: `${category.label} frontend npm dependency-risk directory with ${category.packageCount} tracked package archives, current release-risk pages, OSV and CVE signals, breaking-change checks, release notes, and recommended update actions. ${category.description}`,
+      description: metaDescription(`${category.label} frontend npm dependency-risk directory with ${category.packageCount} package archives, current release-risk pages, OSV/CVE signals, breaking-change checks, release notes, and recommended actions.`),
     };
   }
 
   for (const item of items) {
     routes[item.route] = {
       path: item.route,
-      title: `${item.packageName} ${item.newVersion} ${item.category.toLowerCase()} update`,
-      description: `${item.packageName} ${item.newVersion} frontend npm update: ${item.reason} OSV result: ${item.osv}. CVE signal: ${item.cve}. Recommended action: ${item.recommendedAction}`,
+      title: `${item.packageName} ${item.newVersion} npm ${item.category.toLowerCase()} update`,
+      description: metaDescription(`${item.packageName} ${item.newVersion} frontend npm update risk: ${item.reason} OSV: ${item.osv}. CVE: ${item.cve}. Recommended action: ${item.recommendedAction}`),
     };
   }
 
   return routes;
+}
+
+function metaDescription(text) {
+  const cleaned = String(text).replace(/\s+/g, " ").trim();
+  if (cleaned.length <= 230) return cleaned;
+  const sliced = cleaned.slice(0, 227);
+  const lastSpace = sliced.lastIndexOf(" ");
+  return `${sliced.slice(0, lastSpace > 160 ? lastSpace : 227).replace(/[.,;: ]+$/, "")}...`;
 }
 
 function highestSeverity(vulnerabilities) {
