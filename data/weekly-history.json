@@ -4,7 +4,7 @@
     "dateRange": "Jun 15 - Jun 21",
     "risky": 36,
     "breaking": 11,
-    "security": 5,
+    "security": 4,
     "safe": 46,
     "total": 82,
     "topSignals": [
@@ -22,15 +22,6 @@
         "route": "/package/esbuild/0.28.1",
         "risk": "security",
         "newVersion": "0.28.1",
-        "reason": "GitHub release notes mention security or vulnerability fixes.",
-        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
-        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
-      },
-      {
-        "packageName": "@angular/core",
-        "route": "/package/angular-core/22.0.1",
-        "risk": "security",
-        "newVersion": "22.0.1",
         "reason": "GitHub release notes mention security or vulnerability fixes.",
         "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
         "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
@@ -79,10 +70,19 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "tailwindcss",
+        "route": "/package/tailwindcss/4.3.1",
+        "risk": "breaking",
+        "newVersion": "4.3.1",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       }
     ],
     "route": "/weekly/2026-w25",
-    "generatedAt": "2026-06-17T16:44:38.501Z"
+    "generatedAt": "2026-06-18T16:44:09.655Z"
   },
   {
     "week": "Week 24, 2026",
