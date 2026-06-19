@@ -1,0 +1,28 @@
+name: Submit IndexNow URLs
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 15 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: dependency-risk-digest-indexnow
+  cancel-in-progress: false
+
+jobs:
+  submit-indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Submit public URLs to IndexNow
+        run: npm run submit:indexnow

@@ -4,6 +4,7 @@ const siteUrl = (process.env.SITE_URL || "https://dependency-risk-digest.vercel.
 const reportPath = process.env.GROWTH_AUDIT_REPORT_PATH || "growth-audit-report.md";
 const resultPath = process.env.GROWTH_AUDIT_RESULT_PATH || "growth-audit-result.json";
 const maxGeneratedAgeHours = Number(process.env.MAX_GENERATED_AGE_HOURS || 48);
+const indexNowKey = process.env.INDEXNOW_KEY || "24522ec422af67f4cf6e75ac7f458df6";
 
 const requiredRoutes = [
   "/weekly",
@@ -47,6 +48,7 @@ const appBundle = scriptAsset ? await fetchText(scriptAsset, "application bundle
 const sitemap = await fetchText("/sitemap.xml", "sitemap");
 const robots = await fetchText("/robots.txt", "robots.txt");
 const feed = await fetchText("/feed.xml", "rss feed");
+const indexNowKeyFile = await fetchText(`/${indexNowKey}.txt`, "IndexNow key file");
 
 check("Vercel Web Analytics tracker", () => {
   if (!scriptAsset) {
@@ -122,6 +124,16 @@ check("rss feed", () => {
   if (!feed.body.includes("Dependency Risk Digest")) fail("feed.xml does not identify Dependency Risk Digest.");
   if (!feed.body.includes("/package/")) fail("feed.xml does not include package release links.");
   if (currentCheck.failures.length === 0) pass("RSS feed is available and includes digest/package entries.");
+});
+
+check("IndexNow discovery", () => {
+  if (!indexNowKeyFile.ok) fail(`IndexNow key file returned HTTP ${indexNowKeyFile.status}.`);
+  if (indexNowKeyFile.body.trim() !== indexNowKey) {
+    fail("IndexNow key file does not contain the configured key.");
+  }
+  if (currentCheck.failures.length === 0) {
+    pass("IndexNow key file is hosted at the site root for supported search engine discovery.");
+  }
 });
 
 for (const routePath of importantMetadataRoutes) {
@@ -325,6 +337,7 @@ function buildReport(result) {
     "- Google Search Central SEO Starter Guide: useful content, clear titles, accurate descriptions, crawlable links.",
     "- Google Helpful Content guidance: content should help people first.",
     "- Bing Webmaster Guidelines: sitemap freshness, canonical URLs, internal links, and discoverable public URLs.",
+    "- IndexNow: hosted key file and URL submission can notify supported search engines when public URLs change.",
     "- Vercel Web Analytics: visitors, page views, top pages, and referrers are the traffic measurement source.",
     "",
     "## Scorecard",

@@ -26,6 +26,7 @@ Every recurring traffic review compares the site against these gates.
 | Search reporting | Google Search Console and Bing Webmaster Tools have the sitemap submitted | Search impressions and clicks are the earliest traffic signal for a new archive |
 | Crawlability | robots.txt allows crawling and links to sitemap.xml | Search engines need a clear discovery path |
 | Sitemap coverage | Sitemap includes weekly, package, category, risk, methodology, RSS, and archive routes | Bing and Google both rely on clear current URL lists |
+| Discovery acceleration | IndexNow key is hosted and the submit workflow can notify supported search engines after refreshes | Bing and other IndexNow engines can discover changed URLs faster than passive crawling |
 | Canonical URLs | Important routes have canonical URLs | Prevents route duplication and keeps signals consolidated |
 | Unique page value | Weekly, package, category, and risk pages have distinct titles, descriptions, summaries, and internal links | Avoids thin duplicate generated pages |
 | Search intent coverage | Important routes include clear frontend npm, dependency risk, security, OSV/CVE, breaking-release, and package-specific language | Search snippets need to match what developers are likely searching for |
