@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T22:47:44.820Z",
+  "generatedAt": "2026-06-19T16:15:39.861Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -111,7 +111,7 @@
     "/package/remix-run-react",
     "/package/remix-run-react/2.17.5",
     "/package/rollup",
-    "/package/rollup/4.62.0",
+    "/package/rollup/4.62.2",
     "/package/sass",
     "/package/sass/1.101.0",
     "/package/semver",

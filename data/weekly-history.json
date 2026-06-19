@@ -2,10 +2,10 @@
   {
     "week": "Week 25, 2026",
     "dateRange": "Jun 15 - Jun 21",
-    "risky": 35,
+    "risky": 34,
     "breaking": 10,
     "security": 4,
-    "safe": 47,
+    "safe": 48,
     "total": 82,
     "topSignals": [
       {
@@ -82,7 +82,7 @@
       }
     ],
     "route": "/weekly/2026-w25",
-    "generatedAt": "2026-06-18T22:47:44.820Z"
+    "generatedAt": "2026-06-19T16:15:39.861Z"
   },
   {
     "week": "Week 24, 2026",
