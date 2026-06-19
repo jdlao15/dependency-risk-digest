@@ -49,6 +49,8 @@ const sitemap = await fetchText("/sitemap.xml", "sitemap");
 const robots = await fetchText("/robots.txt", "robots.txt");
 const feed = await fetchText("/feed.xml", "rss feed");
 const indexNowKeyFile = await fetchText(`/${indexNowKey}.txt`, "IndexNow key file");
+const ogImage = await fetchBinary("/og-image.png", "Open Graph image");
+const socialImageUrl = `${siteUrl}/og-image.png`;
 
 check("Vercel Web Analytics tracker", () => {
   if (!scriptAsset) {
@@ -136,6 +138,15 @@ check("IndexNow discovery", () => {
   }
 });
 
+check("social preview image", () => {
+  if (!ogImage.ok) fail(`og-image.png returned HTTP ${ogImage.status}.`);
+  if (!ogImage.contentType.includes("image/png")) fail(`og-image.png content type is ${ogImage.contentType || "missing"}, expected image/png.`);
+  if (ogImage.byteLength < 10_000) fail(`og-image.png is only ${ogImage.byteLength} bytes, which is too small for the expected raster preview image.`);
+  if (currentCheck.failures.length === 0) {
+    pass("Open Graph preview image is hosted as a nonblank PNG at the site root.");
+  }
+});
+
 for (const routePath of importantMetadataRoutes) {
   const page = routePath === "/weekly" ? weeklyHtml : await fetchText(routePath, `${routePath} route`);
   const metadata = extractMetadata(page.body);
@@ -153,9 +164,21 @@ for (const routePath of importantMetadataRoutes) {
     if (metadata.canonical !== expectedCanonical) {
       fail(`${routePath} canonical URL is ${metadata.canonical || "missing"}, expected ${expectedCanonical}.`);
     }
+    if (metadata.ogImage !== socialImageUrl) {
+      fail(`${routePath} og:image is ${metadata.ogImage || "missing"}, expected ${socialImageUrl}.`);
+    }
+    if (metadata.twitterCard !== "summary_large_image") {
+      fail(`${routePath} twitter:card is ${metadata.twitterCard || "missing"}, expected summary_large_image.`);
+    }
+    if (metadata.twitterImage !== socialImageUrl) {
+      fail(`${routePath} twitter:image is ${metadata.twitterImage || "missing"}, expected ${socialImageUrl}.`);
+    }
+    if (!metadata.ogImageAlt || metadata.ogImageAlt.length < 20 || !metadata.twitterImageAlt || metadata.twitterImageAlt.length < 20) {
+      fail(`${routePath} social image alt text is missing or too short.`);
+    }
     if (!page.body.includes('id="route-schema"')) fail(`${routePath} has no JSON-LD route schema.`);
     if (!page.body.includes('id="route-summary"')) fail(`${routePath} has no noscript route summary.`);
-    if (currentCheck.failures.length === 0) pass(`${routePath} has title, description, canonical URL, schema, and noscript summary.`);
+    if (currentCheck.failures.length === 0) pass(`${routePath} has title, description, canonical URL, social preview metadata, schema, and noscript summary.`);
   });
 }
 
@@ -274,6 +297,37 @@ async function fetchText(routePath, name) {
   }
 }
 
+async function fetchBinary(routePath, name) {
+  const url = routePath.startsWith("http") ? routePath : `${siteUrl}${routePath}`;
+  try {
+    const response = await fetch(url, {
+      headers: {
+        "Cache-Control": "no-cache",
+        "User-Agent": "dependency-risk-digest-growth-audit",
+      },
+    });
+    const buffer = await response.arrayBuffer();
+    return {
+      ok: response.ok,
+      status: response.status,
+      url,
+      name,
+      byteLength: buffer.byteLength,
+      contentType: response.headers.get("content-type") ?? "",
+    };
+  } catch (error) {
+    return {
+      ok: false,
+      status: 0,
+      url,
+      name,
+      byteLength: 0,
+      contentType: "",
+      error: error instanceof Error ? error.message : String(error),
+    };
+  }
+}
+
 function findScriptAsset(html) {
   const match = html.match(/<script[^>]+src="([^"]+\.js)"/);
   if (!match) return "";
@@ -293,6 +347,11 @@ function extractMetadata(html) {
     title: html.match(/<title>([\s\S]*?)<\/title>/i)?.[1]?.trim() ?? "",
     description: html.match(/<meta\s+name="description"\s+content="([\s\S]*?)"\s*\/?>/i)?.[1]?.trim() ?? "",
     canonical: html.match(/<link\s+rel="canonical"\s+href="([\s\S]*?)"\s*\/?>/i)?.[1]?.trim() ?? "",
+    ogImage: html.match(/<meta\s+property="og:image"\s+content="([\s\S]*?)"\s*\/?>/i)?.[1]?.trim() ?? "",
+    ogImageAlt: html.match(/<meta\s+property="og:image:alt"\s+content="([\s\S]*?)"\s*\/?>/i)?.[1]?.trim() ?? "",
+    twitterCard: html.match(/<meta\s+name="twitter:card"\s+content="([\s\S]*?)"\s*\/?>/i)?.[1]?.trim() ?? "",
+    twitterImage: html.match(/<meta\s+name="twitter:image"\s+content="([\s\S]*?)"\s*\/?>/i)?.[1]?.trim() ?? "",
+    twitterImageAlt: html.match(/<meta\s+name="twitter:image:alt"\s+content="([\s\S]*?)"\s*\/?>/i)?.[1]?.trim() ?? "",
   };
 }
 

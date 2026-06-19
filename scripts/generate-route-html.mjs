@@ -36,6 +36,8 @@ console.log(`Generated route-specific HTML for ${Object.keys(seoRoutes).length +
 function applySeo(html, routePath, seo) {
   const canonicalPath = routePath === "/" ? "/weekly" : routePath;
   const url = `${siteUrl}${canonicalPath}`;
+  const imageUrl = `${siteUrl}/og-image.png`;
+  const imageAlt = "Dependency Risk Digest weekly frontend npm dependency-risk summary";
   const title = `${seo.title} | Dependency Risk Digest`;
   const description = seo.description;
   const schemaItems = [{
@@ -44,6 +46,7 @@ function applySeo(html, routePath, seo) {
     name: title,
     url,
     description,
+    image: imageUrl,
     isPartOf: {
       "@type": "WebSite",
       name: "Dependency Risk Digest",
@@ -72,8 +75,13 @@ function applySeo(html, routePath, seo) {
     .replace(/<meta\s+property="og:title"\s+content="[\s\S]*?"\s*\/>/i, meta("property", "og:title", title))
     .replace(/<meta\s+property="og:description"\s+content="[\s\S]*?"\s*\/>/i, meta("property", "og:description", description))
     .replace(/<meta\s+property="og:url"\s+content="[\s\S]*?"\s*\/>/i, meta("property", "og:url", url))
+    .replace(/<meta\s+property="og:image"\s+content="[\s\S]*?"\s*\/>/i, meta("property", "og:image", imageUrl))
+    .replace(/<meta\s+property="og:image:alt"\s+content="[\s\S]*?"\s*\/>/i, meta("property", "og:image:alt", imageAlt))
+    .replace(/<meta\s+name="twitter:card"\s+content="[\s\S]*?"\s*\/>/i, meta("name", "twitter:card", "summary_large_image"))
     .replace(/<meta\s+name="twitter:title"\s+content="[\s\S]*?"\s*\/>/i, meta("name", "twitter:title", title))
     .replace(/<meta\s+name="twitter:description"\s+content="[\s\S]*?"\s*\/>/i, meta("name", "twitter:description", description))
+    .replace(/<meta\s+name="twitter:image"\s+content="[\s\S]*?"\s*\/>/i, meta("name", "twitter:image", imageUrl))
+    .replace(/<meta\s+name="twitter:image:alt"\s+content="[\s\S]*?"\s*\/>/i, meta("name", "twitter:image:alt", imageAlt))
     .replace(/<link\s+rel="canonical"\s+href="[\s\S]*?"\s*\/>/i, `<link rel="canonical" href="${escapeAttribute(url)}" />`)
     .replace(
       /<script id="route-schema" type="application\/ld\+json">[\s\S]*?<\/script>/i,
@@ -110,6 +118,7 @@ function buildArticleSchema(routePath, title, description, url) {
     url,
     datePublished: release?.releaseDate ?? digestData.generatedAt,
     dateModified: digestData.generatedAt,
+    image: `${siteUrl}/og-image.png`,
     author: {
       "@type": "Organization",
       name: "Dependency Risk Digest",

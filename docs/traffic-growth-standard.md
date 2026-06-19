@@ -8,6 +8,7 @@ This is the recurring, source-backed standard for deciding whether Dependency Ri
 - Google Search Central Helpful Content guidance: content should primarily help people, not exist only to manipulate search ranking.
 - Bing Webmaster Guidelines: keep URLs discoverable with XML sitemaps, crawlable internal links, canonical URLs, current site structure, and freshness signals.
 - Vercel Web Analytics: use visitors, page views, top pages, referrers, locations, devices, and browsers to understand whether people are visiting and where they come from.
+- Open Graph and X Card metadata: shared links should include a clear title, description, canonical URL, and large preview image so public posts are understandable before a click.
 
 Source URLs:
 
@@ -15,6 +16,8 @@ Source URLs:
 - https://developers.google.com/search/docs/fundamentals/creating-helpful-content
 - https://www.bing.com/webmasters/help/bing-webmaster-guidelines-30fba23a
 - https://vercel.com/docs/analytics
+- https://ogp.me/
+- https://developer.x.com/en/docs/x-for-websites/cards/overview/abouts-cards
 
 ## Weekly Scorecard
 
@@ -28,6 +31,7 @@ Every recurring traffic review compares the site against these gates.
 | Sitemap coverage | Sitemap includes weekly, package, category, risk, methodology, RSS, and archive routes | Bing and Google both rely on clear current URL lists |
 | Discovery acceleration | IndexNow key is hosted and the submit workflow can notify supported search engines after refreshes | Bing and other IndexNow engines can discover changed URLs faster than passive crawling |
 | Canonical URLs | Important routes have canonical URLs | Prevents route duplication and keeps signals consolidated |
+| Social preview readiness | Important routes publish Open Graph and X Card image metadata, and the image is hosted as a nonblank raster PNG | External shares need a clear public preview to earn clicks from GitHub, Reddit, LinkedIn, chats, and developer communities |
 | Unique page value | Weekly, package, category, and risk pages have distinct titles, descriptions, summaries, and internal links | Avoids thin duplicate generated pages |
 | Search intent coverage | Important routes include clear frontend npm, dependency risk, security, OSV/CVE, breaking-release, and package-specific language | Search snippets need to match what developers are likely searching for |
 | Freshness | Generated content timestamp is inside the expected refresh window | Dependency-risk content loses value if it goes stale |
