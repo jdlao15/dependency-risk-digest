@@ -2,10 +2,10 @@
   {
     "week": "Week 25, 2026",
     "dateRange": "Jun 15 - Jun 21",
-    "risky": 34,
-    "breaking": 10,
+    "risky": 35,
+    "breaking": 11,
     "security": 4,
-    "safe": 48,
+    "safe": 47,
     "total": 82,
     "topSignals": [
       {
@@ -45,6 +45,24 @@
         "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
       },
       {
+        "packageName": "uuid",
+        "route": "/package/uuid/14.0.1",
+        "risk": "breaking",
+        "newVersion": "14.0.1",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "nanoid",
+        "route": "/package/nanoid/5.1.15",
+        "risk": "breaking",
+        "newVersion": "5.1.15",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
         "packageName": "astro",
         "route": "/package/astro/6.4.8",
         "risk": "breaking",
@@ -61,28 +79,10 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
-      },
-      {
-        "packageName": "vitest",
-        "route": "/package/vitest/4.1.9",
-        "risk": "breaking",
-        "newVersion": "4.1.9",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
-      },
-      {
-        "packageName": "tailwindcss",
-        "route": "/package/tailwindcss/4.3.1",
-        "risk": "breaking",
-        "newVersion": "4.3.1",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       }
     ],
     "route": "/weekly/2026-w25",
-    "generatedAt": "2026-06-19T16:15:39.861Z"
+    "generatedAt": "2026-06-20T15:16:34.961Z"
   },
   {
     "week": "Week 24, 2026",
