@@ -1,5 +1,90 @@
 [
   {
+    "week": "Week 26, 2026",
+    "dateRange": "Jun 22 - Jun 28",
+    "risky": 34,
+    "breaking": 10,
+    "security": 4,
+    "safe": 48,
+    "total": 82,
+    "topSignals": [
+      {
+        "packageName": "axios",
+        "route": "/package/axios/1.18.0",
+        "risk": "security",
+        "newVersion": "1.18.0",
+        "reason": "GitHub release notes mention security or vulnerability fixes.",
+        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
+        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
+      },
+      {
+        "packageName": "esbuild",
+        "route": "/package/esbuild/0.28.1",
+        "risk": "security",
+        "newVersion": "0.28.1",
+        "reason": "GitHub release notes mention security or vulnerability fixes.",
+        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
+        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
+      },
+      {
+        "packageName": "ws",
+        "route": "/package/ws/8.21.0",
+        "risk": "security",
+        "newVersion": "8.21.0",
+        "reason": "GitHub release notes mention security or vulnerability fixes.",
+        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
+        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
+      },
+      {
+        "packageName": "npm-run-all",
+        "route": "/package/npm-run-all/4.1.5",
+        "risk": "security",
+        "newVersion": "4.1.5",
+        "reason": "GitHub release notes mention security or vulnerability fixes.",
+        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
+        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
+      },
+      {
+        "packageName": "uuid",
+        "route": "/package/uuid/14.0.1",
+        "risk": "breaking",
+        "newVersion": "14.0.1",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "nanoid",
+        "route": "/package/nanoid/5.1.15",
+        "risk": "breaking",
+        "newVersion": "5.1.15",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "react-router-dom",
+        "route": "/package/react-router-dom/7.18.0",
+        "risk": "breaking",
+        "newVersion": "7.18.0",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "vitest",
+        "route": "/package/vitest/4.1.9",
+        "risk": "breaking",
+        "newVersion": "4.1.9",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      }
+    ],
+    "route": "/weekly/2026-w26",
+    "generatedAt": "2026-06-22T15:51:01.661Z"
+  },
+  {
     "week": "Week 25, 2026",
     "dateRange": "Jun 15 - Jun 21",
     "risky": 35,

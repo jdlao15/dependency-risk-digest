@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T15:16:34.961Z",
+  "generatedAt": "2026-06-22T15:51:01.661Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -15,7 +15,7 @@
     "/package/apollo-client",
     "/package/apollo-client/4.2.3",
     "/package/astro",
-    "/package/astro/6.4.8",
+    "/package/astro/7.0.0",
     "/package/autoprefixer",
     "/package/autoprefixer/10.5.0",
     "/package/axios",
@@ -181,6 +181,7 @@
     "/weekly",
     "/weekly/2026-w23",
     "/weekly/2026-w24",
-    "/weekly/2026-w25"
+    "/weekly/2026-w25",
+    "/weekly/2026-w26"
   ]
 }
