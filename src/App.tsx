@@ -184,6 +184,9 @@ function Header({
             {label}
           </InternalLink>
         ))}
+        <a className="nav-link" href="/feed.xml">
+          RSS feed
+        </a>
       </nav>
       <label className="global-search">
         <span>Search</span>
@@ -327,6 +330,9 @@ function ContentGrowthStrip({ navigate }: { navigate: (path: string) => void }) 
         <InternalLink path="/packages" navigate={navigate}>
           React, Vite, Next.js, TypeScript, and Storybook package archives
         </InternalLink>
+        <a href="/feed.xml">
+          Free RSS feed for new dependency-risk updates
+        </a>
       </div>
     </section>
   );
@@ -439,6 +445,7 @@ function ArchivePage(props: {
         <InternalLink path="/risk/breaking" navigate={navigate}>Breaking changes</InternalLink>
         <InternalLink path="/risk/review" navigate={navigate}>Updates to review</InternalLink>
         <InternalLink path="/methodology" navigate={navigate}>Risk methodology</InternalLink>
+        <a href="/feed.xml">RSS feed</a>
       </section>
     </>
   );

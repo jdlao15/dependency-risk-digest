@@ -213,13 +213,14 @@ check("internal discovery links", () => {
     "/risk/review",
     "/methodology",
     "/package/react",
+    "/feed.xml",
   ];
   for (const linkText of requiredLinkTexts) {
     if (!weeklyHtml.body.includes(linkText) && !appBundle.body.includes(linkText)) {
       fail(`Weekly route or app bundle does not include ${linkText}.`);
     }
   }
-  if (currentCheck.failures.length === 0) pass("Key package, risk, methodology, and directory links are present.");
+  if (currentCheck.failures.length === 0) pass("Key package, risk, methodology, RSS feed, and directory links are present.");
 });
 
 warn(

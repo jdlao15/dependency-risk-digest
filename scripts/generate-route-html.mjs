@@ -201,6 +201,7 @@ function buildNoScriptSummary(routePath, title, description, breadcrumbs) {
     { label: "Frontend package directory", href: "/packages" },
     { label: "Security updates", href: "/risk/security" },
     { label: "Breaking changes", href: "/risk/breaking" },
+    { label: "RSS feed", href: "/feed.xml" },
     ...(packageInfo?.areaSlug ? [{
       label: packageInfo.areaLabel,
       href: `/category/${packageInfo.areaSlug}`,

@@ -36,6 +36,7 @@ Every recurring traffic review compares the site against these gates.
 | Search intent coverage | Important routes include clear frontend npm, dependency risk, security, OSV/CVE, breaking-release, and package-specific language | Search snippets need to match what developers are likely searching for |
 | Freshness | Generated content timestamp is inside the expected refresh window | Dependency-risk content loses value if it goes stale |
 | Internal linking | Important pages link across weekly, package, category, risk, and methodology routes | Helps readers and crawlers move through the archive |
+| Follow path | The public UI links to the free RSS feed | Gives repeat readers a no-cost way to follow updates without a newsletter platform |
 | No paid-tool dependency | Measurement and growth review work without paid services | The project must stay owner-light until revenue exists |
 
 ## Traffic Decision Rules
