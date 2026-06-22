@@ -5,6 +5,7 @@ const reportPath = process.env.GROWTH_AUDIT_REPORT_PATH || "growth-audit-report.
 const resultPath = process.env.GROWTH_AUDIT_RESULT_PATH || "growth-audit-result.json";
 const maxGeneratedAgeHours = Number(process.env.MAX_GENERATED_AGE_HOURS || 48);
 const indexNowKey = process.env.INDEXNOW_KEY || "24522ec422af67f4cf6e75ac7f458df6";
+const searchCopyOverrides = await readJson("data/search-copy-overrides.json", []);
 
 const requiredRoutes = [
   "/weekly",
@@ -205,6 +206,26 @@ check("metadata uniqueness", () => {
   if (currentCheck.failures.length === 0) pass("Important routes have unique titles and meta descriptions.");
 });
 
+await checkAsync("query-backed copy overrides", async () => {
+  const overrides = Array.isArray(searchCopyOverrides) ? searchCopyOverrides : [];
+  for (const override of overrides) {
+    if (!override?.path || !override?.title || !override?.description) continue;
+    const page = await fetchText(override.path, `${override.path} query-backed copy override`);
+    const metadata = extractMetadata(page.body);
+    const expectedTitle = `${override.title} | Dependency Risk Digest`;
+    if (!page.ok) fail(`${override.path} returned HTTP ${page.status}.`);
+    if (metadata.title !== expectedTitle) {
+      fail(`${override.path} title is ${metadata.title || "missing"}, expected ${expectedTitle}.`);
+    }
+    if (metadata.description !== override.description) {
+      fail(`${override.path} description does not match the validated GSC-backed copy override.`);
+    }
+  }
+  if (currentCheck.failures.length === 0) {
+    pass(`Validated ${overrides.length} GSC query-backed title/description override${overrides.length === 1 ? "" : "s"}.`);
+  }
+});
+
 check("internal discovery links", () => {
   const requiredLinkTexts = [
     "/packages",
@@ -251,7 +272,18 @@ console.log(`Growth audit passed for ${siteUrl}. See ${reportPath}.`);
 
 function check(name, fn) {
   currentCheck = { name, status: "pass", details: [], failures: [] };
-  fn();
+  const result = fn();
+  if (result && typeof result.then === "function") {
+    throw new Error(`Check ${name} returned a promise; use checkAsync instead.`);
+  }
+  if (currentCheck.failures.length > 0) currentCheck.status = "fail";
+  checks.push(currentCheck);
+  currentCheck = null;
+}
+
+async function checkAsync(name, fn) {
+  currentCheck = { name, status: "pass", details: [], failures: [] };
+  await fn();
   if (currentCheck.failures.length > 0) currentCheck.status = "fail";
   checks.push(currentCheck);
   currentCheck = null;
@@ -295,6 +327,14 @@ async function fetchText(routePath, name) {
       name,
       error: error instanceof Error ? error.message : String(error),
     };
+  }
+}
+
+async function readJson(filePath, fallback) {
+  try {
+    return JSON.parse(await fs.readFile(filePath, "utf8"));
+  } catch {
+    return fallback;
   }
 }
 

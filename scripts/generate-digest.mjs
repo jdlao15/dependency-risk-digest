@@ -7,6 +7,7 @@ const outputPath = path.join(root, "src", "generatedDigest.ts");
 const jsonOutputPath = path.join(root, "data", "latest-digest.json");
 const sitemapPathsPath = path.join(root, "data", "sitemap-paths.json");
 const weeklyHistoryPath = path.join(root, "data", "weekly-history.json");
+const searchCopyOverridesPath = path.join(root, "data", "search-copy-overrides.json");
 const githubCachePath = path.join(root, ".cache", "digest", "github-releases.json");
 const registryBase = "https://registry.npmjs.org";
 const osvQueryUrl = "https://api.osv.dev/v1/query";
@@ -54,6 +55,7 @@ const coverageAreas = {
 
 const today = new Date();
 const packageList = JSON.parse(await fs.readFile(packageListPath, "utf8"));
+const searchCopyOverrides = await readJson(searchCopyOverridesPath, []);
 const githubCache = await readJson(githubCachePath, {});
 const releases = [];
 const failures = [];
@@ -503,7 +505,26 @@ function buildSeoRoutes(items, routeMap, categoryMap, digest) {
     };
   }
 
+  return applySearchCopyOverrides(routes);
+}
+
+function applySearchCopyOverrides(routes) {
+  if (!Array.isArray(searchCopyOverrides)) return routes;
+  for (const override of searchCopyOverrides) {
+    if (!override?.path || !routes[override.path]) continue;
+    routes[override.path] = {
+      ...routes[override.path],
+      title: metaTitle(override.title ?? routes[override.path].title),
+      description: metaDescription(override.description ?? routes[override.path].description),
+    };
+  }
   return routes;
+}
+
+function metaTitle(text) {
+  const cleaned = String(text).replace(/\s+/g, " ").trim();
+  if (cleaned.length <= 82) return cleaned;
+  return cleaned.slice(0, 82).replace(/[.,;: ]+$/, "");
 }
 
 function metaDescription(text) {

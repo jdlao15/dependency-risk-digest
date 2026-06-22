@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T15:51:01.661Z",
+  "generatedAt": "2026-06-22T16:31:32.639Z",
   "weeklyDigest": {
     "week": "Week 26, 2026",
     "dateRange": "Jun 22 - Jun 28",
@@ -93,7 +93,7 @@
         }
       ],
       "route": "/weekly/2026-w26",
-      "generatedAt": "2026-06-22T15:51:01.661Z"
+      "generatedAt": "2026-06-22T16:31:32.639Z"
     },
     {
       "week": "Week 25, 2026",
@@ -535,7 +535,7 @@
       "githubReleaseTag": "v14.0.1",
       "githubReleasePublishedAt": "2026-06-20T11:55:33Z",
       "releaseNotesExcerpt": "14.0.1 (2026-06-20) Bug Fixes add types condition to node export for moduleResolution bundler (#961) (27ffae5)",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
       "route": "/package/uuid/14.0.1",
       "sourceLinks": [
         {
@@ -575,7 +575,7 @@
       "githubReleaseTag": "5.1.15",
       "githubReleasePublishedAt": "2026-06-20T13:40:09Z",
       "releaseNotesExcerpt": "Fixed random pool corruption on big ID sizes.",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
       "route": "/package/nanoid/5.1.15",
       "sourceLinks": [
         {
@@ -931,7 +931,7 @@
       "githubReleaseTag": "v7.80.0",
       "githubReleasePublishedAt": "2026-06-20T01:11:33Z",
       "releaseNotesExcerpt": "feat: disable useFieldArray fields (#13535) perf: make rhf more performant (#13524) fix(deepEqual): empty array and empty plain object should not be equal (#13533) thanks to @JSap0914",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
       "route": "/package/react-hook-form/7.80.0",
       "sourceLinks": [
         {
@@ -1727,7 +1727,7 @@
       "githubReleaseTag": "astro@7.0.0",
       "githubReleasePublishedAt": "2026-06-22T10:10:26Z",
       "releaseNotesExcerpt": "Major Changes #15819 cafec4e Thanks @delucis! - Upgrade to Vite v8 #16965 57ead0d Thanks @Princesseuh! - Makes 'jsx' the default value for compressHTML Astro now strips whitespace from your HTML using JSX rules by default, the same way frameworks like React do. Whitespace and lin",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
       "route": "/package/astro/7.0.0",
       "sourceLinks": [
         {
@@ -1741,6 +1741,46 @@
         {
           "label": "GitHub release",
           "href": "https://github.com/withastro/astro/releases/tag/astro%407.0.0"
+        }
+      ]
+    },
+    {
+      "id": "swc-core-1-15-43",
+      "packageName": "@swc/core",
+      "packageSlug": "swc-core",
+      "description": "JavaScript and TypeScript compiler",
+      "oldVersion": "1.15.43-nightly-20260622.1",
+      "newVersion": "1.15.43",
+      "releaseDate": "2026-06-22",
+      "publishedAgo": "published today",
+      "risk": "low",
+      "category": "Low impact",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: v1.15.43.",
+      "githubReleaseTitle": "v1.15.43",
+      "githubReleaseUrl": "https://github.com/swc-project/swc/releases/tag/v1.15.43",
+      "githubReleaseTag": "v1.15.43",
+      "githubReleasePublishedAt": "2026-06-22T15:29:29Z",
+      "releaseNotesExcerpt": "",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
+      "route": "/package/swc-core/1.15.43",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/@swc/core"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/swc-project/swc"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/swc-project/swc/releases/tag/v1.15.43"
         }
       ]
     },
@@ -1767,7 +1807,7 @@
       "githubReleaseTag": "v4.62.2",
       "githubReleasePublishedAt": "2026-06-19T14:57:25Z",
       "releaseNotesExcerpt": "4.62.2 _2026-06-19_ Bug Fixes Do not add spurious side-effect-free external imports to chunks when using minChunkSize (#6411) Pull Requests #6411: Skip side-effect-free external imports when hoisting is disabled (@morgan-coded, @lukastaegert) #6416: refactor(rust/parser_ast): ext",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
       "route": "/package/rollup/4.62.2",
       "sourceLinks": [
         {
@@ -1807,7 +1847,7 @@
       "githubReleaseTag": "v7.8.5",
       "githubReleasePublishedAt": "2026-06-19T18:32:05Z",
       "releaseNotesExcerpt": "7.8.5 (2026-06-19) Bug Fixes 9c8692a #878 include prereleases in tilde range lower bound with includePrerelease (#878) (@chatman-media)",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag.",
+      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
       "route": "/package/semver/7.8.5",
       "sourceLinks": [
         {
@@ -2373,46 +2413,6 @@
         {
           "label": "GitHub release",
           "href": "https://github.com/vercel/next.js/releases/tag/v16.2.9"
-        }
-      ]
-    },
-    {
-      "id": "swc-core-1-15-41",
-      "packageName": "@swc/core",
-      "packageSlug": "swc-core",
-      "description": "JavaScript and TypeScript compiler",
-      "oldVersion": "1.15.41-nightly-20260609.1",
-      "newVersion": "1.15.41",
-      "releaseDate": "2026-06-09",
-      "publishedAgo": "published 12 days ago",
-      "risk": "low",
-      "category": "Low impact",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Patch release with no OSV match.",
-      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "GitHub release note found: v1.15.41.",
-      "githubReleaseTitle": "v1.15.41",
-      "githubReleaseUrl": "https://github.com/swc-project/swc/releases/tag/v1.15.41",
-      "githubReleaseTag": "v1.15.41",
-      "githubReleasePublishedAt": "2026-06-09T15:39:22Z",
-      "releaseNotesExcerpt": "",
-      "releaseNotesStatus": "Matched GitHub release by npm version tag. Cached from an earlier generator run.",
-      "route": "/package/swc-core/1.15.41",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/@swc/core"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/swc-project/swc"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/swc-project/swc/releases/tag/v1.15.41"
         }
       ]
     },
@@ -3794,7 +3794,7 @@
       "packageName": "@swc/core",
       "description": "JavaScript and TypeScript compiler",
       "route": "/package/swc-core",
-      "latestReleaseRoute": "/package/swc-core/1.15.41",
+      "latestReleaseRoute": "/package/swc-core/1.15.43",
       "areaSlug": "build-tooling",
       "areaLabel": "Build Tooling"
     },
@@ -4404,7 +4404,7 @@
           "packageName": "@swc/core",
           "description": "JavaScript and TypeScript compiler",
           "route": "/package/swc-core",
-          "latestReleaseRoute": "/package/swc-core/1.15.41",
+          "latestReleaseRoute": "/package/swc-core/1.15.43",
           "areaSlug": "build-tooling",
           "areaLabel": "Build Tooling"
         },
@@ -5514,8 +5514,8 @@
     },
     "/package/ws/8.21.0": {
       "path": "/package/ws/8.21.0",
-      "title": "ws 8.21.0 npm security update",
-      "description": "ws 8.21.0 frontend npm update risk: GitHub release notes mention security or vulnerability fixes. OSV: No OSV match. CVE: No CVE match. Recommended action: Update recommended. Review the GitHub release notes and prioritize..."
+      "title": "ws 8.21.0 maxBufferedChunks and maxFragments Security Update",
+      "description": "ws 8.21.0 added maxBufferedChunks and maxFragments and fixed a remote memory exhaustion DoS risk. See OSV/CVE status and recommended update action."
     },
     "/package/npm-run-all/4.1.5": {
       "path": "/package/npm-run-all/4.1.5",
@@ -5677,6 +5677,11 @@
       "title": "astro 7.0.0 npm low impact update",
       "description": "astro 7.0.0 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
+    "/package/swc-core/1.15.43": {
+      "path": "/package/swc-core/1.15.43",
+      "title": "@swc/core 1.15.43 npm low impact update",
+      "description": "@swc/core 1.15.43 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
     "/package/rollup/4.62.2": {
       "path": "/package/rollup/4.62.2",
       "title": "rollup 4.62.2 npm low impact update",
@@ -5756,11 +5761,6 @@
       "path": "/package/next/16.2.9",
       "title": "next 16.2.9 npm low impact update",
       "description": "next 16.2.9 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-    },
-    "/package/swc-core/1.15.41": {
-      "path": "/package/swc-core/1.15.41",
-      "title": "@swc/core 1.15.41 npm low impact update",
-      "description": "@swc/core 1.15.41 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/prettier/3.8.4": {
       "path": "/package/prettier/3.8.4",

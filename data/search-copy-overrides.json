@@ -1,0 +1,15 @@
+[
+  {
+    "path": "/package/ws/8.21.0",
+    "gscQuery": "\"maxbufferedchunks\" \"maxfragments\" ws npm documentation",
+    "title": "ws 8.21.0 maxBufferedChunks and maxFragments Security Update",
+    "description": "ws 8.21.0 added maxBufferedChunks and maxFragments and fixed a remote memory exhaustion DoS risk. See OSV/CVE status and recommended update action.",
+    "sources": [
+      "https://github.com/websockets/ws/releases",
+      "https://github.com/websockets/ws/blob/master/doc/ws.md",
+      "https://developers.google.com/search/docs/appearance/snippet",
+      "https://developers.google.com/search/docs/appearance/title-link",
+      "https://yoast.com/meta-descriptions/"
+    ]
+  }
+]
