@@ -499,7 +499,7 @@ function ReleaseTable({
               </td>
               <td>
                 <strong>{release.newVersion}</strong>
-                <span className="new-tag">new</span>
+                {release.isRecent && <span className="new-tag">new</span>}
                 <small>{release.publishedAgo}</small>
               </td>
               <td>

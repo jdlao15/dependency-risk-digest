@@ -14,6 +14,7 @@ export type ReleaseItem = {
   newVersion: string;
   releaseDate: string;
   publishedAgo: string;
+  isRecent: boolean;
   risk: RiskLevel;
   category: "Security" | "Breaking" | "Review" | "Low impact";
   osv: string;

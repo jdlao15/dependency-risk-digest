@@ -2,87 +2,87 @@
   {
     "week": "Week 26, 2026",
     "dateRange": "Jun 22 - Jun 28",
-    "risky": 34,
-    "breaking": 11,
-    "security": 3,
-    "safe": 48,
+    "risky": 21,
+    "breaking": 0,
+    "security": 0,
+    "safe": 61,
     "total": 82,
     "topSignals": [
       {
-        "packageName": "esbuild",
-        "route": "/package/esbuild/0.28.1",
-        "risk": "security",
-        "newVersion": "0.28.1",
-        "reason": "GitHub release notes mention security or vulnerability fixes.",
-        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
-        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
+        "packageName": "vite",
+        "route": "/package/vite/8.1.0",
+        "risk": "review",
+        "newVersion": "8.1.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "ws",
-        "route": "/package/ws/8.21.0",
-        "risk": "security",
-        "newVersion": "8.21.0",
-        "reason": "GitHub release notes mention security or vulnerability fixes.",
-        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
-        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
-      },
-      {
-        "packageName": "npm-run-all",
-        "route": "/package/npm-run-all/4.1.5",
-        "risk": "security",
-        "newVersion": "4.1.5",
-        "reason": "GitHub release notes mention security or vulnerability fixes.",
-        "recommendedAction": "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
-        "whyThisMatters": "Security language in release notes is a review signal even before OSV or CVE data appears."
+        "packageName": "framer-motion",
+        "route": "/package/framer-motion/12.41.0",
+        "risk": "review",
+        "newVersion": "12.41.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
         "packageName": "pnpm",
         "route": "/package/pnpm/11.9.0",
-        "risk": "breaking",
+        "risk": "review",
         "newVersion": "11.9.0",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "uuid",
-        "route": "/package/uuid/14.0.1",
-        "risk": "breaking",
-        "newVersion": "14.0.1",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+        "packageName": "@typescript-eslint/parser",
+        "route": "/package/typescript-eslint-parser/8.62.0",
+        "risk": "review",
+        "newVersion": "8.62.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "nanoid",
-        "route": "/package/nanoid/5.1.15",
-        "risk": "breaking",
-        "newVersion": "5.1.15",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+        "packageName": "@typescript-eslint/eslint-plugin",
+        "route": "/package/typescript-eslint-eslint-plugin/8.62.0",
+        "risk": "review",
+        "newVersion": "8.62.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "react-hook-form",
+        "route": "/package/react-hook-form/7.80.0",
+        "risk": "review",
+        "newVersion": "7.80.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.21.0",
+        "risk": "review",
+        "newVersion": "1.21.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
         "packageName": "react-router-dom",
         "route": "/package/react-router-dom/7.18.0",
-        "risk": "breaking",
+        "risk": "review",
         "newVersion": "7.18.0",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
-      },
-      {
-        "packageName": "vitest",
-        "route": "/package/vitest/4.1.9",
-        "risk": "breaking",
-        "newVersion": "4.1.9",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w26",
-    "generatedAt": "2026-06-23T16:07:03.984Z"
+    "generatedAt": "2026-06-23T16:32:20.887Z"
   },
   {
     "week": "Week 25, 2026",

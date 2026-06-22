@@ -9,6 +9,7 @@ const sitemapPathsPath = path.join(root, "data", "sitemap-paths.json");
 const weeklyHistoryPath = path.join(root, "data", "weekly-history.json");
 const searchCopyOverridesPath = path.join(root, "data", "search-copy-overrides.json");
 const githubCachePath = path.join(root, ".cache", "digest", "github-releases.json");
+const GITHUB_CACHE_SCHEMA = 2;
 const registryBase = "https://registry.npmjs.org";
 const osvQueryUrl = "https://api.osv.dev/v1/query";
 const githubApiBase = "https://api.github.com";
@@ -56,7 +57,11 @@ const coverageAreas = {
 const today = new Date();
 const packageList = JSON.parse(await fs.readFile(packageListPath, "utf8"));
 const searchCopyOverrides = await readJson(searchCopyOverridesPath, []);
-const githubCache = await readJson(githubCachePath, {});
+const githubCacheRaw = await readJson(githubCachePath, {});
+const githubCache =
+  githubCacheRaw && githubCacheRaw.schema === GITHUB_CACHE_SCHEMA && githubCacheRaw.entries
+    ? githubCacheRaw.entries
+    : {};
 const releases = [];
 const failures = [];
 
@@ -107,7 +112,7 @@ await fs.writeFile(
 await fs.writeFile(sitemapPathsPath, JSON.stringify({ generatedAt, paths: sitemapPaths }, null, 2));
 await fs.writeFile(weeklyHistoryPath, JSON.stringify(digestArchive, null, 2));
 await fs.mkdir(path.dirname(githubCachePath), { recursive: true });
-await fs.writeFile(githubCachePath, JSON.stringify(githubCache, null, 2));
+await fs.writeFile(githubCachePath, JSON.stringify({ schema: GITHUB_CACHE_SCHEMA, entries: githubCache }, null, 2));
 
 console.log(`Generated ${releases.length} releases at ${outputPath}`);
 if (failures.length > 0) {
@@ -139,11 +144,13 @@ async function buildRelease(trackedPackage, packument) {
     throw new Error("missing latest version metadata");
   }
 
-  const sortedVersions = versions
+  const previousVersion = versions
     .filter((version) => packument.time?.[version])
-    .sort((a, b) => Date.parse(packument.time[a]) - Date.parse(packument.time[b]));
-  const latestIndex = sortedVersions.indexOf(latestVersion);
-  const oldVersion = latestIndex > 0 ? sortedVersions[latestIndex - 1] : latestVersion;
+    .filter((version) => !isPrerelease(version))
+    .filter((version) => compareSemver(version, latestVersion) < 0)
+    .sort(compareSemver)
+    .pop();
+  const oldVersion = previousVersion ?? latestVersion;
   const latestMeta = packument.versions[latestVersion];
   const releaseDate = packument.time?.[latestVersion] ?? packument.time?.modified ?? today.toISOString();
   const osvResult = await fetchOsv(trackedPackage.name, latestVersion);
@@ -169,6 +176,7 @@ async function buildRelease(trackedPackage, packument) {
     newVersion: latestVersion,
     releaseDate: releaseDate.slice(0, 10),
     publishedAgo: publishedAgo(releaseDate),
+    isRecent: daysSince(releaseDate) <= 30,
     risk: score.risk,
     category: score.category,
     osv: osvResult.vulnerabilityCount > 0 ? `${osvResult.vulnerabilityCount} OSV match${osvResult.vulnerabilityCount === 1 ? "" : "es"}` : "No OSV match",
@@ -240,16 +248,20 @@ async function fetchGitHubRelease(repo, version) {
   }
 
   const exact = releases.find((release) => tagMatchesVersion(release.tag_name, version));
-  const candidate = exact ?? releases[0];
+  if (!exact) {
+    const release = missingGitHubRelease(
+      "No GitHub release matched this exact npm version tag; release notes are not attributed to this version.",
+    );
+    githubCache[cacheKey] = release;
+    return release;
+  }
   const release = {
-    title: asciiText(candidate.name || candidate.tag_name || "GitHub release"),
-    url: candidate.html_url || "",
-    tag: asciiText(candidate.tag_name || ""),
-    publishedAt: candidate.published_at || candidate.created_at || "",
-    notesExcerpt: excerptMarkdown(candidate.body || ""),
-    status: exact
-      ? "Matched GitHub release by npm version tag."
-      : "Using latest GitHub release because no exact version tag matched.",
+    title: asciiText(exact.name || exact.tag_name || "GitHub release"),
+    url: exact.html_url || "",
+    tag: asciiText(exact.tag_name || ""),
+    publishedAt: exact.published_at || exact.created_at || "",
+    notesExcerpt: excerptMarkdown(exact.body || ""),
+    status: "Matched GitHub release by exact npm version tag.",
   };
   githubCache[cacheKey] = release;
   return release;
@@ -298,15 +310,6 @@ function scoreRelease(oldVersion, newVersion, osvResult, githubRelease) {
       recommendedAction: `Update recommended. Review advisory links and upgrade through the normal security lane.${releaseNotesHint}`,
     };
   }
-  if (securityNotes) {
-    return {
-      risk: "security",
-      category: "Security",
-      reason: "GitHub release notes mention security or vulnerability fixes.",
-      whyThisMatters: "Security language in release notes is a review signal even before OSV or CVE data appears.",
-      recommendedAction: "Update recommended. Review the GitHub release notes and prioritize this package in the security lane.",
-    };
-  }
   if (majorChanged) {
     return {
       risk: "breaking",
@@ -314,6 +317,15 @@ function scoreRelease(oldVersion, newVersion, osvResult, githubRelease) {
       reason: "Major version release detected.",
       whyThisMatters: "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds.",
       recommendedAction: `Review changes before updating. Test in staging before merging.${releaseNotesHint}`,
+    };
+  }
+  if (securityNotes) {
+    return {
+      risk: "review",
+      category: "Review",
+      reason: "Release notes mention security language, but no OSV or CVE match was found.",
+      whyThisMatters: "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it.",
+      recommendedAction: "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
     };
   }
   if (minorChanged) {
@@ -686,6 +698,35 @@ function majorOf(version) {
 
 function minorOf(version) {
   return Number.parseInt(String(version).split(".")[1] ?? "0", 10);
+}
+
+function isPrerelease(version) {
+  return /[-+]/.test(String(version));
+}
+
+function parseSemver(version) {
+  const core = String(version).split(/[-+]/)[0];
+  const [major, minor, patch] = core.split(".");
+  return [
+    Number.parseInt(major ?? "0", 10) || 0,
+    Number.parseInt(minor ?? "0", 10) || 0,
+    Number.parseInt(patch ?? "0", 10) || 0,
+  ];
+}
+
+function compareSemver(a, b) {
+  const pa = parseSemver(a);
+  const pb = parseSemver(b);
+  for (let index = 0; index < 3; index += 1) {
+    if (pa[index] !== pb[index]) return pa[index] - pb[index];
+  }
+  return 0;
+}
+
+function daysSince(dateString) {
+  const date = new Date(dateString);
+  if (Number.isNaN(date.getTime())) return Number.POSITIVE_INFINITY;
+  return Math.max(0, Math.floor((today.getTime() - date.getTime()) / 86_400_000));
 }
 
 function riskWeight(risk) {
