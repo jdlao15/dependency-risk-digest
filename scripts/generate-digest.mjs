@@ -295,7 +295,7 @@ function scoreRelease(oldVersion, newVersion, osvResult, githubRelease) {
   if (critical) {
     return {
       risk: "critical",
-      category: "Security",
+      category: "Verified vulnerability",
       reason: "Critical OSV vulnerability signal found for this release.",
       whyThisMatters: "Critical vulnerability signals can affect production applications or build systems with little warning.",
       recommendedAction: `Update recommended. Prioritize this package before routine maintenance.${releaseNotesHint}`,
@@ -304,7 +304,7 @@ function scoreRelease(oldVersion, newVersion, osvResult, githubRelease) {
   if (hasVulns) {
     return {
       risk: "security",
-      category: "Security",
+      category: "Verified vulnerability",
       reason: "Known OSV vulnerability signal found for this package version.",
       whyThisMatters: "Security-linked releases deserve review even when the package is not directly imported by application code.",
       recommendedAction: `Update recommended. Review advisory links and upgrade through the normal security lane.${releaseNotesHint}`,
@@ -313,7 +313,7 @@ function scoreRelease(oldVersion, newVersion, osvResult, githubRelease) {
   if (majorChanged) {
     return {
       risk: "breaking",
-      category: "Breaking",
+      category: "Major version",
       reason: "Major version release detected.",
       whyThisMatters: "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds.",
       recommendedAction: `Review changes before updating. Test in staging before merging.${releaseNotesHint}`,
@@ -322,7 +322,7 @@ function scoreRelease(oldVersion, newVersion, osvResult, githubRelease) {
   if (securityNotes) {
     return {
       risk: "review",
-      category: "Review",
+      category: "Release-note review",
       reason: "Release notes mention security language, but no OSV or CVE match was found.",
       whyThisMatters: "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it.",
       recommendedAction: "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
@@ -331,7 +331,7 @@ function scoreRelease(oldVersion, newVersion, osvResult, githubRelease) {
   if (minorChanged) {
     return {
       risk: "review",
-      category: "Review",
+      category: "Minor version",
       reason: "Minor version release detected with no OSV match.",
       whyThisMatters: "Minor updates are often safe but can still change defaults or transitive behavior.",
       recommendedAction: `Review if used. Batch with normal dependency maintenance.${releaseNotesHint}`,
@@ -339,7 +339,7 @@ function scoreRelease(oldVersion, newVersion, osvResult, githubRelease) {
   }
   return {
     risk: "low",
-    category: "Low impact",
+    category: "Patch version",
     reason: "Patch release with no OSV match.",
     whyThisMatters: "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     recommendedAction: "No urgent action. Include in the next scheduled dependency update.",

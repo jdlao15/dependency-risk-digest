@@ -1,4 +1,10 @@
 export type RiskLevel = "critical" | "security" | "breaking" | "review" | "low";
+export type ReleaseSignal =
+  | "Verified vulnerability"
+  | "Major version"
+  | "Release-note review"
+  | "Minor version"
+  | "Patch version";
 
 export type SourceLink = {
   label: string;
@@ -16,7 +22,7 @@ export type ReleaseItem = {
   publishedAgo: string;
   isRecent: boolean;
   risk: RiskLevel;
-  category: "Security" | "Breaking" | "Review" | "Low impact";
+  category: ReleaseSignal;
   osv: string;
   cve: string;
   reason: string;

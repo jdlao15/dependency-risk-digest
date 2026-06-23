@@ -484,7 +484,7 @@ p {
 
 table {
   width: 100%;
-  min-width: 920px;
+  min-width: 1040px;
   border-collapse: collapse;
 }
 
@@ -574,6 +574,19 @@ td small,
 
 .risk-badge.low {
   background: #0b8f4d;
+}
+
+.signal-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 9px;
+  border: 1px solid #cfd8e6;
+  border-radius: 5px;
+  color: #24334a;
+  background: #f8fafc;
+  font-size: 0.76rem;
+  font-weight: 800;
 }
 
 .muted-text {

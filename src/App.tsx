@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import type { MouseEvent, ReactNode } from "react";
 import { categoryRoutes, digestArchive, generatedAt, generationFailures, packageRoutes, releases, seoRoutes, weeklyDigest } from "./data";
-import type { ReleaseItem, RiskLevel, WeeklyDigest } from "./types";
+import type { ReleaseItem, ReleaseSignal, RiskLevel, WeeklyDigest } from "./types";
 
 const riskLabels: Record<RiskLevel, string> = {
   critical: "Critical",
@@ -12,6 +12,13 @@ const riskLabels: Record<RiskLevel, string> = {
 };
 
 const riskOrder: RiskLevel[] = ["critical", "security", "breaking", "review", "low"];
+const signalOptions: ReleaseSignal[] = [
+  "Verified vulnerability",
+  "Major version",
+  "Release-note review",
+  "Minor version",
+  "Patch version",
+];
 const siteUrl = "https://dependency-risk-digest.vercel.app";
 type PackageRouteInfo = {
   packageName: string;
@@ -40,7 +47,7 @@ function App() {
   const [path, setPath] = useState(getInitialPath);
   const [query, setQuery] = useState("");
   const [riskFilter, setRiskFilter] = useState<"all" | RiskLevel>("all");
-  const [categoryFilter, setCategoryFilter] = useState("all");
+  const [categoryFilter, setCategoryFilter] = useState<"all" | ReleaseSignal>("all");
   const [selectedId, setSelectedId] = useState(releases[0].id);
 
   useEffect(() => {
@@ -367,8 +374,8 @@ function ArchivePage(props: {
   setQuery: (query: string) => void;
   riskFilter: "all" | RiskLevel;
   setRiskFilter: (risk: "all" | RiskLevel) => void;
-  categoryFilter: string;
-  setCategoryFilter: (category: string) => void;
+  categoryFilter: "all" | ReleaseSignal;
+  setCategoryFilter: (category: "all" | ReleaseSignal) => void;
   chooseRelease: (release: ReleaseItem) => void;
   navigate: (path: string) => void;
 }) {
@@ -409,14 +416,15 @@ function ArchivePage(props: {
               </select>
               <select
                 value={categoryFilter}
-                onChange={(event) => setCategoryFilter(event.target.value)}
-                aria-label="Category"
+                onChange={(event) => setCategoryFilter(event.target.value as "all" | ReleaseSignal)}
+                aria-label="Signal type"
               >
-                <option value="all">All Categories</option>
-                <option value="Security">Security</option>
-                <option value="Breaking">Breaking</option>
-                <option value="Review">Review</option>
-                <option value="Low impact">Low impact</option>
+                <option value="all">All Signal Types</option>
+                {signalOptions.map((signal) => (
+                  <option value={signal} key={signal}>
+                    {signal}
+                  </option>
+                ))}
               </select>
               <input
                 value={query}
@@ -480,6 +488,7 @@ function ReleaseTable({
             <th>Risk</th>
             <th>Package</th>
             <th>Release</th>
+            <th>Signal</th>
             <th>OSV</th>
             <th>Recommended Action</th>
             <th>Why This Matters</th>
@@ -501,6 +510,9 @@ function ReleaseTable({
                 <strong>{release.newVersion}</strong>
                 {release.isRecent && <span className="new-tag">new</span>}
                 <small>{release.publishedAgo}</small>
+              </td>
+              <td>
+                <span className="signal-pill">{release.category}</span>
               </td>
               <td>
                 <span className={release.osv.includes("No") ? "muted-text" : "linkish"}>
@@ -542,6 +554,7 @@ function ReleaseDetail({ release, navigate }: { release: ReleaseItem; navigate: 
       <dl className="detail-list">
         <div><dt>OSV</dt><dd>{release.osv}</dd></div>
         <div><dt>CVE</dt><dd>{release.cve}</dd></div>
+        <div><dt>Signal Type</dt><dd>{release.category}</dd></div>
         <div><dt>Affected</dt><dd>{release.affectedAudience}</dd></div>
         <div><dt>Previous</dt><dd>{release.oldVersion}</dd></div>
         <div><dt>Current</dt><dd>{release.newVersion}</dd></div>
@@ -923,10 +936,19 @@ function MethodologyPage({ navigate }: { navigate: (path: string) => void }) {
         <section>
           <h2>Risk Labels</h2>
           <p>
-            Security and critical updates are prioritized when vulnerability or
-            security-fix language appears. Breaking updates focus on major package
-            releases. Review updates cover non-urgent changes that still deserve
-            dependency maintenance attention.
+            Risk labels describe the action urgency. Critical and security labels
+            require OSV or CVE-backed vulnerability evidence. Breaking marks a
+            major version change. Review marks unverified release-note or minor
+            version signals. Low marks routine patch updates.
+          </p>
+        </section>
+        <section>
+          <h2>Signal Types</h2>
+          <p>
+            Signal types describe the evidence behind the label: verified vulnerability,
+            major version, release-note review, minor version, or patch version. This
+            keeps evidence separate from urgency so security, breaking, review, and low
+            labels do not repeat the same category text.
           </p>
         </section>
         <section>
