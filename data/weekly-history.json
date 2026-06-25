@@ -2,12 +2,39 @@
   {
     "week": "Week 26, 2026",
     "dateRange": "Jun 22 - Jun 28",
-    "risky": 19,
+    "risky": 21,
     "breaking": 0,
     "security": 0,
-    "safe": 63,
+    "safe": 61,
     "total": 82,
     "topSignals": [
+      {
+        "packageName": "webpack",
+        "route": "/package/webpack/5.108.0",
+        "risk": "review",
+        "newVersion": "5.108.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "framer-motion",
+        "route": "/package/framer-motion/12.42.0",
+        "risk": "review",
+        "newVersion": "12.42.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "turbo",
+        "route": "/package/turbo/2.10.0",
+        "risk": "review",
+        "newVersion": "2.10.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
       {
         "packageName": "vite",
         "route": "/package/vite/8.1.0",
@@ -24,15 +51,6 @@
         "newVersion": "15.18.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "framer-motion",
-        "route": "/package/framer-motion/12.41.0",
-        "risk": "review",
-        "newVersion": "12.41.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
@@ -61,28 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "react-hook-form",
-        "route": "/package/react-hook-form/7.80.0",
-        "risk": "review",
-        "newVersion": "7.80.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.21.0",
-        "risk": "review",
-        "newVersion": "1.21.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w26",
-    "generatedAt": "2026-06-24T15:39:31.732Z"
+    "generatedAt": "2026-06-25T15:47:10.404Z"
   },
   {
     "week": "Week 25, 2026",
