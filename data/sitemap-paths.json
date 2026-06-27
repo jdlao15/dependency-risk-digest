@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T15:31:11.688Z",
+  "generatedAt": "2026-06-27T14:56:33.225Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -11,7 +11,7 @@
     "/category/utilities-runtime",
     "/methodology",
     "/package/angular-core",
-    "/package/angular-core/22.0.3",
+    "/package/angular-core/22.0.4",
     "/package/apollo-client",
     "/package/apollo-client/4.2.3",
     "/package/astro",
@@ -45,7 +45,7 @@
     "/package/esbuild",
     "/package/esbuild/0.28.1",
     "/package/eslint",
-    "/package/eslint/10.5.0",
+    "/package/eslint/10.6.0",
     "/package/formik",
     "/package/formik/2.4.9",
     "/package/framer-motion",
@@ -91,7 +91,7 @@
     "/package/postcss",
     "/package/postcss/8.5.15",
     "/package/prettier",
-    "/package/prettier/3.8.5",
+    "/package/prettier/3.9.0",
     "/package/radix-ui-react-dialog",
     "/package/radix-ui-react-dialog/1.1.17",
     "/package/radix-ui-react-popover",
