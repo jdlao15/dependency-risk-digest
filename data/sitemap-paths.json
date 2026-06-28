@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T14:56:33.225Z",
+  "generatedAt": "2026-06-28T14:58:13.655Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -89,9 +89,9 @@
     "/package/pnpm",
     "/package/pnpm/11.9.0",
     "/package/postcss",
-    "/package/postcss/8.5.15",
+    "/package/postcss/8.5.16",
     "/package/prettier",
-    "/package/prettier/3.9.0",
+    "/package/prettier/3.9.1",
     "/package/radix-ui-react-dialog",
     "/package/radix-ui-react-dialog/1.1.17",
     "/package/radix-ui-react-popover",
@@ -135,7 +135,7 @@
     "/package/tailwindcss",
     "/package/tailwindcss/4.3.1",
     "/package/tanstack-react-query",
-    "/package/tanstack-react-query/5.101.1",
+    "/package/tanstack-react-query/5.101.2",
     "/package/testing-library-jest-dom",
     "/package/testing-library-jest-dom/6.9.1",
     "/package/testing-library-react",
@@ -182,6 +182,7 @@
     "/weekly/2026-w23",
     "/weekly/2026-w24",
     "/weekly/2026-w25",
-    "/weekly/2026-w26"
+    "/weekly/2026-w26",
+    "/weekly/2026-w27"
   ]
 }
