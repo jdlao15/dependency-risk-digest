@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-06-29T16:43:16.478Z",
+  "generatedAt": "2026-06-30T15:43:22.786Z",
   "weeklyDigest": {
     "week": "Week 27, 2026",
     "dateRange": "Jun 29 - Jul 5",
-    "risky": 20,
+    "risky": 14,
     "breaking": 0,
     "security": 0,
-    "safe": 62,
+    "safe": 68,
     "total": 82
   },
   "digestArchive": [
     {
       "week": "Week 27, 2026",
       "dateRange": "Jun 29 - Jul 5",
-      "risky": 20,
+      "risky": 14,
       "breaking": 0,
       "security": 0,
-      "safe": 62,
+      "safe": 68,
       "total": 82,
       "topSignals": [
         {
@@ -33,33 +33,6 @@
           "route": "/package/eslint/10.6.0",
           "risk": "review",
           "newVersion": "10.6.0",
-          "reason": "Minor version release detected with no OSV match.",
-          "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-        },
-        {
-          "packageName": "framer-motion",
-          "route": "/package/framer-motion/12.42.0",
-          "risk": "review",
-          "newVersion": "12.42.0",
-          "reason": "Minor version release detected with no OSV match.",
-          "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-        },
-        {
-          "packageName": "turbo",
-          "route": "/package/turbo/2.10.0",
-          "risk": "review",
-          "newVersion": "2.10.0",
-          "reason": "Minor version release detected with no OSV match.",
-          "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-        },
-        {
-          "packageName": "vite",
-          "route": "/package/vite/8.1.0",
-          "risk": "review",
-          "newVersion": "8.1.0",
           "reason": "Minor version release detected with no OSV match.",
           "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
           "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
@@ -83,17 +56,44 @@
           "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
         },
         {
-          "packageName": "@typescript-eslint/parser",
-          "route": "/package/typescript-eslint-parser/8.62.0",
+          "packageName": "react-hook-form",
+          "route": "/package/react-hook-form/7.80.0",
           "risk": "review",
-          "newVersion": "8.62.0",
+          "newVersion": "7.80.0",
+          "reason": "Minor version release detected with no OSV match.",
+          "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+        },
+        {
+          "packageName": "esbuild",
+          "route": "/package/esbuild/0.28.1",
+          "risk": "review",
+          "newVersion": "0.28.1",
+          "reason": "Release notes mention security language, but no OSV or CVE match was found.",
+          "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
+          "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
+        },
+        {
+          "packageName": "sass",
+          "route": "/package/sass/1.101.0",
+          "risk": "review",
+          "newVersion": "1.101.0",
+          "reason": "Minor version release detected with no OSV match.",
+          "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+        },
+        {
+          "packageName": "@chakra-ui/react",
+          "route": "/package/chakra-ui-react/3.36.0",
+          "risk": "review",
+          "newVersion": "3.36.0",
           "reason": "Minor version release detected with no OSV match.",
           "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
           "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
         }
       ],
       "route": "/weekly/2026-w27",
-      "generatedAt": "2026-06-29T16:43:16.478Z"
+      "generatedAt": "2026-06-30T15:43:22.786Z"
     },
     {
       "week": "Week 26, 2026",
@@ -486,7 +486,7 @@
       "oldVersion": "10.5.0",
       "newVersion": "10.6.0",
       "releaseDate": "2026-06-26",
-      "publishedAgo": "published 2 days ago",
+      "publishedAgo": "published 3 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -520,125 +520,6 @@
       ]
     },
     {
-      "id": "framer-motion-12-42-0",
-      "packageName": "framer-motion",
-      "packageSlug": "framer-motion",
-      "description": "React motion library",
-      "oldVersion": "12.41.0",
-      "newVersion": "12.42.0",
-      "releaseDate": "2026-06-25",
-      "publishedAgo": "published 4 days ago",
-      "isRecent": true,
-      "risk": "review",
-      "category": "Minor version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Minor version release detected with no OSV match.",
-      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-      "whatChanged": "Minor framer-motion 12.42.0 release detected; review if used in production paths.",
-      "githubReleaseTitle": "",
-      "githubReleaseUrl": "",
-      "githubReleaseTag": "",
-      "githubReleasePublishedAt": "",
-      "releaseNotesExcerpt": "",
-      "releaseNotesStatus": "No GitHub releases found for this repository.",
-      "route": "/package/framer-motion/12.42.0",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/framer-motion"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/motiondivision/motion"
-        }
-      ]
-    },
-    {
-      "id": "turbo-2-10-0",
-      "packageName": "turbo",
-      "packageSlug": "turbo",
-      "description": "Monorepo build system",
-      "oldVersion": "2.9.18",
-      "newVersion": "2.10.0",
-      "releaseDate": "2026-06-24",
-      "publishedAgo": "published 5 days ago",
-      "isRecent": true,
-      "risk": "review",
-      "category": "Minor version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Minor version release detected with no OSV match.",
-      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
-      "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
-      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-      "whatChanged": "GitHub release note found: Turborepo v2.10.0.",
-      "githubReleaseTitle": "Turborepo v2.10.0",
-      "githubReleaseUrl": "https://github.com/vercel/turborepo/releases/tag/v2.10.0",
-      "githubReleaseTag": "v2.10.0",
-      "githubReleasePublishedAt": "2026-06-24T16:25:38Z",
-      "releaseNotesExcerpt": "<!-- Release notes generated using configuration in .github/release.yml at v2.10.0 --> What's Changed create-turbo feat: Replace package manager commands in scaffolded README files by @DependerKumarSoni in https://github.com/vercel/turborepo/pull/6747 chore: Update dependencies f",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/turbo/2.10.0",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/turbo"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/vercel/turborepo"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/vercel/turborepo/releases/tag/v2.10.0"
-        }
-      ]
-    },
-    {
-      "id": "vite-8-1-0",
-      "packageName": "vite",
-      "packageSlug": "vite",
-      "description": "Frontend build tooling",
-      "oldVersion": "8.0.16",
-      "newVersion": "8.1.0",
-      "releaseDate": "2026-06-23",
-      "publishedAgo": "published 6 days ago",
-      "isRecent": true,
-      "risk": "review",
-      "category": "Minor version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Minor version release detected with no OSV match.",
-      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
-      "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
-      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-      "whatChanged": "GitHub release note found: v8.1.0.",
-      "githubReleaseTitle": "v8.1.0",
-      "githubReleaseUrl": "https://github.com/vitejs/vite/releases/tag/v8.1.0",
-      "githubReleaseTag": "v8.1.0",
-      "githubReleasePublishedAt": "2026-06-23T11:32:13Z",
-      "releaseNotesExcerpt": "Please refer to CHANGELOG.md for details.",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/vite/8.1.0",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/vite"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/vitejs/vite"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/vitejs/vite/releases/tag/v8.1.0"
-        }
-      ]
-    },
-    {
       "id": "cypress-15-18-0",
       "packageName": "cypress",
       "packageSlug": "cypress",
@@ -646,7 +527,7 @@
       "oldVersion": "15.17.0",
       "newVersion": "15.18.0",
       "releaseDate": "2026-06-23",
-      "publishedAgo": "published 5 days ago",
+      "publishedAgo": "published 6 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -721,88 +602,6 @@
       ]
     },
     {
-      "id": "typescript-eslint-parser-8-62-0",
-      "packageName": "@typescript-eslint/parser",
-      "packageSlug": "typescript-eslint-parser",
-      "description": "TypeScript parser for ESLint",
-      "oldVersion": "8.61.1",
-      "newVersion": "8.62.0",
-      "releaseDate": "2026-06-22",
-      "publishedAgo": "published 6 days ago",
-      "isRecent": true,
-      "risk": "review",
-      "category": "Minor version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Minor version release detected with no OSV match.",
-      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-      "whatChanged": "GitHub release note found: v8.62.0.",
-      "githubReleaseTitle": "v8.62.0",
-      "githubReleaseUrl": "https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.62.0",
-      "githubReleaseTag": "v8.62.0",
-      "githubReleasePublishedAt": "2026-06-22T18:22:39Z",
-      "releaseNotesExcerpt": "8.62.0 (2026-06-22) Features remove redundant package.json \"files\" (#12444) Fixes add \"files\" to rule-schema-to-typescript-types (#12441) Thank You Kirk Waiblinger @kirkwaiblinger See GitHub Releases for more information. You can read about our versioning strategy and releases on",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/typescript-eslint-parser/8.62.0",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/@typescript-eslint/parser"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/typescript-eslint/typescript-eslint"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.62.0"
-        }
-      ]
-    },
-    {
-      "id": "typescript-eslint-eslint-plugin-8-62-0",
-      "packageName": "@typescript-eslint/eslint-plugin",
-      "packageSlug": "typescript-eslint-eslint-plugin",
-      "description": "TypeScript ESLint rules",
-      "oldVersion": "8.61.1",
-      "newVersion": "8.62.0",
-      "releaseDate": "2026-06-22",
-      "publishedAgo": "published 6 days ago",
-      "isRecent": true,
-      "risk": "review",
-      "category": "Minor version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Minor version release detected with no OSV match.",
-      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-      "whatChanged": "GitHub release note found: v8.62.0.",
-      "githubReleaseTitle": "v8.62.0",
-      "githubReleaseUrl": "https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.62.0",
-      "githubReleaseTag": "v8.62.0",
-      "githubReleasePublishedAt": "2026-06-22T18:22:39Z",
-      "releaseNotesExcerpt": "8.62.0 (2026-06-22) Features remove redundant package.json \"files\" (#12444) Fixes add \"files\" to rule-schema-to-typescript-types (#12441) Thank You Kirk Waiblinger @kirkwaiblinger See GitHub Releases for more information. You can read about our versioning strategy and releases on",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag. Cached from an earlier generator run.",
-      "route": "/package/typescript-eslint-eslint-plugin/8.62.0",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/@typescript-eslint/eslint-plugin"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/typescript-eslint/typescript-eslint"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.62.0"
-        }
-      ]
-    },
-    {
       "id": "react-hook-form-7-80-0",
       "packageName": "react-hook-form",
       "packageSlug": "react-hook-form",
@@ -810,7 +609,7 @@
       "oldVersion": "7.79.0",
       "newVersion": "7.80.0",
       "releaseDate": "2026-06-20",
-      "publishedAgo": "published 9 days ago",
+      "publishedAgo": "published 10 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -844,47 +643,6 @@
       ]
     },
     {
-      "id": "react-router-dom-7-18-0",
-      "packageName": "react-router-dom",
-      "packageSlug": "react-router-dom",
-      "description": "Declarative routing for React",
-      "oldVersion": "7.17.0",
-      "newVersion": "7.18.0",
-      "releaseDate": "2026-06-16",
-      "publishedAgo": "published 13 days ago",
-      "isRecent": true,
-      "risk": "review",
-      "category": "Minor version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Minor version release detected with no OSV match.",
-      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
-      "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
-      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-      "whatChanged": "GitHub release note found: v7.18.0.",
-      "githubReleaseTitle": "v7.18.0",
-      "githubReleaseUrl": "https://github.com/remix-run/react-router/releases/tag/react-router%407.18.0",
-      "githubReleaseTag": "react-router@7.18.0",
-      "githubReleasePublishedAt": "2026-06-16T14:13:25Z",
-      "releaseNotesExcerpt": "See the changelog for release notes: https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v7180",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/react-router-dom/7.18.0",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/react-router-dom"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/remix-run/react-router"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/remix-run/react-router/releases/tag/react-router%407.18.0"
-        }
-      ]
-    },
-    {
       "id": "esbuild-0-28-1",
       "packageName": "esbuild",
       "packageSlug": "esbuild",
@@ -892,7 +650,7 @@
       "oldVersion": "0.28.0",
       "newVersion": "0.28.1",
       "releaseDate": "2026-06-11",
-      "publishedAgo": "published 17 days ago",
+      "publishedAgo": "published 18 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Release-note review",
@@ -933,7 +691,7 @@
       "oldVersion": "1.100.0",
       "newVersion": "1.101.0",
       "releaseDate": "2026-06-11",
-      "publishedAgo": "published 17 days ago",
+      "publishedAgo": "published 18 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -974,7 +732,7 @@
       "oldVersion": "3.35.0",
       "newVersion": "3.36.0",
       "releaseDate": "2026-06-10",
-      "publishedAgo": "published 19 days ago",
+      "publishedAgo": "published 20 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -1015,8 +773,8 @@
       "oldVersion": "4.3.0",
       "newVersion": "4.4.0",
       "releaseDate": "2026-05-29",
-      "publishedAgo": "published 30 days ago",
-      "isRecent": true,
+      "publishedAgo": "published 31 days ago",
+      "isRecent": false,
       "risk": "review",
       "category": "Minor version",
       "osv": "No OSV match",
@@ -1056,7 +814,7 @@
       "oldVersion": "8.20.1",
       "newVersion": "8.21.0",
       "releaseDate": "2026-05-22",
-      "publishedAgo": "published 37 days ago",
+      "publishedAgo": "published 38 days ago",
       "isRecent": false,
       "risk": "review",
       "category": "Release-note review",
@@ -1097,7 +855,7 @@
       "oldVersion": "2.11.2",
       "newVersion": "2.12.0",
       "releaseDate": "2026-05-15",
-      "publishedAgo": "published 45 days ago",
+      "publishedAgo": "published 46 days ago",
       "isRecent": false,
       "risk": "review",
       "category": "Minor version",
@@ -1138,7 +896,7 @@
       "oldVersion": "3.5.0",
       "newVersion": "3.6.0",
       "releaseDate": "2026-05-10",
-      "publishedAgo": "published 50 days ago",
+      "publishedAgo": "published 51 days ago",
       "isRecent": false,
       "risk": "review",
       "category": "Minor version",
@@ -1254,13 +1012,54 @@
       ]
     },
     {
-      "id": "webpack-5-108-2",
-      "packageName": "webpack",
-      "packageSlug": "webpack",
-      "description": "JavaScript bundler",
-      "oldVersion": "5.108.1",
-      "newVersion": "5.108.2",
-      "releaseDate": "2026-06-29",
+      "id": "astro-7-0-4",
+      "packageName": "astro",
+      "packageSlug": "astro",
+      "description": "Content-focused web framework",
+      "oldVersion": "7.0.3",
+      "newVersion": "7.0.4",
+      "releaseDate": "2026-06-30",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "low",
+      "category": "Patch version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: astro@7.0.4.",
+      "githubReleaseTitle": "astro@7.0.4",
+      "githubReleaseUrl": "https://github.com/withastro/astro/releases/tag/astro%407.0.4",
+      "githubReleaseTag": "astro@7.0.4",
+      "githubReleasePublishedAt": "2026-06-30T12:18:46Z",
+      "releaseNotesExcerpt": "Patch Changes #17212 7ba0bb1 Thanks @matthewp! - Ensures transition directive values are HTML-escaped when rendered on hydrated islands #17224 dc5e52f Thanks @astrobot-houston! - Fixes trailing slash handling for dynamic file endpoints in dev mode. Dynamic file endpoints (e.g., s",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/astro/7.0.4",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/astro"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/withastro/astro"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/withastro/astro/releases/tag/astro%407.0.4"
+        }
+      ]
+    },
+    {
+      "id": "vite-8-1-1",
+      "packageName": "vite",
+      "packageSlug": "vite",
+      "description": "Frontend build tooling",
+      "oldVersion": "8.1.0",
+      "newVersion": "8.1.1",
+      "releaseDate": "2026-06-30",
       "publishedAgo": "published today",
       "isRecent": true,
       "risk": "low",
@@ -1271,37 +1070,37 @@
       "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
       "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
       "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "GitHub release note found: v5.108.2.",
-      "githubReleaseTitle": "v5.108.2",
-      "githubReleaseUrl": "https://github.com/webpack/webpack/releases/tag/v5.108.2",
-      "githubReleaseTag": "v5.108.2",
-      "githubReleasePublishedAt": "2026-06-29T12:56:26Z",
-      "releaseNotesExcerpt": "Patch Changes Fix lazy barrel deferral of ungrouped side-effect imports. (by @hai-x in #21291) Respect the node: prefix for node.js core modules used as externals. (by @alexander-akait in #21286)",
+      "whatChanged": "GitHub release note found: v8.1.1.",
+      "githubReleaseTitle": "v8.1.1",
+      "githubReleaseUrl": "https://github.com/vitejs/vite/releases/tag/v8.1.1",
+      "githubReleaseTag": "v8.1.1",
+      "githubReleasePublishedAt": "2026-06-30T10:31:05Z",
+      "releaseNotesExcerpt": "Please refer to CHANGELOG.md for details.",
       "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/webpack/5.108.2",
+      "route": "/package/vite/8.1.1",
       "sourceLinks": [
         {
           "label": "npm",
-          "href": "https://www.npmjs.com/package/webpack"
+          "href": "https://www.npmjs.com/package/vite"
         },
         {
           "label": "Repository",
-          "href": "https://github.com/webpack/webpack"
+          "href": "https://github.com/vitejs/vite"
         },
         {
           "label": "GitHub release",
-          "href": "https://github.com/webpack/webpack/releases/tag/v5.108.2"
+          "href": "https://github.com/vitejs/vite/releases/tag/v8.1.1"
         }
       ]
     },
     {
-      "id": "prettier-3-9-3",
+      "id": "prettier-3-9-4",
       "packageName": "prettier",
       "packageSlug": "prettier",
       "description": "Code formatter",
-      "oldVersion": "3.9.2",
-      "newVersion": "3.9.3",
-      "releaseDate": "2026-06-29",
+      "oldVersion": "3.9.3",
+      "newVersion": "3.9.4",
+      "releaseDate": "2026-06-30",
       "publishedAgo": "published today",
       "isRecent": true,
       "risk": "low",
@@ -1312,14 +1111,14 @@
       "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
       "affectedAudience": "Developer tooling, type checking, and code-quality gates.",
       "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "GitHub release note found: 3.9.3.",
-      "githubReleaseTitle": "3.9.3",
-      "githubReleaseUrl": "https://github.com/prettier/prettier/releases/tag/3.9.3",
-      "githubReleaseTag": "3.9.3",
-      "githubReleasePublishedAt": "2026-06-29T11:38:44Z",
-      "releaseNotesExcerpt": "Markdown: Fix unexpected removal of characters in liquid syntax (https://github.com/prettier/prettier/pull/19489 by @seiyab) TypeScript: Allow decorators to be used with declare on class fields (https://github.com/prettier/prettier/pull/19492 by @evoactivity) Changelog",
+      "whatChanged": "GitHub release note found: 3.9.4.",
+      "githubReleaseTitle": "3.9.4",
+      "githubReleaseUrl": "https://github.com/prettier/prettier/releases/tag/3.9.4",
+      "githubReleaseTag": "3.9.4",
+      "githubReleasePublishedAt": "2026-06-30T01:21:45Z",
+      "releaseNotesExcerpt": "Angular: Format @content(name) -> @content (name) to align with other block syntax (#19499 by @fisker) Changelog",
       "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/prettier/3.9.3",
+      "route": "/package/prettier/3.9.4",
       "sourceLinks": [
         {
           "label": "npm",
@@ -1331,7 +1130,249 @@
         },
         {
           "label": "GitHub release",
-          "href": "https://github.com/prettier/prettier/releases/tag/3.9.3"
+          "href": "https://github.com/prettier/prettier/releases/tag/3.9.4"
+        }
+      ]
+    },
+    {
+      "id": "framer-motion-12-42-1",
+      "packageName": "framer-motion",
+      "packageSlug": "framer-motion",
+      "description": "React motion library",
+      "oldVersion": "12.42.0",
+      "newVersion": "12.42.1",
+      "releaseDate": "2026-06-30",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "low",
+      "category": "Patch version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "Patch framer-motion 12.42.1 release detected with no OSV match.",
+      "githubReleaseTitle": "",
+      "githubReleaseUrl": "",
+      "githubReleaseTag": "",
+      "githubReleasePublishedAt": "",
+      "releaseNotesExcerpt": "",
+      "releaseNotesStatus": "No GitHub releases found for this repository.",
+      "route": "/package/framer-motion/12.42.1",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/framer-motion"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/motiondivision/motion"
+        }
+      ]
+    },
+    {
+      "id": "webpack-5-108-3",
+      "packageName": "webpack",
+      "packageSlug": "webpack",
+      "description": "JavaScript bundler",
+      "oldVersion": "5.108.2",
+      "newVersion": "5.108.3",
+      "releaseDate": "2026-06-29",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "low",
+      "category": "Patch version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: v5.108.3.",
+      "githubReleaseTitle": "v5.108.3",
+      "githubReleaseUrl": "https://github.com/webpack/webpack/releases/tag/v5.108.3",
+      "githubReleaseTag": "v5.108.3",
+      "githubReleasePublishedAt": "2026-06-29T22:00:22Z",
+      "releaseNotesExcerpt": "Patch Changes Speed up CSS parsing and reduce CSS AST node memory. (by @alexander-akait in #21285) Fix HMR codegen crash for harmony accept with unresolved imports. (by @xiaoxiaojx in #21302) Match harmony accept dependencies by module reference so HMR codegen handles imports wit",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/webpack/5.108.3",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/webpack"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/webpack/webpack"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/webpack/webpack/releases/tag/v5.108.3"
+        }
+      ]
+    },
+    {
+      "id": "turbo-2-10-1",
+      "packageName": "turbo",
+      "packageSlug": "turbo",
+      "description": "Monorepo build system",
+      "oldVersion": "2.10.0",
+      "newVersion": "2.10.1",
+      "releaseDate": "2026-06-29",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "low",
+      "category": "Patch version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: Turborepo v2.10.1.",
+      "githubReleaseTitle": "Turborepo v2.10.1",
+      "githubReleaseUrl": "https://github.com/vercel/turborepo/releases/tag/v2.10.1",
+      "githubReleaseTag": "v2.10.1",
+      "githubReleasePublishedAt": "2026-06-29T20:43:18Z",
+      "releaseNotesExcerpt": "<!-- Release notes generated using configuration in .github/release.yml at v2.10.1 --> What's Changed Changelog release(turborepo): 2.10.0 by @github-actions[bot] in https://github.com/vercel/turborepo/pull/13131 docs: Add Turborepo 2.10 release post and update docs by @anthonysh",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/turbo/2.10.1",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/turbo"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/vercel/turborepo"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/vercel/turborepo/releases/tag/v2.10.1"
+        }
+      ]
+    },
+    {
+      "id": "typescript-eslint-parser-8-62-1",
+      "packageName": "@typescript-eslint/parser",
+      "packageSlug": "typescript-eslint-parser",
+      "description": "TypeScript parser for ESLint",
+      "oldVersion": "8.62.0",
+      "newVersion": "8.62.1",
+      "releaseDate": "2026-06-29",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "low",
+      "category": "Patch version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: v8.62.1.",
+      "githubReleaseTitle": "v8.62.1",
+      "githubReleaseUrl": "https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.62.1",
+      "githubReleaseTag": "v8.62.1",
+      "githubReleasePublishedAt": "2026-06-29T17:51:09Z",
+      "releaseNotesExcerpt": "8.62.1 (2026-06-29) Fixes **eslint-plugin:** [prefer-optional-chain] use suggestion instead of autofix for trailing binary operator (#12328) **eslint-plugin:** [no-unnecessary-boolean-literal-compare] preserve boolean result in fixer for nullable true comparisons (#12365) **eslin",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/typescript-eslint-parser/8.62.1",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/@typescript-eslint/parser"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/typescript-eslint/typescript-eslint"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.62.1"
+        }
+      ]
+    },
+    {
+      "id": "typescript-eslint-eslint-plugin-8-62-1",
+      "packageName": "@typescript-eslint/eslint-plugin",
+      "packageSlug": "typescript-eslint-eslint-plugin",
+      "description": "TypeScript ESLint rules",
+      "oldVersion": "8.62.0",
+      "newVersion": "8.62.1",
+      "releaseDate": "2026-06-29",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "low",
+      "category": "Patch version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: v8.62.1.",
+      "githubReleaseTitle": "v8.62.1",
+      "githubReleaseUrl": "https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.62.1",
+      "githubReleaseTag": "v8.62.1",
+      "githubReleasePublishedAt": "2026-06-29T17:51:09Z",
+      "releaseNotesExcerpt": "8.62.1 (2026-06-29) Fixes **eslint-plugin:** [prefer-optional-chain] use suggestion instead of autofix for trailing binary operator (#12328) **eslint-plugin:** [no-unnecessary-boolean-literal-compare] preserve boolean result in fixer for nullable true comparisons (#12365) **eslin",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag. Cached from an earlier generator run.",
+      "route": "/package/typescript-eslint-eslint-plugin/8.62.1",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/@typescript-eslint/eslint-plugin"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/typescript-eslint/typescript-eslint"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.62.1"
+        }
+      ]
+    },
+    {
+      "id": "react-router-dom-7-18-1",
+      "packageName": "react-router-dom",
+      "packageSlug": "react-router-dom",
+      "description": "Declarative routing for React",
+      "oldVersion": "7.18.0",
+      "newVersion": "7.18.1",
+      "releaseDate": "2026-06-29",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "low",
+      "category": "Patch version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: v7.18.1.",
+      "githubReleaseTitle": "v7.18.1",
+      "githubReleaseUrl": "https://github.com/remix-run/react-router/releases/tag/react-router%407.18.1",
+      "githubReleaseTag": "react-router@7.18.1",
+      "githubReleasePublishedAt": "2026-06-29T18:44:30Z",
+      "releaseNotesExcerpt": "See the changelog for release notes: https://github.com/remix-run/react-router/blob/v7/CHANGELOG.md#v7181",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/react-router-dom/7.18.1",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/react-router-dom"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/remix-run/react-router"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/remix-run/react-router/releases/tag/react-router%407.18.1"
         }
       ]
     },
@@ -1343,7 +1384,7 @@
       "oldVersion": "4.3.1",
       "newVersion": "4.3.2",
       "releaseDate": "2026-06-29",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -1384,7 +1425,7 @@
       "oldVersion": "8.5.15",
       "newVersion": "8.5.16",
       "releaseDate": "2026-06-28",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -1425,7 +1466,7 @@
       "oldVersion": "5.101.1",
       "newVersion": "5.101.2",
       "releaseDate": "2026-06-27",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -1466,7 +1507,7 @@
       "oldVersion": "22.0.3",
       "newVersion": "22.0.4",
       "releaseDate": "2026-06-26",
-      "publishedAgo": "published 2 days ago",
+      "publishedAgo": "published 3 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -1507,7 +1548,7 @@
       "oldVersion": "3.5.38",
       "newVersion": "3.5.39",
       "releaseDate": "2026-06-25",
-      "publishedAgo": "published 4 days ago",
+      "publishedAgo": "published 5 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -1541,47 +1582,6 @@
       ]
     },
     {
-      "id": "astro-7-0-3",
-      "packageName": "astro",
-      "packageSlug": "astro",
-      "description": "Content-focused web framework",
-      "oldVersion": "7.0.2",
-      "newVersion": "7.0.3",
-      "releaseDate": "2026-06-25",
-      "publishedAgo": "published 4 days ago",
-      "isRecent": true,
-      "risk": "low",
-      "category": "Patch version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Patch release with no OSV match.",
-      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "GitHub release note found: astro@7.0.3.",
-      "githubReleaseTitle": "astro@7.0.3",
-      "githubReleaseUrl": "https://github.com/withastro/astro/releases/tag/astro%407.0.3",
-      "githubReleaseTag": "astro@7.0.3",
-      "githubReleasePublishedAt": "2026-06-25T16:17:15Z",
-      "releaseNotesExcerpt": "Patch Changes #17189 24d2c9e Thanks @astrobot-houston! - Fixes a bug where an error thrown inside one route's getStaticPaths() would prevent other valid routes from being matched in dev mode #16932 8f4a3db Thanks @fkatsuhiro! - Fixes HMR for action files during development. Editi",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/astro/7.0.3",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/astro"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/withastro/astro"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/withastro/astro/releases/tag/astro%407.0.3"
-        }
-      ]
-    },
-    {
       "id": "autoprefixer-10-5-2",
       "packageName": "autoprefixer",
       "packageSlug": "autoprefixer",
@@ -1589,7 +1589,7 @@
       "oldVersion": "10.5.1",
       "newVersion": "10.5.2",
       "releaseDate": "2026-06-24",
-      "publishedAgo": "published 4 days ago",
+      "publishedAgo": "published 5 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -1630,7 +1630,7 @@
       "oldVersion": "6.4.2",
       "newVersion": "6.4.3",
       "releaseDate": "2026-06-24",
-      "publishedAgo": "published 4 days ago",
+      "publishedAgo": "published 5 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -1671,7 +1671,7 @@
       "oldVersion": "5.1.15",
       "newVersion": "5.1.16",
       "releaseDate": "2026-06-24",
-      "publishedAgo": "published 4 days ago",
+      "publishedAgo": "published 5 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -1712,7 +1712,7 @@
       "oldVersion": "5.56.3",
       "newVersion": "5.56.4",
       "releaseDate": "2026-06-23",
-      "publishedAgo": "published 5 days ago",
+      "publishedAgo": "published 6 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -1753,7 +1753,7 @@
       "oldVersion": "6.0.2",
       "newVersion": "6.0.3",
       "releaseDate": "2026-06-23",
-      "publishedAgo": "published 6 days ago",
+      "publishedAgo": "published 7 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -1794,7 +1794,7 @@
       "oldVersion": "1.61.0",
       "newVersion": "1.61.1",
       "releaseDate": "2026-06-23",
-      "publishedAgo": "published 5 days ago",
+      "publishedAgo": "published 6 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -1835,7 +1835,7 @@
       "oldVersion": "9.1.1",
       "newVersion": "9.1.2",
       "releaseDate": "2026-06-23",
-      "publishedAgo": "published 6 days ago",
+      "publishedAgo": "published 7 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -1917,7 +1917,7 @@
       "oldVersion": "2.4.1",
       "newVersion": "2.4.2",
       "releaseDate": "2026-06-22",
-      "publishedAgo": "published 6 days ago",
+      "publishedAgo": "published 7 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -1958,7 +1958,7 @@
       "oldVersion": "1.18.0",
       "newVersion": "1.18.1",
       "releaseDate": "2026-06-22",
-      "publishedAgo": "published 6 days ago",
+      "publishedAgo": "published 7 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -1999,7 +1999,7 @@
       "oldVersion": "4.6.6",
       "newVersion": "4.6.7",
       "releaseDate": "2026-06-22",
-      "publishedAgo": "published 6 days ago",
+      "publishedAgo": "published 7 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2040,7 +2040,7 @@
       "oldVersion": "14.0.0",
       "newVersion": "14.0.1",
       "releaseDate": "2026-06-20",
-      "publishedAgo": "published 9 days ago",
+      "publishedAgo": "published 10 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2081,7 +2081,7 @@
       "oldVersion": "4.62.1",
       "newVersion": "4.62.2",
       "releaseDate": "2026-06-19",
-      "publishedAgo": "published 10 days ago",
+      "publishedAgo": "published 11 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2122,7 +2122,7 @@
       "oldVersion": "7.8.4",
       "newVersion": "7.8.5",
       "releaseDate": "2026-06-19",
-      "publishedAgo": "published 9 days ago",
+      "publishedAgo": "published 10 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2163,7 +2163,7 @@
       "oldVersion": "8.0.1",
       "newVersion": "8.0.2",
       "releaseDate": "2026-06-18",
-      "publishedAgo": "published 11 days ago",
+      "publishedAgo": "published 12 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2204,7 +2204,7 @@
       "oldVersion": "8.0.0",
       "newVersion": "8.0.1",
       "releaseDate": "2026-06-17",
-      "publishedAgo": "published 12 days ago",
+      "publishedAgo": "published 13 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2245,7 +2245,7 @@
       "oldVersion": "8.0.0",
       "newVersion": "8.0.1",
       "releaseDate": "2026-06-17",
-      "publishedAgo": "published 12 days ago",
+      "publishedAgo": "published 13 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2286,7 +2286,7 @@
       "oldVersion": "20.10.5",
       "newVersion": "20.10.6",
       "releaseDate": "2026-06-17",
-      "publishedAgo": "published 11 days ago",
+      "publishedAgo": "published 12 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2327,7 +2327,7 @@
       "oldVersion": "17.0.0",
       "newVersion": "17.0.1",
       "releaseDate": "2026-06-16",
-      "publishedAgo": "published 12 days ago",
+      "publishedAgo": "published 13 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2368,7 +2368,7 @@
       "oldVersion": "10.4.5",
       "newVersion": "10.4.6",
       "releaseDate": "2026-06-16",
-      "publishedAgo": "published 13 days ago",
+      "publishedAgo": "published 14 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2409,7 +2409,7 @@
       "oldVersion": "10.4.5",
       "newVersion": "10.4.6",
       "releaseDate": "2026-06-16",
-      "publishedAgo": "published 13 days ago",
+      "publishedAgo": "published 14 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2450,7 +2450,7 @@
       "oldVersion": "4.1.8",
       "newVersion": "4.1.9",
       "releaseDate": "2026-06-15",
-      "publishedAgo": "published 14 days ago",
+      "publishedAgo": "published 15 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2491,7 +2491,7 @@
       "oldVersion": "1.1.16",
       "newVersion": "1.1.17",
       "releaseDate": "2026-06-15",
-      "publishedAgo": "published 13 days ago",
+      "publishedAgo": "published 14 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2528,7 +2528,7 @@
       "oldVersion": "1.1.16",
       "newVersion": "1.1.17",
       "releaseDate": "2026-06-15",
-      "publishedAgo": "published 13 days ago",
+      "publishedAgo": "published 14 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2565,7 +2565,7 @@
       "oldVersion": "16.2.8",
       "newVersion": "16.2.9",
       "releaseDate": "2026-06-09",
-      "publishedAgo": "published 19 days ago",
+      "publishedAgo": "published 20 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2602,7 +2602,7 @@
       "oldVersion": "4.4.7",
       "newVersion": "4.4.8",
       "releaseDate": "2026-06-08",
-      "publishedAgo": "published 20 days ago",
+      "publishedAgo": "published 21 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2643,7 +2643,7 @@
       "oldVersion": "4.2.2",
       "newVersion": "4.2.3",
       "releaseDate": "2026-06-08",
-      "publishedAgo": "published 20 days ago",
+      "publishedAgo": "published 21 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2684,7 +2684,7 @@
       "oldVersion": "19.2.16",
       "newVersion": "19.2.17",
       "releaseDate": "2026-06-05",
-      "publishedAgo": "published 23 days ago",
+      "publishedAgo": "published 24 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2721,7 +2721,7 @@
       "oldVersion": "19.2.6",
       "newVersion": "19.2.7",
       "releaseDate": "2026-06-01",
-      "publishedAgo": "published 27 days ago",
+      "publishedAgo": "published 28 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2762,7 +2762,7 @@
       "oldVersion": "19.2.6",
       "newVersion": "19.2.7",
       "releaseDate": "2026-06-01",
-      "publishedAgo": "published 27 days ago",
+      "publishedAgo": "published 28 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2803,7 +2803,7 @@
       "oldVersion": "2.17.4",
       "newVersion": "2.17.5",
       "releaseDate": "2026-06-01",
-      "publishedAgo": "published 28 days ago",
+      "publishedAgo": "published 29 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2840,7 +2840,7 @@
       "oldVersion": "5.0.13",
       "newVersion": "5.0.14",
       "releaseDate": "2026-05-28",
-      "publishedAgo": "published 32 days ago",
+      "publishedAgo": "published 33 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -2881,7 +2881,7 @@
       "oldVersion": "1.11.20",
       "newVersion": "1.11.21",
       "releaseDate": "2026-05-26",
-      "publishedAgo": "published 34 days ago",
+      "publishedAgo": "published 35 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -2922,7 +2922,7 @@
       "oldVersion": "1.9.12",
       "newVersion": "1.9.13",
       "releaseDate": "2026-05-15",
-      "publishedAgo": "published 44 days ago",
+      "publishedAgo": "published 45 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -2959,7 +2959,7 @@
       "oldVersion": "2.14.5",
       "newVersion": "2.14.6",
       "releaseDate": "2026-05-11",
-      "publishedAgo": "published 49 days ago",
+      "publishedAgo": "published 50 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3000,7 +3000,7 @@
       "oldVersion": "30.4.1",
       "newVersion": "30.4.2",
       "releaseDate": "2026-05-09",
-      "publishedAgo": "published 51 days ago",
+      "publishedAgo": "published 52 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3041,7 +3041,7 @@
       "oldVersion": "11.1.7",
       "newVersion": "11.1.8",
       "releaseDate": "2026-05-08",
-      "publishedAgo": "published 52 days ago",
+      "publishedAgo": "published 53 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3082,7 +3082,7 @@
       "oldVersion": "4.4.2",
       "newVersion": "4.4.3",
       "releaseDate": "2026-05-04",
-      "publishedAgo": "published 56 days ago",
+      "publishedAgo": "published 57 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3123,7 +3123,7 @@
       "oldVersion": "2.0.1",
       "newVersion": "2.0.2",
       "releaseDate": "2026-04-21",
-      "publishedAgo": "published 69 days ago",
+      "publishedAgo": "published 70 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3164,7 +3164,7 @@
       "oldVersion": "6.0.2",
       "newVersion": "6.0.3",
       "releaseDate": "2026-04-16",
-      "publishedAgo": "published 73 days ago",
+      "publishedAgo": "published 74 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3205,7 +3205,7 @@
       "oldVersion": "4.18.0",
       "newVersion": "4.18.1",
       "releaseDate": "2026-04-01",
-      "publishedAgo": "published 88 days ago",
+      "publishedAgo": "published 89 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3246,7 +3246,7 @@
       "oldVersion": "5.16.0",
       "newVersion": "5.16.1",
       "releaseDate": "2026-02-10",
-      "publishedAgo": "published 139 days ago",
+      "publishedAgo": "published 140 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3287,7 +3287,7 @@
       "oldVersion": "2.16.3",
       "newVersion": "2.16.4",
       "releaseDate": "2026-02-02",
-      "publishedAgo": "published 147 days ago",
+      "publishedAgo": "published 148 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3328,7 +3328,7 @@
       "oldVersion": "16.3.1",
       "newVersion": "16.3.2",
       "releaseDate": "2026-01-19",
-      "publishedAgo": "published 161 days ago",
+      "publishedAgo": "published 162 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3369,7 +3369,7 @@
       "oldVersion": "8.5.0",
       "newVersion": "8.5.1",
       "releaseDate": "2025-11-12",
-      "publishedAgo": "published 228 days ago",
+      "publishedAgo": "published 229 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3410,7 +3410,7 @@
       "oldVersion": "19.2.2",
       "newVersion": "19.2.3",
       "releaseDate": "2025-11-12",
-      "publishedAgo": "published 229 days ago",
+      "publishedAgo": "published 230 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3447,7 +3447,7 @@
       "oldVersion": "2.4.8",
       "newVersion": "2.4.9",
       "releaseDate": "2025-11-10",
-      "publishedAgo": "published 230 days ago",
+      "publishedAgo": "published 231 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3488,7 +3488,7 @@
       "oldVersion": "6.9.0",
       "newVersion": "6.9.1",
       "releaseDate": "2025-10-01",
-      "publishedAgo": "published 270 days ago",
+      "publishedAgo": "published 271 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3529,7 +3529,7 @@
       "oldVersion": "1.7.0",
       "newVersion": "1.7.1",
       "releaseDate": "2025-09-21",
-      "publishedAgo": "published 281 days ago",
+      "publishedAgo": "published 282 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3817,7 +3817,7 @@
       "packageName": "astro",
       "description": "Content-focused web framework",
       "route": "/package/astro",
-      "latestReleaseRoute": "/package/astro/7.0.3",
+      "latestReleaseRoute": "/package/astro/7.0.4",
       "areaSlug": "core-frameworks",
       "areaLabel": "Frameworks and Core UI"
     },
@@ -3849,7 +3849,7 @@
       "packageName": "vite",
       "description": "Frontend build tooling",
       "route": "/package/vite",
-      "latestReleaseRoute": "/package/vite/8.1.0",
+      "latestReleaseRoute": "/package/vite/8.1.1",
       "areaSlug": "build-tooling",
       "areaLabel": "Build Tooling"
     },
@@ -3857,7 +3857,7 @@
       "packageName": "webpack",
       "description": "JavaScript bundler",
       "route": "/package/webpack",
-      "latestReleaseRoute": "/package/webpack/5.108.2",
+      "latestReleaseRoute": "/package/webpack/5.108.3",
       "areaSlug": "build-tooling",
       "areaLabel": "Build Tooling"
     },
@@ -3881,7 +3881,7 @@
       "packageName": "turbo",
       "description": "Monorepo build system",
       "route": "/package/turbo",
-      "latestReleaseRoute": "/package/turbo/2.10.0",
+      "latestReleaseRoute": "/package/turbo/2.10.1",
       "areaSlug": "build-tooling",
       "areaLabel": "Build Tooling"
     },
@@ -3961,7 +3961,7 @@
       "packageName": "prettier",
       "description": "Code formatter",
       "route": "/package/prettier",
-      "latestReleaseRoute": "/package/prettier/3.9.3",
+      "latestReleaseRoute": "/package/prettier/3.9.4",
       "areaSlug": "typescript-quality",
       "areaLabel": "TypeScript and Code Quality"
     },
@@ -3969,7 +3969,7 @@
       "packageName": "@typescript-eslint/parser",
       "description": "TypeScript parser for ESLint",
       "route": "/package/typescript-eslint-parser",
-      "latestReleaseRoute": "/package/typescript-eslint-parser/8.62.0",
+      "latestReleaseRoute": "/package/typescript-eslint-parser/8.62.1",
       "areaSlug": "typescript-quality",
       "areaLabel": "TypeScript and Code Quality"
     },
@@ -3977,7 +3977,7 @@
       "packageName": "@typescript-eslint/eslint-plugin",
       "description": "TypeScript ESLint rules",
       "route": "/package/typescript-eslint-eslint-plugin",
-      "latestReleaseRoute": "/package/typescript-eslint-eslint-plugin/8.62.0",
+      "latestReleaseRoute": "/package/typescript-eslint-eslint-plugin/8.62.1",
       "areaSlug": "typescript-quality",
       "areaLabel": "TypeScript and Code Quality"
     },
@@ -4001,7 +4001,7 @@
       "packageName": "react-router-dom",
       "description": "Declarative routing for React",
       "route": "/package/react-router-dom",
-      "latestReleaseRoute": "/package/react-router-dom/7.18.0",
+      "latestReleaseRoute": "/package/react-router-dom/7.18.1",
       "areaSlug": "routing-state-data",
       "areaLabel": "Routing, State, and Data"
     },
@@ -4257,7 +4257,7 @@
       "packageName": "framer-motion",
       "description": "React motion library",
       "route": "/package/framer-motion",
-      "latestReleaseRoute": "/package/framer-motion/12.42.0",
+      "latestReleaseRoute": "/package/framer-motion/12.42.1",
       "areaSlug": "css-ui",
       "areaLabel": "CSS and UI Libraries"
     },
@@ -4442,7 +4442,7 @@
           "packageName": "astro",
           "description": "Content-focused web framework",
           "route": "/package/astro",
-          "latestReleaseRoute": "/package/astro/7.0.3",
+          "latestReleaseRoute": "/package/astro/7.0.4",
           "areaSlug": "core-frameworks",
           "areaLabel": "Frameworks and Core UI"
         },
@@ -4595,7 +4595,7 @@
           "packageName": "turbo",
           "description": "Monorepo build system",
           "route": "/package/turbo",
-          "latestReleaseRoute": "/package/turbo/2.10.0",
+          "latestReleaseRoute": "/package/turbo/2.10.1",
           "areaSlug": "build-tooling",
           "areaLabel": "Build Tooling"
         },
@@ -4603,7 +4603,7 @@
           "packageName": "vite",
           "description": "Frontend build tooling",
           "route": "/package/vite",
-          "latestReleaseRoute": "/package/vite/8.1.0",
+          "latestReleaseRoute": "/package/vite/8.1.1",
           "areaSlug": "build-tooling",
           "areaLabel": "Build Tooling"
         },
@@ -4611,7 +4611,7 @@
           "packageName": "webpack",
           "description": "JavaScript bundler",
           "route": "/package/webpack",
-          "latestReleaseRoute": "/package/webpack/5.108.2",
+          "latestReleaseRoute": "/package/webpack/5.108.3",
           "areaSlug": "build-tooling",
           "areaLabel": "Build Tooling"
         }
@@ -4644,7 +4644,7 @@
           "packageName": "@typescript-eslint/eslint-plugin",
           "description": "TypeScript ESLint rules",
           "route": "/package/typescript-eslint-eslint-plugin",
-          "latestReleaseRoute": "/package/typescript-eslint-eslint-plugin/8.62.0",
+          "latestReleaseRoute": "/package/typescript-eslint-eslint-plugin/8.62.1",
           "areaSlug": "typescript-quality",
           "areaLabel": "TypeScript and Code Quality"
         },
@@ -4652,7 +4652,7 @@
           "packageName": "@typescript-eslint/parser",
           "description": "TypeScript parser for ESLint",
           "route": "/package/typescript-eslint-parser",
-          "latestReleaseRoute": "/package/typescript-eslint-parser/8.62.0",
+          "latestReleaseRoute": "/package/typescript-eslint-parser/8.62.1",
           "areaSlug": "typescript-quality",
           "areaLabel": "TypeScript and Code Quality"
         },
@@ -4668,7 +4668,7 @@
           "packageName": "prettier",
           "description": "Code formatter",
           "route": "/package/prettier",
-          "latestReleaseRoute": "/package/prettier/3.9.3",
+          "latestReleaseRoute": "/package/prettier/3.9.4",
           "areaSlug": "typescript-quality",
           "areaLabel": "TypeScript and Code Quality"
         },
@@ -4749,7 +4749,7 @@
           "packageName": "react-router-dom",
           "description": "Declarative routing for React",
           "route": "/package/react-router-dom",
-          "latestReleaseRoute": "/package/react-router-dom/7.18.0",
+          "latestReleaseRoute": "/package/react-router-dom/7.18.1",
           "areaSlug": "routing-state-data",
           "areaLabel": "Routing, State, and Data"
         },
@@ -4992,7 +4992,7 @@
           "packageName": "framer-motion",
           "description": "React motion library",
           "route": "/package/framer-motion",
-          "latestReleaseRoute": "/package/framer-motion/12.42.0",
+          "latestReleaseRoute": "/package/framer-motion/12.42.1",
           "areaSlug": "css-ui",
           "areaLabel": "CSS and UI Libraries"
         },
@@ -5178,7 +5178,7 @@
     "/weekly/2026-w27": {
       "path": "/weekly/2026-w27",
       "title": "Week 27, 2026 frontend npm risk archive",
-      "description": "Jun 29 - Jul 5 archive for frontend npm dependency risk: 20 risky updates, 0 breaking releases, 0 security updates, OSV/CVE checks, and recommended actions."
+      "description": "Jun 29 - Jul 5 archive for frontend npm dependency risk: 14 risky updates, 0 breaking releases, 0 security updates, OSV/CVE checks, and recommended actions."
     },
     "/weekly/2026-w26": {
       "path": "/weekly/2026-w26",
@@ -5660,21 +5660,6 @@
       "title": "eslint 10.6.0 npm minor version update",
       "description": "eslint 10.6.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes..."
     },
-    "/package/framer-motion/12.42.0": {
-      "path": "/package/framer-motion/12.42.0",
-      "title": "framer-motion 12.42.0 npm minor version update",
-      "description": "framer-motion 12.42.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance."
-    },
-    "/package/turbo/2.10.0": {
-      "path": "/package/turbo/2.10.0",
-      "title": "turbo 2.10.0 npm minor version update",
-      "description": "turbo 2.10.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes..."
-    },
-    "/package/vite/8.1.0": {
-      "path": "/package/vite/8.1.0",
-      "title": "vite 8.1.0 npm minor version update",
-      "description": "vite 8.1.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes..."
-    },
     "/package/cypress/15.18.0": {
       "path": "/package/cypress/15.18.0",
       "title": "cypress 15.18.0 npm minor version update",
@@ -5685,25 +5670,10 @@
       "title": "pnpm 11.9.0 npm minor version update",
       "description": "pnpm 11.9.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes..."
     },
-    "/package/typescript-eslint-parser/8.62.0": {
-      "path": "/package/typescript-eslint-parser/8.62.0",
-      "title": "@typescript-eslint/parser 8.62.0 npm minor version update",
-      "description": "@typescript-eslint/parser 8.62.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance..."
-    },
-    "/package/typescript-eslint-eslint-plugin/8.62.0": {
-      "path": "/package/typescript-eslint-eslint-plugin/8.62.0",
-      "title": "@typescript-eslint/eslint-plugin 8.62.0 npm minor version update",
-      "description": "@typescript-eslint/eslint-plugin 8.62.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency..."
-    },
     "/package/react-hook-form/7.80.0": {
       "path": "/package/react-hook-form/7.80.0",
       "title": "react-hook-form 7.80.0 npm minor version update",
       "description": "react-hook-form 7.80.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub..."
-    },
-    "/package/react-router-dom/7.18.0": {
-      "path": "/package/react-router-dom/7.18.0",
-      "title": "react-router-dom 7.18.0 npm minor version update",
-      "description": "react-router-dom 7.18.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub..."
     },
     "/package/esbuild/0.28.1": {
       "path": "/package/esbuild/0.28.1",
@@ -5750,15 +5720,50 @@
       "title": "npm-run-all 4.1.5 npm release-note review update",
       "description": "npm-run-all 4.1.5 frontend npm update risk: Release notes mention security language, but no OSV or CVE match was found. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Confirm against OSV and CVE..."
     },
-    "/package/webpack/5.108.2": {
-      "path": "/package/webpack/5.108.2",
-      "title": "webpack 5.108.2 npm patch version update",
-      "description": "webpack 5.108.2 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    "/package/astro/7.0.4": {
+      "path": "/package/astro/7.0.4",
+      "title": "astro 7.0.4 npm patch version update",
+      "description": "astro 7.0.4 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
-    "/package/prettier/3.9.3": {
-      "path": "/package/prettier/3.9.3",
-      "title": "prettier 3.9.3 npm patch version update",
-      "description": "prettier 3.9.3 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    "/package/vite/8.1.1": {
+      "path": "/package/vite/8.1.1",
+      "title": "vite 8.1.1 npm patch version update",
+      "description": "vite 8.1.1 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
+    "/package/prettier/3.9.4": {
+      "path": "/package/prettier/3.9.4",
+      "title": "prettier 3.9.4 npm patch version update",
+      "description": "prettier 3.9.4 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
+    "/package/framer-motion/12.42.1": {
+      "path": "/package/framer-motion/12.42.1",
+      "title": "framer-motion 12.42.1 npm patch version update",
+      "description": "framer-motion 12.42.1 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
+    "/package/webpack/5.108.3": {
+      "path": "/package/webpack/5.108.3",
+      "title": "webpack 5.108.3 npm patch version update",
+      "description": "webpack 5.108.3 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
+    "/package/turbo/2.10.1": {
+      "path": "/package/turbo/2.10.1",
+      "title": "turbo 2.10.1 npm patch version update",
+      "description": "turbo 2.10.1 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
+    "/package/typescript-eslint-parser/8.62.1": {
+      "path": "/package/typescript-eslint-parser/8.62.1",
+      "title": "@typescript-eslint/parser 8.62.1 npm patch version update",
+      "description": "@typescript-eslint/parser 8.62.1 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
+    "/package/typescript-eslint-eslint-plugin/8.62.1": {
+      "path": "/package/typescript-eslint-eslint-plugin/8.62.1",
+      "title": "@typescript-eslint/eslint-plugin 8.62.1 npm patch version update",
+      "description": "@typescript-eslint/eslint-plugin 8.62.1 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
+    "/package/react-router-dom/7.18.1": {
+      "path": "/package/react-router-dom/7.18.1",
+      "title": "react-router-dom 7.18.1 npm patch version update",
+      "description": "react-router-dom 7.18.1 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/tailwindcss/4.3.2": {
       "path": "/package/tailwindcss/4.3.2",
@@ -5784,11 +5789,6 @@
       "path": "/package/vue/3.5.39",
       "title": "vue 3.5.39 npm patch version update",
       "description": "vue 3.5.39 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-    },
-    "/package/astro/7.0.3": {
-      "path": "/package/astro/7.0.3",
-      "title": "astro 7.0.3 npm patch version update",
-      "description": "astro 7.0.3 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/autoprefixer/10.5.2": {
       "path": "/package/autoprefixer/10.5.2",
