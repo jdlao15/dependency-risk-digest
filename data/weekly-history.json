@@ -2,17 +2,26 @@
   {
     "week": "Week 27, 2026",
     "dateRange": "Jun 29 - Jul 5",
-    "risky": 14,
+    "risky": 15,
     "breaking": 0,
     "security": 0,
-    "safe": 68,
+    "safe": 67,
     "total": 82,
     "topSignals": [
       {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.22.0",
+        "packageName": "immer",
+        "route": "/package/immer/11.1.9",
         "risk": "review",
-        "newVersion": "1.22.0",
+        "newVersion": "11.1.9",
+        "reason": "Release notes mention security language, but no OSV or CVE match was found.",
+        "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
+        "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.23.0",
+        "risk": "review",
+        "newVersion": "1.23.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
@@ -70,19 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "@chakra-ui/react",
-        "route": "/package/chakra-ui-react/3.36.0",
-        "risk": "review",
-        "newVersion": "3.36.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w27",
-    "generatedAt": "2026-06-30T15:43:22.786Z"
+    "generatedAt": "2026-07-01T15:56:32.111Z"
   },
   {
     "week": "Week 26, 2026",
