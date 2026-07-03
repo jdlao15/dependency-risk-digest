@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T15:34:03.438Z",
+  "generatedAt": "2026-07-03T15:27:28.982Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -15,7 +15,7 @@
     "/package/apollo-client",
     "/package/apollo-client/4.2.5",
     "/package/astro",
-    "/package/astro/7.0.5",
+    "/package/astro/7.0.6",
     "/package/autoprefixer",
     "/package/autoprefixer/10.5.2",
     "/package/axios",
@@ -53,7 +53,7 @@
     "/package/gatsby",
     "/package/gatsby/5.16.1",
     "/package/graphql",
-    "/package/graphql/17.0.1",
+    "/package/graphql/17.0.2",
     "/package/happy-dom",
     "/package/happy-dom/20.10.6",
     "/package/immer",
@@ -73,7 +73,7 @@
     "/package/msw",
     "/package/msw/2.14.6",
     "/package/mui-material",
-    "/package/mui-material/9.1.2",
+    "/package/mui-material/9.2.0",
     "/package/nanoid",
     "/package/nanoid/5.1.16",
     "/package/next",

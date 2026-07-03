@@ -2,12 +2,21 @@
   {
     "week": "Week 27, 2026",
     "dateRange": "Jun 29 - Jul 5",
-    "risky": 15,
+    "risky": 16,
     "breaking": 0,
     "security": 0,
-    "safe": 67,
+    "safe": 66,
     "total": 82,
     "topSignals": [
+      {
+        "packageName": "@mui/material",
+        "route": "/package/mui-material/9.2.0",
+        "risk": "review",
+        "newVersion": "9.2.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
       {
         "packageName": "immer",
         "route": "/package/immer/11.1.9",
@@ -70,19 +79,10 @@
         "reason": "Release notes mention security language, but no OSV or CVE match was found.",
         "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
         "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
-      },
-      {
-        "packageName": "sass",
-        "route": "/package/sass/1.101.0",
-        "risk": "review",
-        "newVersion": "1.101.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w27",
-    "generatedAt": "2026-07-02T15:34:03.438Z"
+    "generatedAt": "2026-07-03T15:27:28.982Z"
   },
   {
     "week": "Week 26, 2026",
