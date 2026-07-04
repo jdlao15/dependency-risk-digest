@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T15:27:28.982Z",
+  "generatedAt": "2026-07-04T14:46:22.365Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -57,7 +57,7 @@
     "/package/happy-dom",
     "/package/happy-dom/20.10.6",
     "/package/immer",
-    "/package/immer/11.1.9",
+    "/package/immer/11.1.11",
     "/package/jest",
     "/package/jest/30.4.2",
     "/package/ky",
@@ -143,7 +143,7 @@
     "/package/tsup",
     "/package/tsup/8.5.1",
     "/package/turbo",
-    "/package/turbo/2.10.2",
+    "/package/turbo/2.10.3",
     "/package/types-react",
     "/package/types-react-dom",
     "/package/types-react-dom/19.2.3",
