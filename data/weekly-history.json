@@ -1,7 +1,7 @@
 [
   {
     "week": "Week 28, 2026",
-    "dateRange": "Jun 29 - Jul 5",
+    "dateRange": "Jul 6 - Jul 12",
     "risky": 15,
     "breaking": 0,
     "security": 0,
@@ -82,7 +82,7 @@
       }
     ],
     "route": "/weekly/2026-w28",
-    "generatedAt": "2026-07-05T14:53:53.436Z"
+    "generatedAt": "2026-07-06T16:31:16.108Z"
   },
   {
     "week": "Week 27, 2026",
