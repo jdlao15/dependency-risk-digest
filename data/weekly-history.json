@@ -9,6 +9,15 @@
     "total": 82,
     "topSignals": [
       {
+        "packageName": "msw",
+        "route": "/package/msw/2.15.0",
+        "risk": "review",
+        "newVersion": "2.15.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "@typescript-eslint/parser",
         "route": "/package/typescript-eslint-parser/8.63.0",
         "risk": "review",
@@ -70,19 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "cypress",
-        "route": "/package/cypress/15.18.0",
-        "risk": "review",
-        "newVersion": "15.18.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w28",
-    "generatedAt": "2026-07-07T15:57:54.597Z"
+    "generatedAt": "2026-07-08T15:36:41.506Z"
   },
   {
     "week": "Week 27, 2026",

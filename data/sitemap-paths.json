@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T15:57:54.597Z",
+  "generatedAt": "2026-07-08T15:36:41.506Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -35,7 +35,7 @@
     "/package/clsx",
     "/package/clsx/2.1.1",
     "/package/cypress",
-    "/package/cypress/15.18.0",
+    "/package/cypress/15.18.1",
     "/package/date-fns",
     "/package/date-fns/4.4.0",
     "/package/dayjs",
@@ -71,7 +71,7 @@
     "/package/minimist",
     "/package/minimist/1.2.8",
     "/package/msw",
-    "/package/msw/2.14.6",
+    "/package/msw/2.15.0",
     "/package/mui-material",
     "/package/mui-material/9.2.0",
     "/package/nanoid",
