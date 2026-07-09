@@ -2,12 +2,30 @@
   {
     "week": "Week 28, 2026",
     "dateRange": "Jul 6 - Jul 12",
-    "risky": 17,
-    "breaking": 0,
+    "risky": 18,
+    "breaking": 1,
     "security": 0,
-    "safe": 65,
+    "safe": 64,
     "total": 82,
     "topSignals": [
+      {
+        "packageName": "typescript",
+        "route": "/package/typescript/7.0.2",
+        "risk": "breaking",
+        "newVersion": "7.0.2",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.24.0",
+        "risk": "review",
+        "newVersion": "1.24.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
       {
         "packageName": "msw",
         "route": "/package/msw/2.15.0",
@@ -61,28 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.23.0",
-        "risk": "review",
-        "newVersion": "1.23.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "eslint",
-        "route": "/package/eslint/10.6.0",
-        "risk": "review",
-        "newVersion": "10.6.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w28",
-    "generatedAt": "2026-07-08T15:36:41.506Z"
+    "generatedAt": "2026-07-09T16:09:40.687Z"
   },
   {
     "week": "Week 27, 2026",
