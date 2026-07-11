@@ -18,6 +18,15 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "eslint",
+        "route": "/package/eslint/10.7.0",
+        "risk": "review",
+        "newVersion": "10.7.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "@storybook/react",
         "route": "/package/storybook-react/10.5.0",
         "risk": "review",
@@ -70,19 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "@typescript-eslint/eslint-plugin",
-        "route": "/package/typescript-eslint-eslint-plugin/8.63.0",
-        "risk": "review",
-        "newVersion": "8.63.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w28",
-    "generatedAt": "2026-07-10T15:40:24.294Z"
+    "generatedAt": "2026-07-11T14:33:13.436Z"
   },
   {
     "week": "Week 27, 2026",

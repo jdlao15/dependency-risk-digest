@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T15:40:24.294Z",
+  "generatedAt": "2026-07-11T14:33:13.436Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -45,7 +45,7 @@
     "/package/esbuild",
     "/package/esbuild/0.28.1",
     "/package/eslint",
-    "/package/eslint/10.6.0",
+    "/package/eslint/10.7.0",
     "/package/formik",
     "/package/formik/2.4.9",
     "/package/framer-motion",
