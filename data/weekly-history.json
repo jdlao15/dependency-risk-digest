@@ -1,5 +1,90 @@
 [
   {
+    "week": "Week 29, 2026",
+    "dateRange": "Jul 6 - Jul 12",
+    "risky": 20,
+    "breaking": 1,
+    "security": 0,
+    "safe": 62,
+    "total": 82,
+    "topSignals": [
+      {
+        "packageName": "typescript",
+        "route": "/package/typescript/7.0.2",
+        "risk": "breaking",
+        "newVersion": "7.0.2",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "pnpm",
+        "route": "/package/pnpm/11.12.0",
+        "risk": "review",
+        "newVersion": "11.12.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "eslint",
+        "route": "/package/eslint/10.7.0",
+        "risk": "review",
+        "newVersion": "10.7.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "@storybook/react",
+        "route": "/package/storybook-react/10.5.0",
+        "risk": "review",
+        "newVersion": "10.5.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "storybook",
+        "route": "/package/storybook/10.5.0",
+        "risk": "review",
+        "newVersion": "10.5.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.24.0",
+        "risk": "review",
+        "newVersion": "1.24.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "msw",
+        "route": "/package/msw/2.15.0",
+        "risk": "review",
+        "newVersion": "2.15.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "@typescript-eslint/parser",
+        "route": "/package/typescript-eslint-parser/8.63.0",
+        "risk": "review",
+        "newVersion": "8.63.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      }
+    ],
+    "route": "/weekly/2026-w29",
+    "generatedAt": "2026-07-12T14:38:11.191Z"
+  },
+  {
     "week": "Week 28, 2026",
     "dateRange": "Jul 6 - Jul 12",
     "risky": 20,

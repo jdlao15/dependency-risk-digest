@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T14:33:13.436Z",
+  "generatedAt": "2026-07-12T14:38:11.191Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -87,9 +87,9 @@
     "/package/playwright",
     "/package/playwright/1.61.1",
     "/package/pnpm",
-    "/package/pnpm/11.11.0",
+    "/package/pnpm/11.12.0",
     "/package/postcss",
-    "/package/postcss/8.5.16",
+    "/package/postcss/8.5.17",
     "/package/prettier",
     "/package/prettier/3.9.5",
     "/package/radix-ui-react-dialog",
@@ -184,6 +184,7 @@
     "/weekly/2026-w25",
     "/weekly/2026-w26",
     "/weekly/2026-w27",
-    "/weekly/2026-w28"
+    "/weekly/2026-w28",
+    "/weekly/2026-w29"
   ]
 }
