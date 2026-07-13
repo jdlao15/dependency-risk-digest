@@ -1,13 +1,22 @@
 [
   {
     "week": "Week 29, 2026",
-    "dateRange": "Jul 6 - Jul 12",
-    "risky": 20,
-    "breaking": 1,
+    "dateRange": "Jul 13 - Jul 19",
+    "risky": 21,
+    "breaking": 2,
     "security": 0,
-    "safe": 62,
+    "safe": 61,
     "total": 82,
     "topSignals": [
+      {
+        "packageName": "nanoid",
+        "route": "/package/nanoid/6.0.0",
+        "risk": "breaking",
+        "newVersion": "6.0.0",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
       {
         "packageName": "typescript",
         "route": "/package/typescript/7.0.2",
@@ -70,19 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "@typescript-eslint/parser",
-        "route": "/package/typescript-eslint-parser/8.63.0",
-        "risk": "review",
-        "newVersion": "8.63.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w29",
-    "generatedAt": "2026-07-12T14:38:11.191Z"
+    "generatedAt": "2026-07-13T16:00:34.965Z"
   },
   {
     "week": "Week 28, 2026",

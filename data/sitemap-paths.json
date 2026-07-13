@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T14:38:11.191Z",
+  "generatedAt": "2026-07-13T16:00:34.965Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -75,7 +75,7 @@
     "/package/mui-material",
     "/package/mui-material/9.2.0",
     "/package/nanoid",
-    "/package/nanoid/5.1.16",
+    "/package/nanoid/6.0.0",
     "/package/next",
     "/package/next/16.2.10",
     "/package/npm-run-all",
@@ -89,7 +89,7 @@
     "/package/pnpm",
     "/package/pnpm/11.12.0",
     "/package/postcss",
-    "/package/postcss/8.5.17",
+    "/package/postcss/8.5.19",
     "/package/prettier",
     "/package/prettier/3.9.5",
     "/package/radix-ui-react-dialog",
