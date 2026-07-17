@@ -2,10 +2,10 @@
   {
     "week": "Week 29, 2026",
     "dateRange": "Jul 13 - Jul 19",
-    "risky": 18,
+    "risky": 17,
     "breaking": 2,
     "security": 0,
-    "safe": 64,
+    "safe": 65,
     "total": 82,
     "topSignals": [
       {
@@ -27,10 +27,10 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
-        "packageName": "astro",
-        "route": "/package/astro/7.1.0",
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.25.0",
         "risk": "review",
-        "newVersion": "7.1.0",
+        "newVersion": "1.25.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
@@ -63,15 +63,6 @@
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.24.0",
-        "risk": "review",
-        "newVersion": "1.24.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
         "packageName": "msw",
         "route": "/package/msw/2.15.0",
         "risk": "review",
@@ -79,10 +70,19 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "react-hook-form",
+        "route": "/package/react-hook-form/7.81.0",
+        "risk": "review",
+        "newVersion": "7.81.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w29",
-    "generatedAt": "2026-07-16T15:15:02.665Z"
+    "generatedAt": "2026-07-17T14:54:22.872Z"
   },
   {
     "week": "Week 28, 2026",
