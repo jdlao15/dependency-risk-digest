@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T14:54:22.872Z",
+  "generatedAt": "2026-07-18T14:31:58.155Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -87,7 +87,7 @@
     "/package/playwright",
     "/package/playwright/1.61.1",
     "/package/pnpm",
-    "/package/pnpm/11.13.1",
+    "/package/pnpm/11.14.0",
     "/package/postcss",
     "/package/postcss/8.5.19",
     "/package/prettier",
@@ -100,7 +100,7 @@
     "/package/react-dom",
     "/package/react-dom/19.2.7",
     "/package/react-hook-form",
-    "/package/react-hook-form/7.81.0",
+    "/package/react-hook-form/7.82.0",
     "/package/react-router-dom",
     "/package/react-router-dom/7.18.1",
     "/package/react/19.2.7",
