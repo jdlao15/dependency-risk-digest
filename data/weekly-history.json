@@ -2,10 +2,10 @@
   {
     "week": "Week 30, 2026",
     "dateRange": "Jul 20 - Jul 26",
-    "risky": 19,
+    "risky": 21,
     "breaking": 3,
     "security": 0,
-    "safe": 63,
+    "safe": 61,
     "total": 82,
     "topSignals": [
       {
@@ -36,6 +36,24 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "next",
+        "route": "/package/next/16.2.11",
+        "risk": "review",
+        "newVersion": "16.2.11",
+        "reason": "Release notes mention security language, but no OSV or CVE match was found.",
+        "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
+        "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
+      },
+      {
+        "packageName": "cypress",
+        "route": "/package/cypress/15.19.0",
+        "risk": "review",
+        "newVersion": "15.19.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "@typescript-eslint/parser",
         "route": "/package/typescript-eslint-parser/8.65.0",
         "risk": "review",
@@ -61,28 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "react-hook-form",
-        "route": "/package/react-hook-form/7.82.0",
-        "risk": "review",
-        "newVersion": "7.82.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "happy-dom",
-        "route": "/package/happy-dom/20.11.0",
-        "risk": "review",
-        "newVersion": "20.11.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w30",
-    "generatedAt": "2026-07-21T15:18:38.855Z"
+    "generatedAt": "2026-07-22T15:17:53.758Z"
   },
   {
     "week": "Week 29, 2026",
