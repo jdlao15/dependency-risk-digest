@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T15:17:53.758Z",
+  "generatedAt": "2026-07-23T15:26:37.957Z",
   "weeklyDigest": {
     "week": "Week 30, 2026",
     "dateRange": "Jul 20 - Jul 26",
@@ -47,6 +47,33 @@
           "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
         },
         {
+          "packageName": "lucide-react",
+          "route": "/package/lucide-react/1.26.0",
+          "risk": "review",
+          "newVersion": "1.26.0",
+          "reason": "Minor version release detected with no OSV match.",
+          "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+        },
+        {
+          "packageName": "less",
+          "route": "/package/less/4.8.0",
+          "risk": "review",
+          "newVersion": "4.8.0",
+          "reason": "Minor version release detected with no OSV match.",
+          "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+        },
+        {
+          "packageName": "pnpm",
+          "route": "/package/pnpm/11.16.0",
+          "risk": "review",
+          "newVersion": "11.16.0",
+          "reason": "Minor version release detected with no OSV match.",
+          "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+        },
+        {
           "packageName": "next",
           "route": "/package/next/16.2.11",
           "risk": "review",
@@ -63,37 +90,10 @@
           "reason": "Minor version release detected with no OSV match.",
           "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
           "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-        },
-        {
-          "packageName": "@typescript-eslint/parser",
-          "route": "/package/typescript-eslint-parser/8.65.0",
-          "risk": "review",
-          "newVersion": "8.65.0",
-          "reason": "Minor version release detected with no OSV match.",
-          "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-        },
-        {
-          "packageName": "@typescript-eslint/eslint-plugin",
-          "route": "/package/typescript-eslint-eslint-plugin/8.65.0",
-          "risk": "review",
-          "newVersion": "8.65.0",
-          "reason": "Minor version release detected with no OSV match.",
-          "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-        },
-        {
-          "packageName": "nuxt",
-          "route": "/package/nuxt/4.5.0",
-          "risk": "review",
-          "newVersion": "4.5.0",
-          "reason": "Minor version release detected with no OSV match.",
-          "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
         }
       ],
       "route": "/weekly/2026-w30",
-      "generatedAt": "2026-07-22T15:17:53.758Z"
+      "generatedAt": "2026-07-23T15:26:37.957Z"
     },
     {
       "week": "Week 29, 2026",
@@ -700,7 +700,7 @@
       "oldVersion": "6.10.0",
       "newVersion": "7.0.0",
       "releaseDate": "2026-07-20",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "isRecent": true,
       "risk": "breaking",
       "category": "Major version",
@@ -741,7 +741,7 @@
       "oldVersion": "5.1.16",
       "newVersion": "6.0.0",
       "releaseDate": "2026-07-12",
-      "publishedAgo": "published 10 days ago",
+      "publishedAgo": "published 11 days ago",
       "isRecent": true,
       "risk": "breaking",
       "category": "Major version",
@@ -782,7 +782,7 @@
       "oldVersion": "6.0.3",
       "newVersion": "7.0.2",
       "releaseDate": "2026-07-08",
-      "publishedAgo": "published 13 days ago",
+      "publishedAgo": "published 14 days ago",
       "isRecent": true,
       "risk": "breaking",
       "category": "Major version",
@@ -812,6 +812,129 @@
       ]
     },
     {
+      "id": "lucide-react-1-26-0",
+      "packageName": "lucide-react",
+      "packageSlug": "lucide-react",
+      "description": "React icon library",
+      "oldVersion": "1.25.0",
+      "newVersion": "1.26.0",
+      "releaseDate": "2026-07-23",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "review",
+      "category": "Minor version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Minor version release detected with no OSV match.",
+      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
+      "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
+      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+      "whatChanged": "GitHub release note found: Version 1.26.0.",
+      "githubReleaseTitle": "Version 1.26.0",
+      "githubReleaseUrl": "https://github.com/lucide-icons/lucide/releases/tag/1.26.0",
+      "githubReleaseTag": "1.26.0",
+      "githubReleasePublishedAt": "2026-07-23T06:11:24Z",
+      "releaseNotesExcerpt": "What's Changed fix(docs): fix home page package links & accessible labels by @karsa-mistmere in https://github.com/lucide-icons/lucide/pull/4540 fix(icons): changed columns-3-cog icon by @kamilasw in https://github.com/lucide-icons/lucide/pull/4578 fix(icons): extended metadata o",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/lucide-react/1.26.0",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/lucide-react"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/lucide-icons/lucide"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/lucide-icons/lucide/releases/tag/1.26.0"
+        }
+      ]
+    },
+    {
+      "id": "less-4-8-0",
+      "packageName": "less",
+      "packageSlug": "less",
+      "description": "CSS preprocessor",
+      "oldVersion": "4.7.0",
+      "newVersion": "4.8.0",
+      "releaseDate": "2026-07-22",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "review",
+      "category": "Minor version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Minor version release detected with no OSV match.",
+      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+      "whatChanged": "GitHub release note found: Release v4.8.0.",
+      "githubReleaseTitle": "Release v4.8.0",
+      "githubReleaseUrl": "https://github.com/less/less.js/releases/tag/v4.8.0",
+      "githubReleaseTag": "v4.8.0",
+      "githubReleasePublishedAt": "2026-07-22T17:20:17Z",
+      "releaseNotesExcerpt": "Changes See CHANGELOG.md for details. Installation",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/less/4.8.0",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/less"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/less/less.js"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/less/less.js/releases/tag/v4.8.0"
+        }
+      ]
+    },
+    {
+      "id": "pnpm-11-16-0",
+      "packageName": "pnpm",
+      "packageSlug": "pnpm",
+      "description": "Package manager",
+      "oldVersion": "11.15.1",
+      "newVersion": "11.16.0",
+      "releaseDate": "2026-07-22",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "review",
+      "category": "Minor version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Minor version release detected with no OSV match.",
+      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+      "whatChanged": "GitHub release note found: pnpm 11.16.",
+      "githubReleaseTitle": "pnpm 11.16",
+      "githubReleaseUrl": "https://github.com/pnpm/pnpm/releases/tag/v11.16.0",
+      "githubReleaseTag": "v11.16.0",
+      "githubReleasePublishedAt": "2026-07-22T20:36:06Z",
+      "releaseNotesExcerpt": "Minor Changes The first release of a package now publishes the version written in its manifest verbatim, instead of bumping off it. pnpm version -r and pnpm change status check the registry for each release's current version; when that version is not yet published, the package de",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/pnpm/11.16.0",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/pnpm"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/pnpm/pnpm"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/pnpm/pnpm/releases/tag/v11.16.0"
+        }
+      ]
+    },
+    {
       "id": "next-16-2-11",
       "packageName": "next",
       "packageSlug": "next",
@@ -819,7 +942,7 @@
       "oldVersion": "16.2.10",
       "newVersion": "16.2.11",
       "releaseDate": "2026-07-21",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "isRecent": true,
       "risk": "review",
       "category": "Release-note review",
@@ -860,7 +983,7 @@
       "oldVersion": "15.18.1",
       "newVersion": "15.19.0",
       "releaseDate": "2026-07-21",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -901,7 +1024,7 @@
       "oldVersion": "8.64.0",
       "newVersion": "8.65.0",
       "releaseDate": "2026-07-20",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -942,7 +1065,7 @@
       "oldVersion": "8.64.0",
       "newVersion": "8.65.0",
       "releaseDate": "2026-07-20",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -983,7 +1106,7 @@
       "oldVersion": "4.4.8",
       "newVersion": "4.5.0",
       "releaseDate": "2026-07-18",
-      "publishedAgo": "published 3 days ago",
+      "publishedAgo": "published 4 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -1024,7 +1147,7 @@
       "oldVersion": "7.81.0",
       "newVersion": "7.82.0",
       "releaseDate": "2026-07-18",
-      "publishedAgo": "published 4 days ago",
+      "publishedAgo": "published 5 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -1058,129 +1181,6 @@
       ]
     },
     {
-      "id": "happy-dom-20-11-0",
-      "packageName": "happy-dom",
-      "packageSlug": "happy-dom",
-      "description": "Browser environment for testing",
-      "oldVersion": "20.10.6",
-      "newVersion": "20.11.0",
-      "releaseDate": "2026-07-18",
-      "publishedAgo": "published 3 days ago",
-      "isRecent": true,
-      "risk": "review",
-      "category": "Minor version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Minor version release detected with no OSV match.",
-      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-      "whatChanged": "GitHub release note found: v20.11.0.",
-      "githubReleaseTitle": "v20.11.0",
-      "githubReleaseUrl": "https://github.com/capricorn86/happy-dom/releases/tag/v20.11.0",
-      "githubReleaseTag": "v20.11.0",
-      "githubReleasePublishedAt": "2026-07-18T17:22:12Z",
-      "releaseNotesExcerpt": ":art: Features - Adds support for CookieStore API - By **@TrevorBurnham** in task #1864 - Adds support for Element.checkVisibility() - By **@capricorn86** in task #1506",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/happy-dom/20.11.0",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/happy-dom"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/capricorn86/happy-dom"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/capricorn86/happy-dom/releases/tag/v20.11.0"
-        }
-      ]
-    },
-    {
-      "id": "less-4-7-0",
-      "packageName": "less",
-      "packageSlug": "less",
-      "description": "CSS preprocessor",
-      "oldVersion": "4.6.7",
-      "newVersion": "4.7.0",
-      "releaseDate": "2026-07-18",
-      "publishedAgo": "published 3 days ago",
-      "isRecent": true,
-      "risk": "review",
-      "category": "Minor version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Minor version release detected with no OSV match.",
-      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-      "whatChanged": "GitHub release note found: Release v4.7.0.",
-      "githubReleaseTitle": "Release v4.7.0",
-      "githubReleaseUrl": "https://github.com/less/less.js/releases/tag/v4.7.0",
-      "githubReleaseTag": "v4.7.0",
-      "githubReleasePublishedAt": "2026-07-18T17:41:35Z",
-      "releaseNotesExcerpt": "Changes See CHANGELOG.md for details. Installation",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/less/4.7.0",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/less"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/less/less.js"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/less/less.js/releases/tag/v4.7.0"
-        }
-      ]
-    },
-    {
-      "id": "lucide-react-1-25-0",
-      "packageName": "lucide-react",
-      "packageSlug": "lucide-react",
-      "description": "React icon library",
-      "oldVersion": "1.24.0",
-      "newVersion": "1.25.0",
-      "releaseDate": "2026-07-17",
-      "publishedAgo": "published 5 days ago",
-      "isRecent": true,
-      "risk": "review",
-      "category": "Minor version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Minor version release detected with no OSV match.",
-      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
-      "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
-      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-      "whatChanged": "GitHub release note found: Version 1.25.0.",
-      "githubReleaseTitle": "Version 1.25.0",
-      "githubReleaseUrl": "https://github.com/lucide-icons/lucide/releases/tag/1.25.0",
-      "githubReleaseTag": "1.25.0",
-      "githubReleasePublishedAt": "2026-07-17T08:26:07Z",
-      "releaseNotesExcerpt": "What's Changed fix(icons): Rename to circle-euro to match other euro icons by @ericfennis in https://github.com/lucide-icons/lucide/pull/4531 chore(deps-dev): bump astro from 6.1.10 to 6.4.6 by @dependabot[bot] in https://github.com/lucide-icons/lucide/pull/4487 fix(site): empty ",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/lucide-react/1.25.0",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/lucide-react"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/lucide-icons/lucide"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/lucide-icons/lucide/releases/tag/1.25.0"
-        }
-      ]
-    },
-    {
       "id": "eslint-10-7-0",
       "packageName": "eslint",
       "packageSlug": "eslint",
@@ -1188,7 +1188,7 @@
       "oldVersion": "10.6.0",
       "newVersion": "10.7.0",
       "releaseDate": "2026-07-10",
-      "publishedAgo": "published 11 days ago",
+      "publishedAgo": "published 12 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -1229,7 +1229,7 @@
       "oldVersion": "2.14.7",
       "newVersion": "2.15.0",
       "releaseDate": "2026-07-08",
-      "publishedAgo": "published 14 days ago",
+      "publishedAgo": "published 15 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -1270,7 +1270,7 @@
       "oldVersion": "9.1.2",
       "newVersion": "9.2.0",
       "releaseDate": "2026-07-03",
-      "publishedAgo": "published 19 days ago",
+      "publishedAgo": "published 20 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -1311,7 +1311,7 @@
       "oldVersion": "0.28.0",
       "newVersion": "0.28.1",
       "releaseDate": "2026-06-11",
-      "publishedAgo": "published 40 days ago",
+      "publishedAgo": "published 41 days ago",
       "isRecent": false,
       "risk": "review",
       "category": "Release-note review",
@@ -1352,7 +1352,7 @@
       "oldVersion": "4.3.0",
       "newVersion": "4.4.0",
       "releaseDate": "2026-05-29",
-      "publishedAgo": "published 53 days ago",
+      "publishedAgo": "published 54 days ago",
       "isRecent": false,
       "risk": "review",
       "category": "Minor version",
@@ -1393,7 +1393,7 @@
       "oldVersion": "2.11.2",
       "newVersion": "2.12.0",
       "releaseDate": "2026-05-15",
-      "publishedAgo": "published 68 days ago",
+      "publishedAgo": "published 69 days ago",
       "isRecent": false,
       "risk": "review",
       "category": "Minor version",
@@ -1434,7 +1434,7 @@
       "oldVersion": "3.5.0",
       "newVersion": "3.6.0",
       "releaseDate": "2026-05-10",
-      "publishedAgo": "published 73 days ago",
+      "publishedAgo": "published 74 days ago",
       "isRecent": false,
       "risk": "review",
       "category": "Minor version",
@@ -1557,7 +1557,7 @@
       "oldVersion": "22.0.7",
       "newVersion": "22.0.8",
       "releaseDate": "2026-07-22",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -1598,7 +1598,7 @@
       "oldVersion": "2.10.5",
       "newVersion": "2.10.6",
       "releaseDate": "2026-07-22",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -1639,7 +1639,7 @@
       "oldVersion": "6.0.3",
       "newVersion": "6.0.4",
       "releaseDate": "2026-07-22",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -1673,6 +1673,47 @@
       ]
     },
     {
+      "id": "happy-dom-20-11-1",
+      "packageName": "happy-dom",
+      "packageSlug": "happy-dom",
+      "description": "Browser environment for testing",
+      "oldVersion": "20.11.0",
+      "newVersion": "20.11.1",
+      "releaseDate": "2026-07-22",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "low",
+      "category": "Patch version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: v20.11.1.",
+      "githubReleaseTitle": "v20.11.1",
+      "githubReleaseUrl": "https://github.com/capricorn86/happy-dom/releases/tag/v20.11.1",
+      "githubReleaseTag": "v20.11.1",
+      "githubReleasePublishedAt": "2026-07-22T16:06:40Z",
+      "releaseNotesExcerpt": ":construction_worker_man: Patch fixes - Improve performance of query selectors by avoiding construction of DOMException when not needed - By **@@cyfung1031** in task #2228",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/happy-dom/20.11.1",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/happy-dom"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/capricorn86/happy-dom"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/capricorn86/happy-dom/releases/tag/v20.11.1"
+        }
+      ]
+    },
+    {
       "id": "postcss-8-5-22",
       "packageName": "postcss",
       "packageSlug": "postcss",
@@ -1680,7 +1721,7 @@
       "oldVersion": "8.5.21",
       "newVersion": "8.5.22",
       "releaseDate": "2026-07-22",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -1714,6 +1755,121 @@
       ]
     },
     {
+      "id": "sass-1-101-6",
+      "packageName": "sass",
+      "packageSlug": "sass",
+      "description": "CSS preprocessor",
+      "oldVersion": "1.101.5",
+      "newVersion": "1.101.6",
+      "releaseDate": "2026-07-22",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "low",
+      "category": "Patch version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: Dart Sass 1.101.6.",
+      "githubReleaseTitle": "Dart Sass 1.101.6",
+      "githubReleaseUrl": "https://github.com/sass/dart-sass/releases/tag/1.101.6",
+      "githubReleaseTag": "1.101.6",
+      "githubReleasePublishedAt": "2026-07-23T00:05:07Z",
+      "releaseNotesExcerpt": "To install Sass 1.101.6, download one of the packages below and [add it to your PATH][], or see [the Sass website][] for full installation instructions. [add it to your PATH]: https://katiek2.github.io/path-doc/ [the Sass website]: https://sass-lang.com/install Changes No user-vi",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/sass/1.101.6",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/sass"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/sass/dart-sass"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/sass/dart-sass/releases/tag/1.101.6"
+        }
+      ]
+    },
+    {
+      "id": "radix-ui-react-dialog-1-1-21",
+      "packageName": "@radix-ui/react-dialog",
+      "packageSlug": "radix-ui-react-dialog",
+      "description": "Accessible dialog primitive",
+      "oldVersion": "1.1.20",
+      "newVersion": "1.1.21",
+      "releaseDate": "2026-07-22",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "low",
+      "category": "Patch version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "Patch @radix-ui/react-dialog 1.1.21 release detected with no OSV match.",
+      "githubReleaseTitle": "",
+      "githubReleaseUrl": "",
+      "githubReleaseTag": "",
+      "githubReleasePublishedAt": "",
+      "releaseNotesExcerpt": "",
+      "releaseNotesStatus": "No GitHub releases found for this repository.",
+      "route": "/package/radix-ui-react-dialog/1.1.21",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/@radix-ui/react-dialog"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/radix-ui/primitives"
+        }
+      ]
+    },
+    {
+      "id": "radix-ui-react-popover-1-1-21",
+      "packageName": "@radix-ui/react-popover",
+      "packageSlug": "radix-ui-react-popover",
+      "description": "Accessible popover primitive",
+      "oldVersion": "1.1.20",
+      "newVersion": "1.1.21",
+      "releaseDate": "2026-07-22",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "low",
+      "category": "Patch version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "Patch @radix-ui/react-popover 1.1.21 release detected with no OSV match.",
+      "githubReleaseTitle": "",
+      "githubReleaseUrl": "",
+      "githubReleaseTag": "",
+      "githubReleasePublishedAt": "",
+      "releaseNotesExcerpt": "",
+      "releaseNotesStatus": "No GitHub releases found for this repository.",
+      "route": "/package/radix-ui-react-popover/1.1.21",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/@radix-ui/react-popover"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/radix-ui/primitives"
+        }
+      ]
+    },
+    {
       "id": "react-19-2-8",
       "packageName": "react",
       "packageSlug": "react",
@@ -1721,7 +1877,7 @@
       "oldVersion": "19.2.7",
       "newVersion": "19.2.8",
       "releaseDate": "2026-07-21",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -1762,7 +1918,7 @@
       "oldVersion": "19.2.7",
       "newVersion": "19.2.8",
       "releaseDate": "2026-07-21",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -1803,7 +1959,7 @@
       "oldVersion": "3.9.5",
       "newVersion": "3.9.6",
       "releaseDate": "2026-07-21",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -1844,7 +2000,7 @@
       "oldVersion": "5.101.3",
       "newVersion": "5.101.4",
       "releaseDate": "2026-07-21",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -1878,47 +2034,6 @@
       ]
     },
     {
-      "id": "sass-1-101-3",
-      "packageName": "sass",
-      "packageSlug": "sass",
-      "description": "CSS preprocessor",
-      "oldVersion": "1.101.0",
-      "newVersion": "1.101.3",
-      "releaseDate": "2026-07-21",
-      "publishedAgo": "published 1 day ago",
-      "isRecent": true,
-      "risk": "low",
-      "category": "Patch version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Patch release with no OSV match.",
-      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "GitHub release note found: Dart Sass 1.101.3.",
-      "githubReleaseTitle": "Dart Sass 1.101.3",
-      "githubReleaseUrl": "https://github.com/sass/dart-sass/releases/tag/1.101.3",
-      "githubReleaseTag": "1.101.3",
-      "githubReleasePublishedAt": "2026-07-21T02:03:40Z",
-      "releaseNotesExcerpt": "To install Sass 1.101.3, download one of the packages below and [add it to your PATH][], or see [the Sass website][] for full installation instructions. [add it to your PATH]: https://katiek2.github.io/path-doc/ [the Sass website]: https://sass-lang.com/install Changes No user-vi",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/sass/1.101.3",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/sass"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/sass/dart-sass"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/sass/dart-sass/releases/tag/1.101.3"
-        }
-      ]
-    },
-    {
       "id": "svelte-5-56-7",
       "packageName": "svelte",
       "packageSlug": "svelte",
@@ -1926,7 +2041,7 @@
       "oldVersion": "5.56.6",
       "newVersion": "5.56.7",
       "releaseDate": "2026-07-20",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -1967,7 +2082,7 @@
       "oldVersion": "7.1.2",
       "newVersion": "7.1.3",
       "releaseDate": "2026-07-20",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2008,7 +2123,7 @@
       "oldVersion": "10.5.2",
       "newVersion": "10.5.3",
       "releaseDate": "2026-07-20",
-      "publishedAgo": "published 2 days ago",
+      "publishedAgo": "published 3 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2049,7 +2164,7 @@
       "oldVersion": "10.5.2",
       "newVersion": "10.5.3",
       "releaseDate": "2026-07-20",
-      "publishedAgo": "published 2 days ago",
+      "publishedAgo": "published 3 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2083,80 +2198,6 @@
       ]
     },
     {
-      "id": "radix-ui-react-dialog-1-1-20",
-      "packageName": "@radix-ui/react-dialog",
-      "packageSlug": "radix-ui-react-dialog",
-      "description": "Accessible dialog primitive",
-      "oldVersion": "1.1.19",
-      "newVersion": "1.1.20",
-      "releaseDate": "2026-07-20",
-      "publishedAgo": "published 2 days ago",
-      "isRecent": true,
-      "risk": "low",
-      "category": "Patch version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Patch release with no OSV match.",
-      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-      "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
-      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "Patch @radix-ui/react-dialog 1.1.20 release detected with no OSV match.",
-      "githubReleaseTitle": "",
-      "githubReleaseUrl": "",
-      "githubReleaseTag": "",
-      "githubReleasePublishedAt": "",
-      "releaseNotesExcerpt": "",
-      "releaseNotesStatus": "No GitHub releases found for this repository.",
-      "route": "/package/radix-ui-react-dialog/1.1.20",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/@radix-ui/react-dialog"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/radix-ui/primitives"
-        }
-      ]
-    },
-    {
-      "id": "radix-ui-react-popover-1-1-20",
-      "packageName": "@radix-ui/react-popover",
-      "packageSlug": "radix-ui-react-popover",
-      "description": "Accessible popover primitive",
-      "oldVersion": "1.1.19",
-      "newVersion": "1.1.20",
-      "releaseDate": "2026-07-20",
-      "publishedAgo": "published 2 days ago",
-      "isRecent": true,
-      "risk": "low",
-      "category": "Patch version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Patch release with no OSV match.",
-      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-      "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
-      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "Patch @radix-ui/react-popover 1.1.20 release detected with no OSV match.",
-      "githubReleaseTitle": "",
-      "githubReleaseUrl": "",
-      "githubReleaseTag": "",
-      "githubReleasePublishedAt": "",
-      "releaseNotesExcerpt": "",
-      "releaseNotesStatus": "No GitHub releases found for this repository.",
-      "route": "/package/radix-ui-react-popover/1.1.20",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/@radix-ui/react-popover"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/radix-ui/primitives"
-        }
-      ]
-    },
-    {
       "id": "swc-core-1-15-46",
       "packageName": "@swc/core",
       "packageSlug": "swc-core",
@@ -2164,7 +2205,7 @@
       "oldVersion": "1.15.43",
       "newVersion": "1.15.46",
       "releaseDate": "2026-07-19",
-      "publishedAgo": "published 3 days ago",
+      "publishedAgo": "published 4 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2205,7 +2246,7 @@
       "oldVersion": "3.36.0",
       "newVersion": "3.36.1",
       "releaseDate": "2026-07-19",
-      "publishedAgo": "published 3 days ago",
+      "publishedAgo": "published 4 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2239,47 +2280,6 @@
       ]
     },
     {
-      "id": "pnpm-11-15-1",
-      "packageName": "pnpm",
-      "packageSlug": "pnpm",
-      "description": "Package manager",
-      "oldVersion": "11.15.0",
-      "newVersion": "11.15.1",
-      "releaseDate": "2026-07-19",
-      "publishedAgo": "published 2 days ago",
-      "isRecent": true,
-      "risk": "low",
-      "category": "Patch version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Patch release with no OSV match.",
-      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "GitHub release note found: pnpm 11.15.1.",
-      "githubReleaseTitle": "pnpm 11.15.1",
-      "githubReleaseUrl": "https://github.com/pnpm/pnpm/releases/tag/v11.15.1",
-      "githubReleaseTag": "v11.15.1",
-      "githubReleasePublishedAt": "2026-07-19T22:32:13Z",
-      "releaseNotesExcerpt": "Patch Changes pnpm install now detects a supportedArchitectures change and re-evaluates previously skipped platform-specific optional dependencies, instead of reporting the project as up to date and leaving the packages for the old architecture set in place. pnpm setup now remove",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/pnpm/11.15.1",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/pnpm"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/pnpm/pnpm"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/pnpm/pnpm/releases/tag/v11.15.1"
-        }
-      ]
-    },
-    {
       "id": "styled-components-6-4-4",
       "packageName": "styled-components",
       "packageSlug": "styled-components",
@@ -2287,7 +2287,7 @@
       "oldVersion": "6.4.3",
       "newVersion": "6.4.4",
       "releaseDate": "2026-07-18",
-      "publishedAgo": "published 3 days ago",
+      "publishedAgo": "published 4 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2328,7 +2328,7 @@
       "oldVersion": "3.5.39",
       "newVersion": "3.5.40",
       "releaseDate": "2026-07-16",
-      "publishedAgo": "published 6 days ago",
+      "publishedAgo": "published 7 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2369,7 +2369,7 @@
       "oldVersion": "8.1.4",
       "newVersion": "8.1.5",
       "releaseDate": "2026-07-16",
-      "publishedAgo": "published 6 days ago",
+      "publishedAgo": "published 7 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2410,7 +2410,7 @@
       "oldVersion": "11.1.14",
       "newVersion": "11.1.15",
       "releaseDate": "2026-07-16",
-      "publishedAgo": "published 5 days ago",
+      "publishedAgo": "published 6 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2451,7 +2451,7 @@
       "oldVersion": "4.3.2",
       "newVersion": "4.3.3",
       "releaseDate": "2026-07-16",
-      "publishedAgo": "published 6 days ago",
+      "publishedAgo": "published 7 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2492,7 +2492,7 @@
       "oldVersion": "10.5.3",
       "newVersion": "10.5.4",
       "releaseDate": "2026-07-16",
-      "publishedAgo": "published 6 days ago",
+      "publishedAgo": "published 7 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2533,7 +2533,7 @@
       "oldVersion": "8.21.0",
       "newVersion": "8.21.1",
       "releaseDate": "2026-07-14",
-      "publishedAgo": "published 7 days ago",
+      "publishedAgo": "published 8 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2574,7 +2574,7 @@
       "oldVersion": "4.2.6",
       "newVersion": "4.2.7",
       "releaseDate": "2026-07-13",
-      "publishedAgo": "published 8 days ago",
+      "publishedAgo": "published 9 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2615,7 +2615,7 @@
       "oldVersion": "4.1.9",
       "newVersion": "4.1.10",
       "releaseDate": "2026-07-06",
-      "publishedAgo": "published 16 days ago",
+      "publishedAgo": "published 17 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2656,7 +2656,7 @@
       "oldVersion": "5.108.3",
       "newVersion": "5.108.4",
       "releaseDate": "2026-07-04",
-      "publishedAgo": "published 17 days ago",
+      "publishedAgo": "published 18 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2697,7 +2697,7 @@
       "oldVersion": "17.0.1",
       "newVersion": "17.0.2",
       "releaseDate": "2026-07-03",
-      "publishedAgo": "published 19 days ago",
+      "publishedAgo": "published 20 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2738,7 +2738,7 @@
       "oldVersion": "1.9.13",
       "newVersion": "1.9.14",
       "releaseDate": "2026-07-01",
-      "publishedAgo": "published 20 days ago",
+      "publishedAgo": "published 21 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2775,7 +2775,7 @@
       "oldVersion": "12.42.1",
       "newVersion": "12.42.2",
       "releaseDate": "2026-06-30",
-      "publishedAgo": "published 21 days ago",
+      "publishedAgo": "published 22 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2812,7 +2812,7 @@
       "oldVersion": "7.18.0",
       "newVersion": "7.18.1",
       "releaseDate": "2026-06-29",
-      "publishedAgo": "published 22 days ago",
+      "publishedAgo": "published 23 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2853,7 +2853,7 @@
       "oldVersion": "1.61.0",
       "newVersion": "1.61.1",
       "releaseDate": "2026-06-23",
-      "publishedAgo": "published 28 days ago",
+      "publishedAgo": "published 29 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2894,7 +2894,7 @@
       "oldVersion": "2.4.1",
       "newVersion": "2.4.2",
       "releaseDate": "2026-06-22",
-      "publishedAgo": "published 29 days ago",
+      "publishedAgo": "published 30 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2935,7 +2935,7 @@
       "oldVersion": "1.18.0",
       "newVersion": "1.18.1",
       "releaseDate": "2026-06-22",
-      "publishedAgo": "published 29 days ago",
+      "publishedAgo": "published 30 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2976,7 +2976,7 @@
       "oldVersion": "14.0.0",
       "newVersion": "14.0.1",
       "releaseDate": "2026-06-20",
-      "publishedAgo": "published 32 days ago",
+      "publishedAgo": "published 33 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3017,7 +3017,7 @@
       "oldVersion": "4.62.1",
       "newVersion": "4.62.2",
       "releaseDate": "2026-06-19",
-      "publishedAgo": "published 33 days ago",
+      "publishedAgo": "published 34 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3058,7 +3058,7 @@
       "oldVersion": "7.8.4",
       "newVersion": "7.8.5",
       "releaseDate": "2026-06-19",
-      "publishedAgo": "published 32 days ago",
+      "publishedAgo": "published 33 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3099,7 +3099,7 @@
       "oldVersion": "8.0.1",
       "newVersion": "8.0.2",
       "releaseDate": "2026-06-18",
-      "publishedAgo": "published 34 days ago",
+      "publishedAgo": "published 35 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3140,7 +3140,7 @@
       "oldVersion": "8.0.0",
       "newVersion": "8.0.1",
       "releaseDate": "2026-06-17",
-      "publishedAgo": "published 35 days ago",
+      "publishedAgo": "published 36 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3181,7 +3181,7 @@
       "oldVersion": "8.0.0",
       "newVersion": "8.0.1",
       "releaseDate": "2026-06-17",
-      "publishedAgo": "published 35 days ago",
+      "publishedAgo": "published 36 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3222,7 +3222,7 @@
       "oldVersion": "19.2.16",
       "newVersion": "19.2.17",
       "releaseDate": "2026-06-05",
-      "publishedAgo": "published 46 days ago",
+      "publishedAgo": "published 47 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3259,7 +3259,7 @@
       "oldVersion": "2.17.4",
       "newVersion": "2.17.5",
       "releaseDate": "2026-06-01",
-      "publishedAgo": "published 51 days ago",
+      "publishedAgo": "published 52 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3296,7 +3296,7 @@
       "oldVersion": "5.0.13",
       "newVersion": "5.0.14",
       "releaseDate": "2026-05-28",
-      "publishedAgo": "published 55 days ago",
+      "publishedAgo": "published 56 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3337,7 +3337,7 @@
       "oldVersion": "1.11.20",
       "newVersion": "1.11.21",
       "releaseDate": "2026-05-26",
-      "publishedAgo": "published 57 days ago",
+      "publishedAgo": "published 58 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3378,7 +3378,7 @@
       "oldVersion": "30.4.1",
       "newVersion": "30.4.2",
       "releaseDate": "2026-05-09",
-      "publishedAgo": "published 74 days ago",
+      "publishedAgo": "published 75 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3419,7 +3419,7 @@
       "oldVersion": "4.4.2",
       "newVersion": "4.4.3",
       "releaseDate": "2026-05-04",
-      "publishedAgo": "published 79 days ago",
+      "publishedAgo": "published 80 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3460,7 +3460,7 @@
       "oldVersion": "2.0.1",
       "newVersion": "2.0.2",
       "releaseDate": "2026-04-21",
-      "publishedAgo": "published 92 days ago",
+      "publishedAgo": "published 93 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3501,7 +3501,7 @@
       "oldVersion": "4.18.0",
       "newVersion": "4.18.1",
       "releaseDate": "2026-04-01",
-      "publishedAgo": "published 111 days ago",
+      "publishedAgo": "published 112 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3542,7 +3542,7 @@
       "oldVersion": "5.16.0",
       "newVersion": "5.16.1",
       "releaseDate": "2026-02-10",
-      "publishedAgo": "published 162 days ago",
+      "publishedAgo": "published 163 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3583,7 +3583,7 @@
       "oldVersion": "2.16.3",
       "newVersion": "2.16.4",
       "releaseDate": "2026-02-02",
-      "publishedAgo": "published 170 days ago",
+      "publishedAgo": "published 171 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3624,7 +3624,7 @@
       "oldVersion": "16.3.1",
       "newVersion": "16.3.2",
       "releaseDate": "2026-01-19",
-      "publishedAgo": "published 184 days ago",
+      "publishedAgo": "published 185 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3665,7 +3665,7 @@
       "oldVersion": "8.5.0",
       "newVersion": "8.5.1",
       "releaseDate": "2025-11-12",
-      "publishedAgo": "published 251 days ago",
+      "publishedAgo": "published 252 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3706,7 +3706,7 @@
       "oldVersion": "19.2.2",
       "newVersion": "19.2.3",
       "releaseDate": "2025-11-12",
-      "publishedAgo": "published 252 days ago",
+      "publishedAgo": "published 253 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3743,7 +3743,7 @@
       "oldVersion": "2.4.8",
       "newVersion": "2.4.9",
       "releaseDate": "2025-11-10",
-      "publishedAgo": "published 253 days ago",
+      "publishedAgo": "published 254 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3784,7 +3784,7 @@
       "oldVersion": "1.7.0",
       "newVersion": "1.7.1",
       "releaseDate": "2025-09-21",
-      "publishedAgo": "published 304 days ago",
+      "publishedAgo": "published 305 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4448,7 +4448,7 @@
       "packageName": "happy-dom",
       "description": "Browser environment for testing",
       "route": "/package/happy-dom",
-      "latestReleaseRoute": "/package/happy-dom/20.11.0",
+      "latestReleaseRoute": "/package/happy-dom/20.11.1",
       "areaSlug": "testing-storybook",
       "areaLabel": "Testing and Storybook"
     },
@@ -4480,7 +4480,7 @@
       "packageName": "sass",
       "description": "CSS preprocessor",
       "route": "/package/sass",
-      "latestReleaseRoute": "/package/sass/1.101.3",
+      "latestReleaseRoute": "/package/sass/1.101.6",
       "areaSlug": "css-ui",
       "areaLabel": "CSS and UI Libraries"
     },
@@ -4488,7 +4488,7 @@
       "packageName": "less",
       "description": "CSS preprocessor",
       "route": "/package/less",
-      "latestReleaseRoute": "/package/less/4.7.0",
+      "latestReleaseRoute": "/package/less/4.8.0",
       "areaSlug": "css-ui",
       "areaLabel": "CSS and UI Libraries"
     },
@@ -4520,7 +4520,7 @@
       "packageName": "@radix-ui/react-dialog",
       "description": "Accessible dialog primitive",
       "route": "/package/radix-ui-react-dialog",
-      "latestReleaseRoute": "/package/radix-ui-react-dialog/1.1.20",
+      "latestReleaseRoute": "/package/radix-ui-react-dialog/1.1.21",
       "areaSlug": "css-ui",
       "areaLabel": "CSS and UI Libraries"
     },
@@ -4528,7 +4528,7 @@
       "packageName": "@radix-ui/react-popover",
       "description": "Accessible popover primitive",
       "route": "/package/radix-ui-react-popover",
-      "latestReleaseRoute": "/package/radix-ui-react-popover/1.1.20",
+      "latestReleaseRoute": "/package/radix-ui-react-popover/1.1.21",
       "areaSlug": "css-ui",
       "areaLabel": "CSS and UI Libraries"
     },
@@ -4568,7 +4568,7 @@
       "packageName": "lucide-react",
       "description": "React icon library",
       "route": "/package/lucide-react",
-      "latestReleaseRoute": "/package/lucide-react/1.25.0",
+      "latestReleaseRoute": "/package/lucide-react/1.26.0",
       "areaSlug": "css-ui",
       "areaLabel": "CSS and UI Libraries"
     },
@@ -4648,7 +4648,7 @@
       "packageName": "pnpm",
       "description": "Package manager",
       "route": "/package/pnpm",
-      "latestReleaseRoute": "/package/pnpm/11.15.1",
+      "latestReleaseRoute": "/package/pnpm/11.16.0",
       "areaSlug": "utilities-runtime",
       "areaLabel": "JavaScript Utilities and Runtime"
     },
@@ -5118,7 +5118,7 @@
           "packageName": "happy-dom",
           "description": "Browser environment for testing",
           "route": "/package/happy-dom",
-          "latestReleaseRoute": "/package/happy-dom/20.11.0",
+          "latestReleaseRoute": "/package/happy-dom/20.11.1",
           "areaSlug": "testing-storybook",
           "areaLabel": "Testing and Storybook"
         },
@@ -5199,7 +5199,7 @@
           "packageName": "@radix-ui/react-dialog",
           "description": "Accessible dialog primitive",
           "route": "/package/radix-ui-react-dialog",
-          "latestReleaseRoute": "/package/radix-ui-react-dialog/1.1.20",
+          "latestReleaseRoute": "/package/radix-ui-react-dialog/1.1.21",
           "areaSlug": "css-ui",
           "areaLabel": "CSS and UI Libraries"
         },
@@ -5207,7 +5207,7 @@
           "packageName": "@radix-ui/react-popover",
           "description": "Accessible popover primitive",
           "route": "/package/radix-ui-react-popover",
-          "latestReleaseRoute": "/package/radix-ui-react-popover/1.1.20",
+          "latestReleaseRoute": "/package/radix-ui-react-popover/1.1.21",
           "areaSlug": "css-ui",
           "areaLabel": "CSS and UI Libraries"
         },
@@ -5255,7 +5255,7 @@
           "packageName": "less",
           "description": "CSS preprocessor",
           "route": "/package/less",
-          "latestReleaseRoute": "/package/less/4.7.0",
+          "latestReleaseRoute": "/package/less/4.8.0",
           "areaSlug": "css-ui",
           "areaLabel": "CSS and UI Libraries"
         },
@@ -5263,7 +5263,7 @@
           "packageName": "lucide-react",
           "description": "React icon library",
           "route": "/package/lucide-react",
-          "latestReleaseRoute": "/package/lucide-react/1.25.0",
+          "latestReleaseRoute": "/package/lucide-react/1.26.0",
           "areaSlug": "css-ui",
           "areaLabel": "CSS and UI Libraries"
         },
@@ -5279,7 +5279,7 @@
           "packageName": "sass",
           "description": "CSS preprocessor",
           "route": "/package/sass",
-          "latestReleaseRoute": "/package/sass/1.101.3",
+          "latestReleaseRoute": "/package/sass/1.101.6",
           "areaSlug": "css-ui",
           "areaLabel": "CSS and UI Libraries"
         },
@@ -5368,7 +5368,7 @@
           "packageName": "pnpm",
           "description": "Package manager",
           "route": "/package/pnpm",
-          "latestReleaseRoute": "/package/pnpm/11.15.1",
+          "latestReleaseRoute": "/package/pnpm/11.16.0",
           "areaSlug": "utilities-runtime",
           "areaLabel": "JavaScript Utilities and Runtime"
         },
@@ -5935,6 +5935,21 @@
       "title": "typescript 7.0.2 npm major version update",
       "description": "typescript 7.0.2 frontend npm update risk: Major version release detected. OSV: No OSV match. CVE: No CVE match. Recommended action: Review changes before updating. Test in staging before merging."
     },
+    "/package/lucide-react/1.26.0": {
+      "path": "/package/lucide-react/1.26.0",
+      "title": "lucide-react 1.26.0 npm minor version update",
+      "description": "lucide-react 1.26.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release..."
+    },
+    "/package/less/4.8.0": {
+      "path": "/package/less/4.8.0",
+      "title": "less 4.8.0 npm minor version update",
+      "description": "less 4.8.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes..."
+    },
+    "/package/pnpm/11.16.0": {
+      "path": "/package/pnpm/11.16.0",
+      "title": "pnpm 11.16.0 npm minor version update",
+      "description": "pnpm 11.16.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes..."
+    },
     "/package/next/16.2.11": {
       "path": "/package/next/16.2.11",
       "title": "next 16.2.11 npm release-note review update",
@@ -5964,21 +5979,6 @@
       "path": "/package/react-hook-form/7.82.0",
       "title": "react-hook-form 7.82.0 npm minor version update",
       "description": "react-hook-form 7.82.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub..."
-    },
-    "/package/happy-dom/20.11.0": {
-      "path": "/package/happy-dom/20.11.0",
-      "title": "happy-dom 20.11.0 npm minor version update",
-      "description": "happy-dom 20.11.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release..."
-    },
-    "/package/less/4.7.0": {
-      "path": "/package/less/4.7.0",
-      "title": "less 4.7.0 npm minor version update",
-      "description": "less 4.7.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes..."
-    },
-    "/package/lucide-react/1.25.0": {
-      "path": "/package/lucide-react/1.25.0",
-      "title": "lucide-react 1.25.0 npm minor version update",
-      "description": "lucide-react 1.25.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release..."
     },
     "/package/eslint/10.7.0": {
       "path": "/package/eslint/10.7.0",
@@ -6040,10 +6040,30 @@
       "title": "@vitejs/plugin-react 6.0.4 npm patch version update",
       "description": "@vitejs/plugin-react 6.0.4 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
+    "/package/happy-dom/20.11.1": {
+      "path": "/package/happy-dom/20.11.1",
+      "title": "happy-dom 20.11.1 npm patch version update",
+      "description": "happy-dom 20.11.1 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
     "/package/postcss/8.5.22": {
       "path": "/package/postcss/8.5.22",
       "title": "postcss 8.5.22 npm patch version update",
       "description": "postcss 8.5.22 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
+    "/package/sass/1.101.6": {
+      "path": "/package/sass/1.101.6",
+      "title": "sass 1.101.6 npm patch version update",
+      "description": "sass 1.101.6 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
+    "/package/radix-ui-react-dialog/1.1.21": {
+      "path": "/package/radix-ui-react-dialog/1.1.21",
+      "title": "@radix-ui/react-dialog 1.1.21 npm patch version update",
+      "description": "@radix-ui/react-dialog 1.1.21 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
+    "/package/radix-ui-react-popover/1.1.21": {
+      "path": "/package/radix-ui-react-popover/1.1.21",
+      "title": "@radix-ui/react-popover 1.1.21 npm patch version update",
+      "description": "@radix-ui/react-popover 1.1.21 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/react/19.2.8": {
       "path": "/package/react/19.2.8",
@@ -6065,11 +6085,6 @@
       "title": "@tanstack/react-query 5.101.4 npm patch version update",
       "description": "@tanstack/react-query 5.101.4 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
-    "/package/sass/1.101.3": {
-      "path": "/package/sass/1.101.3",
-      "title": "sass 1.101.3 npm patch version update",
-      "description": "sass 1.101.3 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-    },
     "/package/svelte/5.56.7": {
       "path": "/package/svelte/5.56.7",
       "title": "svelte 5.56.7 npm patch version update",
@@ -6090,16 +6105,6 @@
       "title": "storybook 10.5.3 npm patch version update",
       "description": "storybook 10.5.3 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
-    "/package/radix-ui-react-dialog/1.1.20": {
-      "path": "/package/radix-ui-react-dialog/1.1.20",
-      "title": "@radix-ui/react-dialog 1.1.20 npm patch version update",
-      "description": "@radix-ui/react-dialog 1.1.20 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-    },
-    "/package/radix-ui-react-popover/1.1.20": {
-      "path": "/package/radix-ui-react-popover/1.1.20",
-      "title": "@radix-ui/react-popover 1.1.20 npm patch version update",
-      "description": "@radix-ui/react-popover 1.1.20 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-    },
     "/package/swc-core/1.15.46": {
       "path": "/package/swc-core/1.15.46",
       "title": "@swc/core 1.15.46 npm patch version update",
@@ -6109,11 +6114,6 @@
       "path": "/package/chakra-ui-react/3.36.1",
       "title": "@chakra-ui/react 3.36.1 npm patch version update",
       "description": "@chakra-ui/react 3.36.1 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-    },
-    "/package/pnpm/11.15.1": {
-      "path": "/package/pnpm/11.15.1",
-      "title": "pnpm 11.15.1 npm patch version update",
-      "description": "pnpm 11.15.1 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/styled-components/6.4.4": {
       "path": "/package/styled-components/6.4.4",
