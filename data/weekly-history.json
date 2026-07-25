@@ -2,10 +2,10 @@
   {
     "week": "Week 30, 2026",
     "dateRange": "Jul 20 - Jul 26",
-    "risky": 22,
+    "risky": 25,
     "breaking": 3,
     "security": 0,
-    "safe": 60,
+    "safe": 57,
     "total": 82,
     "topSignals": [
       {
@@ -36,53 +36,53 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
-        "packageName": "webpack",
-        "route": "/package/webpack/5.109.0",
+        "packageName": "react-hook-form",
+        "route": "/package/react-hook-form/7.83.0",
         "risk": "review",
-        "newVersion": "5.109.0",
+        "newVersion": "7.83.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.26.0",
+        "packageName": "sass",
+        "route": "/package/sass/1.102.0",
         "risk": "review",
-        "newVersion": "1.26.0",
+        "newVersion": "1.102.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "pnpm",
-        "route": "/package/pnpm/11.17.0",
+        "packageName": "eslint",
+        "route": "/package/eslint/10.8.0",
         "risk": "review",
-        "newVersion": "11.17.0",
+        "newVersion": "10.8.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "less",
-        "route": "/package/less/4.8.0",
+        "packageName": "playwright",
+        "route": "/package/playwright/1.62.0",
         "risk": "review",
-        "newVersion": "4.8.0",
+        "newVersion": "1.62.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "next",
-        "route": "/package/next/16.2.11",
+        "packageName": "postcss",
+        "route": "/package/postcss/8.5.23",
         "risk": "review",
-        "newVersion": "16.2.11",
+        "newVersion": "8.5.23",
         "reason": "Release notes mention security language, but no OSV or CVE match was found.",
         "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
         "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
       }
     ],
     "route": "/weekly/2026-w30",
-    "generatedAt": "2026-07-24T15:10:07.706Z"
+    "generatedAt": "2026-07-25T14:42:27.373Z"
   },
   {
     "week": "Week 29, 2026",
