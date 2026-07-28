@@ -2,10 +2,10 @@
   {
     "week": "Week 31, 2026",
     "dateRange": "Jul 27 - Aug 2",
-    "risky": 26,
+    "risky": 24,
     "breaking": 3,
     "security": 0,
-    "safe": 56,
+    "safe": 58,
     "total": 82,
     "topSignals": [
       {
@@ -34,6 +34,15 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "framer-motion",
+        "route": "/package/framer-motion/12.43.0",
+        "risk": "review",
+        "newVersion": "12.43.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
         "packageName": "nuxt",
@@ -70,19 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "sass",
-        "route": "/package/sass/1.102.0",
-        "risk": "review",
-        "newVersion": "1.102.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w31",
-    "generatedAt": "2026-07-27T15:54:44.507Z"
+    "generatedAt": "2026-07-28T15:36:42.700Z"
   },
   {
     "week": "Week 30, 2026",
