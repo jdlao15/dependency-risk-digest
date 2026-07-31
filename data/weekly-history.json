@@ -2,10 +2,10 @@
   {
     "week": "Week 31, 2026",
     "dateRange": "Jul 27 - Aug 2",
-    "risky": 27,
+    "risky": 26,
     "breaking": 3,
     "security": 0,
-    "safe": 55,
+    "safe": 56,
     "total": 82,
     "topSignals": [
       {
@@ -82,7 +82,7 @@
       }
     ],
     "route": "/weekly/2026-w31",
-    "generatedAt": "2026-07-30T15:25:09.839Z"
+    "generatedAt": "2026-07-31T15:30:28.036Z"
   },
   {
     "week": "Week 30, 2026",
