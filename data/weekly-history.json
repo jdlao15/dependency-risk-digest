@@ -36,6 +36,15 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "react-hook-form",
+        "route": "/package/react-hook-form/7.84.0",
+        "risk": "review",
+        "newVersion": "7.84.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "vite",
         "route": "/package/vite/8.2.0",
         "risk": "review",
@@ -70,19 +79,10 @@
         "reason": "Release notes mention security language, but no OSV or CVE match was found.",
         "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
         "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
-      },
-      {
-        "packageName": "pnpm",
-        "route": "/package/pnpm/11.18.0",
-        "risk": "review",
-        "newVersion": "11.18.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w31",
-    "generatedAt": "2026-07-31T15:30:28.036Z"
+    "generatedAt": "2026-08-01T14:40:53.021Z"
   },
   {
     "week": "Week 30, 2026",

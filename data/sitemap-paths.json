@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T15:30:28.036Z",
+  "generatedAt": "2026-08-01T14:40:53.021Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -100,7 +100,7 @@
     "/package/react-dom",
     "/package/react-dom/19.2.8",
     "/package/react-hook-form",
-    "/package/react-hook-form/7.83.0",
+    "/package/react-hook-form/7.84.0",
     "/package/react-router-dom",
     "/package/react-router-dom/7.18.2",
     "/package/react/19.2.8",
@@ -111,7 +111,7 @@
     "/package/remix-run-react",
     "/package/remix-run-react/2.17.5",
     "/package/rollup",
-    "/package/rollup/4.62.3",
+    "/package/rollup/4.62.4",
     "/package/sass",
     "/package/sass/1.102.0",
     "/package/semver",
