@@ -1,11 +1,11 @@
 [
   {
     "week": "Week 32, 2026",
-    "dateRange": "Jul 27 - Aug 2",
-    "risky": 26,
-    "breaking": 3,
+    "dateRange": "Aug 3 - Aug 9",
+    "risky": 24,
+    "breaking": 2,
     "security": 0,
-    "safe": 56,
+    "safe": 58,
     "total": 82,
     "topSignals": [
       {
@@ -18,15 +18,6 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
-        "packageName": "nanoid",
-        "route": "/package/nanoid/6.0.0",
-        "risk": "breaking",
-        "newVersion": "6.0.0",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
-      },
-      {
         "packageName": "typescript",
         "route": "/package/typescript/7.0.2",
         "risk": "breaking",
@@ -34,6 +25,24 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "swr",
+        "route": "/package/swr/2.5.0",
+        "risk": "review",
+        "newVersion": "2.5.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "pnpm",
+        "route": "/package/pnpm/11.20.0",
+        "risk": "review",
+        "newVersion": "11.20.0",
+        "reason": "Release notes mention security language, but no OSV or CVE match was found.",
+        "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
+        "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
       },
       {
         "packageName": "react-hook-form",
@@ -70,19 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "axios",
-        "route": "/package/axios/1.19.0",
-        "risk": "review",
-        "newVersion": "1.19.0",
-        "reason": "Release notes mention security language, but no OSV or CVE match was found.",
-        "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
-        "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
       }
     ],
     "route": "/weekly/2026-w32",
-    "generatedAt": "2026-08-02T14:43:39.959Z"
+    "generatedAt": "2026-08-03T15:56:00.375Z"
   },
   {
     "week": "Week 31, 2026",
