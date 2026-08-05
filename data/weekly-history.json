@@ -3,11 +3,20 @@
     "week": "Week 32, 2026",
     "dateRange": "Aug 3 - Aug 9",
     "risky": 26,
-    "breaking": 2,
+    "breaking": 3,
     "security": 0,
     "safe": 56,
     "total": 82,
     "topSignals": [
+      {
+        "packageName": "framer-motion",
+        "route": "/package/framer-motion/13.0.0",
+        "risk": "breaking",
+        "newVersion": "13.0.0",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
       {
         "packageName": "@testing-library/jest-dom",
         "route": "/package/testing-library-jest-dom/7.0.0",
@@ -25,6 +34,24 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "@mui/material",
+        "route": "/package/mui-material/9.3.0",
+        "risk": "review",
+        "newVersion": "9.3.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "cypress",
+        "route": "/package/cypress/15.20.0",
+        "risk": "review",
+        "newVersion": "15.20.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
         "packageName": "styled-components",
@@ -52,37 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "@typescript-eslint/eslint-plugin",
-        "route": "/package/typescript-eslint-eslint-plugin/8.66.0",
-        "risk": "review",
-        "newVersion": "8.66.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "swr",
-        "route": "/package/swr/2.5.0",
-        "risk": "review",
-        "newVersion": "2.5.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "pnpm",
-        "route": "/package/pnpm/11.20.0",
-        "risk": "review",
-        "newVersion": "11.20.0",
-        "reason": "Release notes mention security language, but no OSV or CVE match was found.",
-        "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
-        "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
       }
     ],
     "route": "/weekly/2026-w32",
-    "generatedAt": "2026-08-04T15:38:29.224Z"
+    "generatedAt": "2026-08-05T15:30:18.565Z"
   },
   {
     "week": "Week 31, 2026",
