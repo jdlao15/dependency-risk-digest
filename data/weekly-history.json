@@ -2,10 +2,10 @@
   {
     "week": "Week 32, 2026",
     "dateRange": "Aug 3 - Aug 9",
-    "risky": 26,
+    "risky": 24,
     "breaking": 3,
     "security": 0,
-    "safe": 56,
+    "safe": 58,
     "total": 82,
     "topSignals": [
       {
@@ -36,10 +36,19 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
-        "packageName": "@mui/material",
-        "route": "/package/mui-material/9.3.0",
+        "packageName": "astro",
+        "route": "/package/astro/7.2.0",
         "risk": "review",
-        "newVersion": "9.3.0",
+        "newVersion": "7.2.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.29.0",
+        "risk": "review",
+        "newVersion": "1.29.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
@@ -70,19 +79,10 @@
         "reason": "Release notes mention security language, but no OSV or CVE match was found.",
         "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
         "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
-      },
-      {
-        "packageName": "@typescript-eslint/parser",
-        "route": "/package/typescript-eslint-parser/8.66.0",
-        "risk": "review",
-        "newVersion": "8.66.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w32",
-    "generatedAt": "2026-08-05T15:30:18.565Z"
+    "generatedAt": "2026-08-06T15:30:40.435Z"
   },
   {
     "week": "Week 31, 2026",
