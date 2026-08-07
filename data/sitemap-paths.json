@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-06T15:30:40.435Z",
+  "generatedAt": "2026-08-07T14:26:40.168Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -67,7 +67,7 @@
     "/package/lodash",
     "/package/lodash/4.18.1",
     "/package/lucide-react",
-    "/package/lucide-react/1.29.0",
+    "/package/lucide-react/1.30.0",
     "/package/minimist",
     "/package/minimist/1.2.8",
     "/package/msw",
@@ -123,7 +123,7 @@
     "/package/storybook-react/10.5.7",
     "/package/storybook/10.5.7",
     "/package/styled-components",
-    "/package/styled-components/6.5.0",
+    "/package/styled-components/6.5.1",
     "/package/svelte",
     "/package/svelte/5.56.8",
     "/package/swc-core",
@@ -167,7 +167,7 @@
     "/package/webpack",
     "/package/webpack/5.109.2",
     "/package/ws",
-    "/package/ws/8.21.2",
+    "/package/ws/8.21.3",
     "/package/yup",
     "/package/yup/1.7.1",
     "/package/zod",
