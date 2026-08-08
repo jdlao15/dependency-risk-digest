@@ -2,10 +2,10 @@
   {
     "week": "Week 32, 2026",
     "dateRange": "Aug 3 - Aug 9",
-    "risky": 23,
+    "risky": 21,
     "breaking": 3,
     "security": 0,
-    "safe": 59,
+    "safe": 61,
     "total": 82,
     "topSignals": [
       {
@@ -34,6 +34,15 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "react-hook-form",
+        "route": "/package/react-hook-form/7.85.0",
+        "risk": "review",
+        "newVersion": "7.85.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
         "packageName": "lucide-react",
@@ -70,19 +79,10 @@
         "reason": "Release notes mention security language, but no OSV or CVE match was found.",
         "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
         "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
-      },
-      {
-        "packageName": "@typescript-eslint/parser",
-        "route": "/package/typescript-eslint-parser/8.66.0",
-        "risk": "review",
-        "newVersion": "8.66.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w32",
-    "generatedAt": "2026-08-07T14:26:40.168Z"
+    "generatedAt": "2026-08-08T13:59:12.630Z"
   },
   {
     "week": "Week 31, 2026",
