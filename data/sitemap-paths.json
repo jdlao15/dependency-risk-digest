@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T13:59:12.630Z",
+  "generatedAt": "2026-08-09T14:01:25.591Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -43,7 +43,7 @@
     "/package/emotion-react",
     "/package/emotion-react/11.14.0",
     "/package/esbuild",
-    "/package/esbuild/0.28.1",
+    "/package/esbuild/0.28.2",
     "/package/eslint",
     "/package/eslint/10.8.1",
     "/package/formik",
@@ -67,7 +67,7 @@
     "/package/lodash",
     "/package/lodash/4.18.1",
     "/package/lucide-react",
-    "/package/lucide-react/1.30.0",
+    "/package/lucide-react/1.31.0",
     "/package/minimist",
     "/package/minimist/1.2.8",
     "/package/msw",
@@ -188,6 +188,7 @@
     "/weekly/2026-w29",
     "/weekly/2026-w30",
     "/weekly/2026-w31",
-    "/weekly/2026-w32"
+    "/weekly/2026-w32",
+    "/weekly/2026-w33"
   ]
 }

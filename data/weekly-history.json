@@ -1,5 +1,90 @@
 [
   {
+    "week": "Week 33, 2026",
+    "dateRange": "Aug 3 - Aug 9",
+    "risky": 20,
+    "breaking": 3,
+    "security": 0,
+    "safe": 62,
+    "total": 82,
+    "topSignals": [
+      {
+        "packageName": "framer-motion",
+        "route": "/package/framer-motion/13.0.0",
+        "risk": "breaking",
+        "newVersion": "13.0.0",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "@testing-library/jest-dom",
+        "route": "/package/testing-library-jest-dom/7.0.0",
+        "risk": "breaking",
+        "newVersion": "7.0.0",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "typescript",
+        "route": "/package/typescript/7.0.2",
+        "risk": "breaking",
+        "newVersion": "7.0.2",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.31.0",
+        "risk": "review",
+        "newVersion": "1.31.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "react-hook-form",
+        "route": "/package/react-hook-form/7.85.0",
+        "risk": "review",
+        "newVersion": "7.85.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "astro",
+        "route": "/package/astro/7.2.0",
+        "risk": "review",
+        "newVersion": "7.2.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "cypress",
+        "route": "/package/cypress/15.20.0",
+        "risk": "review",
+        "newVersion": "15.20.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "next",
+        "route": "/package/next/16.3.0",
+        "risk": "review",
+        "newVersion": "16.3.0",
+        "reason": "Release notes mention security language, but no OSV or CVE match was found.",
+        "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
+        "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
+      }
+    ],
+    "route": "/weekly/2026-w33",
+    "generatedAt": "2026-08-09T14:01:25.591Z"
+  },
+  {
     "week": "Week 32, 2026",
     "dateRange": "Aug 3 - Aug 9",
     "risky": 21,
