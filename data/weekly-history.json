@@ -1,31 +1,13 @@
 [
   {
     "week": "Week 33, 2026",
-    "dateRange": "Aug 3 - Aug 9",
-    "risky": 20,
-    "breaking": 3,
+    "dateRange": "Aug 10 - Aug 16",
+    "risky": 19,
+    "breaking": 1,
     "security": 0,
-    "safe": 62,
+    "safe": 63,
     "total": 82,
     "topSignals": [
-      {
-        "packageName": "framer-motion",
-        "route": "/package/framer-motion/13.0.0",
-        "risk": "breaking",
-        "newVersion": "13.0.0",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
-      },
-      {
-        "packageName": "@testing-library/jest-dom",
-        "route": "/package/testing-library-jest-dom/7.0.0",
-        "risk": "breaking",
-        "newVersion": "7.0.0",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
-      },
       {
         "packageName": "typescript",
         "route": "/package/typescript/7.0.2",
@@ -36,10 +18,28 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "framer-motion",
+        "route": "/package/framer-motion/13.1.0",
+        "risk": "review",
+        "newVersion": "13.1.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "lucide-react",
         "route": "/package/lucide-react/1.31.0",
         "risk": "review",
         "newVersion": "1.31.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "pnpm",
+        "route": "/package/pnpm/11.21.0",
+        "risk": "review",
+        "newVersion": "11.21.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
@@ -82,7 +82,7 @@
       }
     ],
     "route": "/weekly/2026-w33",
-    "generatedAt": "2026-08-09T14:01:25.591Z"
+    "generatedAt": "2026-08-10T14:32:21.882Z"
   },
   {
     "week": "Week 32, 2026",

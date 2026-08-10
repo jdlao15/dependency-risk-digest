@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T14:01:25.591Z",
+  "generatedAt": "2026-08-10T14:32:21.882Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -49,7 +49,7 @@
     "/package/formik",
     "/package/formik/2.4.9",
     "/package/framer-motion",
-    "/package/framer-motion/13.0.0",
+    "/package/framer-motion/13.1.0",
     "/package/gatsby",
     "/package/gatsby/5.16.1",
     "/package/graphql",
@@ -87,7 +87,7 @@
     "/package/playwright",
     "/package/playwright/1.62.1",
     "/package/pnpm",
-    "/package/pnpm/11.20.0",
+    "/package/pnpm/11.21.0",
     "/package/postcss",
     "/package/postcss/8.5.26",
     "/package/prettier",
@@ -137,7 +137,7 @@
     "/package/tanstack-react-query",
     "/package/tanstack-react-query/5.101.4",
     "/package/testing-library-jest-dom",
-    "/package/testing-library-jest-dom/7.0.0",
+    "/package/testing-library-jest-dom/7.0.1",
     "/package/testing-library-react",
     "/package/testing-library-react/16.3.2",
     "/package/tsup",
