@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T14:32:21.882Z",
+  "generatedAt": "2026-08-11T14:32:07.876Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -35,7 +35,7 @@
     "/package/clsx",
     "/package/clsx/2.1.1",
     "/package/cypress",
-    "/package/cypress/15.20.0",
+    "/package/cypress/15.20.1",
     "/package/date-fns",
     "/package/date-fns/4.4.0",
     "/package/dayjs",
@@ -150,9 +150,9 @@
     "/package/types-react/19.2.18",
     "/package/typescript",
     "/package/typescript-eslint-eslint-plugin",
-    "/package/typescript-eslint-eslint-plugin/8.66.0",
+    "/package/typescript-eslint-eslint-plugin/8.67.0",
     "/package/typescript-eslint-parser",
-    "/package/typescript-eslint-parser/8.66.0",
+    "/package/typescript-eslint-parser/8.67.0",
     "/package/typescript/7.0.2",
     "/package/uuid",
     "/package/uuid/14.0.1",
