@@ -2,10 +2,10 @@
   {
     "week": "Week 33, 2026",
     "dateRange": "Aug 10 - Aug 16",
-    "risky": 18,
+    "risky": 17,
     "breaking": 1,
     "security": 0,
-    "safe": 64,
+    "safe": 65,
     "total": 82,
     "topSignals": [
       {
@@ -16,6 +16,15 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "astro",
+        "route": "/package/astro/7.2.1",
+        "risk": "review",
+        "newVersion": "7.2.1",
+        "reason": "Release notes mention security language, but no OSV or CVE match was found.",
+        "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
+        "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
       },
       {
         "packageName": "@typescript-eslint/parser",
@@ -70,19 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "astro",
-        "route": "/package/astro/7.2.0",
-        "risk": "review",
-        "newVersion": "7.2.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w33",
-    "generatedAt": "2026-08-11T14:32:07.876Z"
+    "generatedAt": "2026-08-12T14:32:40.357Z"
   },
   {
     "week": "Week 32, 2026",
