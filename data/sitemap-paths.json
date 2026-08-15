@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T14:27:10.800Z",
+  "generatedAt": "2026-08-15T13:45:04.796Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -127,7 +127,7 @@
     "/package/svelte",
     "/package/svelte/5.56.9",
     "/package/swc-core",
-    "/package/swc-core/1.15.47",
+    "/package/swc-core/1.16.0",
     "/package/swr",
     "/package/swr/2.5.1",
     "/package/tailwind-merge",

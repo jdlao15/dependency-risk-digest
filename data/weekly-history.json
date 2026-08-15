@@ -2,10 +2,10 @@
   {
     "week": "Week 33, 2026",
     "dateRange": "Aug 10 - Aug 16",
-    "risky": 16,
+    "risky": 17,
     "breaking": 1,
     "security": 0,
-    "safe": 66,
+    "safe": 65,
     "total": 82,
     "topSignals": [
       {
@@ -16,6 +16,15 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "@swc/core",
+        "route": "/package/swc-core/1.16.0",
+        "risk": "review",
+        "newVersion": "1.16.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
         "packageName": "less",
@@ -70,19 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "react-hook-form",
-        "route": "/package/react-hook-form/7.85.0",
-        "risk": "review",
-        "newVersion": "7.85.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w33",
-    "generatedAt": "2026-08-14T14:27:10.800Z"
+    "generatedAt": "2026-08-15T13:45:04.796Z"
   },
   {
     "week": "Week 32, 2026",
