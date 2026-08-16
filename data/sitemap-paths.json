@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T13:45:04.796Z",
+  "generatedAt": "2026-08-16T13:46:21.721Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -39,7 +39,7 @@
     "/package/date-fns",
     "/package/date-fns/4.4.0",
     "/package/dayjs",
-    "/package/dayjs/1.11.21",
+    "/package/dayjs/1.11.22",
     "/package/emotion-react",
     "/package/emotion-react/11.14.0",
     "/package/esbuild",
@@ -57,7 +57,7 @@
     "/package/happy-dom",
     "/package/happy-dom/20.11.2",
     "/package/immer",
-    "/package/immer/11.1.16",
+    "/package/immer/11.1.17",
     "/package/jest",
     "/package/jest/30.4.2",
     "/package/ky",
@@ -87,7 +87,7 @@
     "/package/playwright",
     "/package/playwright/1.62.1",
     "/package/pnpm",
-    "/package/pnpm/11.21.0",
+    "/package/pnpm/11.22.0",
     "/package/postcss",
     "/package/postcss/8.5.26",
     "/package/prettier",
@@ -123,7 +123,7 @@
     "/package/storybook-react/10.5.8",
     "/package/storybook/10.5.8",
     "/package/styled-components",
-    "/package/styled-components/6.5.2",
+    "/package/styled-components/6.5.3",
     "/package/svelte",
     "/package/svelte/5.56.9",
     "/package/swc-core",
@@ -189,6 +189,7 @@
     "/weekly/2026-w30",
     "/weekly/2026-w31",
     "/weekly/2026-w32",
-    "/weekly/2026-w33"
+    "/weekly/2026-w33",
+    "/weekly/2026-w34"
   ]
 }
