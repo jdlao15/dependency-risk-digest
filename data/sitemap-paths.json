@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T13:46:21.721Z",
+  "generatedAt": "2026-08-17T13:55:06.266Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -39,7 +39,7 @@
     "/package/date-fns",
     "/package/date-fns/4.4.0",
     "/package/dayjs",
-    "/package/dayjs/1.11.22",
+    "/package/dayjs/1.11.23",
     "/package/emotion-react",
     "/package/emotion-react/11.14.0",
     "/package/esbuild",
