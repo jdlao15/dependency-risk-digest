@@ -1,6 +1,6 @@
 import type { ReleaseItem, SeoRoute, WeeklyDigest } from "./types";
 
-export const generatedAt = "2026-08-17T13:55:06.266Z";
+export const generatedAt = "2026-08-18T13:58:53.208Z";
 export const generationFailures = [];
 export const weeklyDigest: WeeklyDigest = {
   "week": "Week 34, 2026",
@@ -31,12 +31,21 @@ export const digestArchive: WeeklyDigest[] = [
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.32.0",
+        "risk": "review",
+        "newVersion": "1.32.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "pnpm",
         "route": "/package/pnpm/11.22.0",
         "risk": "review",
         "newVersion": "11.22.0",
         "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
@@ -54,7 +63,7 @@ export const digestArchive: WeeklyDigest[] = [
         "risk": "review",
         "newVersion": "4.9.0",
         "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
@@ -63,7 +72,7 @@ export const digestArchive: WeeklyDigest[] = [
         "risk": "review",
         "newVersion": "8.67.0",
         "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
@@ -72,7 +81,7 @@ export const digestArchive: WeeklyDigest[] = [
         "risk": "review",
         "newVersion": "8.67.0",
         "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
@@ -83,19 +92,10 @@ export const digestArchive: WeeklyDigest[] = [
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.31.0",
-        "risk": "review",
-        "newVersion": "1.31.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w34",
-    "generatedAt": "2026-08-17T13:55:06.266Z"
+    "generatedAt": "2026-08-18T13:58:53.208Z"
   },
   {
     "week": "Week 33, 2026",
@@ -1042,7 +1042,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "6.0.3",
     "newVersion": "7.0.2",
     "releaseDate": "2026-07-08",
-    "publishedAgo": "published 39 days ago",
+    "publishedAgo": "published 40 days ago",
     "isRecent": false,
     "risk": "breaking",
     "category": "Major version",
@@ -1058,7 +1058,7 @@ export const releases: ReleaseItem[] = [
     "githubReleaseTag": "",
     "githubReleasePublishedAt": "",
     "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "releaseNotesStatus": "No GitHub release matched this exact npm version tag; release notes are not attributed to this version.",
     "route": "/package/typescript/7.0.2",
     "sourceLinks": [
       {
@@ -1072,6 +1072,47 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
+    "id": "lucide-react-1-32-0",
+    "packageName": "lucide-react",
+    "packageSlug": "lucide-react",
+    "description": "React icon library",
+    "oldVersion": "1.31.0",
+    "newVersion": "1.32.0",
+    "releaseDate": "2026-08-18",
+    "publishedAgo": "published today",
+    "isRecent": true,
+    "risk": "review",
+    "category": "Minor version",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "Minor version release detected with no OSV match.",
+    "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
+    "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
+    "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+    "whatChanged": "GitHub release note found: Version 1.32.0.",
+    "githubReleaseTitle": "Version 1.32.0",
+    "githubReleaseUrl": "https://github.com/lucide-icons/lucide/releases/tag/1.32.0",
+    "githubReleaseTag": "1.32.0",
+    "githubReleasePublishedAt": "2026-08-18T11:11:29Z",
+    "releaseNotesExcerpt": "What's Changed feat(icons): added car-battery icon by @andreynaz4renko in https://github.com/lucide-icons/lucide/pull/4088 fix(categories): fixes emoji.json by @karsa-mistmere in https://github.com/lucide-icons/lucide/pull/4697 chore(deps): bump vue from 3.5.40 to 3.5.41 in the v",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+    "route": "/package/lucide-react/1.32.0",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/lucide-react"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/lucide-icons/lucide"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/lucide-icons/lucide/releases/tag/1.32.0"
+      }
+    ]
+  },
+  {
     "id": "pnpm-11-22-0",
     "packageName": "pnpm",
     "packageSlug": "pnpm",
@@ -1079,7 +1120,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "11.21.0",
     "newVersion": "11.22.0",
     "releaseDate": "2026-08-15",
-    "publishedAgo": "published 1 day ago",
+    "publishedAgo": "published 2 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -1088,14 +1129,14 @@ export const releases: ReleaseItem[] = [
     "reason": "Minor version release detected with no OSV match.",
     "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-    "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-    "whatChanged": "Minor pnpm 11.22.0 release detected; review if used in production paths.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+    "whatChanged": "GitHub release note found: pnpm 11.22.",
+    "githubReleaseTitle": "pnpm 11.22",
+    "githubReleaseUrl": "https://github.com/pnpm/pnpm/releases/tag/v11.22.0",
+    "githubReleaseTag": "v11.22.0",
+    "githubReleasePublishedAt": "2026-08-15T17:18:05Z",
+    "releaseNotesExcerpt": "Minor Changes Added pnpm cache path, which prints the directory pnpm uses for its metadata cache. CI setups can use it to cache that directory - including the lockfile verification log, which lets a job skip re-checking an unchanged lockfile against the configured supply-chain po",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/pnpm/11.22.0",
     "sourceLinks": [
       {
@@ -1105,6 +1146,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/pnpm/pnpm"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/pnpm/pnpm/releases/tag/v11.22.0"
       }
     ]
   },
@@ -1116,7 +1161,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.15.47",
     "newVersion": "1.16.0",
     "releaseDate": "2026-08-14",
-    "publishedAgo": "published 2 days ago",
+    "publishedAgo": "published 3 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -1126,13 +1171,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-    "whatChanged": "Minor @swc/core 1.16.0 release detected; review if used in production paths.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
+    "whatChanged": "GitHub release note found: v1.16.0.",
+    "githubReleaseTitle": "v1.16.0",
+    "githubReleaseUrl": "https://github.com/swc-project/swc/releases/tag/v1.16.0",
+    "githubReleaseTag": "v1.16.0",
+    "githubReleasePublishedAt": "2026-08-14T16:52:09Z",
     "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/swc-core/1.16.0",
     "sourceLinks": [
       {
@@ -1142,6 +1187,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/swc-project/swc"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/swc-project/swc/releases/tag/v1.16.0"
       }
     ]
   },
@@ -1153,7 +1202,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.8.1",
     "newVersion": "4.9.0",
     "releaseDate": "2026-08-13",
-    "publishedAgo": "published 3 days ago",
+    "publishedAgo": "published 4 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -1162,14 +1211,14 @@ export const releases: ReleaseItem[] = [
     "reason": "Minor version release detected with no OSV match.",
     "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-    "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-    "whatChanged": "Minor less 4.9.0 release detected; review if used in production paths.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+    "whatChanged": "GitHub release note found: Release v4.9.0.",
+    "githubReleaseTitle": "Release v4.9.0",
+    "githubReleaseUrl": "https://github.com/less/less.js/releases/tag/v4.9.0",
+    "githubReleaseTag": "v4.9.0",
+    "githubReleasePublishedAt": "2026-08-13T21:33:51Z",
+    "releaseNotesExcerpt": "Changes See CHANGELOG.md for details. Installation",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/less/4.9.0",
     "sourceLinks": [
       {
@@ -1179,6 +1228,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/less/less.js"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/less/less.js/releases/tag/v4.9.0"
       }
     ]
   },
@@ -1190,7 +1243,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.66.0",
     "newVersion": "8.67.0",
     "releaseDate": "2026-08-10",
-    "publishedAgo": "published 6 days ago",
+    "publishedAgo": "published 7 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -1199,14 +1252,14 @@ export const releases: ReleaseItem[] = [
     "reason": "Minor version release detected with no OSV match.",
     "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-    "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-    "whatChanged": "Minor @typescript-eslint/parser 8.67.0 release detected; review if used in production paths.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+    "whatChanged": "GitHub release note found: v8.67.0.",
+    "githubReleaseTitle": "v8.67.0",
+    "githubReleaseUrl": "https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.67.0",
+    "githubReleaseTag": "v8.67.0",
+    "githubReleasePublishedAt": "2026-08-10T17:18:26Z",
+    "releaseNotesExcerpt": "8.67.0 (2026-08-10) Features **typescript-eslint:** export basic globs for using tseslint (#12105) Thank You Evyatar Daud @StyleShit Josh Goldberg Kirk Waiblinger @kirkwaiblinger See GitHub Releases for more information. You can read about our versioning strategy and releases on ",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/typescript-eslint-parser/8.67.0",
     "sourceLinks": [
       {
@@ -1216,6 +1269,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/typescript-eslint/typescript-eslint"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.67.0"
       }
     ]
   },
@@ -1227,7 +1284,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.66.0",
     "newVersion": "8.67.0",
     "releaseDate": "2026-08-10",
-    "publishedAgo": "published 6 days ago",
+    "publishedAgo": "published 7 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -1236,14 +1293,14 @@ export const releases: ReleaseItem[] = [
     "reason": "Minor version release detected with no OSV match.",
     "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-    "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-    "whatChanged": "Minor @typescript-eslint/eslint-plugin 8.67.0 release detected; review if used in production paths.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+    "whatChanged": "GitHub release note found: v8.67.0.",
+    "githubReleaseTitle": "v8.67.0",
+    "githubReleaseUrl": "https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.67.0",
+    "githubReleaseTag": "v8.67.0",
+    "githubReleasePublishedAt": "2026-08-10T17:18:26Z",
+    "releaseNotesExcerpt": "8.67.0 (2026-08-10) Features **typescript-eslint:** export basic globs for using tseslint (#12105) Thank You Evyatar Daud @StyleShit Josh Goldberg Kirk Waiblinger @kirkwaiblinger See GitHub Releases for more information. You can read about our versioning strategy and releases on ",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag. Cached from an earlier generator run.",
     "route": "/package/typescript-eslint-eslint-plugin/8.67.0",
     "sourceLinks": [
       {
@@ -1253,6 +1310,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/typescript-eslint/typescript-eslint"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.67.0"
       }
     ]
   },
@@ -1264,7 +1325,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "13.0.0",
     "newVersion": "13.1.0",
     "releaseDate": "2026-08-10",
-    "publishedAgo": "published 7 days ago",
+    "publishedAgo": "published 8 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -1294,43 +1355,6 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
-    "id": "lucide-react-1-31-0",
-    "packageName": "lucide-react",
-    "packageSlug": "lucide-react",
-    "description": "React icon library",
-    "oldVersion": "1.30.0",
-    "newVersion": "1.31.0",
-    "releaseDate": "2026-08-09",
-    "publishedAgo": "published 8 days ago",
-    "isRecent": true,
-    "risk": "review",
-    "category": "Minor version",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Minor version release detected with no OSV match.",
-    "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
-    "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
-    "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-    "whatChanged": "Minor lucide-react 1.31.0 release detected; review if used in production paths.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
-    "route": "/package/lucide-react/1.31.0",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/lucide-react"
-      },
-      {
-        "label": "Repository",
-        "href": "https://github.com/lucide-icons/lucide"
-      }
-    ]
-  },
-  {
     "id": "react-hook-form-7-85-0",
     "packageName": "react-hook-form",
     "packageSlug": "react-hook-form",
@@ -1338,7 +1362,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.84.0",
     "newVersion": "7.85.0",
     "releaseDate": "2026-08-08",
-    "publishedAgo": "published 9 days ago",
+    "publishedAgo": "published 10 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -1347,14 +1371,14 @@ export const releases: ReleaseItem[] = [
     "reason": "Minor version release detected with no OSV match.",
     "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
     "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
-    "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-    "whatChanged": "Minor react-hook-form 7.85.0 release detected; review if used in production paths.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+    "whatChanged": "GitHub release note found: Version 7.85.0.",
+    "githubReleaseTitle": "Version 7.85.0",
+    "githubReleaseUrl": "https://github.com/react-hook-form/react-hook-form/releases/tag/v7.85.0",
+    "githubReleaseTag": "v7.85.0",
+    "githubReleasePublishedAt": "2026-08-08T01:10:31Z",
+    "releaseNotesExcerpt": "Improvements support React <Activity /> (#13633) Fixes fix min/max validation being skipped for valueAsDate fields (#13646) fix field array root errors being lost during append, prepend, insert, and remove (#13645) fix stale renders recreating field array paths after field array ",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/react-hook-form/7.85.0",
     "sourceLinks": [
       {
@@ -1364,6 +1388,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/react-hook-form/react-hook-form"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/react-hook-form/react-hook-form/releases/tag/v7.85.0"
       }
     ]
   },
@@ -1375,23 +1403,23 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.18.1",
     "newVersion": "1.19.0",
     "releaseDate": "2026-07-29",
-    "publishedAgo": "published 18 days ago",
+    "publishedAgo": "published 19 days ago",
     "isRecent": true,
     "risk": "review",
-    "category": "Minor version",
+    "category": "Release-note review",
     "osv": "No OSV match",
     "cve": "No CVE match",
-    "reason": "Minor version release detected with no OSV match.",
-    "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
+    "reason": "Release notes mention security language, but no OSV or CVE match was found.",
+    "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-    "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-    "whatChanged": "Minor axios 1.19.0 release detected; review if used in production paths.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
+    "whatChanged": "GitHub release note found: v1.19.0.",
+    "githubReleaseTitle": "v1.19.0",
+    "githubReleaseUrl": "https://github.com/axios/axios/releases/tag/v1.19.0",
+    "githubReleaseTag": "v1.19.0",
+    "githubReleasePublishedAt": "2026-07-26T14:13:32Z",
+    "releaseNotesExcerpt": "v1.19.0 - July 22, 2026 This release raises the form-data security floor, adds configuration and type-system capabilities, and fixes NO_PROXY matching, interceptor errors, progress reporting, and serialization edge cases. Security Fixes Multipart Form Data: Raised the form-data d",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/axios/1.19.0",
     "sourceLinks": [
       {
@@ -1401,6 +1429,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/axios/axios"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/axios/axios/releases/tag/v1.19.0"
       }
     ]
   },
@@ -1412,7 +1444,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.101.7",
     "newVersion": "1.102.0",
     "releaseDate": "2026-07-25",
-    "publishedAgo": "published 23 days ago",
+    "publishedAgo": "published 24 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -1421,14 +1453,14 @@ export const releases: ReleaseItem[] = [
     "reason": "Minor version release detected with no OSV match.",
     "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-    "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-    "whatChanged": "Minor sass 1.102.0 release detected; review if used in production paths.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+    "whatChanged": "GitHub release note found: Dart Sass 1.102.0.",
+    "githubReleaseTitle": "Dart Sass 1.102.0",
+    "githubReleaseUrl": "https://github.com/sass/dart-sass/releases/tag/1.102.0",
+    "githubReleaseTag": "1.102.0",
+    "githubReleasePublishedAt": "2026-07-25T00:19:44Z",
+    "releaseNotesExcerpt": "To install Sass 1.102.0, download one of the packages below and [add it to your PATH][], or see [the Sass website][] for full installation instructions. [add it to your PATH]: https://katiek2.github.io/path-doc/ [the Sass website]: https://sass-lang.com/install Changes Use the 2.",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/sass/1.102.0",
     "sourceLinks": [
       {
@@ -1438,6 +1470,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/sass/dart-sass"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/sass/dart-sass/releases/tag/1.102.0"
       }
     ]
   },
@@ -1449,7 +1485,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.14.7",
     "newVersion": "2.15.0",
     "releaseDate": "2026-07-08",
-    "publishedAgo": "published 40 days ago",
+    "publishedAgo": "published 41 days ago",
     "isRecent": false,
     "risk": "review",
     "category": "Minor version",
@@ -1458,14 +1494,14 @@ export const releases: ReleaseItem[] = [
     "reason": "Minor version release detected with no OSV match.",
     "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-    "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-    "whatChanged": "Minor msw 2.15.0 release detected; review if used in production paths.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+    "whatChanged": "GitHub release note found: v2.15.0.",
+    "githubReleaseTitle": "v2.15.0",
+    "githubReleaseUrl": "https://github.com/mswjs/msw/releases/tag/v2.15.0",
+    "githubReleaseTag": "v2.15.0",
+    "githubReleasePublishedAt": "2026-07-08T01:43:13Z",
+    "releaseNotesExcerpt": "v2.15.0 (2026-07-08) Features **sse:** invoke finalize on response stream end (#2741) (7fae0cc0954b20c739ae8e95a24eefc8a78710e8) @kettanaito",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/msw/2.15.0",
     "sourceLinks": [
       {
@@ -1475,6 +1511,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/mswjs/msw"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/mswjs/msw/releases/tag/v2.15.0"
       }
     ]
   },
@@ -1486,7 +1526,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.3.0",
     "newVersion": "4.4.0",
     "releaseDate": "2026-05-29",
-    "publishedAgo": "published 79 days ago",
+    "publishedAgo": "published 80 days ago",
     "isRecent": false,
     "risk": "review",
     "category": "Minor version",
@@ -1495,14 +1535,14 @@ export const releases: ReleaseItem[] = [
     "reason": "Minor version release detected with no OSV match.",
     "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-    "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-    "whatChanged": "Minor date-fns 4.4.0 release detected; review if used in production paths.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+    "whatChanged": "GitHub release note found: v4.4.0.",
+    "githubReleaseTitle": "v4.4.0",
+    "githubReleaseUrl": "https://github.com/date-fns/date-fns/releases/tag/v4.4.0",
+    "githubReleaseTag": "v4.4.0",
+    "githubReleasePublishedAt": "2026-05-29T23:33:36Z",
+    "releaseNotesExcerpt": "This release revisits the approach to CDN usage and introduces a new package, @date-fns/cdn and deprecates the date-fns CDN scripts. It allowed reducing the zipped package size from 5.83 MB down to 3.96 MB without introducing any breaking changes. In v5.0.0-alpha.0 where CDN scri",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/date-fns/4.4.0",
     "sourceLinks": [
       {
@@ -1512,6 +1552,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/date-fns/date-fns"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/date-fns/date-fns/releases/tag/v4.4.0"
       }
     ]
   },
@@ -1523,7 +1567,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.11.2",
     "newVersion": "2.12.0",
     "releaseDate": "2026-05-15",
-    "publishedAgo": "published 93 days ago",
+    "publishedAgo": "published 94 days ago",
     "isRecent": false,
     "risk": "review",
     "category": "Minor version",
@@ -1532,14 +1576,14 @@ export const releases: ReleaseItem[] = [
     "reason": "Minor version release detected with no OSV match.",
     "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-    "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-    "whatChanged": "Minor @reduxjs/toolkit 2.12.0 release detected; review if used in production paths.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+    "whatChanged": "GitHub release note found: v2.12.0.",
+    "githubReleaseTitle": "v2.12.0",
+    "githubReleaseUrl": "https://github.com/reduxjs/redux-toolkit/releases/tag/v2.12.0",
+    "githubReleaseTag": "v2.12.0",
+    "githubReleasePublishedAt": "2026-05-15T14:38:12Z",
+    "releaseNotesExcerpt": "This **feature release** adds RTK usage skills files (via TanStack Intent) exports the RTK Query hook options types for reusability, fixes issues with infinite query status flags and batching handling, and makes some small TS improvements. Changelog Skills Files We've generated a",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/reduxjs-toolkit/2.12.0",
     "sourceLinks": [
       {
@@ -1549,6 +1593,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/reduxjs/redux-toolkit"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/reduxjs/redux-toolkit/releases/tag/v2.12.0"
       }
     ]
   },
@@ -1560,7 +1608,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "3.5.0",
     "newVersion": "3.6.0",
     "releaseDate": "2026-05-10",
-    "publishedAgo": "published 99 days ago",
+    "publishedAgo": "published 100 days ago",
     "isRecent": false,
     "risk": "review",
     "category": "Minor version",
@@ -1569,14 +1617,14 @@ export const releases: ReleaseItem[] = [
     "reason": "Minor version release detected with no OSV match.",
     "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-    "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-    "whatChanged": "Minor tailwind-merge 3.6.0 release detected; review if used in production paths.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+    "whatChanged": "GitHub release note found: v3.6.0.",
+    "githubReleaseTitle": "v3.6.0",
+    "githubReleaseUrl": "https://github.com/dcastil/tailwind-merge/releases/tag/v3.6.0",
+    "githubReleaseTag": "v3.6.0",
+    "githubReleasePublishedAt": "2026-05-10T12:55:59Z",
+    "releaseNotesExcerpt": "New Features Add support for Tailwind CSS v4.3 by @dcastil in https://github.com/dcastil/tailwind-merge/pull/677 - Add postfixLookupClassGroups option to config to support Tailwind utilities where a slash is part of the full class name, like named container queries Add support fo",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/tailwind-merge/3.6.0",
     "sourceLinks": [
       {
@@ -1586,6 +1634,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/dcastil/tailwind-merge"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/dcastil/tailwind-merge/releases/tag/v3.6.0"
       }
     ]
   },
@@ -1606,14 +1658,14 @@ export const releases: ReleaseItem[] = [
     "reason": "Minor version release detected with no OSV match.",
     "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
     "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
-    "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-    "whatChanged": "Minor @emotion/react 11.14.0 release detected; review if used in production paths.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+    "whatChanged": "GitHub release note found: @emotion/styled@11.14.0.",
+    "githubReleaseTitle": "@emotion/styled@11.14.0",
+    "githubReleaseUrl": "https://github.com/emotion-js/emotion/releases/tag/%40emotion/styled%4011.14.0",
+    "githubReleaseTag": "@emotion/styled@11.14.0",
+    "githubReleasePublishedAt": "2024-12-09T08:43:42Z",
+    "releaseNotesExcerpt": "Minor Changes #3284 a19d019 Thanks @Andarist! - Source code has been migrated to TypeScript. From now on type declarations will be emitted based on that, instead of being hand-written. Patch Changes Updated dependencies \\[e1bf17e]: - @emotion/use-insertion-effect-with-fallbacks@1",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/emotion-react/11.14.0",
     "sourceLinks": [
       {
@@ -1623,6 +1675,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/emotion-js/emotion.git#main"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/emotion-js/emotion/releases/tag/%40emotion/styled%4011.14.0"
       }
     ]
   },
@@ -1668,12 +1724,135 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
-    "id": "dayjs-1-11-23",
-    "packageName": "dayjs",
-    "packageSlug": "dayjs",
-    "description": "Date utilities",
-    "oldVersion": "1.11.22",
-    "newVersion": "1.11.23",
+    "id": "astro-7-2-3",
+    "packageName": "astro",
+    "packageSlug": "astro",
+    "description": "Content-focused web framework",
+    "oldVersion": "7.2.2",
+    "newVersion": "7.2.3",
+    "releaseDate": "2026-08-18",
+    "publishedAgo": "published today",
+    "isRecent": true,
+    "risk": "low",
+    "category": "Patch version",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "Patch release with no OSV match.",
+    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+    "whatChanged": "GitHub release note found: astro@7.2.3.",
+    "githubReleaseTitle": "astro@7.2.3",
+    "githubReleaseUrl": "https://github.com/withastro/astro/releases/tag/astro%407.2.3",
+    "githubReleaseTag": "astro@7.2.3",
+    "githubReleasePublishedAt": "2026-08-18T13:36:59Z",
+    "releaseNotesExcerpt": "Patch Changes #17724 97140b2 Thanks @ematipico! - Fixes an issue where Astro could run out of memory when experimental.collectionStorage is set to chunked and there are multiple concurrent updates to the same collection. #17636 51723b1 Thanks @matthewp! - Fixes the dev server som",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+    "route": "/package/astro/7.2.3",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/astro"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/withastro/astro"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/withastro/astro/releases/tag/astro%407.2.3"
+      }
+    ]
+  },
+  {
+    "id": "storybook-react-10-5-9",
+    "packageName": "@storybook/react",
+    "packageSlug": "storybook-react",
+    "description": "React component workshop",
+    "oldVersion": "10.5.8",
+    "newVersion": "10.5.9",
+    "releaseDate": "2026-08-18",
+    "publishedAgo": "published today",
+    "isRecent": true,
+    "risk": "low",
+    "category": "Patch version",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "Patch release with no OSV match.",
+    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+    "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
+    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+    "whatChanged": "GitHub release note found: v10.5.9.",
+    "githubReleaseTitle": "v10.5.9",
+    "githubReleaseUrl": "https://github.com/storybookjs/storybook/releases/tag/v10.5.9",
+    "githubReleaseTag": "v10.5.9",
+    "githubReleasePublishedAt": "2026-08-18T07:02:34Z",
+    "releaseNotesExcerpt": "10.5.9 Addon-Pseudo-States: Fix pseudo-states rewriting for nested functional selectors - #34318, thanks @filipw01! Core: Skip module-graph reverse-index mirror when a patch is a no-op - #35825, thanks @ndelangen! Core: Split module-graph into hot revisions and cold index service",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+    "route": "/package/storybook-react/10.5.9",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/@storybook/react"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/storybookjs/storybook"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/storybookjs/storybook/releases/tag/v10.5.9"
+      }
+    ]
+  },
+  {
+    "id": "storybook-10-5-9",
+    "packageName": "storybook",
+    "packageSlug": "storybook",
+    "description": "Component documentation",
+    "oldVersion": "10.5.8",
+    "newVersion": "10.5.9",
+    "releaseDate": "2026-08-18",
+    "publishedAgo": "published today",
+    "isRecent": true,
+    "risk": "low",
+    "category": "Patch version",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "Patch release with no OSV match.",
+    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+    "whatChanged": "GitHub release note found: v10.5.9.",
+    "githubReleaseTitle": "v10.5.9",
+    "githubReleaseUrl": "https://github.com/storybookjs/storybook/releases/tag/v10.5.9",
+    "githubReleaseTag": "v10.5.9",
+    "githubReleasePublishedAt": "2026-08-18T07:02:34Z",
+    "releaseNotesExcerpt": "10.5.9 Addon-Pseudo-States: Fix pseudo-states rewriting for nested functional selectors - #34318, thanks @filipw01! Core: Skip module-graph reverse-index mirror when a patch is a no-op - #35825, thanks @ndelangen! Core: Split module-graph into hot revisions and cold index service",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag. Cached from an earlier generator run.",
+    "route": "/package/storybook/10.5.9",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/storybook"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/storybookjs/storybook"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/storybookjs/storybook/releases/tag/v10.5.9"
+      }
+    ]
+  },
+  {
+    "id": "solid-js-1-9-15",
+    "packageName": "solid-js",
+    "packageSlug": "solid-js",
+    "description": "Reactive UI library",
+    "oldVersion": "1.9.14",
+    "newVersion": "1.9.15",
     "releaseDate": "2026-08-17",
     "publishedAgo": "published today",
     "isRecent": true,
@@ -1685,13 +1864,50 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch dayjs 1.11.23 release detected with no OSV match.",
+    "whatChanged": "Patch solid-js 1.9.15 release detected with no OSV match.",
     "githubReleaseTitle": "",
     "githubReleaseUrl": "",
     "githubReleaseTag": "",
     "githubReleasePublishedAt": "",
     "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "releaseNotesStatus": "No GitHub release matched this exact npm version tag; release notes are not attributed to this version.",
+    "route": "/package/solid-js/1.9.15",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/solid-js"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/solidjs/solid"
+      }
+    ]
+  },
+  {
+    "id": "dayjs-1-11-23",
+    "packageName": "dayjs",
+    "packageSlug": "dayjs",
+    "description": "Date utilities",
+    "oldVersion": "1.11.22",
+    "newVersion": "1.11.23",
+    "releaseDate": "2026-08-17",
+    "publishedAgo": "published 1 day ago",
+    "isRecent": true,
+    "risk": "low",
+    "category": "Patch version",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "Patch release with no OSV match.",
+    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+    "whatChanged": "GitHub release note found: v1.11.23.",
+    "githubReleaseTitle": "v1.11.23",
+    "githubReleaseUrl": "https://github.com/iamkun/dayjs/releases/tag/v1.11.23",
+    "githubReleaseTag": "v1.11.23",
+    "githubReleasePublishedAt": "2026-08-17T11:50:26Z",
+    "releaseNotesExcerpt": "1.11.23 (2026-08-17) Bug Fixes **plugin:** timezone plugin prevent RangeError for invalid Day.js values (#3180) (dad46e6) **plugin:** timezone plugin prevent RangeError for invalid Day.js values (#3180) (#3181) (2a3785f)",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/dayjs/1.11.23",
     "sourceLinks": [
       {
@@ -1701,6 +1917,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/iamkun/dayjs"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/iamkun/dayjs/releases/tag/v1.11.23"
       }
     ]
   },
@@ -1712,7 +1932,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "11.1.16",
     "newVersion": "11.1.17",
     "releaseDate": "2026-08-16",
-    "publishedAgo": "published 1 day ago",
+    "publishedAgo": "published 2 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -1722,13 +1942,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch immer 11.1.17 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v11.1.17.",
+    "githubReleaseTitle": "v11.1.17",
+    "githubReleaseUrl": "https://github.com/immerjs/immer/releases/tag/v11.1.17",
+    "githubReleaseTag": "v11.1.17",
+    "githubReleasePublishedAt": "2026-08-16T03:10:43Z",
+    "releaseNotesExcerpt": "11.1.17 (2026-08-16) Bug Fixes preserve structural sharing for no-op array-methods calls (0c3efdd)",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/immer/11.1.17",
     "sourceLinks": [
       {
@@ -1738,6 +1958,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/immerjs/immer"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/immerjs/immer/releases/tag/v11.1.17"
       }
     ]
   },
@@ -1749,7 +1973,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "6.5.2",
     "newVersion": "6.5.3",
     "releaseDate": "2026-08-15",
-    "publishedAgo": "published 1 day ago",
+    "publishedAgo": "published 2 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -1759,13 +1983,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch styled-components 6.5.3 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: styled-components@6.5.3.",
+    "githubReleaseTitle": "styled-components@6.5.3",
+    "githubReleaseUrl": "https://github.com/styled-components/styled-components/releases/tag/styled-components%406.5.3",
+    "githubReleaseTag": "styled-components@6.5.3",
+    "githubReleasePublishedAt": "2026-08-15T15:09:45Z",
+    "releaseNotesExcerpt": "Patch Changes 3470387: Fix TypeScript errors in projects that augment React HTML props with a data-* template-literal index signature.",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/styled-components/6.5.3",
     "sourceLinks": [
       {
@@ -1775,6 +1999,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/styled-components/styled-components"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/styled-components/styled-components/releases/tag/styled-components%406.5.3"
       }
     ]
   },
@@ -1786,7 +2014,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.10.9",
     "newVersion": "2.10.10",
     "releaseDate": "2026-08-14",
-    "publishedAgo": "published 3 days ago",
+    "publishedAgo": "published 4 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -1796,13 +2024,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch turbo 2.10.10 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: Turborepo v2.10.10.",
+    "githubReleaseTitle": "Turborepo v2.10.10",
+    "githubReleaseUrl": "https://github.com/vercel/turborepo/releases/tag/v2.10.10",
+    "githubReleaseTag": "v2.10.10",
+    "githubReleasePublishedAt": "2026-08-14T13:32:58Z",
+    "releaseNotesExcerpt": "<!-- Release notes generated using configuration in .github/release.yml at v2.10.10 --> What's Changed Changelog chore: Release Turborepo 2.10.9 by @github-actions[bot] in https://github.com/vercel/turborepo/pull/13696 docs: Update Geistdocs to 1.19.6 by @molebox in https://githu",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/turbo/2.10.10",
     "sourceLinks": [
       {
@@ -1812,6 +2040,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/vercel/turborepo"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/vercel/turborepo/releases/tag/v2.10.10"
       }
     ]
   },
@@ -1823,7 +2055,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.2.11",
     "newVersion": "4.2.12",
     "releaseDate": "2026-08-14",
-    "publishedAgo": "published 3 days ago",
+    "publishedAgo": "published 4 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -1833,13 +2065,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch @apollo/client 4.2.12 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: @apollo/client@4.2.12.",
+    "githubReleaseTitle": "@apollo/client@4.2.12",
+    "githubReleaseUrl": "https://github.com/apollographql/apollo-client/releases/tag/%40apollo/client%404.2.12",
+    "githubReleaseTag": "@apollo/client@4.2.12",
+    "githubReleasePublishedAt": "2026-08-13T22:51:15Z",
+    "releaseNotesExcerpt": "Patch Changes #13400 56ca81b Thanks @QiRaining! - Preserve multi-byte UTF-8 characters split across multipart response chunks.",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/apollo-client/4.2.12",
     "sourceLinks": [
       {
@@ -1849,6 +2081,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/apollographql/apollo-client"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/apollographql/apollo-client/releases/tag/%40apollo/client%404.2.12"
       }
     ]
   },
@@ -1860,7 +2096,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "16.3.0",
     "newVersion": "16.3.1",
     "releaseDate": "2026-08-13",
-    "publishedAgo": "published 3 days ago",
+    "publishedAgo": "published 4 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -1870,13 +2106,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch next 16.3.1 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v16.3.1.",
+    "githubReleaseTitle": "v16.3.1",
+    "githubReleaseUrl": "https://github.com/vercel/next.js/releases/tag/v16.3.1",
+    "githubReleaseTag": "v16.3.1",
+    "githubReleasePublishedAt": "2026-08-13T22:48:45Z",
+    "releaseNotesExcerpt": "What's Changed [16.x] Turbopack: don't strip async-module runtime from shared runtime chunks by @lukesandberg in https://github.com/vercel/next.js/pull/96653 [16.x] [turbopack] Add turbopack_ecmascript and turbopack_wasm's embeded FS to internal_assets_conditions by @lukesandberg",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/next/16.3.1",
     "sourceLinks": [
       {
@@ -1886,6 +2122,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/vercel/next.js"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/vercel/next.js/releases/tag/v16.3.1"
       }
     ]
   },
@@ -1897,7 +2137,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "22.1.1",
     "newVersion": "22.1.2",
     "releaseDate": "2026-08-13",
-    "publishedAgo": "published 3 days ago",
+    "publishedAgo": "published 4 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -1907,13 +2147,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch @angular/core 22.1.2 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: 22.1.2.",
+    "githubReleaseTitle": "22.1.2",
+    "githubReleaseUrl": "https://github.com/angular/angular/releases/tag/v22.1.2",
+    "githubReleaseTag": "v22.1.2",
+    "githubReleasePublishedAt": "2026-08-13T18:57:29Z",
+    "releaseNotesExcerpt": "compiler | Commit | Description | | -- | -- | | | Generate correct expression for optional chaning. | | | remove namespaced MathML script elements | compiler-cli | Commit | Description | | -- | -- | | | correctly resolve symbol for SafePropertyRead in chained optional navigation ",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/angular-core/22.1.2",
     "sourceLinks": [
       {
@@ -1923,43 +2163,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/angular/angular"
-      }
-    ]
-  },
-  {
-    "id": "astro-7-2-2",
-    "packageName": "astro",
-    "packageSlug": "astro",
-    "description": "Content-focused web framework",
-    "oldVersion": "7.2.1",
-    "newVersion": "7.2.2",
-    "releaseDate": "2026-08-13",
-    "publishedAgo": "published 3 days ago",
-    "isRecent": true,
-    "risk": "low",
-    "category": "Patch version",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Patch release with no OSV match.",
-    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch astro 7.2.2 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
-    "route": "/package/astro/7.2.2",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/astro"
       },
       {
-        "label": "Repository",
-        "href": "https://github.com/withastro/astro"
+        "label": "GitHub release",
+        "href": "https://github.com/angular/angular/releases/tag/v22.1.2"
       }
     ]
   },
@@ -1971,7 +2178,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.0.14",
     "newVersion": "5.0.15",
     "releaseDate": "2026-08-13",
-    "publishedAgo": "published 4 days ago",
+    "publishedAgo": "published 5 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -1981,13 +2188,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch zustand 5.0.15 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v5.0.15.",
+    "githubReleaseTitle": "v5.0.15",
+    "githubReleaseUrl": "https://github.com/pmndrs/zustand/releases/tag/v5.0.15",
+    "githubReleaseTag": "v5.0.15",
+    "githubReleasePublishedAt": "2026-08-13T00:36:16Z",
+    "releaseNotesExcerpt": "Fix some issues in devtools and persist middleware. What's Changed fix(devtools): correct V8 stack regex when source path contains spaces by @dai-shi with @Copilot in https://github.com/pmndrs/zustand/pull/3531 fix(persist): clearStorage() should invalidate concurrent async rehyd",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/zustand/5.0.15",
     "sourceLinks": [
       {
@@ -1997,80 +2204,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/pmndrs/zustand"
-      }
-    ]
-  },
-  {
-    "id": "storybook-react-10-5-8",
-    "packageName": "@storybook/react",
-    "packageSlug": "storybook-react",
-    "description": "React component workshop",
-    "oldVersion": "10.5.7",
-    "newVersion": "10.5.8",
-    "releaseDate": "2026-08-13",
-    "publishedAgo": "published 3 days ago",
-    "isRecent": true,
-    "risk": "low",
-    "category": "Patch version",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Patch release with no OSV match.",
-    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-    "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
-    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch @storybook/react 10.5.8 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
-    "route": "/package/storybook-react/10.5.8",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/@storybook/react"
       },
       {
-        "label": "Repository",
-        "href": "https://github.com/storybookjs/storybook"
-      }
-    ]
-  },
-  {
-    "id": "storybook-10-5-8",
-    "packageName": "storybook",
-    "packageSlug": "storybook",
-    "description": "Component documentation",
-    "oldVersion": "10.5.7",
-    "newVersion": "10.5.8",
-    "releaseDate": "2026-08-13",
-    "publishedAgo": "published 3 days ago",
-    "isRecent": true,
-    "risk": "low",
-    "category": "Patch version",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Patch release with no OSV match.",
-    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch storybook 10.5.8 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
-    "route": "/package/storybook/10.5.8",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/storybook"
-      },
-      {
-        "label": "Repository",
-        "href": "https://github.com/storybookjs/storybook"
+        "label": "GitHub release",
+        "href": "https://github.com/pmndrs/zustand/releases/tag/v5.0.15"
       }
     ]
   },
@@ -2082,7 +2219,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.56.8",
     "newVersion": "5.56.9",
     "releaseDate": "2026-08-12",
-    "publishedAgo": "published 4 days ago",
+    "publishedAgo": "published 5 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2092,13 +2229,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch svelte 5.56.9 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: svelte@5.56.9.",
+    "githubReleaseTitle": "svelte@5.56.9",
+    "githubReleaseUrl": "https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.9",
+    "githubReleaseTag": "svelte@5.56.9",
+    "githubReleasePublishedAt": "2026-08-12T18:12:41Z",
+    "releaseNotesExcerpt": "Patch Changes fix: skip controlled each fast path while another batch is pending (#18625) fix: better whitespace handling inside printer (#18638) fix: don't duplicate comments in attributes (#18636) fix: preserve CSS comments in the AST printer (#18637)",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/svelte/5.56.9",
     "sourceLinks": [
       {
@@ -2108,6 +2245,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/sveltejs/svelte"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/sveltejs/svelte/releases/tag/svelte%405.56.9"
       }
     ]
   },
@@ -2119,7 +2260,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.5.0",
     "newVersion": "2.5.1",
     "releaseDate": "2026-08-12",
-    "publishedAgo": "published 5 days ago",
+    "publishedAgo": "published 6 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2160,7 +2301,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "15.20.0",
     "newVersion": "15.20.1",
     "releaseDate": "2026-08-10",
-    "publishedAgo": "published 6 days ago",
+    "publishedAgo": "published 7 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2170,13 +2311,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Test suites, browser automation, and release validation workflows.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch cypress 15.20.1 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v15.20.1.",
+    "githubReleaseTitle": "v15.20.1",
+    "githubReleaseUrl": "https://github.com/cypress-io/cypress/releases/tag/v15.20.1",
+    "githubReleaseTag": "v15.20.1",
+    "githubReleasePublishedAt": "2026-08-10T17:56:37Z",
+    "releaseNotesExcerpt": "Changelog: https://docs.cypress.io/app/references/changelog#15-20-1",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/cypress/15.20.1",
     "sourceLinks": [
       {
@@ -2186,6 +2327,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/cypress-io/cypress"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/cypress-io/cypress/releases/tag/v15.20.1"
       }
     ]
   },
@@ -2197,7 +2342,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.0.0",
     "newVersion": "7.0.1",
     "releaseDate": "2026-08-09",
-    "publishedAgo": "published 7 days ago",
+    "publishedAgo": "published 8 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2207,13 +2352,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch @testing-library/jest-dom 7.0.1 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v7.0.1.",
+    "githubReleaseTitle": "v7.0.1",
+    "githubReleaseUrl": "https://github.com/testing-library/jest-dom/releases/tag/v7.0.1",
+    "githubReleaseTag": "v7.0.1",
+    "githubReleasePublishedAt": "2026-08-09T23:42:27Z",
+    "releaseNotesExcerpt": "7.0.1 (2026-08-09) Bug Fixes declare vitest as an optional peer dependency (#733) (3782c78)",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/testing-library-jest-dom/7.0.1",
     "sourceLinks": [
       {
@@ -2223,6 +2368,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/testing-library/jest-dom"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/testing-library/jest-dom/releases/tag/v7.0.1"
       }
     ]
   },
@@ -2234,7 +2383,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "0.28.1",
     "newVersion": "0.28.2",
     "releaseDate": "2026-08-08",
-    "publishedAgo": "published 8 days ago",
+    "publishedAgo": "published 9 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2244,13 +2393,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch esbuild 0.28.2 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v0.28.2.",
+    "githubReleaseTitle": "v0.28.2",
+    "githubReleaseUrl": "https://github.com/evanw/esbuild/releases/tag/v0.28.2",
+    "githubReleaseTag": "v0.28.2",
+    "githubReleasePublishedAt": "2026-08-08T19:58:58Z",
+    "releaseNotesExcerpt": "Fix tree shaking bug due to TypeScript import alias (#4507) This release fixes a bug that could cause esbuild to incorrectly tree-shake imports that are used in a TypeScript type alias under certain circumstances. Affected code uses a TypeScript-specific import assignment and loo",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/esbuild/0.28.2",
     "sourceLinks": [
       {
@@ -2260,6 +2409,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/evanw/esbuild"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/evanw/esbuild/releases/tag/v0.28.2"
       }
     ]
   },
@@ -2271,7 +2424,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "10.8.0",
     "newVersion": "10.8.1",
     "releaseDate": "2026-08-07",
-    "publishedAgo": "published 9 days ago",
+    "publishedAgo": "published 10 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2281,13 +2434,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Developer tooling, type checking, and code-quality gates.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch eslint 10.8.1 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v10.8.1.",
+    "githubReleaseTitle": "v10.8.1",
+    "githubReleaseUrl": "https://github.com/eslint/eslint/releases/tag/v10.8.1",
+    "githubReleaseTag": "v10.8.1",
+    "githubReleasePublishedAt": "2026-08-07T20:16:24Z",
+    "releaseNotesExcerpt": "Bug Fixes 18eb0a7 fix: prevent ASI hazard in no-unused-labels autofix (#21173) (dongkyu lee) 151ba3f fix: false positives in getter-return and accessor-pairs (#21163) (Grit) 6898df9 fix: ignore meta-property names in id-denylist (#21166) (Pixel) 4d7db66 fix: ignore meta-property ",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/eslint/10.8.1",
     "sourceLinks": [
       {
@@ -2297,6 +2450,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/eslint/eslint"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/eslint/eslint/releases/tag/v10.8.1"
       }
     ]
   },
@@ -2308,7 +2465,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "20.11.1",
     "newVersion": "20.11.2",
     "releaseDate": "2026-08-07",
-    "publishedAgo": "published 9 days ago",
+    "publishedAgo": "published 10 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2318,13 +2475,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch happy-dom 20.11.2 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v20.11.2.",
+    "githubReleaseTitle": "v20.11.2",
+    "githubReleaseUrl": "https://github.com/capricorn86/happy-dom/releases/tag/v20.11.2",
+    "githubReleaseTag": "v20.11.2",
+    "githubReleasePublishedAt": "2026-08-07T16:07:19Z",
+    "releaseNotesExcerpt": ":construction_worker_man: Patch fixes - MutationObserver callback being GC'd due to orphaned WeakRef - By **@mixelburg** in task #2264",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/happy-dom/20.11.2",
     "sourceLinks": [
       {
@@ -2334,6 +2491,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/capricorn86/happy-dom"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/capricorn86/happy-dom/releases/tag/v20.11.2"
       }
     ]
   },
@@ -2345,7 +2506,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.21.2",
     "newVersion": "8.21.3",
     "releaseDate": "2026-08-07",
-    "publishedAgo": "published 9 days ago",
+    "publishedAgo": "published 10 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2355,13 +2516,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch ws 8.21.3 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: 8.21.3.",
+    "githubReleaseTitle": "8.21.3",
+    "githubReleaseUrl": "https://github.com/websockets/ws/releases/tag/8.21.3",
+    "githubReleaseTag": "8.21.3",
+    "githubReleasePublishedAt": "2026-08-06T16:38:20Z",
+    "releaseNotesExcerpt": "Bug fixes The server now correctly rejects permessage-deflate offers if the incoming client_max_window_bits parameter value is smaller than its configured clientMaxWindowBits (e97a20ea).",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/ws/8.21.3",
     "sourceLinks": [
       {
@@ -2371,6 +2532,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/websockets/ws"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/websockets/ws/releases/tag/8.21.3"
       }
     ]
   },
@@ -2382,7 +2547,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.2.0",
     "newVersion": "8.2.1",
     "releaseDate": "2026-08-06",
-    "publishedAgo": "published 11 days ago",
+    "publishedAgo": "published 12 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2392,13 +2557,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch vite 8.2.1 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v8.2.1.",
+    "githubReleaseTitle": "v8.2.1",
+    "githubReleaseUrl": "https://github.com/vitejs/vite/releases/tag/v8.2.1",
+    "githubReleaseTag": "v8.2.1",
+    "githubReleasePublishedAt": "2026-08-06T13:44:35Z",
+    "releaseNotesExcerpt": "Please refer to CHANGELOG.md for details.",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/vite/8.2.1",
     "sourceLinks": [
       {
@@ -2408,6 +2573,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/vitejs/vite"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/vitejs/vite/releases/tag/v8.2.1"
       }
     ]
   },
@@ -2419,7 +2588,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.5.25",
     "newVersion": "8.5.26",
     "releaseDate": "2026-08-06",
-    "publishedAgo": "published 11 days ago",
+    "publishedAgo": "published 12 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2429,13 +2598,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch postcss 8.5.26 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: 8.5.26.",
+    "githubReleaseTitle": "8.5.26",
+    "githubReleaseUrl": "https://github.com/postcss/postcss/releases/tag/8.5.26",
+    "githubReleaseTag": "8.5.26",
+    "githubReleasePublishedAt": "2026-08-06T08:30:19Z",
+    "releaseNotesExcerpt": "Fixed list.split() regression (by @lazerg). Track symlinks in path protection in source map loading (by @drengir1).",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/postcss/8.5.26",
     "sourceLinks": [
       {
@@ -2445,6 +2614,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/postcss/postcss"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/postcss/postcss/releases/tag/8.5.26"
       }
     ]
   },
@@ -2456,7 +2629,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "9.3.0",
     "newVersion": "9.3.1",
     "releaseDate": "2026-08-06",
-    "publishedAgo": "published 11 days ago",
+    "publishedAgo": "published 12 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2466,13 +2639,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch @mui/material 9.3.1 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v9.3.1.",
+    "githubReleaseTitle": "v9.3.1",
+    "githubReleaseUrl": "https://github.com/mui/material-ui/releases/tag/v9.3.1",
+    "githubReleaseTag": "v9.3.1",
+    "githubReleasePublishedAt": "2026-08-06T10:11:56Z",
+    "releaseNotesExcerpt": "A big thanks to the 4 contributors who made this release possible. @mui/material@9.3.1 [transitions] Prevent exit transitions from getting stuck (#48881) @ZeeshanTamboli @mui/codemod@9.3.1 Include transforms in published package (#48934) @brijeshb42 Core [blog] Clarify early bird",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/mui-material/9.3.1",
     "sourceLinks": [
       {
@@ -2482,6 +2655,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/mui/material-ui"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/mui/material-ui/releases/tag/v9.3.1"
       }
     ]
   },
@@ -2493,7 +2670,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "3.5.40",
     "newVersion": "3.5.41",
     "releaseDate": "2026-08-05",
-    "publishedAgo": "published 12 days ago",
+    "publishedAgo": "published 13 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2503,13 +2680,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch vue 3.5.41 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v3.5.41.",
+    "githubReleaseTitle": "v3.5.41",
+    "githubReleaseUrl": "https://github.com/vuejs/core/releases/tag/v3.5.41",
+    "githubReleaseTag": "v3.5.41",
+    "githubReleasePublishedAt": "2026-08-05T06:59:01Z",
+    "releaseNotesExcerpt": "For stable releases, please refer to CHANGELOG.md for details. For pre-releases, please refer to CHANGELOG.md of the minor branch.",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/vue/3.5.41",
     "sourceLinks": [
       {
@@ -2519,6 +2696,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/vuejs/core"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/vuejs/core/releases/tag/v3.5.41"
       }
     ]
   },
@@ -2530,7 +2711,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.5.1",
     "newVersion": "4.5.2",
     "releaseDate": "2026-08-05",
-    "publishedAgo": "published 11 days ago",
+    "publishedAgo": "published 12 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2540,13 +2721,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch nuxt 4.5.2 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v4.5.2.",
+    "githubReleaseTitle": "v4.5.2",
+    "githubReleaseUrl": "https://github.com/nuxt/nuxt/releases/tag/v4.5.2",
+    "githubReleaseTag": "v4.5.2",
+    "githubReleasePublishedAt": "2026-08-05T16:19:44Z",
+    "releaseNotesExcerpt": "> 4.5.2 is the next patch release. Changelog compare changes Performance **nuxt,kit:** Skip rewriting unchanged generated files (#35902) **kit,nuxt:** Use lazy imports to improve parsing speed (#35901) **vite:** Skip html entry probes in bare-import resolver (#35907) **nuxt:** Re",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/nuxt/4.5.2",
     "sourceLinks": [
       {
@@ -2556,6 +2737,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/nuxt/nuxt"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/nuxt/nuxt/releases/tag/v4.5.2"
       }
     ]
   },
@@ -2567,7 +2752,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "6.0.0",
     "newVersion": "6.0.1",
     "releaseDate": "2026-08-03",
-    "publishedAgo": "published 14 days ago",
+    "publishedAgo": "published 15 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2577,13 +2762,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch nanoid 6.0.1 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: 6.0.1.",
+    "githubReleaseTitle": "6.0.1",
+    "githubReleaseUrl": "https://github.com/ai/nanoid/releases/tag/6.0.1",
+    "githubReleaseTag": "6.0.1",
+    "githubReleasePublishedAt": "2026-08-03T10:43:38Z",
+    "releaseNotesExcerpt": "Fixed docs.",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/nanoid/6.0.1",
     "sourceLinks": [
       {
@@ -2593,6 +2778,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/ai/nanoid"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/ai/nanoid/releases/tag/6.0.1"
       }
     ]
   },
@@ -2604,7 +2793,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.62.3",
     "newVersion": "4.62.4",
     "releaseDate": "2026-08-01",
-    "publishedAgo": "published 16 days ago",
+    "publishedAgo": "published 17 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2614,13 +2803,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch rollup 4.62.4 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v4.62.4.",
+    "githubReleaseTitle": "v4.62.4",
+    "githubReleaseUrl": "https://github.com/rollup/rollup/releases/tag/v4.62.4",
+    "githubReleaseTag": "v4.62.4",
+    "githubReleasePublishedAt": "2026-08-01T05:22:37Z",
+    "releaseNotesExcerpt": "4.62.4 _2026-08-01_ Bug Fixes Resolve a regression when using Rollup on older Linux distributions (#6467) Pull Requests #6463: docs: add llms.txt documentation index for LLMs and agents (@abyworkings-coder, @lukastaegert) #6464: fix(deps): update minor/patch updates (@renovate[bo",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/rollup/4.62.4",
     "sourceLinks": [
       {
@@ -2630,6 +2819,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/rollup/rollup"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/rollup/rollup/releases/tag/v4.62.4"
       }
     ]
   },
@@ -2641,7 +2834,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "6.0.4",
     "newVersion": "6.0.5",
     "releaseDate": "2026-07-30",
-    "publishedAgo": "published 18 days ago",
+    "publishedAgo": "published 19 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2651,13 +2844,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch @vitejs/plugin-react 6.0.5 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: plugin-react@6.0.5.",
+    "githubReleaseTitle": "plugin-react@6.0.5",
+    "githubReleaseUrl": "https://github.com/vitejs/vite-plugin-react/releases/tag/plugin-react%406.0.5",
+    "githubReleaseTag": "plugin-react@6.0.5",
+    "githubReleasePublishedAt": "2026-07-30T10:10:58Z",
+    "releaseNotesExcerpt": "Fixed the react compiler preset filter to be linear (#1353) The improved filter in v6.0.3 was non-linear and caused a performance regression (#1349). The filter was changed to be linear to avoid that.",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/vitejs-plugin-react/6.0.5",
     "sourceLinks": [
       {
@@ -2667,6 +2860,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/vitejs/vite-plugin-react"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/vitejs/vite-plugin-react/releases/tag/plugin-react%406.0.5"
       }
     ]
   },
@@ -2678,7 +2875,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "19.2.17",
     "newVersion": "19.2.18",
     "releaseDate": "2026-07-30",
-    "publishedAgo": "published 17 days ago",
+    "publishedAgo": "published 18 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2694,7 +2891,7 @@ export const releases: ReleaseItem[] = [
     "githubReleaseTag": "",
     "githubReleasePublishedAt": "",
     "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "releaseNotesStatus": "No GitHub release matched this exact npm version tag; release notes are not attributed to this version.",
     "route": "/package/types-react/19.2.18",
     "sourceLinks": [
       {
@@ -2715,7 +2912,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "19.2.3",
     "newVersion": "19.2.4",
     "releaseDate": "2026-07-30",
-    "publishedAgo": "published 17 days ago",
+    "publishedAgo": "published 18 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2731,7 +2928,7 @@ export const releases: ReleaseItem[] = [
     "githubReleaseTag": "",
     "githubReleasePublishedAt": "",
     "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "releaseNotesStatus": "No GitHub release matched this exact npm version tag; release notes are not attributed to this version.",
     "route": "/package/types-react-dom/19.2.4",
     "sourceLinks": [
       {
@@ -2752,7 +2949,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.62.0",
     "newVersion": "1.62.1",
     "releaseDate": "2026-07-30",
-    "publishedAgo": "published 17 days ago",
+    "publishedAgo": "published 18 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2762,13 +2959,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Test suites, browser automation, and release validation workflows.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch playwright 1.62.1 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v1.62.1.",
+    "githubReleaseTitle": "v1.62.1",
+    "githubReleaseUrl": "https://github.com/microsoft/playwright/releases/tag/v1.62.1",
+    "githubReleaseTag": "v1.62.1",
+    "githubReleasePublishedAt": "2026-07-30T16:35:55Z",
+    "releaseNotesExcerpt": "Bug Fixes #41989 [Regression]: tsconfig \"extends\" bare specifier isn't resolved via node_modules walk-up like tsc (fatal since 1.62) #41998 [Regression]: directory-form tsconfig project references (\"path\": \"../pkg\") fail to resolve (fatal since 1.62) #41985 Accessibility snapshot",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/playwright/1.62.1",
     "sourceLinks": [
       {
@@ -2778,6 +2975,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/microsoft/playwright"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/microsoft/playwright/releases/tag/v1.62.1"
       }
     ]
   },
@@ -2789,7 +2990,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.109.1",
     "newVersion": "5.109.2",
     "releaseDate": "2026-07-28",
-    "publishedAgo": "published 19 days ago",
+    "publishedAgo": "published 20 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2799,13 +3000,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch webpack 5.109.2 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v5.109.2.",
+    "githubReleaseTitle": "v5.109.2",
+    "githubReleaseUrl": "https://github.com/webpack/webpack/releases/tag/v5.109.2",
+    "githubReleaseTag": "v5.109.2",
+    "githubReleasePublishedAt": "2026-07-28T18:14:32Z",
+    "releaseNotesExcerpt": "Patch Changes Resolve aliases pointing at a package directory whose name ends with .js again. (by @alexander-akait in #21542) Name CSS sources in source maps by their resource path, without the css prefix. (by @bjohansebas in #21536) Delete no longer referenced files from the fil",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/webpack/5.109.2",
     "sourceLinks": [
       {
@@ -2815,6 +3016,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/webpack/webpack"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/webpack/webpack/releases/tag/v5.109.2"
       }
     ]
   },
@@ -2826,7 +3031,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.18.1",
     "newVersion": "7.18.2",
     "releaseDate": "2026-07-28",
-    "publishedAgo": "published 19 days ago",
+    "publishedAgo": "published 20 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2836,13 +3041,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch react-router-dom 7.18.2 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v7.18.2.",
+    "githubReleaseTitle": "v7.18.2",
+    "githubReleaseUrl": "https://github.com/remix-run/react-router/releases/tag/react-router%407.18.2",
+    "githubReleaseTag": "react-router@7.18.2",
+    "githubReleasePublishedAt": "2026-07-28T21:53:57Z",
+    "releaseNotesExcerpt": "See the changelog for release notes: https://github.com/remix-run/react-router/blob/v7/CHANGELOG.md#v7182",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/react-router-dom/7.18.2",
     "sourceLinks": [
       {
@@ -2852,6 +3057,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/remix-run/react-router"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/remix-run/react-router/releases/tag/react-router%407.18.2"
       }
     ]
   },
@@ -2863,7 +3072,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.1.22",
     "newVersion": "1.1.23",
     "releaseDate": "2026-07-24",
-    "publishedAgo": "published 23 days ago",
+    "publishedAgo": "published 24 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2900,7 +3109,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.1.22",
     "newVersion": "1.1.23",
     "releaseDate": "2026-07-24",
-    "publishedAgo": "published 23 days ago",
+    "publishedAgo": "published 24 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2937,7 +3146,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "19.2.7",
     "newVersion": "19.2.8",
     "releaseDate": "2026-07-21",
-    "publishedAgo": "published 26 days ago",
+    "publishedAgo": "published 27 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2947,13 +3156,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch react 19.2.8 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: 19.2.8 (July 21st, 2026).",
+    "githubReleaseTitle": "19.2.8 (July 21st, 2026)",
+    "githubReleaseUrl": "https://github.com/react/react/releases/tag/v19.2.8",
+    "githubReleaseTag": "v19.2.8",
+    "githubReleasePublishedAt": "2026-07-21T15:49:09Z",
+    "releaseNotesExcerpt": "React Server Components Performance improvements when decoding (#37087 by @eps1lon)",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/react/19.2.8",
     "sourceLinks": [
       {
@@ -2963,6 +3172,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/react/react"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/react/react/releases/tag/v19.2.8"
       }
     ]
   },
@@ -2974,7 +3187,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "19.2.7",
     "newVersion": "19.2.8",
     "releaseDate": "2026-07-21",
-    "publishedAgo": "published 26 days ago",
+    "publishedAgo": "published 27 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2984,13 +3197,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch react-dom 19.2.8 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: 19.2.8 (July 21st, 2026).",
+    "githubReleaseTitle": "19.2.8 (July 21st, 2026)",
+    "githubReleaseUrl": "https://github.com/react/react/releases/tag/v19.2.8",
+    "githubReleaseTag": "v19.2.8",
+    "githubReleasePublishedAt": "2026-07-21T15:49:09Z",
+    "releaseNotesExcerpt": "React Server Components Performance improvements when decoding (#37087 by @eps1lon)",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag. Cached from an earlier generator run.",
     "route": "/package/react-dom/19.2.8",
     "sourceLinks": [
       {
@@ -3000,6 +3213,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/react/react"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/react/react/releases/tag/v19.2.8"
       }
     ]
   },
@@ -3011,7 +3228,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "3.9.5",
     "newVersion": "3.9.6",
     "releaseDate": "2026-07-21",
-    "publishedAgo": "published 27 days ago",
+    "publishedAgo": "published 28 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3021,13 +3238,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Developer tooling, type checking, and code-quality gates.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch prettier 3.9.6 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: 3.9.6.",
+    "githubReleaseTitle": "3.9.6",
+    "githubReleaseUrl": "https://github.com/prettier/prettier/releases/tag/3.9.6",
+    "githubReleaseTag": "3.9.6",
+    "githubReleasePublishedAt": "2026-07-21T05:52:55Z",
+    "releaseNotesExcerpt": "What's Changed Preserve quotes for methods named new (https://github.com/prettier/prettier/pull/19621 by @kovsu) Support import defer in typescript parser (https://github.com/prettier/prettier/pull/19624, https://github.com/prettier/prettier/pull/19675 by @fisker) Added a new off",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/prettier/3.9.6",
     "sourceLinks": [
       {
@@ -3037,6 +3254,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/prettier/prettier"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/prettier/prettier/releases/tag/3.9.6"
       }
     ]
   },
@@ -3048,7 +3269,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.101.3",
     "newVersion": "5.101.4",
     "releaseDate": "2026-07-21",
-    "publishedAgo": "published 27 days ago",
+    "publishedAgo": "published 28 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3058,13 +3279,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch @tanstack/react-query 5.101.4 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: @tanstack/vue-query@5.101.4.",
+    "githubReleaseTitle": "@tanstack/vue-query@5.101.4",
+    "githubReleaseUrl": "https://github.com/TanStack/query/releases/tag/%40tanstack/vue-query%405.101.4",
+    "githubReleaseTag": "@tanstack/vue-query@5.101.4",
+    "githubReleasePublishedAt": "2026-07-21T13:05:09Z",
+    "releaseNotesExcerpt": "Patch Changes Updated dependencies \\[]: - @tanstack/query-core@5.101.4",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/tanstack-react-query/5.101.4",
     "sourceLinks": [
       {
@@ -3074,6 +3295,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/TanStack/query"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/TanStack/query/releases/tag/%40tanstack/vue-query%405.101.4"
       }
     ]
   },
@@ -3085,7 +3310,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "3.36.0",
     "newVersion": "3.36.1",
     "releaseDate": "2026-07-19",
-    "publishedAgo": "published 28 days ago",
+    "publishedAgo": "published 29 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3095,13 +3320,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch @chakra-ui/react 3.36.1 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: @chakra-ui/react@3.36.1.",
+    "githubReleaseTitle": "@chakra-ui/react@3.36.1",
+    "githubReleaseUrl": "https://github.com/chakra-ui/chakra-ui/releases/tag/%40chakra-ui/react%403.36.1",
+    "githubReleaseTag": "@chakra-ui/react@3.36.1",
+    "githubReleasePublishedAt": "2026-07-19T14:32:16Z",
+    "releaseNotesExcerpt": "Patch Changes #10868 f32a160 Thanks @WahabKhan7528! - **OverlayManager**: add has() method to createOverlay return #10885 e503f8d Thanks @dfedoryshchev! - - Bleed: Fix incorrect css prop application 129c50f Thanks @segunadebayo! - Fix issue where the checked ring of RadioCard and",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/chakra-ui-react/3.36.1",
     "sourceLinks": [
       {
@@ -3111,6 +3336,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/chakra-ui/chakra-ui"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/chakra-ui/chakra-ui/releases/tag/%40chakra-ui/react%403.36.1"
       }
     ]
   },
@@ -3122,7 +3351,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.3.2",
     "newVersion": "4.3.3",
     "releaseDate": "2026-07-16",
-    "publishedAgo": "published 32 days ago",
+    "publishedAgo": "published 33 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3132,13 +3361,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch tailwindcss 4.3.3 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v4.3.3.",
+    "githubReleaseTitle": "v4.3.3",
+    "githubReleaseUrl": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.3",
+    "githubReleaseTag": "v4.3.3",
+    "githubReleasePublishedAt": "2026-07-16T11:55:08Z",
+    "releaseNotesExcerpt": "Fixed Support --watch --poll[=ms] in @tailwindcss/cli when filesystem events are unreliable or unavailable (#20297) Canonicalization: match arbitrary hex colors against theme colors case-insensitively (e.g. bg-[#fff] and bg-[#FFF] bg-white) (#20298) Prevent Preflight from overrid",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/tailwindcss/4.3.3",
     "sourceLinks": [
       {
@@ -3148,6 +3377,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/tailwindlabs/tailwindcss"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.3"
       }
     ]
   },
@@ -3159,7 +3392,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "10.5.3",
     "newVersion": "10.5.4",
     "releaseDate": "2026-07-16",
-    "publishedAgo": "published 32 days ago",
+    "publishedAgo": "published 33 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3169,13 +3402,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch autoprefixer 10.5.4 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: 10.5.4.",
+    "githubReleaseTitle": "10.5.4",
+    "githubReleaseUrl": "https://github.com/postcss/autoprefixer/releases/tag/10.5.4",
+    "githubReleaseTag": "10.5.4",
+    "githubReleasePublishedAt": "2026-07-16T10:29:40Z",
+    "releaseNotesExcerpt": "Fixed prefixed rule duplication (by @xianjianlf2).",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/autoprefixer/10.5.4",
     "sourceLinks": [
       {
@@ -3185,6 +3418,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/postcss/autoprefixer"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/postcss/autoprefixer/releases/tag/10.5.4"
       }
     ]
   },
@@ -3196,7 +3433,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.1.9",
     "newVersion": "4.1.10",
     "releaseDate": "2026-07-06",
-    "publishedAgo": "published 42 days ago",
+    "publishedAgo": "published 43 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3206,13 +3443,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Test suites, browser automation, and release validation workflows.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch vitest 4.1.10 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v4.1.10.",
+    "githubReleaseTitle": "v4.1.10",
+    "githubReleaseUrl": "https://github.com/vitest-dev/vitest/releases/tag/v4.1.10",
+    "githubReleaseTag": "v4.1.10",
+    "githubReleasePublishedAt": "2026-07-06T06:41:38Z",
+    "releaseNotesExcerpt": "&nbsp;&nbsp;&nbsp; Bug Fixes **browser**: Check fs access in builtin commands [backport to v4] &nbsp;-&nbsp; by @hi-ogawa, **Hiroshi Ogawa** and **OpenCode (claude-opus-4-8)** in https://github.com/vitest-dev/vitest/issues/10680 <samp>(5c18d)</samp> **vm**: Fix external module re",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/vitest/4.1.10",
     "sourceLinks": [
       {
@@ -3222,6 +3459,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/vitest-dev/vitest"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/vitest-dev/vitest/releases/tag/v4.1.10"
       }
     ]
   },
@@ -3233,43 +3474,6 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "17.0.1",
     "newVersion": "17.0.2",
     "releaseDate": "2026-07-03",
-    "publishedAgo": "published 45 days ago",
-    "isRecent": false,
-    "risk": "low",
-    "category": "Patch version",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Patch release with no OSV match.",
-    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch graphql 17.0.2 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
-    "route": "/package/graphql/17.0.2",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/graphql"
-      },
-      {
-        "label": "Repository",
-        "href": "https://github.com/graphql/graphql-js"
-      }
-    ]
-  },
-  {
-    "id": "solid-js-1-9-14",
-    "packageName": "solid-js",
-    "packageSlug": "solid-js",
-    "description": "Reactive UI library",
-    "oldVersion": "1.9.13",
-    "newVersion": "1.9.14",
-    "releaseDate": "2026-07-01",
     "publishedAgo": "published 46 days ago",
     "isRecent": false,
     "risk": "low",
@@ -3280,22 +3484,26 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch solid-js 1.9.14 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
-    "route": "/package/solid-js/1.9.14",
+    "whatChanged": "GitHub release note found: v17.0.2.",
+    "githubReleaseTitle": "v17.0.2",
+    "githubReleaseUrl": "https://github.com/graphql/graphql-js/releases/tag/v17.0.2",
+    "githubReleaseTag": "v17.0.2",
+    "githubReleasePublishedAt": "2026-07-03T06:28:41Z",
+    "releaseNotesExcerpt": "v17.0.2 (2026-07-03) Bug Fix #4832 fix: detect default-value changes on input object fields (@spokodev) Polish #4829 fix(mapSchemaConfig): fix context for schema argument mapper (@yaacovCR) Committers: 2 null(@spokodev) Yaacov Rydzinski (@yaacovCR)",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+    "route": "/package/graphql/17.0.2",
     "sourceLinks": [
       {
         "label": "npm",
-        "href": "https://www.npmjs.com/package/solid-js"
+        "href": "https://www.npmjs.com/package/graphql"
       },
       {
         "label": "Repository",
-        "href": "https://github.com/solidjs/solid"
+        "href": "https://github.com/graphql/graphql-js"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/graphql/graphql-js/releases/tag/v17.0.2"
       }
     ]
   },
@@ -3307,7 +3515,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "14.0.0",
     "newVersion": "14.0.1",
     "releaseDate": "2026-06-20",
-    "publishedAgo": "published 58 days ago",
+    "publishedAgo": "published 59 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3317,13 +3525,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch uuid 14.0.1 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v14.0.1.",
+    "githubReleaseTitle": "v14.0.1",
+    "githubReleaseUrl": "https://github.com/uuidjs/uuid/releases/tag/v14.0.1",
+    "githubReleaseTag": "v14.0.1",
+    "githubReleasePublishedAt": "2026-06-20T11:55:33Z",
+    "releaseNotesExcerpt": "14.0.1 (2026-06-20) Bug Fixes add types condition to node export for moduleResolution bundler (#961) (27ffae5)",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/uuid/14.0.1",
     "sourceLinks": [
       {
@@ -3333,6 +3541,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/uuidjs/uuid"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/uuidjs/uuid/releases/tag/v14.0.1"
       }
     ]
   },
@@ -3344,7 +3556,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.8.4",
     "newVersion": "7.8.5",
     "releaseDate": "2026-06-19",
-    "publishedAgo": "published 58 days ago",
+    "publishedAgo": "published 59 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3354,13 +3566,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch semver 7.8.5 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v7.8.5.",
+    "githubReleaseTitle": "v7.8.5",
+    "githubReleaseUrl": "https://github.com/npm/node-semver/releases/tag/v7.8.5",
+    "githubReleaseTag": "v7.8.5",
+    "githubReleasePublishedAt": "2026-06-19T18:32:05Z",
+    "releaseNotesExcerpt": "7.8.5 (2026-06-19) Bug Fixes 9c8692a #878 include prereleases in tilde range lower bound with includePrerelease (#878) (@chatman-media)",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/semver/7.8.5",
     "sourceLinks": [
       {
@@ -3370,6 +3582,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/npm/node-semver"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/npm/node-semver/releases/tag/v7.8.5"
       }
     ]
   },
@@ -3381,7 +3597,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.0.1",
     "newVersion": "8.0.2",
     "releaseDate": "2026-06-18",
-    "publishedAgo": "published 60 days ago",
+    "publishedAgo": "published 61 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3391,13 +3607,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch @babel/preset-env 8.0.2 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v8.0.2.",
+    "githubReleaseTitle": "v8.0.2",
+    "githubReleaseUrl": "https://github.com/babel/babel/releases/tag/v8.0.2",
+    "githubReleaseTag": "v8.0.2",
+    "githubReleasePublishedAt": "2026-06-20T06:07:23Z",
+    "releaseNotesExcerpt": "v8.0.2 (2026-06-18) :bug: Bug Fix Other * #18083 Use the @babel/core version when asserting version in @babel/standalone (@nicolo-ribaudo) babel-helper-validator-identifier * #18075 fix(identifier): avoid double escaping slash (@JLHwung) :house: Internal babel-plugin-proposal-dec",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/babel-preset-env/8.0.2",
     "sourceLinks": [
       {
@@ -3407,6 +3623,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/babel/babel"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/babel/babel/releases/tag/v8.0.2"
       }
     ]
   },
@@ -3418,7 +3638,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.0.0",
     "newVersion": "8.0.1",
     "releaseDate": "2026-06-17",
-    "publishedAgo": "published 61 days ago",
+    "publishedAgo": "published 62 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3428,13 +3648,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch @babel/core 8.0.1 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v8.0.1.",
+    "githubReleaseTitle": "v8.0.1",
+    "githubReleaseUrl": "https://github.com/babel/babel/releases/tag/v8.0.1",
+    "githubReleaseTag": "v8.0.1",
+    "githubReleasePublishedAt": "2026-06-17T09:57:09Z",
+    "releaseNotesExcerpt": "v8.0.1 (2026-06-17) This release includes a breaking change that was in the Babel 8 migration guide's Getting ready section and in the release post, but the actual removal of the feature from the codebase was accidentally not complete. :boom: Breaking Change babel-core, babel-plu",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/babel-core/8.0.1",
     "sourceLinks": [
       {
@@ -3444,6 +3664,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/babel/babel"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/babel/babel/releases/tag/v8.0.1"
       }
     ]
   },
@@ -3455,7 +3679,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.0.0",
     "newVersion": "8.0.1",
     "releaseDate": "2026-06-17",
-    "publishedAgo": "published 61 days ago",
+    "publishedAgo": "published 62 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3465,13 +3689,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch @babel/preset-react 8.0.1 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v8.0.1.",
+    "githubReleaseTitle": "v8.0.1",
+    "githubReleaseUrl": "https://github.com/babel/babel/releases/tag/v8.0.1",
+    "githubReleaseTag": "v8.0.1",
+    "githubReleasePublishedAt": "2026-06-17T09:57:09Z",
+    "releaseNotesExcerpt": "v8.0.1 (2026-06-17) This release includes a breaking change that was in the Babel 8 migration guide's Getting ready section and in the release post, but the actual removal of the feature from the codebase was accidentally not complete. :boom: Breaking Change babel-core, babel-plu",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag. Cached from an earlier generator run.",
     "route": "/package/babel-preset-react/8.0.1",
     "sourceLinks": [
       {
@@ -3481,6 +3705,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/babel/babel"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/babel/babel/releases/tag/v8.0.1"
       }
     ]
   },
@@ -3492,7 +3720,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.17.4",
     "newVersion": "2.17.5",
     "releaseDate": "2026-06-01",
-    "publishedAgo": "published 76 days ago",
+    "publishedAgo": "published 77 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3508,7 +3736,7 @@ export const releases: ReleaseItem[] = [
     "githubReleaseTag": "",
     "githubReleasePublishedAt": "",
     "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "releaseNotesStatus": "No GitHub release matched this exact npm version tag; release notes are not attributed to this version.",
     "route": "/package/remix-run-react/2.17.5",
     "sourceLinks": [
       {
@@ -3529,7 +3757,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "30.4.1",
     "newVersion": "30.4.2",
     "releaseDate": "2026-05-09",
-    "publishedAgo": "published 100 days ago",
+    "publishedAgo": "published 101 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3539,13 +3767,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Test suites, browser automation, and release validation workflows.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch jest 30.4.2 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v30.4.2.",
+    "githubReleaseTitle": "v30.4.2",
+    "githubReleaseUrl": "https://github.com/jestjs/jest/releases/tag/v30.4.2",
+    "githubReleaseTag": "v30.4.2",
+    "githubReleasePublishedAt": "2026-05-09T00:32:04Z",
+    "releaseNotesExcerpt": "Fixes [jest-runtime] Fix named imports from CJS modules whose module.exports is a function with own-property exports (#16150) **Full Changelog**: https://github.com/jestjs/jest/compare/v30.4.1...v30.4.2",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/jest/30.4.2",
     "sourceLinks": [
       {
@@ -3555,6 +3783,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/jestjs/jest"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/jestjs/jest/releases/tag/v30.4.2"
       }
     ]
   },
@@ -3566,7 +3798,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.4.2",
     "newVersion": "4.4.3",
     "releaseDate": "2026-05-04",
-    "publishedAgo": "published 105 days ago",
+    "publishedAgo": "published 106 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3576,13 +3808,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch zod 4.4.3 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v4.4.3.",
+    "githubReleaseTitle": "v4.4.3",
+    "githubReleaseUrl": "https://github.com/colinhacks/zod/releases/tag/v4.4.3",
+    "githubReleaseTag": "v4.4.3",
+    "githubReleasePublishedAt": "2026-05-04T07:06:55Z",
+    "releaseNotesExcerpt": "Commits: 4c2fa95ce3f3390fbc522324e406b4e9e89b88f9 docs: use Zernio primary wordmark for gold sponsor logo 2aeec83eb135e3a83756e973ef44845fc5a455d2 docs: prune lapsed gold sponsors and rebalance logo sizing 7391be88ac1ee5cd02057f5ccc012a1f5df4efd0 docs: prune lapsed silver/bronze ",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/zod/4.4.3",
     "sourceLinks": [
       {
@@ -3592,6 +3824,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/colinhacks/zod"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/colinhacks/zod/releases/tag/v4.4.3"
       }
     ]
   },
@@ -3603,7 +3839,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.0.1",
     "newVersion": "2.0.2",
     "releaseDate": "2026-04-21",
-    "publishedAgo": "published 118 days ago",
+    "publishedAgo": "published 119 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3613,13 +3849,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch ky 2.0.2 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v2.0.2.",
+    "githubReleaseTitle": "v2.0.2",
+    "githubReleaseUrl": "https://github.com/sindresorhus/ky/releases/tag/v2.0.2",
+    "githubReleaseTag": "v2.0.2",
+    "githubReleasePublishedAt": "2026-04-21T08:58:55Z",
+    "releaseNotesExcerpt": "Fix init hook URLSearchParams deletions add0703 Fix tuple searchParams mutations leaking across init-hook requests (#861) 346f898 --- https://github.com/sindresorhus/ky/compare/v2.0.1...v2.0.2",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/ky/2.0.2",
     "sourceLinks": [
       {
@@ -3629,6 +3865,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/sindresorhus/ky"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/sindresorhus/ky/releases/tag/v2.0.2"
       }
     ]
   },
@@ -3640,7 +3880,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.18.0",
     "newVersion": "4.18.1",
     "releaseDate": "2026-04-01",
-    "publishedAgo": "published 137 days ago",
+    "publishedAgo": "published 138 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3650,13 +3890,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch lodash 4.18.1 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: 4.18.1.",
+    "githubReleaseTitle": "4.18.1",
+    "githubReleaseUrl": "https://github.com/lodash/lodash/releases/tag/4.18.1",
+    "githubReleaseTag": "4.18.1",
+    "githubReleasePublishedAt": "2026-04-01T21:01:28Z",
+    "releaseNotesExcerpt": "Bugs Fixes a ReferenceError issue in lodash lodash-es lodash-amd and lodash.template when using the template and fromPairs functions from the modular builds. See https://github.com/lodash/lodash/issues/6167#issuecomment-4165269769 These defects were related to how lodash distribu",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/lodash/4.18.1",
     "sourceLinks": [
       {
@@ -3666,6 +3906,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/lodash/lodash"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/lodash/lodash/releases/tag/4.18.1"
       }
     ]
   },
@@ -3677,7 +3921,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.16.0",
     "newVersion": "5.16.1",
     "releaseDate": "2026-02-10",
-    "publishedAgo": "published 187 days ago",
+    "publishedAgo": "published 188 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3687,13 +3931,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch gatsby 5.16.1 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: gatsby@5.16.1.",
+    "githubReleaseTitle": "gatsby@5.16.1",
+    "githubReleaseUrl": "https://github.com/gatsbyjs/gatsby/releases/tag/gatsby%405.16.1",
+    "githubReleaseTag": "gatsby@5.16.1",
+    "githubReleasePublishedAt": "2026-02-10T14:38:44Z",
+    "releaseNotesExcerpt": "What's Changed Fix various regressions with Gatsby Head API, such as <title> not updating document.title by @serhalp and @pieh in https://github.com/gatsbyjs/gatsby/pull/39382 **Full Changelog**: https://github.com/gatsbyjs/gatsby/compare/gatsby@5.16.0...gatsby@5.16.1",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/gatsby/5.16.1",
     "sourceLinks": [
       {
@@ -3703,6 +3947,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/gatsbyjs/gatsby"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/gatsbyjs/gatsby/releases/tag/gatsby%405.16.1"
       }
     ]
   },
@@ -3714,7 +3962,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.16.3",
     "newVersion": "2.16.4",
     "releaseDate": "2026-02-02",
-    "publishedAgo": "published 196 days ago",
+    "publishedAgo": "published 197 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3724,13 +3972,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch parcel 2.16.4 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v2.16.4.",
+    "githubReleaseTitle": "v2.16.4",
+    "githubReleaseUrl": "https://github.com/parcel-bundler/parcel/releases/tag/v2.16.4",
+    "githubReleaseTag": "v2.16.4",
+    "githubReleasePublishedAt": "2026-02-02T03:22:20Z",
+    "releaseNotesExcerpt": "Fixed Dev server - Add --no-cors option to disable CORS headers - Details",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/parcel/2.16.4",
     "sourceLinks": [
       {
@@ -3740,6 +3988,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/parcel-bundler/parcel"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/parcel-bundler/parcel/releases/tag/v2.16.4"
       }
     ]
   },
@@ -3751,7 +4003,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "16.3.1",
     "newVersion": "16.3.2",
     "releaseDate": "2026-01-19",
-    "publishedAgo": "published 210 days ago",
+    "publishedAgo": "published 211 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3761,13 +4013,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch @testing-library/react 16.3.2 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v16.3.2.",
+    "githubReleaseTitle": "v16.3.2",
+    "githubReleaseUrl": "https://github.com/testing-library/react-testing-library/releases/tag/v16.3.2",
+    "githubReleaseTag": "v16.3.2",
+    "githubReleasePublishedAt": "2026-01-19T10:59:09Z",
+    "releaseNotesExcerpt": "16.3.2 (2026-01-19) Bug Fixes Update 'onCaughtError' type inference in 'RenderOptions' to work with React v19 (#1438) (f32bd1b)",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/testing-library-react/16.3.2",
     "sourceLinks": [
       {
@@ -3777,6 +4029,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/testing-library/react-testing-library"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/testing-library/react-testing-library/releases/tag/v16.3.2"
       }
     ]
   },
@@ -3788,7 +4044,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.5.0",
     "newVersion": "8.5.1",
     "releaseDate": "2025-11-12",
-    "publishedAgo": "published 277 days ago",
+    "publishedAgo": "published 278 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3798,13 +4054,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch tsup 8.5.1 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v8.5.1.",
+    "githubReleaseTitle": "v8.5.1",
+    "githubReleaseUrl": "https://github.com/egoist/tsup/releases/tag/v8.5.1",
+    "githubReleaseTag": "v8.5.1",
+    "githubReleasePublishedAt": "2025-11-12T21:21:34Z",
+    "releaseNotesExcerpt": "&nbsp;&nbsp;&nbsp; Bug Fixes Add script tag validation &nbsp;-&nbsp; by @benhoad in https://github.com/egoist/tsup/issues/1314 <samp>(df736)</samp> Update esbuild to fix sourcemap source issue &nbsp;-&nbsp; by @ArcherGu and @sxzz in https://github.com/egoist/tsup/issues/1316 <sam",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/tsup/8.5.1",
     "sourceLinks": [
       {
@@ -3814,6 +4070,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/egoist/tsup"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/egoist/tsup/releases/tag/v8.5.1"
       }
     ]
   },
@@ -3825,7 +4085,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.4.8",
     "newVersion": "2.4.9",
     "releaseDate": "2025-11-10",
-    "publishedAgo": "published 279 days ago",
+    "publishedAgo": "published 280 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3835,13 +4095,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch formik 2.4.9 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: formik@2.4.9.",
+    "githubReleaseTitle": "formik@2.4.9",
+    "githubReleaseUrl": "https://github.com/jaredpalmer/formik/releases/tag/formik%402.4.9",
+    "githubReleaseTag": "formik@2.4.9",
+    "githubReleasePublishedAt": "2025-11-10T17:02:10Z",
+    "releaseNotesExcerpt": "Patch Changes #4051 8f9d04d Thanks @Moumouls! - fix: jsx ref for react 19",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/formik/2.4.9",
     "sourceLinks": [
       {
@@ -3851,6 +4111,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/jaredpalmer/formik"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/jaredpalmer/formik/releases/tag/formik%402.4.9"
       }
     ]
   },
@@ -3862,7 +4126,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.7.0",
     "newVersion": "1.7.1",
     "releaseDate": "2025-09-21",
-    "publishedAgo": "published 329 days ago",
+    "publishedAgo": "published 330 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3878,7 +4142,7 @@ export const releases: ReleaseItem[] = [
     "githubReleaseTag": "",
     "githubReleasePublishedAt": "",
     "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "releaseNotesStatus": "No GitHub release matched this exact npm version tag; release notes are not attributed to this version.",
     "route": "/package/yup/1.7.1",
     "sourceLinks": [
       {
@@ -3909,13 +4173,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch class-variance-authority 0.7.1 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v0.7.1.",
+    "githubReleaseTitle": "v0.7.1",
+    "githubReleaseUrl": "https://github.com/joe-bell/cva/releases/tag/v0.7.1",
+    "githubReleaseTag": "v0.7.1",
+    "githubReleasePublishedAt": "2024-11-26T08:20:39Z",
+    "releaseNotesExcerpt": "What's Changed Add LICENSE Comments by @joe-bell in https://github.com/joe-bell/cva/pull/283 chore: move clsx dependency to caret/semver range by @philwolstenholme in https://github.com/joe-bell/cva/pull/316 New Contributors @philwolstenholme made their first contribution in http",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/class-variance-authority/0.7.1",
     "sourceLinks": [
       {
@@ -3925,6 +4189,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/joe-bell/cva"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/joe-bell/cva/releases/tag/v0.7.1"
       }
     ]
   },
@@ -3946,13 +4214,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch clsx 2.1.1 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v2.1.1.",
+    "githubReleaseTitle": "v2.1.1",
+    "githubReleaseUrl": "https://github.com/lukeed/clsx/releases/tag/v2.1.1",
+    "githubReleaseTag": "v2.1.1",
+    "githubReleasePublishedAt": "2024-04-23T05:29:52Z",
+    "releaseNotesExcerpt": "Patches (types) Include bigint in ClassValue type: (#96): 3d960ab _Accommodates recent @types/react changes to ReactNode._ _Thank you @ViliamKopecky~!_ Chores Add licenses.dev badge: 684509c _This service recursively analyzes entire dependency graphs to ensure that a package (or ",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/clsx/2.1.1",
     "sourceLinks": [
       {
@@ -3962,6 +4230,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/lukeed/clsx"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/lukeed/clsx/releases/tag/v2.1.1"
       }
     ]
   },
@@ -4020,13 +4292,13 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
     "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
     "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "Patch redux 5.0.1 release detected with no OSV match.",
-    "githubReleaseTitle": "",
-    "githubReleaseUrl": "",
-    "githubReleaseTag": "",
-    "githubReleasePublishedAt": "",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "No GitHub releases found for this repository.",
+    "whatChanged": "GitHub release note found: v5.0.1.",
+    "githubReleaseTitle": "v5.0.1",
+    "githubReleaseUrl": "https://github.com/reduxjs/redux/releases/tag/v5.0.1",
+    "githubReleaseTag": "v5.0.1",
+    "githubReleasePublishedAt": "2023-12-23T16:54:41Z",
+    "releaseNotesExcerpt": "This **patch release** adjusts the isPlainObject util to allow objects created via Object.create(null), and fixes a type issue which accidentally made the store state type non-nullable. What's Changed fix(isPlainObject): support check Object.create(null) by @zhe-he in https://git",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
     "route": "/package/redux/5.0.1",
     "sourceLinks": [
       {
@@ -4036,6 +4308,10 @@ export const releases: ReleaseItem[] = [
       {
         "label": "Repository",
         "href": "https://github.com/reduxjs/redux"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/reduxjs/redux/releases/tag/v5.0.1"
       }
     ]
   },
@@ -4130,7 +4406,7 @@ export const packageRoutes = {
     "packageName": "solid-js",
     "description": "Reactive UI library",
     "route": "/package/solid-js",
-    "latestReleaseRoute": "/package/solid-js/1.9.14",
+    "latestReleaseRoute": "/package/solid-js/1.9.15",
     "areaSlug": "core-frameworks",
     "areaLabel": "Frameworks and Core UI"
   },
@@ -4138,7 +4414,7 @@ export const packageRoutes = {
     "packageName": "astro",
     "description": "Content-focused web framework",
     "route": "/package/astro",
-    "latestReleaseRoute": "/package/astro/7.2.2",
+    "latestReleaseRoute": "/package/astro/7.2.3",
     "areaSlug": "core-frameworks",
     "areaLabel": "Frameworks and Core UI"
   },
@@ -4474,7 +4750,7 @@ export const packageRoutes = {
     "packageName": "@storybook/react",
     "description": "React component workshop",
     "route": "/package/storybook-react",
-    "latestReleaseRoute": "/package/storybook-react/10.5.8",
+    "latestReleaseRoute": "/package/storybook-react/10.5.9",
     "areaSlug": "testing-storybook",
     "areaLabel": "Testing and Storybook"
   },
@@ -4482,7 +4758,7 @@ export const packageRoutes = {
     "packageName": "storybook",
     "description": "Component documentation",
     "route": "/package/storybook",
-    "latestReleaseRoute": "/package/storybook/10.5.8",
+    "latestReleaseRoute": "/package/storybook/10.5.9",
     "areaSlug": "testing-storybook",
     "areaLabel": "Testing and Storybook"
   },
@@ -4634,7 +4910,7 @@ export const packageRoutes = {
     "packageName": "lucide-react",
     "description": "React icon library",
     "route": "/package/lucide-react",
-    "latestReleaseRoute": "/package/lucide-react/1.31.0",
+    "latestReleaseRoute": "/package/lucide-react/1.32.0",
     "areaSlug": "css-ui",
     "areaLabel": "CSS and UI Libraries"
   },
@@ -4763,7 +5039,7 @@ export const categoryRoutes = {
         "packageName": "astro",
         "description": "Content-focused web framework",
         "route": "/package/astro",
-        "latestReleaseRoute": "/package/astro/7.2.2",
+        "latestReleaseRoute": "/package/astro/7.2.3",
         "areaSlug": "core-frameworks",
         "areaLabel": "Frameworks and Core UI"
       },
@@ -4811,7 +5087,7 @@ export const categoryRoutes = {
         "packageName": "solid-js",
         "description": "Reactive UI library",
         "route": "/package/solid-js",
-        "latestReleaseRoute": "/package/solid-js/1.9.14",
+        "latestReleaseRoute": "/package/solid-js/1.9.15",
         "areaSlug": "core-frameworks",
         "areaLabel": "Frameworks and Core UI"
       },
@@ -5152,7 +5428,7 @@ export const categoryRoutes = {
         "packageName": "@storybook/react",
         "description": "React component workshop",
         "route": "/package/storybook-react",
-        "latestReleaseRoute": "/package/storybook-react/10.5.8",
+        "latestReleaseRoute": "/package/storybook-react/10.5.9",
         "areaSlug": "testing-storybook",
         "areaLabel": "Testing and Storybook"
       },
@@ -5216,7 +5492,7 @@ export const categoryRoutes = {
         "packageName": "storybook",
         "description": "Component documentation",
         "route": "/package/storybook",
-        "latestReleaseRoute": "/package/storybook/10.5.8",
+        "latestReleaseRoute": "/package/storybook/10.5.9",
         "areaSlug": "testing-storybook",
         "areaLabel": "Testing and Storybook"
       },
@@ -5329,7 +5605,7 @@ export const categoryRoutes = {
         "packageName": "lucide-react",
         "description": "React icon library",
         "route": "/package/lucide-react",
-        "latestReleaseRoute": "/package/lucide-react/1.31.0",
+        "latestReleaseRoute": "/package/lucide-react/1.32.0",
         "areaSlug": "css-ui",
         "areaLabel": "CSS and UI Libraries"
       },
@@ -6011,10 +6287,15 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "title": "typescript 7.0.2 npm major version update",
     "description": "typescript 7.0.2 frontend npm update risk: Major version release detected. OSV: No OSV match. CVE: No CVE match. Recommended action: Review changes before updating. Test in staging before merging."
   },
+  "/package/lucide-react/1.32.0": {
+    "path": "/package/lucide-react/1.32.0",
+    "title": "lucide-react 1.32.0 npm minor version update",
+    "description": "lucide-react 1.32.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release..."
+  },
   "/package/pnpm/11.22.0": {
     "path": "/package/pnpm/11.22.0",
     "title": "pnpm 11.22.0 npm minor version update",
-    "description": "pnpm 11.22.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance."
+    "description": "pnpm 11.22.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes..."
   },
   "/package/swc-core/1.16.0": {
     "path": "/package/swc-core/1.16.0",
@@ -6024,12 +6305,12 @@ export const seoRoutes: Record<string, SeoRoute> = {
   "/package/less/4.9.0": {
     "path": "/package/less/4.9.0",
     "title": "less 4.9.0 npm minor version update",
-    "description": "less 4.9.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance."
+    "description": "less 4.9.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes..."
   },
   "/package/typescript-eslint-parser/8.67.0": {
     "path": "/package/typescript-eslint-parser/8.67.0",
     "title": "@typescript-eslint/parser 8.67.0 npm minor version update",
-    "description": "@typescript-eslint/parser 8.67.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance."
+    "description": "@typescript-eslint/parser 8.67.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance..."
   },
   "/package/typescript-eslint-eslint-plugin/8.67.0": {
     "path": "/package/typescript-eslint-eslint-plugin/8.67.0",
@@ -6041,55 +6322,70 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "title": "framer-motion 13.1.0 npm minor version update",
     "description": "framer-motion 13.1.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance."
   },
-  "/package/lucide-react/1.31.0": {
-    "path": "/package/lucide-react/1.31.0",
-    "title": "lucide-react 1.31.0 npm minor version update",
-    "description": "lucide-react 1.31.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance."
-  },
   "/package/react-hook-form/7.85.0": {
     "path": "/package/react-hook-form/7.85.0",
     "title": "react-hook-form 7.85.0 npm minor version update",
-    "description": "react-hook-form 7.85.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance."
+    "description": "react-hook-form 7.85.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub..."
   },
   "/package/axios/1.19.0": {
     "path": "/package/axios/1.19.0",
-    "title": "axios 1.19.0 npm minor version update",
-    "description": "axios 1.19.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance."
+    "title": "axios 1.19.0 npm release-note review update",
+    "description": "axios 1.19.0 frontend npm update risk: Release notes mention security language, but no OSV or CVE match was found. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Confirm against OSV and CVE before..."
   },
   "/package/sass/1.102.0": {
     "path": "/package/sass/1.102.0",
     "title": "sass 1.102.0 npm minor version update",
-    "description": "sass 1.102.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance."
+    "description": "sass 1.102.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes..."
   },
   "/package/msw/2.15.0": {
     "path": "/package/msw/2.15.0",
     "title": "msw 2.15.0 npm minor version update",
-    "description": "msw 2.15.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance."
+    "description": "msw 2.15.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes..."
   },
   "/package/date-fns/4.4.0": {
     "path": "/package/date-fns/4.4.0",
     "title": "date-fns 4.4.0 npm minor version update",
-    "description": "date-fns 4.4.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance."
+    "description": "date-fns 4.4.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release..."
   },
   "/package/reduxjs-toolkit/2.12.0": {
     "path": "/package/reduxjs-toolkit/2.12.0",
     "title": "@reduxjs/toolkit 2.12.0 npm minor version update",
-    "description": "@reduxjs/toolkit 2.12.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance."
+    "description": "@reduxjs/toolkit 2.12.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub..."
   },
   "/package/tailwind-merge/3.6.0": {
     "path": "/package/tailwind-merge/3.6.0",
     "title": "tailwind-merge 3.6.0 npm minor version update",
-    "description": "tailwind-merge 3.6.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance."
+    "description": "tailwind-merge 3.6.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub..."
   },
   "/package/emotion-react/11.14.0": {
     "path": "/package/emotion-react/11.14.0",
     "title": "@emotion/react 11.14.0 npm minor version update",
-    "description": "@emotion/react 11.14.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance."
+    "description": "@emotion/react 11.14.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub..."
   },
   "/package/npm-run-all/4.1.5": {
     "path": "/package/npm-run-all/4.1.5",
     "title": "npm-run-all 4.1.5 npm release-note review update",
     "description": "npm-run-all 4.1.5 frontend npm update risk: Release notes mention security language, but no OSV or CVE match was found. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Confirm against OSV and CVE..."
+  },
+  "/package/astro/7.2.3": {
+    "path": "/package/astro/7.2.3",
+    "title": "astro 7.2.3 npm patch version update",
+    "description": "astro 7.2.3 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/storybook-react/10.5.9": {
+    "path": "/package/storybook-react/10.5.9",
+    "title": "@storybook/react 10.5.9 npm patch version update",
+    "description": "@storybook/react 10.5.9 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/storybook/10.5.9": {
+    "path": "/package/storybook/10.5.9",
+    "title": "storybook 10.5.9 npm patch version update",
+    "description": "storybook 10.5.9 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/solid-js/1.9.15": {
+    "path": "/package/solid-js/1.9.15",
+    "title": "solid-js 1.9.15 npm patch version update",
+    "description": "solid-js 1.9.15 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
   },
   "/package/dayjs/1.11.23": {
     "path": "/package/dayjs/1.11.23",
@@ -6126,25 +6422,10 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "title": "@angular/core 22.1.2 npm patch version update",
     "description": "@angular/core 22.1.2 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
   },
-  "/package/astro/7.2.2": {
-    "path": "/package/astro/7.2.2",
-    "title": "astro 7.2.2 npm patch version update",
-    "description": "astro 7.2.2 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-  },
   "/package/zustand/5.0.15": {
     "path": "/package/zustand/5.0.15",
     "title": "zustand 5.0.15 npm patch version update",
     "description": "zustand 5.0.15 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-  },
-  "/package/storybook-react/10.5.8": {
-    "path": "/package/storybook-react/10.5.8",
-    "title": "@storybook/react 10.5.8 npm patch version update",
-    "description": "@storybook/react 10.5.8 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-  },
-  "/package/storybook/10.5.8": {
-    "path": "/package/storybook/10.5.8",
-    "title": "storybook 10.5.8 npm patch version update",
-    "description": "storybook 10.5.8 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
   },
   "/package/svelte/5.56.9": {
     "path": "/package/svelte/5.56.9",
@@ -6305,11 +6586,6 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "path": "/package/graphql/17.0.2",
     "title": "graphql 17.0.2 npm patch version update",
     "description": "graphql 17.0.2 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-  },
-  "/package/solid-js/1.9.14": {
-    "path": "/package/solid-js/1.9.14",
-    "title": "solid-js 1.9.14 npm patch version update",
-    "description": "solid-js 1.9.14 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
   },
   "/package/uuid/14.0.1": {
     "path": "/package/uuid/14.0.1",
