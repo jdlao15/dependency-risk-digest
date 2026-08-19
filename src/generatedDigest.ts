@@ -1,6 +1,6 @@
 import type { ReleaseItem, SeoRoute, WeeklyDigest } from "./types";
 
-export const generatedAt = "2026-08-18T13:58:53.208Z";
+export const generatedAt = "2026-08-19T13:59:44.383Z";
 export const generationFailures = [];
 export const weeklyDigest: WeeklyDigest = {
   "week": "Week 34, 2026",
@@ -32,9 +32,18 @@ export const digestArchive: WeeklyDigest[] = [
       },
       {
         "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.32.0",
+        "route": "/package/lucide-react/1.33.0",
         "risk": "review",
-        "newVersion": "1.32.0",
+        "newVersion": "1.33.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "cypress",
+        "route": "/package/cypress/15.21.0",
+        "risk": "review",
+        "newVersion": "15.21.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
@@ -46,15 +55,6 @@ export const digestArchive: WeeklyDigest[] = [
         "newVersion": "11.22.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "@swc/core",
-        "route": "/package/swc-core/1.16.0",
-        "risk": "review",
-        "newVersion": "1.16.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
@@ -95,7 +95,7 @@ export const digestArchive: WeeklyDigest[] = [
       }
     ],
     "route": "/weekly/2026-w34",
-    "generatedAt": "2026-08-18T13:58:53.208Z"
+    "generatedAt": "2026-08-19T13:59:44.383Z"
   },
   {
     "week": "Week 33, 2026",
@@ -1042,7 +1042,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "6.0.3",
     "newVersion": "7.0.2",
     "releaseDate": "2026-07-08",
-    "publishedAgo": "published 40 days ago",
+    "publishedAgo": "published 41 days ago",
     "isRecent": false,
     "risk": "breaking",
     "category": "Major version",
@@ -1072,13 +1072,13 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
-    "id": "lucide-react-1-32-0",
+    "id": "lucide-react-1-33-0",
     "packageName": "lucide-react",
     "packageSlug": "lucide-react",
     "description": "React icon library",
-    "oldVersion": "1.31.0",
-    "newVersion": "1.32.0",
-    "releaseDate": "2026-08-18",
+    "oldVersion": "1.32.0",
+    "newVersion": "1.33.0",
+    "releaseDate": "2026-08-19",
     "publishedAgo": "published today",
     "isRecent": true,
     "risk": "review",
@@ -1089,14 +1089,14 @@ export const releases: ReleaseItem[] = [
     "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
     "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
     "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-    "whatChanged": "GitHub release note found: Version 1.32.0.",
-    "githubReleaseTitle": "Version 1.32.0",
-    "githubReleaseUrl": "https://github.com/lucide-icons/lucide/releases/tag/1.32.0",
-    "githubReleaseTag": "1.32.0",
-    "githubReleasePublishedAt": "2026-08-18T11:11:29Z",
-    "releaseNotesExcerpt": "What's Changed feat(icons): added car-battery icon by @andreynaz4renko in https://github.com/lucide-icons/lucide/pull/4088 fix(categories): fixes emoji.json by @karsa-mistmere in https://github.com/lucide-icons/lucide/pull/4697 chore(deps): bump vue from 3.5.40 to 3.5.41 in the v",
+    "whatChanged": "GitHub release note found: Version 1.33.0.",
+    "githubReleaseTitle": "Version 1.33.0",
+    "githubReleaseUrl": "https://github.com/lucide-icons/lucide/releases/tag/1.33.0",
+    "githubReleaseTag": "1.33.0",
+    "githubReleasePublishedAt": "2026-08-19T11:38:09Z",
+    "releaseNotesExcerpt": "What's Changed feat(icons): add list-clock icon by @lazerg in https://github.com/lucide-icons/lucide/pull/4636 feat(icons): add square-dimensions by @samuelalake in https://github.com/lucide-icons/lucide/pull/4547 feat(icons): added usb-c-port icon by @karsa-mistmere in https://g",
     "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-    "route": "/package/lucide-react/1.32.0",
+    "route": "/package/lucide-react/1.33.0",
     "sourceLinks": [
       {
         "label": "npm",
@@ -1108,7 +1108,48 @@ export const releases: ReleaseItem[] = [
       },
       {
         "label": "GitHub release",
-        "href": "https://github.com/lucide-icons/lucide/releases/tag/1.32.0"
+        "href": "https://github.com/lucide-icons/lucide/releases/tag/1.33.0"
+      }
+    ]
+  },
+  {
+    "id": "cypress-15-21-0",
+    "packageName": "cypress",
+    "packageSlug": "cypress",
+    "description": "Browser testing",
+    "oldVersion": "15.20.1",
+    "newVersion": "15.21.0",
+    "releaseDate": "2026-08-18",
+    "publishedAgo": "published today",
+    "isRecent": true,
+    "risk": "review",
+    "category": "Minor version",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "Minor version release detected with no OSV match.",
+    "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
+    "affectedAudience": "Test suites, browser automation, and release validation workflows.",
+    "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+    "whatChanged": "GitHub release note found: v15.21.0.",
+    "githubReleaseTitle": "v15.21.0",
+    "githubReleaseUrl": "https://github.com/cypress-io/cypress/releases/tag/v15.21.0",
+    "githubReleaseTag": "v15.21.0",
+    "githubReleasePublishedAt": "2026-08-18T19:47:37Z",
+    "releaseNotesExcerpt": "Changelog: https://docs.cypress.io/app/references/changelog#15-21-0",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+    "route": "/package/cypress/15.21.0",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/cypress"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/cypress-io/cypress"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/cypress-io/cypress/releases/tag/v15.21.0"
       }
     ]
   },
@@ -1120,7 +1161,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "11.21.0",
     "newVersion": "11.22.0",
     "releaseDate": "2026-08-15",
-    "publishedAgo": "published 2 days ago",
+    "publishedAgo": "published 3 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -1154,47 +1195,6 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
-    "id": "swc-core-1-16-0",
-    "packageName": "@swc/core",
-    "packageSlug": "swc-core",
-    "description": "JavaScript and TypeScript compiler",
-    "oldVersion": "1.15.47",
-    "newVersion": "1.16.0",
-    "releaseDate": "2026-08-14",
-    "publishedAgo": "published 3 days ago",
-    "isRecent": true,
-    "risk": "review",
-    "category": "Minor version",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Minor version release detected with no OSV match.",
-    "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
-    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-    "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-    "whatChanged": "GitHub release note found: v1.16.0.",
-    "githubReleaseTitle": "v1.16.0",
-    "githubReleaseUrl": "https://github.com/swc-project/swc/releases/tag/v1.16.0",
-    "githubReleaseTag": "v1.16.0",
-    "githubReleasePublishedAt": "2026-08-14T16:52:09Z",
-    "releaseNotesExcerpt": "",
-    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-    "route": "/package/swc-core/1.16.0",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/@swc/core"
-      },
-      {
-        "label": "Repository",
-        "href": "https://github.com/swc-project/swc"
-      },
-      {
-        "label": "GitHub release",
-        "href": "https://github.com/swc-project/swc/releases/tag/v1.16.0"
-      }
-    ]
-  },
-  {
     "id": "less-4-9-0",
     "packageName": "less",
     "packageSlug": "less",
@@ -1202,7 +1202,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.8.1",
     "newVersion": "4.9.0",
     "releaseDate": "2026-08-13",
-    "publishedAgo": "published 4 days ago",
+    "publishedAgo": "published 5 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -1243,7 +1243,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.66.0",
     "newVersion": "8.67.0",
     "releaseDate": "2026-08-10",
-    "publishedAgo": "published 7 days ago",
+    "publishedAgo": "published 8 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -1284,7 +1284,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.66.0",
     "newVersion": "8.67.0",
     "releaseDate": "2026-08-10",
-    "publishedAgo": "published 7 days ago",
+    "publishedAgo": "published 8 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -1325,7 +1325,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "13.0.0",
     "newVersion": "13.1.0",
     "releaseDate": "2026-08-10",
-    "publishedAgo": "published 8 days ago",
+    "publishedAgo": "published 9 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -1362,7 +1362,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.84.0",
     "newVersion": "7.85.0",
     "releaseDate": "2026-08-08",
-    "publishedAgo": "published 10 days ago",
+    "publishedAgo": "published 11 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -1403,7 +1403,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.18.1",
     "newVersion": "1.19.0",
     "releaseDate": "2026-07-29",
-    "publishedAgo": "published 19 days ago",
+    "publishedAgo": "published 20 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Release-note review",
@@ -1444,7 +1444,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.101.7",
     "newVersion": "1.102.0",
     "releaseDate": "2026-07-25",
-    "publishedAgo": "published 24 days ago",
+    "publishedAgo": "published 25 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -1485,7 +1485,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.14.7",
     "newVersion": "2.15.0",
     "releaseDate": "2026-07-08",
-    "publishedAgo": "published 41 days ago",
+    "publishedAgo": "published 42 days ago",
     "isRecent": false,
     "risk": "review",
     "category": "Minor version",
@@ -1526,7 +1526,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.3.0",
     "newVersion": "4.4.0",
     "releaseDate": "2026-05-29",
-    "publishedAgo": "published 80 days ago",
+    "publishedAgo": "published 81 days ago",
     "isRecent": false,
     "risk": "review",
     "category": "Minor version",
@@ -1567,7 +1567,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.11.2",
     "newVersion": "2.12.0",
     "releaseDate": "2026-05-15",
-    "publishedAgo": "published 94 days ago",
+    "publishedAgo": "published 95 days ago",
     "isRecent": false,
     "risk": "review",
     "category": "Minor version",
@@ -1608,7 +1608,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "3.5.0",
     "newVersion": "3.6.0",
     "releaseDate": "2026-05-10",
-    "publishedAgo": "published 100 days ago",
+    "publishedAgo": "published 101 days ago",
     "isRecent": false,
     "risk": "review",
     "category": "Minor version",
@@ -1724,6 +1724,88 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
+    "id": "swc-core-1-16-1",
+    "packageName": "@swc/core",
+    "packageSlug": "swc-core",
+    "description": "JavaScript and TypeScript compiler",
+    "oldVersion": "1.16.0",
+    "newVersion": "1.16.1",
+    "releaseDate": "2026-08-19",
+    "publishedAgo": "published today",
+    "isRecent": true,
+    "risk": "low",
+    "category": "Patch version",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "Patch release with no OSV match.",
+    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+    "whatChanged": "GitHub release note found: v1.16.1.",
+    "githubReleaseTitle": "v1.16.1",
+    "githubReleaseUrl": "https://github.com/swc-project/swc/releases/tag/v1.16.1",
+    "githubReleaseTag": "v1.16.1",
+    "githubReleasePublishedAt": "2026-08-19T05:36:58Z",
+    "releaseNotesExcerpt": "",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+    "route": "/package/swc-core/1.16.1",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/@swc/core"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/swc-project/swc"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/swc-project/swc/releases/tag/v1.16.1"
+      }
+    ]
+  },
+  {
+    "id": "immer-11-1-18",
+    "packageName": "immer",
+    "packageSlug": "immer",
+    "description": "Immutable state updates",
+    "oldVersion": "11.1.17",
+    "newVersion": "11.1.18",
+    "releaseDate": "2026-08-19",
+    "publishedAgo": "published today",
+    "isRecent": true,
+    "risk": "low",
+    "category": "Patch version",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "Patch release with no OSV match.",
+    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+    "whatChanged": "GitHub release note found: v11.1.18.",
+    "githubReleaseTitle": "v11.1.18",
+    "githubReleaseUrl": "https://github.com/immerjs/immer/releases/tag/v11.1.18",
+    "githubReleaseTag": "v11.1.18",
+    "githubReleasePublishedAt": "2026-08-19T07:24:18Z",
+    "releaseNotesExcerpt": "11.1.18 (2026-08-19) Bug Fixes remove global var Iterator declaration conflicting with ESNext lib (#1290) (b00474e), closes #1273",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+    "route": "/package/immer/11.1.18",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/immer"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/immerjs/immer"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/immerjs/immer/releases/tag/v11.1.18"
+      }
+    ]
+  },
+  {
     "id": "astro-7-2-3",
     "packageName": "astro",
     "packageSlug": "astro",
@@ -1731,7 +1813,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.2.2",
     "newVersion": "7.2.3",
     "releaseDate": "2026-08-18",
-    "publishedAgo": "published today",
+    "publishedAgo": "published 1 day ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -1765,6 +1847,88 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
+    "id": "turbo-2-10-11",
+    "packageName": "turbo",
+    "packageSlug": "turbo",
+    "description": "Monorepo build system",
+    "oldVersion": "2.10.10",
+    "newVersion": "2.10.11",
+    "releaseDate": "2026-08-18",
+    "publishedAgo": "published today",
+    "isRecent": true,
+    "risk": "low",
+    "category": "Patch version",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "Patch release with no OSV match.",
+    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+    "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
+    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+    "whatChanged": "GitHub release note found: Turborepo v2.10.11.",
+    "githubReleaseTitle": "Turborepo v2.10.11",
+    "githubReleaseUrl": "https://github.com/vercel/turborepo/releases/tag/v2.10.11",
+    "githubReleaseTag": "v2.10.11",
+    "githubReleasePublishedAt": "2026-08-18T15:15:26Z",
+    "releaseNotesExcerpt": "<!-- Release notes generated using configuration in .github/release.yml at v2.10.11 --> What's Changed Changelog chore: Release Turborepo 2.10.10 by @github-actions[bot] in https://github.com/vercel/turborepo/pull/13741 fix: Automatically approve release workflows by @anthonyshew",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+    "route": "/package/turbo/2.10.11",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/turbo"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/vercel/turborepo"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/vercel/turborepo/releases/tag/v2.10.11"
+      }
+    ]
+  },
+  {
+    "id": "vitest-4-1-11",
+    "packageName": "vitest",
+    "packageSlug": "vitest",
+    "description": "Vite-native testing",
+    "oldVersion": "4.1.10",
+    "newVersion": "4.1.11",
+    "releaseDate": "2026-08-18",
+    "publishedAgo": "published today",
+    "isRecent": true,
+    "risk": "low",
+    "category": "Patch version",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "Patch release with no OSV match.",
+    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+    "affectedAudience": "Test suites, browser automation, and release validation workflows.",
+    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+    "whatChanged": "GitHub release note found: v4.1.11.",
+    "githubReleaseTitle": "v4.1.11",
+    "githubReleaseUrl": "https://github.com/vitest-dev/vitest/releases/tag/v4.1.11",
+    "githubReleaseTag": "v4.1.11",
+    "githubReleasePublishedAt": "2026-08-18T14:21:05Z",
+    "releaseNotesExcerpt": "&nbsp;&nbsp;&nbsp; Bug Fixes Revive global concurrency limit for test lifecycle [backport to v4] &nbsp;-&nbsp; by @sheremet-va and @hi-ogawa in https://github.com/vitest-dev/vitest/issues/10992 <samp>(5146d)</samp> **browser**: - Encode iframeId in tester iframe URL [backport to ",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+    "route": "/package/vitest/4.1.11",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/vitest"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/vitest-dev/vitest"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/vitest-dev/vitest/releases/tag/v4.1.11"
+      }
+    ]
+  },
+  {
     "id": "storybook-react-10-5-9",
     "packageName": "@storybook/react",
     "packageSlug": "storybook-react",
@@ -1772,7 +1936,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "10.5.8",
     "newVersion": "10.5.9",
     "releaseDate": "2026-08-18",
-    "publishedAgo": "published today",
+    "publishedAgo": "published 1 day ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -1813,7 +1977,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "10.5.8",
     "newVersion": "10.5.9",
     "releaseDate": "2026-08-18",
-    "publishedAgo": "published today",
+    "publishedAgo": "published 1 day ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -1847,6 +2011,47 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
+    "id": "uuid-14-0-2",
+    "packageName": "uuid",
+    "packageSlug": "uuid",
+    "description": "UUID generator",
+    "oldVersion": "14.0.1",
+    "newVersion": "14.0.2",
+    "releaseDate": "2026-08-18",
+    "publishedAgo": "published today",
+    "isRecent": true,
+    "risk": "low",
+    "category": "Patch version",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "Patch release with no OSV match.",
+    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+    "whatChanged": "GitHub release note found: v14.0.2.",
+    "githubReleaseTitle": "v14.0.2",
+    "githubReleaseUrl": "https://github.com/uuidjs/uuid/releases/tag/v14.0.2",
+    "githubReleaseTag": "v14.0.2",
+    "githubReleasePublishedAt": "2026-08-18T18:19:21Z",
+    "releaseNotesExcerpt": "14.0.2 (2026-08-18) Bug Fixes **v1:** carry nsecs overflow into the timestamp's high bits (#972) (6adcc1d) **v1:** set the multicast bit on v1Bytes's own randomly-generated node (#973) (b1da338) **v7:** align default seq formula in v7Bytes with updateV7State (#965) (a67db57)",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+    "route": "/package/uuid/14.0.2",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/uuid"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/uuidjs/uuid"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/uuidjs/uuid/releases/tag/v14.0.2"
+      }
+    ]
+  },
+  {
     "id": "solid-js-1-9-15",
     "packageName": "solid-js",
     "packageSlug": "solid-js",
@@ -1854,7 +2059,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.9.14",
     "newVersion": "1.9.15",
     "releaseDate": "2026-08-17",
-    "publishedAgo": "published today",
+    "publishedAgo": "published 1 day ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -1891,7 +2096,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.11.22",
     "newVersion": "1.11.23",
     "releaseDate": "2026-08-17",
-    "publishedAgo": "published 1 day ago",
+    "publishedAgo": "published 2 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -1925,47 +2130,6 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
-    "id": "immer-11-1-17",
-    "packageName": "immer",
-    "packageSlug": "immer",
-    "description": "Immutable state updates",
-    "oldVersion": "11.1.16",
-    "newVersion": "11.1.17",
-    "releaseDate": "2026-08-16",
-    "publishedAgo": "published 2 days ago",
-    "isRecent": true,
-    "risk": "low",
-    "category": "Patch version",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Patch release with no OSV match.",
-    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "GitHub release note found: v11.1.17.",
-    "githubReleaseTitle": "v11.1.17",
-    "githubReleaseUrl": "https://github.com/immerjs/immer/releases/tag/v11.1.17",
-    "githubReleaseTag": "v11.1.17",
-    "githubReleasePublishedAt": "2026-08-16T03:10:43Z",
-    "releaseNotesExcerpt": "11.1.17 (2026-08-16) Bug Fixes preserve structural sharing for no-op array-methods calls (0c3efdd)",
-    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-    "route": "/package/immer/11.1.17",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/immer"
-      },
-      {
-        "label": "Repository",
-        "href": "https://github.com/immerjs/immer"
-      },
-      {
-        "label": "GitHub release",
-        "href": "https://github.com/immerjs/immer/releases/tag/v11.1.17"
-      }
-    ]
-  },
-  {
     "id": "styled-components-6-5-3",
     "packageName": "styled-components",
     "packageSlug": "styled-components",
@@ -1973,7 +2137,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "6.5.2",
     "newVersion": "6.5.3",
     "releaseDate": "2026-08-15",
-    "publishedAgo": "published 2 days ago",
+    "publishedAgo": "published 3 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2007,47 +2171,6 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
-    "id": "turbo-2-10-10",
-    "packageName": "turbo",
-    "packageSlug": "turbo",
-    "description": "Monorepo build system",
-    "oldVersion": "2.10.9",
-    "newVersion": "2.10.10",
-    "releaseDate": "2026-08-14",
-    "publishedAgo": "published 4 days ago",
-    "isRecent": true,
-    "risk": "low",
-    "category": "Patch version",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Patch release with no OSV match.",
-    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-    "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
-    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "GitHub release note found: Turborepo v2.10.10.",
-    "githubReleaseTitle": "Turborepo v2.10.10",
-    "githubReleaseUrl": "https://github.com/vercel/turborepo/releases/tag/v2.10.10",
-    "githubReleaseTag": "v2.10.10",
-    "githubReleasePublishedAt": "2026-08-14T13:32:58Z",
-    "releaseNotesExcerpt": "<!-- Release notes generated using configuration in .github/release.yml at v2.10.10 --> What's Changed Changelog chore: Release Turborepo 2.10.9 by @github-actions[bot] in https://github.com/vercel/turborepo/pull/13696 docs: Update Geistdocs to 1.19.6 by @molebox in https://githu",
-    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-    "route": "/package/turbo/2.10.10",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/turbo"
-      },
-      {
-        "label": "Repository",
-        "href": "https://github.com/vercel/turborepo"
-      },
-      {
-        "label": "GitHub release",
-        "href": "https://github.com/vercel/turborepo/releases/tag/v2.10.10"
-      }
-    ]
-  },
-  {
     "id": "apollo-client-4-2-12",
     "packageName": "@apollo/client",
     "packageSlug": "apollo-client",
@@ -2055,7 +2178,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.2.11",
     "newVersion": "4.2.12",
     "releaseDate": "2026-08-14",
-    "publishedAgo": "published 4 days ago",
+    "publishedAgo": "published 5 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2096,7 +2219,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "16.3.0",
     "newVersion": "16.3.1",
     "releaseDate": "2026-08-13",
-    "publishedAgo": "published 4 days ago",
+    "publishedAgo": "published 5 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2137,7 +2260,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "22.1.1",
     "newVersion": "22.1.2",
     "releaseDate": "2026-08-13",
-    "publishedAgo": "published 4 days ago",
+    "publishedAgo": "published 5 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2178,7 +2301,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.0.14",
     "newVersion": "5.0.15",
     "releaseDate": "2026-08-13",
-    "publishedAgo": "published 5 days ago",
+    "publishedAgo": "published 6 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2219,7 +2342,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.56.8",
     "newVersion": "5.56.9",
     "releaseDate": "2026-08-12",
-    "publishedAgo": "published 5 days ago",
+    "publishedAgo": "published 6 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2260,7 +2383,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.5.0",
     "newVersion": "2.5.1",
     "releaseDate": "2026-08-12",
-    "publishedAgo": "published 6 days ago",
+    "publishedAgo": "published 7 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2294,47 +2417,6 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
-    "id": "cypress-15-20-1",
-    "packageName": "cypress",
-    "packageSlug": "cypress",
-    "description": "Browser testing",
-    "oldVersion": "15.20.0",
-    "newVersion": "15.20.1",
-    "releaseDate": "2026-08-10",
-    "publishedAgo": "published 7 days ago",
-    "isRecent": true,
-    "risk": "low",
-    "category": "Patch version",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Patch release with no OSV match.",
-    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-    "affectedAudience": "Test suites, browser automation, and release validation workflows.",
-    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "GitHub release note found: v15.20.1.",
-    "githubReleaseTitle": "v15.20.1",
-    "githubReleaseUrl": "https://github.com/cypress-io/cypress/releases/tag/v15.20.1",
-    "githubReleaseTag": "v15.20.1",
-    "githubReleasePublishedAt": "2026-08-10T17:56:37Z",
-    "releaseNotesExcerpt": "Changelog: https://docs.cypress.io/app/references/changelog#15-20-1",
-    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-    "route": "/package/cypress/15.20.1",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/cypress"
-      },
-      {
-        "label": "Repository",
-        "href": "https://github.com/cypress-io/cypress"
-      },
-      {
-        "label": "GitHub release",
-        "href": "https://github.com/cypress-io/cypress/releases/tag/v15.20.1"
-      }
-    ]
-  },
-  {
     "id": "testing-library-jest-dom-7-0-1",
     "packageName": "@testing-library/jest-dom",
     "packageSlug": "testing-library-jest-dom",
@@ -2342,7 +2424,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.0.0",
     "newVersion": "7.0.1",
     "releaseDate": "2026-08-09",
-    "publishedAgo": "published 8 days ago",
+    "publishedAgo": "published 9 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2383,7 +2465,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "0.28.1",
     "newVersion": "0.28.2",
     "releaseDate": "2026-08-08",
-    "publishedAgo": "published 9 days ago",
+    "publishedAgo": "published 10 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2424,7 +2506,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "10.8.0",
     "newVersion": "10.8.1",
     "releaseDate": "2026-08-07",
-    "publishedAgo": "published 10 days ago",
+    "publishedAgo": "published 11 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2465,7 +2547,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "20.11.1",
     "newVersion": "20.11.2",
     "releaseDate": "2026-08-07",
-    "publishedAgo": "published 10 days ago",
+    "publishedAgo": "published 11 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2506,7 +2588,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.21.2",
     "newVersion": "8.21.3",
     "releaseDate": "2026-08-07",
-    "publishedAgo": "published 10 days ago",
+    "publishedAgo": "published 11 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2547,7 +2629,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.2.0",
     "newVersion": "8.2.1",
     "releaseDate": "2026-08-06",
-    "publishedAgo": "published 12 days ago",
+    "publishedAgo": "published 13 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2588,7 +2670,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.5.25",
     "newVersion": "8.5.26",
     "releaseDate": "2026-08-06",
-    "publishedAgo": "published 12 days ago",
+    "publishedAgo": "published 13 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2629,7 +2711,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "9.3.0",
     "newVersion": "9.3.1",
     "releaseDate": "2026-08-06",
-    "publishedAgo": "published 12 days ago",
+    "publishedAgo": "published 13 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2670,7 +2752,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "3.5.40",
     "newVersion": "3.5.41",
     "releaseDate": "2026-08-05",
-    "publishedAgo": "published 13 days ago",
+    "publishedAgo": "published 14 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2711,7 +2793,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.5.1",
     "newVersion": "4.5.2",
     "releaseDate": "2026-08-05",
-    "publishedAgo": "published 12 days ago",
+    "publishedAgo": "published 13 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2752,7 +2834,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "6.0.0",
     "newVersion": "6.0.1",
     "releaseDate": "2026-08-03",
-    "publishedAgo": "published 15 days ago",
+    "publishedAgo": "published 16 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2793,7 +2875,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.62.3",
     "newVersion": "4.62.4",
     "releaseDate": "2026-08-01",
-    "publishedAgo": "published 17 days ago",
+    "publishedAgo": "published 18 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2834,7 +2916,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "6.0.4",
     "newVersion": "6.0.5",
     "releaseDate": "2026-07-30",
-    "publishedAgo": "published 19 days ago",
+    "publishedAgo": "published 20 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2875,7 +2957,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "19.2.17",
     "newVersion": "19.2.18",
     "releaseDate": "2026-07-30",
-    "publishedAgo": "published 18 days ago",
+    "publishedAgo": "published 19 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2912,7 +2994,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "19.2.3",
     "newVersion": "19.2.4",
     "releaseDate": "2026-07-30",
-    "publishedAgo": "published 18 days ago",
+    "publishedAgo": "published 19 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2949,7 +3031,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.62.0",
     "newVersion": "1.62.1",
     "releaseDate": "2026-07-30",
-    "publishedAgo": "published 18 days ago",
+    "publishedAgo": "published 19 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2990,7 +3072,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.109.1",
     "newVersion": "5.109.2",
     "releaseDate": "2026-07-28",
-    "publishedAgo": "published 20 days ago",
+    "publishedAgo": "published 21 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3031,7 +3113,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.18.1",
     "newVersion": "7.18.2",
     "releaseDate": "2026-07-28",
-    "publishedAgo": "published 20 days ago",
+    "publishedAgo": "published 21 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3072,7 +3154,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.1.22",
     "newVersion": "1.1.23",
     "releaseDate": "2026-07-24",
-    "publishedAgo": "published 24 days ago",
+    "publishedAgo": "published 25 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3109,7 +3191,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.1.22",
     "newVersion": "1.1.23",
     "releaseDate": "2026-07-24",
-    "publishedAgo": "published 24 days ago",
+    "publishedAgo": "published 25 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3146,7 +3228,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "19.2.7",
     "newVersion": "19.2.8",
     "releaseDate": "2026-07-21",
-    "publishedAgo": "published 27 days ago",
+    "publishedAgo": "published 28 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3187,7 +3269,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "19.2.7",
     "newVersion": "19.2.8",
     "releaseDate": "2026-07-21",
-    "publishedAgo": "published 27 days ago",
+    "publishedAgo": "published 28 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3228,7 +3310,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "3.9.5",
     "newVersion": "3.9.6",
     "releaseDate": "2026-07-21",
-    "publishedAgo": "published 28 days ago",
+    "publishedAgo": "published 29 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3269,7 +3351,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.101.3",
     "newVersion": "5.101.4",
     "releaseDate": "2026-07-21",
-    "publishedAgo": "published 28 days ago",
+    "publishedAgo": "published 29 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3310,7 +3392,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "3.36.0",
     "newVersion": "3.36.1",
     "releaseDate": "2026-07-19",
-    "publishedAgo": "published 29 days ago",
+    "publishedAgo": "published 30 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3351,7 +3433,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.3.2",
     "newVersion": "4.3.3",
     "releaseDate": "2026-07-16",
-    "publishedAgo": "published 33 days ago",
+    "publishedAgo": "published 34 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3392,7 +3474,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "10.5.3",
     "newVersion": "10.5.4",
     "releaseDate": "2026-07-16",
-    "publishedAgo": "published 33 days ago",
+    "publishedAgo": "published 34 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3426,47 +3508,6 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
-    "id": "vitest-4-1-10",
-    "packageName": "vitest",
-    "packageSlug": "vitest",
-    "description": "Vite-native testing",
-    "oldVersion": "4.1.9",
-    "newVersion": "4.1.10",
-    "releaseDate": "2026-07-06",
-    "publishedAgo": "published 43 days ago",
-    "isRecent": false,
-    "risk": "low",
-    "category": "Patch version",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Patch release with no OSV match.",
-    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-    "affectedAudience": "Test suites, browser automation, and release validation workflows.",
-    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "GitHub release note found: v4.1.10.",
-    "githubReleaseTitle": "v4.1.10",
-    "githubReleaseUrl": "https://github.com/vitest-dev/vitest/releases/tag/v4.1.10",
-    "githubReleaseTag": "v4.1.10",
-    "githubReleasePublishedAt": "2026-07-06T06:41:38Z",
-    "releaseNotesExcerpt": "&nbsp;&nbsp;&nbsp; Bug Fixes **browser**: Check fs access in builtin commands [backport to v4] &nbsp;-&nbsp; by @hi-ogawa, **Hiroshi Ogawa** and **OpenCode (claude-opus-4-8)** in https://github.com/vitest-dev/vitest/issues/10680 <samp>(5c18d)</samp> **vm**: Fix external module re",
-    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-    "route": "/package/vitest/4.1.10",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/vitest"
-      },
-      {
-        "label": "Repository",
-        "href": "https://github.com/vitest-dev/vitest"
-      },
-      {
-        "label": "GitHub release",
-        "href": "https://github.com/vitest-dev/vitest/releases/tag/v4.1.10"
-      }
-    ]
-  },
-  {
     "id": "graphql-17-0-2",
     "packageName": "graphql",
     "packageSlug": "graphql",
@@ -3474,7 +3515,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "17.0.1",
     "newVersion": "17.0.2",
     "releaseDate": "2026-07-03",
-    "publishedAgo": "published 46 days ago",
+    "publishedAgo": "published 47 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3508,47 +3549,6 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
-    "id": "uuid-14-0-1",
-    "packageName": "uuid",
-    "packageSlug": "uuid",
-    "description": "UUID generator",
-    "oldVersion": "14.0.0",
-    "newVersion": "14.0.1",
-    "releaseDate": "2026-06-20",
-    "publishedAgo": "published 59 days ago",
-    "isRecent": false,
-    "risk": "low",
-    "category": "Patch version",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Patch release with no OSV match.",
-    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "GitHub release note found: v14.0.1.",
-    "githubReleaseTitle": "v14.0.1",
-    "githubReleaseUrl": "https://github.com/uuidjs/uuid/releases/tag/v14.0.1",
-    "githubReleaseTag": "v14.0.1",
-    "githubReleasePublishedAt": "2026-06-20T11:55:33Z",
-    "releaseNotesExcerpt": "14.0.1 (2026-06-20) Bug Fixes add types condition to node export for moduleResolution bundler (#961) (27ffae5)",
-    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-    "route": "/package/uuid/14.0.1",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/uuid"
-      },
-      {
-        "label": "Repository",
-        "href": "https://github.com/uuidjs/uuid"
-      },
-      {
-        "label": "GitHub release",
-        "href": "https://github.com/uuidjs/uuid/releases/tag/v14.0.1"
-      }
-    ]
-  },
-  {
     "id": "semver-7-8-5",
     "packageName": "semver",
     "packageSlug": "semver",
@@ -3556,7 +3556,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.8.4",
     "newVersion": "7.8.5",
     "releaseDate": "2026-06-19",
-    "publishedAgo": "published 59 days ago",
+    "publishedAgo": "published 60 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3597,7 +3597,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.0.1",
     "newVersion": "8.0.2",
     "releaseDate": "2026-06-18",
-    "publishedAgo": "published 61 days ago",
+    "publishedAgo": "published 62 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3638,7 +3638,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.0.0",
     "newVersion": "8.0.1",
     "releaseDate": "2026-06-17",
-    "publishedAgo": "published 62 days ago",
+    "publishedAgo": "published 63 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3679,7 +3679,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.0.0",
     "newVersion": "8.0.1",
     "releaseDate": "2026-06-17",
-    "publishedAgo": "published 62 days ago",
+    "publishedAgo": "published 63 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3720,7 +3720,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.17.4",
     "newVersion": "2.17.5",
     "releaseDate": "2026-06-01",
-    "publishedAgo": "published 77 days ago",
+    "publishedAgo": "published 78 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3757,7 +3757,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "30.4.1",
     "newVersion": "30.4.2",
     "releaseDate": "2026-05-09",
-    "publishedAgo": "published 101 days ago",
+    "publishedAgo": "published 102 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3798,7 +3798,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.4.2",
     "newVersion": "4.4.3",
     "releaseDate": "2026-05-04",
-    "publishedAgo": "published 106 days ago",
+    "publishedAgo": "published 107 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3839,7 +3839,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.0.1",
     "newVersion": "2.0.2",
     "releaseDate": "2026-04-21",
-    "publishedAgo": "published 119 days ago",
+    "publishedAgo": "published 120 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3880,7 +3880,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.18.0",
     "newVersion": "4.18.1",
     "releaseDate": "2026-04-01",
-    "publishedAgo": "published 138 days ago",
+    "publishedAgo": "published 139 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3921,7 +3921,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.16.0",
     "newVersion": "5.16.1",
     "releaseDate": "2026-02-10",
-    "publishedAgo": "published 188 days ago",
+    "publishedAgo": "published 189 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -3962,7 +3962,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.16.3",
     "newVersion": "2.16.4",
     "releaseDate": "2026-02-02",
-    "publishedAgo": "published 197 days ago",
+    "publishedAgo": "published 198 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -4003,7 +4003,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "16.3.1",
     "newVersion": "16.3.2",
     "releaseDate": "2026-01-19",
-    "publishedAgo": "published 211 days ago",
+    "publishedAgo": "published 212 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -4044,7 +4044,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.5.0",
     "newVersion": "8.5.1",
     "releaseDate": "2025-11-12",
-    "publishedAgo": "published 278 days ago",
+    "publishedAgo": "published 279 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -4085,7 +4085,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.4.8",
     "newVersion": "2.4.9",
     "releaseDate": "2025-11-10",
-    "publishedAgo": "published 280 days ago",
+    "publishedAgo": "published 281 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -4126,7 +4126,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.7.0",
     "newVersion": "1.7.1",
     "releaseDate": "2025-09-21",
-    "publishedAgo": "published 330 days ago",
+    "publishedAgo": "published 331 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -4478,7 +4478,7 @@ export const packageRoutes = {
     "packageName": "turbo",
     "description": "Monorepo build system",
     "route": "/package/turbo",
-    "latestReleaseRoute": "/package/turbo/2.10.10",
+    "latestReleaseRoute": "/package/turbo/2.10.11",
     "areaSlug": "build-tooling",
     "areaLabel": "Build Tooling"
   },
@@ -4534,7 +4534,7 @@ export const packageRoutes = {
     "packageName": "@swc/core",
     "description": "JavaScript and TypeScript compiler",
     "route": "/package/swc-core",
-    "latestReleaseRoute": "/package/swc-core/1.16.0",
+    "latestReleaseRoute": "/package/swc-core/1.16.1",
     "areaSlug": "build-tooling",
     "areaLabel": "Build Tooling"
   },
@@ -4678,7 +4678,7 @@ export const packageRoutes = {
     "packageName": "immer",
     "description": "Immutable state updates",
     "route": "/package/immer",
-    "latestReleaseRoute": "/package/immer/11.1.17",
+    "latestReleaseRoute": "/package/immer/11.1.18",
     "areaSlug": "routing-state-data",
     "areaLabel": "Routing, State, and Data"
   },
@@ -4718,7 +4718,7 @@ export const packageRoutes = {
     "packageName": "vitest",
     "description": "Vite-native testing",
     "route": "/package/vitest",
-    "latestReleaseRoute": "/package/vitest/4.1.10",
+    "latestReleaseRoute": "/package/vitest/4.1.11",
     "areaSlug": "testing-storybook",
     "areaLabel": "Testing and Storybook"
   },
@@ -4734,7 +4734,7 @@ export const packageRoutes = {
     "packageName": "cypress",
     "description": "Browser testing",
     "route": "/package/cypress",
-    "latestReleaseRoute": "/package/cypress/15.20.1",
+    "latestReleaseRoute": "/package/cypress/15.21.0",
     "areaSlug": "testing-storybook",
     "areaLabel": "Testing and Storybook"
   },
@@ -4910,7 +4910,7 @@ export const packageRoutes = {
     "packageName": "lucide-react",
     "description": "React icon library",
     "route": "/package/lucide-react",
-    "latestReleaseRoute": "/package/lucide-react/1.32.0",
+    "latestReleaseRoute": "/package/lucide-react/1.33.0",
     "areaSlug": "css-ui",
     "areaLabel": "CSS and UI Libraries"
   },
@@ -4998,7 +4998,7 @@ export const packageRoutes = {
     "packageName": "uuid",
     "description": "UUID generator",
     "route": "/package/uuid",
-    "latestReleaseRoute": "/package/uuid/14.0.1",
+    "latestReleaseRoute": "/package/uuid/14.0.2",
     "areaSlug": "utilities-runtime",
     "areaLabel": "JavaScript Utilities and Runtime"
   },
@@ -5144,7 +5144,7 @@ export const categoryRoutes = {
         "packageName": "@swc/core",
         "description": "JavaScript and TypeScript compiler",
         "route": "/package/swc-core",
-        "latestReleaseRoute": "/package/swc-core/1.16.0",
+        "latestReleaseRoute": "/package/swc-core/1.16.1",
         "areaSlug": "build-tooling",
         "areaLabel": "Build Tooling"
       },
@@ -5192,7 +5192,7 @@ export const categoryRoutes = {
         "packageName": "turbo",
         "description": "Monorepo build system",
         "route": "/package/turbo",
-        "latestReleaseRoute": "/package/turbo/2.10.10",
+        "latestReleaseRoute": "/package/turbo/2.10.11",
         "areaSlug": "build-tooling",
         "areaLabel": "Build Tooling"
       },
@@ -5330,7 +5330,7 @@ export const categoryRoutes = {
         "packageName": "immer",
         "description": "Immutable state updates",
         "route": "/package/immer",
-        "latestReleaseRoute": "/package/immer/11.1.17",
+        "latestReleaseRoute": "/package/immer/11.1.18",
         "areaSlug": "routing-state-data",
         "areaLabel": "Routing, State, and Data"
       },
@@ -5452,7 +5452,7 @@ export const categoryRoutes = {
         "packageName": "cypress",
         "description": "Browser testing",
         "route": "/package/cypress",
-        "latestReleaseRoute": "/package/cypress/15.20.1",
+        "latestReleaseRoute": "/package/cypress/15.21.0",
         "areaSlug": "testing-storybook",
         "areaLabel": "Testing and Storybook"
       },
@@ -5500,7 +5500,7 @@ export const categoryRoutes = {
         "packageName": "vitest",
         "description": "Vite-native testing",
         "route": "/package/vitest",
-        "latestReleaseRoute": "/package/vitest/4.1.10",
+        "latestReleaseRoute": "/package/vitest/4.1.11",
         "areaSlug": "testing-storybook",
         "areaLabel": "Testing and Storybook"
       }
@@ -5605,7 +5605,7 @@ export const categoryRoutes = {
         "packageName": "lucide-react",
         "description": "React icon library",
         "route": "/package/lucide-react",
-        "latestReleaseRoute": "/package/lucide-react/1.32.0",
+        "latestReleaseRoute": "/package/lucide-react/1.33.0",
         "areaSlug": "css-ui",
         "areaLabel": "CSS and UI Libraries"
       },
@@ -5726,7 +5726,7 @@ export const categoryRoutes = {
         "packageName": "uuid",
         "description": "UUID generator",
         "route": "/package/uuid",
-        "latestReleaseRoute": "/package/uuid/14.0.1",
+        "latestReleaseRoute": "/package/uuid/14.0.2",
         "areaSlug": "utilities-runtime",
         "areaLabel": "JavaScript Utilities and Runtime"
       },
@@ -6287,20 +6287,20 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "title": "typescript 7.0.2 npm major version update",
     "description": "typescript 7.0.2 frontend npm update risk: Major version release detected. OSV: No OSV match. CVE: No CVE match. Recommended action: Review changes before updating. Test in staging before merging."
   },
-  "/package/lucide-react/1.32.0": {
-    "path": "/package/lucide-react/1.32.0",
-    "title": "lucide-react 1.32.0 npm minor version update",
-    "description": "lucide-react 1.32.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release..."
+  "/package/lucide-react/1.33.0": {
+    "path": "/package/lucide-react/1.33.0",
+    "title": "lucide-react 1.33.0 npm minor version update",
+    "description": "lucide-react 1.33.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release..."
+  },
+  "/package/cypress/15.21.0": {
+    "path": "/package/cypress/15.21.0",
+    "title": "cypress 15.21.0 npm minor version update",
+    "description": "cypress 15.21.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release..."
   },
   "/package/pnpm/11.22.0": {
     "path": "/package/pnpm/11.22.0",
     "title": "pnpm 11.22.0 npm minor version update",
     "description": "pnpm 11.22.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes..."
-  },
-  "/package/swc-core/1.16.0": {
-    "path": "/package/swc-core/1.16.0",
-    "title": "@swc/core 1.16.0 npm minor version update",
-    "description": "@swc/core 1.16.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance."
   },
   "/package/less/4.9.0": {
     "path": "/package/less/4.9.0",
@@ -6367,10 +6367,30 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "title": "npm-run-all 4.1.5 npm release-note review update",
     "description": "npm-run-all 4.1.5 frontend npm update risk: Release notes mention security language, but no OSV or CVE match was found. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Confirm against OSV and CVE..."
   },
+  "/package/swc-core/1.16.1": {
+    "path": "/package/swc-core/1.16.1",
+    "title": "@swc/core 1.16.1 npm patch version update",
+    "description": "@swc/core 1.16.1 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/immer/11.1.18": {
+    "path": "/package/immer/11.1.18",
+    "title": "immer 11.1.18 npm patch version update",
+    "description": "immer 11.1.18 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
   "/package/astro/7.2.3": {
     "path": "/package/astro/7.2.3",
     "title": "astro 7.2.3 npm patch version update",
     "description": "astro 7.2.3 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/turbo/2.10.11": {
+    "path": "/package/turbo/2.10.11",
+    "title": "turbo 2.10.11 npm patch version update",
+    "description": "turbo 2.10.11 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/vitest/4.1.11": {
+    "path": "/package/vitest/4.1.11",
+    "title": "vitest 4.1.11 npm patch version update",
+    "description": "vitest 4.1.11 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
   },
   "/package/storybook-react/10.5.9": {
     "path": "/package/storybook-react/10.5.9",
@@ -6382,6 +6402,11 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "title": "storybook 10.5.9 npm patch version update",
     "description": "storybook 10.5.9 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
   },
+  "/package/uuid/14.0.2": {
+    "path": "/package/uuid/14.0.2",
+    "title": "uuid 14.0.2 npm patch version update",
+    "description": "uuid 14.0.2 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
   "/package/solid-js/1.9.15": {
     "path": "/package/solid-js/1.9.15",
     "title": "solid-js 1.9.15 npm patch version update",
@@ -6392,20 +6417,10 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "title": "dayjs 1.11.23 npm patch version update",
     "description": "dayjs 1.11.23 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
   },
-  "/package/immer/11.1.17": {
-    "path": "/package/immer/11.1.17",
-    "title": "immer 11.1.17 npm patch version update",
-    "description": "immer 11.1.17 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-  },
   "/package/styled-components/6.5.3": {
     "path": "/package/styled-components/6.5.3",
     "title": "styled-components 6.5.3 npm patch version update",
     "description": "styled-components 6.5.3 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-  },
-  "/package/turbo/2.10.10": {
-    "path": "/package/turbo/2.10.10",
-    "title": "turbo 2.10.10 npm patch version update",
-    "description": "turbo 2.10.10 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
   },
   "/package/apollo-client/4.2.12": {
     "path": "/package/apollo-client/4.2.12",
@@ -6436,11 +6451,6 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "path": "/package/swr/2.5.1",
     "title": "swr 2.5.1 npm patch version update",
     "description": "swr 2.5.1 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-  },
-  "/package/cypress/15.20.1": {
-    "path": "/package/cypress/15.20.1",
-    "title": "cypress 15.20.1 npm patch version update",
-    "description": "cypress 15.20.1 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
   },
   "/package/testing-library-jest-dom/7.0.1": {
     "path": "/package/testing-library-jest-dom/7.0.1",
@@ -6577,20 +6587,10 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "title": "autoprefixer 10.5.4 npm patch version update",
     "description": "autoprefixer 10.5.4 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
   },
-  "/package/vitest/4.1.10": {
-    "path": "/package/vitest/4.1.10",
-    "title": "vitest 4.1.10 npm patch version update",
-    "description": "vitest 4.1.10 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-  },
   "/package/graphql/17.0.2": {
     "path": "/package/graphql/17.0.2",
     "title": "graphql 17.0.2 npm patch version update",
     "description": "graphql 17.0.2 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-  },
-  "/package/uuid/14.0.1": {
-    "path": "/package/uuid/14.0.1",
-    "title": "uuid 14.0.1 npm patch version update",
-    "description": "uuid 14.0.1 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
   },
   "/package/semver/7.8.5": {
     "path": "/package/semver/7.8.5",

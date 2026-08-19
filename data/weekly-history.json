@@ -19,9 +19,18 @@
       },
       {
         "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.32.0",
+        "route": "/package/lucide-react/1.33.0",
         "risk": "review",
-        "newVersion": "1.32.0",
+        "newVersion": "1.33.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "cypress",
+        "route": "/package/cypress/15.21.0",
+        "risk": "review",
+        "newVersion": "15.21.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
@@ -33,15 +42,6 @@
         "newVersion": "11.22.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "@swc/core",
-        "route": "/package/swc-core/1.16.0",
-        "risk": "review",
-        "newVersion": "1.16.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
@@ -82,7 +82,7 @@
       }
     ],
     "route": "/weekly/2026-w34",
-    "generatedAt": "2026-08-18T13:58:53.208Z"
+    "generatedAt": "2026-08-19T13:59:44.383Z"
   },
   {
     "week": "Week 33, 2026",
