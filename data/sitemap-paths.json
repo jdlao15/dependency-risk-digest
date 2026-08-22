@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T13:59:51.420Z",
+  "generatedAt": "2026-08-22T13:46:13.772Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -100,7 +100,7 @@
     "/package/react-dom",
     "/package/react-dom/19.2.8",
     "/package/react-hook-form",
-    "/package/react-hook-form/7.85.0",
+    "/package/react-hook-form/7.86.0",
     "/package/react-router-dom",
     "/package/react-router-dom/7.18.2",
     "/package/react/19.2.8",
