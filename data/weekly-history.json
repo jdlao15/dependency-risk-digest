@@ -1,7 +1,7 @@
 [
   {
     "week": "Week 35, 2026",
-    "dateRange": "Aug 17 - Aug 23",
+    "dateRange": "Aug 24 - Aug 30",
     "risky": 19,
     "breaking": 1,
     "security": 0,
@@ -16,6 +16,24 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.34.0",
+        "risk": "review",
+        "newVersion": "1.34.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "pnpm",
+        "route": "/package/pnpm/11.23.0",
+        "risk": "review",
+        "newVersion": "11.23.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
         "packageName": "eslint",
@@ -61,28 +79,10 @@
         "reason": "Release notes mention security language, but no OSV or CVE match was found.",
         "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
         "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
-      },
-      {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.33.0",
-        "risk": "review",
-        "newVersion": "1.33.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "cypress",
-        "route": "/package/cypress/15.21.0",
-        "risk": "review",
-        "newVersion": "15.21.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w35",
-    "generatedAt": "2026-08-23T13:47:20.363Z"
+    "generatedAt": "2026-08-24T14:04:40.258Z"
   },
   {
     "week": "Week 34, 2026",
