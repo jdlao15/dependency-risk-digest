@@ -18,6 +18,24 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "axios",
+        "route": "/package/axios/1.20.0",
+        "risk": "review",
+        "newVersion": "1.20.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "next",
+        "route": "/package/next/16.3.3",
+        "risk": "review",
+        "newVersion": "16.3.3",
+        "reason": "Release notes mention security language, but no OSV or CVE match was found.",
+        "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
+        "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
+      },
+      {
         "packageName": "rollup",
         "route": "/package/rollup/4.63.0",
         "risk": "review",
@@ -61,28 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "react-hook-form",
-        "route": "/package/react-hook-form/7.86.0",
-        "risk": "review",
-        "newVersion": "7.86.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "@vitejs/plugin-react",
-        "route": "/package/vitejs-plugin-react/6.1.0",
-        "risk": "review",
-        "newVersion": "6.1.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w35",
-    "generatedAt": "2026-08-25T14:07:10.604Z"
+    "generatedAt": "2026-08-26T14:06:23.333Z"
   },
   {
     "week": "Week 34, 2026",
