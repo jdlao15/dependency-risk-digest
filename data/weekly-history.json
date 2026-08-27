@@ -2,10 +2,10 @@
   {
     "week": "Week 35, 2026",
     "dateRange": "Aug 24 - Aug 30",
-    "risky": 19,
+    "risky": 20,
     "breaking": 1,
     "security": 0,
-    "safe": 63,
+    "safe": 62,
     "total": 82,
     "topSignals": [
       {
@@ -16,6 +16,15 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "@mui/material",
+        "route": "/package/mui-material/9.4.0",
+        "risk": "review",
+        "newVersion": "9.4.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
         "packageName": "axios",
@@ -70,19 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "pnpm",
-        "route": "/package/pnpm/11.24.0",
-        "risk": "review",
-        "newVersion": "11.24.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w35",
-    "generatedAt": "2026-08-26T14:06:23.333Z"
+    "generatedAt": "2026-08-27T22:58:48.445Z"
   },
   {
     "week": "Week 34, 2026",
