@@ -2,10 +2,10 @@
   {
     "week": "Week 35, 2026",
     "dateRange": "Aug 24 - Aug 30",
-    "risky": 21,
+    "risky": 23,
     "breaking": 1,
     "security": 0,
-    "safe": 61,
+    "safe": 59,
     "total": 82,
     "topSignals": [
       {
@@ -16,6 +16,33 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "happy-dom",
+        "route": "/package/happy-dom/20.12.0",
+        "risk": "review",
+        "newVersion": "20.12.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.37.0",
+        "risk": "review",
+        "newVersion": "1.37.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "svelte",
+        "route": "/package/svelte/5.57.0",
+        "risk": "review",
+        "newVersion": "5.57.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
         "packageName": "ky",
@@ -31,15 +58,6 @@
         "route": "/package/jest/30.5.0",
         "risk": "review",
         "newVersion": "30.5.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.35.0",
-        "risk": "review",
-        "newVersion": "1.35.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
@@ -61,28 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "axios",
-        "route": "/package/axios/1.20.0",
-        "risk": "review",
-        "newVersion": "1.20.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "next",
-        "route": "/package/next/16.3.3",
-        "risk": "review",
-        "newVersion": "16.3.3",
-        "reason": "Release notes mention security language, but no OSV or CVE match was found.",
-        "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
-        "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
       }
     ],
     "route": "/weekly/2026-w35",
-    "generatedAt": "2026-08-28T23:04:04.019Z"
+    "generatedAt": "2026-08-29T17:10:57.891Z"
   },
   {
     "week": "Week 34, 2026",
