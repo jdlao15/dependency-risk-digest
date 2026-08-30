@@ -1,5 +1,90 @@
 [
   {
+    "week": "Week 36, 2026",
+    "dateRange": "Aug 24 - Aug 30",
+    "risky": 23,
+    "breaking": 1,
+    "security": 0,
+    "safe": 59,
+    "total": 82,
+    "topSignals": [
+      {
+        "packageName": "typescript",
+        "route": "/package/typescript/7.0.2",
+        "risk": "breaking",
+        "newVersion": "7.0.2",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "react-hook-form",
+        "route": "/package/react-hook-form/7.87.0",
+        "risk": "review",
+        "newVersion": "7.87.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "happy-dom",
+        "route": "/package/happy-dom/20.12.0",
+        "risk": "review",
+        "newVersion": "20.12.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.37.0",
+        "risk": "review",
+        "newVersion": "1.37.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "svelte",
+        "route": "/package/svelte/5.57.0",
+        "risk": "review",
+        "newVersion": "5.57.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "ky",
+        "route": "/package/ky/2.1.0",
+        "risk": "review",
+        "newVersion": "2.1.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "jest",
+        "route": "/package/jest/30.5.0",
+        "risk": "review",
+        "newVersion": "30.5.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "@chakra-ui/react",
+        "route": "/package/chakra-ui-react/3.37.0",
+        "risk": "review",
+        "newVersion": "3.37.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      }
+    ],
+    "route": "/weekly/2026-w36",
+    "generatedAt": "2026-08-30T17:33:33.023Z"
+  },
+  {
     "week": "Week 35, 2026",
     "dateRange": "Aug 24 - Aug 30",
     "risky": 23,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T17:10:57.891Z",
+  "generatedAt": "2026-08-30T17:33:33.023Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -100,7 +100,7 @@
     "/package/react-dom",
     "/package/react-dom/19.2.8",
     "/package/react-hook-form",
-    "/package/react-hook-form/7.86.0",
+    "/package/react-hook-form/7.87.0",
     "/package/react-router-dom",
     "/package/react-router-dom/7.18.3",
     "/package/react/19.2.8",
@@ -165,13 +165,13 @@
     "/package/vue",
     "/package/vue/3.5.42",
     "/package/webpack",
-    "/package/webpack/5.110.1",
+    "/package/webpack/5.110.2",
     "/package/ws",
     "/package/ws/8.21.3",
     "/package/yup",
     "/package/yup/1.7.1",
     "/package/zod",
-    "/package/zod/4.5.2",
+    "/package/zod/4.5.4",
     "/package/zustand",
     "/package/zustand/5.0.15",
     "/packages",
@@ -191,6 +191,7 @@
     "/weekly/2026-w32",
     "/weekly/2026-w33",
     "/weekly/2026-w34",
-    "/weekly/2026-w35"
+    "/weekly/2026-w35",
+    "/weekly/2026-w36"
   ]
 }
