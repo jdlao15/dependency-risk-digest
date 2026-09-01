@@ -2,12 +2,21 @@
   {
     "week": "Week 36, 2026",
     "dateRange": "Aug 31 - Sep 6",
-    "risky": 23,
-    "breaking": 1,
+    "risky": 22,
+    "breaking": 2,
     "security": 0,
-    "safe": 59,
+    "safe": 60,
     "total": 82,
     "topSignals": [
+      {
+        "packageName": "cypress",
+        "route": "/package/cypress/16.0.0",
+        "risk": "breaking",
+        "newVersion": "16.0.0",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
       {
         "packageName": "typescript",
         "route": "/package/typescript/7.0.2",
@@ -16,6 +25,15 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.39.0",
+        "risk": "review",
+        "newVersion": "1.39.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
         "packageName": "@typescript-eslint/parser",
@@ -31,15 +49,6 @@
         "route": "/package/typescript-eslint-eslint-plugin/8.69.0",
         "risk": "review",
         "newVersion": "8.69.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.38.0",
-        "risk": "review",
-        "newVersion": "1.38.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
@@ -63,26 +72,17 @@
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "svelte",
-        "route": "/package/svelte/5.57.0",
+        "packageName": "pnpm",
+        "route": "/package/pnpm/11.25.0",
         "risk": "review",
-        "newVersion": "5.57.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "ky",
-        "route": "/package/ky/2.1.0",
-        "risk": "review",
-        "newVersion": "2.1.0",
+        "newVersion": "11.25.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w36",
-    "generatedAt": "2026-08-31T19:31:07.194Z"
+    "generatedAt": "2026-09-01T17:20:14.609Z"
   },
   {
     "week": "Week 35, 2026",
