@@ -2,10 +2,10 @@
   {
     "week": "Week 36, 2026",
     "dateRange": "Aug 31 - Sep 6",
-    "risky": 22,
+    "risky": 25,
     "breaking": 3,
     "security": 0,
-    "safe": 60,
+    "safe": 57,
     "total": 82,
     "topSignals": [
       {
@@ -36,10 +36,37 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.40.0",
+        "packageName": "eslint",
+        "route": "/package/eslint/10.10.0",
         "risk": "review",
-        "newVersion": "1.40.0",
+        "newVersion": "10.10.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.41.0",
+        "risk": "review",
+        "newVersion": "1.41.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "happy-dom",
+        "route": "/package/happy-dom/20.14.0",
+        "risk": "review",
+        "newVersion": "20.14.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "sass",
+        "route": "/package/sass/1.104.0",
+        "risk": "review",
+        "newVersion": "1.104.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
@@ -52,37 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "storybook",
-        "route": "/package/storybook/10.6.0",
-        "risk": "review",
-        "newVersion": "10.6.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "framer-motion",
-        "route": "/package/framer-motion/13.2.0",
-        "risk": "review",
-        "newVersion": "13.2.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "@typescript-eslint/parser",
-        "route": "/package/typescript-eslint-parser/8.69.0",
-        "risk": "review",
-        "newVersion": "8.69.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w36",
-    "generatedAt": "2026-09-03T17:03:42.143Z"
+    "generatedAt": "2026-09-04T16:53:07.981Z"
   },
   {
     "week": "Week 35, 2026",
