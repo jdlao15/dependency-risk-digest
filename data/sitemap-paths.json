@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T16:53:07.981Z",
+  "generatedAt": "2026-09-05T16:06:52.771Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -85,7 +85,7 @@
     "/package/parcel",
     "/package/parcel/2.16.4",
     "/package/playwright",
-    "/package/playwright/1.62.1",
+    "/package/playwright/1.63.0",
     "/package/pnpm",
     "/package/pnpm/11.25.0",
     "/package/postcss",
@@ -127,7 +127,7 @@
     "/package/svelte",
     "/package/svelte/5.57.0",
     "/package/swc-core",
-    "/package/swc-core/1.16.1",
+    "/package/swc-core/1.16.2",
     "/package/swr",
     "/package/swr/2.5.1",
     "/package/tailwind-merge",

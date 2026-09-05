@@ -2,10 +2,10 @@
   {
     "week": "Week 36, 2026",
     "dateRange": "Aug 31 - Sep 6",
-    "risky": 25,
+    "risky": 26,
     "breaking": 3,
     "security": 0,
-    "safe": 57,
+    "safe": 56,
     "total": 82,
     "topSignals": [
       {
@@ -45,6 +45,15 @@
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
+        "packageName": "playwright",
+        "route": "/package/playwright/1.63.0",
+        "risk": "review",
+        "newVersion": "1.63.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "lucide-react",
         "route": "/package/lucide-react/1.41.0",
         "risk": "review",
@@ -70,19 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "@storybook/react",
-        "route": "/package/storybook-react/10.6.0",
-        "risk": "review",
-        "newVersion": "10.6.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w36",
-    "generatedAt": "2026-09-04T16:53:07.981Z"
+    "generatedAt": "2026-09-05T16:06:52.771Z"
   },
   {
     "week": "Week 35, 2026",
