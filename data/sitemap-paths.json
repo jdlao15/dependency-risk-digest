@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T16:06:52.771Z",
+  "generatedAt": "2026-09-06T16:19:17.191Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -87,7 +87,7 @@
     "/package/playwright",
     "/package/playwright/1.63.0",
     "/package/pnpm",
-    "/package/pnpm/11.25.0",
+    "/package/pnpm/12.3.4",
     "/package/postcss",
     "/package/postcss/8.5.28",
     "/package/prettier",
@@ -192,6 +192,7 @@
     "/weekly/2026-w33",
     "/weekly/2026-w34",
     "/weekly/2026-w35",
-    "/weekly/2026-w36"
+    "/weekly/2026-w36",
+    "/weekly/2026-w37"
   ]
 }
