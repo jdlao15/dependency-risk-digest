@@ -1,7 +1,7 @@
 [
   {
     "week": "Week 37, 2026",
-    "dateRange": "Aug 31 - Sep 6",
+    "dateRange": "Sep 7 - Sep 13",
     "risky": 25,
     "breaking": 3,
     "security": 0,
@@ -36,6 +36,15 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.42.0",
+        "risk": "review",
+        "newVersion": "1.42.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "eslint",
         "route": "/package/eslint/10.10.0",
         "risk": "review",
@@ -49,15 +58,6 @@
         "route": "/package/playwright/1.63.0",
         "risk": "review",
         "newVersion": "1.63.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.41.0",
-        "risk": "review",
-        "newVersion": "1.41.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
@@ -82,7 +82,7 @@
       }
     ],
     "route": "/weekly/2026-w37",
-    "generatedAt": "2026-09-06T16:19:17.191Z"
+    "generatedAt": "2026-09-07T18:16:22.210Z"
   },
   {
     "week": "Week 36, 2026",
