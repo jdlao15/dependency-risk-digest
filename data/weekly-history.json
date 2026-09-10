@@ -2,10 +2,10 @@
   {
     "week": "Week 37, 2026",
     "dateRange": "Sep 7 - Sep 13",
-    "risky": 25,
+    "risky": 29,
     "breaking": 3,
     "security": 0,
-    "safe": 57,
+    "safe": 53,
     "total": 82,
     "topSignals": [
       {
@@ -36,53 +36,53 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "vite",
+        "route": "/package/vite/8.3.0",
+        "risk": "review",
+        "newVersion": "8.3.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.43.0",
+        "route": "/package/lucide-react/1.44.0",
         "risk": "review",
-        "newVersion": "1.43.0",
+        "newVersion": "1.44.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "@typescript-eslint/parser",
-        "route": "/package/typescript-eslint-parser/8.70.0",
+        "packageName": "react",
+        "route": "/package/react/19.3.0",
         "risk": "review",
-        "newVersion": "8.70.0",
+        "newVersion": "19.3.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "@typescript-eslint/eslint-plugin",
-        "route": "/package/typescript-eslint-eslint-plugin/8.70.0",
+        "packageName": "react-dom",
+        "route": "/package/react-dom/19.3.0",
         "risk": "review",
-        "newVersion": "8.70.0",
+        "newVersion": "19.3.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "eslint",
-        "route": "/package/eslint/10.10.0",
+        "packageName": "@types/react",
+        "route": "/package/types-react/19.3.0",
         "risk": "review",
-        "newVersion": "10.10.0",
+        "newVersion": "19.3.0",
         "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "playwright",
-        "route": "/package/playwright/1.63.0",
-        "risk": "review",
-        "newVersion": "1.63.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w37",
-    "generatedAt": "2026-09-09T17:10:27.998Z"
+    "generatedAt": "2026-09-10T17:01:12.130Z"
   },
   {
     "week": "Week 36, 2026",
