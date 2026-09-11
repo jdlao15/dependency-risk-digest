@@ -36,19 +36,19 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
-        "packageName": "vite",
-        "route": "/package/vite/8.3.0",
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.45.0",
         "risk": "review",
-        "newVersion": "8.3.0",
+        "newVersion": "1.45.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.44.0",
+        "packageName": "vite",
+        "route": "/package/vite/8.3.0",
         "risk": "review",
-        "newVersion": "1.44.0",
+        "newVersion": "8.3.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
@@ -82,7 +82,7 @@
       }
     ],
     "route": "/weekly/2026-w37",
-    "generatedAt": "2026-09-10T17:01:12.130Z"
+    "generatedAt": "2026-09-11T17:02:18.558Z"
   },
   {
     "week": "Week 36, 2026",
