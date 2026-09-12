@@ -2,10 +2,10 @@
   {
     "week": "Week 37, 2026",
     "dateRange": "Sep 7 - Sep 13",
-    "risky": 29,
+    "risky": 30,
     "breaking": 3,
     "security": 0,
-    "safe": 53,
+    "safe": 52,
     "total": 82,
     "topSignals": [
       {
@@ -36,6 +36,33 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "autoprefixer",
+        "route": "/package/autoprefixer/10.6.0",
+        "risk": "review",
+        "newVersion": "10.6.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "@apollo/client",
+        "route": "/package/apollo-client/4.3.0",
+        "risk": "review",
+        "newVersion": "4.3.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "react-hook-form",
+        "route": "/package/react-hook-form/7.88.0",
+        "risk": "review",
+        "newVersion": "7.88.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "lucide-react",
         "route": "/package/lucide-react/1.45.0",
         "risk": "review",
@@ -52,37 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "react",
-        "route": "/package/react/19.3.0",
-        "risk": "review",
-        "newVersion": "19.3.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "react-dom",
-        "route": "/package/react-dom/19.3.0",
-        "risk": "review",
-        "newVersion": "19.3.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "@types/react",
-        "route": "/package/types-react/19.3.0",
-        "risk": "review",
-        "newVersion": "19.3.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w37",
-    "generatedAt": "2026-09-11T17:02:18.558Z"
+    "generatedAt": "2026-09-12T16:21:20.279Z"
   },
   {
     "week": "Week 36, 2026",

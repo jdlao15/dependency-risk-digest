@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-09-11T17:02:18.558Z",
+  "generatedAt": "2026-09-12T16:21:20.279Z",
   "weeklyDigest": {
     "week": "Week 37, 2026",
     "dateRange": "Sep 7 - Sep 13",
-    "risky": 29,
+    "risky": 30,
     "breaking": 3,
     "security": 0,
-    "safe": 53,
+    "safe": 52,
     "total": 82
   },
   "digestArchive": [
     {
       "week": "Week 37, 2026",
       "dateRange": "Sep 7 - Sep 13",
-      "risky": 29,
+      "risky": 30,
       "breaking": 3,
       "security": 0,
-      "safe": 53,
+      "safe": 52,
       "total": 82,
       "topSignals": [
         {
@@ -47,6 +47,33 @@
           "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
         },
         {
+          "packageName": "autoprefixer",
+          "route": "/package/autoprefixer/10.6.0",
+          "risk": "review",
+          "newVersion": "10.6.0",
+          "reason": "Minor version release detected with no OSV match.",
+          "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+        },
+        {
+          "packageName": "@apollo/client",
+          "route": "/package/apollo-client/4.3.0",
+          "risk": "review",
+          "newVersion": "4.3.0",
+          "reason": "Minor version release detected with no OSV match.",
+          "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+        },
+        {
+          "packageName": "react-hook-form",
+          "route": "/package/react-hook-form/7.88.0",
+          "risk": "review",
+          "newVersion": "7.88.0",
+          "reason": "Minor version release detected with no OSV match.",
+          "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+        },
+        {
           "packageName": "lucide-react",
           "route": "/package/lucide-react/1.45.0",
           "risk": "review",
@@ -63,37 +90,10 @@
           "reason": "Minor version release detected with no OSV match.",
           "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
           "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-        },
-        {
-          "packageName": "react",
-          "route": "/package/react/19.3.0",
-          "risk": "review",
-          "newVersion": "19.3.0",
-          "reason": "Minor version release detected with no OSV match.",
-          "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-        },
-        {
-          "packageName": "react-dom",
-          "route": "/package/react-dom/19.3.0",
-          "risk": "review",
-          "newVersion": "19.3.0",
-          "reason": "Minor version release detected with no OSV match.",
-          "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-        },
-        {
-          "packageName": "@types/react",
-          "route": "/package/types-react/19.3.0",
-          "risk": "review",
-          "newVersion": "19.3.0",
-          "reason": "Minor version release detected with no OSV match.",
-          "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
         }
       ],
       "route": "/weekly/2026-w37",
-      "generatedAt": "2026-09-11T17:02:18.558Z"
+      "generatedAt": "2026-09-12T16:21:20.279Z"
     },
     {
       "week": "Week 36, 2026",
@@ -1295,7 +1295,7 @@
       "oldVersion": "4.1.11",
       "newVersion": "5.0.0",
       "releaseDate": "2026-09-03",
-      "publishedAgo": "published 8 days ago",
+      "publishedAgo": "published 9 days ago",
       "isRecent": true,
       "risk": "breaking",
       "category": "Major version",
@@ -1336,7 +1336,7 @@
       "oldVersion": "15.21.1",
       "newVersion": "16.0.0",
       "releaseDate": "2026-09-01",
-      "publishedAgo": "published 10 days ago",
+      "publishedAgo": "published 11 days ago",
       "isRecent": true,
       "risk": "breaking",
       "category": "Major version",
@@ -1377,7 +1377,7 @@
       "oldVersion": "6.0.3",
       "newVersion": "7.0.2",
       "releaseDate": "2026-07-08",
-      "publishedAgo": "published 65 days ago",
+      "publishedAgo": "published 66 days ago",
       "isRecent": false,
       "risk": "breaking",
       "category": "Major version",
@@ -1411,6 +1411,129 @@
       ]
     },
     {
+      "id": "autoprefixer-10-6-0",
+      "packageName": "autoprefixer",
+      "packageSlug": "autoprefixer",
+      "description": "CSS vendor prefixing",
+      "oldVersion": "10.5.6",
+      "newVersion": "10.6.0",
+      "releaseDate": "2026-09-12",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "review",
+      "category": "Minor version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Minor version release detected with no OSV match.",
+      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+      "whatChanged": "GitHub release note found: 10.6.0 \"Post tenebras lux\".",
+      "githubReleaseTitle": "10.6.0 \"Post tenebras lux\"",
+      "githubReleaseUrl": "https://github.com/postcss/autoprefixer/releases/tag/10.6.0",
+      "githubReleaseTag": "10.6.0",
+      "githubReleasePublishedAt": "2026-09-12T15:54:26Z",
+      "releaseNotesExcerpt": "<img src=\"https://github.com/user-attachments/assets/a189c396-46c3-44b9-b126-f5601662f558\" alt=\"Coat of arms of Geneva\" width=\"172\" height=\"200\" align=\"right\"> Added initial-letter support (by @thomasmattheussen).",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/autoprefixer/10.6.0",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/autoprefixer"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/postcss/autoprefixer"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/postcss/autoprefixer/releases/tag/10.6.0"
+        }
+      ]
+    },
+    {
+      "id": "apollo-client-4-3-0",
+      "packageName": "@apollo/client",
+      "packageSlug": "apollo-client",
+      "description": "GraphQL client",
+      "oldVersion": "4.2.12",
+      "newVersion": "4.3.0",
+      "releaseDate": "2026-09-11",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "review",
+      "category": "Minor version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Minor version release detected with no OSV match.",
+      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+      "whatChanged": "GitHub release note found: @apollo/client@4.3.0.",
+      "githubReleaseTitle": "@apollo/client@4.3.0",
+      "githubReleaseUrl": "https://github.com/apollographql/apollo-client/releases/tag/%40apollo/client%404.3.0",
+      "githubReleaseTag": "@apollo/client@4.3.0",
+      "githubReleasePublishedAt": "2026-09-11T19:03:19Z",
+      "releaseNotesExcerpt": "Minor Changes #13447 24133fe Thanks @jerelmiller! - Field policies and inputObjects can now tell the cache whether a field is a list of scalars or a scalar whose value is an array. Previously all arrays were iterated and only the inner type was provided to the scalar parse/serial",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/apollo-client/4.3.0",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/@apollo/client"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/apollographql/apollo-client"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/apollographql/apollo-client/releases/tag/%40apollo/client%404.3.0"
+        }
+      ]
+    },
+    {
+      "id": "react-hook-form-7-88-0",
+      "packageName": "react-hook-form",
+      "packageSlug": "react-hook-form",
+      "description": "React form state",
+      "oldVersion": "7.87.0",
+      "newVersion": "7.88.0",
+      "releaseDate": "2026-09-11",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "review",
+      "category": "Minor version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Minor version release detected with no OSV match.",
+      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
+      "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
+      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+      "whatChanged": "GitHub release note found: Version 7.88.0.",
+      "githubReleaseTitle": "Version 7.88.0",
+      "githubReleaseUrl": "https://github.com/react-hook-form/react-hook-form/releases/tag/v7.88.0",
+      "githubReleaseTag": "v7.88.0",
+      "githubReleasePublishedAt": "2026-09-11T22:30:09Z",
+      "releaseNotesExcerpt": "Features Add Error Message component (#13472) Add the Error Message component for displaying validation errors from React Hook Form. Fixes Fix stale validating state after resetField() (#13735) Fix errors and touched state remaining for rows removed by replace() (#13734) Fix stal",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/react-hook-form/7.88.0",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/react-hook-form"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/react-hook-form/react-hook-form"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/react-hook-form/react-hook-form/releases/tag/v7.88.0"
+        }
+      ]
+    },
+    {
       "id": "lucide-react-1-45-0",
       "packageName": "lucide-react",
       "packageSlug": "lucide-react",
@@ -1418,7 +1541,7 @@
       "oldVersion": "1.44.0",
       "newVersion": "1.45.0",
       "releaseDate": "2026-09-11",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -1459,7 +1582,7 @@
       "oldVersion": "8.2.2",
       "newVersion": "8.3.0",
       "releaseDate": "2026-09-10",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -1500,7 +1623,7 @@
       "oldVersion": "19.2.8",
       "newVersion": "19.3.0",
       "releaseDate": "2026-09-09",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -1541,7 +1664,7 @@
       "oldVersion": "19.2.8",
       "newVersion": "19.3.0",
       "releaseDate": "2026-09-09",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -1582,7 +1705,7 @@
       "oldVersion": "19.2.18",
       "newVersion": "19.3.0",
       "releaseDate": "2026-09-09",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -1619,7 +1742,7 @@
       "oldVersion": "19.2.7",
       "newVersion": "19.3.0",
       "releaseDate": "2026-09-09",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -1656,7 +1779,7 @@
       "oldVersion": "8.69.0",
       "newVersion": "8.70.0",
       "releaseDate": "2026-09-07",
-      "publishedAgo": "published 3 days ago",
+      "publishedAgo": "published 4 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -1697,7 +1820,7 @@
       "oldVersion": "8.69.0",
       "newVersion": "8.70.0",
       "releaseDate": "2026-09-07",
-      "publishedAgo": "published 3 days ago",
+      "publishedAgo": "published 4 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -1738,7 +1861,7 @@
       "oldVersion": "10.9.1",
       "newVersion": "10.10.0",
       "releaseDate": "2026-09-04",
-      "publishedAgo": "published 7 days ago",
+      "publishedAgo": "published 8 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -1779,7 +1902,7 @@
       "oldVersion": "1.62.1",
       "newVersion": "1.63.0",
       "releaseDate": "2026-09-04",
-      "publishedAgo": "published 6 days ago",
+      "publishedAgo": "published 7 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -1813,47 +1936,6 @@
       ]
     },
     {
-      "id": "sass-1-104-0",
-      "packageName": "sass",
-      "packageSlug": "sass",
-      "description": "CSS preprocessor",
-      "oldVersion": "1.103.1",
-      "newVersion": "1.104.0",
-      "releaseDate": "2026-09-03",
-      "publishedAgo": "published 7 days ago",
-      "isRecent": true,
-      "risk": "review",
-      "category": "Minor version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Minor version release detected with no OSV match.",
-      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-      "whatChanged": "GitHub release note found: Dart Sass 1.104.0.",
-      "githubReleaseTitle": "Dart Sass 1.104.0",
-      "githubReleaseUrl": "https://github.com/sass/dart-sass/releases/tag/1.104.0",
-      "githubReleaseTag": "1.104.0",
-      "githubReleasePublishedAt": "2026-09-03T23:32:31Z",
-      "releaseNotesExcerpt": "To install Sass 1.104.0, download one of the packages below and [add it to your PATH][], or see [the Sass website][] for full installation instructions. [add it to your PATH]: https://katiek2.github.io/path-doc/ [the Sass website]: https://sass-lang.com/install Changes **Potentia",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/sass/1.104.0",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/sass"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/sass/dart-sass"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/sass/dart-sass/releases/tag/1.104.0"
-        }
-      ]
-    },
-    {
       "id": "storybook-react-10-6-0",
       "packageName": "@storybook/react",
       "packageSlug": "storybook-react",
@@ -1861,7 +1943,7 @@
       "oldVersion": "10.5.10",
       "newVersion": "10.6.0",
       "releaseDate": "2026-09-02",
-      "publishedAgo": "published 9 days ago",
+      "publishedAgo": "published 10 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -1902,7 +1984,7 @@
       "oldVersion": "10.5.10",
       "newVersion": "10.6.0",
       "releaseDate": "2026-09-02",
-      "publishedAgo": "published 9 days ago",
+      "publishedAgo": "published 10 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -1943,7 +2025,7 @@
       "oldVersion": "13.1.1",
       "newVersion": "13.2.0",
       "releaseDate": "2026-09-02",
-      "publishedAgo": "published 9 days ago",
+      "publishedAgo": "published 10 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -1973,47 +2055,6 @@
       ]
     },
     {
-      "id": "react-hook-form-7-87-0",
-      "packageName": "react-hook-form",
-      "packageSlug": "react-hook-form",
-      "description": "React form state",
-      "oldVersion": "7.86.0",
-      "newVersion": "7.87.0",
-      "releaseDate": "2026-08-30",
-      "publishedAgo": "published 12 days ago",
-      "isRecent": true,
-      "risk": "review",
-      "category": "Minor version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Minor version release detected with no OSV match.",
-      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
-      "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
-      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-      "whatChanged": "GitHub release note found: Version 7.87.0.",
-      "githubReleaseTitle": "Version 7.87.0",
-      "githubReleaseUrl": "https://github.com/react-hook-form/react-hook-form/releases/tag/v7.87.0",
-      "githubReleaseTag": "v7.87.0",
-      "githubReleasePublishedAt": "2026-08-30T02:41:55Z",
-      "releaseNotesExcerpt": "Features **Add shouldTouch option to trigger()** ([#13671](https://github.com/react-hook-form/react-hook-form/pull/13671)) setValue already supported shouldTouch; trigger() now does too. This allows you to mark field(s) as touched after manual or programmatic validation, such as ",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/react-hook-form/7.87.0",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/react-hook-form"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/react-hook-form/react-hook-form"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/react-hook-form/react-hook-form/releases/tag/v7.87.0"
-        }
-      ]
-    },
-    {
       "id": "svelte-5-57-0",
       "packageName": "svelte",
       "packageSlug": "svelte",
@@ -2021,7 +2062,7 @@
       "oldVersion": "5.56.10",
       "newVersion": "5.57.0",
       "releaseDate": "2026-08-28",
-      "publishedAgo": "published 13 days ago",
+      "publishedAgo": "published 14 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2062,7 +2103,7 @@
       "oldVersion": "2.0.2",
       "newVersion": "2.1.0",
       "releaseDate": "2026-08-28",
-      "publishedAgo": "published 14 days ago",
+      "publishedAgo": "published 15 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2103,7 +2144,7 @@
       "oldVersion": "3.36.1",
       "newVersion": "3.37.0",
       "releaseDate": "2026-08-28",
-      "publishedAgo": "published 14 days ago",
+      "publishedAgo": "published 15 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2144,7 +2185,7 @@
       "oldVersion": "9.3.1",
       "newVersion": "9.4.0",
       "releaseDate": "2026-08-27",
-      "publishedAgo": "published 15 days ago",
+      "publishedAgo": "published 16 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2185,7 +2226,7 @@
       "oldVersion": "1.19.0",
       "newVersion": "1.20.0",
       "releaseDate": "2026-08-26",
-      "publishedAgo": "published 16 days ago",
+      "publishedAgo": "published 17 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2226,7 +2267,7 @@
       "oldVersion": "2.14.7",
       "newVersion": "2.15.0",
       "releaseDate": "2026-07-08",
-      "publishedAgo": "published 65 days ago",
+      "publishedAgo": "published 66 days ago",
       "isRecent": false,
       "risk": "review",
       "category": "Minor version",
@@ -2267,7 +2308,7 @@
       "oldVersion": "4.3.0",
       "newVersion": "4.4.0",
       "releaseDate": "2026-05-29",
-      "publishedAgo": "published 104 days ago",
+      "publishedAgo": "published 105 days ago",
       "isRecent": false,
       "risk": "review",
       "category": "Minor version",
@@ -2308,7 +2349,7 @@
       "oldVersion": "2.11.2",
       "newVersion": "2.12.0",
       "releaseDate": "2026-05-15",
-      "publishedAgo": "published 119 days ago",
+      "publishedAgo": "published 120 days ago",
       "isRecent": false,
       "risk": "review",
       "category": "Minor version",
@@ -2349,7 +2390,7 @@
       "oldVersion": "3.5.0",
       "newVersion": "3.6.0",
       "releaseDate": "2026-05-10",
-      "publishedAgo": "published 124 days ago",
+      "publishedAgo": "published 125 days ago",
       "isRecent": false,
       "risk": "review",
       "category": "Minor version",
@@ -2465,6 +2506,170 @@
       ]
     },
     {
+      "id": "rollup-4-63-2",
+      "packageName": "rollup",
+      "packageSlug": "rollup",
+      "description": "Module bundler",
+      "oldVersion": "4.63.1",
+      "newVersion": "4.63.2",
+      "releaseDate": "2026-09-12",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "low",
+      "category": "Patch version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: v4.63.2.",
+      "githubReleaseTitle": "v4.63.2",
+      "githubReleaseUrl": "https://github.com/rollup/rollup/releases/tag/v4.63.2",
+      "githubReleaseTag": "v4.63.2",
+      "githubReleasePublishedAt": "2026-09-12T06:39:14Z",
+      "releaseNotesExcerpt": "4.63.2 _2026-09-12_ Bug Fixes Fix a bug when filtering logs for nested properties via the CLI (#6511) Pull Requests #6498: chore(deps): lock file maintenance (@renovate[bot]) #6503: fix(deps): update minor/patch updates (@renovate[bot]) #6504: chore(deps): update dependency eslin",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/rollup/4.63.2",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/rollup"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/rollup/rollup"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/rollup/rollup/releases/tag/v4.63.2"
+        }
+      ]
+    },
+    {
+      "id": "happy-dom-20-14-5",
+      "packageName": "happy-dom",
+      "packageSlug": "happy-dom",
+      "description": "Browser environment for testing",
+      "oldVersion": "20.14.4",
+      "newVersion": "20.14.5",
+      "releaseDate": "2026-09-12",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "low",
+      "category": "Patch version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: v20.14.5.",
+      "githubReleaseTitle": "v20.14.5",
+      "githubReleaseUrl": "https://github.com/capricorn86/happy-dom/releases/tag/v20.14.5",
+      "githubReleaseTag": "v20.14.5",
+      "githubReleasePublishedAt": "2026-09-12T00:05:16Z",
+      "releaseNotesExcerpt": ":construction_worker_man: Patch fixes - Preserve character references in comment data - By **@hampustagerud** in task #2409",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/happy-dom/20.14.5",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/happy-dom"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/capricorn86/happy-dom"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/capricorn86/happy-dom/releases/tag/v20.14.5"
+        }
+      ]
+    },
+    {
+      "id": "sass-1-104-1",
+      "packageName": "sass",
+      "packageSlug": "sass",
+      "description": "CSS preprocessor",
+      "oldVersion": "1.104.0",
+      "newVersion": "1.104.1",
+      "releaseDate": "2026-09-12",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "low",
+      "category": "Patch version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: Dart Sass 1.104.1.",
+      "githubReleaseTitle": "Dart Sass 1.104.1",
+      "githubReleaseUrl": "https://github.com/sass/dart-sass/releases/tag/1.104.1",
+      "githubReleaseTag": "1.104.1",
+      "githubReleasePublishedAt": "2026-09-12T07:49:38Z",
+      "releaseNotesExcerpt": "To install Sass 1.104.1, download one of the packages below and [add it to your PATH][], or see [the Sass website][] for full installation instructions. [add it to your PATH]: https://katiek2.github.io/path-doc/ [the Sass website]: https://sass-lang.com/install Changes Fix a bug ",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/sass/1.104.1",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/sass"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/sass/dart-sass"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/sass/dart-sass/releases/tag/1.104.1"
+        }
+      ]
+    },
+    {
+      "id": "next-16-3-5",
+      "packageName": "next",
+      "packageSlug": "next",
+      "description": "React framework",
+      "oldVersion": "16.3.4",
+      "newVersion": "16.3.5",
+      "releaseDate": "2026-09-11",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "low",
+      "category": "Patch version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: v16.3.5.",
+      "githubReleaseTitle": "v16.3.5",
+      "githubReleaseUrl": "https://github.com/vercel/next.js/releases/tag/v16.3.5",
+      "githubReleaseTag": "v16.3.5",
+      "githubReleasePublishedAt": "2026-09-11T19:15:50Z",
+      "releaseNotesExcerpt": "The following bug fixes have been backported. It does not include all pending features/changes on canary. next/image: Skip 0-byte entries when initializing disk LRU cache (#98185) next/image: Reject empty images when reading/writing to the disk cache (#98186) Emit whole-app serve",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/next/16.3.5",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/next"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/vercel/next.js"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/vercel/next.js/releases/tag/v16.3.5"
+        }
+      ]
+    },
+    {
       "id": "babel-core-8-0-5",
       "packageName": "@babel/core",
       "packageSlug": "babel-core",
@@ -2472,7 +2677,7 @@
       "oldVersion": "8.0.1",
       "newVersion": "8.0.5",
       "releaseDate": "2026-09-10",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2513,7 +2718,7 @@
       "oldVersion": "8.0.2",
       "newVersion": "8.0.5",
       "releaseDate": "2026-09-10",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2554,7 +2759,7 @@
       "oldVersion": "4.6.1",
       "newVersion": "4.6.2",
       "releaseDate": "2026-09-10",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2588,47 +2793,6 @@
       ]
     },
     {
-      "id": "autoprefixer-10-5-6",
-      "packageName": "autoprefixer",
-      "packageSlug": "autoprefixer",
-      "description": "CSS vendor prefixing",
-      "oldVersion": "10.5.5",
-      "newVersion": "10.5.6",
-      "releaseDate": "2026-09-10",
-      "publishedAgo": "published 1 day ago",
-      "isRecent": true,
-      "risk": "low",
-      "category": "Patch version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Patch release with no OSV match.",
-      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "GitHub release note found: 10.5.6.",
-      "githubReleaseTitle": "10.5.6",
-      "githubReleaseUrl": "https://github.com/postcss/autoprefixer/releases/tag/10.5.6",
-      "githubReleaseTag": "10.5.6",
-      "githubReleasePublishedAt": "2026-09-10T14:13:48Z",
-      "releaseNotesExcerpt": "Fixed producing wrong old -webkit- gradients (by @ryanchou1994).",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/autoprefixer/10.5.6",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/autoprefixer"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/postcss/autoprefixer"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/postcss/autoprefixer/releases/tag/10.5.6"
-        }
-      ]
-    },
-    {
       "id": "pnpm-12-4-1",
       "packageName": "pnpm",
       "packageSlug": "pnpm",
@@ -2636,7 +2800,7 @@
       "oldVersion": "12.4.0",
       "newVersion": "12.4.1",
       "releaseDate": "2026-09-10",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2677,7 +2841,7 @@
       "oldVersion": "22.1.5",
       "newVersion": "22.1.6",
       "releaseDate": "2026-09-09",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2711,47 +2875,6 @@
       ]
     },
     {
-      "id": "happy-dom-20-14-3",
-      "packageName": "happy-dom",
-      "packageSlug": "happy-dom",
-      "description": "Browser environment for testing",
-      "oldVersion": "20.14.2",
-      "newVersion": "20.14.3",
-      "releaseDate": "2026-09-09",
-      "publishedAgo": "published 1 day ago",
-      "isRecent": true,
-      "risk": "low",
-      "category": "Patch version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Patch release with no OSV match.",
-      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "GitHub release note found: v20.14.3.",
-      "githubReleaseTitle": "v20.14.3",
-      "githubReleaseUrl": "https://github.com/capricorn86/happy-dom/releases/tag/v20.14.3",
-      "githubReleaseTag": "v20.14.3",
-      "githubReleasePublishedAt": "2026-09-09T22:36:10Z",
-      "releaseNotesExcerpt": ":construction_worker_man: Patch fixes - Avoids cloning all properties in CSSPropertyManager.toString - By **@erictheswift** in task #2363",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/happy-dom/20.14.3",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/happy-dom"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/capricorn86/happy-dom"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/capricorn86/happy-dom/releases/tag/v20.14.3"
-        }
-      ]
-    },
-    {
       "id": "astro-7-3-2",
       "packageName": "astro",
       "packageSlug": "astro",
@@ -2759,7 +2882,7 @@
       "oldVersion": "7.3.1",
       "newVersion": "7.3.2",
       "releaseDate": "2026-09-08",
-      "publishedAgo": "published 3 days ago",
+      "publishedAgo": "published 4 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2800,7 +2923,7 @@
       "oldVersion": "1.16.1",
       "newVersion": "1.16.2",
       "releaseDate": "2026-09-04",
-      "publishedAgo": "published 6 days ago",
+      "publishedAgo": "published 7 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2841,7 +2964,7 @@
       "oldVersion": "8.5.27",
       "newVersion": "8.5.28",
       "releaseDate": "2026-09-03",
-      "publishedAgo": "published 8 days ago",
+      "publishedAgo": "published 9 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2882,7 +3005,7 @@
       "oldVersion": "4.9.0",
       "newVersion": "4.9.1",
       "releaseDate": "2026-09-02",
-      "publishedAgo": "published 8 days ago",
+      "publishedAgo": "published 9 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2923,7 +3046,7 @@
       "oldVersion": "5.110.2",
       "newVersion": "5.110.3",
       "releaseDate": "2026-09-01",
-      "publishedAgo": "published 9 days ago",
+      "publishedAgo": "published 10 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2964,7 +3087,7 @@
       "oldVersion": "30.5.0",
       "newVersion": "30.5.1",
       "releaseDate": "2026-09-01",
-      "publishedAgo": "published 10 days ago",
+      "publishedAgo": "published 11 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2998,88 +3121,6 @@
       ]
     },
     {
-      "id": "next-16-3-4",
-      "packageName": "next",
-      "packageSlug": "next",
-      "description": "React framework",
-      "oldVersion": "16.3.3",
-      "newVersion": "16.3.4",
-      "releaseDate": "2026-08-31",
-      "publishedAgo": "published 10 days ago",
-      "isRecent": true,
-      "risk": "low",
-      "category": "Patch version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Patch release with no OSV match.",
-      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "GitHub release note found: v16.3.4.",
-      "githubReleaseTitle": "v16.3.4",
-      "githubReleaseUrl": "https://github.com/vercel/next.js/releases/tag/v16.3.4",
-      "githubReleaseTag": "v16.3.4",
-      "githubReleasePublishedAt": "2026-08-31T20:02:15Z",
-      "releaseNotesExcerpt": "Follow-up release to v16.3.3 re-enabling AVIF Image Optimization (#97949). The following bug fixes have been backported. It does **not** include all pending features/changes on canary. testmode: Fix infinite recursion in testmode passthrough fetch (#97691) Fix build error when al",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/next/16.3.4",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/next"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/vercel/next.js"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/vercel/next.js/releases/tag/v16.3.4"
-        }
-      ]
-    },
-    {
-      "id": "rollup-4-63-1",
-      "packageName": "rollup",
-      "packageSlug": "rollup",
-      "description": "Module bundler",
-      "oldVersion": "4.63.0",
-      "newVersion": "4.63.1",
-      "releaseDate": "2026-08-28",
-      "publishedAgo": "published 14 days ago",
-      "isRecent": true,
-      "risk": "low",
-      "category": "Patch version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Patch release with no OSV match.",
-      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-      "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
-      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "GitHub release note found: v4.63.1.",
-      "githubReleaseTitle": "v4.63.1",
-      "githubReleaseUrl": "https://github.com/rollup/rollup/releases/tag/v4.63.1",
-      "githubReleaseTag": "v4.63.1",
-      "githubReleasePublishedAt": "2026-08-28T06:01:35Z",
-      "releaseNotesExcerpt": "4.63.1 _2026-08-28_ Bug Fixes Revert function return value tracking until the most recent issue is understood (#6490) Pull Requests #6489: fix(deps): update minor/patch updates (@renovate[bot]) #6490: Revert improve function return value tracking (@lukastaegert)",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/rollup/4.63.1",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/rollup"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/rollup/rollup"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/rollup/rollup/releases/tag/v4.63.1"
-        }
-      ]
-    },
-    {
       "id": "vitejs-plugin-react-6-1-1",
       "packageName": "@vitejs/plugin-react",
       "packageSlug": "vitejs-plugin-react",
@@ -3087,7 +3128,7 @@
       "oldVersion": "6.1.0",
       "newVersion": "6.1.1",
       "releaseDate": "2026-08-28",
-      "publishedAgo": "published 14 days ago",
+      "publishedAgo": "published 15 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3128,7 +3169,7 @@
       "oldVersion": "7.18.2",
       "newVersion": "7.18.3",
       "releaseDate": "2026-08-28",
-      "publishedAgo": "published 14 days ago",
+      "publishedAgo": "published 15 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3169,7 +3210,7 @@
       "oldVersion": "3.5.41",
       "newVersion": "3.5.42",
       "releaseDate": "2026-08-27",
-      "publishedAgo": "published 15 days ago",
+      "publishedAgo": "published 16 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3210,7 +3251,7 @@
       "oldVersion": "5.102.7",
       "newVersion": "5.102.8",
       "releaseDate": "2026-08-27",
-      "publishedAgo": "published 15 days ago",
+      "publishedAgo": "published 16 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3251,7 +3292,7 @@
       "oldVersion": "16.3.2",
       "newVersion": "16.3.3",
       "releaseDate": "2026-08-27",
-      "publishedAgo": "published 14 days ago",
+      "publishedAgo": "published 15 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3292,7 +3333,7 @@
       "oldVersion": "2.10.11",
       "newVersion": "2.10.12",
       "releaseDate": "2026-08-25",
-      "publishedAgo": "published 16 days ago",
+      "publishedAgo": "published 17 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3333,7 +3374,7 @@
       "oldVersion": "11.1.17",
       "newVersion": "11.1.18",
       "releaseDate": "2026-08-19",
-      "publishedAgo": "published 23 days ago",
+      "publishedAgo": "published 24 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3374,7 +3415,7 @@
       "oldVersion": "14.0.1",
       "newVersion": "14.0.2",
       "releaseDate": "2026-08-18",
-      "publishedAgo": "published 23 days ago",
+      "publishedAgo": "published 24 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3415,7 +3456,7 @@
       "oldVersion": "1.9.14",
       "newVersion": "1.9.15",
       "releaseDate": "2026-08-17",
-      "publishedAgo": "published 24 days ago",
+      "publishedAgo": "published 25 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3452,7 +3493,7 @@
       "oldVersion": "1.11.22",
       "newVersion": "1.11.23",
       "releaseDate": "2026-08-17",
-      "publishedAgo": "published 25 days ago",
+      "publishedAgo": "published 26 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3493,7 +3534,7 @@
       "oldVersion": "6.5.2",
       "newVersion": "6.5.3",
       "releaseDate": "2026-08-15",
-      "publishedAgo": "published 27 days ago",
+      "publishedAgo": "published 28 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3527,47 +3568,6 @@
       ]
     },
     {
-      "id": "apollo-client-4-2-12",
-      "packageName": "@apollo/client",
-      "packageSlug": "apollo-client",
-      "description": "GraphQL client",
-      "oldVersion": "4.2.11",
-      "newVersion": "4.2.12",
-      "releaseDate": "2026-08-14",
-      "publishedAgo": "published 28 days ago",
-      "isRecent": true,
-      "risk": "low",
-      "category": "Patch version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Patch release with no OSV match.",
-      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "GitHub release note found: @apollo/client@4.2.12.",
-      "githubReleaseTitle": "@apollo/client@4.2.12",
-      "githubReleaseUrl": "https://github.com/apollographql/apollo-client/releases/tag/%40apollo/client%404.2.12",
-      "githubReleaseTag": "@apollo/client@4.2.12",
-      "githubReleasePublishedAt": "2026-08-13T22:51:15Z",
-      "releaseNotesExcerpt": "Patch Changes #13400 56ca81b Thanks @QiRaining! - Preserve multi-byte UTF-8 characters split across multipart response chunks.",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/apollo-client/4.2.12",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/@apollo/client"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/apollographql/apollo-client"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/apollographql/apollo-client/releases/tag/%40apollo/client%404.2.12"
-        }
-      ]
-    },
-    {
       "id": "zustand-5-0-15",
       "packageName": "zustand",
       "packageSlug": "zustand",
@@ -3575,7 +3575,7 @@
       "oldVersion": "5.0.14",
       "newVersion": "5.0.15",
       "releaseDate": "2026-08-13",
-      "publishedAgo": "published 29 days ago",
+      "publishedAgo": "published 30 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3616,8 +3616,8 @@
       "oldVersion": "2.5.0",
       "newVersion": "2.5.1",
       "releaseDate": "2026-08-12",
-      "publishedAgo": "published 30 days ago",
-      "isRecent": true,
+      "publishedAgo": "published 31 days ago",
+      "isRecent": false,
       "risk": "low",
       "category": "Patch version",
       "osv": "No OSV match",
@@ -3657,7 +3657,7 @@
       "oldVersion": "7.0.0",
       "newVersion": "7.0.1",
       "releaseDate": "2026-08-09",
-      "publishedAgo": "published 32 days ago",
+      "publishedAgo": "published 33 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3698,7 +3698,7 @@
       "oldVersion": "0.28.1",
       "newVersion": "0.28.2",
       "releaseDate": "2026-08-08",
-      "publishedAgo": "published 33 days ago",
+      "publishedAgo": "published 34 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3739,7 +3739,7 @@
       "oldVersion": "8.21.2",
       "newVersion": "8.21.3",
       "releaseDate": "2026-08-07",
-      "publishedAgo": "published 35 days ago",
+      "publishedAgo": "published 36 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3780,7 +3780,7 @@
       "oldVersion": "4.5.1",
       "newVersion": "4.5.2",
       "releaseDate": "2026-08-05",
-      "publishedAgo": "published 37 days ago",
+      "publishedAgo": "published 38 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3821,7 +3821,7 @@
       "oldVersion": "6.0.0",
       "newVersion": "6.0.1",
       "releaseDate": "2026-08-03",
-      "publishedAgo": "published 39 days ago",
+      "publishedAgo": "published 40 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3862,7 +3862,7 @@
       "oldVersion": "1.1.22",
       "newVersion": "1.1.23",
       "releaseDate": "2026-07-24",
-      "publishedAgo": "published 48 days ago",
+      "publishedAgo": "published 49 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3899,7 +3899,7 @@
       "oldVersion": "1.1.22",
       "newVersion": "1.1.23",
       "releaseDate": "2026-07-24",
-      "publishedAgo": "published 48 days ago",
+      "publishedAgo": "published 49 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3936,7 +3936,7 @@
       "oldVersion": "3.9.5",
       "newVersion": "3.9.6",
       "releaseDate": "2026-07-21",
-      "publishedAgo": "published 52 days ago",
+      "publishedAgo": "published 53 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -3977,7 +3977,7 @@
       "oldVersion": "4.3.2",
       "newVersion": "4.3.3",
       "releaseDate": "2026-07-16",
-      "publishedAgo": "published 57 days ago",
+      "publishedAgo": "published 58 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4018,7 +4018,7 @@
       "oldVersion": "17.0.1",
       "newVersion": "17.0.2",
       "releaseDate": "2026-07-03",
-      "publishedAgo": "published 70 days ago",
+      "publishedAgo": "published 71 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4059,7 +4059,7 @@
       "oldVersion": "7.8.4",
       "newVersion": "7.8.5",
       "releaseDate": "2026-06-19",
-      "publishedAgo": "published 83 days ago",
+      "publishedAgo": "published 84 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4100,7 +4100,7 @@
       "oldVersion": "8.0.0",
       "newVersion": "8.0.1",
       "releaseDate": "2026-06-17",
-      "publishedAgo": "published 86 days ago",
+      "publishedAgo": "published 87 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4141,7 +4141,7 @@
       "oldVersion": "2.17.4",
       "newVersion": "2.17.5",
       "releaseDate": "2026-06-01",
-      "publishedAgo": "published 102 days ago",
+      "publishedAgo": "published 103 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4178,7 +4178,7 @@
       "oldVersion": "4.18.0",
       "newVersion": "4.18.1",
       "releaseDate": "2026-04-01",
-      "publishedAgo": "published 162 days ago",
+      "publishedAgo": "published 163 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4219,7 +4219,7 @@
       "oldVersion": "5.16.0",
       "newVersion": "5.16.1",
       "releaseDate": "2026-02-10",
-      "publishedAgo": "published 213 days ago",
+      "publishedAgo": "published 214 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4260,7 +4260,7 @@
       "oldVersion": "2.16.3",
       "newVersion": "2.16.4",
       "releaseDate": "2026-02-02",
-      "publishedAgo": "published 221 days ago",
+      "publishedAgo": "published 222 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4301,7 +4301,7 @@
       "oldVersion": "8.5.0",
       "newVersion": "8.5.1",
       "releaseDate": "2025-11-12",
-      "publishedAgo": "published 302 days ago",
+      "publishedAgo": "published 303 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4383,7 +4383,7 @@
       "oldVersion": "1.7.0",
       "newVersion": "1.7.1",
       "releaseDate": "2025-09-21",
-      "publishedAgo": "published 355 days ago",
+      "publishedAgo": "published 356 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4631,7 +4631,7 @@
       "packageName": "next",
       "description": "React framework",
       "route": "/package/next",
-      "latestReleaseRoute": "/package/next/16.3.4",
+      "latestReleaseRoute": "/package/next/16.3.5",
       "areaSlug": "core-frameworks",
       "areaLabel": "Frameworks and Core UI"
     },
@@ -4719,7 +4719,7 @@
       "packageName": "rollup",
       "description": "Module bundler",
       "route": "/package/rollup",
-      "latestReleaseRoute": "/package/rollup/4.63.1",
+      "latestReleaseRoute": "/package/rollup/4.63.2",
       "areaSlug": "build-tooling",
       "areaLabel": "Build Tooling"
     },
@@ -4919,7 +4919,7 @@
       "packageName": "@apollo/client",
       "description": "GraphQL client",
       "route": "/package/apollo-client",
-      "latestReleaseRoute": "/package/apollo-client/4.2.12",
+      "latestReleaseRoute": "/package/apollo-client/4.3.0",
       "areaSlug": "routing-state-data",
       "areaLabel": "Routing, State, and Data"
     },
@@ -4943,7 +4943,7 @@
       "packageName": "react-hook-form",
       "description": "React form state",
       "route": "/package/react-hook-form",
-      "latestReleaseRoute": "/package/react-hook-form/7.87.0",
+      "latestReleaseRoute": "/package/react-hook-form/7.88.0",
       "areaSlug": "forms-validation",
       "areaLabel": "Forms and Validation"
     },
@@ -5047,7 +5047,7 @@
       "packageName": "happy-dom",
       "description": "Browser environment for testing",
       "route": "/package/happy-dom",
-      "latestReleaseRoute": "/package/happy-dom/20.14.3",
+      "latestReleaseRoute": "/package/happy-dom/20.14.5",
       "areaSlug": "testing-storybook",
       "areaLabel": "Testing and Storybook"
     },
@@ -5071,7 +5071,7 @@
       "packageName": "autoprefixer",
       "description": "CSS vendor prefixing",
       "route": "/package/autoprefixer",
-      "latestReleaseRoute": "/package/autoprefixer/10.5.6",
+      "latestReleaseRoute": "/package/autoprefixer/10.6.0",
       "areaSlug": "css-ui",
       "areaLabel": "CSS and UI Libraries"
     },
@@ -5079,7 +5079,7 @@
       "packageName": "sass",
       "description": "CSS preprocessor",
       "route": "/package/sass",
-      "latestReleaseRoute": "/package/sass/1.104.0",
+      "latestReleaseRoute": "/package/sass/1.104.1",
       "areaSlug": "css-ui",
       "areaLabel": "CSS and UI Libraries"
     },
@@ -5312,7 +5312,7 @@
           "packageName": "next",
           "description": "React framework",
           "route": "/package/next",
-          "latestReleaseRoute": "/package/next/16.3.4",
+          "latestReleaseRoute": "/package/next/16.3.5",
           "areaSlug": "core-frameworks",
           "areaLabel": "Frameworks and Core UI"
         },
@@ -5433,7 +5433,7 @@
           "packageName": "rollup",
           "description": "Module bundler",
           "route": "/package/rollup",
-          "latestReleaseRoute": "/package/rollup/4.63.1",
+          "latestReleaseRoute": "/package/rollup/4.63.2",
           "areaSlug": "build-tooling",
           "areaLabel": "Build Tooling"
         },
@@ -5547,7 +5547,7 @@
           "packageName": "@apollo/client",
           "description": "GraphQL client",
           "route": "/package/apollo-client",
-          "latestReleaseRoute": "/package/apollo-client/4.2.12",
+          "latestReleaseRoute": "/package/apollo-client/4.3.0",
           "areaSlug": "routing-state-data",
           "areaLabel": "Routing, State, and Data"
         },
@@ -5652,7 +5652,7 @@
           "packageName": "react-hook-form",
           "description": "React form state",
           "route": "/package/react-hook-form",
-          "latestReleaseRoute": "/package/react-hook-form/7.87.0",
+          "latestReleaseRoute": "/package/react-hook-form/7.88.0",
           "areaSlug": "forms-validation",
           "areaLabel": "Forms and Validation"
         },
@@ -5717,7 +5717,7 @@
           "packageName": "happy-dom",
           "description": "Browser environment for testing",
           "route": "/package/happy-dom",
-          "latestReleaseRoute": "/package/happy-dom/20.14.3",
+          "latestReleaseRoute": "/package/happy-dom/20.14.5",
           "areaSlug": "testing-storybook",
           "areaLabel": "Testing and Storybook"
         },
@@ -5814,7 +5814,7 @@
           "packageName": "autoprefixer",
           "description": "CSS vendor prefixing",
           "route": "/package/autoprefixer",
-          "latestReleaseRoute": "/package/autoprefixer/10.5.6",
+          "latestReleaseRoute": "/package/autoprefixer/10.6.0",
           "areaSlug": "css-ui",
           "areaLabel": "CSS and UI Libraries"
         },
@@ -5878,7 +5878,7 @@
           "packageName": "sass",
           "description": "CSS preprocessor",
           "route": "/package/sass",
-          "latestReleaseRoute": "/package/sass/1.104.0",
+          "latestReleaseRoute": "/package/sass/1.104.1",
           "areaSlug": "css-ui",
           "areaLabel": "CSS and UI Libraries"
         },
@@ -6032,7 +6032,7 @@
     "/weekly/2026-w37": {
       "path": "/weekly/2026-w37",
       "title": "Week 37, 2026 frontend npm risk archive",
-      "description": "Sep 7 - Sep 13 archive for frontend npm dependency risk: 29 risky updates, 3 breaking releases, 0 security updates, OSV/CVE checks, and recommended actions."
+      "description": "Sep 7 - Sep 13 archive for frontend npm dependency risk: 30 risky updates, 3 breaking releases, 0 security updates, OSV/CVE checks, and recommended actions."
     },
     "/weekly/2026-w36": {
       "path": "/weekly/2026-w36",
@@ -6569,6 +6569,21 @@
       "title": "typescript 7.0.2 npm major version update",
       "description": "typescript 7.0.2 frontend npm update risk: Major version release detected. OSV: No OSV match. CVE: No CVE match. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were..."
     },
+    "/package/autoprefixer/10.6.0": {
+      "path": "/package/autoprefixer/10.6.0",
+      "title": "autoprefixer 10.6.0 npm minor version update",
+      "description": "autoprefixer 10.6.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release..."
+    },
+    "/package/apollo-client/4.3.0": {
+      "path": "/package/apollo-client/4.3.0",
+      "title": "@apollo/client 4.3.0 npm minor version update",
+      "description": "@apollo/client 4.3.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub..."
+    },
+    "/package/react-hook-form/7.88.0": {
+      "path": "/package/react-hook-form/7.88.0",
+      "title": "react-hook-form 7.88.0 npm minor version update",
+      "description": "react-hook-form 7.88.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub..."
+    },
     "/package/lucide-react/1.45.0": {
       "path": "/package/lucide-react/1.45.0",
       "title": "lucide-react 1.45.0 npm minor version update",
@@ -6619,11 +6634,6 @@
       "title": "playwright 1.63.0 npm minor version update",
       "description": "playwright 1.63.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release..."
     },
-    "/package/sass/1.104.0": {
-      "path": "/package/sass/1.104.0",
-      "title": "sass 1.104.0 npm minor version update",
-      "description": "sass 1.104.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes..."
-    },
     "/package/storybook-react/10.6.0": {
       "path": "/package/storybook-react/10.6.0",
       "title": "@storybook/react 10.6.0 npm minor version update",
@@ -6638,11 +6648,6 @@
       "path": "/package/framer-motion/13.2.0",
       "title": "framer-motion 13.2.0 npm minor version update",
       "description": "framer-motion 13.2.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance."
-    },
-    "/package/react-hook-form/7.87.0": {
-      "path": "/package/react-hook-form/7.87.0",
-      "title": "react-hook-form 7.87.0 npm minor version update",
-      "description": "react-hook-form 7.87.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub..."
     },
     "/package/svelte/5.57.0": {
       "path": "/package/svelte/5.57.0",
@@ -6699,6 +6704,26 @@
       "title": "npm-run-all 4.1.5 npm release-note review update",
       "description": "npm-run-all 4.1.5 frontend npm update risk: Release notes mention security language, but no OSV or CVE match was found. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Confirm against OSV and CVE..."
     },
+    "/package/rollup/4.63.2": {
+      "path": "/package/rollup/4.63.2",
+      "title": "rollup 4.63.2 npm patch version update",
+      "description": "rollup 4.63.2 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
+    "/package/happy-dom/20.14.5": {
+      "path": "/package/happy-dom/20.14.5",
+      "title": "happy-dom 20.14.5 npm patch version update",
+      "description": "happy-dom 20.14.5 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
+    "/package/sass/1.104.1": {
+      "path": "/package/sass/1.104.1",
+      "title": "sass 1.104.1 npm patch version update",
+      "description": "sass 1.104.1 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
+    "/package/next/16.3.5": {
+      "path": "/package/next/16.3.5",
+      "title": "next 16.3.5 npm patch version update",
+      "description": "next 16.3.5 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
     "/package/babel-core/8.0.5": {
       "path": "/package/babel-core/8.0.5",
       "title": "@babel/core 8.0.5 npm patch version update",
@@ -6714,11 +6739,6 @@
       "title": "zod 4.6.2 npm patch version update",
       "description": "zod 4.6.2 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
-    "/package/autoprefixer/10.5.6": {
-      "path": "/package/autoprefixer/10.5.6",
-      "title": "autoprefixer 10.5.6 npm patch version update",
-      "description": "autoprefixer 10.5.6 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-    },
     "/package/pnpm/12.4.1": {
       "path": "/package/pnpm/12.4.1",
       "title": "pnpm 12.4.1 npm patch version update",
@@ -6728,11 +6748,6 @@
       "path": "/package/angular-core/22.1.6",
       "title": "@angular/core 22.1.6 npm patch version update",
       "description": "@angular/core 22.1.6 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-    },
-    "/package/happy-dom/20.14.3": {
-      "path": "/package/happy-dom/20.14.3",
-      "title": "happy-dom 20.14.3 npm patch version update",
-      "description": "happy-dom 20.14.3 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/astro/7.3.2": {
       "path": "/package/astro/7.3.2",
@@ -6763,16 +6778,6 @@
       "path": "/package/jest/30.5.1",
       "title": "jest 30.5.1 npm patch version update",
       "description": "jest 30.5.1 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-    },
-    "/package/next/16.3.4": {
-      "path": "/package/next/16.3.4",
-      "title": "next 16.3.4 npm patch version update",
-      "description": "next 16.3.4 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-    },
-    "/package/rollup/4.63.1": {
-      "path": "/package/rollup/4.63.1",
-      "title": "rollup 4.63.1 npm patch version update",
-      "description": "rollup 4.63.1 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/vitejs-plugin-react/6.1.1": {
       "path": "/package/vitejs-plugin-react/6.1.1",
@@ -6828,11 +6833,6 @@
       "path": "/package/styled-components/6.5.3",
       "title": "styled-components 6.5.3 npm patch version update",
       "description": "styled-components 6.5.3 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-    },
-    "/package/apollo-client/4.2.12": {
-      "path": "/package/apollo-client/4.2.12",
-      "title": "@apollo/client 4.2.12 npm patch version update",
-      "description": "@apollo/client 4.2.12 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/zustand/5.0.15": {
       "path": "/package/zustand/5.0.15",
