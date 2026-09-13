@@ -1,5 +1,90 @@
 [
   {
+    "week": "Week 38, 2026",
+    "dateRange": "Sep 7 - Sep 13",
+    "risky": 30,
+    "breaking": 3,
+    "security": 0,
+    "safe": 52,
+    "total": 82,
+    "topSignals": [
+      {
+        "packageName": "vitest",
+        "route": "/package/vitest/5.0.0",
+        "risk": "breaking",
+        "newVersion": "5.0.0",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "cypress",
+        "route": "/package/cypress/16.0.0",
+        "risk": "breaking",
+        "newVersion": "16.0.0",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "typescript",
+        "route": "/package/typescript/7.0.2",
+        "risk": "breaking",
+        "newVersion": "7.0.2",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "autoprefixer",
+        "route": "/package/autoprefixer/10.6.0",
+        "risk": "review",
+        "newVersion": "10.6.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "tailwind-merge",
+        "route": "/package/tailwind-merge/3.7.0",
+        "risk": "review",
+        "newVersion": "3.7.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "@apollo/client",
+        "route": "/package/apollo-client/4.3.0",
+        "risk": "review",
+        "newVersion": "4.3.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "react-hook-form",
+        "route": "/package/react-hook-form/7.88.0",
+        "risk": "review",
+        "newVersion": "7.88.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.45.0",
+        "risk": "review",
+        "newVersion": "1.45.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      }
+    ],
+    "route": "/weekly/2026-w38",
+    "generatedAt": "2026-09-13T16:58:34.584Z"
+  },
+  {
     "week": "Week 37, 2026",
     "dateRange": "Sep 7 - Sep 13",
     "risky": 30,
