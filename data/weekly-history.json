@@ -1,11 +1,11 @@
 [
   {
     "week": "Week 38, 2026",
-    "dateRange": "Sep 7 - Sep 13",
-    "risky": 30,
+    "dateRange": "Sep 14 - Sep 20",
+    "risky": 31,
     "breaking": 3,
     "security": 0,
-    "safe": 52,
+    "safe": 51,
     "total": 82,
     "topSignals": [
       {
@@ -36,6 +36,33 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "webpack",
+        "route": "/package/webpack/5.111.0",
+        "risk": "review",
+        "newVersion": "5.111.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "framer-motion",
+        "route": "/package/framer-motion/13.3.0",
+        "risk": "review",
+        "newVersion": "13.3.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.46.0",
+        "risk": "review",
+        "newVersion": "1.46.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "autoprefixer",
         "route": "/package/autoprefixer/10.6.0",
         "risk": "review",
@@ -52,37 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "@apollo/client",
-        "route": "/package/apollo-client/4.3.0",
-        "risk": "review",
-        "newVersion": "4.3.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "react-hook-form",
-        "route": "/package/react-hook-form/7.88.0",
-        "risk": "review",
-        "newVersion": "7.88.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.45.0",
-        "risk": "review",
-        "newVersion": "1.45.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w38",
-    "generatedAt": "2026-09-13T16:58:34.584Z"
+    "generatedAt": "2026-09-14T18:40:13.582Z"
   },
   {
     "week": "Week 37, 2026",
