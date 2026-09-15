@@ -2,21 +2,12 @@
   {
     "week": "Week 38, 2026",
     "dateRange": "Sep 14 - Sep 20",
-    "risky": 31,
-    "breaking": 3,
+    "risky": 30,
+    "breaking": 2,
     "security": 0,
-    "safe": 51,
+    "safe": 52,
     "total": 82,
     "topSignals": [
-      {
-        "packageName": "vitest",
-        "route": "/package/vitest/5.0.0",
-        "risk": "breaking",
-        "newVersion": "5.0.0",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
-      },
       {
         "packageName": "cypress",
         "route": "/package/cypress/16.0.0",
@@ -34,6 +25,15 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "pnpm",
+        "route": "/package/pnpm/12.4.2",
+        "risk": "review",
+        "newVersion": "12.4.2",
+        "reason": "Release notes mention security language, but no OSV or CVE match was found.",
+        "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
+        "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
       },
       {
         "packageName": "webpack",
@@ -63,15 +63,6 @@
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "autoprefixer",
-        "route": "/package/autoprefixer/10.6.0",
-        "risk": "review",
-        "newVersion": "10.6.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
         "packageName": "tailwind-merge",
         "route": "/package/tailwind-merge/3.7.0",
         "risk": "review",
@@ -79,10 +70,19 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "@apollo/client",
+        "route": "/package/apollo-client/4.3.0",
+        "risk": "review",
+        "newVersion": "4.3.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w38",
-    "generatedAt": "2026-09-14T18:40:13.582Z"
+    "generatedAt": "2026-09-15T17:41:09.211Z"
   },
   {
     "week": "Week 37, 2026",
