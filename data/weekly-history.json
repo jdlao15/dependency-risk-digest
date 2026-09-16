@@ -3,20 +3,11 @@
     "week": "Week 38, 2026",
     "dateRange": "Sep 14 - Sep 20",
     "risky": 30,
-    "breaking": 2,
+    "breaking": 1,
     "security": 0,
     "safe": 52,
     "total": 82,
     "topSignals": [
-      {
-        "packageName": "cypress",
-        "route": "/package/cypress/16.0.0",
-        "risk": "breaking",
-        "newVersion": "16.0.0",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
-      },
       {
         "packageName": "typescript",
         "route": "/package/typescript/7.0.2",
@@ -25,6 +16,24 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "framer-motion",
+        "route": "/package/framer-motion/13.4.0",
+        "risk": "review",
+        "newVersion": "13.4.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "cypress",
+        "route": "/package/cypress/16.1.0",
+        "risk": "review",
+        "newVersion": "16.1.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
         "packageName": "pnpm",
@@ -42,15 +51,6 @@
         "newVersion": "5.111.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "framer-motion",
-        "route": "/package/framer-motion/13.3.0",
-        "risk": "review",
-        "newVersion": "13.3.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
@@ -82,7 +82,7 @@
       }
     ],
     "route": "/weekly/2026-w38",
-    "generatedAt": "2026-09-15T17:41:09.211Z"
+    "generatedAt": "2026-09-16T17:38:24.680Z"
   },
   {
     "week": "Week 37, 2026",
