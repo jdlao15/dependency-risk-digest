@@ -18,6 +18,15 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.47.0",
+        "risk": "review",
+        "newVersion": "1.47.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "framer-motion",
         "route": "/package/framer-motion/13.4.0",
         "risk": "review",
@@ -54,15 +63,6 @@
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.46.0",
-        "risk": "review",
-        "newVersion": "1.46.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
         "packageName": "tailwind-merge",
         "route": "/package/tailwind-merge/3.7.0",
         "risk": "review",
@@ -82,7 +82,7 @@
       }
     ],
     "route": "/weekly/2026-w38",
-    "generatedAt": "2026-09-16T17:38:24.680Z"
+    "generatedAt": "2026-09-17T17:38:58.689Z"
   },
   {
     "week": "Week 37, 2026",
