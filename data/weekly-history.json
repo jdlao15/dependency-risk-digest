@@ -2,10 +2,10 @@
   {
     "week": "Week 38, 2026",
     "dateRange": "Sep 14 - Sep 20",
-    "risky": 29,
+    "risky": 27,
     "breaking": 1,
     "security": 0,
-    "safe": 53,
+    "safe": 55,
     "total": 82,
     "topSignals": [
       {
@@ -18,10 +18,10 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
-        "packageName": "turbo",
-        "route": "/package/turbo/2.11.0",
+        "packageName": "eslint",
+        "route": "/package/eslint/10.11.0",
         "risk": "review",
-        "newVersion": "2.11.0",
+        "newVersion": "10.11.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
@@ -82,7 +82,7 @@
       }
     ],
     "route": "/weekly/2026-w38",
-    "generatedAt": "2026-09-18T17:06:25.845Z"
+    "generatedAt": "2026-09-19T16:31:59.837Z"
   },
   {
     "week": "Week 37, 2026",
