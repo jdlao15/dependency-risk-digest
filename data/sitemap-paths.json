@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T16:50:54.137Z",
+  "generatedAt": "2026-09-21T18:44:52.677Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -135,7 +135,7 @@
     "/package/tailwindcss",
     "/package/tailwindcss/4.3.3",
     "/package/tanstack-react-query",
-    "/package/tanstack-react-query/5.103.1",
+    "/package/tanstack-react-query/5.103.2",
     "/package/testing-library-jest-dom",
     "/package/testing-library-jest-dom/7.0.1",
     "/package/testing-library-react",
@@ -150,9 +150,9 @@
     "/package/types-react/19.3.0",
     "/package/typescript",
     "/package/typescript-eslint-eslint-plugin",
-    "/package/typescript-eslint-eslint-plugin/8.70.0",
+    "/package/typescript-eslint-eslint-plugin/8.70.1",
     "/package/typescript-eslint-parser",
-    "/package/typescript-eslint-parser/8.70.0",
+    "/package/typescript-eslint-parser/8.70.1",
     "/package/typescript/7.0.2",
     "/package/uuid",
     "/package/uuid/14.0.2",

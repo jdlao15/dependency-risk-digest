@@ -1,11 +1,11 @@
 [
   {
     "week": "Week 39, 2026",
-    "dateRange": "Sep 14 - Sep 20",
-    "risky": 26,
+    "dateRange": "Sep 21 - Sep 27",
+    "risky": 24,
     "breaking": 1,
     "security": 0,
-    "safe": 56,
+    "safe": 58,
     "total": 82,
     "topSignals": [
       {
@@ -82,7 +82,7 @@
       }
     ],
     "route": "/weekly/2026-w39",
-    "generatedAt": "2026-09-20T16:50:54.137Z"
+    "generatedAt": "2026-09-21T18:44:52.677Z"
   },
   {
     "week": "Week 38, 2026",
