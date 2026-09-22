@@ -2,10 +2,10 @@
   {
     "week": "Week 39, 2026",
     "dateRange": "Sep 21 - Sep 27",
-    "risky": 24,
+    "risky": 25,
     "breaking": 1,
     "security": 0,
-    "safe": 58,
+    "safe": 57,
     "total": 82,
     "topSignals": [
       {
@@ -16,6 +16,24 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "next",
+        "route": "/package/next/16.3.6",
+        "risk": "review",
+        "newVersion": "16.3.6",
+        "reason": "Release notes mention security language, but no OSV or CVE match was found.",
+        "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
+        "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
+      },
+      {
+        "packageName": "sass",
+        "route": "/package/sass/1.105.0",
+        "risk": "review",
+        "newVersion": "1.105.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
         "packageName": "eslint",
@@ -33,15 +51,6 @@
         "newVersion": "1.47.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "framer-motion",
-        "route": "/package/framer-motion/13.4.0",
-        "risk": "review",
-        "newVersion": "13.4.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
@@ -70,19 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "vite",
-        "route": "/package/vite/8.3.0",
-        "risk": "review",
-        "newVersion": "8.3.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w39",
-    "generatedAt": "2026-09-21T18:44:52.677Z"
+    "generatedAt": "2026-09-22T17:39:18.916Z"
   },
   {
     "week": "Week 38, 2026",
