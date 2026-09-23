@@ -2,10 +2,10 @@
   {
     "week": "Week 39, 2026",
     "dateRange": "Sep 21 - Sep 27",
-    "risky": 25,
+    "risky": 26,
     "breaking": 1,
     "security": 0,
-    "safe": 57,
+    "safe": 56,
     "total": 82,
     "topSignals": [
       {
@@ -31,6 +31,15 @@
         "route": "/package/sass/1.105.0",
         "risk": "review",
         "newVersion": "1.105.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "pnpm",
+        "route": "/package/pnpm/12.6.0",
+        "risk": "review",
+        "newVersion": "12.6.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
@@ -70,19 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "react-hook-form",
-        "route": "/package/react-hook-form/7.88.0",
-        "risk": "review",
-        "newVersion": "7.88.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w39",
-    "generatedAt": "2026-09-22T17:39:18.916Z"
+    "generatedAt": "2026-09-23T17:52:10.676Z"
   },
   {
     "week": "Week 38, 2026",
