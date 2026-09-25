@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T17:52:33.771Z",
+  "generatedAt": "2026-09-25T17:58:34.003Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -49,7 +49,7 @@
     "/package/formik",
     "/package/formik/2.4.9",
     "/package/framer-motion",
-    "/package/framer-motion/13.4.3",
+    "/package/framer-motion/13.4.4",
     "/package/gatsby",
     "/package/gatsby/5.16.1",
     "/package/graphql",
@@ -143,7 +143,7 @@
     "/package/tsup",
     "/package/tsup/8.5.1",
     "/package/turbo",
-    "/package/turbo/2.11.3",
+    "/package/turbo/2.11.4",
     "/package/types-react",
     "/package/types-react-dom",
     "/package/types-react-dom/19.3.0",
@@ -161,7 +161,7 @@
     "/package/vitejs-plugin-react",
     "/package/vitejs-plugin-react/6.1.1",
     "/package/vitest",
-    "/package/vitest/5.0.1",
+    "/package/vitest/5.0.2",
     "/package/vue",
     "/package/vue/3.5.43",
     "/package/webpack",
