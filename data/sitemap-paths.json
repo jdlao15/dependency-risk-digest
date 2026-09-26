@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T17:58:34.003Z",
+  "generatedAt": "2026-09-26T17:14:31.344Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -100,7 +100,7 @@
     "/package/react-dom",
     "/package/react-dom/19.3.0",
     "/package/react-hook-form",
-    "/package/react-hook-form/7.88.0",
+    "/package/react-hook-form/7.89.0",
     "/package/react-router-dom",
     "/package/react-router-dom/7.18.4",
     "/package/react/19.3.0",
@@ -135,7 +135,7 @@
     "/package/tailwindcss",
     "/package/tailwindcss/4.3.3",
     "/package/tanstack-react-query",
-    "/package/tanstack-react-query/5.103.2",
+    "/package/tanstack-react-query/5.104.0",
     "/package/testing-library-jest-dom",
     "/package/testing-library-jest-dom/7.0.1",
     "/package/testing-library-react",
@@ -167,7 +167,7 @@
     "/package/webpack",
     "/package/webpack/5.111.1",
     "/package/ws",
-    "/package/ws/8.21.3",
+    "/package/ws/8.22.0",
     "/package/yup",
     "/package/yup/1.7.1",
     "/package/zod",
