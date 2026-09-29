@@ -2,10 +2,10 @@
   {
     "week": "Week 40, 2026",
     "dateRange": "Sep 28 - Oct 4",
-    "risky": 30,
+    "risky": 25,
     "breaking": 2,
     "security": 0,
-    "safe": 52,
+    "safe": 57,
     "total": 82,
     "topSignals": [
       {
@@ -25,6 +25,15 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "@reduxjs/toolkit",
+        "route": "/package/reduxjs-toolkit/2.13.0",
+        "risk": "review",
+        "newVersion": "2.13.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
         "packageName": "@typescript-eslint/parser",
@@ -70,19 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.48.0",
-        "risk": "review",
-        "newVersion": "1.48.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w40",
-    "generatedAt": "2026-09-28T20:08:24.829Z"
+    "generatedAt": "2026-09-29T18:40:02.849Z"
   },
   {
     "week": "Week 39, 2026",
