@@ -18,6 +18,15 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "framer-motion",
+        "route": "/package/framer-motion/13.5.0",
+        "risk": "review",
+        "newVersion": "13.5.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "next",
         "route": "/package/next/16.3.8",
         "risk": "review",
@@ -70,19 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "react-hook-form",
-        "route": "/package/react-hook-form/7.89.0",
-        "risk": "review",
-        "newVersion": "7.89.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w40",
-    "generatedAt": "2026-09-30T18:27:31.330Z"
+    "generatedAt": "2026-10-01T18:55:04.966Z"
   },
   {
     "week": "Week 39, 2026",
