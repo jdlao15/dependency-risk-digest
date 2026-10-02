@@ -3,11 +3,20 @@
     "week": "Week 40, 2026",
     "dateRange": "Sep 28 - Oct 4",
     "risky": 24,
-    "breaking": 1,
+    "breaking": 2,
     "security": 0,
     "safe": 58,
     "total": 82,
     "topSignals": [
+      {
+        "packageName": "framer-motion",
+        "route": "/package/framer-motion/14.0.0",
+        "risk": "breaking",
+        "newVersion": "14.0.0",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
       {
         "packageName": "typescript",
         "route": "/package/typescript/7.0.2",
@@ -18,12 +27,21 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
-        "packageName": "framer-motion",
-        "route": "/package/framer-motion/13.5.0",
+        "packageName": "rollup",
+        "route": "/package/rollup/4.64.0",
         "risk": "review",
-        "newVersion": "13.5.0",
+        "newVersion": "4.64.0",
         "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.50.0",
+        "risk": "review",
+        "newVersion": "1.50.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
@@ -45,15 +63,6 @@
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.49.0",
-        "risk": "review",
-        "newVersion": "1.49.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
         "packageName": "@typescript-eslint/parser",
         "route": "/package/typescript-eslint-parser/8.71.0",
         "risk": "review",
@@ -70,19 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "@tanstack/react-query",
-        "route": "/package/tanstack-react-query/5.104.0",
-        "risk": "review",
-        "newVersion": "5.104.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w40",
-    "generatedAt": "2026-10-01T18:55:04.966Z"
+    "generatedAt": "2026-10-02T18:29:02.356Z"
   },
   {
     "week": "Week 39, 2026",
