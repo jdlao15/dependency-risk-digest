@@ -1,5 +1,90 @@
 [
   {
+    "week": "Week 41, 2026",
+    "dateRange": "Sep 28 - Oct 4",
+    "risky": 24,
+    "breaking": 2,
+    "security": 0,
+    "safe": 58,
+    "total": 82,
+    "topSignals": [
+      {
+        "packageName": "framer-motion",
+        "route": "/package/framer-motion/14.0.0",
+        "risk": "breaking",
+        "newVersion": "14.0.0",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "typescript",
+        "route": "/package/typescript/7.0.2",
+        "risk": "breaking",
+        "newVersion": "7.0.2",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.52.0",
+        "risk": "review",
+        "newVersion": "1.52.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "rollup",
+        "route": "/package/rollup/4.64.0",
+        "risk": "review",
+        "newVersion": "4.64.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "eslint",
+        "route": "/package/eslint/10.12.0",
+        "risk": "review",
+        "newVersion": "10.12.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "next",
+        "route": "/package/next/16.3.8",
+        "risk": "review",
+        "newVersion": "16.3.8",
+        "reason": "Release notes mention security language, but no OSV or CVE match was found.",
+        "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
+        "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
+      },
+      {
+        "packageName": "@reduxjs/toolkit",
+        "route": "/package/reduxjs-toolkit/2.13.0",
+        "risk": "review",
+        "newVersion": "2.13.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "@typescript-eslint/parser",
+        "route": "/package/typescript-eslint-parser/8.71.0",
+        "risk": "review",
+        "newVersion": "8.71.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      }
+    ],
+    "route": "/weekly/2026-w41",
+    "generatedAt": "2026-10-04T17:37:21.603Z"
+  },
+  {
     "week": "Week 40, 2026",
     "dateRange": "Sep 28 - Oct 4",
     "risky": 24,

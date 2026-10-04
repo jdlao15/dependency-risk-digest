@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T17:18:56.733Z",
+  "generatedAt": "2026-10-04T17:37:21.603Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -67,7 +67,7 @@
     "/package/lodash",
     "/package/lodash/4.18.1",
     "/package/lucide-react",
-    "/package/lucide-react/1.51.0",
+    "/package/lucide-react/1.52.0",
     "/package/minimist",
     "/package/minimist/1.2.8",
     "/package/msw",
@@ -87,7 +87,7 @@
     "/package/playwright",
     "/package/playwright/1.63.0",
     "/package/pnpm",
-    "/package/pnpm/12.8.1",
+    "/package/pnpm/12.9.1",
     "/package/postcss",
     "/package/postcss/8.5.28",
     "/package/prettier",
@@ -196,6 +196,7 @@
     "/weekly/2026-w37",
     "/weekly/2026-w38",
     "/weekly/2026-w39",
-    "/weekly/2026-w40"
+    "/weekly/2026-w40",
+    "/weekly/2026-w41"
   ]
 }
