@@ -1,11 +1,11 @@
 [
   {
     "week": "Week 41, 2026",
-    "dateRange": "Sep 28 - Oct 4",
-    "risky": 24,
+    "dateRange": "Oct 5 - Oct 11",
+    "risky": 22,
     "breaking": 2,
     "security": 0,
-    "safe": 58,
+    "safe": 60,
     "total": 82,
     "topSignals": [
       {
@@ -72,17 +72,17 @@
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "@typescript-eslint/parser",
-        "route": "/package/typescript-eslint-parser/8.71.0",
+        "packageName": "react-hook-form",
+        "route": "/package/react-hook-form/7.89.0",
         "risk": "review",
-        "newVersion": "8.71.0",
+        "newVersion": "7.89.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w41",
-    "generatedAt": "2026-10-04T17:37:21.603Z"
+    "generatedAt": "2026-10-05T21:13:37.336Z"
   },
   {
     "week": "Week 40, 2026",
