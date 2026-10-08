@@ -27,6 +27,24 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.53.0",
+        "risk": "review",
+        "newVersion": "1.53.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "playwright",
+        "route": "/package/playwright/1.64.0",
+        "risk": "review",
+        "newVersion": "1.64.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "next",
         "route": "/package/next/16.4.0",
         "risk": "review",
@@ -61,28 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.52.0",
-        "risk": "review",
-        "newVersion": "1.52.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "eslint",
-        "route": "/package/eslint/10.12.0",
-        "risk": "review",
-        "newVersion": "10.12.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w41",
-    "generatedAt": "2026-10-07T19:22:48.488Z"
+    "generatedAt": "2026-10-08T19:18:04.796Z"
   },
   {
     "week": "Week 40, 2026",
