@@ -2,21 +2,12 @@
   {
     "week": "Week 41, 2026",
     "dateRange": "Oct 5 - Oct 11",
-    "risky": 24,
-    "breaking": 2,
+    "risky": 23,
+    "breaking": 1,
     "security": 0,
-    "safe": 58,
+    "safe": 59,
     "total": 82,
     "topSignals": [
-      {
-        "packageName": "framer-motion",
-        "route": "/package/framer-motion/14.0.0",
-        "risk": "breaking",
-        "newVersion": "14.0.0",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
-      },
       {
         "packageName": "typescript",
         "route": "/package/typescript/7.0.2",
@@ -25,6 +16,15 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.55.0",
+        "risk": "review",
+        "newVersion": "1.55.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
         "packageName": "ky",
@@ -36,12 +36,12 @@
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.54.0",
+        "packageName": "framer-motion",
+        "route": "/package/framer-motion/14.1.0",
         "risk": "review",
-        "newVersion": "1.54.0",
+        "newVersion": "14.1.0",
         "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
@@ -72,17 +72,17 @@
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "nuxt",
-        "route": "/package/nuxt/4.6.0",
+        "packageName": "@radix-ui/react-dialog",
+        "route": "/package/radix-ui-react-dialog/1.2.0",
         "risk": "review",
-        "newVersion": "4.6.0",
+        "newVersion": "1.2.0",
         "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w41",
-    "generatedAt": "2026-10-09T18:50:58.719Z"
+    "generatedAt": "2026-10-10T17:53:28.659Z"
   },
   {
     "week": "Week 40, 2026",
