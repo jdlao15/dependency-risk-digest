@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T17:53:28.659Z",
+  "generatedAt": "2026-10-11T18:08:07.884Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -100,7 +100,7 @@
     "/package/react-dom",
     "/package/react-dom/19.3.0",
     "/package/react-hook-form",
-    "/package/react-hook-form/7.89.0",
+    "/package/react-hook-form/7.90.0",
     "/package/react-router-dom",
     "/package/react-router-dom/7.18.4",
     "/package/react/19.3.0",
@@ -127,7 +127,7 @@
     "/package/svelte",
     "/package/svelte/5.57.2",
     "/package/swc-core",
-    "/package/swc-core/1.16.13",
+    "/package/swc-core/1.16.18",
     "/package/swr",
     "/package/swr/2.5.1",
     "/package/tailwind-merge",
@@ -171,7 +171,7 @@
     "/package/yup",
     "/package/yup/1.7.1",
     "/package/zod",
-    "/package/zod/4.6.5",
+    "/package/zod/4.6.6",
     "/package/zustand",
     "/package/zustand/5.0.15",
     "/packages",
@@ -197,6 +197,7 @@
     "/weekly/2026-w38",
     "/weekly/2026-w39",
     "/weekly/2026-w40",
-    "/weekly/2026-w41"
+    "/weekly/2026-w41",
+    "/weekly/2026-w42"
   ]
 }
