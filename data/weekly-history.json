@@ -2,12 +2,21 @@
   {
     "week": "Week 42, 2026",
     "dateRange": "Oct 12 - Oct 18",
-    "risky": 24,
-    "breaking": 1,
+    "risky": 23,
+    "breaking": 2,
     "security": 0,
-    "safe": 58,
+    "safe": 59,
     "total": 82,
     "topSignals": [
+      {
+        "packageName": "tsup",
+        "route": "/package/tsup/9.0.0",
+        "risk": "breaking",
+        "newVersion": "9.0.0",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
       {
         "packageName": "typescript",
         "route": "/package/typescript/7.0.2",
@@ -18,21 +27,39 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "next",
+        "route": "/package/next/16.4.1",
+        "risk": "review",
+        "newVersion": "16.4.1",
+        "reason": "Release notes mention security language, but no OSV or CVE match was found.",
+        "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
+        "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
+      },
+      {
+        "packageName": "cypress",
+        "route": "/package/cypress/16.2.0",
+        "risk": "review",
+        "newVersion": "16.2.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.57.0",
+        "risk": "review",
+        "newVersion": "1.57.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "framer-motion",
         "route": "/package/framer-motion/14.2.0",
         "risk": "review",
         "newVersion": "14.2.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.56.0",
-        "risk": "review",
-        "newVersion": "1.56.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
@@ -52,37 +79,10 @@
         "reason": "Release notes mention security language, but no OSV or CVE match was found.",
         "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
         "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
-      },
-      {
-        "packageName": "styled-components",
-        "route": "/package/styled-components/6.6.0",
-        "risk": "review",
-        "newVersion": "6.6.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "react-hook-form",
-        "route": "/package/react-hook-form/7.90.0",
-        "risk": "review",
-        "newVersion": "7.90.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "ky",
-        "route": "/package/ky/2.2.0",
-        "risk": "review",
-        "newVersion": "2.2.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w42",
-    "generatedAt": "2026-10-13T19:52:48.910Z"
+    "generatedAt": "2026-10-14T18:02:35.818Z"
   },
   {
     "week": "Week 41, 2026",
