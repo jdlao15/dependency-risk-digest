@@ -1,6 +1,6 @@
 import type { ReleaseItem, SeoRoute, WeeklyDigest } from "./types";
 
-export const generatedAt = "2026-10-16T17:29:19.953Z";
+export const generatedAt = "2026-10-17T16:28:44.456Z";
 export const generationFailures = [];
 export const weeklyDigest: WeeklyDigest = {
   "week": "Week 42, 2026",
@@ -40,19 +40,19 @@ export const digestArchive: WeeklyDigest[] = [
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
-        "packageName": "eslint",
-        "route": "/package/eslint/10.13.0",
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.59.0",
         "risk": "review",
-        "newVersion": "10.13.0",
+        "newVersion": "1.59.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.58.0",
+        "packageName": "eslint",
+        "route": "/package/eslint/10.13.0",
         "risk": "review",
-        "newVersion": "1.58.0",
+        "newVersion": "10.13.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
@@ -95,7 +95,7 @@ export const digestArchive: WeeklyDigest[] = [
       }
     ],
     "route": "/weekly/2026-w42",
-    "generatedAt": "2026-10-16T17:29:19.953Z"
+    "generatedAt": "2026-10-17T16:28:44.456Z"
   },
   {
     "week": "Week 41, 2026",
@@ -1722,7 +1722,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.5.1",
     "newVersion": "9.0.0",
     "releaseDate": "2026-10-14",
-    "publishedAgo": "published 2 days ago",
+    "publishedAgo": "published 3 days ago",
     "isRecent": true,
     "risk": "breaking",
     "category": "Major version",
@@ -1763,7 +1763,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "6.0.3",
     "newVersion": "7.0.2",
     "releaseDate": "2026-07-08",
-    "publishedAgo": "published 100 days ago",
+    "publishedAgo": "published 101 days ago",
     "isRecent": false,
     "risk": "breaking",
     "category": "Major version",
@@ -1797,6 +1797,47 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
+    "id": "lucide-react-1-59-0",
+    "packageName": "lucide-react",
+    "packageSlug": "lucide-react",
+    "description": "React icon library",
+    "oldVersion": "1.58.0",
+    "newVersion": "1.59.0",
+    "releaseDate": "2026-10-17",
+    "publishedAgo": "published today",
+    "isRecent": true,
+    "risk": "review",
+    "category": "Minor version",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "Minor version release detected with no OSV match.",
+    "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
+    "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
+    "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+    "whatChanged": "GitHub release note found: Version 1.59.0.",
+    "githubReleaseTitle": "Version 1.59.0",
+    "githubReleaseUrl": "https://github.com/lucide-icons/lucide/releases/tag/1.59.0",
+    "githubReleaseTag": "1.59.0",
+    "githubReleasePublishedAt": "2026-10-17T06:06:42Z",
+    "releaseNotesExcerpt": "What's Changed feat(docs): Adds search field to docs pages by @ericfennis in https://github.com/lucide-icons/lucide/pull/5012 fix(icons): changed chess-queen icon by @karsa-mistmere in https://github.com/lucide-icons/lucide/pull/4613 **Full Changelog**: https://github.com/lucide-",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+    "route": "/package/lucide-react/1.59.0",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/lucide-react"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/lucide-icons/lucide"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/lucide-icons/lucide/releases/tag/1.59.0"
+      }
+    ]
+  },
+  {
     "id": "eslint-10-13-0",
     "packageName": "eslint",
     "packageSlug": "eslint",
@@ -1804,7 +1845,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "10.12.0",
     "newVersion": "10.13.0",
     "releaseDate": "2026-10-16",
-    "publishedAgo": "published today",
+    "publishedAgo": "published 1 day ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -1838,47 +1879,6 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
-    "id": "lucide-react-1-58-0",
-    "packageName": "lucide-react",
-    "packageSlug": "lucide-react",
-    "description": "React icon library",
-    "oldVersion": "1.57.0",
-    "newVersion": "1.58.0",
-    "releaseDate": "2026-10-16",
-    "publishedAgo": "published today",
-    "isRecent": true,
-    "risk": "review",
-    "category": "Minor version",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Minor version release detected with no OSV match.",
-    "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
-    "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
-    "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-    "whatChanged": "GitHub release note found: Version 1.58.0.",
-    "githubReleaseTitle": "Version 1.58.0",
-    "githubReleaseUrl": "https://github.com/lucide-icons/lucide/releases/tag/1.58.0",
-    "githubReleaseTag": "1.58.0",
-    "githubReleasePublishedAt": "2026-10-16T06:07:36Z",
-    "releaseNotesExcerpt": "What's Changed feat(docs): add third-party package lucide-jte by @sgruendel in https://github.com/lucide-icons/lucide/pull/5000 chore(integration-tests): Add Svelte integration tests for @ucide/svelte by @ericfennis in https://github.com/lucide-icons/lucide/pull/5005 chore(deps-d",
-    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-    "route": "/package/lucide-react/1.58.0",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/lucide-react"
-      },
-      {
-        "label": "Repository",
-        "href": "https://github.com/lucide-icons/lucide"
-      },
-      {
-        "label": "GitHub release",
-        "href": "https://github.com/lucide-icons/lucide/releases/tag/1.58.0"
-      }
-    ]
-  },
-  {
     "id": "astro-7-4-0",
     "packageName": "astro",
     "packageSlug": "astro",
@@ -1886,7 +1886,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.3.8",
     "newVersion": "7.4.0",
     "releaseDate": "2026-10-15",
-    "publishedAgo": "published 1 day ago",
+    "publishedAgo": "published 2 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -1927,7 +1927,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.111.1",
     "newVersion": "5.112.0",
     "releaseDate": "2026-10-15",
-    "publishedAgo": "published today",
+    "publishedAgo": "published 1 day ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -1968,7 +1968,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "21.0.2",
     "newVersion": "21.0.3",
     "releaseDate": "2026-10-15",
-    "publishedAgo": "published today",
+    "publishedAgo": "published 1 day ago",
     "isRecent": true,
     "risk": "review",
     "category": "Release-note review",
@@ -2009,7 +2009,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "14.2.0",
     "newVersion": "14.3.0",
     "releaseDate": "2026-10-15",
-    "publishedAgo": "published 1 day ago",
+    "publishedAgo": "published 2 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -2046,7 +2046,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "12.13.0",
     "newVersion": "12.14.0",
     "releaseDate": "2026-10-15",
-    "publishedAgo": "published 1 day ago",
+    "publishedAgo": "published 2 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -2087,7 +2087,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "22.2.2",
     "newVersion": "22.2.3",
     "releaseDate": "2026-10-14",
-    "publishedAgo": "published 1 day ago",
+    "publishedAgo": "published 2 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Release-note review",
@@ -2128,7 +2128,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "16.1.1",
     "newVersion": "16.2.0",
     "releaseDate": "2026-10-14",
-    "publishedAgo": "published 2 days ago",
+    "publishedAgo": "published 3 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -2169,7 +2169,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "10.6.1",
     "newVersion": "10.6.2",
     "releaseDate": "2026-10-12",
-    "publishedAgo": "published 3 days ago",
+    "publishedAgo": "published 4 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Release-note review",
@@ -2210,7 +2210,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "10.6.1",
     "newVersion": "10.6.2",
     "releaseDate": "2026-10-12",
-    "publishedAgo": "published 3 days ago",
+    "publishedAgo": "published 4 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Release-note review",
@@ -2251,7 +2251,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "6.5.3",
     "newVersion": "6.6.0",
     "releaseDate": "2026-10-12",
-    "publishedAgo": "published 3 days ago",
+    "publishedAgo": "published 4 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -2292,7 +2292,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.89.0",
     "newVersion": "7.90.0",
     "releaseDate": "2026-10-11",
-    "publishedAgo": "published 5 days ago",
+    "publishedAgo": "published 6 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -2333,7 +2333,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.1.0",
     "newVersion": "2.2.0",
     "releaseDate": "2026-10-09",
-    "publishedAgo": "published 7 days ago",
+    "publishedAgo": "published 8 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -2374,7 +2374,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "9.4.0",
     "newVersion": "9.5.0",
     "releaseDate": "2026-10-09",
-    "publishedAgo": "published 7 days ago",
+    "publishedAgo": "published 8 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -2415,7 +2415,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.12.0",
     "newVersion": "2.13.0",
     "releaseDate": "2026-09-29",
-    "publishedAgo": "published 17 days ago",
+    "publishedAgo": "published 18 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -2456,7 +2456,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.21.3",
     "newVersion": "8.22.0",
     "releaseDate": "2026-09-26",
-    "publishedAgo": "published 20 days ago",
+    "publishedAgo": "published 21 days ago",
     "isRecent": true,
     "risk": "review",
     "category": "Minor version",
@@ -2497,7 +2497,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "3.6.0",
     "newVersion": "3.7.0",
     "releaseDate": "2026-09-12",
-    "publishedAgo": "published 33 days ago",
+    "publishedAgo": "published 34 days ago",
     "isRecent": false,
     "risk": "review",
     "category": "Minor version",
@@ -2538,7 +2538,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "19.2.18",
     "newVersion": "19.3.0",
     "releaseDate": "2026-09-09",
-    "publishedAgo": "published 36 days ago",
+    "publishedAgo": "published 37 days ago",
     "isRecent": false,
     "risk": "review",
     "category": "Minor version",
@@ -2575,7 +2575,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "19.2.7",
     "newVersion": "19.3.0",
     "releaseDate": "2026-09-09",
-    "publishedAgo": "published 36 days ago",
+    "publishedAgo": "published 37 days ago",
     "isRecent": false,
     "risk": "review",
     "category": "Minor version",
@@ -2612,7 +2612,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "3.36.1",
     "newVersion": "3.37.0",
     "releaseDate": "2026-08-28",
-    "publishedAgo": "published 49 days ago",
+    "publishedAgo": "published 50 days ago",
     "isRecent": false,
     "risk": "review",
     "category": "Minor version",
@@ -2653,7 +2653,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.19.0",
     "newVersion": "1.20.0",
     "releaseDate": "2026-08-26",
-    "publishedAgo": "published 51 days ago",
+    "publishedAgo": "published 52 days ago",
     "isRecent": false,
     "risk": "review",
     "category": "Minor version",
@@ -2694,7 +2694,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.3.0",
     "newVersion": "4.4.0",
     "releaseDate": "2026-05-29",
-    "publishedAgo": "published 139 days ago",
+    "publishedAgo": "published 140 days ago",
     "isRecent": false,
     "risk": "review",
     "category": "Minor version",
@@ -2810,6 +2810,170 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
+    "id": "rollup-4-64-8",
+    "packageName": "rollup",
+    "packageSlug": "rollup",
+    "description": "Module bundler",
+    "oldVersion": "4.64.7",
+    "newVersion": "4.64.8",
+    "releaseDate": "2026-10-17",
+    "publishedAgo": "published today",
+    "isRecent": true,
+    "risk": "low",
+    "category": "Patch version",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "Patch release with no OSV match.",
+    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+    "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
+    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+    "whatChanged": "GitHub release note found: v4.64.8.",
+    "githubReleaseTitle": "v4.64.8",
+    "githubReleaseUrl": "https://github.com/rollup/rollup/releases/tag/v4.64.8",
+    "githubReleaseTag": "v4.64.8",
+    "githubReleasePublishedAt": "2026-10-17T11:46:24Z",
+    "releaseNotesExcerpt": "4.64.8 _2026-10-17_ Bug Fixes Ensure chunk hashes change when sourcemap comments change (#6509) Resolve some relative import resolution edge cases (#6522) Pull Requests #6509: fix: include sourcemap comments in chunk hashes (@snoopuppy582, @wangxpych, @lukastaegert) #6522: fix(br",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+    "route": "/package/rollup/4.64.8",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/rollup"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/rollup/rollup"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/rollup/rollup/releases/tag/v4.64.8"
+      }
+    ]
+  },
+  {
+    "id": "nuxt-4-6-2",
+    "packageName": "nuxt",
+    "packageSlug": "nuxt",
+    "description": "Vue application framework",
+    "oldVersion": "4.6.1",
+    "newVersion": "4.6.2",
+    "releaseDate": "2026-10-16",
+    "publishedAgo": "published today",
+    "isRecent": true,
+    "risk": "low",
+    "category": "Patch version",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "Patch release with no OSV match.",
+    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+    "whatChanged": "GitHub release note found: v4.6.2.",
+    "githubReleaseTitle": "v4.6.2",
+    "githubReleaseUrl": "https://github.com/nuxt/nuxt/releases/tag/v4.6.2",
+    "githubReleaseTag": "v4.6.2",
+    "githubReleasePublishedAt": "2026-10-16T17:21:23Z",
+    "releaseNotesExcerpt": "> v4.6.2 is the next patch release. Changelog compare changes Fixes **nitro:** apply useHeadSafe rules to server island head (493565e99) **nitro-server:** read router params from the path h3 matched (010f6b43d) **nitro:** match server route rules case-insensitively unless routing",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+    "route": "/package/nuxt/4.6.2",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/nuxt"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/nuxt/nuxt"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/nuxt/nuxt/releases/tag/v4.6.2"
+      }
+    ]
+  },
+  {
+    "id": "turbo-2-11-9",
+    "packageName": "turbo",
+    "packageSlug": "turbo",
+    "description": "Monorepo build system",
+    "oldVersion": "2.11.8",
+    "newVersion": "2.11.9",
+    "releaseDate": "2026-10-16",
+    "publishedAgo": "published today",
+    "isRecent": true,
+    "risk": "low",
+    "category": "Patch version",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "Patch release with no OSV match.",
+    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+    "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
+    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+    "whatChanged": "GitHub release note found: Turborepo v2.11.9.",
+    "githubReleaseTitle": "Turborepo v2.11.9",
+    "githubReleaseUrl": "https://github.com/vercel/turborepo/releases/tag/v2.11.9",
+    "githubReleaseTag": "v2.11.9",
+    "githubReleasePublishedAt": "2026-10-16T19:07:18Z",
+    "releaseNotesExcerpt": "<!-- Release notes generated using configuration in .github/release.yml at v2.11.9 --> What's Changed Changelog chore: Release Turborepo 2.11.8 by @github-actions[bot] in https://github.com/vercel/turborepo/pull/14789 perf: Prefetch Cargo metadata during lazy graph construction b",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+    "route": "/package/turbo/2.11.9",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/turbo"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/vercel/turborepo"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/vercel/turborepo/releases/tag/v2.11.9"
+      }
+    ]
+  },
+  {
+    "id": "apollo-client-4-3-4",
+    "packageName": "@apollo/client",
+    "packageSlug": "apollo-client",
+    "description": "GraphQL client",
+    "oldVersion": "4.3.3",
+    "newVersion": "4.3.4",
+    "releaseDate": "2026-10-16",
+    "publishedAgo": "published today",
+    "isRecent": true,
+    "risk": "low",
+    "category": "Patch version",
+    "osv": "No OSV match",
+    "cve": "No CVE match",
+    "reason": "Patch release with no OSV match.",
+    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+    "whatChanged": "GitHub release note found: @apollo/client@4.3.4.",
+    "githubReleaseTitle": "@apollo/client@4.3.4",
+    "githubReleaseUrl": "https://github.com/apollographql/apollo-client/releases/tag/%40apollo/client%404.3.4",
+    "githubReleaseTag": "@apollo/client@4.3.4",
+    "githubReleasePublishedAt": "2026-10-16T17:30:42Z",
+    "releaseNotesExcerpt": "Patch Changes #13497 41d604c Thanks @jerelmiller! - Fix an issue where a list field selected more than once with different selection sets lost the fields that only one of the selections included while a @defer boundary elsewhere in the query was still pending when using the Graph",
+    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+    "route": "/package/apollo-client/4.3.4",
+    "sourceLinks": [
+      {
+        "label": "npm",
+        "href": "https://www.npmjs.com/package/@apollo/client"
+      },
+      {
+        "label": "Repository",
+        "href": "https://github.com/apollographql/apollo-client"
+      },
+      {
+        "label": "GitHub release",
+        "href": "https://github.com/apollographql/apollo-client/releases/tag/%40apollo/client%404.3.4"
+      }
+    ]
+  },
+  {
     "id": "sass-1-105-2",
     "packageName": "sass",
     "packageSlug": "sass",
@@ -2817,7 +2981,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.105.1",
     "newVersion": "1.105.2",
     "releaseDate": "2026-10-16",
-    "publishedAgo": "published today",
+    "publishedAgo": "published 1 day ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2858,7 +3022,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "16.4.1",
     "newVersion": "16.4.2",
     "releaseDate": "2026-10-15",
-    "publishedAgo": "published today",
+    "publishedAgo": "published 1 day ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2892,47 +3056,6 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
-    "id": "rollup-4-64-7",
-    "packageName": "rollup",
-    "packageSlug": "rollup",
-    "description": "Module bundler",
-    "oldVersion": "4.64.6",
-    "newVersion": "4.64.7",
-    "releaseDate": "2026-10-15",
-    "publishedAgo": "published 1 day ago",
-    "isRecent": true,
-    "risk": "low",
-    "category": "Patch version",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Patch release with no OSV match.",
-    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-    "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
-    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "GitHub release note found: v4.64.7.",
-    "githubReleaseTitle": "v4.64.7",
-    "githubReleaseUrl": "https://github.com/rollup/rollup/releases/tag/v4.64.7",
-    "githubReleaseTag": "v4.64.7",
-    "githubReleasePublishedAt": "2026-10-15T05:44:27Z",
-    "releaseNotesExcerpt": "4.64.7 _2026-10-15_ Bug Fixes Fix an issue where watching not-yet-created files from plugins did not work if several shared a directory (#6575) Pull Requests #6575: Report creation of missing watch files sharing a directory on Linux (@lukastaegert)",
-    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-    "route": "/package/rollup/4.64.7",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/rollup"
-      },
-      {
-        "label": "Repository",
-        "href": "https://github.com/rollup/rollup"
-      },
-      {
-        "label": "GitHub release",
-        "href": "https://github.com/rollup/rollup/releases/tag/v4.64.7"
-      }
-    ]
-  },
-  {
     "id": "tanstack-react-query-5-104-3",
     "packageName": "@tanstack/react-query",
     "packageSlug": "tanstack-react-query",
@@ -2940,7 +3063,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.104.2",
     "newVersion": "5.104.3",
     "releaseDate": "2026-10-15",
-    "publishedAgo": "published 1 day ago",
+    "publishedAgo": "published 2 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -2981,7 +3104,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.0.4",
     "newVersion": "5.0.5",
     "releaseDate": "2026-10-15",
-    "publishedAgo": "published 1 day ago",
+    "publishedAgo": "published 2 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3104,7 +3227,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.64.0",
     "newVersion": "1.64.1",
     "releaseDate": "2026-10-14",
-    "publishedAgo": "published 2 days ago",
+    "publishedAgo": "published 3 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3145,7 +3268,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "3.5.43",
     "newVersion": "3.5.44",
     "releaseDate": "2026-10-13",
-    "publishedAgo": "published 3 days ago",
+    "publishedAgo": "published 4 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3175,47 +3298,6 @@ export const releases: ReleaseItem[] = [
       {
         "label": "GitHub release",
         "href": "https://github.com/vuejs/core/releases/tag/v3.5.44"
-      }
-    ]
-  },
-  {
-    "id": "turbo-2-11-8",
-    "packageName": "turbo",
-    "packageSlug": "turbo",
-    "description": "Monorepo build system",
-    "oldVersion": "2.11.7",
-    "newVersion": "2.11.8",
-    "releaseDate": "2026-10-13",
-    "publishedAgo": "published 2 days ago",
-    "isRecent": true,
-    "risk": "low",
-    "category": "Patch version",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Patch release with no OSV match.",
-    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-    "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
-    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "GitHub release note found: Turborepo v2.11.8.",
-    "githubReleaseTitle": "Turborepo v2.11.8",
-    "githubReleaseUrl": "https://github.com/vercel/turborepo/releases/tag/v2.11.8",
-    "githubReleaseTag": "v2.11.8",
-    "githubReleasePublishedAt": "2026-10-13T18:09:13Z",
-    "releaseNotesExcerpt": "<!-- Release notes generated using configuration in .github/release.yml at v2.11.8 --> What's Changed Changelog chore: Release Turborepo 2.11.7 by @github-actions[bot] in https://github.com/vercel/turborepo/pull/14357 chore: Update with-vitest example by @vercel-gh-bot-3[bot] in ",
-    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-    "route": "/package/turbo/2.11.8",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/turbo"
-      },
-      {
-        "label": "Repository",
-        "href": "https://github.com/vercel/turborepo"
-      },
-      {
-        "label": "GitHub release",
-        "href": "https://github.com/vercel/turborepo/releases/tag/v2.11.8"
       }
     ]
   },
@@ -3350,7 +3432,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.5.29",
     "newVersion": "8.5.30",
     "releaseDate": "2026-10-12",
-    "publishedAgo": "published 3 days ago",
+    "publishedAgo": "published 4 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3391,7 +3473,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.3.0",
     "newVersion": "1.3.1",
     "releaseDate": "2026-10-12",
-    "publishedAgo": "published 3 days ago",
+    "publishedAgo": "published 4 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3428,7 +3510,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.3.0",
     "newVersion": "1.3.1",
     "releaseDate": "2026-10-12",
-    "publishedAgo": "published 3 days ago",
+    "publishedAgo": "published 4 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3465,7 +3547,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.16.17",
     "newVersion": "1.16.18",
     "releaseDate": "2026-10-11",
-    "publishedAgo": "published 5 days ago",
+    "publishedAgo": "published 6 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3506,7 +3588,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "3.9.9",
     "newVersion": "3.9.10",
     "releaseDate": "2026-10-10",
-    "publishedAgo": "published 6 days ago",
+    "publishedAgo": "published 7 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3547,7 +3629,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "3.0.2",
     "newVersion": "3.0.3",
     "releaseDate": "2026-10-10",
-    "publishedAgo": "published 6 days ago",
+    "publishedAgo": "published 7 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3588,7 +3670,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "14.0.2",
     "newVersion": "14.0.3",
     "releaseDate": "2026-10-10",
-    "publishedAgo": "published 6 days ago",
+    "publishedAgo": "published 7 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3622,47 +3704,6 @@ export const releases: ReleaseItem[] = [
     ]
   },
   {
-    "id": "nuxt-4-6-1",
-    "packageName": "nuxt",
-    "packageSlug": "nuxt",
-    "description": "Vue application framework",
-    "oldVersion": "4.6.0",
-    "newVersion": "4.6.1",
-    "releaseDate": "2026-10-09",
-    "publishedAgo": "published 6 days ago",
-    "isRecent": true,
-    "risk": "low",
-    "category": "Patch version",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Patch release with no OSV match.",
-    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "GitHub release note found: v4.6.1.",
-    "githubReleaseTitle": "v4.6.1",
-    "githubReleaseUrl": "https://github.com/nuxt/nuxt/releases/tag/v4.6.1",
-    "githubReleaseTag": "v4.6.1",
-    "githubReleasePublishedAt": "2026-10-09T22:47:35Z",
-    "releaseNotesExcerpt": "> v4.6.1 is the next patch release. Changelog compare changes Performance **nitro:** build the portable event's web view on first access (cffb182d6) Fixes **vite:** match vite 8.1+ optimizer messages for deps hint (#36525) **nuxt:** accept any baseURL when fetch response type is ",
-    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-    "route": "/package/nuxt/4.6.1",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/nuxt"
-      },
-      {
-        "label": "Repository",
-        "href": "https://github.com/nuxt/nuxt"
-      },
-      {
-        "label": "GitHub release",
-        "href": "https://github.com/nuxt/nuxt/releases/tag/v4.6.1"
-      }
-    ]
-  },
-  {
     "id": "vite-8-3-4",
     "packageName": "vite",
     "packageSlug": "vite",
@@ -3670,7 +3711,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.3.3",
     "newVersion": "8.3.4",
     "releaseDate": "2026-10-08",
-    "publishedAgo": "published 8 days ago",
+    "publishedAgo": "published 9 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3700,47 +3741,6 @@ export const releases: ReleaseItem[] = [
       {
         "label": "GitHub release",
         "href": "https://github.com/vitejs/vite/releases/tag/v8.3.4"
-      }
-    ]
-  },
-  {
-    "id": "apollo-client-4-3-3",
-    "packageName": "@apollo/client",
-    "packageSlug": "apollo-client",
-    "description": "GraphQL client",
-    "oldVersion": "4.3.2",
-    "newVersion": "4.3.3",
-    "releaseDate": "2026-10-08",
-    "publishedAgo": "published 8 days ago",
-    "isRecent": true,
-    "risk": "low",
-    "category": "Patch version",
-    "osv": "No OSV match",
-    "cve": "No CVE match",
-    "reason": "Patch release with no OSV match.",
-    "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-    "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-    "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-    "whatChanged": "GitHub release note found: @apollo/client@4.3.3.",
-    "githubReleaseTitle": "@apollo/client@4.3.3",
-    "githubReleaseUrl": "https://github.com/apollographql/apollo-client/releases/tag/%40apollo/client%404.3.3",
-    "githubReleaseTag": "@apollo/client@4.3.3",
-    "githubReleasePublishedAt": "2026-10-08T09:14:51Z",
-    "releaseNotesExcerpt": "Patch Changes #13479 0ab2579 Thanks @phryneas! - Fix a memory leak in isDeferredFragment/isStreamField",
-    "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-    "route": "/package/apollo-client/4.3.3",
-    "sourceLinks": [
-      {
-        "label": "npm",
-        "href": "https://www.npmjs.com/package/@apollo/client"
-      },
-      {
-        "label": "Repository",
-        "href": "https://github.com/apollographql/apollo-client"
-      },
-      {
-        "label": "GitHub release",
-        "href": "https://github.com/apollographql/apollo-client/releases/tag/%40apollo/client%404.3.3"
       }
     ]
   },
@@ -3789,7 +3789,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.0.6",
     "newVersion": "8.0.7",
     "releaseDate": "2026-10-07",
-    "publishedAgo": "published 9 days ago",
+    "publishedAgo": "published 10 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3830,7 +3830,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.0.6",
     "newVersion": "8.0.7",
     "releaseDate": "2026-10-07",
-    "publishedAgo": "published 9 days ago",
+    "publishedAgo": "published 10 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3871,7 +3871,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.57.1",
     "newVersion": "5.57.2",
     "releaseDate": "2026-10-06",
-    "publishedAgo": "published 10 days ago",
+    "publishedAgo": "published 11 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3912,7 +3912,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "6.1.1",
     "newVersion": "6.1.2",
     "releaseDate": "2026-10-05",
-    "publishedAgo": "published 11 days ago",
+    "publishedAgo": "published 12 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3953,7 +3953,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "6.0.1",
     "newVersion": "6.0.2",
     "releaseDate": "2026-10-05",
-    "publishedAgo": "published 10 days ago",
+    "publishedAgo": "published 11 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -3994,7 +3994,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "11.1.20",
     "newVersion": "11.1.21",
     "releaseDate": "2026-10-02",
-    "publishedAgo": "published 13 days ago",
+    "publishedAgo": "published 14 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -4035,7 +4035,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "30.5.1",
     "newVersion": "30.5.2",
     "releaseDate": "2026-09-18",
-    "publishedAgo": "published 28 days ago",
+    "publishedAgo": "published 29 days ago",
     "isRecent": true,
     "risk": "low",
     "category": "Patch version",
@@ -4076,7 +4076,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.18.3",
     "newVersion": "7.18.4",
     "releaseDate": "2026-09-15",
-    "publishedAgo": "published 31 days ago",
+    "publishedAgo": "published 32 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -4117,7 +4117,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "10.6.0",
     "newVersion": "10.6.1",
     "releaseDate": "2026-09-15",
-    "publishedAgo": "published 31 days ago",
+    "publishedAgo": "published 32 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -4158,7 +4158,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.9.0",
     "newVersion": "4.9.1",
     "releaseDate": "2026-09-02",
-    "publishedAgo": "published 43 days ago",
+    "publishedAgo": "published 44 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -4199,7 +4199,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "16.3.2",
     "newVersion": "16.3.3",
     "releaseDate": "2026-08-27",
-    "publishedAgo": "published 49 days ago",
+    "publishedAgo": "published 50 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -4240,7 +4240,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "1.11.22",
     "newVersion": "1.11.23",
     "releaseDate": "2026-08-17",
-    "publishedAgo": "published 60 days ago",
+    "publishedAgo": "published 61 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -4281,7 +4281,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.0.14",
     "newVersion": "5.0.15",
     "releaseDate": "2026-08-13",
-    "publishedAgo": "published 64 days ago",
+    "publishedAgo": "published 65 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -4322,7 +4322,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.5.0",
     "newVersion": "2.5.1",
     "releaseDate": "2026-08-12",
-    "publishedAgo": "published 65 days ago",
+    "publishedAgo": "published 66 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -4363,7 +4363,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.0.0",
     "newVersion": "7.0.1",
     "releaseDate": "2026-08-09",
-    "publishedAgo": "published 67 days ago",
+    "publishedAgo": "published 68 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -4404,7 +4404,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "0.28.1",
     "newVersion": "0.28.2",
     "releaseDate": "2026-08-08",
-    "publishedAgo": "published 68 days ago",
+    "publishedAgo": "published 69 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -4445,7 +4445,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.3.2",
     "newVersion": "4.3.3",
     "releaseDate": "2026-07-16",
-    "publishedAgo": "published 92 days ago",
+    "publishedAgo": "published 93 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -4486,7 +4486,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "17.0.1",
     "newVersion": "17.0.2",
     "releaseDate": "2026-07-03",
-    "publishedAgo": "published 105 days ago",
+    "publishedAgo": "published 106 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -4527,7 +4527,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "7.8.4",
     "newVersion": "7.8.5",
     "releaseDate": "2026-06-19",
-    "publishedAgo": "published 118 days ago",
+    "publishedAgo": "published 119 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -4568,7 +4568,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "8.0.0",
     "newVersion": "8.0.1",
     "releaseDate": "2026-06-17",
-    "publishedAgo": "published 121 days ago",
+    "publishedAgo": "published 122 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -4609,7 +4609,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.17.4",
     "newVersion": "2.17.5",
     "releaseDate": "2026-06-01",
-    "publishedAgo": "published 137 days ago",
+    "publishedAgo": "published 138 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -4646,7 +4646,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "4.18.0",
     "newVersion": "4.18.1",
     "releaseDate": "2026-04-01",
-    "publishedAgo": "published 197 days ago",
+    "publishedAgo": "published 198 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -4687,7 +4687,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "5.16.0",
     "newVersion": "5.16.1",
     "releaseDate": "2026-02-10",
-    "publishedAgo": "published 248 days ago",
+    "publishedAgo": "published 249 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -4728,7 +4728,7 @@ export const releases: ReleaseItem[] = [
     "oldVersion": "2.16.3",
     "newVersion": "2.16.4",
     "releaseDate": "2026-02-02",
-    "publishedAgo": "published 256 days ago",
+    "publishedAgo": "published 257 days ago",
     "isRecent": false,
     "risk": "low",
     "category": "Patch version",
@@ -5106,7 +5106,7 @@ export const packageRoutes = {
     "packageName": "nuxt",
     "description": "Vue application framework",
     "route": "/package/nuxt",
-    "latestReleaseRoute": "/package/nuxt/4.6.1",
+    "latestReleaseRoute": "/package/nuxt/4.6.2",
     "areaSlug": "core-frameworks",
     "areaLabel": "Frameworks and Core UI"
   },
@@ -5146,7 +5146,7 @@ export const packageRoutes = {
     "packageName": "rollup",
     "description": "Module bundler",
     "route": "/package/rollup",
-    "latestReleaseRoute": "/package/rollup/4.64.7",
+    "latestReleaseRoute": "/package/rollup/4.64.8",
     "areaSlug": "build-tooling",
     "areaLabel": "Build Tooling"
   },
@@ -5162,7 +5162,7 @@ export const packageRoutes = {
     "packageName": "turbo",
     "description": "Monorepo build system",
     "route": "/package/turbo",
-    "latestReleaseRoute": "/package/turbo/2.11.8",
+    "latestReleaseRoute": "/package/turbo/2.11.9",
     "areaSlug": "build-tooling",
     "areaLabel": "Build Tooling"
   },
@@ -5346,7 +5346,7 @@ export const packageRoutes = {
     "packageName": "@apollo/client",
     "description": "GraphQL client",
     "route": "/package/apollo-client",
-    "latestReleaseRoute": "/package/apollo-client/4.3.3",
+    "latestReleaseRoute": "/package/apollo-client/4.3.4",
     "areaSlug": "routing-state-data",
     "areaLabel": "Routing, State, and Data"
   },
@@ -5594,7 +5594,7 @@ export const packageRoutes = {
     "packageName": "lucide-react",
     "description": "React icon library",
     "route": "/package/lucide-react",
-    "latestReleaseRoute": "/package/lucide-react/1.58.0",
+    "latestReleaseRoute": "/package/lucide-react/1.59.0",
     "areaSlug": "css-ui",
     "areaLabel": "CSS and UI Libraries"
   },
@@ -5747,7 +5747,7 @@ export const categoryRoutes = {
         "packageName": "nuxt",
         "description": "Vue application framework",
         "route": "/package/nuxt",
-        "latestReleaseRoute": "/package/nuxt/4.6.1",
+        "latestReleaseRoute": "/package/nuxt/4.6.2",
         "areaSlug": "core-frameworks",
         "areaLabel": "Frameworks and Core UI"
       },
@@ -5860,7 +5860,7 @@ export const categoryRoutes = {
         "packageName": "rollup",
         "description": "Module bundler",
         "route": "/package/rollup",
-        "latestReleaseRoute": "/package/rollup/4.64.7",
+        "latestReleaseRoute": "/package/rollup/4.64.8",
         "areaSlug": "build-tooling",
         "areaLabel": "Build Tooling"
       },
@@ -5876,7 +5876,7 @@ export const categoryRoutes = {
         "packageName": "turbo",
         "description": "Monorepo build system",
         "route": "/package/turbo",
-        "latestReleaseRoute": "/package/turbo/2.11.8",
+        "latestReleaseRoute": "/package/turbo/2.11.9",
         "areaSlug": "build-tooling",
         "areaLabel": "Build Tooling"
       },
@@ -5974,7 +5974,7 @@ export const categoryRoutes = {
         "packageName": "@apollo/client",
         "description": "GraphQL client",
         "route": "/package/apollo-client",
-        "latestReleaseRoute": "/package/apollo-client/4.3.3",
+        "latestReleaseRoute": "/package/apollo-client/4.3.4",
         "areaSlug": "routing-state-data",
         "areaLabel": "Routing, State, and Data"
       },
@@ -6289,7 +6289,7 @@ export const categoryRoutes = {
         "packageName": "lucide-react",
         "description": "React icon library",
         "route": "/package/lucide-react",
-        "latestReleaseRoute": "/package/lucide-react/1.58.0",
+        "latestReleaseRoute": "/package/lucide-react/1.59.0",
         "areaSlug": "css-ui",
         "areaLabel": "CSS and UI Libraries"
       },
@@ -7016,15 +7016,15 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "title": "typescript 7.0.2 npm major version update",
     "description": "typescript 7.0.2 frontend npm update risk: Major version release detected. OSV: No OSV match. CVE: No CVE match. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were..."
   },
+  "/package/lucide-react/1.59.0": {
+    "path": "/package/lucide-react/1.59.0",
+    "title": "lucide-react 1.59.0 npm minor version update",
+    "description": "lucide-react 1.59.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release..."
+  },
   "/package/eslint/10.13.0": {
     "path": "/package/eslint/10.13.0",
     "title": "eslint 10.13.0 npm minor version update",
     "description": "eslint 10.13.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release..."
-  },
-  "/package/lucide-react/1.58.0": {
-    "path": "/package/lucide-react/1.58.0",
-    "title": "lucide-react 1.58.0 npm minor version update",
-    "description": "lucide-react 1.58.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release..."
   },
   "/package/astro/7.4.0": {
     "path": "/package/astro/7.4.0",
@@ -7141,6 +7141,26 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "title": "npm-run-all 4.1.5 npm release-note review update",
     "description": "npm-run-all 4.1.5 frontend npm update risk: Release notes mention security language, but no OSV or CVE match was found. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Confirm against OSV and CVE..."
   },
+  "/package/rollup/4.64.8": {
+    "path": "/package/rollup/4.64.8",
+    "title": "rollup 4.64.8 npm patch version update",
+    "description": "rollup 4.64.8 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/nuxt/4.6.2": {
+    "path": "/package/nuxt/4.6.2",
+    "title": "nuxt 4.6.2 npm patch version update",
+    "description": "nuxt 4.6.2 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/turbo/2.11.9": {
+    "path": "/package/turbo/2.11.9",
+    "title": "turbo 2.11.9 npm patch version update",
+    "description": "turbo 2.11.9 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
+  "/package/apollo-client/4.3.4": {
+    "path": "/package/apollo-client/4.3.4",
+    "title": "@apollo/client 4.3.4 npm patch version update",
+    "description": "@apollo/client 4.3.4 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+  },
   "/package/sass/1.105.2": {
     "path": "/package/sass/1.105.2",
     "title": "sass 1.105.2 npm patch version update",
@@ -7150,11 +7170,6 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "path": "/package/next/16.4.2",
     "title": "next 16.4.2 npm patch version update",
     "description": "next 16.4.2 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-  },
-  "/package/rollup/4.64.7": {
-    "path": "/package/rollup/4.64.7",
-    "title": "rollup 4.64.7 npm patch version update",
-    "description": "rollup 4.64.7 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
   },
   "/package/tanstack-react-query/5.104.3": {
     "path": "/package/tanstack-react-query/5.104.3",
@@ -7185,11 +7200,6 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "path": "/package/vue/3.5.44",
     "title": "vue 3.5.44 npm patch version update",
     "description": "vue 3.5.44 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-  },
-  "/package/turbo/2.11.8": {
-    "path": "/package/turbo/2.11.8",
-    "title": "turbo 2.11.8 npm patch version update",
-    "description": "turbo 2.11.8 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
   },
   "/package/typescript-eslint-parser/8.71.2": {
     "path": "/package/typescript-eslint-parser/8.71.2",
@@ -7241,20 +7251,10 @@ export const seoRoutes: Record<string, SeoRoute> = {
     "title": "uuid 14.0.3 npm patch version update",
     "description": "uuid 14.0.3 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
   },
-  "/package/nuxt/4.6.1": {
-    "path": "/package/nuxt/4.6.1",
-    "title": "nuxt 4.6.1 npm patch version update",
-    "description": "nuxt 4.6.1 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-  },
   "/package/vite/8.3.4": {
     "path": "/package/vite/8.3.4",
     "title": "vite 8.3.4 npm patch version update",
     "description": "vite 8.3.4 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-  },
-  "/package/apollo-client/4.3.3": {
-    "path": "/package/apollo-client/4.3.3",
-    "title": "@apollo/client 4.3.3 npm patch version update",
-    "description": "@apollo/client 4.3.3 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
   },
   "/package/solid-js/1.9.17": {
     "path": "/package/solid-js/1.9.17",
