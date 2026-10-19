@@ -1,11 +1,11 @@
 [
   {
     "week": "Week 43, 2026",
-    "dateRange": "Oct 12 - Oct 18",
-    "risky": 27,
+    "dateRange": "Oct 19 - Oct 25",
+    "risky": 28,
     "breaking": 2,
     "security": 0,
-    "safe": 55,
+    "safe": 54,
     "total": 82,
     "topSignals": [
       {
@@ -27,6 +27,33 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "@typescript-eslint/parser",
+        "route": "/package/typescript-eslint-parser/8.72.0",
+        "risk": "review",
+        "newVersion": "8.72.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "@typescript-eslint/eslint-plugin",
+        "route": "/package/typescript-eslint-eslint-plugin/8.72.0",
+        "risk": "review",
+        "newVersion": "8.72.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "framer-motion",
+        "route": "/package/framer-motion/14.4.0",
+        "risk": "review",
+        "newVersion": "14.4.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "lucide-react",
         "route": "/package/lucide-react/1.59.0",
         "risk": "review",
@@ -45,15 +72,6 @@
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "astro",
-        "route": "/package/astro/7.4.0",
-        "risk": "review",
-        "newVersion": "7.4.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
         "packageName": "webpack",
         "route": "/package/webpack/5.112.0",
         "risk": "review",
@@ -61,28 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "happy-dom",
-        "route": "/package/happy-dom/21.0.3",
-        "risk": "review",
-        "newVersion": "21.0.3",
-        "reason": "Release notes mention security language, but no OSV or CVE match was found.",
-        "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
-        "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
-      },
-      {
-        "packageName": "framer-motion",
-        "route": "/package/framer-motion/14.3.0",
-        "risk": "review",
-        "newVersion": "14.3.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w43",
-    "generatedAt": "2026-10-18T16:34:18.529Z"
+    "generatedAt": "2026-10-19T19:21:19.929Z"
   },
   {
     "week": "Week 42, 2026",
