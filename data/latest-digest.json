@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-10-19T19:21:19.929Z",
+  "generatedAt": "2026-10-20T18:00:31.034Z",
   "weeklyDigest": {
     "week": "Week 43, 2026",
     "dateRange": "Oct 19 - Oct 25",
-    "risky": 28,
+    "risky": 26,
     "breaking": 2,
     "security": 0,
-    "safe": 54,
+    "safe": 56,
     "total": 82
   },
   "digestArchive": [
     {
       "week": "Week 43, 2026",
       "dateRange": "Oct 19 - Oct 25",
-      "risky": 28,
+      "risky": 26,
       "breaking": 2,
       "security": 0,
-      "safe": 54,
+      "safe": 56,
       "total": 82,
       "topSignals": [
         {
@@ -36,6 +36,15 @@
           "reason": "Major version release detected.",
           "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
           "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+        },
+        {
+          "packageName": "lucide-react",
+          "route": "/package/lucide-react/1.60.0",
+          "risk": "review",
+          "newVersion": "1.60.0",
+          "reason": "Minor version release detected with no OSV match.",
+          "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
         },
         {
           "packageName": "@typescript-eslint/parser",
@@ -65,15 +74,6 @@
           "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
         },
         {
-          "packageName": "lucide-react",
-          "route": "/package/lucide-react/1.59.0",
-          "risk": "review",
-          "newVersion": "1.59.0",
-          "reason": "Minor version release detected with no OSV match.",
-          "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-        },
-        {
           "packageName": "eslint",
           "route": "/package/eslint/10.13.0",
           "risk": "review",
@@ -93,7 +93,7 @@
         }
       ],
       "route": "/weekly/2026-w43",
-      "generatedAt": "2026-10-19T19:21:19.929Z"
+      "generatedAt": "2026-10-20T18:00:31.034Z"
     },
     {
       "week": "Week 42, 2026",
@@ -1805,7 +1805,7 @@
       "oldVersion": "8.5.1",
       "newVersion": "9.0.0",
       "releaseDate": "2026-10-14",
-      "publishedAgo": "published 5 days ago",
+      "publishedAgo": "published 6 days ago",
       "isRecent": true,
       "risk": "breaking",
       "category": "Major version",
@@ -1846,7 +1846,7 @@
       "oldVersion": "6.0.3",
       "newVersion": "7.0.2",
       "releaseDate": "2026-07-08",
-      "publishedAgo": "published 103 days ago",
+      "publishedAgo": "published 104 days ago",
       "isRecent": false,
       "risk": "breaking",
       "category": "Major version",
@@ -1880,6 +1880,47 @@
       ]
     },
     {
+      "id": "lucide-react-1-60-0",
+      "packageName": "lucide-react",
+      "packageSlug": "lucide-react",
+      "description": "React icon library",
+      "oldVersion": "1.59.0",
+      "newVersion": "1.60.0",
+      "releaseDate": "2026-10-20",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "review",
+      "category": "Minor version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Minor version release detected with no OSV match.",
+      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
+      "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
+      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+      "whatChanged": "GitHub release note found: Version 1.60.0.",
+      "githubReleaseTitle": "Version 1.60.0",
+      "githubReleaseUrl": "https://github.com/lucide-icons/lucide/releases/tag/1.60.0",
+      "githubReleaseTag": "1.60.0",
+      "githubReleasePublishedAt": "2026-10-20T06:07:21Z",
+      "releaseNotesExcerpt": "What's Changed feat(icons): added tombstone icon by @ryck in https://github.com/lucide-icons/lucide/pull/4929 feat(icons): added smartphone-user-round icon by @hitanshu-machhi in https://github.com/lucide-icons/lucide/pull/4586 feat(icons): added bacon icon by @devkamani9313-lab ",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/lucide-react/1.60.0",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/lucide-react"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/lucide-icons/lucide"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/lucide-icons/lucide/releases/tag/1.60.0"
+        }
+      ]
+    },
+    {
       "id": "typescript-eslint-parser-8-72-0",
       "packageName": "@typescript-eslint/parser",
       "packageSlug": "typescript-eslint-parser",
@@ -1887,7 +1928,7 @@
       "oldVersion": "8.71.2",
       "newVersion": "8.72.0",
       "releaseDate": "2026-10-19",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -1928,7 +1969,7 @@
       "oldVersion": "8.71.2",
       "newVersion": "8.72.0",
       "releaseDate": "2026-10-19",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -1969,7 +2010,7 @@
       "oldVersion": "14.3.1",
       "newVersion": "14.4.0",
       "releaseDate": "2026-10-19",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -1999,47 +2040,6 @@
       ]
     },
     {
-      "id": "lucide-react-1-59-0",
-      "packageName": "lucide-react",
-      "packageSlug": "lucide-react",
-      "description": "React icon library",
-      "oldVersion": "1.58.0",
-      "newVersion": "1.59.0",
-      "releaseDate": "2026-10-17",
-      "publishedAgo": "published 2 days ago",
-      "isRecent": true,
-      "risk": "review",
-      "category": "Minor version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Minor version release detected with no OSV match.",
-      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
-      "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
-      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-      "whatChanged": "GitHub release note found: Version 1.59.0.",
-      "githubReleaseTitle": "Version 1.59.0",
-      "githubReleaseUrl": "https://github.com/lucide-icons/lucide/releases/tag/1.59.0",
-      "githubReleaseTag": "1.59.0",
-      "githubReleasePublishedAt": "2026-10-17T06:06:42Z",
-      "releaseNotesExcerpt": "What's Changed feat(docs): Adds search field to docs pages by @ericfennis in https://github.com/lucide-icons/lucide/pull/5012 fix(icons): changed chess-queen icon by @karsa-mistmere in https://github.com/lucide-icons/lucide/pull/4613 **Full Changelog**: https://github.com/lucide-",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/lucide-react/1.59.0",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/lucide-react"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/lucide-icons/lucide"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/lucide-icons/lucide/releases/tag/1.59.0"
-        }
-      ]
-    },
-    {
       "id": "eslint-10-13-0",
       "packageName": "eslint",
       "packageSlug": "eslint",
@@ -2047,7 +2047,7 @@
       "oldVersion": "10.12.0",
       "newVersion": "10.13.0",
       "releaseDate": "2026-10-16",
-      "publishedAgo": "published 3 days ago",
+      "publishedAgo": "published 4 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2088,7 +2088,7 @@
       "oldVersion": "5.111.1",
       "newVersion": "5.112.0",
       "releaseDate": "2026-10-15",
-      "publishedAgo": "published 3 days ago",
+      "publishedAgo": "published 4 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2129,7 +2129,7 @@
       "oldVersion": "21.0.2",
       "newVersion": "21.0.3",
       "releaseDate": "2026-10-15",
-      "publishedAgo": "published 3 days ago",
+      "publishedAgo": "published 4 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Release-note review",
@@ -2170,7 +2170,7 @@
       "oldVersion": "12.13.0",
       "newVersion": "12.14.0",
       "releaseDate": "2026-10-15",
-      "publishedAgo": "published 4 days ago",
+      "publishedAgo": "published 5 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2211,7 +2211,7 @@
       "oldVersion": "22.2.2",
       "newVersion": "22.2.3",
       "releaseDate": "2026-10-14",
-      "publishedAgo": "published 4 days ago",
+      "publishedAgo": "published 5 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Release-note review",
@@ -2252,7 +2252,7 @@
       "oldVersion": "16.1.1",
       "newVersion": "16.2.0",
       "releaseDate": "2026-10-14",
-      "publishedAgo": "published 5 days ago",
+      "publishedAgo": "published 6 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2282,88 +2282,6 @@
         {
           "label": "GitHub release",
           "href": "https://github.com/cypress-io/cypress/releases/tag/v16.2.0"
-        }
-      ]
-    },
-    {
-      "id": "storybook-react-10-6-2",
-      "packageName": "@storybook/react",
-      "packageSlug": "storybook-react",
-      "description": "React component workshop",
-      "oldVersion": "10.6.1",
-      "newVersion": "10.6.2",
-      "releaseDate": "2026-10-12",
-      "publishedAgo": "published 7 days ago",
-      "isRecent": true,
-      "risk": "review",
-      "category": "Release-note review",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Release notes mention security language, but no OSV or CVE match was found.",
-      "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it.",
-      "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
-      "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
-      "whatChanged": "GitHub release note found: v10.6.2.",
-      "githubReleaseTitle": "v10.6.2",
-      "githubReleaseUrl": "https://github.com/storybookjs/storybook/releases/tag/v10.6.2",
-      "githubReleaseTag": "v10.6.2",
-      "githubReleasePublishedAt": "2026-10-12T18:19:37Z",
-      "releaseNotesExcerpt": "10.6.2 Angular-Vite: Require @analogjs/vite-plugin-angular 2.7.3 or later - #36525, thanks @valentinpalkovic! CLI: Fix hidden output of CLI commands on Yarn 1 - #36419, thanks @kasperpeulen! Preact: Support Preact 11 - #36526, thanks @ghengeveld! Security: Patch GHSA-f2ph-cmg5-wx",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/storybook-react/10.6.2",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/@storybook/react"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/storybookjs/storybook"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/storybookjs/storybook/releases/tag/v10.6.2"
-        }
-      ]
-    },
-    {
-      "id": "storybook-10-6-2",
-      "packageName": "storybook",
-      "packageSlug": "storybook",
-      "description": "Component documentation",
-      "oldVersion": "10.6.1",
-      "newVersion": "10.6.2",
-      "releaseDate": "2026-10-12",
-      "publishedAgo": "published 7 days ago",
-      "isRecent": true,
-      "risk": "review",
-      "category": "Release-note review",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Release notes mention security language, but no OSV or CVE match was found.",
-      "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
-      "whatChanged": "GitHub release note found: v10.6.2.",
-      "githubReleaseTitle": "v10.6.2",
-      "githubReleaseUrl": "https://github.com/storybookjs/storybook/releases/tag/v10.6.2",
-      "githubReleaseTag": "v10.6.2",
-      "githubReleasePublishedAt": "2026-10-12T18:19:37Z",
-      "releaseNotesExcerpt": "10.6.2 Angular-Vite: Require @analogjs/vite-plugin-angular 2.7.3 or later - #36525, thanks @valentinpalkovic! CLI: Fix hidden output of CLI commands on Yarn 1 - #36419, thanks @kasperpeulen! Preact: Support Preact 11 - #36526, thanks @ghengeveld! Security: Patch GHSA-f2ph-cmg5-wx",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag. Cached from an earlier generator run.",
-      "route": "/package/storybook/10.6.2",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/storybook"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/storybookjs/storybook"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/storybookjs/storybook/releases/tag/v10.6.2"
         }
       ]
     },
@@ -2416,7 +2334,7 @@
       "oldVersion": "7.89.0",
       "newVersion": "7.90.0",
       "releaseDate": "2026-10-11",
-      "publishedAgo": "published 8 days ago",
+      "publishedAgo": "published 9 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2457,7 +2375,7 @@
       "oldVersion": "2.1.0",
       "newVersion": "2.2.0",
       "releaseDate": "2026-10-09",
-      "publishedAgo": "published 10 days ago",
+      "publishedAgo": "published 11 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2498,7 +2416,7 @@
       "oldVersion": "9.4.0",
       "newVersion": "9.5.0",
       "releaseDate": "2026-10-09",
-      "publishedAgo": "published 10 days ago",
+      "publishedAgo": "published 11 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2539,7 +2457,7 @@
       "oldVersion": "2.12.0",
       "newVersion": "2.13.0",
       "releaseDate": "2026-09-29",
-      "publishedAgo": "published 20 days ago",
+      "publishedAgo": "published 21 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2580,7 +2498,7 @@
       "oldVersion": "8.21.3",
       "newVersion": "8.22.0",
       "releaseDate": "2026-09-26",
-      "publishedAgo": "published 23 days ago",
+      "publishedAgo": "published 24 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2621,7 +2539,7 @@
       "oldVersion": "3.6.0",
       "newVersion": "3.7.0",
       "releaseDate": "2026-09-12",
-      "publishedAgo": "published 36 days ago",
+      "publishedAgo": "published 37 days ago",
       "isRecent": false,
       "risk": "review",
       "category": "Minor version",
@@ -2736,7 +2654,7 @@
       "oldVersion": "3.36.1",
       "newVersion": "3.37.0",
       "releaseDate": "2026-08-28",
-      "publishedAgo": "published 52 days ago",
+      "publishedAgo": "published 53 days ago",
       "isRecent": false,
       "risk": "review",
       "category": "Minor version",
@@ -2777,7 +2695,7 @@
       "oldVersion": "1.19.0",
       "newVersion": "1.20.0",
       "releaseDate": "2026-08-26",
-      "publishedAgo": "published 54 days ago",
+      "publishedAgo": "published 55 days ago",
       "isRecent": false,
       "risk": "review",
       "category": "Minor version",
@@ -2818,7 +2736,7 @@
       "oldVersion": "4.3.0",
       "newVersion": "4.4.0",
       "releaseDate": "2026-05-29",
-      "publishedAgo": "published 142 days ago",
+      "publishedAgo": "published 143 days ago",
       "isRecent": false,
       "risk": "review",
       "category": "Minor version",
@@ -2934,6 +2852,170 @@
       ]
     },
     {
+      "id": "rollup-4-64-12",
+      "packageName": "rollup",
+      "packageSlug": "rollup",
+      "description": "Module bundler",
+      "oldVersion": "4.64.10",
+      "newVersion": "4.64.12",
+      "releaseDate": "2026-10-20",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "low",
+      "category": "Patch version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: v4.64.12.",
+      "githubReleaseTitle": "v4.64.12",
+      "githubReleaseUrl": "https://github.com/rollup/rollup/releases/tag/v4.64.12",
+      "githubReleaseTag": "v4.64.12",
+      "githubReleasePublishedAt": "2026-10-20T05:30:46Z",
+      "releaseNotesExcerpt": "4.64.12 _2026-10-20_ Bug Fixes Allow generating logs from transform hooks at position 0 (#6587) Properly handle global or sticky regular expressions for file names (#6588) Pull Requests #6587: Fix transform diagnostics at position zero (@shuaiyafei) #6588: Match stateful external",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/rollup/4.64.12",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/rollup"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/rollup/rollup"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/rollup/rollup/releases/tag/v4.64.12"
+        }
+      ]
+    },
+    {
+      "id": "immer-11-2-3",
+      "packageName": "immer",
+      "packageSlug": "immer",
+      "description": "Immutable state updates",
+      "oldVersion": "11.2.2",
+      "newVersion": "11.2.3",
+      "releaseDate": "2026-10-20",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "low",
+      "category": "Patch version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: v11.2.3.",
+      "githubReleaseTitle": "v11.2.3",
+      "githubReleaseUrl": "https://github.com/immerjs/immer/releases/tag/v11.2.3",
+      "githubReleaseTag": "v11.2.3",
+      "githubReleasePublishedAt": "2026-10-20T15:14:53Z",
+      "releaseNotesExcerpt": "11.2.3 (2026-10-20) Bug Fixes skip nested patches for children of shifted or reordered arrays (#1316) (fee2c4f)",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/immer/11.2.3",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/immer"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/immerjs/immer"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/immerjs/immer/releases/tag/v11.2.3"
+        }
+      ]
+    },
+    {
+      "id": "storybook-react-10-6-3",
+      "packageName": "@storybook/react",
+      "packageSlug": "storybook-react",
+      "description": "React component workshop",
+      "oldVersion": "10.6.2",
+      "newVersion": "10.6.3",
+      "releaseDate": "2026-10-20",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "low",
+      "category": "Patch version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: v10.6.3.",
+      "githubReleaseTitle": "v10.6.3",
+      "githubReleaseUrl": "https://github.com/storybookjs/storybook/releases/tag/v10.6.3",
+      "githubReleaseTag": "v10.6.3",
+      "githubReleasePublishedAt": "2026-10-20T09:50:15Z",
+      "releaseNotesExcerpt": "10.6.3 Addon Vitest: Support Vitest 5 - #36671, thanks @PaulMest! Next.js: Fix app-router mock crash on Next.js 16.4 - #36588, thanks @obvious-autobuild! Nextjs-Vite: Provide parentRenderTree.bfcacheId in app router mock - #36732, thanks @bhushan4work! TypeScript: Explicitly type",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/storybook-react/10.6.3",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/@storybook/react"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/storybookjs/storybook"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/storybookjs/storybook/releases/tag/v10.6.3"
+        }
+      ]
+    },
+    {
+      "id": "storybook-10-6-3",
+      "packageName": "storybook",
+      "packageSlug": "storybook",
+      "description": "Component documentation",
+      "oldVersion": "10.6.2",
+      "newVersion": "10.6.3",
+      "releaseDate": "2026-10-20",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "low",
+      "category": "Patch version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: v10.6.3.",
+      "githubReleaseTitle": "v10.6.3",
+      "githubReleaseUrl": "https://github.com/storybookjs/storybook/releases/tag/v10.6.3",
+      "githubReleaseTag": "v10.6.3",
+      "githubReleasePublishedAt": "2026-10-20T09:50:15Z",
+      "releaseNotesExcerpt": "10.6.3 Addon Vitest: Support Vitest 5 - #36671, thanks @PaulMest! Next.js: Fix app-router mock crash on Next.js 16.4 - #36588, thanks @obvious-autobuild! Nextjs-Vite: Provide parentRenderTree.bfcacheId in app router mock - #36732, thanks @bhushan4work! TypeScript: Explicitly type",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag. Cached from an earlier generator run.",
+      "route": "/package/storybook/10.6.3",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/storybook"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/storybookjs/storybook"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/storybookjs/storybook/releases/tag/v10.6.3"
+        }
+      ]
+    },
+    {
       "id": "astro-7-4-1",
       "packageName": "astro",
       "packageSlug": "astro",
@@ -2941,7 +3023,7 @@
       "oldVersion": "7.4.0",
       "newVersion": "7.4.1",
       "releaseDate": "2026-10-19",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -2982,7 +3064,7 @@
       "oldVersion": "5.104.4",
       "newVersion": "5.104.5",
       "releaseDate": "2026-10-19",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3016,14 +3098,14 @@
       ]
     },
     {
-      "id": "rollup-4-64-10",
-      "packageName": "rollup",
-      "packageSlug": "rollup",
-      "description": "Module bundler",
-      "oldVersion": "4.64.9",
-      "newVersion": "4.64.10",
-      "releaseDate": "2026-10-18",
-      "publishedAgo": "published 1 day ago",
+      "id": "apollo-client-4-3-5",
+      "packageName": "@apollo/client",
+      "packageSlug": "apollo-client",
+      "description": "GraphQL client",
+      "oldVersion": "4.3.4",
+      "newVersion": "4.3.5",
+      "releaseDate": "2026-10-19",
+      "publishedAgo": "published today",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3031,28 +3113,28 @@
       "cve": "No CVE match",
       "reason": "Patch release with no OSV match.",
       "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-      "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
       "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "GitHub release note found: v4.64.10.",
-      "githubReleaseTitle": "v4.64.10",
-      "githubReleaseUrl": "https://github.com/rollup/rollup/releases/tag/v4.64.10",
-      "githubReleaseTag": "v4.64.10",
-      "githubReleasePublishedAt": "2026-10-18T14:47:59Z",
-      "releaseNotesExcerpt": "4.64.10 _2026-10-18_ Bug Fixes Avoid breaking lazy loading when a dynamic import only contains reexports from a manual chunk (#6583) Ensure HTML entities in JSX are properly decoded in the output (#6584) Pull Requests #6583: Track manual chunk dependencies when merging small chun",
+      "whatChanged": "GitHub release note found: @apollo/client@4.3.5.",
+      "githubReleaseTitle": "@apollo/client@4.3.5",
+      "githubReleaseUrl": "https://github.com/apollographql/apollo-client/releases/tag/%40apollo/client%404.3.5",
+      "githubReleaseTag": "@apollo/client@4.3.5",
+      "githubReleasePublishedAt": "2026-10-19T21:23:12Z",
+      "releaseNotesExcerpt": "Patch Changes #13498 04b12e5 Thanks @jerelmiller! - Fix an issue where custom scalar values that are not JSON-serializable caused errors. These values are properly serialized when used as input for variables or when used as a key field value so that cache writes and calls to cach",
       "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/rollup/4.64.10",
+      "route": "/package/apollo-client/4.3.5",
       "sourceLinks": [
         {
           "label": "npm",
-          "href": "https://www.npmjs.com/package/rollup"
+          "href": "https://www.npmjs.com/package/@apollo/client"
         },
         {
           "label": "Repository",
-          "href": "https://github.com/rollup/rollup"
+          "href": "https://github.com/apollographql/apollo-client"
         },
         {
           "label": "GitHub release",
-          "href": "https://github.com/rollup/rollup/releases/tag/v4.64.10"
+          "href": "https://github.com/apollographql/apollo-client/releases/tag/%40apollo/client%404.3.5"
         }
       ]
     },
@@ -3064,7 +3146,7 @@
       "oldVersion": "8.5.30",
       "newVersion": "8.5.31",
       "releaseDate": "2026-10-18",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3105,7 +3187,7 @@
       "oldVersion": "4.6.1",
       "newVersion": "4.6.2",
       "releaseDate": "2026-10-16",
-      "publishedAgo": "published 3 days ago",
+      "publishedAgo": "published 4 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3180,47 +3262,6 @@
       ]
     },
     {
-      "id": "apollo-client-4-3-4",
-      "packageName": "@apollo/client",
-      "packageSlug": "apollo-client",
-      "description": "GraphQL client",
-      "oldVersion": "4.3.3",
-      "newVersion": "4.3.4",
-      "releaseDate": "2026-10-16",
-      "publishedAgo": "published 3 days ago",
-      "isRecent": true,
-      "risk": "low",
-      "category": "Patch version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Patch release with no OSV match.",
-      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "GitHub release note found: @apollo/client@4.3.4.",
-      "githubReleaseTitle": "@apollo/client@4.3.4",
-      "githubReleaseUrl": "https://github.com/apollographql/apollo-client/releases/tag/%40apollo/client%404.3.4",
-      "githubReleaseTag": "@apollo/client@4.3.4",
-      "githubReleasePublishedAt": "2026-10-16T17:30:42Z",
-      "releaseNotesExcerpt": "Patch Changes #13497 41d604c Thanks @jerelmiller! - Fix an issue where a list field selected more than once with different selection sets lost the fields that only one of the selections included while a @defer boundary elsewhere in the query was still pending when using the Graph",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/apollo-client/4.3.4",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/@apollo/client"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/apollographql/apollo-client"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/apollographql/apollo-client/releases/tag/%40apollo/client%404.3.4"
-        }
-      ]
-    },
-    {
       "id": "sass-1-105-2",
       "packageName": "sass",
       "packageSlug": "sass",
@@ -3228,7 +3269,7 @@
       "oldVersion": "1.105.1",
       "newVersion": "1.105.2",
       "releaseDate": "2026-10-16",
-      "publishedAgo": "published 3 days ago",
+      "publishedAgo": "published 4 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3269,7 +3310,7 @@
       "oldVersion": "16.4.1",
       "newVersion": "16.4.2",
       "releaseDate": "2026-10-15",
-      "publishedAgo": "published 3 days ago",
+      "publishedAgo": "published 4 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3310,7 +3351,7 @@
       "oldVersion": "5.0.4",
       "newVersion": "5.0.5",
       "releaseDate": "2026-10-15",
-      "publishedAgo": "published 4 days ago",
+      "publishedAgo": "published 5 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3351,7 +3392,7 @@
       "oldVersion": "19.3.0",
       "newVersion": "19.3.1",
       "releaseDate": "2026-10-14",
-      "publishedAgo": "published 5 days ago",
+      "publishedAgo": "published 6 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3392,7 +3433,7 @@
       "oldVersion": "19.3.0",
       "newVersion": "19.3.1",
       "releaseDate": "2026-10-14",
-      "publishedAgo": "published 5 days ago",
+      "publishedAgo": "published 6 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3433,7 +3474,7 @@
       "oldVersion": "1.64.0",
       "newVersion": "1.64.1",
       "releaseDate": "2026-10-14",
-      "publishedAgo": "published 5 days ago",
+      "publishedAgo": "published 6 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3474,7 +3515,7 @@
       "oldVersion": "3.5.43",
       "newVersion": "3.5.44",
       "releaseDate": "2026-10-13",
-      "publishedAgo": "published 6 days ago",
+      "publishedAgo": "published 7 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3515,7 +3556,7 @@
       "oldVersion": "4.6.6",
       "newVersion": "4.6.7",
       "releaseDate": "2026-10-12",
-      "publishedAgo": "published 7 days ago",
+      "publishedAgo": "published 8 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3556,7 +3597,7 @@
       "oldVersion": "1.3.0",
       "newVersion": "1.3.1",
       "releaseDate": "2026-10-12",
-      "publishedAgo": "published 6 days ago",
+      "publishedAgo": "published 7 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3593,7 +3634,7 @@
       "oldVersion": "1.3.0",
       "newVersion": "1.3.1",
       "releaseDate": "2026-10-12",
-      "publishedAgo": "published 6 days ago",
+      "publishedAgo": "published 7 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3630,7 +3671,7 @@
       "oldVersion": "1.16.17",
       "newVersion": "1.16.18",
       "releaseDate": "2026-10-11",
-      "publishedAgo": "published 8 days ago",
+      "publishedAgo": "published 9 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3671,7 +3712,7 @@
       "oldVersion": "3.9.9",
       "newVersion": "3.9.10",
       "releaseDate": "2026-10-10",
-      "publishedAgo": "published 9 days ago",
+      "publishedAgo": "published 10 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3712,7 +3753,7 @@
       "oldVersion": "3.0.2",
       "newVersion": "3.0.3",
       "releaseDate": "2026-10-10",
-      "publishedAgo": "published 9 days ago",
+      "publishedAgo": "published 10 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3753,7 +3794,7 @@
       "oldVersion": "14.0.2",
       "newVersion": "14.0.3",
       "releaseDate": "2026-10-10",
-      "publishedAgo": "published 9 days ago",
+      "publishedAgo": "published 10 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3794,7 +3835,7 @@
       "oldVersion": "8.3.3",
       "newVersion": "8.3.4",
       "releaseDate": "2026-10-08",
-      "publishedAgo": "published 11 days ago",
+      "publishedAgo": "published 12 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3835,7 +3876,7 @@
       "oldVersion": "1.9.16",
       "newVersion": "1.9.17",
       "releaseDate": "2026-10-07",
-      "publishedAgo": "published 12 days ago",
+      "publishedAgo": "published 13 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3872,7 +3913,7 @@
       "oldVersion": "8.0.6",
       "newVersion": "8.0.7",
       "releaseDate": "2026-10-07",
-      "publishedAgo": "published 12 days ago",
+      "publishedAgo": "published 13 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3913,7 +3954,7 @@
       "oldVersion": "8.0.6",
       "newVersion": "8.0.7",
       "releaseDate": "2026-10-07",
-      "publishedAgo": "published 12 days ago",
+      "publishedAgo": "published 13 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3954,7 +3995,7 @@
       "oldVersion": "5.57.1",
       "newVersion": "5.57.2",
       "releaseDate": "2026-10-06",
-      "publishedAgo": "published 13 days ago",
+      "publishedAgo": "published 14 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3995,7 +4036,7 @@
       "oldVersion": "6.1.1",
       "newVersion": "6.1.2",
       "releaseDate": "2026-10-05",
-      "publishedAgo": "published 14 days ago",
+      "publishedAgo": "published 15 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -4036,7 +4077,7 @@
       "oldVersion": "6.0.1",
       "newVersion": "6.0.2",
       "releaseDate": "2026-10-05",
-      "publishedAgo": "published 13 days ago",
+      "publishedAgo": "published 14 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -4070,47 +4111,6 @@
       ]
     },
     {
-      "id": "immer-11-1-21",
-      "packageName": "immer",
-      "packageSlug": "immer",
-      "description": "Immutable state updates",
-      "oldVersion": "11.1.20",
-      "newVersion": "11.1.21",
-      "releaseDate": "2026-10-02",
-      "publishedAgo": "published 17 days ago",
-      "isRecent": true,
-      "risk": "low",
-      "category": "Patch version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Patch release with no OSV match.",
-      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "GitHub release note found: v11.1.21.",
-      "githubReleaseTitle": "v11.1.21",
-      "githubReleaseUrl": "https://github.com/immerjs/immer/releases/tag/v11.1.21",
-      "githubReleaseTag": "v11.1.21",
-      "githubReleasePublishedAt": "2026-10-02T18:23:33Z",
-      "releaseNotesExcerpt": "11.1.21 (2026-10-02) Bug Fixes throw on reads of a revoked Map or Set draft (#1298) (8848a5b)",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/immer/11.1.21",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/immer"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/immerjs/immer"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/immerjs/immer/releases/tag/v11.1.21"
-        }
-      ]
-    },
-    {
       "id": "jest-30-5-2",
       "packageName": "jest",
       "packageSlug": "jest",
@@ -4118,7 +4118,7 @@
       "oldVersion": "30.5.1",
       "newVersion": "30.5.2",
       "releaseDate": "2026-09-18",
-      "publishedAgo": "published 31 days ago",
+      "publishedAgo": "published 32 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4159,7 +4159,7 @@
       "oldVersion": "7.18.3",
       "newVersion": "7.18.4",
       "releaseDate": "2026-09-15",
-      "publishedAgo": "published 34 days ago",
+      "publishedAgo": "published 35 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4200,7 +4200,7 @@
       "oldVersion": "10.6.0",
       "newVersion": "10.6.1",
       "releaseDate": "2026-09-15",
-      "publishedAgo": "published 34 days ago",
+      "publishedAgo": "published 35 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4241,7 +4241,7 @@
       "oldVersion": "4.9.0",
       "newVersion": "4.9.1",
       "releaseDate": "2026-09-02",
-      "publishedAgo": "published 46 days ago",
+      "publishedAgo": "published 47 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4282,7 +4282,7 @@
       "oldVersion": "16.3.2",
       "newVersion": "16.3.3",
       "releaseDate": "2026-08-27",
-      "publishedAgo": "published 53 days ago",
+      "publishedAgo": "published 54 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4323,7 +4323,7 @@
       "oldVersion": "1.11.22",
       "newVersion": "1.11.23",
       "releaseDate": "2026-08-17",
-      "publishedAgo": "published 63 days ago",
+      "publishedAgo": "published 64 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4364,7 +4364,7 @@
       "oldVersion": "5.0.14",
       "newVersion": "5.0.15",
       "releaseDate": "2026-08-13",
-      "publishedAgo": "published 67 days ago",
+      "publishedAgo": "published 68 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4405,7 +4405,7 @@
       "oldVersion": "2.5.0",
       "newVersion": "2.5.1",
       "releaseDate": "2026-08-12",
-      "publishedAgo": "published 68 days ago",
+      "publishedAgo": "published 69 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4446,7 +4446,7 @@
       "oldVersion": "7.0.0",
       "newVersion": "7.0.1",
       "releaseDate": "2026-08-09",
-      "publishedAgo": "published 70 days ago",
+      "publishedAgo": "published 71 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4487,7 +4487,7 @@
       "oldVersion": "0.28.1",
       "newVersion": "0.28.2",
       "releaseDate": "2026-08-08",
-      "publishedAgo": "published 71 days ago",
+      "publishedAgo": "published 72 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4528,7 +4528,7 @@
       "oldVersion": "4.3.2",
       "newVersion": "4.3.3",
       "releaseDate": "2026-07-16",
-      "publishedAgo": "published 95 days ago",
+      "publishedAgo": "published 96 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4569,7 +4569,7 @@
       "oldVersion": "17.0.1",
       "newVersion": "17.0.2",
       "releaseDate": "2026-07-03",
-      "publishedAgo": "published 108 days ago",
+      "publishedAgo": "published 109 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4651,7 +4651,7 @@
       "oldVersion": "8.0.0",
       "newVersion": "8.0.1",
       "releaseDate": "2026-06-17",
-      "publishedAgo": "published 124 days ago",
+      "publishedAgo": "published 125 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4692,7 +4692,7 @@
       "oldVersion": "2.17.4",
       "newVersion": "2.17.5",
       "releaseDate": "2026-06-01",
-      "publishedAgo": "published 140 days ago",
+      "publishedAgo": "published 141 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4729,7 +4729,7 @@
       "oldVersion": "4.18.0",
       "newVersion": "4.18.1",
       "releaseDate": "2026-04-01",
-      "publishedAgo": "published 200 days ago",
+      "publishedAgo": "published 201 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4770,7 +4770,7 @@
       "oldVersion": "5.16.0",
       "newVersion": "5.16.1",
       "releaseDate": "2026-02-10",
-      "publishedAgo": "published 251 days ago",
+      "publishedAgo": "published 252 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4811,7 +4811,7 @@
       "oldVersion": "2.16.3",
       "newVersion": "2.16.4",
       "releaseDate": "2026-02-02",
-      "publishedAgo": "published 259 days ago",
+      "publishedAgo": "published 260 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4852,7 +4852,7 @@
       "oldVersion": "2.4.8",
       "newVersion": "2.4.9",
       "releaseDate": "2025-11-10",
-      "publishedAgo": "published 343 days ago",
+      "publishedAgo": "published 344 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -5229,7 +5229,7 @@
       "packageName": "rollup",
       "description": "Module bundler",
       "route": "/package/rollup",
-      "latestReleaseRoute": "/package/rollup/4.64.10",
+      "latestReleaseRoute": "/package/rollup/4.64.12",
       "areaSlug": "build-tooling",
       "areaLabel": "Build Tooling"
     },
@@ -5429,7 +5429,7 @@
       "packageName": "@apollo/client",
       "description": "GraphQL client",
       "route": "/package/apollo-client",
-      "latestReleaseRoute": "/package/apollo-client/4.3.4",
+      "latestReleaseRoute": "/package/apollo-client/4.3.5",
       "areaSlug": "routing-state-data",
       "areaLabel": "Routing, State, and Data"
     },
@@ -5445,7 +5445,7 @@
       "packageName": "immer",
       "description": "Immutable state updates",
       "route": "/package/immer",
-      "latestReleaseRoute": "/package/immer/11.1.21",
+      "latestReleaseRoute": "/package/immer/11.2.3",
       "areaSlug": "routing-state-data",
       "areaLabel": "Routing, State, and Data"
     },
@@ -5517,7 +5517,7 @@
       "packageName": "@storybook/react",
       "description": "React component workshop",
       "route": "/package/storybook-react",
-      "latestReleaseRoute": "/package/storybook-react/10.6.2",
+      "latestReleaseRoute": "/package/storybook-react/10.6.3",
       "areaSlug": "testing-storybook",
       "areaLabel": "Testing and Storybook"
     },
@@ -5525,7 +5525,7 @@
       "packageName": "storybook",
       "description": "Component documentation",
       "route": "/package/storybook",
-      "latestReleaseRoute": "/package/storybook/10.6.2",
+      "latestReleaseRoute": "/package/storybook/10.6.3",
       "areaSlug": "testing-storybook",
       "areaLabel": "Testing and Storybook"
     },
@@ -5677,7 +5677,7 @@
       "packageName": "lucide-react",
       "description": "React icon library",
       "route": "/package/lucide-react",
-      "latestReleaseRoute": "/package/lucide-react/1.59.0",
+      "latestReleaseRoute": "/package/lucide-react/1.60.0",
       "areaSlug": "css-ui",
       "areaLabel": "CSS and UI Libraries"
     },
@@ -5943,7 +5943,7 @@
           "packageName": "rollup",
           "description": "Module bundler",
           "route": "/package/rollup",
-          "latestReleaseRoute": "/package/rollup/4.64.10",
+          "latestReleaseRoute": "/package/rollup/4.64.12",
           "areaSlug": "build-tooling",
           "areaLabel": "Build Tooling"
         },
@@ -6057,7 +6057,7 @@
           "packageName": "@apollo/client",
           "description": "GraphQL client",
           "route": "/package/apollo-client",
-          "latestReleaseRoute": "/package/apollo-client/4.3.4",
+          "latestReleaseRoute": "/package/apollo-client/4.3.5",
           "areaSlug": "routing-state-data",
           "areaLabel": "Routing, State, and Data"
         },
@@ -6097,7 +6097,7 @@
           "packageName": "immer",
           "description": "Immutable state updates",
           "route": "/package/immer",
-          "latestReleaseRoute": "/package/immer/11.1.21",
+          "latestReleaseRoute": "/package/immer/11.2.3",
           "areaSlug": "routing-state-data",
           "areaLabel": "Routing, State, and Data"
         },
@@ -6195,7 +6195,7 @@
           "packageName": "@storybook/react",
           "description": "React component workshop",
           "route": "/package/storybook-react",
-          "latestReleaseRoute": "/package/storybook-react/10.6.2",
+          "latestReleaseRoute": "/package/storybook-react/10.6.3",
           "areaSlug": "testing-storybook",
           "areaLabel": "Testing and Storybook"
         },
@@ -6259,7 +6259,7 @@
           "packageName": "storybook",
           "description": "Component documentation",
           "route": "/package/storybook",
-          "latestReleaseRoute": "/package/storybook/10.6.2",
+          "latestReleaseRoute": "/package/storybook/10.6.3",
           "areaSlug": "testing-storybook",
           "areaLabel": "Testing and Storybook"
         },
@@ -6372,7 +6372,7 @@
           "packageName": "lucide-react",
           "description": "React icon library",
           "route": "/package/lucide-react",
-          "latestReleaseRoute": "/package/lucide-react/1.59.0",
+          "latestReleaseRoute": "/package/lucide-react/1.60.0",
           "areaSlug": "css-ui",
           "areaLabel": "CSS and UI Libraries"
         },
@@ -6542,7 +6542,7 @@
     "/weekly/2026-w43": {
       "path": "/weekly/2026-w43",
       "title": "Week 43, 2026 frontend npm risk archive",
-      "description": "Oct 19 - Oct 25 archive for frontend npm dependency risk: 28 risky updates, 2 breaking releases, 0 security updates, OSV/CVE checks, and recommended actions."
+      "description": "Oct 19 - Oct 25 archive for frontend npm dependency risk: 26 risky updates, 2 breaking releases, 0 security updates, OSV/CVE checks, and recommended actions."
     },
     "/weekly/2026-w42": {
       "path": "/weekly/2026-w42",
@@ -7104,6 +7104,11 @@
       "title": "typescript 7.0.2 npm major version update",
       "description": "typescript 7.0.2 frontend npm update risk: Major version release detected. OSV: No OSV match. CVE: No CVE match. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were..."
     },
+    "/package/lucide-react/1.60.0": {
+      "path": "/package/lucide-react/1.60.0",
+      "title": "lucide-react 1.60.0 npm minor version update",
+      "description": "lucide-react 1.60.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release..."
+    },
     "/package/typescript-eslint-parser/8.72.0": {
       "path": "/package/typescript-eslint-parser/8.72.0",
       "title": "@typescript-eslint/parser 8.72.0 npm minor version update",
@@ -7118,11 +7123,6 @@
       "path": "/package/framer-motion/14.4.0",
       "title": "framer-motion 14.4.0 npm minor version update",
       "description": "framer-motion 14.4.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance."
-    },
-    "/package/lucide-react/1.59.0": {
-      "path": "/package/lucide-react/1.59.0",
-      "title": "lucide-react 1.59.0 npm minor version update",
-      "description": "lucide-react 1.59.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release..."
     },
     "/package/eslint/10.13.0": {
       "path": "/package/eslint/10.13.0",
@@ -7153,16 +7153,6 @@
       "path": "/package/cypress/16.2.0",
       "title": "cypress 16.2.0 npm minor version update",
       "description": "cypress 16.2.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release..."
-    },
-    "/package/storybook-react/10.6.2": {
-      "path": "/package/storybook-react/10.6.2",
-      "title": "@storybook/react 10.6.2 npm release-note review update",
-      "description": "@storybook/react 10.6.2 frontend npm update risk: Release notes mention security language, but no OSV or CVE match was found. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Confirm against OSV and..."
-    },
-    "/package/storybook/10.6.2": {
-      "path": "/package/storybook/10.6.2",
-      "title": "storybook 10.6.2 npm release-note review update",
-      "description": "storybook 10.6.2 frontend npm update risk: Release notes mention security language, but no OSV or CVE match was found. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Confirm against OSV and CVE..."
     },
     "/package/styled-components/6.6.0": {
       "path": "/package/styled-components/6.6.0",
@@ -7234,6 +7224,26 @@
       "title": "npm-run-all 4.1.5 npm release-note review update",
       "description": "npm-run-all 4.1.5 frontend npm update risk: Release notes mention security language, but no OSV or CVE match was found. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Confirm against OSV and CVE..."
     },
+    "/package/rollup/4.64.12": {
+      "path": "/package/rollup/4.64.12",
+      "title": "rollup 4.64.12 npm patch version update",
+      "description": "rollup 4.64.12 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
+    "/package/immer/11.2.3": {
+      "path": "/package/immer/11.2.3",
+      "title": "immer 11.2.3 npm patch version update",
+      "description": "immer 11.2.3 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
+    "/package/storybook-react/10.6.3": {
+      "path": "/package/storybook-react/10.6.3",
+      "title": "@storybook/react 10.6.3 npm patch version update",
+      "description": "@storybook/react 10.6.3 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
+    "/package/storybook/10.6.3": {
+      "path": "/package/storybook/10.6.3",
+      "title": "storybook 10.6.3 npm patch version update",
+      "description": "storybook 10.6.3 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
     "/package/astro/7.4.1": {
       "path": "/package/astro/7.4.1",
       "title": "astro 7.4.1 npm patch version update",
@@ -7244,10 +7254,10 @@
       "title": "@tanstack/react-query 5.104.5 npm patch version update",
       "description": "@tanstack/react-query 5.104.5 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
-    "/package/rollup/4.64.10": {
-      "path": "/package/rollup/4.64.10",
-      "title": "rollup 4.64.10 npm patch version update",
-      "description": "rollup 4.64.10 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    "/package/apollo-client/4.3.5": {
+      "path": "/package/apollo-client/4.3.5",
+      "title": "@apollo/client 4.3.5 npm patch version update",
+      "description": "@apollo/client 4.3.5 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/postcss/8.5.31": {
       "path": "/package/postcss/8.5.31",
@@ -7263,11 +7273,6 @@
       "path": "/package/turbo/2.11.9",
       "title": "turbo 2.11.9 npm patch version update",
       "description": "turbo 2.11.9 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-    },
-    "/package/apollo-client/4.3.4": {
-      "path": "/package/apollo-client/4.3.4",
-      "title": "@apollo/client 4.3.4 npm patch version update",
-      "description": "@apollo/client 4.3.4 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/sass/1.105.2": {
       "path": "/package/sass/1.105.2",
@@ -7373,11 +7378,6 @@
       "path": "/package/nanoid/6.0.2",
       "title": "nanoid 6.0.2 npm patch version update",
       "description": "nanoid 6.0.2 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-    },
-    "/package/immer/11.1.21": {
-      "path": "/package/immer/11.1.21",
-      "title": "immer 11.1.21 npm patch version update",
-      "description": "immer 11.1.21 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/jest/30.5.2": {
       "path": "/package/jest/30.5.2",
