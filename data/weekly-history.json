@@ -2,12 +2,21 @@
   {
     "week": "Week 43, 2026",
     "dateRange": "Oct 19 - Oct 25",
-    "risky": 26,
+    "risky": 27,
     "breaking": 2,
-    "security": 0,
-    "safe": 56,
+    "security": 1,
+    "safe": 55,
     "total": 82,
     "topSignals": [
+      {
+        "packageName": "nuxt",
+        "route": "/package/nuxt/4.6.2",
+        "risk": "security",
+        "newVersion": "4.6.2",
+        "reason": "Known OSV vulnerability signal found for this package version.",
+        "recommendedAction": "Update recommended. Review advisory links and upgrade through the normal security lane. GitHub release notes were found for review.",
+        "whyThisMatters": "Security-linked releases deserve review even when the package is not directly imported by application code."
+      },
       {
         "packageName": "tsup",
         "route": "/package/tsup/9.0.0",
@@ -27,19 +36,19 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
-        "packageName": "sass",
-        "route": "/package/sass/1.106.0",
+        "packageName": "rollup",
+        "route": "/package/rollup/4.65.0",
         "risk": "review",
-        "newVersion": "1.106.0",
+        "newVersion": "4.65.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
         "packageName": "framer-motion",
-        "route": "/package/framer-motion/14.5.0",
+        "route": "/package/framer-motion/14.6.0",
         "risk": "review",
-        "newVersion": "14.5.0",
+        "newVersion": "14.6.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
@@ -54,6 +63,15 @@
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
+        "packageName": "pnpm",
+        "route": "/package/pnpm/12.15.0",
+        "risk": "review",
+        "newVersion": "12.15.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "@typescript-eslint/parser",
         "route": "/package/typescript-eslint-parser/8.72.0",
         "risk": "review",
@@ -61,28 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "@typescript-eslint/eslint-plugin",
-        "route": "/package/typescript-eslint-eslint-plugin/8.72.0",
-        "risk": "review",
-        "newVersion": "8.72.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "eslint",
-        "route": "/package/eslint/10.13.0",
-        "risk": "review",
-        "newVersion": "10.13.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w43",
-    "generatedAt": "2026-10-21T18:06:02.754Z"
+    "generatedAt": "2026-10-22T18:01:32.946Z"
   },
   {
     "week": "Week 42, 2026",
