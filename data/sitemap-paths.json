@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T18:01:32.946Z",
+  "generatedAt": "2026-10-23T17:53:24.041Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -21,7 +21,7 @@
     "/package/axios",
     "/package/axios/1.20.0",
     "/package/babel-core",
-    "/package/babel-core/8.0.7",
+    "/package/babel-core/8.0.9",
     "/package/babel-preset-env",
     "/package/babel-preset-env/8.0.7",
     "/package/babel-preset-react",
@@ -77,7 +77,7 @@
     "/package/nanoid",
     "/package/nanoid/6.0.2",
     "/package/next",
-    "/package/next/16.4.2",
+    "/package/next/16.4.3",
     "/package/npm-run-all",
     "/package/npm-run-all/4.1.5",
     "/package/nuxt",
@@ -165,7 +165,7 @@
     "/package/vue",
     "/package/vue/3.5.44",
     "/package/webpack",
-    "/package/webpack/5.112.0",
+    "/package/webpack/5.112.2",
     "/package/ws",
     "/package/ws/8.22.0",
     "/package/yup",

@@ -2,10 +2,10 @@
   {
     "week": "Week 43, 2026",
     "dateRange": "Oct 19 - Oct 25",
-    "risky": 27,
+    "risky": 26,
     "breaking": 2,
     "security": 1,
-    "safe": 55,
+    "safe": 56,
     "total": 82,
     "topSignals": [
       {
@@ -82,7 +82,7 @@
       }
     ],
     "route": "/weekly/2026-w43",
-    "generatedAt": "2026-10-22T18:01:32.946Z"
+    "generatedAt": "2026-10-23T17:53:24.041Z"
   },
   {
     "week": "Week 42, 2026",
