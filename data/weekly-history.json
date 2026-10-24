@@ -36,6 +36,15 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "react-hook-form",
+        "route": "/package/react-hook-form/7.91.0",
+        "risk": "review",
+        "newVersion": "7.91.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "rollup",
         "route": "/package/rollup/4.65.0",
         "risk": "review",
@@ -70,19 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "@typescript-eslint/parser",
-        "route": "/package/typescript-eslint-parser/8.72.0",
-        "risk": "review",
-        "newVersion": "8.72.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w43",
-    "generatedAt": "2026-10-23T17:53:24.041Z"
+    "generatedAt": "2026-10-24T16:39:13.597Z"
   },
   {
     "week": "Week 42, 2026",
