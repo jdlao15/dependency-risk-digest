@@ -1,5 +1,90 @@
 [
   {
+    "week": "Week 44, 2026",
+    "dateRange": "Oct 19 - Oct 25",
+    "risky": 26,
+    "breaking": 2,
+    "security": 1,
+    "safe": 56,
+    "total": 82,
+    "topSignals": [
+      {
+        "packageName": "nuxt",
+        "route": "/package/nuxt/4.6.2",
+        "risk": "security",
+        "newVersion": "4.6.2",
+        "reason": "Known OSV vulnerability signal found for this package version.",
+        "recommendedAction": "Update recommended. Review advisory links and upgrade through the normal security lane. GitHub release notes were found for review.",
+        "whyThisMatters": "Security-linked releases deserve review even when the package is not directly imported by application code."
+      },
+      {
+        "packageName": "tsup",
+        "route": "/package/tsup/9.0.0",
+        "risk": "breaking",
+        "newVersion": "9.0.0",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "typescript",
+        "route": "/package/typescript/7.0.2",
+        "risk": "breaking",
+        "newVersion": "7.0.2",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "react-hook-form",
+        "route": "/package/react-hook-form/7.91.0",
+        "risk": "review",
+        "newVersion": "7.91.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "rollup",
+        "route": "/package/rollup/4.65.0",
+        "risk": "review",
+        "newVersion": "4.65.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "framer-motion",
+        "route": "/package/framer-motion/14.6.0",
+        "risk": "review",
+        "newVersion": "14.6.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.61.0",
+        "risk": "review",
+        "newVersion": "1.61.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "pnpm",
+        "route": "/package/pnpm/12.15.0",
+        "risk": "review",
+        "newVersion": "12.15.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      }
+    ],
+    "route": "/weekly/2026-w44",
+    "generatedAt": "2026-10-25T17:04:26.144Z"
+  },
+  {
     "week": "Week 43, 2026",
     "dateRange": "Oct 19 - Oct 25",
     "risky": 26,
