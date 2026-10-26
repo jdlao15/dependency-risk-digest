@@ -1,11 +1,11 @@
 [
   {
     "week": "Week 44, 2026",
-    "dateRange": "Oct 19 - Oct 25",
-    "risky": 26,
+    "dateRange": "Oct 26 - Nov 1",
+    "risky": 24,
     "breaking": 2,
     "security": 1,
-    "safe": 56,
+    "safe": 58,
     "total": 82,
     "topSignals": [
       {
@@ -36,19 +36,19 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
-        "packageName": "react-hook-form",
-        "route": "/package/react-hook-form/7.91.0",
+        "packageName": "@tanstack/react-query",
+        "route": "/package/tanstack-react-query/5.105.0",
         "risk": "review",
-        "newVersion": "7.91.0",
+        "newVersion": "5.105.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "rollup",
-        "route": "/package/rollup/4.65.0",
+        "packageName": "react-hook-form",
+        "route": "/package/react-hook-form/7.91.0",
         "risk": "review",
-        "newVersion": "4.65.0",
+        "newVersion": "7.91.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
@@ -82,7 +82,7 @@
       }
     ],
     "route": "/weekly/2026-w44",
-    "generatedAt": "2026-10-25T17:04:26.144Z"
+    "generatedAt": "2026-10-26T19:22:23.757Z"
   },
   {
     "week": "Week 43, 2026",
