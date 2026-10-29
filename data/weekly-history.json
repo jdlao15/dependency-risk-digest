@@ -2,10 +2,10 @@
   {
     "week": "Week 44, 2026",
     "dateRange": "Oct 26 - Nov 1",
-    "risky": 22,
+    "risky": 23,
     "breaking": 2,
     "security": 1,
-    "safe": 60,
+    "safe": 59,
     "total": 82,
     "topSignals": [
       {
@@ -36,6 +36,24 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "framer-motion",
+        "route": "/package/framer-motion/14.8.0",
+        "risk": "review",
+        "newVersion": "14.8.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.64.0",
+        "risk": "review",
+        "newVersion": "1.64.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "rollup",
         "route": "/package/rollup/4.66.0",
         "risk": "review",
@@ -45,10 +63,10 @@
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.63.0",
+        "packageName": "sass",
+        "route": "/package/sass/1.107.0",
         "risk": "review",
-        "newVersion": "1.63.0",
+        "newVersion": "1.107.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
@@ -61,28 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "@tanstack/react-query",
-        "route": "/package/tanstack-react-query/5.105.0",
-        "risk": "review",
-        "newVersion": "5.105.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "react-hook-form",
-        "route": "/package/react-hook-form/7.91.0",
-        "risk": "review",
-        "newVersion": "7.91.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w44",
-    "generatedAt": "2026-10-28T18:53:39.443Z"
+    "generatedAt": "2026-10-29T18:58:30.027Z"
   },
   {
     "week": "Week 43, 2026",
