@@ -6,19 +6,19 @@
     <description>Frontend npm dependency-risk updates with OSV/CVE signals, release notes, breaking changes, security updates, and recommended actions.</description>
     <atom:link href="https://dependency-risk-digest.vercel.app/feed.xml" rel="self" type="application/rss+xml" />
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Oct 2026 18:58:30 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 18:39:00 GMT</lastBuildDate>
     <item>
       <title>Week 44, 2026 Frontend Dependency Risk Digest</title>
       <link>https://dependency-risk-digest.vercel.app/weekly</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/weekly#2026-10-29T18:58:30.027Z</guid>
-      <pubDate>Thu, 29 Oct 2026 18:58:30 GMT</pubDate>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/weekly#2026-10-30T18:39:00.065Z</guid>
+      <pubDate>Fri, 30 Oct 2026 18:39:00 GMT</pubDate>
       <description>23 risky updates, 2 breaking changes, 1 security-relevant releases, OSV/CVE checks, release notes, and recommended actions.</description>
     </item>
     <item>
       <title>Week 44, 2026 dependency-risk archive</title>
       <link>https://dependency-risk-digest.vercel.app/weekly/2026-w44</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/weekly/2026-w44#2026-10-29T18:58:30.027Z</guid>
-      <pubDate>Thu, 29 Oct 2026 18:58:30 GMT</pubDate>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/weekly/2026-w44#2026-10-30T18:39:00.065Z</guid>
+      <pubDate>Fri, 30 Oct 2026 18:39:00 GMT</pubDate>
       <description>Oct 26 - Nov 1: 23 risky updates, 2 breaking changes, 1 security-relevant releases, and 82 tracked frontend npm packages.</description>
     </item>
     <item>
@@ -73,210 +73,210 @@
     <item>
       <title>nuxt 4.6.3 verified vulnerability update</title>
       <link>https://dependency-risk-digest.vercel.app/package/nuxt/4.6.3</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/nuxt/4.6.3#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/nuxt/4.6.3#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
       <description>Known OSV vulnerability signal found for this package version. OSV: 1 OSV match. CVE: CVE-2026-114132. Recommended action: Update recommended. Review advisory links and upgrade through the normal security lane. GitHub release notes were found for review.</description>
     </item>
     <item>
       <title>tsup 9.0.0 major version update</title>
       <link>https://dependency-risk-digest.vercel.app/package/tsup/9.0.0</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/tsup/9.0.0#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/tsup/9.0.0#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
       <description>Major version release detected. OSV: No OSV match. CVE: No CVE match. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were found for review.</description>
     </item>
     <item>
       <title>typescript 7.0.2 major version update</title>
       <link>https://dependency-risk-digest.vercel.app/package/typescript/7.0.2</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/typescript/7.0.2#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/typescript/7.0.2#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate>
       <description>Major version release detected. OSV: No OSV match. CVE: No CVE match. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were found for review.</description>
     </item>
     <item>
-      <title>framer-motion 14.8.0 minor version update</title>
-      <link>https://dependency-risk-digest.vercel.app/package/framer-motion/14.8.0</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/framer-motion/14.8.0#2026-10-29T18:58:30.027Z</guid>
-      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance.</description>
-    </item>
-    <item>
-      <title>lucide-react 1.64.0 minor version update</title>
-      <link>https://dependency-risk-digest.vercel.app/package/lucide-react/1.64.0</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/lucide-react/1.64.0#2026-10-29T18:58:30.027Z</guid>
-      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <title>rollup 4.67.2 minor version update</title>
+      <link>https://dependency-risk-digest.vercel.app/package/rollup/4.67.2</link>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/rollup/4.67.2#2026-10-30T18:39:00.065Z</guid>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
       <description>Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.</description>
     </item>
     <item>
-      <title>rollup 4.66.0 minor version update</title>
-      <link>https://dependency-risk-digest.vercel.app/package/rollup/4.66.0</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/rollup/4.66.0#2026-10-29T18:58:30.027Z</guid>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <title>eslint 10.14.0 minor version update</title>
+      <link>https://dependency-risk-digest.vercel.app/package/eslint/10.14.0</link>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/eslint/10.14.0#2026-10-30T18:39:00.065Z</guid>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.</description>
+    </item>
+    <item>
+      <title>framer-motion 14.9.0 minor version update</title>
+      <link>https://dependency-risk-digest.vercel.app/package/framer-motion/14.9.0</link>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/framer-motion/14.9.0#2026-10-30T18:39:00.065Z</guid>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance.</description>
+    </item>
+    <item>
+      <title>lucide-react 1.65.0 minor version update</title>
+      <link>https://dependency-risk-digest.vercel.app/package/lucide-react/1.65.0</link>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/lucide-react/1.65.0#2026-10-30T18:39:00.065Z</guid>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
       <description>Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.</description>
     </item>
     <item>
       <title>sass 1.107.0 minor version update</title>
       <link>https://dependency-risk-digest.vercel.app/package/sass/1.107.0</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/sass/1.107.0#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/sass/1.107.0#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
       <description>Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.</description>
     </item>
     <item>
       <title>axios 1.21.0 minor version update</title>
       <link>https://dependency-risk-digest.vercel.app/package/axios/1.21.0</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/axios/1.21.0#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/axios/1.21.0#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
       <description>Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.</description>
     </item>
     <item>
       <title>@tanstack/react-query 5.105.0 minor version update</title>
       <link>https://dependency-risk-digest.vercel.app/package/tanstack-react-query/5.105.0</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/tanstack-react-query/5.105.0#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/tanstack-react-query/5.105.0#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
       <description>Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.</description>
     </item>
     <item>
       <title>react-hook-form 7.91.0 minor version update</title>
       <link>https://dependency-risk-digest.vercel.app/package/react-hook-form/7.91.0</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/react-hook-form/7.91.0#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/react-hook-form/7.91.0#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.</description>
-    </item>
-    <item>
-      <title>eslint 10.13.0 minor version update</title>
-      <link>https://dependency-risk-digest.vercel.app/package/eslint/10.13.0</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/eslint/10.13.0#2026-10-29T18:58:30.027Z</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <description>Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.</description>
     </item>
     <item>
       <title>styled-components 6.6.0 minor version update</title>
       <link>https://dependency-risk-digest.vercel.app/package/styled-components/6.6.0</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/styled-components/6.6.0#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/styled-components/6.6.0#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
       <description>Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.</description>
     </item>
     <item>
       <title>ky 2.2.0 minor version update</title>
       <link>https://dependency-risk-digest.vercel.app/package/ky/2.2.0</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/ky/2.2.0#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/ky/2.2.0#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
       <description>Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.</description>
     </item>
     <item>
       <title>@mui/material 9.5.0 minor version update</title>
       <link>https://dependency-risk-digest.vercel.app/package/mui-material/9.5.0</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/mui-material/9.5.0#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/mui-material/9.5.0#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
       <description>Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.</description>
     </item>
     <item>
       <title>@reduxjs/toolkit 2.13.0 minor version update</title>
       <link>https://dependency-risk-digest.vercel.app/package/reduxjs-toolkit/2.13.0</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/reduxjs-toolkit/2.13.0#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/reduxjs-toolkit/2.13.0#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
       <description>Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.</description>
     </item>
     <item>
       <title>ws 8.22.0 minor version update</title>
       <link>https://dependency-risk-digest.vercel.app/package/ws/8.22.0</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/ws/8.22.0#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/ws/8.22.0#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Sat, 26 Sep 2026 00:00:00 GMT</pubDate>
       <description>Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.</description>
     </item>
     <item>
       <title>tailwind-merge 3.7.0 minor version update</title>
       <link>https://dependency-risk-digest.vercel.app/package/tailwind-merge/3.7.0</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/tailwind-merge/3.7.0#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/tailwind-merge/3.7.0#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Sat, 12 Sep 2026 00:00:00 GMT</pubDate>
       <description>Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.</description>
     </item>
     <item>
       <title>@types/react 19.3.0 minor version update</title>
       <link>https://dependency-risk-digest.vercel.app/package/types-react/19.3.0</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/types-react/19.3.0#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/types-react/19.3.0#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Wed, 09 Sep 2026 00:00:00 GMT</pubDate>
       <description>Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance.</description>
     </item>
     <item>
       <title>@types/react-dom 19.3.0 minor version update</title>
       <link>https://dependency-risk-digest.vercel.app/package/types-react-dom/19.3.0</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/types-react-dom/19.3.0#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/types-react-dom/19.3.0#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Wed, 09 Sep 2026 00:00:00 GMT</pubDate>
       <description>Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance.</description>
     </item>
     <item>
       <title>@chakra-ui/react 3.37.0 minor version update</title>
       <link>https://dependency-risk-digest.vercel.app/package/chakra-ui-react/3.37.0</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/chakra-ui-react/3.37.0#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/chakra-ui-react/3.37.0#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Fri, 28 Aug 2026 00:00:00 GMT</pubDate>
       <description>Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.</description>
     </item>
     <item>
       <title>date-fns 4.4.0 minor version update</title>
       <link>https://dependency-risk-digest.vercel.app/package/date-fns/4.4.0</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/date-fns/4.4.0#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/date-fns/4.4.0#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Fri, 29 May 2026 00:00:00 GMT</pubDate>
       <description>Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.</description>
     </item>
     <item>
       <title>@emotion/react 11.14.0 minor version update</title>
       <link>https://dependency-risk-digest.vercel.app/package/emotion-react/11.14.0</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/emotion-react/11.14.0#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/emotion-react/11.14.0#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Mon, 09 Dec 2024 00:00:00 GMT</pubDate>
       <description>Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.</description>
     </item>
     <item>
       <title>npm-run-all 4.1.5 release-note review update</title>
       <link>https://dependency-risk-digest.vercel.app/package/npm-run-all/4.1.5</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/npm-run-all/4.1.5#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/npm-run-all/4.1.5#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Sat, 24 Nov 2018 00:00:00 GMT</pubDate>
       <description>Release notes mention security language, but no OSV or CVE match was found. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Confirm against OSV and CVE before treating this as a security fix.</description>
     </item>
     <item>
       <title>@angular/core 22.2.4 patch version update</title>
       <link>https://dependency-risk-digest.vercel.app/package/angular-core/22.2.4</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/angular-core/22.2.4#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/angular-core/22.2.4#2026-10-30T18:39:00.065Z</guid>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update.</description>
+    </item>
+    <item>
+      <title>solid-js 1.9.18 patch version update</title>
+      <link>https://dependency-risk-digest.vercel.app/package/solid-js/1.9.18</link>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/solid-js/1.9.18#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
       <description>Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update.</description>
     </item>
     <item>
       <title>@babel/core 8.0.10 patch version update</title>
       <link>https://dependency-risk-digest.vercel.app/package/babel-core/8.0.10</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/babel-core/8.0.10#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/babel-core/8.0.10#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
       <description>Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update.</description>
     </item>
     <item>
       <title>astro 7.4.4 patch version update</title>
       <link>https://dependency-risk-digest.vercel.app/package/astro/7.4.4</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/astro/7.4.4#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/astro/7.4.4#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
       <description>Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update.</description>
     </item>
     <item>
       <title>cypress 16.2.1 patch version update</title>
       <link>https://dependency-risk-digest.vercel.app/package/cypress/16.2.1</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/cypress/16.2.1#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/cypress/16.2.1#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
       <description>Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update.</description>
     </item>
     <item>
       <title>react-router-dom 7.18.5 patch version update</title>
       <link>https://dependency-risk-digest.vercel.app/package/react-router-dom/7.18.5</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/react-router-dom/7.18.5#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/react-router-dom/7.18.5#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
       <description>Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update.</description>
     </item>
     <item>
       <title>@storybook/react 10.6.5 patch version update</title>
       <link>https://dependency-risk-digest.vercel.app/package/storybook-react/10.6.5</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/storybook-react/10.6.5#2026-10-29T18:58:30.027Z</guid>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update.</description>
-    </item>
-    <item>
-      <title>storybook 10.6.5 patch version update</title>
-      <link>https://dependency-risk-digest.vercel.app/package/storybook/10.6.5</link>
-      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/storybook/10.6.5#2026-10-29T18:58:30.027Z</guid>
+      <guid isPermaLink="false">https://dependency-risk-digest.vercel.app/package/storybook-react/10.6.5#2026-10-30T18:39:00.065Z</guid>
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
       <description>Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update.</description>
     </item>

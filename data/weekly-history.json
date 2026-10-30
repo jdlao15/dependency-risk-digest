@@ -36,28 +36,37 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
-        "packageName": "framer-motion",
-        "route": "/package/framer-motion/14.8.0",
+        "packageName": "rollup",
+        "route": "/package/rollup/4.67.2",
         "risk": "review",
-        "newVersion": "14.8.0",
+        "newVersion": "4.67.2",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "eslint",
+        "route": "/package/eslint/10.14.0",
+        "risk": "review",
+        "newVersion": "10.14.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "framer-motion",
+        "route": "/package/framer-motion/14.9.0",
+        "risk": "review",
+        "newVersion": "14.9.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
         "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.64.0",
+        "route": "/package/lucide-react/1.65.0",
         "risk": "review",
-        "newVersion": "1.64.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "rollup",
-        "route": "/package/rollup/4.66.0",
-        "risk": "review",
-        "newVersion": "4.66.0",
+        "newVersion": "1.65.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
@@ -70,19 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "axios",
-        "route": "/package/axios/1.21.0",
-        "risk": "review",
-        "newVersion": "1.21.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w44",
-    "generatedAt": "2026-10-29T18:58:30.027Z"
+    "generatedAt": "2026-10-30T18:39:00.065Z"
   },
   {
     "week": "Week 43, 2026",
