@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T17:48:01.011Z",
+  "generatedAt": "2026-11-01T18:26:38.511Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -111,7 +111,7 @@
     "/package/remix-run-react",
     "/package/remix-run-react/2.17.5",
     "/package/rollup",
-    "/package/rollup/4.67.2",
+    "/package/rollup/4.67.4",
     "/package/sass",
     "/package/sass/1.107.1",
     "/package/semver",
@@ -135,7 +135,7 @@
     "/package/tailwindcss",
     "/package/tailwindcss/4.3.3",
     "/package/tanstack-react-query",
-    "/package/tanstack-react-query/5.105.0",
+    "/package/tanstack-react-query/5.105.1",
     "/package/testing-library-jest-dom",
     "/package/testing-library-jest-dom/7.0.1",
     "/package/testing-library-react",
@@ -200,6 +200,7 @@
     "/weekly/2026-w41",
     "/weekly/2026-w42",
     "/weekly/2026-w43",
-    "/weekly/2026-w44"
+    "/weekly/2026-w44",
+    "/weekly/2026-w45"
   ]
 }
