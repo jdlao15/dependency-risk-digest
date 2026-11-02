@@ -1,18 +1,18 @@
 [
   {
     "week": "Week 45, 2026",
-    "dateRange": "Oct 26 - Nov 1",
-    "risky": 19,
+    "dateRange": "Nov 2 - Nov 8",
+    "risky": 22,
     "breaking": 2,
     "security": 1,
-    "safe": 63,
+    "safe": 60,
     "total": 82,
     "topSignals": [
       {
         "packageName": "nuxt",
-        "route": "/package/nuxt/4.6.3",
+        "route": "/package/nuxt/4.6.4",
         "risk": "security",
-        "newVersion": "4.6.3",
+        "newVersion": "4.6.4",
         "reason": "Known OSV vulnerability signal found for this package version.",
         "recommendedAction": "Update recommended. Review advisory links and upgrade through the normal security lane. GitHub release notes were found for review.",
         "whyThisMatters": "Security-linked releases deserve review even when the package is not directly imported by application code."
@@ -36,6 +36,33 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "next",
+        "route": "/package/next/16.4.4",
+        "risk": "review",
+        "newVersion": "16.4.4",
+        "reason": "Release notes mention security language, but no OSV or CVE match was found.",
+        "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
+        "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
+      },
+      {
+        "packageName": "@babel/core",
+        "route": "/package/babel-core/8.1.0",
+        "risk": "review",
+        "newVersion": "8.1.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "vitest",
+        "route": "/package/vitest/5.1.0",
+        "risk": "review",
+        "newVersion": "5.1.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "lucide-react",
         "route": "/package/lucide-react/1.66.0",
         "risk": "review",
@@ -52,37 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "framer-motion",
-        "route": "/package/framer-motion/14.9.0",
-        "risk": "review",
-        "newVersion": "14.9.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "axios",
-        "route": "/package/axios/1.21.0",
-        "risk": "review",
-        "newVersion": "1.21.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "react-hook-form",
-        "route": "/package/react-hook-form/7.91.0",
-        "risk": "review",
-        "newVersion": "7.91.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w45",
-    "generatedAt": "2026-11-01T18:26:38.511Z"
+    "generatedAt": "2026-11-02T22:20:50.937Z"
   },
   {
     "week": "Week 44, 2026",
