@@ -2,10 +2,10 @@
   {
     "week": "Week 45, 2026",
     "dateRange": "Nov 2 - Nov 8",
-    "risky": 22,
+    "risky": 23,
     "breaking": 2,
     "security": 1,
-    "safe": 60,
+    "safe": 59,
     "total": 82,
     "topSignals": [
       {
@@ -36,6 +36,33 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "@tanstack/react-query",
+        "route": "/package/tanstack-react-query/5.106.0",
+        "risk": "review",
+        "newVersion": "5.106.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "graphql",
+        "route": "/package/graphql/17.1.0",
+        "risk": "review",
+        "newVersion": "17.1.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.68.0",
+        "risk": "review",
+        "newVersion": "1.68.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "next",
         "route": "/package/next/16.4.5",
         "risk": "review",
@@ -52,37 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.67.0",
-        "risk": "review",
-        "newVersion": "1.67.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "@chakra-ui/react",
-        "route": "/package/chakra-ui-react/3.38.0",
-        "risk": "review",
-        "newVersion": "3.38.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "@babel/core",
-        "route": "/package/babel-core/8.1.0",
-        "risk": "review",
-        "newVersion": "8.1.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w45",
-    "generatedAt": "2026-11-03T20:08:04.686Z"
+    "generatedAt": "2026-11-04T20:26:41.863Z"
   },
   {
     "week": "Week 44, 2026",
