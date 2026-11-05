@@ -36,10 +36,19 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
-        "packageName": "@tanstack/react-query",
-        "route": "/package/tanstack-react-query/5.106.0",
+        "packageName": "playwright",
+        "route": "/package/playwright/1.65.0",
         "risk": "review",
-        "newVersion": "5.106.0",
+        "newVersion": "1.65.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.69.0",
+        "risk": "review",
+        "newVersion": "1.69.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
@@ -49,15 +58,6 @@
         "route": "/package/graphql/17.1.0",
         "risk": "review",
         "newVersion": "17.1.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.68.0",
-        "risk": "review",
-        "newVersion": "1.68.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
@@ -82,7 +82,7 @@
       }
     ],
     "route": "/weekly/2026-w45",
-    "generatedAt": "2026-11-04T20:26:41.863Z"
+    "generatedAt": "2026-11-05T20:41:36.310Z"
   },
   {
     "week": "Week 44, 2026",
