@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T19:58:07.553Z",
+  "generatedAt": "2026-11-07T18:03:50.409Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -113,7 +113,7 @@
     "/package/rollup",
     "/package/rollup/4.68.0",
     "/package/sass",
-    "/package/sass/1.108.0",
+    "/package/sass/1.108.1",
     "/package/semver",
     "/package/semver/7.8.6",
     "/package/solid-js",
@@ -135,7 +135,7 @@
     "/package/tailwindcss",
     "/package/tailwindcss/4.3.5",
     "/package/tanstack-react-query",
-    "/package/tanstack-react-query/5.106.1",
+    "/package/tanstack-react-query/5.107.1",
     "/package/testing-library-jest-dom",
     "/package/testing-library-jest-dom/7.0.1",
     "/package/testing-library-react",
