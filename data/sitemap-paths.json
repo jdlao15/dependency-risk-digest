@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T18:03:50.409Z",
+  "generatedAt": "2026-11-08T18:23:06.359Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -167,7 +167,7 @@
     "/package/webpack",
     "/package/webpack/5.112.2",
     "/package/ws",
-    "/package/ws/8.22.1",
+    "/package/ws/8.22.2",
     "/package/yup",
     "/package/yup/1.7.1",
     "/package/zod",
@@ -201,6 +201,7 @@
     "/weekly/2026-w42",
     "/weekly/2026-w43",
     "/weekly/2026-w44",
-    "/weekly/2026-w45"
+    "/weekly/2026-w45",
+    "/weekly/2026-w46"
   ]
 }
