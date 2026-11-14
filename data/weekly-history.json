@@ -2,10 +2,10 @@
   {
     "week": "Week 46, 2026",
     "dateRange": "Nov 9 - Nov 15",
-    "risky": 26,
+    "risky": 25,
     "breaking": 2,
     "security": 1,
-    "safe": 56,
+    "safe": 57,
     "total": 82,
     "topSignals": [
       {
@@ -36,6 +36,24 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.73.0",
+        "risk": "review",
+        "newVersion": "1.73.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "eslint",
+        "route": "/package/eslint/10.15.0",
+        "risk": "review",
+        "newVersion": "10.15.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "framer-motion",
         "route": "/package/framer-motion/14.14.0",
         "risk": "review",
@@ -61,28 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.72.0",
-        "risk": "review",
-        "newVersion": "1.72.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "cypress",
-        "route": "/package/cypress/16.3.0",
-        "risk": "review",
-        "newVersion": "16.3.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w46",
-    "generatedAt": "2026-11-13T20:30:28.138Z"
+    "generatedAt": "2026-11-14T18:45:25.162Z"
   },
   {
     "week": "Week 45, 2026",
