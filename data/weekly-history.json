@@ -1,5 +1,90 @@
 [
   {
+    "week": "Week 47, 2026",
+    "dateRange": "Nov 9 - Nov 15",
+    "risky": 25,
+    "breaking": 2,
+    "security": 1,
+    "safe": 57,
+    "total": 82,
+    "topSignals": [
+      {
+        "packageName": "nuxt",
+        "route": "/package/nuxt/4.6.4",
+        "risk": "security",
+        "newVersion": "4.6.4",
+        "reason": "Known OSV vulnerability signal found for this package version.",
+        "recommendedAction": "Update recommended. Review advisory links and upgrade through the normal security lane. GitHub release notes were found for review.",
+        "whyThisMatters": "Security-linked releases deserve review even when the package is not directly imported by application code."
+      },
+      {
+        "packageName": "tsup",
+        "route": "/package/tsup/9.0.0",
+        "risk": "breaking",
+        "newVersion": "9.0.0",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "typescript",
+        "route": "/package/typescript/7.0.2",
+        "risk": "breaking",
+        "newVersion": "7.0.2",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.73.0",
+        "risk": "review",
+        "newVersion": "1.73.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "eslint",
+        "route": "/package/eslint/10.15.0",
+        "risk": "review",
+        "newVersion": "10.15.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "framer-motion",
+        "route": "/package/framer-motion/14.14.0",
+        "risk": "review",
+        "newVersion": "14.14.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "pnpm",
+        "route": "/package/pnpm/12.21.0",
+        "risk": "review",
+        "newVersion": "12.21.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "ws",
+        "route": "/package/ws/8.23.0",
+        "risk": "review",
+        "newVersion": "8.23.0",
+        "reason": "Release notes mention security language, but no OSV or CVE match was found.",
+        "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
+        "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
+      }
+    ],
+    "route": "/weekly/2026-w47",
+    "generatedAt": "2026-11-15T19:23:24.487Z"
+  },
+  {
     "week": "Week 46, 2026",
     "dateRange": "Nov 9 - Nov 15",
     "risky": 25,

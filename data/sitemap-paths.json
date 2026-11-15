@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T18:45:25.162Z",
+  "generatedAt": "2026-11-15T19:23:24.487Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -71,7 +71,7 @@
     "/package/minimist",
     "/package/minimist/1.2.8",
     "/package/msw",
-    "/package/msw/3.0.5",
+    "/package/msw/3.0.6",
     "/package/mui-material",
     "/package/mui-material/9.5.0",
     "/package/nanoid",
@@ -87,7 +87,7 @@
     "/package/playwright",
     "/package/playwright/1.65.1",
     "/package/pnpm",
-    "/package/pnpm/12.18.0",
+    "/package/pnpm/12.21.0",
     "/package/postcss",
     "/package/postcss/8.5.33",
     "/package/prettier",
@@ -202,6 +202,7 @@
     "/weekly/2026-w43",
     "/weekly/2026-w44",
     "/weekly/2026-w45",
-    "/weekly/2026-w46"
+    "/weekly/2026-w46",
+    "/weekly/2026-w47"
   ]
 }
