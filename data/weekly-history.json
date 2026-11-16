@@ -1,21 +1,21 @@
 [
   {
     "week": "Week 47, 2026",
-    "dateRange": "Nov 9 - Nov 15",
-    "risky": 25,
+    "dateRange": "Nov 16 - Nov 22",
+    "risky": 27,
     "breaking": 2,
     "security": 1,
-    "safe": 57,
+    "safe": 55,
     "total": 82,
     "topSignals": [
       {
         "packageName": "nuxt",
         "route": "/package/nuxt/4.6.4",
-        "risk": "security",
+        "risk": "critical",
         "newVersion": "4.6.4",
-        "reason": "Known OSV vulnerability signal found for this package version.",
-        "recommendedAction": "Update recommended. Review advisory links and upgrade through the normal security lane. GitHub release notes were found for review.",
-        "whyThisMatters": "Security-linked releases deserve review even when the package is not directly imported by application code."
+        "reason": "Critical OSV vulnerability signal found for this release.",
+        "recommendedAction": "Update recommended. Prioritize this package before routine maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Critical vulnerability signals can affect production applications or build systems with little warning."
       },
       {
         "packageName": "tsup",
@@ -34,6 +34,24 @@
         "reason": "Major version release detected.",
         "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "@typescript-eslint/parser",
+        "route": "/package/typescript-eslint-parser/8.73.0",
+        "risk": "review",
+        "newVersion": "8.73.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "@typescript-eslint/eslint-plugin",
+        "route": "/package/typescript-eslint-eslint-plugin/8.73.0",
+        "risk": "review",
+        "newVersion": "8.73.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
         "packageName": "lucide-react",
@@ -61,28 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "pnpm",
-        "route": "/package/pnpm/12.21.0",
-        "risk": "review",
-        "newVersion": "12.21.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "ws",
-        "route": "/package/ws/8.23.0",
-        "risk": "review",
-        "newVersion": "8.23.0",
-        "reason": "Release notes mention security language, but no OSV or CVE match was found.",
-        "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
-        "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it."
       }
     ],
     "route": "/weekly/2026-w47",
-    "generatedAt": "2026-11-15T19:23:24.487Z"
+    "generatedAt": "2026-11-16T22:54:59.692Z"
   },
   {
     "week": "Week 46, 2026",
