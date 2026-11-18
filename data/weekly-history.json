@@ -3,7 +3,7 @@
     "week": "Week 47, 2026",
     "dateRange": "Nov 16 - Nov 22",
     "risky": 29,
-    "breaking": 3,
+    "breaking": 2,
     "security": 1,
     "safe": 53,
     "total": 82,
@@ -16,15 +16,6 @@
         "reason": "Critical OSV vulnerability signal found for this release.",
         "recommendedAction": "Update recommended. Prioritize this package before routine maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Critical vulnerability signals can affect production applications or build systems with little warning."
-      },
-      {
-        "packageName": "solid-js",
-        "route": "/package/solid-js/2.0.0",
-        "risk": "breaking",
-        "newVersion": "2.0.0",
-        "reason": "Major version release detected.",
-        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
-        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
         "packageName": "tsup",
@@ -45,6 +36,42 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "svelte",
+        "route": "/package/svelte/5.58.0",
+        "risk": "review",
+        "newVersion": "5.58.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "@angular/core",
+        "route": "/package/angular-core/22.3.0",
+        "risk": "review",
+        "newVersion": "22.3.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "@reduxjs/toolkit",
+        "route": "/package/reduxjs-toolkit/2.15.0",
+        "risk": "review",
+        "newVersion": "2.15.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.75.0",
+        "risk": "review",
+        "newVersion": "1.75.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "@tanstack/react-query",
         "route": "/package/tanstack-react-query/5.108.0",
         "risk": "review",
@@ -52,37 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.74.0",
-        "risk": "review",
-        "newVersion": "1.74.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "@typescript-eslint/parser",
-        "route": "/package/typescript-eslint-parser/8.73.0",
-        "risk": "review",
-        "newVersion": "8.73.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "@typescript-eslint/eslint-plugin",
-        "route": "/package/typescript-eslint-eslint-plugin/8.73.0",
-        "risk": "review",
-        "newVersion": "8.73.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w47",
-    "generatedAt": "2026-11-17T21:48:08.630Z"
+    "generatedAt": "2026-11-18T21:27:20.022Z"
   },
   {
     "week": "Week 46, 2026",
