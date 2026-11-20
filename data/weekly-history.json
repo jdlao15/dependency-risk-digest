@@ -2,10 +2,10 @@
   {
     "week": "Week 47, 2026",
     "dateRange": "Nov 16 - Nov 22",
-    "risky": 30,
+    "risky": 29,
     "breaking": 3,
     "security": 1,
-    "safe": 52,
+    "safe": 53,
     "total": 82,
     "topSignals": [
       {
@@ -45,28 +45,28 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.77.0",
+        "risk": "review",
+        "newVersion": "1.77.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "webpack",
+        "route": "/package/webpack/5.113.0",
+        "risk": "review",
+        "newVersion": "5.113.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "autoprefixer",
         "route": "/package/autoprefixer/10.7.0",
         "risk": "review",
         "newVersion": "10.7.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.76.0",
-        "risk": "review",
-        "newVersion": "1.76.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "svelte",
-        "route": "/package/svelte/5.58.0",
-        "risk": "review",
-        "newVersion": "5.58.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
@@ -82,7 +82,7 @@
       }
     ],
     "route": "/weekly/2026-w47",
-    "generatedAt": "2026-11-19T21:38:30.679Z"
+    "generatedAt": "2026-11-20T21:13:39.607Z"
   },
   {
     "week": "Week 46, 2026",
