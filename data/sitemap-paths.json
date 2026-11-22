@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T20:08:03.692Z",
+  "generatedAt": "2026-11-22T20:23:23.078Z",
   "paths": [
     "/category/build-tooling",
     "/category/core-frameworks",
@@ -135,7 +135,7 @@
     "/package/tailwindcss",
     "/package/tailwindcss/4.3.5",
     "/package/tanstack-react-query",
-    "/package/tanstack-react-query/5.108.2",
+    "/package/tanstack-react-query/5.108.3",
     "/package/testing-library-jest-dom",
     "/package/testing-library-jest-dom/8.0.0",
     "/package/testing-library-react",
@@ -203,6 +203,7 @@
     "/weekly/2026-w44",
     "/weekly/2026-w45",
     "/weekly/2026-w46",
-    "/weekly/2026-w47"
+    "/weekly/2026-w47",
+    "/weekly/2026-w48"
   ]
 }

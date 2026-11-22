@@ -1,5 +1,90 @@
 [
   {
+    "week": "Week 48, 2026",
+    "dateRange": "Nov 16 - Nov 22",
+    "risky": 29,
+    "breaking": 3,
+    "security": 1,
+    "safe": 53,
+    "total": 82,
+    "topSignals": [
+      {
+        "packageName": "nuxt",
+        "route": "/package/nuxt/4.6.4",
+        "risk": "critical",
+        "newVersion": "4.6.4",
+        "reason": "Critical OSV vulnerability signal found for this release.",
+        "recommendedAction": "Update recommended. Prioritize this package before routine maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Critical vulnerability signals can affect production applications or build systems with little warning."
+      },
+      {
+        "packageName": "@testing-library/jest-dom",
+        "route": "/package/testing-library-jest-dom/8.0.0",
+        "risk": "breaking",
+        "newVersion": "8.0.0",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "tsup",
+        "route": "/package/tsup/9.0.0",
+        "risk": "breaking",
+        "newVersion": "9.0.0",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "typescript",
+        "route": "/package/typescript/7.0.2",
+        "risk": "breaking",
+        "newVersion": "7.0.2",
+        "reason": "Major version release detected.",
+        "recommendedAction": "Review changes before updating. Test in staging before merging. GitHub release notes were found for review.",
+        "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.77.0",
+        "risk": "review",
+        "newVersion": "1.77.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "webpack",
+        "route": "/package/webpack/5.113.0",
+        "risk": "review",
+        "newVersion": "5.113.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "autoprefixer",
+        "route": "/package/autoprefixer/10.7.0",
+        "risk": "review",
+        "newVersion": "10.7.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "@angular/core",
+        "route": "/package/angular-core/22.3.0",
+        "risk": "review",
+        "newVersion": "22.3.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      }
+    ],
+    "route": "/weekly/2026-w48",
+    "generatedAt": "2026-11-22T20:23:23.078Z"
+  },
+  {
     "week": "Week 47, 2026",
     "dateRange": "Nov 16 - Nov 22",
     "risky": 29,
