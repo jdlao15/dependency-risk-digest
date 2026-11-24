@@ -1,7 +1,7 @@
 [
   {
     "week": "Week 48, 2026",
-    "dateRange": "Nov 16 - Nov 22",
+    "dateRange": "Nov 23 - Nov 29",
     "risky": 29,
     "breaking": 3,
     "security": 1,
@@ -10,9 +10,9 @@
     "topSignals": [
       {
         "packageName": "nuxt",
-        "route": "/package/nuxt/4.6.4",
+        "route": "/package/nuxt/4.7.0",
         "risk": "critical",
-        "newVersion": "4.6.4",
+        "newVersion": "4.7.0",
         "reason": "Critical OSV vulnerability signal found for this release.",
         "recommendedAction": "Update recommended. Prioritize this package before routine maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Critical vulnerability signals can affect production applications or build systems with little warning."
@@ -45,44 +45,44 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "@typescript-eslint/parser",
+        "route": "/package/typescript-eslint-parser/8.74.0",
+        "risk": "review",
+        "newVersion": "8.74.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "@typescript-eslint/eslint-plugin",
+        "route": "/package/typescript-eslint-eslint-plugin/8.74.0",
+        "risk": "review",
+        "newVersion": "8.74.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.77.0",
+        "route": "/package/lucide-react/1.78.0",
         "risk": "review",
-        "newVersion": "1.77.0",
+        "newVersion": "1.78.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
-        "packageName": "webpack",
-        "route": "/package/webpack/5.113.0",
+        "packageName": "@mui/material",
+        "route": "/package/mui-material/9.6.0",
         "risk": "review",
-        "newVersion": "5.113.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "autoprefixer",
-        "route": "/package/autoprefixer/10.7.0",
-        "risk": "review",
-        "newVersion": "10.7.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "@angular/core",
-        "route": "/package/angular-core/22.3.0",
-        "risk": "review",
-        "newVersion": "22.3.0",
+        "newVersion": "9.6.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w48",
-    "generatedAt": "2026-11-22T20:23:23.078Z"
+    "generatedAt": "2026-11-24T00:59:03.600Z"
   },
   {
     "week": "Week 47, 2026",
