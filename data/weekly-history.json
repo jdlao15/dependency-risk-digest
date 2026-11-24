@@ -2,10 +2,10 @@
   {
     "week": "Week 48, 2026",
     "dateRange": "Nov 23 - Nov 29",
-    "risky": 29,
+    "risky": 28,
     "breaking": 3,
     "security": 1,
-    "safe": 53,
+    "safe": 54,
     "total": 82,
     "topSignals": [
       {
@@ -45,6 +45,24 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
+        "packageName": "styled-components",
+        "route": "/package/styled-components/6.7.0",
+        "risk": "review",
+        "newVersion": "6.7.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "lucide-react",
+        "route": "/package/lucide-react/1.79.0",
+        "risk": "review",
+        "newVersion": "1.79.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
         "packageName": "@typescript-eslint/parser",
         "route": "/package/typescript-eslint-parser/8.74.0",
         "risk": "review",
@@ -61,28 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.78.0",
-        "risk": "review",
-        "newVersion": "1.78.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "@mui/material",
-        "route": "/package/mui-material/9.6.0",
-        "risk": "review",
-        "newVersion": "9.6.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w48",
-    "generatedAt": "2026-11-24T00:59:03.600Z"
+    "generatedAt": "2026-11-24T23:03:07.688Z"
   },
   {
     "week": "Week 47, 2026",
