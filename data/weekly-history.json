@@ -45,19 +45,28 @@
         "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
       },
       {
-        "packageName": "styled-components",
-        "route": "/package/styled-components/6.7.0",
+        "packageName": "cypress",
+        "route": "/package/cypress/16.4.0",
         "risk": "review",
-        "newVersion": "6.7.0",
+        "newVersion": "16.4.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       },
       {
         "packageName": "lucide-react",
-        "route": "/package/lucide-react/1.79.0",
+        "route": "/package/lucide-react/1.80.0",
         "risk": "review",
-        "newVersion": "1.79.0",
+        "newVersion": "1.80.0",
+        "reason": "Minor version release detected with no OSV match.",
+        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+      },
+      {
+        "packageName": "styled-components",
+        "route": "/package/styled-components/6.7.0",
+        "risk": "review",
+        "newVersion": "6.7.0",
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
@@ -70,19 +79,10 @@
         "reason": "Minor version release detected with no OSV match.",
         "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
         "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-      },
-      {
-        "packageName": "@typescript-eslint/eslint-plugin",
-        "route": "/package/typescript-eslint-eslint-plugin/8.74.0",
-        "risk": "review",
-        "newVersion": "8.74.0",
-        "reason": "Minor version release detected with no OSV match.",
-        "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-        "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
       }
     ],
     "route": "/weekly/2026-w48",
-    "generatedAt": "2026-11-24T23:03:07.688Z"
+    "generatedAt": "2026-11-25T22:35:53.232Z"
   },
   {
     "week": "Week 47, 2026",
