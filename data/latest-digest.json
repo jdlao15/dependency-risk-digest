@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T22:23:40.286Z",
+  "generatedAt": "2026-11-27T22:03:17.822Z",
   "weeklyDigest": {
     "week": "Week 48, 2026",
     "dateRange": "Nov 23 - Nov 29",
@@ -56,6 +56,33 @@
           "whyThisMatters": "Major releases often change defaults, APIs, or runtime behavior that can break frontend builds."
         },
         {
+          "packageName": "@babel/preset-env",
+          "route": "/package/babel-preset-env/8.1.4",
+          "risk": "review",
+          "newVersion": "8.1.4",
+          "reason": "Minor version release detected with no OSV match.",
+          "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+        },
+        {
+          "packageName": "eslint",
+          "route": "/package/eslint/10.16.0",
+          "risk": "review",
+          "newVersion": "10.16.0",
+          "reason": "Minor version release detected with no OSV match.",
+          "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+        },
+        {
+          "packageName": "lucide-react",
+          "route": "/package/lucide-react/1.82.0",
+          "risk": "review",
+          "newVersion": "1.82.0",
+          "reason": "Minor version release detected with no OSV match.",
+          "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
+        },
+        {
           "packageName": "vite",
           "route": "/package/vite/8.4.0",
           "risk": "review",
@@ -63,37 +90,10 @@
           "reason": "Minor version release detected with no OSV match.",
           "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
           "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-        },
-        {
-          "packageName": "lucide-react",
-          "route": "/package/lucide-react/1.81.0",
-          "risk": "review",
-          "newVersion": "1.81.0",
-          "reason": "Minor version release detected with no OSV match.",
-          "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-        },
-        {
-          "packageName": "cypress",
-          "route": "/package/cypress/16.4.0",
-          "risk": "review",
-          "newVersion": "16.4.0",
-          "reason": "Minor version release detected with no OSV match.",
-          "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
-        },
-        {
-          "packageName": "styled-components",
-          "route": "/package/styled-components/6.7.0",
-          "risk": "review",
-          "newVersion": "6.7.0",
-          "reason": "Minor version release detected with no OSV match.",
-          "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-          "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior."
         }
       ],
       "route": "/weekly/2026-w48",
-      "generatedAt": "2026-11-26T22:23:40.286Z"
+      "generatedAt": "2026-11-27T22:03:17.822Z"
     },
     {
       "week": "Week 47, 2026",
@@ -2230,7 +2230,7 @@
       "oldVersion": "4.6.4",
       "newVersion": "4.7.0",
       "releaseDate": "2026-11-23",
-      "publishedAgo": "published 2 days ago",
+      "publishedAgo": "published 3 days ago",
       "isRecent": true,
       "risk": "critical",
       "category": "Verified vulnerability",
@@ -2275,7 +2275,7 @@
       "oldVersion": "7.0.1",
       "newVersion": "8.0.0",
       "releaseDate": "2026-11-19",
-      "publishedAgo": "published 7 days ago",
+      "publishedAgo": "published 8 days ago",
       "isRecent": true,
       "risk": "breaking",
       "category": "Major version",
@@ -2316,7 +2316,7 @@
       "oldVersion": "8.5.1",
       "newVersion": "9.0.0",
       "releaseDate": "2026-10-14",
-      "publishedAgo": "published 43 days ago",
+      "publishedAgo": "published 44 days ago",
       "isRecent": false,
       "risk": "breaking",
       "category": "Major version",
@@ -2357,7 +2357,7 @@
       "oldVersion": "6.0.3",
       "newVersion": "7.0.2",
       "releaseDate": "2026-07-08",
-      "publishedAgo": "published 141 days ago",
+      "publishedAgo": "published 142 days ago",
       "isRecent": false,
       "risk": "breaking",
       "category": "Major version",
@@ -2391,6 +2391,129 @@
       ]
     },
     {
+      "id": "babel-preset-env-8-1-4",
+      "packageName": "@babel/preset-env",
+      "packageSlug": "babel-preset-env",
+      "description": "Babel environment preset",
+      "oldVersion": "8.0.7",
+      "newVersion": "8.1.4",
+      "releaseDate": "2026-11-27",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "review",
+      "category": "Minor version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Minor version release detected with no OSV match.",
+      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+      "whatChanged": "GitHub release note found: v8.1.4.",
+      "githubReleaseTitle": "v8.1.4",
+      "githubReleaseUrl": "https://github.com/babel/babel/releases/tag/v8.1.4",
+      "githubReleaseTag": "v8.1.4",
+      "githubReleasePublishedAt": "2026-11-27T19:42:00Z",
+      "releaseNotesExcerpt": "v8.1.4 (2026-11-27) :bug: Bug Fix babel-plugin-transform-typescript * #18734 Fix ts enum negative and block merge (@joellemd) * #18719 fix(ts): don't share enum values between nested enums with the same name (@joellemd) babel-generator * #18728 fix(generator): avoid newlines and ",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag. Cached from an earlier generator run.",
+      "route": "/package/babel-preset-env/8.1.4",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/@babel/preset-env"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/babel/babel"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/babel/babel/releases/tag/v8.1.4"
+        }
+      ]
+    },
+    {
+      "id": "eslint-10-16-0",
+      "packageName": "eslint",
+      "packageSlug": "eslint",
+      "description": "JavaScript linting",
+      "oldVersion": "10.15.0",
+      "newVersion": "10.16.0",
+      "releaseDate": "2026-11-27",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "review",
+      "category": "Minor version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Minor version release detected with no OSV match.",
+      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
+      "affectedAudience": "Developer tooling, type checking, and code-quality gates.",
+      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+      "whatChanged": "GitHub release note found: v10.16.0.",
+      "githubReleaseTitle": "v10.16.0",
+      "githubReleaseUrl": "https://github.com/eslint/eslint/releases/tag/v10.16.0",
+      "githubReleaseTag": "v10.16.0",
+      "githubReleasePublishedAt": "2026-11-27T16:20:20Z",
+      "releaseNotesExcerpt": "Features 7fff57a feat: add suggestions to no-new-native-nonconstructor (#21576) (Pixel) 14e3533 feat: suggest comparing with both null and undefined in eqeqeq (#21577) (Pixel) 0e2a431 feat: handle TSImportEqualsDeclaration type imports in no-shadow (#21564) (L Vn Xun Hon) a6b2c6d",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/eslint/10.16.0",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/eslint"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/eslint/eslint"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/eslint/eslint/releases/tag/v10.16.0"
+        }
+      ]
+    },
+    {
+      "id": "lucide-react-1-82-0",
+      "packageName": "lucide-react",
+      "packageSlug": "lucide-react",
+      "description": "React icon library",
+      "oldVersion": "1.81.0",
+      "newVersion": "1.82.0",
+      "releaseDate": "2026-11-27",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "review",
+      "category": "Minor version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Minor version release detected with no OSV match.",
+      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
+      "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
+      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
+      "whatChanged": "GitHub release note found: Version 1.82.0.",
+      "githubReleaseTitle": "Version 1.82.0",
+      "githubReleaseUrl": "https://github.com/lucide-icons/lucide/releases/tag/1.82.0",
+      "githubReleaseTag": "1.82.0",
+      "githubReleasePublishedAt": "2026-11-27T06:05:23Z",
+      "releaseNotesExcerpt": "What's Changed fix(site): prevent custom sponsor amount overflow by @Sameer-Agg in https://github.com/lucide-icons/lucide/pull/5298 fix(site): enable Nitro skew protection and fix assets Cache-Control value by @ericfennis in https://github.com/lucide-icons/lucide/pull/5304 feat(s",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/lucide-react/1.82.0",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/lucide-react"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/lucide-icons/lucide"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/lucide-icons/lucide/releases/tag/1.82.0"
+        }
+      ]
+    },
+    {
       "id": "vite-8-4-0",
       "packageName": "vite",
       "packageSlug": "vite",
@@ -2398,7 +2521,7 @@
       "oldVersion": "8.3.8",
       "newVersion": "8.4.0",
       "releaseDate": "2026-11-26",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2432,47 +2555,6 @@
       ]
     },
     {
-      "id": "lucide-react-1-81-0",
-      "packageName": "lucide-react",
-      "packageSlug": "lucide-react",
-      "description": "React icon library",
-      "oldVersion": "1.80.0",
-      "newVersion": "1.81.0",
-      "releaseDate": "2026-11-26",
-      "publishedAgo": "published today",
-      "isRecent": true,
-      "risk": "review",
-      "category": "Minor version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Minor version release detected with no OSV match.",
-      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
-      "affectedAudience": "React applications, component libraries, and frontend teams using React release workflows.",
-      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-      "whatChanged": "GitHub release note found: Version 1.81.0.",
-      "githubReleaseTitle": "Version 1.81.0",
-      "githubReleaseUrl": "https://github.com/lucide-icons/lucide/releases/tag/1.81.0",
-      "githubReleaseTag": "1.81.0",
-      "githubReleasePublishedAt": "2026-11-26T06:05:27Z",
-      "releaseNotesExcerpt": "What's Changed feat(icons): changed square-sigma by @karsa-mistmere in https://github.com/lucide-icons/lucide/pull/5292 feat(icons): added elevator icon by @AJAyanbisi in https://github.com/lucide-icons/lucide/pull/4366 chore(icons): Update smartphone shape and update rectangle i",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/lucide-react/1.81.0",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/lucide-react"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/lucide-icons/lucide"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/lucide-icons/lucide/releases/tag/1.81.0"
-        }
-      ]
-    },
-    {
       "id": "cypress-16-4-0",
       "packageName": "cypress",
       "packageSlug": "cypress",
@@ -2480,7 +2562,7 @@
       "oldVersion": "16.3.0",
       "newVersion": "16.4.0",
       "releaseDate": "2026-11-25",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2521,7 +2603,7 @@
       "oldVersion": "6.6.0",
       "newVersion": "6.7.0",
       "releaseDate": "2026-11-24",
-      "publishedAgo": "published 2 days ago",
+      "publishedAgo": "published 3 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2562,7 +2644,7 @@
       "oldVersion": "8.73.0",
       "newVersion": "8.74.0",
       "releaseDate": "2026-11-23",
-      "publishedAgo": "published 3 days ago",
+      "publishedAgo": "published 4 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2603,7 +2685,7 @@
       "oldVersion": "8.73.0",
       "newVersion": "8.74.0",
       "releaseDate": "2026-11-23",
-      "publishedAgo": "published 3 days ago",
+      "publishedAgo": "published 4 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2644,7 +2726,7 @@
       "oldVersion": "9.5.0",
       "newVersion": "9.6.0",
       "releaseDate": "2026-11-23",
-      "publishedAgo": "published 3 days ago",
+      "publishedAgo": "published 4 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2685,7 +2767,7 @@
       "oldVersion": "12.22.0",
       "newVersion": "12.23.0",
       "releaseDate": "2026-11-22",
-      "publishedAgo": "published 4 days ago",
+      "publishedAgo": "published 5 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Release-note review",
@@ -2726,7 +2808,7 @@
       "oldVersion": "5.112.2",
       "newVersion": "5.113.0",
       "releaseDate": "2026-11-19",
-      "publishedAgo": "published 7 days ago",
+      "publishedAgo": "published 8 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2767,7 +2849,7 @@
       "oldVersion": "10.6.2",
       "newVersion": "10.7.0",
       "releaseDate": "2026-11-19",
-      "publishedAgo": "published 7 days ago",
+      "publishedAgo": "published 8 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2808,7 +2890,7 @@
       "oldVersion": "22.2.7",
       "newVersion": "22.3.0",
       "releaseDate": "2026-11-18",
-      "publishedAgo": "published 8 days ago",
+      "publishedAgo": "published 9 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2849,7 +2931,7 @@
       "oldVersion": "2.14.0",
       "newVersion": "2.15.0",
       "releaseDate": "2026-11-18",
-      "publishedAgo": "published 8 days ago",
+      "publishedAgo": "published 9 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2883,47 +2965,6 @@
       ]
     },
     {
-      "id": "eslint-10-15-0",
-      "packageName": "eslint",
-      "packageSlug": "eslint",
-      "description": "JavaScript linting",
-      "oldVersion": "10.14.0",
-      "newVersion": "10.15.0",
-      "releaseDate": "2026-11-13",
-      "publishedAgo": "published 13 days ago",
-      "isRecent": true,
-      "risk": "review",
-      "category": "Minor version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Minor version release detected with no OSV match.",
-      "whyThisMatters": "Minor updates are often safe but can still change defaults or transitive behavior.",
-      "affectedAudience": "Developer tooling, type checking, and code-quality gates.",
-      "recommendedAction": "Review if used. Batch with normal dependency maintenance. GitHub release notes were found for review.",
-      "whatChanged": "GitHub release note found: v10.15.0.",
-      "githubReleaseTitle": "v10.15.0",
-      "githubReleaseUrl": "https://github.com/eslint/eslint/releases/tag/v10.15.0",
-      "githubReleaseTag": "v10.15.0",
-      "githubReleasePublishedAt": "2026-11-13T21:29:31Z",
-      "releaseNotesExcerpt": "Features ec52157 feat: check __proto__ and assignment targets in func-names (#21521) (L Vn Xun Hon) 34a8b1b feat: recognize string and computed keys in accessor-pairs descriptors (#21519) (L Vn Xun Hon) 663c825 feat: handle TS type assertions in no-invalid-this (#21464) (Valentin",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/eslint/10.15.0",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/eslint"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/eslint/eslint"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/eslint/eslint/releases/tag/v10.15.0"
-        }
-      ]
-    },
-    {
       "id": "framer-motion-14-14-0",
       "packageName": "framer-motion",
       "packageSlug": "framer-motion",
@@ -2931,7 +2972,7 @@
       "oldVersion": "14.13.0",
       "newVersion": "14.14.0",
       "releaseDate": "2026-11-13",
-      "publishedAgo": "published 13 days ago",
+      "publishedAgo": "published 14 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -2961,47 +3002,6 @@
       ]
     },
     {
-      "id": "ws-8-23-0",
-      "packageName": "ws",
-      "packageSlug": "ws",
-      "description": "WebSocket implementation",
-      "oldVersion": "8.22.2",
-      "newVersion": "8.23.0",
-      "releaseDate": "2026-11-12",
-      "publishedAgo": "published 14 days ago",
-      "isRecent": true,
-      "risk": "review",
-      "category": "Release-note review",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Release notes mention security language, but no OSV or CVE match was found.",
-      "whyThisMatters": "Security wording in release notes is an unverified signal until an OSV advisory or CVE confirms it.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "Review if used. Confirm against OSV and CVE before treating this as a security fix.",
-      "whatChanged": "GitHub release note found: 8.23.0.",
-      "githubReleaseTitle": "8.23.0",
-      "githubReleaseUrl": "https://github.com/websockets/ws/releases/tag/8.23.0",
-      "githubReleaseTag": "8.23.0",
-      "githubReleasePublishedAt": "2026-11-12T21:33:43Z",
-      "releaseNotesExcerpt": "Features Introduced the maxPendingAutoPongs option (ace7248f). Bug fixes Fixed a remote memory exhaustion DoS vulnerability (ace7248f). A malicious peer can flood the other peer with Ping frames while stopping reads, forcing it to buffer Pong frames that are automatically sent in",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/ws/8.23.0",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/ws"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/websockets/ws"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/websockets/ws/releases/tag/8.23.0"
-        }
-      ]
-    },
-    {
       "id": "react-hook-form-7-92-0",
       "packageName": "react-hook-form",
       "packageSlug": "react-hook-form",
@@ -3009,7 +3009,7 @@
       "oldVersion": "7.91.0",
       "newVersion": "7.92.0",
       "releaseDate": "2026-11-11",
-      "publishedAgo": "published 15 days ago",
+      "publishedAgo": "published 16 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -3050,7 +3050,7 @@
       "oldVersion": "6.2.1",
       "newVersion": "6.3.0",
       "releaseDate": "2026-11-09",
-      "publishedAgo": "published 17 days ago",
+      "publishedAgo": "published 18 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -3091,7 +3091,7 @@
       "oldVersion": "5.0.16",
       "newVersion": "5.1.0",
       "releaseDate": "2026-11-06",
-      "publishedAgo": "published 20 days ago",
+      "publishedAgo": "published 21 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -3132,7 +3132,7 @@
       "oldVersion": "17.0.2",
       "newVersion": "17.1.0",
       "releaseDate": "2026-11-04",
-      "publishedAgo": "published 22 days ago",
+      "publishedAgo": "published 23 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -3173,7 +3173,7 @@
       "oldVersion": "3.37.0",
       "newVersion": "3.38.0",
       "releaseDate": "2026-11-03",
-      "publishedAgo": "published 23 days ago",
+      "publishedAgo": "published 24 days ago",
       "isRecent": true,
       "risk": "review",
       "category": "Minor version",
@@ -3214,7 +3214,7 @@
       "oldVersion": "2.1.0",
       "newVersion": "2.2.0",
       "releaseDate": "2026-10-09",
-      "publishedAgo": "published 48 days ago",
+      "publishedAgo": "published 49 days ago",
       "isRecent": false,
       "risk": "review",
       "category": "Minor version",
@@ -3255,7 +3255,7 @@
       "oldVersion": "19.2.7",
       "newVersion": "19.3.0",
       "releaseDate": "2026-09-09",
-      "publishedAgo": "published 78 days ago",
+      "publishedAgo": "published 79 days ago",
       "isRecent": false,
       "risk": "review",
       "category": "Minor version",
@@ -3292,7 +3292,7 @@
       "oldVersion": "4.3.0",
       "newVersion": "4.4.0",
       "releaseDate": "2026-05-29",
-      "publishedAgo": "published 180 days ago",
+      "publishedAgo": "published 181 days ago",
       "isRecent": false,
       "risk": "review",
       "category": "Minor version",
@@ -3408,6 +3408,170 @@
       ]
     },
     {
+      "id": "rollup-4-68-9",
+      "packageName": "rollup",
+      "packageSlug": "rollup",
+      "description": "Module bundler",
+      "oldVersion": "4.68.8",
+      "newVersion": "4.68.9",
+      "releaseDate": "2026-11-27",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "low",
+      "category": "Patch version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: v4.68.9.",
+      "githubReleaseTitle": "v4.68.9",
+      "githubReleaseUrl": "https://github.com/rollup/rollup/releases/tag/v4.68.9",
+      "githubReleaseTag": "v4.68.9",
+      "githubReleasePublishedAt": "2026-11-27T17:08:53Z",
+      "releaseNotesExcerpt": "4.68.9 _2026-11-27_ Bug Fixes Avoid some unnecessary allocations for a noticable performance boost on builds (#6698) Include bundles Rust dependencies in license file (#6684) Ensure that switching imports that only differ by hash change the file hash (#6686) Make sure to flush st",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/rollup/4.68.9",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/rollup"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/rollup/rollup"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/rollup/rollup/releases/tag/v4.68.9"
+        }
+      ]
+    },
+    {
+      "id": "babel-core-8-1-4",
+      "packageName": "@babel/core",
+      "packageSlug": "babel-core",
+      "description": "JavaScript compiler core",
+      "oldVersion": "8.1.3",
+      "newVersion": "8.1.4",
+      "releaseDate": "2026-11-27",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "low",
+      "category": "Patch version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: v8.1.4.",
+      "githubReleaseTitle": "v8.1.4",
+      "githubReleaseUrl": "https://github.com/babel/babel/releases/tag/v8.1.4",
+      "githubReleaseTag": "v8.1.4",
+      "githubReleasePublishedAt": "2026-11-27T19:42:00Z",
+      "releaseNotesExcerpt": "v8.1.4 (2026-11-27) :bug: Bug Fix babel-plugin-transform-typescript * #18734 Fix ts enum negative and block merge (@joellemd) * #18719 fix(ts): don't share enum values between nested enums with the same name (@joellemd) babel-generator * #18728 fix(generator): avoid newlines and ",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/babel-core/8.1.4",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/@babel/core"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/babel/babel"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/babel/babel/releases/tag/v8.1.4"
+        }
+      ]
+    },
+    {
+      "id": "postcss-8-5-34",
+      "packageName": "postcss",
+      "packageSlug": "postcss",
+      "description": "CSS transformation",
+      "oldVersion": "8.5.33",
+      "newVersion": "8.5.34",
+      "releaseDate": "2026-11-27",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "low",
+      "category": "Patch version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: 8.5.34.",
+      "githubReleaseTitle": "8.5.34",
+      "githubReleaseUrl": "https://github.com/postcss/postcss/releases/tag/8.5.34",
+      "githubReleaseTag": "8.5.34",
+      "githubReleasePublishedAt": "2026-11-27T09:25:03Z",
+      "releaseNotesExcerpt": "Fixed slow parsing of important word after a long value (by @g4lb). Fixed caret alignment in CssSyntaxError on long lines with tabs (by @hoanle0126). Fixed Node#after() and Node#before() types.",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/postcss/8.5.34",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/postcss"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/postcss/postcss"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/postcss/postcss/releases/tag/8.5.34"
+        }
+      ]
+    },
+    {
+      "id": "ws-8-23-1",
+      "packageName": "ws",
+      "packageSlug": "ws",
+      "description": "WebSocket implementation",
+      "oldVersion": "8.23.0",
+      "newVersion": "8.23.1",
+      "releaseDate": "2026-11-27",
+      "publishedAgo": "published today",
+      "isRecent": true,
+      "risk": "low",
+      "category": "Patch version",
+      "osv": "No OSV match",
+      "cve": "No CVE match",
+      "reason": "Patch release with no OSV match.",
+      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
+      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
+      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
+      "whatChanged": "GitHub release note found: 8.23.1.",
+      "githubReleaseTitle": "8.23.1",
+      "githubReleaseUrl": "https://github.com/websockets/ws/releases/tag/8.23.1",
+      "githubReleaseTag": "8.23.1",
+      "githubReleasePublishedAt": "2026-11-27T18:12:20Z",
+      "releaseNotesExcerpt": "Bug fixes Window bits values that do not conform to the RFC 7692 1*DIGIT ABNF rule are no longer accepted (#2355). SharedArrayBuffer and ArrayBuffer instances created in other realms are no longer masked in place (#2358). Errors thrown when a redirect request is created are now p",
+      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
+      "route": "/package/ws/8.23.1",
+      "sourceLinks": [
+        {
+          "label": "npm",
+          "href": "https://www.npmjs.com/package/ws"
+        },
+        {
+          "label": "Repository",
+          "href": "https://github.com/websockets/ws"
+        },
+        {
+          "label": "GitHub release",
+          "href": "https://github.com/websockets/ws/releases/tag/8.23.1"
+        }
+      ]
+    },
+    {
       "id": "immer-11-2-13",
       "packageName": "immer",
       "packageSlug": "immer",
@@ -3415,7 +3579,7 @@
       "oldVersion": "11.2.12",
       "newVersion": "11.2.13",
       "releaseDate": "2026-11-26",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3456,7 +3620,7 @@
       "oldVersion": "3.0.7",
       "newVersion": "3.0.8",
       "releaseDate": "2026-11-26",
-      "publishedAgo": "published today",
+      "publishedAgo": "published 1 day ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3497,7 +3661,7 @@
       "oldVersion": "5.59.1",
       "newVersion": "5.59.2",
       "releaseDate": "2026-11-25",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3538,7 +3702,7 @@
       "oldVersion": "2.0.3",
       "newVersion": "2.0.4",
       "releaseDate": "2026-11-25",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3579,7 +3743,7 @@
       "oldVersion": "19.3.2",
       "newVersion": "19.3.3",
       "releaseDate": "2026-11-25",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3616,7 +3780,7 @@
       "oldVersion": "5.1.1",
       "newVersion": "5.1.2",
       "releaseDate": "2026-11-25",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3657,7 +3821,7 @@
       "oldVersion": "10.6.8",
       "newVersion": "10.6.9",
       "releaseDate": "2026-11-25",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3698,7 +3862,7 @@
       "oldVersion": "10.6.8",
       "newVersion": "10.6.9",
       "releaseDate": "2026-11-25",
-      "publishedAgo": "published 1 day ago",
+      "publishedAgo": "published 2 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3739,7 +3903,7 @@
       "oldVersion": "7.18.6",
       "newVersion": "7.18.7",
       "releaseDate": "2026-11-24",
-      "publishedAgo": "published 2 days ago",
+      "publishedAgo": "published 3 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3780,7 +3944,7 @@
       "oldVersion": "5.108.3",
       "newVersion": "5.108.4",
       "releaseDate": "2026-11-23",
-      "publishedAgo": "published 3 days ago",
+      "publishedAgo": "published 4 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3814,47 +3978,6 @@
       ]
     },
     {
-      "id": "rollup-4-68-8",
-      "packageName": "rollup",
-      "packageSlug": "rollup",
-      "description": "Module bundler",
-      "oldVersion": "4.68.7",
-      "newVersion": "4.68.8",
-      "releaseDate": "2026-11-21",
-      "publishedAgo": "published 5 days ago",
-      "isRecent": true,
-      "risk": "low",
-      "category": "Patch version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Patch release with no OSV match.",
-      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-      "affectedAudience": "Frontend build pipelines, monorepos, and CI jobs.",
-      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "GitHub release note found: v4.68.8.",
-      "githubReleaseTitle": "v4.68.8",
-      "githubReleaseUrl": "https://github.com/rollup/rollup/releases/tag/v4.68.8",
-      "githubReleaseTag": "v4.68.8",
-      "githubReleasePublishedAt": "2026-11-21T06:56:16Z",
-      "releaseNotesExcerpt": "4.68.8 _2026-11-21_ Bug Fixes Hoist namespace objects if necessary to avoid broken output (#6672) Do not try to auto-install source-map-support as it was causing some issues (#6682) Pull Requests #6672: Create namespace objects early when a cycle can read them before their module",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/rollup/4.68.8",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/rollup"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/rollup/rollup"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/rollup/rollup/releases/tag/v4.68.8"
-        }
-      ]
-    },
-    {
       "id": "vue-3-5-46",
       "packageName": "vue",
       "packageSlug": "vue",
@@ -3862,7 +3985,7 @@
       "oldVersion": "3.5.45",
       "newVersion": "3.5.46",
       "releaseDate": "2026-11-20",
-      "publishedAgo": "published 6 days ago",
+      "publishedAgo": "published 7 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3896,47 +4019,6 @@
       ]
     },
     {
-      "id": "babel-core-8-1-3",
-      "packageName": "@babel/core",
-      "packageSlug": "babel-core",
-      "description": "JavaScript compiler core",
-      "oldVersion": "8.1.2",
-      "newVersion": "8.1.3",
-      "releaseDate": "2026-11-20",
-      "publishedAgo": "published 6 days ago",
-      "isRecent": true,
-      "risk": "low",
-      "category": "Patch version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Patch release with no OSV match.",
-      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "GitHub release note found: v8.1.3.",
-      "githubReleaseTitle": "v8.1.3",
-      "githubReleaseUrl": "https://github.com/babel/babel/releases/tag/v8.1.3",
-      "githubReleaseTag": "v8.1.3",
-      "githubReleasePublishedAt": "2026-11-20T17:26:25Z",
-      "releaseNotesExcerpt": "v8.1.3 (2026-11-20) :eyeglasses: Spec Compliance babel-helpers, babel-plugin-transform-optional-chaining, babel-plugin-transform-regenerator, babel-plugin-transform-spread, babel-runtime-corejs3, babel-runtime * #18490 fix(transform-spread): evaluate arguments before checking cal",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/babel-core/8.1.3",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/@babel/core"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/babel/babel"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/babel/babel/releases/tag/v8.1.3"
-        }
-      ]
-    },
-    {
       "id": "tailwind-merge-3-7-1",
       "packageName": "tailwind-merge",
       "packageSlug": "tailwind-merge",
@@ -3944,7 +4026,7 @@
       "oldVersion": "3.7.0",
       "newVersion": "3.7.1",
       "releaseDate": "2026-11-19",
-      "publishedAgo": "published 6 days ago",
+      "publishedAgo": "published 7 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -3985,7 +4067,7 @@
       "oldVersion": "7.4.12",
       "newVersion": "7.4.13",
       "releaseDate": "2026-11-18",
-      "publishedAgo": "published 8 days ago",
+      "publishedAgo": "published 9 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -4026,7 +4108,7 @@
       "oldVersion": "2.11.12",
       "newVersion": "2.11.13",
       "releaseDate": "2026-11-18",
-      "publishedAgo": "published 8 days ago",
+      "publishedAgo": "published 9 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -4067,7 +4149,7 @@
       "oldVersion": "1.65.0",
       "newVersion": "1.65.1",
       "releaseDate": "2026-11-13",
-      "publishedAgo": "published 13 days ago",
+      "publishedAgo": "published 14 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -4101,47 +4183,6 @@
       ]
     },
     {
-      "id": "postcss-8-5-33",
-      "packageName": "postcss",
-      "packageSlug": "postcss",
-      "description": "CSS transformation",
-      "oldVersion": "8.5.32",
-      "newVersion": "8.5.33",
-      "releaseDate": "2026-11-13",
-      "publishedAgo": "published 12 days ago",
-      "isRecent": true,
-      "risk": "low",
-      "category": "Patch version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Patch release with no OSV match.",
-      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "GitHub release note found: 8.5.33.",
-      "githubReleaseTitle": "8.5.33",
-      "githubReleaseUrl": "https://github.com/postcss/postcss/releases/tag/8.5.33",
-      "githubReleaseTag": "8.5.33",
-      "githubReleasePublishedAt": "2026-11-13T22:44:10Z",
-      "releaseNotesExcerpt": "Fixed unquoted url() with /* after a comma (by @MFA-G). Fixed url (...) with a space before the bracket being parsed as URL. Fixed unquoted uppercase URL() parsing (by @Don-Yin). Fixed empty source in CssSyntaxError on long lines (by @simpleqt). Fixed line breaks on source map an",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/postcss/8.5.33",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/postcss"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/postcss/postcss"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/postcss/postcss/releases/tag/8.5.33"
-        }
-      ]
-    },
-    {
       "id": "prettier-3-10-1",
       "packageName": "prettier",
       "packageSlug": "prettier",
@@ -4149,7 +4190,7 @@
       "oldVersion": "3.10.0",
       "newVersion": "3.10.1",
       "releaseDate": "2026-11-12",
-      "publishedAgo": "published 14 days ago",
+      "publishedAgo": "published 15 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -4190,7 +4231,7 @@
       "oldVersion": "1.108.1",
       "newVersion": "1.108.2",
       "releaseDate": "2026-11-11",
-      "publishedAgo": "published 15 days ago",
+      "publishedAgo": "published 16 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -4231,7 +4272,7 @@
       "oldVersion": "16.4.5",
       "newVersion": "16.4.6",
       "releaseDate": "2026-11-09",
-      "publishedAgo": "published 17 days ago",
+      "publishedAgo": "published 18 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -4268,7 +4309,7 @@
       "oldVersion": "1.21.0",
       "newVersion": "1.21.1",
       "releaseDate": "2026-11-09",
-      "publishedAgo": "published 17 days ago",
+      "publishedAgo": "published 18 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -4309,7 +4350,7 @@
       "oldVersion": "4.3.7",
       "newVersion": "4.3.8",
       "releaseDate": "2026-11-09",
-      "publishedAgo": "published 16 days ago",
+      "publishedAgo": "published 17 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -4350,7 +4391,7 @@
       "oldVersion": "4.3.4",
       "newVersion": "4.3.5",
       "releaseDate": "2026-11-06",
-      "publishedAgo": "published 20 days ago",
+      "publishedAgo": "published 21 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -4391,7 +4432,7 @@
       "oldVersion": "1.16.21",
       "newVersion": "1.16.22",
       "releaseDate": "2026-11-05",
-      "publishedAgo": "published 21 days ago",
+      "publishedAgo": "published 22 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -4432,7 +4473,7 @@
       "oldVersion": "7.8.5",
       "newVersion": "7.8.6",
       "releaseDate": "2026-11-02",
-      "publishedAgo": "published 24 days ago",
+      "publishedAgo": "published 25 days ago",
       "isRecent": true,
       "risk": "low",
       "category": "Patch version",
@@ -4473,7 +4514,7 @@
       "oldVersion": "21.0.3",
       "newVersion": "21.0.4",
       "releaseDate": "2026-10-20",
-      "publishedAgo": "published 37 days ago",
+      "publishedAgo": "published 38 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4514,7 +4555,7 @@
       "oldVersion": "19.3.0",
       "newVersion": "19.3.1",
       "releaseDate": "2026-10-14",
-      "publishedAgo": "published 43 days ago",
+      "publishedAgo": "published 44 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4555,7 +4596,7 @@
       "oldVersion": "19.3.0",
       "newVersion": "19.3.1",
       "releaseDate": "2026-10-14",
-      "publishedAgo": "published 43 days ago",
+      "publishedAgo": "published 44 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4596,7 +4637,7 @@
       "oldVersion": "4.6.6",
       "newVersion": "4.6.7",
       "releaseDate": "2026-10-12",
-      "publishedAgo": "published 45 days ago",
+      "publishedAgo": "published 46 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4637,7 +4678,7 @@
       "oldVersion": "1.3.0",
       "newVersion": "1.3.1",
       "releaseDate": "2026-10-12",
-      "publishedAgo": "published 45 days ago",
+      "publishedAgo": "published 46 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4674,7 +4715,7 @@
       "oldVersion": "1.3.0",
       "newVersion": "1.3.1",
       "releaseDate": "2026-10-12",
-      "publishedAgo": "published 45 days ago",
+      "publishedAgo": "published 46 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4711,7 +4752,7 @@
       "oldVersion": "14.0.2",
       "newVersion": "14.0.3",
       "releaseDate": "2026-10-10",
-      "publishedAgo": "published 47 days ago",
+      "publishedAgo": "published 48 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4745,47 +4786,6 @@
       ]
     },
     {
-      "id": "babel-preset-env-8-0-7",
-      "packageName": "@babel/preset-env",
-      "packageSlug": "babel-preset-env",
-      "description": "Babel environment preset",
-      "oldVersion": "8.0.6",
-      "newVersion": "8.0.7",
-      "releaseDate": "2026-10-07",
-      "publishedAgo": "published 50 days ago",
-      "isRecent": false,
-      "risk": "low",
-      "category": "Patch version",
-      "osv": "No OSV match",
-      "cve": "No CVE match",
-      "reason": "Patch release with no OSV match.",
-      "whyThisMatters": "Patch updates with no vulnerability signal are usually safe to batch into routine maintenance.",
-      "affectedAudience": "Frontend projects that import this package directly or receive it through transitive dependencies.",
-      "recommendedAction": "No urgent action. Include in the next scheduled dependency update.",
-      "whatChanged": "GitHub release note found: v8.0.7.",
-      "githubReleaseTitle": "v8.0.7",
-      "githubReleaseUrl": "https://github.com/babel/babel/releases/tag/v8.0.7",
-      "githubReleaseTag": "v8.0.7",
-      "githubReleasePublishedAt": "2026-10-07T12:37:42Z",
-      "releaseNotesExcerpt": "v8.0.7 (2026-10-07) Thanks @brunoborta, @CINC0S, @hoobnn, and @jpradelle for your first PRs! :bug: Bug Fix babel-helper-create-regexp-features-plugin, babel-plugin-transform-dotall-regex, babel-plugin-transform-unicode-sets-regex, babel-preset-env * #18295 Bump regexpu-core to 6.",
-      "releaseNotesStatus": "Matched GitHub release by exact npm version tag.",
-      "route": "/package/babel-preset-env/8.0.7",
-      "sourceLinks": [
-        {
-          "label": "npm",
-          "href": "https://www.npmjs.com/package/@babel/preset-env"
-        },
-        {
-          "label": "Repository",
-          "href": "https://github.com/babel/babel"
-        },
-        {
-          "label": "GitHub release",
-          "href": "https://github.com/babel/babel/releases/tag/v8.0.7"
-        }
-      ]
-    },
-    {
       "id": "nanoid-6-0-2",
       "packageName": "nanoid",
       "packageSlug": "nanoid",
@@ -4793,7 +4793,7 @@
       "oldVersion": "6.0.1",
       "newVersion": "6.0.2",
       "releaseDate": "2026-10-05",
-      "publishedAgo": "published 52 days ago",
+      "publishedAgo": "published 53 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4834,7 +4834,7 @@
       "oldVersion": "30.5.1",
       "newVersion": "30.5.2",
       "releaseDate": "2026-09-18",
-      "publishedAgo": "published 69 days ago",
+      "publishedAgo": "published 70 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4875,7 +4875,7 @@
       "oldVersion": "4.9.0",
       "newVersion": "4.9.1",
       "releaseDate": "2026-09-02",
-      "publishedAgo": "published 85 days ago",
+      "publishedAgo": "published 86 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4916,7 +4916,7 @@
       "oldVersion": "16.3.2",
       "newVersion": "16.3.3",
       "releaseDate": "2026-08-27",
-      "publishedAgo": "published 91 days ago",
+      "publishedAgo": "published 92 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4957,7 +4957,7 @@
       "oldVersion": "1.11.22",
       "newVersion": "1.11.23",
       "releaseDate": "2026-08-17",
-      "publishedAgo": "published 101 days ago",
+      "publishedAgo": "published 102 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -4998,7 +4998,7 @@
       "oldVersion": "2.5.0",
       "newVersion": "2.5.1",
       "releaseDate": "2026-08-12",
-      "publishedAgo": "published 106 days ago",
+      "publishedAgo": "published 107 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -5039,7 +5039,7 @@
       "oldVersion": "0.28.1",
       "newVersion": "0.28.2",
       "releaseDate": "2026-08-08",
-      "publishedAgo": "published 110 days ago",
+      "publishedAgo": "published 111 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -5080,7 +5080,7 @@
       "oldVersion": "8.0.0",
       "newVersion": "8.0.1",
       "releaseDate": "2026-06-17",
-      "publishedAgo": "published 162 days ago",
+      "publishedAgo": "published 163 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -5117,7 +5117,7 @@
       "oldVersion": "2.17.4",
       "newVersion": "2.17.5",
       "releaseDate": "2026-06-01",
-      "publishedAgo": "published 178 days ago",
+      "publishedAgo": "published 179 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -5154,7 +5154,7 @@
       "oldVersion": "4.18.0",
       "newVersion": "4.18.1",
       "releaseDate": "2026-04-01",
-      "publishedAgo": "published 239 days ago",
+      "publishedAgo": "published 240 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -5195,7 +5195,7 @@
       "oldVersion": "5.16.0",
       "newVersion": "5.16.1",
       "releaseDate": "2026-02-10",
-      "publishedAgo": "published 289 days ago",
+      "publishedAgo": "published 290 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -5236,7 +5236,7 @@
       "oldVersion": "2.16.3",
       "newVersion": "2.16.4",
       "releaseDate": "2026-02-02",
-      "publishedAgo": "published 297 days ago",
+      "publishedAgo": "published 298 days ago",
       "isRecent": false,
       "risk": "low",
       "category": "Patch version",
@@ -5654,7 +5654,7 @@
       "packageName": "rollup",
       "description": "Module bundler",
       "route": "/package/rollup",
-      "latestReleaseRoute": "/package/rollup/4.68.8",
+      "latestReleaseRoute": "/package/rollup/4.68.9",
       "areaSlug": "build-tooling",
       "areaLabel": "Build Tooling"
     },
@@ -5702,7 +5702,7 @@
       "packageName": "@babel/core",
       "description": "JavaScript compiler core",
       "route": "/package/babel-core",
-      "latestReleaseRoute": "/package/babel-core/8.1.3",
+      "latestReleaseRoute": "/package/babel-core/8.1.4",
       "areaSlug": "build-tooling",
       "areaLabel": "Build Tooling"
     },
@@ -5710,7 +5710,7 @@
       "packageName": "@babel/preset-env",
       "description": "Babel environment preset",
       "route": "/package/babel-preset-env",
-      "latestReleaseRoute": "/package/babel-preset-env/8.0.7",
+      "latestReleaseRoute": "/package/babel-preset-env/8.1.4",
       "areaSlug": "build-tooling",
       "areaLabel": "Build Tooling"
     },
@@ -5742,7 +5742,7 @@
       "packageName": "eslint",
       "description": "JavaScript linting",
       "route": "/package/eslint",
-      "latestReleaseRoute": "/package/eslint/10.15.0",
+      "latestReleaseRoute": "/package/eslint/10.16.0",
       "areaSlug": "typescript-quality",
       "areaLabel": "TypeScript and Code Quality"
     },
@@ -5998,7 +5998,7 @@
       "packageName": "postcss",
       "description": "CSS transformation",
       "route": "/package/postcss",
-      "latestReleaseRoute": "/package/postcss/8.5.33",
+      "latestReleaseRoute": "/package/postcss/8.5.34",
       "areaSlug": "css-ui",
       "areaLabel": "CSS and UI Libraries"
     },
@@ -6102,7 +6102,7 @@
       "packageName": "lucide-react",
       "description": "React icon library",
       "route": "/package/lucide-react",
-      "latestReleaseRoute": "/package/lucide-react/1.81.0",
+      "latestReleaseRoute": "/package/lucide-react/1.82.0",
       "areaSlug": "css-ui",
       "areaLabel": "CSS and UI Libraries"
     },
@@ -6158,7 +6158,7 @@
       "packageName": "ws",
       "description": "WebSocket implementation",
       "route": "/package/ws",
-      "latestReleaseRoute": "/package/ws/8.23.0",
+      "latestReleaseRoute": "/package/ws/8.23.1",
       "areaSlug": "utilities-runtime",
       "areaLabel": "JavaScript Utilities and Runtime"
     },
@@ -6312,7 +6312,7 @@
           "packageName": "@babel/core",
           "description": "JavaScript compiler core",
           "route": "/package/babel-core",
-          "latestReleaseRoute": "/package/babel-core/8.1.3",
+          "latestReleaseRoute": "/package/babel-core/8.1.4",
           "areaSlug": "build-tooling",
           "areaLabel": "Build Tooling"
         },
@@ -6320,7 +6320,7 @@
           "packageName": "@babel/preset-env",
           "description": "Babel environment preset",
           "route": "/package/babel-preset-env",
-          "latestReleaseRoute": "/package/babel-preset-env/8.0.7",
+          "latestReleaseRoute": "/package/babel-preset-env/8.1.4",
           "areaSlug": "build-tooling",
           "areaLabel": "Build Tooling"
         },
@@ -6368,7 +6368,7 @@
           "packageName": "rollup",
           "description": "Module bundler",
           "route": "/package/rollup",
-          "latestReleaseRoute": "/package/rollup/4.68.8",
+          "latestReleaseRoute": "/package/rollup/4.68.9",
           "areaSlug": "build-tooling",
           "areaLabel": "Build Tooling"
         },
@@ -6449,7 +6449,7 @@
           "packageName": "eslint",
           "description": "JavaScript linting",
           "route": "/package/eslint",
-          "latestReleaseRoute": "/package/eslint/10.15.0",
+          "latestReleaseRoute": "/package/eslint/10.16.0",
           "areaSlug": "typescript-quality",
           "areaLabel": "TypeScript and Code Quality"
         },
@@ -6797,7 +6797,7 @@
           "packageName": "lucide-react",
           "description": "React icon library",
           "route": "/package/lucide-react",
-          "latestReleaseRoute": "/package/lucide-react/1.81.0",
+          "latestReleaseRoute": "/package/lucide-react/1.82.0",
           "areaSlug": "css-ui",
           "areaLabel": "CSS and UI Libraries"
         },
@@ -6805,7 +6805,7 @@
           "packageName": "postcss",
           "description": "CSS transformation",
           "route": "/package/postcss",
-          "latestReleaseRoute": "/package/postcss/8.5.33",
+          "latestReleaseRoute": "/package/postcss/8.5.34",
           "areaSlug": "css-ui",
           "areaLabel": "CSS and UI Libraries"
         },
@@ -6926,7 +6926,7 @@
           "packageName": "ws",
           "description": "WebSocket implementation",
           "route": "/package/ws",
-          "latestReleaseRoute": "/package/ws/8.23.0",
+          "latestReleaseRoute": "/package/ws/8.23.1",
           "areaSlug": "utilities-runtime",
           "areaLabel": "JavaScript Utilities and Runtime"
         }
@@ -7564,15 +7564,25 @@
       "title": "typescript 7.0.2 npm major version update",
       "description": "typescript 7.0.2 frontend npm update risk: Major version release detected. OSV: No OSV match. CVE: No CVE match. Recommended action: Review changes before updating. Test in staging before merging. GitHub release notes were..."
     },
+    "/package/babel-preset-env/8.1.4": {
+      "path": "/package/babel-preset-env/8.1.4",
+      "title": "@babel/preset-env 8.1.4 npm minor version update",
+      "description": "@babel/preset-env 8.1.4 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub..."
+    },
+    "/package/eslint/10.16.0": {
+      "path": "/package/eslint/10.16.0",
+      "title": "eslint 10.16.0 npm minor version update",
+      "description": "eslint 10.16.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release..."
+    },
+    "/package/lucide-react/1.82.0": {
+      "path": "/package/lucide-react/1.82.0",
+      "title": "lucide-react 1.82.0 npm minor version update",
+      "description": "lucide-react 1.82.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release..."
+    },
     "/package/vite/8.4.0": {
       "path": "/package/vite/8.4.0",
       "title": "vite 8.4.0 npm minor version update",
       "description": "vite 8.4.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release notes..."
-    },
-    "/package/lucide-react/1.81.0": {
-      "path": "/package/lucide-react/1.81.0",
-      "title": "lucide-react 1.81.0 npm minor version update",
-      "description": "lucide-react 1.81.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release..."
     },
     "/package/cypress/16.4.0": {
       "path": "/package/cypress/16.4.0",
@@ -7624,20 +7634,10 @@
       "title": "@reduxjs/toolkit 2.15.0 npm minor version update",
       "description": "@reduxjs/toolkit 2.15.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub..."
     },
-    "/package/eslint/10.15.0": {
-      "path": "/package/eslint/10.15.0",
-      "title": "eslint 10.15.0 npm minor version update",
-      "description": "eslint 10.15.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance. GitHub release..."
-    },
     "/package/framer-motion/14.14.0": {
       "path": "/package/framer-motion/14.14.0",
       "title": "framer-motion 14.14.0 npm minor version update",
       "description": "framer-motion 14.14.0 frontend npm update risk: Minor version release detected with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Batch with normal dependency maintenance."
-    },
-    "/package/ws/8.23.0": {
-      "path": "/package/ws/8.23.0",
-      "title": "ws 8.23.0 npm release-note review update",
-      "description": "ws 8.23.0 frontend npm update risk: Release notes mention security language, but no OSV or CVE match was found. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Confirm against OSV and CVE before..."
     },
     "/package/react-hook-form/7.92.0": {
       "path": "/package/react-hook-form/7.92.0",
@@ -7689,6 +7689,26 @@
       "title": "npm-run-all 4.1.5 npm release-note review update",
       "description": "npm-run-all 4.1.5 frontend npm update risk: Release notes mention security language, but no OSV or CVE match was found. OSV: No OSV match. CVE: No CVE match. Recommended action: Review if used. Confirm against OSV and CVE..."
     },
+    "/package/rollup/4.68.9": {
+      "path": "/package/rollup/4.68.9",
+      "title": "rollup 4.68.9 npm patch version update",
+      "description": "rollup 4.68.9 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
+    "/package/babel-core/8.1.4": {
+      "path": "/package/babel-core/8.1.4",
+      "title": "@babel/core 8.1.4 npm patch version update",
+      "description": "@babel/core 8.1.4 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
+    "/package/postcss/8.5.34": {
+      "path": "/package/postcss/8.5.34",
+      "title": "postcss 8.5.34 npm patch version update",
+      "description": "postcss 8.5.34 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
+    "/package/ws/8.23.1": {
+      "path": "/package/ws/8.23.1",
+      "title": "ws 8.23.1 npm patch version update",
+      "description": "ws 8.23.1 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
+    },
     "/package/immer/11.2.13": {
       "path": "/package/immer/11.2.13",
       "title": "immer 11.2.13 npm patch version update",
@@ -7739,20 +7759,10 @@
       "title": "@tanstack/react-query 5.108.4 npm patch version update",
       "description": "@tanstack/react-query 5.108.4 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
-    "/package/rollup/4.68.8": {
-      "path": "/package/rollup/4.68.8",
-      "title": "rollup 4.68.8 npm patch version update",
-      "description": "rollup 4.68.8 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-    },
     "/package/vue/3.5.46": {
       "path": "/package/vue/3.5.46",
       "title": "vue 3.5.46 npm patch version update",
       "description": "vue 3.5.46 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-    },
-    "/package/babel-core/8.1.3": {
-      "path": "/package/babel-core/8.1.3",
-      "title": "@babel/core 8.1.3 npm patch version update",
-      "description": "@babel/core 8.1.3 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/tailwind-merge/3.7.1": {
       "path": "/package/tailwind-merge/3.7.1",
@@ -7773,11 +7783,6 @@
       "path": "/package/playwright/1.65.1",
       "title": "playwright 1.65.1 npm patch version update",
       "description": "playwright 1.65.1 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-    },
-    "/package/postcss/8.5.33": {
-      "path": "/package/postcss/8.5.33",
-      "title": "postcss 8.5.33 npm patch version update",
-      "description": "postcss 8.5.33 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/prettier/3.10.1": {
       "path": "/package/prettier/3.10.1",
@@ -7853,11 +7858,6 @@
       "path": "/package/uuid/14.0.3",
       "title": "uuid 14.0.3 npm patch version update",
       "description": "uuid 14.0.3 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
-    },
-    "/package/babel-preset-env/8.0.7": {
-      "path": "/package/babel-preset-env/8.0.7",
-      "title": "@babel/preset-env 8.0.7 npm patch version update",
-      "description": "@babel/preset-env 8.0.7 frontend npm update risk: Patch release with no OSV match. OSV: No OSV match. CVE: No CVE match. Recommended action: No urgent action. Include in the next scheduled dependency update."
     },
     "/package/nanoid/6.0.2": {
       "path": "/package/nanoid/6.0.2",
